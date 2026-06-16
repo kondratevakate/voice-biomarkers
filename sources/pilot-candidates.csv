@@ -1,0 +1,28 @@
+source,id,year,title,venue,doi,url
+PubMed,40270235,2025,Voice Assessment and Vocal Biomarkers in Heart Failure: A Systematic Review.,Circulation. Heart failure,,https://pubmed.ncbi.nlm.nih.gov/40270235/
+PubMed,40385312,2025,"Vocal biomarkers in heart failure-design, rationale and baseline characteristics of the AHF-Voice study.",Frontiers in digital health,,https://pubmed.ncbi.nlm.nih.gov/40385312/
+PubMed,38062079,2023,A systematic review and narrative analysis of digital speech biomarkers in Motor Neuron Disease.,NPJ digital medicine,,https://pubmed.ncbi.nlm.nih.gov/38062079/
+PubMed,34056518,2021,Voice for Health: The Use of Vocal Biomarkers from Research to Clinical Practice.,Digital biomarkers,,https://pubmed.ncbi.nlm.nih.gov/34056518/
+PubMed,40968958,2025,The Human Voice as a Digital Health Solution Leveraging Artificial Intelligence.,"Sensors (Basel, Switzerland)",,https://pubmed.ncbi.nlm.nih.gov/40968958/
+PubMed,40986855,2025,Respiratory-Responsive Vocal Biomarker for Asthma Exacerbation Monitoring: Prospective Cohort Study.,Journal of medical Internet research,,https://pubmed.ncbi.nlm.nih.gov/40986855/
+PubMed,36314494,2022,Evaluation of Speech and Pause Alterations in Patients With Acute and Chronic Heart Failure.,Journal of the American Heart Association,,https://pubmed.ncbi.nlm.nih.gov/36314494/
+PubMed,41404273,2025,Consensus-Based Definitions for Vocal Biomarkers: The International VOCAL Initiative.,medRxiv : the preprint server for health sciences,,https://pubmed.ncbi.nlm.nih.gov/41404273/
+PubMed,39515817,2024,Identifying and Estimating Frailty Phenotypes by Vocal Biomarkers: Cross-Sectional Study.,Journal of medical Internet research,,https://pubmed.ncbi.nlm.nih.gov/39515817/
+PubMed,35341543,2022,"Utilizing Conversational Artificial Intelligence, Voice, and Phonocardiography Analytics in Heart Failure Care.",Heart failure clinics,,https://pubmed.ncbi.nlm.nih.gov/35341543/
+PubMed,39473806,2024,Digital Vocal Biomarker of Smoking Status Using Ecological Audio Recordings: Results from the Colive Voice Study.,Digital biomarkers,,https://pubmed.ncbi.nlm.nih.gov/39473806/
+PubMed,32298301,2020,Non-invasive vocal biomarker is associated with pulmonary hypertension.,PloS one,,https://pubmed.ncbi.nlm.nih.gov/32298301/
+PubMed,32233754,2020,Vocal Biomarker Is Associated With Hospitalization and Mortality Among Heart Failure Patients.,Journal of the American Heart Association,,https://pubmed.ncbi.nlm.nih.gov/32233754/
+PubMed,41419191,2025,"A Single, Interpretable Vocal Biomarker for Enriching Antipsychotic Clinical Trials.",Biological psychiatry,,https://pubmed.ncbi.nlm.nih.gov/41419191/
+PubMed,37661144,2023,Guess What We Can Hear-Novel Voice Biomarkers for the Remote Detection of Disease.,Mayo Clinic proceedings,,https://pubmed.ncbi.nlm.nih.gov/37661144/
+PubMed,35341593,2022,Noninvasive Voice Biomarker Is Associated With Incident Coronary Artery Disease Events at Follow-up.,Mayo Clinic proceedings,,https://pubmed.ncbi.nlm.nih.gov/35341593/
+PubMed,39540145,2024,"Workshop summaries from the 2024 voice AI symposium, presented by the Bridge2AI-voice consortium.",Frontiers in digital health,,https://pubmed.ncbi.nlm.nih.gov/39540145/
+PubMed,39734876,2024,Harmonic-to-noise ratio as speech biomarker for fatigue: K-nearest neighbour machine learning algorithm.,"Medical journal, Armed Forces India",,https://pubmed.ncbi.nlm.nih.gov/39734876/
+PubMed,39132330,2024,Clinical Utility of Machine Learning-Derived Vocal Biomarkers in the Management of Heart Failure.,Circulation reports,,https://pubmed.ncbi.nlm.nih.gov/39132330/
+PubMed,36946458,2023,Screening over Speech in Unselected Populations for Clinical Trials in AD (PROSPECT-AD): Study Design and Protocol.,The journal of prevention of Alzheimer's disease,,https://pubmed.ncbi.nlm.nih.gov/36946458/
+OpenAlex,https://openalex.org/W2239141610,2015,The Geneva Minimalistic Acoustic Parameter Set (GeMAPS) for Voice Research and Affective Computing,IEEE Transactions on Affective Computing,https://doi.org/10.1109/taffc.2015.2457417,https://doi.org/10.1109/taffc.2015.2457417
+OpenAlex,https://openalex.org/W2917347002,2019,Digital biomarkers for Alzheimer’s disease: the mobile/wearable devices opportunity,npj Digital Medicine,https://doi.org/10.1038/s41746-019-0084-2,https://doi.org/10.1038/s41746-019-0084-2
+OpenAlex,https://openalex.org/W3108822321,2020,Evaluation of Speech-Based Digital Biomarkers: Review and Recommendations,Digital Biomarkers,https://doi.org/10.1159/000510820,https://doi.org/10.1159/000510820
+OpenAlex,https://openalex.org/W2000149402,2013,Vocal biomarkers of depression based on motor incoordination,,https://doi.org/10.1145/2512530.2512531,https://doi.org/10.1145/2512530.2512531
+OpenAlex,https://openalex.org/W2736814566,2017,Artificial Intelligent System for Automatic Depression Level Analysis Through Visual and Vocal Expressions,IEEE Transactions on Cognitive and Developmental Systems,https://doi.org/10.1109/tcds.2017.2721552,https://doi.org/10.1109/tcds.2017.2721552
+OpenAlex,https://openalex.org/W3155712419,2021,Speech Biomarkers in Rapid Eye Movement Sleep Behavior Disorder and Parkinson Disease,Annals of Neurology,https://doi.org/10.1002/ana.26085,https://doi.org/10.1002/ana.26085
+OpenAlex,https://openalex.org/W4377820918,2023,Applied Machine Learning Techniques to Diagnose Voice-Affecting Conditions and Disorders: Systematic Literature Review,Journal of Medical Internet Research,https://doi.org/10.2196/46105,https://doi.org/10.2196/46105

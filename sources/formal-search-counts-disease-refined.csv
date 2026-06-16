@@ -1,0 +1,5 @@
+source,query_family,count,status
+PubMed,disease_monitoring_refined,352,ok
+EuropePMC,disease_monitoring_refined,21638,ok
+EuropePMC-PPR,disease_monitoring_refined,195,ok
+OpenAlex,disease_monitoring_refined,74586,ok

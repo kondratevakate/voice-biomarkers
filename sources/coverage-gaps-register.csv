@@ -1,0 +1,10 @@
+coverage_layer,database_or_source,status,why_it_matters,planned_action,priority
+Chinese literature,CNKI,not searched,"May contain Chinese-language clinical, aging, and smart healthcare voice biomarker studies.",Search Chinese and English terms; export records if access permits.,high
+Chinese literature,Wanfang,not searched,Complements CNKI and may index medical/engineering Chinese journals.,Search Chinese query families; export records if access permits.,high
+Chinese biomedical,SinoMed,not searched,Biomedical Chinese indexing may capture clinical studies not in PubMed.,Search clinical Chinese terms for voice/speech biomarkers.,high
+Engineering,IEEE Xplore,not searched,Speech processing and signal-processing biomarker studies may be absent from PubMed.,Run exact phrase and health-monitoring technical queries.,high
+Engineering,ACM Digital Library,not searched,Human-computer interaction and ML health screening papers may appear here.,Run technical query families and inspect conference papers.,medium
+Biomedical subscription,Embase,not searched,Systematic reviews in clinical domains often require Embase for European and conference coverage.,Run translated PubMed syntax if access is available.,high
+Citation indexes,Scopus/Web of Science,not searched,Improves citation chaining and defensibility of field coverage.,Run query families and forward/backward citation chaining.,high
+Preprints/ML,arXiv,attempted; failed,Several relevant voice biomarker ML/dataset papers are in arXiv.,Retry with exact phrase queries and rate limiting.,high
+Citation graph,Semantic Scholar,attempted; rate-limited,Useful for influential papers and citation expansion.,Retry with API key or slow rate-limited calls.,medium

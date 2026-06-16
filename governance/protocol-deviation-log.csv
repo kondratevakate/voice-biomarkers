@@ -1,0 +1,3 @@
+deviation_id,date,protocol_section,original_plan,change,reason,impact_on_review,approved_by
+DEV-001,2026-06-06,Coverage,Stage 1 open English-oriented search.,Added multilingual and extended database layer.,"Chinese, engineering, subscription, arXiv, and Semantic Scholar gaps identified.",Current search cannot be described as exhaustive until expanded or limitations are reported.,protocol update
+DEV-002,2026-06-06,Governance,K-Dense systematic review workflow only.,Added AI-scientist-inspired reproducibility and governance layer.,Need audit trail for automated search/screening/extraction.,"Adds reproducibility, false-negative mitigation, and manual adjudication requirements.",protocol update

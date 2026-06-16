@@ -1,0 +1,1 @@
+run_id,date_time,tool_or_script,database_or_endpoint,query_family,exact_query_or_input,filters,output_file,raw_export_file,status,error_or_limitation,script_git_sha_or_file_hash,operator

@@ -1,0 +1,138 @@
+\documentclass[11pt]{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage{microtype}
+\usepackage{booktabs}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage{xcolor}
+\usepackage{hyperref}
+\usepackage[numbers,sort&compress]{natbib}
+
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue,
+  citecolor=blue,
+  urlcolor=blue
+}
+
+\title{Voice-Derived Biomarkers Across Populations, Tasks, and Clinical Domains: A Living Systematic Mapping Review}
+\author{Working manuscript}
+\date{Draft compiled for GitHub/Overleaf sync: June 16, 2026}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Voice, speech, and other vocal signals are increasingly studied as scalable digital biomarkers for aging, neurological and psychiatric conditions, respiratory and laryngeal disorders, cardiovascular risk, pediatric health, and longitudinal monitoring. The evidence base is fragmented across clinical domains, speech tasks, languages, data collection settings, and model families, making it difficult to judge which claims are clinically mature and which remain exploratory. This living systematic mapping review is designed to characterize the field by population, elicitation task, modeled outcome, feature or model family, validation maturity, and generalization evidence. The current draft reports the protocol, initial open-index search results, and preliminary screening state. It should not yet be read as a final PRISMA-complete systematic review: arXiv retries, subscription database searches, multilingual database searches, full-text screening, risk-of-bias assessment, and manual adjudication remain open.
+\end{abstract}
+
+\section{Review Status}
+
+This manuscript is a working literature review package prepared for GitHub and Overleaf synchronization. The current search state is Stage 1: open, English-oriented database discovery through PubMed, Europe PMC, Europe PMC preprints, OpenAlex, and attempted arXiv API searches. This stage is useful for protocol development, first-pass evidence mapping, and screening calibration, but it is not sufficient to claim exhaustive field coverage. A final review will require additional searches in Embase, Scopus, Web of Science, IEEE Xplore, ACM Digital Library, ACL/ISCA sources, CNKI, Wanfang, VIP, SinoMed, and trial or regulatory registries where relevant.
+
+\section{Introduction}
+
+Voice and speech are attractive candidates for digital biomarker development because they are inexpensive to collect, repeatable, remote-friendly, and linked to multiple physiological and cognitive systems. Diseases affecting the brain, lungs, heart, muscles, vocal folds, and language systems can alter acoustic, articulatory, prosodic, respiratory, and linguistic behavior \citep{fagherazzi2021voice}. Prior reviews have argued that speech-based digital biomarkers require explicit evaluation of recording quality, signal processing reliability, analytical validity, clinical validity, and context of use before they can be used safely in clinical or research decision-making \citep{robin2020evaluation,babrak2019traditional}.
+
+The field has recently expanded beyond single-condition acoustic classifiers. Population-scale aging studies now test whether short voice recordings can estimate chronological or biological age \citep{krongauz2026sound}, while longitudinal speech datasets such as VoxKnesset create new opportunities to study within-speaker aging and speaker-identity drift over many years \citep{marmor2026voxknesset}. At the same time, clinical voice foundation models and cross-disease representation learning are being proposed as a way to move from narrow disease-specific models toward reusable clinical voice embeddings \citep{elemento2026voicefm}. Pediatric work further shows that the evidence base spans developmental, respiratory, speech, language, and other health conditions, but also highlights heterogeneity in tasks, feature extraction methods, model choices, and reporting standards \citep{rogers2024pediatric}.
+
+This heterogeneity makes a narrow meta-analysis premature. The immediate aim is therefore to build a systematic evidence map: which populations have been studied, what voice or speech tasks were used, what outcomes were modeled, what validation level was achieved, and where evidence is missing. The review follows PRISMA-style reporting principles \citep{page2021prisma}, while using a mapping-review frame until full-text screening shows whether a clinically coherent subset can support a narrower systematic review.
+
+\section{Objectives}
+
+The primary objective is to systematically map empirical and methodological evidence for voice-derived biomarkers across populations, elicitation tasks, modeled outcomes, and validation maturity. The review asks which clinical and nonclinical populations have been studied, which recording tasks and acoustic or linguistic signals are used, which outcomes are modeled, and what level of validation is reported. It also asks whether studies report external validation, longitudinal validation, device or environment robustness, subgroup performance, language generalization, and clinically meaningful reference standards.
+
+\section{Methods}
+
+\subsection{Eligibility Criteria}
+
+Eligible records include human studies or human voice, speech, cough, breathing, or speech-language datasets in which an audio-derived feature, representation, model, or score is used as a biomarker, digital biomarker, clinical marker, screening marker, monitoring marker, risk marker, or aging marker. Empirical observational studies, diagnostic or prognostic modeling studies, longitudinal monitoring studies, validation studies, dataset or benchmark papers, systematic or scoping reviews, and clinically relevant preprints are eligible when they report extractable information about population, task, feature or model family, outcome, comparator, association, benchmark, or validation result.
+
+Records are excluded when voice or speech is only an interface channel rather than the analyzed signal, when the work is purely automatic speech recognition or speaker identification without health, aging, disease, or biomarker relevance, when the study concerns non-human vocalization, or when the source is a commercial claim without usable methods or results.
+
+\subsection{Search Strategy}
+
+The search strategy uses separate query families rather than a single broad query. The core families cover explicit voice or speech biomarker terminology, clinical and analytical validation, aging and biological age, disease detection and monitoring, and dataset or foundation-model infrastructure. The initial formal pass was run on June 5, 2026, across PubMed, Europe PMC, Europe PMC preprints, OpenAlex, and arXiv API attempts. The current project repository preserves the exact search plan, counts, candidate exports, screening packets, and governance logs.
+
+\begin{table}[htbp]
+\centering
+\caption{Stage 1 formal search counts from open-index sources. Counts are search-result counts, not screened inclusion counts.}
+\begin{tabularx}{\textwidth}{lrrrrr}
+\toprule
+Query family & PubMed & Europe PMC & Europe PMC preprints & OpenAlex & arXiv \\
+\midrule
+Core terminology & 57 & 200 & 10 & 1,833 & failed: 429 \\
+Clinical validation & 41 & 5,024 & 30 & 12,723 & failed: 429 \\
+Aging / biological age & 28 & 90 & 1 & 1,291 & failed: timeout \\
+Disease detection / monitoring, broad & 6,580 & 248,465 & 3,021 & 749,203 & failed: 503 \\
+Datasets / foundation models & 278 & 1,074 & 22 & 5,926 & failed: 429 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+The first broad disease query was too noisy for direct screening, so a refined disease-domain query required voice, vocal, speech, or acoustic terms together with biomarker terminology and domain-specific condition terms. The refined disease search returned 352 PubMed records, 21,638 Europe PMC records, 195 Europe PMC preprint records, and 74,586 OpenAlex records. Because those counts remain large, the next formal search pass should split disease domains into neurological, psychiatric, cardiovascular, respiratory, and aging or metabolic strata before screening.
+
+\subsection{Screening and Extraction}
+
+The review uses staged screening. Title screening is followed by abstract screening, then full-text screening for population, task, feature or model, modeled outcome, comparator, validation type, external validation, and limitations. Automated labels are treated only as provisional aids. Final inclusion and exclusion decisions require manual confirmation or documented adjudication. The extraction schema separates source metadata, study design, population, language or country, recording task, recording device or setting, feature and model family, outcome, comparator, validation design, fairness or subgroup reporting, main performance or association metrics, and risk-of-bias concerns.
+
+\subsection{Validation Framework}
+
+The synthesis uses a validation framework adapted from digital biomarker and speech-based biomarker evaluation literature \citep{babrak2019traditional,robin2020evaluation}. Technical verification addresses whether recordings and computed features are reliable enough to analyze. Analytical validation addresses robustness to device, environment, task, language, demographics, repeated measurement, and processing choices. Clinical validation addresses whether the voice-derived measure corresponds to a meaningful diagnosis, severity scale, prognosis, biological-age construct, treatment response, or longitudinal change. Clinical utility is reserved for evidence that a measure improves decisions, monitoring, trial endpoints, or care pathways.
+
+\section{Preliminary Results}
+
+The current candidate set is not a final included-study set. The main formal search produced 1,478 raw candidate rows from top API returns and 1,246 deduplicated candidates. A refined disease-domain pass produced 390 deduplicated high-priority candidates. A first screening packet of 200 high-signal records was assembled from PubMed and Europe PMC preprint sources. Title screening labeled 105 records as include, 79 as maybe, and 16 as background. Abstract retrieval supplied 166 abstracts, after which preliminary abstract-level screening labeled 94 records as include, 50 as maybe, 20 as background, 2 as exclude, and 34 as not yet screened.
+
+Preliminary extraction aids from the 94 abstract-level includes suggest that the evidence base is concentrated in neurology and cognition, but spans several domains. Multi-label domain tags include 68 neurology or cognition records, 19 aging or frailty records, 18 psychiatry records, 16 respiratory records, 15 general framework records, 13 cardiovascular records, 3 metabolic records, and 4 records that remain unclear from title and abstract. These counts are not mutually exclusive and should not be interpreted as prevalence estimates for the field.
+
+\begin{table}[htbp]
+\centering
+\caption{Preliminary validation tags among abstract-level includes. Tags are provisional and may change after full-text extraction.}
+\begin{tabularx}{0.82\textwidth}{lr}
+\toprule
+Validation tag & Records \\
+\midrule
+Clinical validation & 33 \\
+Not clear from abstract & 37 \\
+Longitudinal & 12 \\
+Prospective & 10 \\
+Analytical validation & 8 \\
+External validation & 5 \\
+Retrospective & 2 \\
+\bottomrule
+\end{tabularx}
+\end{table}
+
+\section{Emerging Evidence Map}
+
+The early evidence map indicates six major synthesis strata. Aging and longitudinal voice change includes studies that estimate age, model biological aging, or evaluate within-speaker change over time. Neurological and cognitive biomarkers include Parkinson's disease, Alzheimer disease, dementia, cognitive impairment, ALS, motor neuron disease, and related speech or language changes. Mental health and affective-state work includes depression, anxiety, schizophrenia, psychosis, suicidality, and mood-state monitoring. Respiratory, laryngeal, cardiovascular, and cardiometabolic work includes cough, breathing, phonation, dyspnea, heart failure, pulmonary hypertension, diabetes, adiposity, sleep physiology, and cardiometabolic risk. Pediatric work cuts across diagnostic and developmental domains and uses voice, cry, cough, respiratory sounds, and speech-language tasks \citep{rogers2024pediatric}. Dataset and foundation-model infrastructure includes reusable cohorts, benchmark tasks, multilingual or longitudinal datasets, and representation-learning models such as clinical voice foundation models \citep{marmor2026voxknesset,elemento2026voicefm}.
+
+Across these strata, the central methodological problem is not whether voice contains health-relevant signal. The harder question is whether a given study has shown that the signal is specific to the intended construct rather than confounded by age, language, recording task, microphone, environment, disease severity, comorbidity, recruitment site, or data leakage. This review therefore treats validation maturity as a primary outcome, not as an optional quality note.
+
+\section{Governance and Reproducibility}
+
+The repository includes a governance layer inspired by reproducibility practices in AI-scientist benchmarks and biomedical tooling. Each automated search, screen, extraction, and post-processing run should be logged with tool name, endpoint, query family, exact query or input, filters, output file, status, error or limitation, and script hash or git SHA. Known-relevant seed papers are used for false-negative auditing: if a search strategy fails to retrieve a seed paper, the miss is logged as a query vocabulary miss, database coverage miss, API failure, language or indexing miss, or post-processing error. This layer is not a substitute for manual review. It is an audit mechanism that makes automated assistance inspectable.
+
+\section{Limitations of the Current Draft}
+
+This draft has several important limitations. First, it reports preliminary search and screening outputs rather than final inclusion decisions. Second, arXiv searches failed during the initial formal pass because of API errors or rate limits, so the technical speech-processing literature is undercovered. Third, Semantic Scholar was not included in the formal run because earlier attempts hit rate limits without an API key. Fourth, Chinese and other non-English databases have not yet been executed, so multilingual recall is incomplete. Fifth, Embase, Scopus, Web of Science, IEEE Xplore, ACM Digital Library, ACL Anthology, and ISCA Archive remain required for a stronger review. Sixth, preliminary extraction fields were generated from titles and abstracts and require full-text confirmation before they can support conclusions.
+
+\section{Next Steps}
+
+The next methodological step is a false-negative audit against a known-relevant seed set. The seed set should include aging and biological-age studies, neurological and psychiatric speech biomarker papers, cardiovascular and respiratory voice biomarker studies, pediatric scoping evidence, validation-framework papers, dataset and foundation-model papers, and non-English candidates where available. After the seed audit, disease-domain search families should be split and rerun, arXiv should be retried with narrower exact phrase queries, subscription and technical indexes should be searched where access permits, and multilingual searches should be conducted or explicitly logged as unavailable. Only after these steps should the manuscript move from living evidence map to submission-ready systematic review.
+
+\section{Data and Materials}
+
+The working repository contains the protocol, search strategy, formal search summaries, candidate exports, screening packets, extraction templates, preliminary extraction-ready includes, and governance logs. The most important files are \texttt{protocol.md}, \texttt{search-strategy.md}, \texttt{sources/formal-search-summary.md}, \texttt{screening/extraction-ready-summary.md}, and \texttt{governance/reproducibility-and-governance.md}. The repository should remain private until citation metadata, manual screening decisions, and any sensitive notes have been reviewed.
+
+\bibliographystyle{plainnat}
+\bibliography{references}
+
+\end{document}
