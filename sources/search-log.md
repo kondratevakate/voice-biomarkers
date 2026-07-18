@@ -24,6 +24,34 @@ Status: pilot search executed using K-Dense literature-review/paper-lookup fallb
 | 2026-06-05 | K-Dense pilot search | Candidate table created at `sources/pilot-candidates.csv`; summary at `sources/pilot-summary.md`. |
 | 2026-06-05 | K-Dense + ToolUniverse-informed formal search | Raw exports saved under `sources/raw/formal/`; deduplicated candidates in `sources/formal-candidates.csv`; counts in `sources/formal-search-counts.csv`; summary in `sources/formal-search-summary.md`. |
 | 2026-06-05 | Refined disease-domain search | Broad disease query was too noisy; refined query outputs saved in `sources/formal-candidates-disease-refined.csv` and `sources/formal-search-counts-disease-refined.csv`. |
+| 2026-06-17 | Known-relevant seed audit | 6 of 8 seeds retrieved in Stage 1 candidate/screening CSVs. VoxKnesset and Babrak et al. were missed and added to `sources/seed-supplement-candidates.csv`; details in `governance/false-negative-audit.csv`. |
+
+## Extended Database Status
+
+Status vocabulary: `pending`, `searched_exported`, `searched_no_export`, `supplementary_only`, `access_unavailable`, `api_failed`, `not_applicable`.
+
+| Database/source | Status | Date | Export/log file | Notes |
+|---|---|---|---|---|
+| PubMed | searched_exported | 2026-06-05 | `sources/raw/formal/pubmed_*` | Stage 1 formal search complete. |
+| Europe PMC | searched_exported | 2026-06-05 | `sources/raw/formal/europepmc_all_*` | Stage 1 formal search complete. |
+| Europe PMC preprints | searched_exported | 2026-06-05 | `sources/raw/formal/europepmc_preprints_*` | Used for medRxiv/bioRxiv discovery. |
+| OpenAlex | searched_exported | 2026-06-05 | `sources/raw/formal/openalex_*` | Stage 1 formal search complete; broad counts require careful interpretation. |
+| arXiv | api_failed | 2026-06-05 | `sources/formal-search-summary.md` | 429, timeout, and 503 errors; retry required. |
+| Semantic Scholar | api_failed | 2026-06-05 | `sources/search-log.md` | Pilot failed with 429; API key or slow retry required. |
+| Google Scholar-style broad web | supplementary_only | 2026-06-05 | `sources/search-log.md` | Useful for sensitivity only unless exportable. |
+| CNKI | pending | TBD | TBD | Must be searched or logged as access unavailable. |
+| Wanfang | pending | TBD | TBD | Must be searched or logged as access unavailable. |
+| VIP Chinese Journals | pending | TBD | TBD | Must be searched or logged as access unavailable. |
+| SinoMed | pending | TBD | TBD | Must be searched or logged as access unavailable. |
+| Embase | pending | TBD | TBD | Subscription access required. |
+| Scopus | pending | TBD | TBD | Subscription access required. |
+| Web of Science | pending | TBD | TBD | Subscription access required. |
+| IEEE Xplore | pending | TBD | TBD | Needed for speech-processing and signal-processing coverage. |
+| ACM Digital Library | pending | TBD | TBD | Needed for CS/ML coverage. |
+| ACL Anthology / ISCA Archive | pending | TBD | TBD | Needed for speech/language conference coverage. |
+| ClinicalTrials.gov | pending | TBD | TBD | Needed for clinical deployment/trial claims. |
+| WHO ICTRP | pending | TBD | TBD | Needed for trial-registry coverage. |
+| EU Clinical Trials Register | pending | TBD | TBD | Needed for trial-registry coverage. |
 
 ## Reproducibility Notes
 

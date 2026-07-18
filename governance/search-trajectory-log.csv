@@ -1,1 +1,3 @@
 trajectory_id,date,query_family,database,raw_export_file,parser_or_script,parsed_candidate_file,deduped_candidate_file,screening_packet,extraction_file,notes
+ST-20260617-001,2026-06-17,known_relevant_seed_exact_lookup,arXiv,sources/raw/seed_audit/arxiv_2603_01270.xml,manual seed audit,sources/seed-supplement-candidates.csv,sources/seed-supplement-candidates.csv,TBD,TBD,"Correction for missed seed_001 after Stage 1 arXiv API failures."
+ST-20260617-002,2026-06-17,known_relevant_seed_exact_lookup,Crossref,sources/raw/seed_audit/crossref_10.1159_000502000.json,manual seed audit,sources/seed-supplement-candidates.csv,sources/seed-supplement-candidates.csv,TBD,TBD,"Correction for missed seed_005 after query vocabulary miss."

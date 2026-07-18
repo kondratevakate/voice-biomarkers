@@ -18,8 +18,19 @@ This governance layer is adapted from local AI-scientist source critiques:
 - Paper2Agent: benchmark extraction, assessment reports, assumptions/limitations, human review outputs.
 - ToolUniverse: tool registry, tool protocol, async/tool composition, literature search coverage.
 - K-Dense scientific-agent-skills: permissions, contribution review, manual review; scans do not replace human review.
+- Abdalla Z. Mohamed review/method/data-paper pattern: systematic search with PRISMA/PROSPERO and adapted QUADAS-2; technical benchmarking with numerical pipeline metrics; dataset publication with BIDS/XNAT/MRIQC/open-source toolchain and OSF access.
 
 ## Governance Rules
+
+### 0. Mohamed-Style Reproducibility Controls
+
+The review adopts three controls as a benchmark for methodological rigor:
+
+1. Systematic-review controls: PECO/PICOS framing, PRISMA reporting, prospective registration when possible, database-specific search strings, exclusion-reason tables, and risk-of-bias assessment.
+2. Technical-benchmark controls: validation claims must be grounded in explicit metrics, not prose. For voice-biomarker papers this includes subject-level separation, external validation, calibration, repeated-measure reliability, robustness to recording task/device/environment, subgroup performance, and language/population transportability.
+3. Data-infrastructure controls: data availability, code availability, preprocessing specification, feature definitions, model availability, quality-control procedures, and standard formats must be extracted and scored.
+
+These controls do not replace clinical judgment. They define the minimum audit trail needed before a voice-biomarker claim can be treated as reproducible.
 
 ### 1. Known-Relevant Seed Set
 
@@ -145,6 +156,36 @@ For subscription/API-dependent sources, record:
 ### 10. Safety Boundary
 
 No uncontrolled autonomous web browsing should be treated as formal search. Web search may be supplementary only if exact queries, dates, result pages, and inclusion decisions are logged.
+
+### 11. Reproducibility Maturity Score
+
+Each included empirical or dataset/model paper should receive a reproducibility maturity level:
+
+| Level | Label | Minimum meaning |
+|---|---|---|
+| R0 | Not reproducible from report | Key data, code, preprocessing, or split details are missing. |
+| R1 | Methods described only | Recording task, features/model, and validation design are described, but no data/code access. |
+| R2 | Partially reproducible | Some data, code, preprocessing details, or supplementary material are available, but at least one key element is missing. |
+| R3 | Independently rerunnable | Data or controlled access, code/toolchain, preprocessing steps, split design, and metrics are sufficient for independent rerun. |
+| R4 | Externally validated and reusable | R3 plus external validation or independent cohort/language/site validation and clear reuse documentation. |
+
+Assign `R_pending` when full-text review is incomplete. Do not infer high reproducibility from journal prestige or model performance.
+
+### 12. Risk-of-Bias Domains for Voice Biomarker ML
+
+Assess these domains during full-text extraction:
+
+- participant selection and target-population match
+- reference standard and clinical-label validity
+- recording task, microphone/device, acoustic environment, and language/accent confounding
+- leakage across speakers, sessions, sites, or preprocessing normalization
+- split design and independence of test data
+- model selection, hyperparameter tuning, calibration, and multiple testing
+- external validation, longitudinal validation, and subgroup/fairness analysis
+- missing data, excluded recordings, and quality-control rules
+- conflict of interest, commercial involvement, and product claims
+
+Code each domain as `low_concern`, `some_concern`, `high_concern`, or `not_reported`.
 
 ## Required Files
 

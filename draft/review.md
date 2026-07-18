@@ -15,6 +15,8 @@ Voice and speech are low-cost, repeatable signals that may encode information ab
 
 See `../protocol.md`.
 
+Full-text extraction will additionally use `../screening/full-text-extraction-template.csv` and `../governance/reproducibility-risk-of-bias-rubric.md` to code reproducibility maturity, leakage risk, split design, external validation, transportability, data/code availability, and voice-biomarker ML risk-of-bias domains.
+
 ## Results
 
 ### Search and Selection
@@ -64,4 +66,3 @@ TBD.
 ## References
 
 TBD. Verify all DOIs before finalizing.
-

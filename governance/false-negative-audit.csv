@@ -1,1 +1,9 @@
 audit_id,date,seed_id_or_discovered_record,expected_in_search,found,found_where,miss_type,action_taken,notes
+FNA-001,2026-06-17,seed_001,arXiv; OpenAlex; Semantic Scholar,no,,api_failure_arxiv_stage1; top-return_coverage_miss_openalex,Added manual seed supplement candidate and saved exact arXiv export,"VoxKnesset was not retrieved by Stage 1 candidate CSVs; arXiv exact-id lookup retrieved it."
+FNA-002,2026-06-17,seed_002,Europe PMC preprints; medRxiv; Crossref; OpenAlex,yes,sources/formal-candidates.csv OpenAlex aging_biological_age,none,None,"Sound of Aging retrieved in Stage 1 formal candidates."
+FNA-003,2026-06-17,seed_003,PubMed; Europe PMC; OpenAlex,yes,sources/formal-candidates.csv and screening packet,none,None,"Evaluation of Speech-Based Digital Biomarkers retrieved."
+FNA-004,2026-06-17,seed_004,PubMed; Europe PMC; OpenAlex,yes,sources/formal-candidates.csv and screening packet,none,None,"Voice for Health retrieved."
+FNA-005,2026-06-17,seed_005,PubMed; Europe PMC; OpenAlex,no,,query_vocabulary_miss_general_digital_biomarker_framework,Added manual seed supplement candidate and saved exact Crossref DOI export,"Traditional and Digital Biomarkers is not voice-specific; current voice/speech query families did not retrieve it."
+FNA-006,2026-06-17,seed_006,PubMed; Europe PMC; OpenAlex,yes,sources/formal-candidates.csv; sources/formal-candidates-disease-refined.csv; extraction-ready includes,none,None,"Pediatric scoping review retrieved and already extraction-ready."
+FNA-007,2026-06-17,seed_007,Europe PMC preprints; medRxiv; Crossref; OpenAlex,yes,sources/formal-candidates.csv EuropePMC-PPR disease_monitoring,none,None,"Clinical voice foundation model seed retrieved."
+FNA-008,2026-06-17,seed_008,Europe PMC preprints; medRxiv; Crossref; OpenAlex,yes,sources/formal-candidates.csv; sources/formal-candidates-disease-refined.csv; screening packet,none,None,"VOCAL definitions seed retrieved."

@@ -1,0 +1,3 @@
+source,query_family,id,year,title,venue,doi,url,cited_by_count,supplement_reason,raw_export_file
+arXiv,known_relevant_seed_exact_lookup,arXiv:2603.01270v2,2026,VoxKnesset: A Large-Scale Longitudinal Hebrew Speech Dataset for Aging Speaker Modeling,arXiv,10.48550/arXiv.2603.01270,https://arxiv.org/abs/2603.01270v2,,Stage 1 arXiv API failed and seed was not present in candidate CSVs,sources/raw/seed_audit/arxiv_2603_01270.xml
+Crossref,known_relevant_seed_exact_lookup,DOI:10.1159/000502000,2019,Traditional and Digital Biomarkers: Two Worlds Apart?,Digital Biomarkers,10.1159/000502000,https://doi.org/10.1159/000502000,,General digital biomarker framework missed by voice/speech-specific query families,sources/raw/seed_audit/crossref_10.1159_000502000.json

@@ -3,7 +3,7 @@
 Date: 2026-06-05
 Status: draft protocol
 
-Method basis: K-Dense `literature-review`, `paper-lookup`, and `citation-management` skills.
+Method basis: K-Dense `literature-review`, `paper-lookup`, and `citation-management` skills; AI-scientist governance critique; Abdalla Z. Mohamed-style reproducibility pattern from systematic review, technical benchmarking, and data-descriptor papers.
 
 ## Review Type
 
@@ -12,6 +12,16 @@ Initial design: systematic mapping review with PRISMA-style search reporting.
 Escalation path: convert to a systematic review if pilot search yields a manageable and clinically coherent subset.
 
 Working confirmation: this is an academic systematic review of the field, not a venue-driven review.
+
+## Methodological Benchmark
+
+This review will follow a staged systematic mapping-review design, using the methodological pattern observed in Abdalla Z. Mohamed's work as an operational benchmark:
+
+1. Systematic review discipline: PECO/PICOS framing, PRISMA reporting, prospective registration when possible, full database-specific search strings, explicit exclusion reasons, and risk-of-bias assessment.
+2. Technical benchmarking discipline: validation claims must be tied to numerical evidence, such as subject-level split, external validation, repeated-measure reliability, calibration, subgroup performance, or robustness to recording protocol.
+3. Data-infrastructure discipline: data availability, code availability, preprocessing documentation, quality-control metrics, and standardization of input data must be extracted as first-class outcomes.
+
+The review will not treat reproducibility as a narrative limitation only. Reproducibility is an extraction and synthesis dimension.
 
 ## Research Questions
 
@@ -25,6 +35,8 @@ RQ4. What level of validation is reported: technical verification, analytical va
 
 RQ5. Which model/feature families dominate: hand-crafted acoustic features, linguistic features, self-supervised speech embeddings, multimodal models, clinical foundation models, or hybrid approaches?
 
+RQ6. How reproducible and transportable are the reported biomarker claims with respect to data access, code access, preprocessing specification, recording protocol, subject-level separation, external validation, language/population generalization, and clinical reference standard?
+
 ## Population, Index, Comparator, Outcome
 
 | Element | Definition |
@@ -33,6 +45,7 @@ RQ5. Which model/feature families dominate: hand-crafted acoustic features, ling
 | Index signal | Voice, speech, vocalization, cough, breathing, or speech-language features extracted from audio. |
 | Comparator | Clinical labels, chronological age, biological/omic/physiologic clocks, standard clinical scores, longitudinal follow-up, healthy controls, or external cohorts. |
 | Outcomes | Biomarker performance, association with health/aging measures, generalization, validation evidence, bias/fairness, clinical utility. |
+| Reproducibility outcome | Data/code availability, recording-protocol completeness, preprocessing transparency, split design, external validation, subgroup reporting, and auditability of the evidence claim. |
 
 ## Inclusion Criteria
 
@@ -123,7 +136,7 @@ K-Dense workflow checkpoints:
 
 ## Extraction Fields
 
-Use `screening/extraction-template.csv`.
+Use `screening/extraction-template.csv` for first-pass title/abstract extraction and `screening/full-text-extraction-template.csv` for full-text evidence extraction and risk-of-bias/reproducibility scoring.
 
 Core dimensions:
 
@@ -145,6 +158,16 @@ Primary validation lens:
 - Analytical validation: is the measure robust to recording device, noise, task, language, demographic variation, and repeated measurement?
 - Clinical validation: is the measure associated with a meaningful clinical or aging outcome?
 - Clinical utility: does it improve decisions, monitoring, triage, or trial endpoints?
+
+Risk-of-bias and reproducibility lens:
+
+- Selection bias: recruitment, inclusion/exclusion, target-population match, case/control comparability.
+- Measurement bias: recording task, microphone/device, environment, speech language, rater/scorer blinding where relevant.
+- Leakage and modeling bias: subject-level split, session-level split, speaker overlap, site overlap, feature normalization leakage, hyperparameter tuning leakage.
+- Reference-standard bias: diagnostic criteria, clinical label source, biological-age comparator, severity scale, adjudication method.
+- Confounding: age, sex/gender, language, accent, disease severity, comorbidity, medication, site, device, socioeconomic or cultural factors.
+- Statistical validity: sample size, calibration, uncertainty intervals, multiple testing, cross-validation design, external validation.
+- Reproducibility: data access, code access, preprocessing description, model weights or feature definitions, random seeds where applicable, and availability of supplementary search/extraction material.
 
 Risk concerns to code:
 

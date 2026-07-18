@@ -36,3 +36,25 @@ Candidate columns:
 
 Purpose: show progression from technical verification to analytical validation, clinical validation, clinical utility, and deployment monitoring.
 
+## Figure 4: Reproducibility and Risk-of-Bias Matrix
+
+Purpose: show, by clinical domain or task family, the proportion of included studies reaching R0-R4 reproducibility maturity and the dominant high-concern risk-of-bias domains.
+
+Candidate rows:
+
+- Aging / biological age
+- Neurology / cognition
+- Mental health
+- Respiratory / cardiopulmonary
+- Pediatric health
+- Dataset/foundation-model infrastructure
+
+Candidate columns:
+
+- Data available
+- Code/model available
+- Recording protocol complete
+- Subject-level split reported
+- External validation
+- Subgroup/language/site generalization
+- Overall evidence concern

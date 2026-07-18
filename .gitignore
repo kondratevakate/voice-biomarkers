@@ -23,3 +23,6 @@ Thumbs.db
 # Local temporary exports
 tmp/
 *.tmp
+
+# Local full-text cache
+sources/raw/full_text_calibration/pmc_*.html

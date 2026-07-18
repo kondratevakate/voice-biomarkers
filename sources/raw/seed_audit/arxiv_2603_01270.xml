@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/rl8/Aj0QUPCezxfwAiSMOv79/q8</id>
+  <title>arXiv Query: search_query=&amp;id_list=2603.01270&amp;start=0&amp;max_results=10</title>
+  <updated>2026-06-17T13:50:47Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=&amp;start=0&amp;max_results=10&amp;id_list=2603.01270" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>10</opensearch:itemsPerPage>
+  <opensearch:totalResults>1</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2603.01270v2</id>
+    <title>VoxKnesset: A Large-Scale Longitudinal Hebrew Speech Dataset for Aging Speaker Modeling</title>
+    <updated>2026-03-05T11:31:52Z</updated>
+    <link href="https://arxiv.org/abs/2603.01270v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.01270v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech processing systems face a fundamental challenge: the human voice changes with age, yet few datasets support rigorous longitudinal evaluation. We introduce VoxKnesset, an open-access dataset of ~2,300 hours of Hebrew parliamentary speech spanning 2009-2025, comprising 393 speakers with recording spans of up to 15 years. Each segment includes aligned transcripts and verified demographic metadata from official parliamentary records. We benchmark modern speech embeddings (WavLM-Large, ECAPA-TDNN, Wav2Vec2-XLSR-1B) on age prediction and speaker verification under longitudinal conditions. Speaker verification EER rises from 2.15\% to 4.58\% over 15 years for the strongest model, and cross-sectionally trained age regressors fail to capture within-speaker aging, while longitudinally trained models recover a meaningful temporal signal. We publicly release the dataset and pipeline to support aging-robust speech systems and Hebrew speech processing.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-01T20:57:15Z</published>
+    <arxiv:comment>4 pages, 5 figures, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Yanir Marmor</name>
+    </author>
+    <author>
+      <name>Arad Zulti</name>
+    </author>
+    <author>
+      <name>David Krongauz</name>
+    </author>
+    <author>
+      <name>Adam Gabet</name>
+    </author>
+    <author>
+      <name>Yoad Snapir</name>
+    </author>
+    <author>
+      <name>Yair Lifshitz</name>
+    </author>
+    <author>
+      <name>Eran Segal</name>
+    </author>
+  </entry>
+</feed>

@@ -2,12 +2,31 @@
 
 Date: 2026-06-05
 Status: protocol component, pre-formal-search
-Method basis: K-Dense `literature-review`, `paper-lookup`, `citation-management`
+Method basis: K-Dense `literature-review`, `paper-lookup`, `citation-management`; Mohamed-style reproducibility pattern; AI-scientist governance critique.
 Tooling basis: see `tooling-assessment.md`; prefer ToolUniverse literature tools for execution when available.
 
 ## Review Aim
 
 Systematically map evidence for voice-derived biomarkers across populations, elicitation tasks, modeled outcomes, and validation maturity.
+
+## Formal Review Conditions
+
+The formal search must be reproducible enough for another reviewer to re-run it from the repository. A search pass is formal only if all of the following are recorded:
+
+- database or index name
+- exact query string in database-specific syntax
+- date and timezone of search
+- filters, language constraints, document-type constraints, and date window
+- raw result count before deduplication
+- raw export filename
+- parsed candidate filename
+- deduplication rule
+- operator/tool and script hash or git SHA
+- known-relevant seed retrieval result
+
+Broad web search, Google Scholar-style discovery, and AI-agent browsing can be used for sensitivity checks and citation chasing, but they are not formal PRISMA-count sources unless result pages, queries, dates, and candidate exports are preserved.
+
+Formal screening decisions cannot be delegated to an agent. Automated labels can only pre-sort records; final title/abstract/full-text decisions require manual confirmation or documented adjudication.
 
 ## Core Search Concepts
 
@@ -41,6 +60,20 @@ Minimum acceptable formal search set:
 - OpenAlex or Semantic Scholar
 
 Crossref and Unpaywall are downstream verification tools, not primary discovery databases.
+
+## Database Execution Status Categories
+
+Every database must be assigned one of these statuses in the final Methods and in `sources/search-log.md`:
+
+- `pending`: required source not yet searched or resolved.
+- `searched_exported`: searched directly and raw export saved.
+- `searched_no_export`: searched directly but no export function was available; screenshots or result-page logs required.
+- `supplementary_only`: used for sensitivity search or citation chasing, not PRISMA counts.
+- `access_unavailable`: not searched because institutional/subscription access was unavailable.
+- `api_failed`: attempted but blocked by API error, rate limit, or timeout.
+- `not_applicable`: excluded with explicit methodological reason.
+
+Databases that are important for field coverage, especially Embase, Scopus, Web of Science, IEEE Xplore, ACM Digital Library, ACL Anthology, ISCA Archive, CNKI, Wanfang, VIP, SinoMed, ClinicalTrials.gov, WHO ICTRP, and EU Clinical Trials Register, cannot disappear from reporting. They must be searched or logged as unavailable/failed.
 
 ## Eligibility Conditions
 
@@ -351,7 +384,31 @@ Required additions:
 Chinese query seed:
 
 ```text
-(语音 OR 声音 OR 声学 OR 言语) AND (生物标志物 OR 生物标记物 OR 数字生物标志物)
+(语音 OR 声音 OR 声学 OR 言语 OR 说话 OR 发声)
+AND
+(生物标志物 OR 生物标记物 OR 数字生物标志物 OR 数字标志物)
+```
+
+Additional Chinese sensitivity queries:
+
+```text
+(语音 OR 声音 OR 声学 OR 言语)
+AND
+(疾病 OR 诊断 OR 筛查 OR 监测 OR 预测)
+AND
+(生物标志物 OR 生物标记物 OR 数字生物标志物)
+```
+
+```text
+(语音 OR 声音 OR 言语)
+AND
+(帕金森 OR 阿尔茨海默 OR 痴呆 OR 认知障碍 OR 抑郁 OR 焦虑 OR 精神分裂症 OR 心力衰竭 OR 哮喘 OR 慢阻肺)
+```
+
+```text
+(语音 OR 声音 OR 声学)
+AND
+(衰老 OR 老龄 OR 老年人 OR 生物年龄 OR 衰弱)
 ```
 
 Non-English records should be retained as `translation_needed` when title/abstract suggests relevance. Do not silently exclude them for language.

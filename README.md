@@ -24,6 +24,7 @@ The working research question is:
 | Evaluation of Speech-Based Digital Biomarkers | review/recommendations | https://pmc.ncbi.nlm.nih.gov/articles/PMC7670321/ | authoritative | confirmed | Candidate validation framework: verification, analytical validation, clinical validation. |
 | Literature-review skill | local method | K-Dense literature-review skill | authoritative | confirmed | Review workflow: search, screening, extraction, quality assessment, synthesis, citation verification. |
 | Task-design skill | local execution method | D:/projects/knowledge-vault/07_skills/task-design.md | authoritative | confirmed | Applied to task card in TASKS.md. |
+| Abdalla Z. Mohamed method pattern | author-style note | `sources/author-style-abdalla-mohamed.md` | methodological analogy | confirmed | Used to harden reproducibility, benchmarking, and data-infrastructure requirements. |
 
 ## 3. Uncertainty
 
@@ -54,9 +55,14 @@ The topic crosses clinical domains, age modeling, speech processing, datasets, a
 - `sources/seed-papers.md` - verified metadata and extraction notes for the two seed papers.
 - `sources/search-log.md` - reproducible search log to fill during database searches.
 - `screening/extraction-template.csv` - structured extraction schema.
+- `screening/full-text-extraction-template.csv` - full-text extraction schema for reproducibility maturity and risk-of-bias scoring.
+- `screening/full-text-calibration-packet-20.csv` - first 20 records selected for full-text extraction calibration.
+- `screening/full-text-calibration-availability.csv` - PubMed/Europe PMC DOI/PMCID availability for the calibration packet.
+- `screening/full-text-calibration-term-precheck.csv` - automated PMC term-presence precheck for validation, split/leakage, recording protocol, demographics, metrics, data/code availability, and limitations.
 - `screening/decisions.md` - inclusion/exclusion decisions and reasons.
 - `draft/review.md` - manuscript skeleton.
 - `figures/figure-plan.md` - planned PRISMA and concept figures.
+- `governance/reproducibility-risk-of-bias-rubric.md` - rubric for R0-R4 reproducibility levels and ML/diagnostic risk-of-bias domains.
 
 ## Overleaf / GitHub Sync
 

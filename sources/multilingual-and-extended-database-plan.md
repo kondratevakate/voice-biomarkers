@@ -44,7 +44,7 @@ Chinese search concepts:
 | voice/speech/acoustic | 语音, 声音, 声学, 言语, 说话, 发声 |
 | biomarker | 生物标志物, 生物标记物, 数字生物标志物, 数字标志物 |
 | health/clinical | 医疗, 健康, 临床, 疾病, 诊断, 筛查, 监测, 预测 |
-| aging | 衰老, 老龄, 老年人, 生物年龄 |
+| aging | 衰老, 老龄, 老年人, 生物年龄, 衰弱 |
 | neurological | 帕金森, 阿尔茨海默, 痴呆, 认知障碍 |
 | psychiatry | 抑郁, 焦虑, 精神分裂症 |
 | respiratory/cardiovascular | 哮喘, 慢阻肺, 呼吸, 咳嗽, 心力衰竭, 冠心病 |
@@ -52,19 +52,29 @@ Chinese search concepts:
 Candidate Chinese queries:
 
 ```text
-(语音 OR 声音 OR 声学 OR 言语) AND (生物标志物 OR 生物标记物 OR 数字生物标志物)
+(语音 OR 声音 OR 声学 OR 言语 OR 说话 OR 发声)
+AND
+(生物标志物 OR 生物标记物 OR 数字生物标志物 OR 数字标志物)
 ```
 
 ```text
-(语音 OR 声音 OR 声学 OR 言语) AND (疾病 OR 诊断 OR 筛查 OR 监测 OR 预测) AND (生物标志物 OR 生物标记物)
+(语音 OR 声音 OR 声学 OR 言语)
+AND
+(疾病 OR 诊断 OR 筛查 OR 监测 OR 预测)
+AND
+(生物标志物 OR 生物标记物 OR 数字生物标志物)
 ```
 
 ```text
-(语音 OR 声音 OR 言语) AND (帕金森 OR 阿尔茨海默 OR 痴呆 OR 抑郁 OR 心力衰竭 OR 哮喘 OR 慢阻肺)
+(语音 OR 声音 OR 言语)
+AND
+(帕金森 OR 阿尔茨海默 OR 痴呆 OR 认知障碍 OR 抑郁 OR 心力衰竭 OR 哮喘 OR 慢阻肺)
 ```
 
 ```text
-(语音 OR 声音 OR 声学) AND (衰老 OR 老年人 OR 生物年龄 OR 衰弱)
+(语音 OR 声音 OR 声学)
+AND
+(衰老 OR 老龄 OR 老年人 OR 生物年龄 OR 衰弱)
 ```
 
 English-in-Chinese-index queries:
