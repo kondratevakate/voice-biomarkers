@@ -10,6 +10,7 @@
 \usepackage{array}
 \usepackage{tabularx}
 \usepackage{xcolor}
+\usepackage{url}
 \usepackage{hyperref}
 \usepackage[numbers,sort&compress]{natbib}
 
@@ -20,7 +21,7 @@
   urlcolor=blue
 }
 
-\title{Voice-Derived Biomarkers Across Populations, Tasks, and Clinical Domains: A Living Systematic Mapping Review}
+\title{Voice-Derived Biomarkers Across Populations, Tasks, and Clinical Domains: A Systematic Mapping Review}
 \author{Working manuscript}
 \date{Draft compiled for GitHub/Overleaf sync: June 16, 2026}
 
@@ -52,6 +53,8 @@ The primary objective is to systematically map empirical and methodological evid
 
 \subsection{Eligibility Criteria}
 
+Eligibility is framed as Population, Concept, and Context (PCC), the structure PRISMA-ScR and JBI guidance specify for mapping and scoping syntheses \citep{tricco2018prismascr,peters2020jbiscoping}. PICO and PECO presume a comparator and an effect estimate, which this review does not require: it characterizes what the field has studied rather than whether one intervention outperforms another. The \emph{population} is humans of any age, language, geography, health status, or clinical population. The \emph{concept} is an audio-derived voice, speech, cough, breathing, or speech-language feature used as a health, disease, risk, monitoring, or aging marker, together with the maturity of that use, meaning the validation level attained and the reproducibility of the claim. The \emph{context} is any recording or deployment setting, elicitation task, device, acoustic environment, or language, clinical and non-clinical alike. Comparator and outcome are not eligibility criteria here, but both remain mandatory extraction fields.
+
 Eligible records include human studies or human voice, speech, cough, breathing, or speech-language datasets in which an audio-derived feature, representation, model, or score is used as a biomarker, digital biomarker, clinical marker, screening marker, monitoring marker, risk marker, or aging marker. Empirical observational studies, diagnostic or prognostic modeling studies, longitudinal monitoring studies, validation studies, dataset or benchmark papers, systematic or scoping reviews, and clinically relevant preprints are eligible when they report extractable information about population, task, feature or model family, outcome, comparator, association, benchmark, or validation result.
 
 Records are excluded when voice or speech is only an interface channel rather than the analyzed signal, when the work is purely automatic speech recognition or speaker identification without health, aging, disease, or biomarker relevance, when the study concerns non-human vocalization, or when the source is a commercial claim without usable methods or results.
@@ -80,7 +83,7 @@ The first broad disease query was too noisy for direct screening, so a refined d
 
 \subsection{Methodological Benchmark}
 
-The protocol treats reproducibility as an outcome rather than an afterthought. The operational model is informed by three methodological patterns in Abdalla Z. Mohamed's work: systematic-review discipline with PECO, PRISMA, prospective registration, explicit exclusion reasons, and adapted QUADAS-2 risk-of-bias assessment \citep{mohamed2023objective}; technical benchmarking in which competing acquisition and preprocessing pipelines are compared using quantitative metrics such as signal-to-noise, registration error, overlap statistics, and multiple-comparison-corrected tests \citep{mohamed2024functional}; and data-infrastructure reporting that documents acquisition, data management, preprocessing, quality control, standard formats, public toolchains, and controlled or open data access \citep{mohamed2026aspire}. For this review, these patterns translate into mandatory extraction of recording protocol, split design, leakage control, external validation, subgroup generalization, data availability, code availability, preprocessing transparency, and reproducibility maturity.
+The protocol treats reproducibility as an outcome rather than an afterthought. The operational model is informed by three methodological patterns in Abdalla Z. Mohamed's work: systematic-review discipline with a structured eligibility framework, PRISMA-family reporting, prospective registration, explicit exclusion reasons, and adapted QUADAS-2 risk-of-bias assessment \citep{mohamed2023objective}; technical benchmarking in which competing acquisition and preprocessing pipelines are compared using quantitative metrics such as signal-to-noise, registration error, overlap statistics, and multiple-comparison-corrected tests \citep{mohamed2024functional}; and data-infrastructure reporting that documents acquisition, data management, preprocessing, quality control, standard formats, public toolchains, and controlled or open data access \citep{mohamed2026aspire}. For this review, these patterns translate into mandatory extraction of recording protocol, split design, leakage control, external validation, subgroup generalization, data availability, code availability, preprocessing transparency, and reproducibility maturity.
 
 \subsection{Screening and Extraction}
 
@@ -93,6 +96,10 @@ The synthesis uses a validation framework adapted from digital biomarker and spe
 \subsection{Risk-of-Bias and Reproducibility Assessment}
 
 Full-text extraction will assess risk of bias across participant selection, reference-standard validity, recording protocol, leakage control, validation design, statistical reporting, confounding control, subgroup generalization, missing-data and quality-control handling, reproducibility assets, and conflicts of interest. Each domain is coded as low concern, some concern, high concern, not reported, or not applicable. Reproducibility maturity is coded from R0 to R4: R0 indicates that the analysis cannot be reproduced from the report; R1 indicates methods described without reusable materials; R2 indicates partial reproducibility through at least one available asset; R3 indicates an independently rerunnable analysis with data or controlled-access data, code or toolchain, preprocessing steps, split design, and metrics; and R4 indicates R3 plus external validation or independent cohort, language, site, or device replication. These ratings will be synthesized alongside validation type, not hidden in the limitations section.
+
+\subsection{Governance and Audit Trail}
+
+The repository includes a governance layer inspired by reproducibility practices in AI-scientist benchmarks and biomedical tooling. Each automated search, screen, extraction, and post-processing run should be logged with tool name, endpoint, query family, exact query or input, filters, output file, status, error or limitation, and script hash or git SHA. Known-relevant seed papers are used for false-negative auditing: if a search strategy fails to retrieve a seed paper, the miss is logged as a query vocabulary miss, database coverage miss, API failure, language or indexing miss, or post-processing error. This layer is not a substitute for manual review. It is an audit mechanism that makes automated assistance inspectable.
 
 \section{Preliminary Results}
 
@@ -124,21 +131,48 @@ The early evidence map indicates six major synthesis strata. Aging and longitudi
 
 Across these strata, the central methodological problem is not whether voice contains health-relevant signal. The harder question is whether a given study has shown that the signal is specific to the intended construct rather than confounded by age, language, recording task, microphone, environment, disease severity, comorbidity, recruitment site, or data leakage. This review therefore treats validation maturity as a primary outcome, not as an optional quality note.
 
-\section{Governance and Reproducibility}
-
-The repository includes a governance layer inspired by reproducibility practices in AI-scientist benchmarks and biomedical tooling. Each automated search, screen, extraction, and post-processing run should be logged with tool name, endpoint, query family, exact query or input, filters, output file, status, error or limitation, and script hash or git SHA. Known-relevant seed papers are used for false-negative auditing: if a search strategy fails to retrieve a seed paper, the miss is logged as a query vocabulary miss, database coverage miss, API failure, language or indexing miss, or post-processing error. This layer is not a substitute for manual review. It is an audit mechanism that makes automated assistance inspectable.
-
-\section{Limitations of the Current Draft}
+\section{Limitations and Next Steps}
 
 This draft has several important limitations. First, it reports preliminary search and screening outputs rather than final inclusion decisions. Second, arXiv searches failed during the initial formal pass because of API errors or rate limits, so the technical speech-processing literature is undercovered. Third, Semantic Scholar was not included in the formal run because earlier attempts hit rate limits without an API key. Fourth, Chinese and other non-English databases have not yet been executed, so multilingual recall is incomplete. Fifth, Embase, Scopus, Web of Science, IEEE Xplore, ACM Digital Library, ACL Anthology, and ISCA Archive remain required for a stronger review. Sixth, preliminary extraction fields were generated from titles and abstracts and require full-text confirmation before they can support conclusions.
 
-\section{Next Steps}
 
-The next methodological step is a false-negative audit against a known-relevant seed set. The seed set should include aging and biological-age studies, neurological and psychiatric speech biomarker papers, cardiovascular and respiratory voice biomarker studies, pediatric scoping evidence, validation-framework papers, dataset and foundation-model papers, and non-English candidates where available. After the seed audit, disease-domain search families should be split and rerun, arXiv should be retried with narrower exact phrase queries, subscription and technical indexes should be searched where access permits, and multilingual searches should be conducted or explicitly logged as unavailable. Only after these steps should the manuscript move from living evidence map to submission-ready systematic review.
+The next methodological step is a false-negative audit against a known-relevant seed set. The seed set should include aging and biological-age studies, neurological and psychiatric speech biomarker papers, cardiovascular and respiratory voice biomarker studies, pediatric scoping evidence, validation-framework papers, dataset and foundation-model papers, and non-English candidates where available. After the seed audit, disease-domain search families should be split and rerun, arXiv should be retried with narrower exact phrase queries, subscription and technical indexes should be searched where access permits, and multilingual searches should be conducted or explicitly logged as unavailable. Only after these steps should the manuscript move from a preliminary evidence map to a submission-ready review.
 
-\section{Data and Materials}
+\section{Data, Code, and Materials}
 
-The working repository contains the protocol, search strategy, formal search summaries, candidate exports, screening packets, extraction templates, preliminary extraction-ready includes, seed-audit supplements, and governance logs. The most important files are \texttt{protocol.md}, \texttt{search-strategy.md}, \texttt{sources/formal-search-summary.md}, \texttt{sources/seed-supplement-candidates.csv}, \texttt{screening/extraction-ready-summary.md}, \texttt{screening/full-text-extraction-template.csv}, \texttt{screening/full-text-calibration-packet-20.csv}, \texttt{governance/reproducibility-and-governance.md}, and \texttt{governance/reproducibility-risk-of-bias-rubric.md}. The repository should remain private until citation metadata, manual screening decisions, and any sensitive notes have been reviewed.
+The working repository holds the protocol, search strategy, search code, raw API exports, screening packets, extraction templates, and governance logs. Table~\ref{tab:materials} lists the files a reader needs to audit or reproduce the review.
+
+Raw API responses are preserved under \path{sources/raw/} for every search reported here. Cached publisher full texts are not redistributed; their SHA-256 digests and source URLs are recorded in \path{sources/raw/full_text_calibration/MANIFEST.sha256.csv} so that a reader can verify any retrieved copy against ours. The repository should remain private until citation metadata, manual screening decisions, and any sensitive notes have been reviewed.
+
+\begin{longtable}{@{}p{0.44\textwidth}p{0.50\textwidth}@{}}
+\caption{Repository files supporting audit and reproduction of this review.}
+\label{tab:materials} \\
+\toprule
+\textbf{File} & \textbf{Contents} \\
+\midrule
+\endfirsthead
+\toprule
+\textbf{File} & \textbf{Contents} \\
+\midrule
+\endhead
+\bottomrule
+\endlastfoot
+\path{protocol.md} & Review type, reporting standards, research questions, eligibility criteria, and the escalation path to a PRISMA 2020 review. \\
+\path{search-strategy.md} & Database rationale, query families, and per-database search status. \\
+\path{scripts/run\_formal\_search.py} & Formal multi-database search with deterministic date sorting and pagination. \\
+\path{scripts/test\_search\_api\_contract.py} & Live contract test asserting that each source honours its sort key and pagination token. \\
+\path{sources/search-log.md} & Per-database search status, superseded counts, and reproducibility notes. \\
+\path{sources/formal-search-summary.md} & Stage 1 result counts and coverage summary. \\
+\path{sources/seed-supplement-candidates.csv} & Records retrieved outside the formal search, each with a raw export. \\
+\path{screening/extraction-ready-summary.md} & Preliminary title and abstract extraction state. \\
+\path{screening/full-text-extraction-template.csv} & Full-text extraction schema, including reproducibility fields. \\
+\path{screening/full-text-calibration-packet-20.csv} & The twenty full texts used to calibrate extraction and risk-of-bias coding. \\
+\path{governance/reproducibility-and-governance.md} & Governance rules: seed set, false-negative audit, tool-run logging, and AI-assisted screening control. \\
+\path{governance/reproducibility-risk-of-bias-rubric.md} & Risk-of-bias domains and the R0--R4 reproducibility maturity scale. \\
+\path{governance/tool-run-log.csv} & One row per automated run: tool, endpoint, exact input, filters, outputs, and status. \\
+\path{governance/protocol-deviation-log.csv} & Every change made after the formal search began, with reason and impact. \\
+\path{governance/false-negative-audit.csv} & Seed and discovered records the search failed to retrieve, with miss classification. \\
+\end{longtable}
 
 \bibliographystyle{plainnat}
 \bibliography{references}

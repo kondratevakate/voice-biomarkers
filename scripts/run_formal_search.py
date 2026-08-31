@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import re
 import time
 import urllib.parse
@@ -32,6 +33,14 @@ SORT_PUBMED = "pub_date"
 SORT_EUROPE_PMC = "P_PDATE_D desc"
 SORT_OPENALEX = "publication_date:desc"
 SORT_ARXIV = "submittedDate"
+FETCH_RETRIES = 4
+# Identify the client to every API. OpenAlex and Crossref grant higher rate
+# limits to requests carrying a contact address ("polite pool"), but an address
+# is personal data sent to a third party, so it is opt-in via the environment
+# and never hard-coded.
+USER_AGENT = "voice-biomarkers-review/1.0 (systematic mapping review; +https://github.com/kondratevakate/voice-biomarkers)"
+POLITE_MAILTO = os.environ.get("OPENALEX_MAILTO", "").strip()
+FETCH_BACKOFF_SECONDS = 5
 
 
 @dataclass(frozen=True)
@@ -40,6 +49,7 @@ class QueryFamily:
     label: str
     plain: str
     pubmed: str
+    arxiv: str
 
 
 FAMILIES = [
@@ -52,6 +62,7 @@ FAMILIES = [
         '("voice biomarker"[Title/Abstract] OR "vocal biomarker"[Title/Abstract] OR '
         '"speech biomarker"[Title/Abstract] OR "speech-based digital biomarker"[Title/Abstract] OR '
         '"voice-derived digital biomarker"[Title/Abstract] OR "speech-derived digital biomarker"[Title/Abstract])',
+        'abs:"voice biomarker" OR abs:"vocal biomarker" OR abs:"speech biomarker" OR abs:"speech-based digital biomarker" OR abs:"voice-derived digital biomarker" OR abs:"speech-derived digital biomarker"',
     ),
     QueryFamily(
         "clinical_validation",
@@ -64,6 +75,7 @@ FAMILIES = [
         '"digital phenotype"[Title/Abstract]) AND ("clinical validation"[Title/Abstract] OR '
         '"analytical validation"[Title/Abstract] OR "external validation"[Title/Abstract] OR '
         '"longitudinal validation"[Title/Abstract] OR "clinical utility"[Title/Abstract])',
+        '(abs:"digital biomarker" OR abs:"digital phenotype" OR abs:"voice biomarker" OR abs:"speech biomarker" OR abs:"acoustic biomarker") AND (abs:"clinical validation" OR abs:"analytical validation" OR abs:"external validation" OR abs:"clinical utility")',
     ),
     QueryFamily(
         "aging_biological_age",
@@ -73,6 +85,7 @@ FAMILIES = [
         '("voice age"[Title/Abstract] OR "vocal aging"[Title/Abstract] OR '
         '"speech aging"[Title/Abstract] OR "voice-based biological clock"[Title/Abstract] OR '
         '"voice-predicted age"[Title/Abstract] OR "vocal age acceleration"[Title/Abstract])',
+        'abs:"vocal aging" OR abs:"voice aging" OR abs:"speech aging" OR abs:"voice-based biological clock" OR abs:"speaker age estimation" OR abs:"age estimation from speech" OR abs:"age estimation from voice"',
     ),
     QueryFamily(
         "disease_monitoring",
@@ -91,6 +104,7 @@ FAMILIES = [
         '"heart failure"[Title/Abstract] OR asthma[Title/Abstract] OR COPD[Title/Abstract] OR '
         'respiratory[Title/Abstract] OR ALS[Title/Abstract] OR "motor neuron disease"[Title/Abstract] OR '
         'frailty[Title/Abstract] OR cardiometabolic[Title/Abstract])',
+        '(abs:"voice biomarker" OR abs:"speech biomarker" OR abs:"acoustic biomarker" OR abs:"pathological speech" OR abs:"speech-based detection") AND (abs:Parkinson OR abs:Alzheimer OR abs:dementia OR abs:depression OR abs:"heart failure" OR abs:COPD OR abs:ALS OR abs:"cognitive impairment")',
     ),
     QueryFamily(
         "datasets_foundation_models",
@@ -100,20 +114,40 @@ FAMILIES = [
         '("clinical voice"[Title/Abstract] OR "health voice"[Title/Abstract] OR '
         '"medical speech"[Title/Abstract] OR "speech health"[Title/Abstract] OR '
         '"voice foundation model"[Title/Abstract] OR "speech foundation model"[Title/Abstract])',
+        'abs:"speech foundation model" OR abs:"voice foundation model" OR abs:"clinical speech" OR abs:"medical speech" OR abs:"pathological speech" OR abs:"health speech dataset"',
     ),
 ]
 
 
+def _fetch(url: str, errors: str) -> str:
+    """Fetch with bounded retries.
+
+    A single transient DNS or rate-limit failure used to abort a whole
+    query family, which silently changed what the search covered. Retry a
+    fixed number of times with linear backoff, then let the caller record
+    the failure in the counts CSV.
+    """
+    last: Exception | None = None
+    for attempt in range(FETCH_RETRIES):
+        try:
+            request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(request, timeout=60) as response:
+                return response.read().decode("utf-8", errors=errors)
+        except Exception as exc:  # noqa: BLE001 - retried, then reported
+            last = exc
+            if attempt < FETCH_RETRIES - 1:
+                time.sleep(FETCH_BACKOFF_SECONDS * (attempt + 1))
+    raise last  # type: ignore[misc]
+
+
 def fetch_json(url: str, out: Path) -> dict[str, Any]:
-    with urllib.request.urlopen(url, timeout=60) as response:
-        text = response.read().decode("utf-8")
+    text = _fetch(url, "strict")
     out.write_text(text, encoding="utf-8")
     return json.loads(text)
 
 
 def fetch_text(url: str, out: Path) -> str:
-    with urllib.request.urlopen(url, timeout=60) as response:
-        text = response.read().decode("utf-8", errors="replace")
+    text = _fetch(url, "replace")
     out.write_text(text, encoding="utf-8")
     return text
 
@@ -230,6 +264,8 @@ def run_openalex(family: QueryFamily, candidates: list[dict[str, Any]]) -> tuple
             "sort": SORT_OPENALEX,
             "cursor": cursor,
         }
+        if POLITE_MAILTO:
+            params["mailto"] = POLITE_MAILTO
         url = "https://api.openalex.org/works?" + urllib.parse.urlencode(params)
         data = fetch_json(url, RAW / f"openalex_{family.key}_p{page:02d}.json")
         meta = data.get("meta", {})
@@ -260,7 +296,7 @@ def run_openalex(family: QueryFamily, candidates: list[dict[str, Any]]) -> tuple
 
 
 def run_arxiv(family: QueryFamily, candidates: list[dict[str, Any]]) -> tuple[int, bool]:
-    query = f'all:"{family.label}" OR all:"{family.plain[:80]}"'
+    query = family.arxiv
     ns = {"atom": "http://www.w3.org/2005/Atom"}
     retrieved = 0
     total = 0
