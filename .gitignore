@@ -24,5 +24,11 @@ Thumbs.db
 tmp/
 *.tmp
 
-# Local full-text cache
+# Local full-text cache. Publisher HTML is not redistributed; provenance is
+# preserved by SHA-256 in MANIFEST.sha256.csv, which must stay tracked.
 sources/raw/full_text_calibration/pmc_*.html
+!sources/raw/full_text_calibration/MANIFEST.sha256.csv
+
+# Python bytecode
+__pycache__/
+*.pyc

@@ -7,11 +7,21 @@ Method basis: K-Dense `literature-review`, `paper-lookup`, and `citation-managem
 
 ## Review Type
 
-Initial design: systematic mapping review with PRISMA-style search reporting.
+Confirmed design: **systematic mapping review of the field**. This is the review type of record; earlier drafts also described the work as a "systematic review" and as a "living" review, and both descriptions are superseded here.
 
-Escalation path: convert to a systematic review if pilot search yields a manageable and clinically coherent subset.
+Reporting standards:
 
-Working confirmation: this is an academic systematic review of the field, not a venue-driven review.
+- **PRISMA-ScR** (Tricco et al., 2018, doi:10.7326/M18-0850) is the reporting guideline of record. PRISMA 2020 governs systematic reviews of effectiveness; mapping and scoping syntheses are reported against the ScR extension.
+- **PRISMA-S** (Rethlefsen et al., 2021, doi:10.1186/s13643-020-01542-z) governs search reporting: exact strings, filters, dates, counts, raw exports, and re-runnable queries for every source.
+- **JBI scoping-review guidance** (Peters et al., 2020, doi:10.11124/JBIES-20-00167) governs conduct.
+
+Registration: PROSPERO does not accept scoping or mapping reviews. Registration, when made, goes to the Open Science Framework.
+
+Not a living review: the current design has no committed re-search cadence. The word "living" must not be used unless an update interval and re-run trigger are specified in this protocol.
+
+Escalation path: convert to a systematic review reported against PRISMA 2020 if full-text screening yields a manageable and clinically coherent subset.
+
+Critical appraisal: optional under PRISMA-ScR. This review performs it anyway, because validation maturity and reproducibility are mapped dimensions (RQ4, RQ6), not eligibility filters.
 
 ## Methodological Benchmark
 

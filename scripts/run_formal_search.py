@@ -22,6 +22,17 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "sources" / "raw" / "formal"
 RAW.mkdir(parents=True, exist_ok=True)
 
+# Reproducibility controls (PRISMA-S: searches must be re-runnable).
+# Relevance ranking is not stable over time and a single page silently truncates
+# large result sets, so every source is sorted on a deterministic key and
+# paginated. Truncation at MAX_RECORDS is reported, never silent.
+PAGE_SIZE = 100
+MAX_RECORDS = 1000
+SORT_PUBMED = "pub_date"
+SORT_EUROPE_PMC = "P_PDATE_D desc"
+SORT_OPENALEX = "publication_date:desc"
+SORT_ARXIV = "submittedDate"
+
 
 @dataclass(frozen=True)
 class QueryFamily:
@@ -119,119 +130,176 @@ def add_candidate(candidates: list[dict[str, Any]], **row: Any) -> None:
     candidates.append(row)
 
 
-def run_pubmed(family: QueryFamily, candidates: list[dict[str, Any]]) -> int:
+def run_pubmed(family: QueryFamily, candidates: list[dict[str, Any]]) -> tuple[int, bool]:
     term = f"({family.pubmed}) AND (Humans[MeSH Terms] OR human[Title/Abstract] OR clinical[Title/Abstract] OR health[Title/Abstract] OR disease[Title/Abstract] OR aging[Title/Abstract])"
-    params = {
-        "db": "pubmed",
-        "retmode": "json",
-        "retmax": "100",
-        "sort": "relevance",
-        "term": term,
-    }
-    url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?" + urllib.parse.urlencode(params)
-    esearch = fetch_json(url, RAW / f"pubmed_{family.key}_esearch.json")
-    ids = esearch.get("esearchresult", {}).get("idlist", [])
-    count = int(esearch.get("esearchresult", {}).get("count", 0))
-    if not ids:
-        return count
-    params = {"db": "pubmed", "retmode": "json", "id": ",".join(ids)}
-    summary_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?" + urllib.parse.urlencode(params)
-    summary = fetch_json(summary_url, RAW / f"pubmed_{family.key}_esummary.json")
-    for uid in summary.get("result", {}).get("uids", []):
-        item = summary["result"][uid]
-        add_candidate(
-            candidates,
-            source="PubMed",
-            query_family=family.key,
-            id=f"PMID:{uid}",
-            year=(item.get("pubdate") or "")[:4],
-            title=item.get("title", ""),
-            venue=item.get("fulljournalname", ""),
-            doi="",
-            url=f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
-        )
-    return count
+    ids: list[str] = []
+    count = 0
+    for page, retstart in enumerate(range(0, MAX_RECORDS, PAGE_SIZE)):
+        params = {
+            "db": "pubmed",
+            "retmode": "json",
+            "retmax": str(PAGE_SIZE),
+            "retstart": str(retstart),
+            "sort": SORT_PUBMED,
+            "term": term,
+        }
+        url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?" + urllib.parse.urlencode(params)
+        esearch = fetch_json(url, RAW / f"pubmed_{family.key}_esearch_p{page:02d}.json")
+        result = esearch.get("esearchresult", {})
+        count = int(result.get("count", 0))
+        page_ids = result.get("idlist", [])
+        ids.extend(page_ids)
+        if len(page_ids) < PAGE_SIZE or len(ids) >= count:
+            break
+        time.sleep(0.4)
+    for chunk, start in enumerate(range(0, len(ids), PAGE_SIZE)):
+        batch = ids[start : start + PAGE_SIZE]
+        params = {"db": "pubmed", "retmode": "json", "id": ",".join(batch)}
+        summary_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?" + urllib.parse.urlencode(params)
+        summary = fetch_json(summary_url, RAW / f"pubmed_{family.key}_esummary_p{chunk:02d}.json")
+        for uid in summary.get("result", {}).get("uids", []):
+            item = summary["result"][uid]
+            add_candidate(
+                candidates,
+                source="PubMed",
+                query_family=family.key,
+                id=f"PMID:{uid}",
+                year=(item.get("pubdate") or "")[:4],
+                title=item.get("title", ""),
+                venue=item.get("fulljournalname", ""),
+                doi="",
+                url=f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
+            )
+        time.sleep(0.4)
+    return count, count > len(ids)
 
 
-def run_europe_pmc(family: QueryFamily, candidates: list[dict[str, Any]], preprints_only: bool) -> int:
+def run_europe_pmc(
+    family: QueryFamily, candidates: list[dict[str, Any]], preprints_only: bool
+) -> tuple[int, bool]:
     query = f"({family.plain})"
     if preprints_only:
         query = f"({query}) AND SRC:PPR"
-    params = {"query": query, "format": "json", "pageSize": "100", "resultType": "core"}
     tag = "preprints" if preprints_only else "all"
-    url = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?" + urllib.parse.urlencode(params)
-    data = fetch_json(url, RAW / f"europepmc_{tag}_{family.key}.json")
-    count = int(data.get("hitCount", 0))
-    for item in data.get("resultList", {}).get("result", []):
-        add_candidate(
-            candidates,
-            source="EuropePMC-PPR" if preprints_only else "EuropePMC",
-            query_family=family.key,
-            id=item.get("id", ""),
-            year=item.get("pubYear", ""),
-            title=item.get("title", ""),
-            venue=item.get("journalTitle", item.get("source", "")),
-            doi=item.get("doi", ""),
-            url=item.get("doiUrl") or item.get("fullTextUrlList", {}).get("fullTextUrl", [{}])[0].get("url", ""),
-        )
-    return count
+    cursor = "*"
+    retrieved = 0
+    count = 0
+    for page in range(MAX_RECORDS // PAGE_SIZE):
+        params = {
+            "query": query,
+            "format": "json",
+            "pageSize": str(PAGE_SIZE),
+            "resultType": "core",
+            "sort": SORT_EUROPE_PMC,
+            "cursorMark": cursor,
+        }
+        url = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?" + urllib.parse.urlencode(params)
+        data = fetch_json(url, RAW / f"europepmc_{tag}_{family.key}_p{page:02d}.json")
+        count = int(data.get("hitCount", 0))
+        results = data.get("resultList", {}).get("result", [])
+        for item in results:
+            add_candidate(
+                candidates,
+                source="EuropePMC-PPR" if preprints_only else "EuropePMC",
+                query_family=family.key,
+                id=item.get("id", ""),
+                year=item.get("pubYear", ""),
+                title=item.get("title", ""),
+                venue=item.get("journalTitle", item.get("source", "")),
+                doi=item.get("doi", ""),
+                url=item.get("doiUrl")
+                or item.get("fullTextUrlList", {}).get("fullTextUrl", [{}])[0].get("url", ""),
+            )
+        retrieved += len(results)
+        next_cursor = data.get("nextCursorMark")
+        if not results or not next_cursor or next_cursor == cursor or retrieved >= count:
+            break
+        cursor = next_cursor
+        time.sleep(0.4)
+    return count, count > retrieved
 
 
-def run_openalex(family: QueryFamily, candidates: list[dict[str, Any]]) -> int:
-    params = {"search": family.plain, "per-page": "100", "sort": "relevance_score:desc"}
-    url = "https://api.openalex.org/works?" + urllib.parse.urlencode(params)
-    data = fetch_json(url, RAW / f"openalex_{family.key}.json")
-    count = int(data.get("meta", {}).get("count", 0))
-    for item in data.get("results", []):
-        primary = item.get("primary_location") or {}
-        source = primary.get("source") or {}
-        add_candidate(
-            candidates,
-            source="OpenAlex",
-            query_family=family.key,
-            id=item.get("id", ""),
-            year=item.get("publication_year", ""),
-            title=item.get("display_name", ""),
-            venue=source.get("display_name", ""),
-            doi=item.get("doi", ""),
-            url=item.get("doi") or item.get("id", ""),
-            cited_by_count=item.get("cited_by_count", ""),
-        )
-    return count
+def run_openalex(family: QueryFamily, candidates: list[dict[str, Any]]) -> tuple[int, bool]:
+    cursor = "*"
+    retrieved = 0
+    count = 0
+    for page in range(MAX_RECORDS // PAGE_SIZE):
+        params = {
+            "search": family.plain,
+            "per-page": str(PAGE_SIZE),
+            "sort": SORT_OPENALEX,
+            "cursor": cursor,
+        }
+        url = "https://api.openalex.org/works?" + urllib.parse.urlencode(params)
+        data = fetch_json(url, RAW / f"openalex_{family.key}_p{page:02d}.json")
+        meta = data.get("meta", {})
+        count = int(meta.get("count", 0))
+        results = data.get("results", [])
+        for item in results:
+            primary = item.get("primary_location") or {}
+            source = primary.get("source") or {}
+            add_candidate(
+                candidates,
+                source="OpenAlex",
+                query_family=family.key,
+                id=item.get("id", ""),
+                year=item.get("publication_year", ""),
+                title=item.get("display_name", ""),
+                venue=source.get("display_name", ""),
+                doi=item.get("doi", ""),
+                url=item.get("doi") or item.get("id", ""),
+                cited_by_count=item.get("cited_by_count", ""),
+            )
+        retrieved += len(results)
+        next_cursor = meta.get("next_cursor")
+        if not results or not next_cursor or retrieved >= count:
+            break
+        cursor = next_cursor
+        time.sleep(0.4)
+    return count, count > retrieved
 
 
-def run_arxiv(family: QueryFamily, candidates: list[dict[str, Any]]) -> int:
+def run_arxiv(family: QueryFamily, candidates: list[dict[str, Any]]) -> tuple[int, bool]:
     query = f'all:"{family.label}" OR all:"{family.plain[:80]}"'
-    params = {
-        "search_query": query,
-        "start": "0",
-        "max_results": "50",
-        "sortBy": "relevance",
-        "sortOrder": "descending",
-    }
-    url = "https://export.arxiv.org/api/query?" + urllib.parse.urlencode(params)
-    text = fetch_text(url, RAW / f"arxiv_{family.key}.xml")
-    if text.lstrip().startswith("<!DOCTYPE html>") or "<feed" not in text:
-        return 0
     ns = {"atom": "http://www.w3.org/2005/Atom"}
-    root = ET.fromstring(text)
-    entries = root.findall("atom:entry", ns)
-    for entry in entries:
-        title = " ".join((entry.findtext("atom:title", "", ns) or "").split())
-        published = entry.findtext("atom:published", "", ns)
-        link = entry.findtext("atom:id", "", ns)
-        add_candidate(
-            candidates,
-            source="arXiv",
-            query_family=family.key,
-            id=link.rsplit("/", 1)[-1],
-            year=published[:4],
-            title=title,
-            venue="arXiv",
-            doi="",
-            url=link,
-        )
-    return len(entries)
+    retrieved = 0
+    total = 0
+    for page, start in enumerate(range(0, MAX_RECORDS, PAGE_SIZE)):
+        params = {
+            "search_query": query,
+            "start": str(start),
+            "max_results": str(PAGE_SIZE),
+            "sortBy": SORT_ARXIV,
+            "sortOrder": "descending",
+        }
+        url = "https://export.arxiv.org/api/query?" + urllib.parse.urlencode(params)
+        text = fetch_text(url, RAW / f"arxiv_{family.key}_p{page:02d}.xml")
+        if text.lstrip().startswith("<!DOCTYPE html>") or "<feed" not in text:
+            return retrieved, False
+        root = ET.fromstring(text)
+        total_text = root.findtext("{http://a9.com/-/spec/opensearch/1.1/}totalResults", "0")
+        total = int(total_text or 0)
+        entries = root.findall("atom:entry", ns)
+        for entry in entries:
+            title = " ".join((entry.findtext("atom:title", "", ns) or "").split())
+            published = entry.findtext("atom:published", "", ns)
+            link = entry.findtext("atom:id", "", ns)
+            add_candidate(
+                candidates,
+                source="arXiv",
+                query_family=family.key,
+                id=link.rsplit("/", 1)[-1],
+                year=published[:4],
+                title=title,
+                venue="arXiv",
+                doi="",
+                url=link,
+            )
+        retrieved += len(entries)
+        if len(entries) < PAGE_SIZE or retrieved >= total:
+            break
+        time.sleep(3.2)
+    return total or retrieved, bool(total) and total > retrieved
 
 
 def dedupe(candidates: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -278,9 +346,12 @@ def main() -> None:
             ("arXiv", lambda: run_arxiv(family, candidates)),
         ]:
             try:
-                count = fn()
-                counts.append({"source": source, "query_family": family.key, "count": count, "status": "ok"})
-                print(f"  {source}: {count}")
+                count, truncated = fn()
+                status = "ok_truncated_at_max_records" if truncated else "ok"
+                counts.append(
+                    {"source": source, "query_family": family.key, "count": count, "status": status}
+                )
+                print(f"  {source}: {count}{' (truncated)' if truncated else ''}")
             except Exception as exc:  # noqa: BLE001
                 counts.append(
                     {
