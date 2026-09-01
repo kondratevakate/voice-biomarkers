@@ -22,14 +22,14 @@
 
 \title{Voice-Derived Biomarkers Across Populations, Tasks, and Clinical Domains: A Systematic Mapping Review}
 \author{E. Kondrateva}
-\date{September 2026}
+\date{Search date: 1 September 2026}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-Voice, speech, and other vocal signals are increasingly studied as scalable digital biomarkers for aging, neurological and psychiatric conditions, respiratory and laryngeal disorders, cardiovascular risk, pediatric health, and longitudinal monitoring. The evidence base is fragmented across clinical domains, speech tasks, languages, data collection settings, and model families, making it difficult to judge which claims are clinically mature and which remain exploratory. This systematic mapping review is designed to characterize the field by population, elicitation task, modeled outcome, feature or model family, validation maturity, and generalization evidence. It is reported against PRISMA-ScR, the PRISMA extension for scoping and mapping reviews \citep{tricco2018prismascr}, with search reporting following PRISMA-S \citep{rethlefsen2021prismas}. Across 94 screened records, external validation is reported in five, and outside neurology in none: psychiatry, respiratory medicine, cardiology, aging, and metabolic phenotypes contribute no study in which a voice measure was shown to hold on an independent cohort, site, language, or device. Elicitation task, the variable that most strongly determines acoustic output, is not recoverable from any abstract. The field's rapid growth has not been matched by evidence that its measures transfer.
+Voice, speech, and other vocal signals are increasingly studied as scalable digital biomarkers for aging, neurological and psychiatric conditions, respiratory and laryngeal disorders, cardiovascular risk, pediatric health, and longitudinal monitoring. The evidence base is fragmented across clinical domains, speech tasks, languages, data collection settings, and model families, making it difficult to judge which claims are clinically mature and which remain exploratory. This systematic mapping review is designed to characterize the field by population, elicitation task, modeled outcome, feature or model family, validation maturity, and generalization evidence. It is reported against PRISMA-ScR, the PRISMA extension for scoping and mapping reviews \citep{tricco2018prismascr}, with search reporting following PRISMA-S \citep{rethlefsen2021prismas}. Across 94 screened records, external validation is reported in five, and outside neurology in none: psychiatry, respiratory medicine, cardiology, aging, and metabolic phenotypes contribute no study in which a voice measure was shown to hold on an independent cohort, site, language, or device. Elicitation task, the variable that most strongly determines acoustic output, is not recoverable from any abstract. The field's rapid growth has not been matched by evidence that its measures transfer. This review is a reproducible snapshot of the literature as of 1 September 2026: every query string, filter, result count, and raw API response is preserved so that the same search can be re-executed and the same corpus recovered. It is not a living review and carries no commitment to update.
 \end{abstract}
 
 \section{Introduction}
@@ -185,6 +185,109 @@ The early evidence map indicates six major synthesis strata. Aging and longitudi
 
 Across these strata, the central methodological problem is not whether voice contains health-relevant signal. The harder question is whether a given study has shown that the signal is specific to the intended construct rather than confounded by age, language, recording task, microphone, environment, disease severity, comorbidity, recruitment site, or data leakage. This review therefore treats validation maturity as a primary outcome, not as an optional quality note.
 
+\section{Deployed Triage Systems: The Evidence That Sits Outside This Map}
+
+The most operationally mature use of speech in acute care is not a laboratory
+biomarker but real-time triage of emergency and helpline calls, and it is
+evaluated to a standard the rest of this literature does not reach. It also sits
+at, or beyond, the boundary of this review's eligibility criteria, which is a
+finding in its own right.
+
+\subsection{Out-of-Hospital Cardiac Arrest}
+
+Emergency medical dispatchers miss roughly a quarter of out-of-hospital cardiac
+arrests (OHCA). A machine-learning system deployed at Copenhagen Emergency
+Medical Services was evaluated retrospectively in Stockholm, where it recognised
+36\% of OHCA calls within the first minute against 25\% for dispatchers, with a
+median recognition time of 72 versus 94 seconds \citep{byrsell2021ml}.
+
+That system was then tested in a double-masked randomised clinical trial across
+169,049 emergency calls (NCT04219306). The algorithm alone outperformed
+unassisted dispatchers on sensitivity, 85.0\% versus 77.5\%, but at lower
+specificity (97.4\% versus 99.6\%) and markedly lower positive predictive value
+(17.8\% versus 55.8\%). Crucially, \emph{alerting the dispatcher did not
+significantly improve recognition}: 93.1\% with assistance against 90.5\%
+without, $P = .15$ \citep{blomberg2021rct}.
+
+This is the most consequential result available anywhere in the voice and speech
+health literature, and it is a negative one. Superior algorithmic sensitivity did
+not translate into better human decisions. It separates analytical validation
+from clinical utility more sharply than any laboratory study in this map, and it
+implies that a voice biomarker's performance metric is a poor predictor of its
+effect once placed in a workflow. Any claim in the strata mapped above that
+frames a discrimination statistic as evidence of clinical usefulness should be
+read against this trial.
+
+The subsequent error analysis is equally instructive. Among OHCA the model
+missed, the caller reported the patient breathing normally in 28\% of cases and
+a language barrier was present in 23\%; among false positives, 13\% were calls
+about patients with irreversible signs of death \citep{blomberg2023wrong}.
+Language barriers as a named failure mode in a deployed system is the concrete
+form of the generalization concern that the rest of this review can only raise
+in the abstract.
+
+\subsection{Beyond Cardiac Arrest, and Beyond Danish}
+
+The same dispatch pipeline has been modelled for stroke recognition in the
+Capital Region of Denmark, projecting improved detection and an approximately
+5\% increase in thrombolysis among patients calling within the treatment window;
+that analysis also found detection to be significantly worse for women, for
+calls arriving through the medical helpline, and at weekends
+\citep{scholz2022stroke}. Subgroup disparity is therefore documented in
+deployment, not merely anticipated.
+
+Transfer across languages is uneven. A deep language model trained on 158,973
+emergency call transcripts from three South Korean metropolitan regions reached
+AUROC 0.937 for 60-second OHCA identification, and attribution analysis
+indicated that conversational flow rather than individual keywords drove
+recognition \citep{choi2026dylm}. In contrast, a Brazilian implementation on
+Portuguese calls reported a word error rate of 42.1\% for transcription and
+73.9\% classification accuracy, and noted that the applicability of open-source
+models trained on English is unclear for other languages
+\citep{costa2023emergency}. The capability is not portable by default.
+
+\subsection{Non-Emergency Call Settings}
+
+Outside acute care, voice screening has been evaluated at scale in primary care
+and occupational health. A commercial voice biomarker tool assessed against
+PHQ-9 in 14,898 adults detected signals consistent with moderate to severe
+depression from as little as 25 seconds of free speech, at 71.3\% sensitivity
+and 73.5\% specificity \citep{mazur2025voice}; the design is cross-sectional
+with a self-reported reference standard and social-media recruitment, which
+places it well below the evidentiary level of the dispatch trial. A prospective
+cohort of 62 call-centre operators found that voice and emotion features
+recorded during routine work predicted depressive symptoms one month later
+(AUC 0.783) \citep{tani2025callcentre}.
+
+\subsection{Why This Evidence Falls Outside the Map}
+
+Most deployed emergency-call systems analyse the \emph{content} of the
+conversation through automatic speech recognition and natural language
+understanding, not the acoustic properties of the voice. This review's
+exclusion criteria remove work that is purely speech recognition or language
+processing without a biomarker construct, so the systems with the strongest
+evidence in this domain, including the only randomised trial, are excluded or
+borderline under criteria written to keep the review focused on voice as a
+signal.
+
+The consequence deserves stating plainly: \textbf{the eligibility criteria
+select against precisely the evidence the review reports as missing.} Where the
+94 screened records offer five instances of external validation, the
+excluded triage literature offers a randomised trial, a multi-site replication
+in another language, and a published error analysis. A map of voice as a health
+signal that omits this material describes the field's laboratory activity rather
+than its clinical practice.
+
+Two responses are defensible and the choice should be explicit rather than
+implicit. The concept may be widened to admit speech-based clinical decision
+support regardless of whether the informative feature is acoustic or lexical,
+which enlarges the review but aligns it with how the technology is actually
+deployed. Alternatively the narrow scope may be retained, in which case the
+review must state that it deliberately excludes the most clinically validated
+application of speech in medicine. This snapshot takes the second position and
+reports the excluded literature here as context; the first is recorded as the
+principal candidate for a scope revision.
+
 \section{Discussion}
 
 The field's open question is not whether voice carries health-relevant signal.
@@ -202,6 +305,8 @@ appraisal is not the reported AUROC but the design that produced it, and
 specifically whether speakers, sessions, and sites were separated before
 training. Where a study does not state its elicitation task, that appraisal
 cannot be made at all.
+
+The dispatch trial sharpens this. It is the one place in this literature where a speech system was tested against a clinical outcome under randomisation, and the result was that a measurably better classifier did not produce measurably better care \citep{blomberg2021rct}. Discrimination statistics reported in the strata mapped here should be treated as a necessary but plainly insufficient condition for clinical usefulness.
 
 It also has a consequence for translation. Under V3, a fit-for-purpose
 determination requires verification of the measurement chain, analytical
@@ -231,6 +336,8 @@ Validation tags were assigned from abstracts, and the 39\% of records whose
 validation type could not be determined may resolve in either direction under
 full-text extraction; the 5\% external-validation figure is correspondingly an
 estimate rather than a count.
+
+This review is a snapshot with a stated search date and no update commitment. A field growing at the rate observed here will diverge from it; the remedy offered is reproducibility rather than currency, in that the preserved queries and raw exports allow the search to be re-executed at a later date and the delta measured.
 
 Coverage is incomplete in ways that bear on the conclusions. Subscription
 databases, Chinese-language databases, and trial registries have not been

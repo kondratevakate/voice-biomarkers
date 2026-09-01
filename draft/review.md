@@ -1,7 +1,7 @@
 # Voice-Derived Biomarkers Across Populations and Tasks: A Systematic Mapping Review
 
-Status: preliminary synthesis of abstract-level includes
-Date: 2026-09-01
+Status: reproducible snapshot
+Search date: 2026-09-01
 
 ## Abstract
 
@@ -9,16 +9,24 @@ Voice and speech are increasingly proposed as scalable digital biomarkers across
 neurological, psychiatric, respiratory, cardiovascular, and aging phenotypes. We
 map this evidence base by population, elicitation task, modeled outcome, and
 validation maturity, reporting against PRISMA-ScR with PRISMA-S search
-reporting. This document reports a preliminary synthesis of 94 abstract-level
-includes drawn from an open-index search; it is not the final included-study
-set. Two findings are already stable enough to state. First, the evidence base
+reporting. This is a reproducible snapshot of 94 records screened from an
+open-index search with a stated search date, not a final included-study set.
+Two findings are stable enough to state. First, the evidence base
 is concentrated: 72% of includes concern neurology and cognition, while
 metabolic (3%) and pediatric (2%) work is nearly absent. Second, and more
 consequentially, external validation is reported in 5 of 94 records (5%), and
 all but three of those sit in neurology; psychiatry, respiratory,
 cardiovascular, aging, and metabolic work contribute **zero** externally
 validated records. A field that is 81% published since 2022 has not yet
-demonstrated that its measures transfer.
+demonstrated that its measures transfer. The one exception lies outside this
+map: real-time triage of emergency calls, where a randomised trial of 169,049
+calls found that a model with higher sensitivity than human dispatchers did not
+improve their recognition of cardiac arrest.
+
+This review is a reproducible snapshot of the literature as of 1 September 2026.
+Every query string, filter, result count, and raw API response is preserved so
+that the search can be re-executed and the corpus recovered. It is not a living
+review and carries no commitment to update.
 
 ## Introduction
 
@@ -109,7 +117,7 @@ External validation by domain:
 | Metabolic | 0 | 3 |
 
 This is the review's central finding. Ninety-five percent of records carry the
-preliminary flag `no_external_validation_mentioned`. Whole clinical domains —
+flag `no_external_validation_mentioned`. Whole clinical domains —
 psychiatry, respiratory medicine, cardiology, aging — contribute no record in
 which a voice measure was shown to hold on an independent cohort, site,
 language, or device. In V3 terms, the field has produced a large volume of
@@ -193,6 +201,72 @@ or languages.
 Treated as an outcome rather than a theme; see the validation maturity section.
 Equity and subgroup reporting could not be assessed from abstracts and is
 deferred to full-text extraction.
+
+## Deployed Triage Systems: Evidence Outside This Map
+
+The most operationally mature use of speech in acute care is real-time triage of
+emergency calls, and it is evaluated to a standard the rest of this literature
+does not reach.
+
+A machine-learning system at Copenhagen EMS recognised 36% of out-of-hospital
+cardiac arrest calls within the first minute against 25% for dispatchers, with
+median recognition at 72 versus 94 seconds (Byrsell et al., 2021,
+doi:10.1016/j.resuscitation.2021.02.041). It was then tested in a double-masked
+randomised trial across 169,049 calls (NCT04219306). The algorithm alone beat
+unassisted dispatchers on sensitivity, 85.0% versus 77.5%, at lower specificity
+(97.4% versus 99.6%) and much lower positive predictive value (17.8% versus
+55.8%). **Alerting the dispatcher did not significantly improve recognition:
+93.1% versus 90.5%, P = .15** (Blomberg et al., 2021,
+doi:10.1001/jamanetworkopen.2020.32320).
+
+This is the most consequential result available anywhere in this literature, and
+it is negative. A measurably better classifier did not produce measurably better
+care. It separates analytical validation from clinical utility more sharply than
+any laboratory study in this map.
+
+The error analysis is equally instructive: among missed cases the caller
+reported normal breathing in 28% and a language barrier was present in 23%;
+among false positives, 13% concerned patients with irreversible signs of death
+(Blomberg et al., 2023, doi:10.1016/j.resuscitation.2023.109689). Language
+barriers as a named failure mode in a deployed system is the concrete form of
+the generalization concern the rest of this review can only raise abstractly.
+
+Extension to stroke in the same system projected roughly 5% more thrombolysis
+among patients calling within the treatment window, and found detection
+significantly worse for women, for medical-helpline calls, and at weekends
+(Scholz et al., 2022, doi:10.1186/s13049-022-01020-6). Transfer across languages
+is uneven: a Korean model on 158,973 transcripts reached AUROC 0.937 (Choi et
+al., 2026, doi:10.1038/s41746-026-02498-5), while a Brazilian Portuguese
+implementation reported 42.1% word error rate and 73.9% classification accuracy
+(Costa et al., 2023, doi:10.1371/journal.pdig.0000406).
+
+Outside acute care, a commercial voice tool detected signals consistent with
+moderate to severe depression in 14,898 adults at 71.3% sensitivity and 73.5%
+specificity against PHQ-9 (Mazur et al., 2025, doi:10.1370/afm.240091), and a
+prospective cohort of 62 call-centre operators predicted depressive symptoms one
+month ahead at AUC 0.783 (Tani et al., 2025, doi:10.1093/joccuh/uiaf060).
+
+### Why this sits outside the map
+
+Most deployed emergency-call systems analyse the *content* of the conversation
+through speech recognition and language understanding, not the acoustic
+properties of the voice. The exclusion criteria remove work that is purely
+speech recognition or language processing without a biomarker construct.
+
+**The eligibility criteria therefore select against precisely the evidence this
+review reports as missing.** Where the 94 screened records offer five instances
+of external validation, the excluded triage literature offers a randomised
+trial, a multi-site replication in another language, and a published error
+analysis.
+
+Two responses are defensible and the choice should be explicit. Widen the
+concept to admit speech-based clinical decision support regardless of whether
+the informative feature is acoustic or lexical, which aligns the review with how
+the technology is deployed. Or retain the narrow scope and state plainly that
+the review excludes the most clinically validated application of speech in
+medicine. This snapshot takes the second position and reports the excluded
+literature as context; the first is the principal candidate for a scope
+revision.
 
 ## Discussion
 

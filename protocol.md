@@ -17,7 +17,7 @@ Reporting standards:
 
 Registration: PROSPERO does not accept scoping or mapping reviews. Registration, when made, goes to the Open Science Framework.
 
-Not a living review: the current design has no committed re-search cadence. The word "living" must not be used unless an update interval and re-run trigger are specified in this protocol.
+**Reproducible snapshot, not a living review.** The review reports the literature as of a stated search date (currently 1 September 2026) and carries no commitment to update. Currency is deliberately traded for reproducibility: every query string, filter, result count, and raw API response is preserved, so any later reader can re-execute the identical search and measure the delta rather than trust a claim of being current. The words "living", "continuously updated", and "rolling" must not be used to describe this review.
 
 Escalation path: convert to a systematic review reported against PRISMA 2020 if full-text screening yields a manageable and clinically coherent subset.
 
