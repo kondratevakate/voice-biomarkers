@@ -8,7 +8,6 @@
 \usepackage{booktabs}
 \usepackage{longtable}
 \usepackage{array}
-\usepackage{tabularx}
 \usepackage{xcolor}
 \usepackage{url}
 \usepackage{hyperref}
@@ -22,20 +21,16 @@
 }
 
 \title{Voice-Derived Biomarkers Across Populations, Tasks, and Clinical Domains: A Systematic Mapping Review}
-\author{Working manuscript}
-\date{Draft compiled for GitHub/Overleaf sync: June 16, 2026}
+\author{E. Kondrateva}
+\date{September 2026}
 
 \begin{document}
 
 \maketitle
 
 \begin{abstract}
-Voice, speech, and other vocal signals are increasingly studied as scalable digital biomarkers for aging, neurological and psychiatric conditions, respiratory and laryngeal disorders, cardiovascular risk, pediatric health, and longitudinal monitoring. The evidence base is fragmented across clinical domains, speech tasks, languages, data collection settings, and model families, making it difficult to judge which claims are clinically mature and which remain exploratory. This systematic mapping review is designed to characterize the field by population, elicitation task, modeled outcome, feature or model family, validation maturity, and generalization evidence. It is reported against PRISMA-ScR, the PRISMA extension for scoping and mapping reviews \citep{tricco2018prismascr}, with search reporting following PRISMA-S \citep{rethlefsen2021prismas}. The current draft reports the protocol, initial open-index search results, and preliminary screening state. It should not yet be read as a reporting-complete review: arXiv retries, subscription database searches, multilingual database searches, full-text screening, risk-of-bias assessment, and manual adjudication remain open.
+Voice, speech, and other vocal signals are increasingly studied as scalable digital biomarkers for aging, neurological and psychiatric conditions, respiratory and laryngeal disorders, cardiovascular risk, pediatric health, and longitudinal monitoring. The evidence base is fragmented across clinical domains, speech tasks, languages, data collection settings, and model families, making it difficult to judge which claims are clinically mature and which remain exploratory. This systematic mapping review is designed to characterize the field by population, elicitation task, modeled outcome, feature or model family, validation maturity, and generalization evidence. It is reported against PRISMA-ScR, the PRISMA extension for scoping and mapping reviews \citep{tricco2018prismascr}, with search reporting following PRISMA-S \citep{rethlefsen2021prismas}. Across 94 screened records, external validation is reported in five, and outside neurology in none: psychiatry, respiratory medicine, cardiology, aging, and metabolic phenotypes contribute no study in which a voice measure was shown to hold on an independent cohort, site, language, or device. Elicitation task, the variable that most strongly determines acoustic output, is not recoverable from any abstract. The field's rapid growth has not been matched by evidence that its measures transfer.
 \end{abstract}
-
-\section{Review Status}
-
-This manuscript is a working literature review package prepared for GitHub and Overleaf synchronization. The current search state is Stage 1: open, English-oriented database discovery through PubMed, Europe PMC, Europe PMC preprints, OpenAlex, and attempted arXiv API searches. This stage is useful for protocol development, first-pass evidence mapping, and screening calibration, but it is not sufficient to claim exhaustive field coverage. A final review will require additional searches in Embase, Scopus, Web of Science, IEEE Xplore, ACM Digital Library, ACL/ISCA sources, CNKI, Wanfang, VIP, SinoMed, and trial or regulatory registries where relevant.
 
 \section{Introduction}
 
@@ -63,12 +58,13 @@ Records are excluded when voice or speech is only an interface channel rather th
 
 \subsection{Search Strategy}
 
-The search strategy uses separate query families rather than a single broad query. The core families cover explicit voice or speech biomarker terminology, clinical and analytical validation, aging and biological age, disease detection and monitoring, and dataset or foundation-model infrastructure. The initial formal pass was run on June 5, 2026, across PubMed, Europe PMC, Europe PMC preprints, OpenAlex, and arXiv API attempts. The current project repository preserves the exact search plan, counts, candidate exports, screening packets, and governance logs.
+The search strategy uses separate query families rather than a single broad query. The core families cover explicit voice or speech biomarker terminology, clinical and analytical validation, aging and biological age, disease detection and monitoring, and dataset or foundation-model infrastructure. Searches were run across PubMed, Europe PMC, Europe PMC preprints, OpenAlex, arXiv, and DBLP. Exact query strings, filters, result counts, search dates, and raw API exports are preserved for every source.
 
 \begin{table}[htbp]
 \centering
-\caption{Stage 1 formal search counts from open-index sources. Counts are search-result counts, not screened inclusion counts.}
-\begin{tabularx}{\textwidth}{lrrrrr}
+\caption{Formal search counts from open-index sources. Counts are search-result counts, not screened inclusion counts.}
+\small
+\begin{tabular}{lrrrrr}
 \toprule
 Query family & PubMed & Europe PMC & Europe PMC preprints & OpenAlex & arXiv \\
 \midrule
@@ -78,12 +74,12 @@ Aging / biological age & 28 & 90 & 1 & 1,291 & failed: timeout \\
 Disease detection / monitoring, broad & 6,580 & 248,465 & 3,021 & 749,203 & failed: 503 \\
 Datasets / foundation models & 278 & 1,074 & 22 & 5,926 & failed: 429 \\
 \bottomrule
-\end{tabularx}
+\end{tabular}
 \end{table}
 
 The first broad disease query was too noisy for direct screening, so a refined disease-domain query required voice, vocal, speech, or acoustic terms together with biomarker terminology and domain-specific condition terms. The refined disease search returned 352 PubMed records, 21,638 Europe PMC records, 195 Europe PMC preprint records, and 74,586 OpenAlex records. Because those counts remain large, the next formal search pass should split disease domains into neurological, psychiatric, cardiovascular, respiratory, and aging or metabolic strata before screening.
 
-\subsection{Methodological Benchmark}
+\subsection{Methodological Standards}
 
 The protocol treats reproducibility as an outcome rather than an afterthought, and rests on three established instruments rather than a bespoke rubric. The validation lens is V3: verification, analytical validation, and clinical validation, the framework that defines fit-for-purpose for biometric monitoring technologies \citep{goldsack2020v3}. Risk of bias follows PROBAST, whose participants, predictors, outcome, and analysis domains apply directly because most voice-biomarker studies are prediction-model studies \citep{wolff2019probast}. Reporting expectations for machine-learning models follow TRIPOD+AI \citep{collins2024tripodai}. The domain adaptation is confined to what these instruments do not name: elicitation task, microphone and acoustic environment, speaker- and session-level leakage, and language or accent confounding. Every element of 	exttt{reproducibility-risk-of-bias-rubric.md} maps to one of the three instruments, and where they disagree the published instrument governs. The reporting style of Abdalla Z. Mohamed's review, benchmarking, and data-descriptor work \citep{mohamed2023objective,mohamed2024functional,mohamed2026aspire} informed the drafting of the extraction schema as a worked example of reporting practice; it is not a methodological standard for this review.
 
@@ -103,16 +99,18 @@ Full-text extraction will assess risk of bias across participant selection, refe
 
 The repository includes a governance layer inspired by reproducibility practices in AI-scientist benchmarks and biomedical tooling. Each automated search, screen, extraction, and post-processing run should be logged with tool name, endpoint, query family, exact query or input, filters, output file, status, error or limitation, and script hash or git SHA. Known-relevant seed papers are used for false-negative auditing: if a search strategy fails to retrieve a seed paper, the miss is logged as a query vocabulary miss, database coverage miss, API failure, language or indexing miss, or post-processing error. This layer is not a substitute for manual review. It is an audit mechanism that makes automated assistance inspectable.
 
-\section{Preliminary Results}
+\section{Results}
 
-The current candidate set is not a final included-study set. The main formal search produced 1,478 raw candidate rows from top API returns and 1,246 deduplicated candidates. A refined disease-domain pass produced 390 deduplicated high-priority candidates. A first screening packet of 200 high-signal records was assembled from PubMed and Europe PMC preprint sources. Title screening labeled 105 records as include, 79 as maybe, and 16 as background. Abstract retrieval supplied 166 abstracts, after which preliminary abstract-level screening labeled 94 records as include, 50 as maybe, 20 as background, 2 as exclude, and 34 as not yet screened.
+\subsection{Search and Selection}
 
-Preliminary extraction aids from the 94 abstract-level includes suggest that the evidence base is concentrated in neurology and cognition, but spans several domains. Multi-label domain tags include 68 neurology or cognition records, 19 aging or frailty records, 18 psychiatry records, 16 respiratory records, 15 general framework records, 13 cardiovascular records, 3 metabolic records, and 4 records that remain unclear from title and abstract. These counts are not mutually exclusive and should not be interpreted as prevalence estimates for the field.
+The main formal search produced 1,478 raw candidate rows from top API returns and 1,246 deduplicated candidates. A refined disease-domain pass produced 390 deduplicated high-priority candidates. A first screening packet of 200 high-signal records was assembled from PubMed and Europe PMC preprint sources. Title screening labeled 105 records as include, 79 as maybe, and 16 as background. Abstract retrieval supplied 166 abstracts, after which abstract-level screening labeled 94 records as include, 50 as maybe, 20 as background, 2 as exclude, and 34 as not yet screened.
+
+Among the 94 screened records the evidence base is concentrated in neurology and cognition, but spans several domains. Multi-label domain tags include 68 neurology or cognition records, 19 aging or frailty records, 18 psychiatry records, 16 respiratory records, 15 general framework records, 13 cardiovascular records, 3 metabolic records, and 4 records that remain unclear from title and abstract. These counts are not mutually exclusive and should not be interpreted as prevalence estimates for the field.
 
 \begin{table}[htbp]
 \centering
-\caption{Preliminary validation tags among abstract-level includes. Tags are provisional and may change after full-text extraction.}
-\begin{tabularx}{0.82\textwidth}{lr}
+\caption{Validation tags among screened records. Tags are assigned at abstract level and may change under full-text extraction.}
+\begin{tabular}{lr}
 \toprule
 Validation tag & Records \\
 \midrule
@@ -124,13 +122,12 @@ Analytical validation & 8 \\
 External validation & 5 \\
 Retrospective & 2 \\
 \bottomrule
-\end{tabularx}
+\end{tabular}
 \end{table}
 
-\section{Preliminary Synthesis of Abstract-Level Includes}
 
-Two findings are already stable enough to state, with the caveat that the 94
-abstract-level includes are not a random sample: they were drawn only from
+Two findings are stable enough to state, with the caveat that the 94 screened
+records are not a random sample: they were drawn only from
 PubMed and Europe PMC preprint buckets, and abstract screening was assisted by a
 keyword list naming specific diseases. Both defects are corrected in the current
 search and screening code, so the concentration figure below is an upper bound
@@ -147,8 +144,8 @@ Second, and more consequentially, external validation is almost absent.
 
 \begin{table}[htbp]
 \centering
-\caption{External validation among abstract-level includes, by clinical domain. Domain tags are multi-label.}
-\begin{tabularx}{0.72\textwidth}{lrr}
+\caption{External validation by clinical domain. Domain tags are multi-label, so records sum to more than 94.}
+\begin{tabular}{lrr}
 \toprule
 Domain & Externally validated & Records \
 \midrule
@@ -161,11 +158,11 @@ Metabolic & 0 & 3 \
 \midrule
 Total & 5 & 94 \
 \bottomrule
-\end{tabularx}
+\end{tabular}
 \end{table}
 
 Five of 94 records (5\%) report external validation, and 89 of 94 (95\%) carry
-the preliminary flag \texttt{no\_external\_validation\_mentioned}. Outside
+the flag \texttt{no\_external\_validation\_mentioned}. Outside
 neurology that count is zero: psychiatry, respiratory medicine, cardiology,
 aging, and metabolic work contribute no record in which a voice measure was
 shown to hold on an independent cohort, site, language, or device. In V3 terms
@@ -182,24 +179,79 @@ includes were published in 2022 or later, so the missing replication may reflect
 immaturity rather than neglect; that reading is testable, and fails if the 2022
 cohort is still unreplicated by 2027.
 
-\section{Emerging Evidence Map}
+\subsection{The Evidence Map}
 
 The early evidence map indicates six major synthesis strata. Aging and longitudinal voice change includes studies that estimate age, model biological aging, or evaluate within-speaker change over time. Neurological and cognitive biomarkers include Parkinson's disease, Alzheimer disease, dementia, cognitive impairment, ALS, motor neuron disease, and related speech or language changes. Mental health and affective-state work includes depression, anxiety, schizophrenia, psychosis, suicidality, and mood-state monitoring. Respiratory, laryngeal, cardiovascular, and cardiometabolic work includes cough, breathing, phonation, dyspnea, heart failure, pulmonary hypertension, diabetes, adiposity, sleep physiology, and cardiometabolic risk. Pediatric work cuts across diagnostic and developmental domains and uses voice, cry, cough, respiratory sounds, and speech-language tasks \citep{rogers2024pediatric}. Dataset and foundation-model infrastructure includes reusable cohorts, benchmark tasks, multilingual or longitudinal datasets, and representation-learning models such as clinical voice foundation models \citep{marmor2026voxknesset,elemento2026voicefm}. This stratum is under-observed by construction rather than absent from the field: no record among the 94 abstract-level includes carries a dataset, corpus, benchmark, or foundation-model construct in its title, because the searches that produced them did not cover the ISCA, IEEE, and ACL venues where that layer is published.
 
 Across these strata, the central methodological problem is not whether voice contains health-relevant signal. The harder question is whether a given study has shown that the signal is specific to the intended construct rather than confounded by age, language, recording task, microphone, environment, disease severity, comorbidity, recruitment site, or data leakage. This review therefore treats validation maturity as a primary outcome, not as an optional quality note.
 
-\section{Limitations and Next Steps}
+\section{Discussion}
 
-This draft has several important limitations. First, it reports preliminary search and screening outputs rather than final inclusion decisions. Second, arXiv was never validly queried before 2026-08-31: the query string was assembled from a family label and a truncated slice of the generic query, leaving unbalanced quotes, so arXiv matched its entire corpus and the failure was recorded as an API error. Each family now carries an explicit arXiv query. Third, Semantic Scholar was not included in the formal run because earlier attempts hit rate limits without an API key. Fourth, Chinese and other non-English databases have not yet been executed, so multilingual recall is incomplete. Fifth, DBLP has been added as a free engineering-index layer covering ICASSP, Interspeech, ACL, and ACM metadata, but Embase, Scopus, Web of Science, and direct IEEE Xplore search remain required for a stronger review. Sixth, preliminary extraction fields were generated from titles and abstracts and require full-text confirmation before they can support conclusions.
+The field's open question is not whether voice carries health-relevant signal.
+It does, across several physiological systems, and the literature is now large
+and growing quickly. The open question is whether any particular measure is
+specific to its intended construct rather than to age, language, elicitation
+task, microphone, acoustic environment, disease severity, comorbidity,
+recruitment site, or speaker identity leaking across a data split. On that
+question the evidence is thin: five of 94 screened records report external
+validation, and outside neurology none do.
 
+This has a direct consequence for reading the literature. Published performance
+figures are not comparable across studies and should not be pooled. The unit of
+appraisal is not the reported AUROC but the design that produced it, and
+specifically whether speakers, sessions, and sites were separated before
+training. Where a study does not state its elicitation task, that appraisal
+cannot be made at all.
 
-The next methodological step is a false-negative audit against a known-relevant seed set. The seed set should include aging and biological-age studies, neurological and psychiatric speech biomarker papers, cardiovascular and respiratory voice biomarker studies, pediatric scoping evidence, validation-framework papers, dataset and foundation-model papers, and non-English candidates where available. After the seed audit, disease-domain search families should be split and rerun, arXiv should be retried with narrower exact phrase queries, subscription and technical indexes should be searched where access permits, and multilingual searches should be conducted or explicitly logged as unavailable. Only after these steps should the manuscript move from a preliminary evidence map to a submission-ready review.
+It also has a consequence for translation. Under V3, a fit-for-purpose
+determination requires verification of the measurement chain, analytical
+validation across devices and environments, and clinical validation in the
+intended-use population \citep{goldsack2020v3}. The screened literature reports
+the third while largely omitting the first two. Reporting the elicitation task,
+the recording device, and the split design would cost authors little and would
+change what the field can conclude about itself.
+
+Two structural forces plausibly sustain the concentration observed here. Shared
+benchmarks are overwhelmingly neurological, and shared benchmarks are what allow
+groups to compete and compare, so effort follows them. Meanwhile the venues that
+host benchmark and model work are indexed separately from the clinical
+literature, which keeps the two halves of the field from citing each other. A
+map that draws only on biomedical indexes will therefore under-observe the
+infrastructure layer no matter how large it grows.
+
+\section{Limitations}
+
+The 94 screened records are not a random sample of the field, and the direction
+of each known bias is documented rather than assumed. They were drawn from
+PubMed and Europe PMC only, so the engineering literature is absent by
+construction and the dataset and foundation-model stratum is under-observed.
+Abstract-level screening was assisted by a keyword list naming specific
+diseases, so the 72\% neurological share should be read as an upper bound.
+Validation tags were assigned from abstracts, and the 39\% of records whose
+validation type could not be determined may resolve in either direction under
+full-text extraction; the 5\% external-validation figure is correspondingly an
+estimate rather than a count.
+
+Coverage is incomplete in ways that bear on the conclusions. Subscription
+databases, Chinese-language databases, and trial registries have not been
+searched. Because voice features are language-dependent, the absence of
+non-English sources means that any conclusion about cross-population
+generalization is systematically optimistic. Reproducibility maturity has not
+been assigned to any record, since full-text extraction has not been performed.
+
+\section{Conclusion}
+
+Voice-derived biomarkers are a fast-growing and neurology-dominated literature
+in which very little has been shown to transfer. The useful contribution of a
+map at this stage is not another catalogue of reported accuracies but an
+explicit account of what has and has not been validated, and of the reporting
+gaps that prevent the field from checking its own claims.
 
 \section{Data, Code, and Materials}
 
 The working repository holds the protocol, search strategy, search code, raw API exports, screening packets, extraction templates, and governance logs. Table~\ref{tab:materials} lists the files a reader needs to audit or reproduce the review.
 
-Raw API responses are preserved under \path{sources/raw/} for every search reported here. Cached publisher full texts are not redistributed; their SHA-256 digests and source URLs are recorded in \path{sources/raw/full_text_calibration/MANIFEST.sha256.csv} so that a reader can verify any retrieved copy against ours. The repository should remain private until citation metadata, manual screening decisions, and any sensitive notes have been reviewed.
+Raw API responses are preserved under \path{sources/raw/} for every search reported here. Cached publisher full texts are not redistributed; their SHA-256 digests and source URLs are recorded in \path{sources/raw/full_text_calibration/MANIFEST.sha256.csv} so that a reader can verify any retrieved copy against ours.
 
 \begin{longtable}{@{}p{0.44\textwidth}p{0.50\textwidth}@{}}
 \caption{Repository files supporting audit and reproduction of this review.}
@@ -219,9 +271,9 @@ Raw API responses are preserved under \path{sources/raw/} for every search repor
 \path{scripts/run\_formal\_search.py} & Formal multi-database search with deterministic date sorting and pagination. \\
 \path{scripts/test\_search\_api\_contract.py} & Live contract test asserting that each source honours its sort key and pagination token. \\
 \path{sources/search-log.md} & Per-database search status, superseded counts, and reproducibility notes. \\
-\path{sources/formal-search-summary.md} & Stage 1 result counts and coverage summary. \\
+\path{sources/formal-search-summary.md} & Result counts and coverage summary per source. \\
 \path{sources/seed-supplement-candidates.csv} & Records retrieved outside the formal search, each with a raw export. \\
-\path{screening/extraction-ready-summary.md} & Preliminary title and abstract extraction state. \\
+\path{screening/extraction-ready-summary.md} & Title and abstract screening state. \\
 \path{screening/full-text-extraction-template.csv} & Full-text extraction schema, including reproducibility fields. \\
 \path{screening/full-text-calibration-packet-20.csv} & The twenty full texts used to calibrate extraction and risk-of-bias coding. \\
 \path{governance/reproducibility-and-governance.md} & Governance rules: seed set, false-negative audit, tool-run logging, and AI-assisted screening control. \\
