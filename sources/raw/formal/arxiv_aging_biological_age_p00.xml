@@ -1,0 +1,228 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/QMxfkLsQtgT6nW5rSbn/cc/EeWg</id>
+  <title>arXiv Query: search_query=abs:"vocal aging" OR abs:"voice aging" OR abs:"speech aging" OR abs:"voice-based biological clock" OR abs:"speaker age estimation" OR abs:"age estimation from speech" OR abs:"age estimation from voice"&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-09-01T08:54:58Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22vocal+aging%22+OR+(abs:%22voice+aging%22+OR+(abs:%22speech+aging%22+OR+(abs:%22voice-based+biological+clock%22+OR+(abs:%22speaker+age+estimation%22+OR+(abs:%22age+estimation+from+speech%22+OR+abs:%22age+estimation+from+voice%22)))))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>8</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2512.06106v1</id>
+    <title>Future You: Designing and Evaluating Multimodal AI-generated Digital Twins for Strengthening Future Self-Continuity</title>
+    <updated>2025-12-05T19:24:18Z</updated>
+    <link href="https://arxiv.org/abs/2512.06106v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.06106v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>What if users could meet their future selves today? AI-generated future selves simulate meaningful encounters with a digital twin decades in the future. As AI systems advance, combining cloned voices, age-progressed facial rendering, and autobiographical narratives, a central question emerges: Does the modality of these future selves alter their psychological and affective impact? How might a text-based chatbot, a voice-only system, or a photorealistic avatar shape present-day decisions and our feeling of connection to the future? We report a randomized controlled study (N=92) evaluating three modalities of AI-generated future selves (text, voice, avatar) against a neutral control condition. We also report a systematic model evaluation between Claude 4 and three other Large Language Models (LLMs), assessing Claude 4 across psychological and interaction dimensions and establishing conversational AI quality as a critical determinant of intervention effectiveness. All personalized modalities strengthened Future Self-Continuity (FSC), emotional well-being, and motivation compared to control, with avatar producing the largest vividness gains, yet with no significant differences between formats. Interaction quality metrics, particularly persuasiveness, realism, and user engagement, emerged as robust predictors of psychological and affective outcomes, indicating that how compelling the interaction feels matters more than the form it takes. Content analysis found thematic patterns: text emphasized career planning, while voice and avatar facilitated personal reflection. Claude 4 outperformed ChatGPT 3.5, Llama 4, and Qwen 3 in enhancing psychological, affective, and FSC outcomes.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-05T19:24:18Z</published>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Constanze Albrecht</name>
+    </author>
+    <author>
+      <name>Chayapatr Archiwaranguprok</name>
+    </author>
+    <author>
+      <name>Rachel Poonsiriwong</name>
+    </author>
+    <author>
+      <name>Awu Chen</name>
+    </author>
+    <author>
+      <name>Peggy Yin</name>
+    </author>
+    <author>
+      <name>Monchai Lertsutthiwong</name>
+    </author>
+    <author>
+      <name>Kavin Winson</name>
+    </author>
+    <author>
+      <name>Hal Hershfield</name>
+    </author>
+    <author>
+      <name>Pattie Maes</name>
+    </author>
+    <author>
+      <name>Pat Pataranutaporn</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.13477v2</id>
+    <title>Multimodal Integration Challenges in Emotionally Expressive Child Avatars for Training Applications</title>
+    <updated>2025-07-08T14:47:40Z</updated>
+    <link href="https://arxiv.org/abs/2506.13477v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.13477v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Dynamic facial emotion is essential for believable AI-generated avatars, yet most systems remain visually static, limiting their use in simulations like virtual training for investigative interviews with abused children. We present a real-time architecture combining Unreal Engine 5 MetaHuman rendering with NVIDIA Omniverse Audio2Face to generate facial expressions from vocal prosody in photorealistic child avatars. Due to limited TTS options, both avatars were voiced using young adult female models from two systems to better fit character profiles, introducing a voice-age mismatch. This confound may affect audiovisual alignment. We used a two-PC setup to decouple speech generation from GPU-intensive rendering, enabling low-latency interaction in desktop and VR. A between-subjects study (N=70) compared audio+visual vs. visual-only conditions as participants rated emotional clarity, facial realism, and empathy for avatars expressing joy, sadness, and anger. While emotions were generally recognized - especially sadness and joy - anger was harder to detect without audio, highlighting the role of voice in high-arousal expressions. Interestingly, silencing clips improved perceived realism by removing mismatches between voice and animation, especially when tone or age felt incongruent. These results emphasize the importance of audiovisual congruence: mismatched voice undermines expression, while a good match can enhance weaker visuals - posing challenges for emotionally coherent avatars in sensitive contexts.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-16T13:34:36Z</published>
+    <arxiv:comment>20 pages, 9 figures, 9 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Pegah Salehi</name>
+    </author>
+    <author>
+      <name>Sajad Amouei Sheshkal</name>
+    </author>
+    <author>
+      <name>Vajira Thambawita</name>
+    </author>
+    <author>
+      <name>Michael A. Riegler</name>
+    </author>
+    <author>
+      <name>Pål Halvorsen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2202.11424v1</id>
+    <title>Towards Speaker Age Estimation with Label Distribution Learning</title>
+    <updated>2022-02-23T11:11:58Z</updated>
+    <link href="https://arxiv.org/abs/2202.11424v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.11424v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Existing methods for speaker age estimation usually treat it as a multi-class classification or a regression problem. However, precise age identification remains a challenge due to label ambiguity, \emph{i.e.}, utterances from adjacent age of the same person are often indistinguishable. To address this, we utilize the ambiguous information among the age labels, convert each age label into a discrete label distribution and leverage the label distribution learning (LDL) method to fit the data. For each audio data sample, our method produces a age distribution of its speaker, and on top of the distribution we also perform two other tasks: age prediction and age uncertainty minimization. Therefore, our method naturally combines the age classification and regression approaches, which enhances the robustness of our method. We conduct experiments on the public NIST SRE08-10 dataset and a real-world dataset, which exhibit that our method outperforms baseline methods by a relatively large margin, yielding a 10\% reduction in terms of mean absolute error (MAE) on a real-world dataset.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-23T11:11:58Z</published>
+    <arxiv:comment>Accepted by the 47th IEEE International Conference on Acoustics, Speech, and Signal Processing (ICASSP 2022)</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Shijing Si</name>
+    </author>
+    <author>
+      <name>Jianzong Wang</name>
+    </author>
+    <author>
+      <name>Junqing Peng</name>
+    </author>
+    <author>
+      <name>Jing Xiao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2110.02411v1</id>
+    <title>Voice Aging with Audio-Visual Style Transfer</title>
+    <updated>2021-10-05T23:33:28Z</updated>
+    <link href="https://arxiv.org/abs/2110.02411v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2110.02411v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Face aging techniques have used generative adversarial networks (GANs) and style transfer learning to transform one's appearance to look younger/older. Identity is maintained by conditioning these generative networks on a learned vector representation of the source content. In this work, we apply a similar approach to age a speaker's voice, referred to as voice aging. We first analyze the classification of a speaker's age by training a convolutional neural network (CNN) on the speaker's voice and face data from Common Voice and VoxCeleb datasets. We generate aged voices from style transfer to transform an input spectrogram to various ages and demonstrate our method on a mobile app.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-10-05T23:33:28Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Justin Wilson</name>
+    </author>
+    <author>
+      <name>Sunyeong Park</name>
+    </author>
+    <author>
+      <name>Seunghye J. Wilson</name>
+    </author>
+    <author>
+      <name>Ming C. Lin</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2109.01568v1</id>
+    <title>Phone Duration Modeling for Speaker Age Estimation in Children</title>
+    <updated>2021-09-03T14:43:39Z</updated>
+    <link href="https://arxiv.org/abs/2109.01568v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2109.01568v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Automatic inference of important paralinguistic information such as age from speech is an important area of research with numerous spoken language technology based applications. Speaker age estimation has applications in enabling personalization and age-appropriate curation of information and content. However, research in speaker age estimation in children is especially challenging due to paucity of relevant speech data representing the developmental spectrum, and the high signal variability especially intra age variability that complicates modeling. Most approaches in children speaker age estimation adopt methods directly from research on adult speech processing. In this paper, we propose features specific to children and focus on speaker's phone duration as an important biomarker of children's age. We propose phone duration modeling for predicting age from child's speech. To enable that, children speech is first forced aligned with the corresponding transcription to derive phone duration distributions. Statistical functionals are computed from phone duration distributions for each phoneme which are in turn used to train regression models to predict speaker age. Two children speech datasets are employed to demonstrate the robustness of phone duration features. We perform age regression experiments on age categories ranging from children studying in kindergarten to grade 10. Experimental results suggest phone durations contain important development-related information of children. Phonemes contributing most to estimation of children speaker age are analyzed and presented.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-09-03T14:43:39Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Prashanth Gurunath Shivakumar</name>
+    </author>
+    <author>
+      <name>Somer Bishop</name>
+    </author>
+    <author>
+      <name>Catherine Lord</name>
+    </author>
+    <author>
+      <name>Shrikanth Narayanan</name>
+    </author>
+    <arxiv:doi>10.1121/10.0015198</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1121/10.0015198" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2012.01551v1</id>
+    <title>Joint gender and age estimation based on speech signals using x-vectors and transfer learning</title>
+    <updated>2020-12-02T21:46:01Z</updated>
+    <link href="https://arxiv.org/abs/2012.01551v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2012.01551v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper we extend the x-vector framework for the task of speaker's age estimation and gender classification. In particular, we replace the baseline multilayer-TDNN architecture with QuartzNet, a convolutional architecture that has gained success in the field of speech recognition. We further propose a two-staged transfer learning scheme, utilizing large scale speech datasets: VoxCeleb and Common Voice, and usage of multitask learning to allow for joint age estimation and gender classification with a single system. We train and evaluate the performance on the TIMIT dataset. The proposed transfer learning scheme yields consecutive performance improvements in terms of both age estimation error and gender classification accuracy and the best performing system achieves new state-of-the-art results on the task of age estimation on the TIMIT TEST dataset with MAE of 5.12 and 5.29 years and RMSE of 7.24 and 8.12 years for male and female speakers respectively while maintaining a gender classification accuracy of 99.6%.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-12-02T21:46:01Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Damian Kwasny</name>
+    </author>
+    <author>
+      <name>Daria Hemmerling</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1810.07030v1</id>
+    <title>The Trajectory of Voice Onset Time with Vocal Aging</title>
+    <updated>2018-10-15T08:30:27Z</updated>
+    <link href="https://arxiv.org/abs/1810.07030v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1810.07030v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Vocal aging, a universal process of human aging, can largely affect one's language use, possibly including some subtle acoustic features of one's utterances like Voice Onset Time. To figure out the time effects, Queen Elizabeth's Christmas speeches are documented and analyzed in the long-term trend. We build statistical models of time dependence in Voice Onset Time, controlling a wide range of other fixed factors, to present annual variations and the simulated trajectory. It is revealed that the variation range of Voice Onset Time has been narrowing over fifty years with a slight reduction in the mean value, which, possibly, is an effect of diminishing exertion, resulting from subdued muscle contraction, transcending other non-linguistic factors in forming Voice Onset Time patterns over a long time.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-10-15T08:30:27Z</published>
+    <arxiv:comment>conference</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <arxiv:journal_ref>Interspeech 2018</arxiv:journal_ref>
+    <author>
+      <name>Xuanda Chen</name>
+    </author>
+    <author>
+      <name>Ziyu Xiong</name>
+    </author>
+    <author>
+      <name>Jian Hu</name>
+    </author>
+    <arxiv:doi>10.21437/Interspeech.2018-60</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.21437/Interspeech.2018-60" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1804.08910v2</id>
+    <title>Perceptual Evaluation of the Effectiveness of Voice Disguise by Age Modification</title>
+    <updated>2018-05-28T09:04:08Z</updated>
+    <link href="https://arxiv.org/abs/1804.08910v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1804.08910v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Voice disguise, purposeful modification of one's speaker identity with the aim of avoiding being identified as oneself, is a low-effort way to fool speaker recognition, whether performed by a human or an automatic speaker verification (ASV) system. We present an evaluation of the effectiveness of age stereotypes as a voice disguise strategy, as a follow up to our recent work where 60 native Finnish speakers attempted to sound like an elderly and like a child. In that study, we presented evidence that both ASV and human observers could easily miss the target speaker but we did not address how believable the presented vocal age stereotypes were; this study serves to fill that gap. The interesting cases would be speakers who succeed in being missed by the ASV system, and which a typical listener cannot detect as being a disguise. We carry out a perceptual test to study the quality of the disguised speech samples. The listening test was carried out both locally and with the help of Amazon's Mechanical Turk (MT) crowd-workers. A total of 91 listeners participated in the test and were instructed to estimate both the speaker's chronological and intended age. The results indicate that age estimations for the intended old and child voices for female speakers were towards the target age groups, while for male speakers, the age estimations corresponded to the direction of the target voice only for elderly voices. In the case of intended child's voice, listeners estimated the age of male speakers to be older than their chronological age for most of the speakers and not the intended target age.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-04-24T09:07:05Z</published>
+    <arxiv:comment>Accepted to Speaker Odyssey 2018: The Speaker and Language Recognition Workshop</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Rosa González Hautamäki</name>
+    </author>
+    <author>
+      <name>Anssi Kanervisto</name>
+    </author>
+    <author>
+      <name>Ville Hautamäki</name>
+    </author>
+    <author>
+      <name>Tomi Kinnunen</name>
+    </author>
+  </entry>
+</feed>

@@ -8,6 +8,7 @@ from __future__ import annotations
 
 import csv
 import json
+import os
 import re
 import time
 import urllib.parse
@@ -22,6 +23,25 @@ ROOT = Path(__file__).resolve().parents[1]
 RAW = ROOT / "sources" / "raw" / "formal"
 RAW.mkdir(parents=True, exist_ok=True)
 
+# Reproducibility controls (PRISMA-S: searches must be re-runnable).
+# Relevance ranking is not stable over time and a single page silently truncates
+# large result sets, so every source is sorted on a deterministic key and
+# paginated. Truncation at MAX_RECORDS is reported, never silent.
+PAGE_SIZE = 100
+MAX_RECORDS = 1000
+SORT_PUBMED = "pub_date"
+SORT_EUROPE_PMC = "P_PDATE_D desc"
+SORT_OPENALEX = "publication_date:desc"
+SORT_ARXIV = "submittedDate"
+FETCH_RETRIES = 4
+# Identify the client to every API. OpenAlex and Crossref grant higher rate
+# limits to requests carrying a contact address ("polite pool"), but an address
+# is personal data sent to a third party, so it is opt-in via the environment
+# and never hard-coded.
+USER_AGENT = "voice-biomarkers-review/1.0 (systematic mapping review; +https://github.com/kondratevakate/voice-biomarkers)"
+POLITE_MAILTO = os.environ.get("OPENALEX_MAILTO", "").strip()
+FETCH_BACKOFF_SECONDS = 5
+
 
 @dataclass(frozen=True)
 class QueryFamily:
@@ -29,6 +49,7 @@ class QueryFamily:
     label: str
     plain: str
     pubmed: str
+    arxiv: str
 
 
 FAMILIES = [
@@ -41,6 +62,7 @@ FAMILIES = [
         '("voice biomarker"[Title/Abstract] OR "vocal biomarker"[Title/Abstract] OR '
         '"speech biomarker"[Title/Abstract] OR "speech-based digital biomarker"[Title/Abstract] OR '
         '"voice-derived digital biomarker"[Title/Abstract] OR "speech-derived digital biomarker"[Title/Abstract])',
+        'abs:"voice biomarker" OR abs:"vocal biomarker" OR abs:"speech biomarker" OR abs:"speech-based digital biomarker" OR abs:"voice-derived digital biomarker" OR abs:"speech-derived digital biomarker"',
     ),
     QueryFamily(
         "clinical_validation",
@@ -53,6 +75,7 @@ FAMILIES = [
         '"digital phenotype"[Title/Abstract]) AND ("clinical validation"[Title/Abstract] OR '
         '"analytical validation"[Title/Abstract] OR "external validation"[Title/Abstract] OR '
         '"longitudinal validation"[Title/Abstract] OR "clinical utility"[Title/Abstract])',
+        '(abs:"digital biomarker" OR abs:"digital phenotype" OR abs:"voice biomarker" OR abs:"speech biomarker" OR abs:"acoustic biomarker") AND (abs:"clinical validation" OR abs:"analytical validation" OR abs:"external validation" OR abs:"clinical utility")',
     ),
     QueryFamily(
         "aging_biological_age",
@@ -62,6 +85,7 @@ FAMILIES = [
         '("voice age"[Title/Abstract] OR "vocal aging"[Title/Abstract] OR '
         '"speech aging"[Title/Abstract] OR "voice-based biological clock"[Title/Abstract] OR '
         '"voice-predicted age"[Title/Abstract] OR "vocal age acceleration"[Title/Abstract])',
+        'abs:"vocal aging" OR abs:"voice aging" OR abs:"speech aging" OR abs:"voice-based biological clock" OR abs:"speaker age estimation" OR abs:"age estimation from speech" OR abs:"age estimation from voice"',
     ),
     QueryFamily(
         "disease_monitoring",
@@ -80,6 +104,7 @@ FAMILIES = [
         '"heart failure"[Title/Abstract] OR asthma[Title/Abstract] OR COPD[Title/Abstract] OR '
         'respiratory[Title/Abstract] OR ALS[Title/Abstract] OR "motor neuron disease"[Title/Abstract] OR '
         'frailty[Title/Abstract] OR cardiometabolic[Title/Abstract])',
+        '(abs:"voice biomarker" OR abs:"speech biomarker" OR abs:"acoustic biomarker" OR abs:"pathological speech" OR abs:"speech-based detection") AND (abs:Parkinson OR abs:Alzheimer OR abs:dementia OR abs:depression OR abs:"heart failure" OR abs:COPD OR abs:ALS OR abs:"cognitive impairment")',
     ),
     QueryFamily(
         "datasets_foundation_models",
@@ -89,20 +114,40 @@ FAMILIES = [
         '("clinical voice"[Title/Abstract] OR "health voice"[Title/Abstract] OR '
         '"medical speech"[Title/Abstract] OR "speech health"[Title/Abstract] OR '
         '"voice foundation model"[Title/Abstract] OR "speech foundation model"[Title/Abstract])',
+        'abs:"speech foundation model" OR abs:"voice foundation model" OR abs:"clinical speech" OR abs:"medical speech" OR abs:"pathological speech" OR abs:"health speech dataset"',
     ),
 ]
 
 
+def _fetch(url: str, errors: str) -> str:
+    """Fetch with bounded retries.
+
+    A single transient DNS or rate-limit failure used to abort a whole
+    query family, which silently changed what the search covered. Retry a
+    fixed number of times with linear backoff, then let the caller record
+    the failure in the counts CSV.
+    """
+    last: Exception | None = None
+    for attempt in range(FETCH_RETRIES):
+        try:
+            request = urllib.request.Request(url, headers={"User-Agent": USER_AGENT})
+            with urllib.request.urlopen(request, timeout=60) as response:
+                return response.read().decode("utf-8", errors=errors)
+        except Exception as exc:  # noqa: BLE001 - retried, then reported
+            last = exc
+            if attempt < FETCH_RETRIES - 1:
+                time.sleep(FETCH_BACKOFF_SECONDS * (attempt + 1))
+    raise last  # type: ignore[misc]
+
+
 def fetch_json(url: str, out: Path) -> dict[str, Any]:
-    with urllib.request.urlopen(url, timeout=60) as response:
-        text = response.read().decode("utf-8")
+    text = _fetch(url, "strict")
     out.write_text(text, encoding="utf-8")
     return json.loads(text)
 
 
 def fetch_text(url: str, out: Path) -> str:
-    with urllib.request.urlopen(url, timeout=60) as response:
-        text = response.read().decode("utf-8", errors="replace")
+    text = _fetch(url, "replace")
     out.write_text(text, encoding="utf-8")
     return text
 
@@ -119,119 +164,178 @@ def add_candidate(candidates: list[dict[str, Any]], **row: Any) -> None:
     candidates.append(row)
 
 
-def run_pubmed(family: QueryFamily, candidates: list[dict[str, Any]]) -> int:
+def run_pubmed(family: QueryFamily, candidates: list[dict[str, Any]]) -> tuple[int, bool]:
     term = f"({family.pubmed}) AND (Humans[MeSH Terms] OR human[Title/Abstract] OR clinical[Title/Abstract] OR health[Title/Abstract] OR disease[Title/Abstract] OR aging[Title/Abstract])"
-    params = {
-        "db": "pubmed",
-        "retmode": "json",
-        "retmax": "100",
-        "sort": "relevance",
-        "term": term,
-    }
-    url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?" + urllib.parse.urlencode(params)
-    esearch = fetch_json(url, RAW / f"pubmed_{family.key}_esearch.json")
-    ids = esearch.get("esearchresult", {}).get("idlist", [])
-    count = int(esearch.get("esearchresult", {}).get("count", 0))
-    if not ids:
-        return count
-    params = {"db": "pubmed", "retmode": "json", "id": ",".join(ids)}
-    summary_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?" + urllib.parse.urlencode(params)
-    summary = fetch_json(summary_url, RAW / f"pubmed_{family.key}_esummary.json")
-    for uid in summary.get("result", {}).get("uids", []):
-        item = summary["result"][uid]
-        add_candidate(
-            candidates,
-            source="PubMed",
-            query_family=family.key,
-            id=f"PMID:{uid}",
-            year=(item.get("pubdate") or "")[:4],
-            title=item.get("title", ""),
-            venue=item.get("fulljournalname", ""),
-            doi="",
-            url=f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
-        )
-    return count
+    ids: list[str] = []
+    count = 0
+    for page, retstart in enumerate(range(0, MAX_RECORDS, PAGE_SIZE)):
+        params = {
+            "db": "pubmed",
+            "retmode": "json",
+            "retmax": str(PAGE_SIZE),
+            "retstart": str(retstart),
+            "sort": SORT_PUBMED,
+            "term": term,
+        }
+        url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esearch.fcgi?" + urllib.parse.urlencode(params)
+        esearch = fetch_json(url, RAW / f"pubmed_{family.key}_esearch_p{page:02d}.json")
+        result = esearch.get("esearchresult", {})
+        count = int(result.get("count", 0))
+        page_ids = result.get("idlist", [])
+        ids.extend(page_ids)
+        if len(page_ids) < PAGE_SIZE or len(ids) >= count:
+            break
+        time.sleep(0.4)
+    for chunk, start in enumerate(range(0, len(ids), PAGE_SIZE)):
+        batch = ids[start : start + PAGE_SIZE]
+        params = {"db": "pubmed", "retmode": "json", "id": ",".join(batch)}
+        summary_url = "https://eutils.ncbi.nlm.nih.gov/entrez/eutils/esummary.fcgi?" + urllib.parse.urlencode(params)
+        summary = fetch_json(summary_url, RAW / f"pubmed_{family.key}_esummary_p{chunk:02d}.json")
+        for uid in summary.get("result", {}).get("uids", []):
+            item = summary["result"][uid]
+            add_candidate(
+                candidates,
+                source="PubMed",
+                query_family=family.key,
+                id=f"PMID:{uid}",
+                year=(item.get("pubdate") or "")[:4],
+                title=item.get("title", ""),
+                venue=item.get("fulljournalname", ""),
+                doi="",
+                url=f"https://pubmed.ncbi.nlm.nih.gov/{uid}/",
+            )
+        time.sleep(0.4)
+    return count, count > len(ids)
 
 
-def run_europe_pmc(family: QueryFamily, candidates: list[dict[str, Any]], preprints_only: bool) -> int:
+def run_europe_pmc(
+    family: QueryFamily, candidates: list[dict[str, Any]], preprints_only: bool
+) -> tuple[int, bool]:
     query = f"({family.plain})"
     if preprints_only:
         query = f"({query}) AND SRC:PPR"
-    params = {"query": query, "format": "json", "pageSize": "100", "resultType": "core"}
     tag = "preprints" if preprints_only else "all"
-    url = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?" + urllib.parse.urlencode(params)
-    data = fetch_json(url, RAW / f"europepmc_{tag}_{family.key}.json")
-    count = int(data.get("hitCount", 0))
-    for item in data.get("resultList", {}).get("result", []):
-        add_candidate(
-            candidates,
-            source="EuropePMC-PPR" if preprints_only else "EuropePMC",
-            query_family=family.key,
-            id=item.get("id", ""),
-            year=item.get("pubYear", ""),
-            title=item.get("title", ""),
-            venue=item.get("journalTitle", item.get("source", "")),
-            doi=item.get("doi", ""),
-            url=item.get("doiUrl") or item.get("fullTextUrlList", {}).get("fullTextUrl", [{}])[0].get("url", ""),
-        )
-    return count
+    cursor = "*"
+    retrieved = 0
+    count = 0
+    for page in range(MAX_RECORDS // PAGE_SIZE):
+        params = {
+            "query": query,
+            "format": "json",
+            "pageSize": str(PAGE_SIZE),
+            "resultType": "core",
+            "sort": SORT_EUROPE_PMC,
+            "cursorMark": cursor,
+        }
+        url = "https://www.ebi.ac.uk/europepmc/webservices/rest/search?" + urllib.parse.urlencode(params)
+        data = fetch_json(url, RAW / f"europepmc_{tag}_{family.key}_p{page:02d}.json")
+        count = int(data.get("hitCount", 0))
+        results = data.get("resultList", {}).get("result", [])
+        for item in results:
+            add_candidate(
+                candidates,
+                source="EuropePMC-PPR" if preprints_only else "EuropePMC",
+                query_family=family.key,
+                id=item.get("id", ""),
+                year=item.get("pubYear", ""),
+                title=item.get("title", ""),
+                venue=item.get("journalTitle", item.get("source", "")),
+                doi=item.get("doi", ""),
+                url=item.get("doiUrl")
+                or item.get("fullTextUrlList", {}).get("fullTextUrl", [{}])[0].get("url", ""),
+            )
+        retrieved += len(results)
+        next_cursor = data.get("nextCursorMark")
+        if not results or not next_cursor or next_cursor == cursor or retrieved >= count:
+            break
+        cursor = next_cursor
+        time.sleep(0.4)
+    return count, count > retrieved
 
 
-def run_openalex(family: QueryFamily, candidates: list[dict[str, Any]]) -> int:
-    params = {"search": family.plain, "per-page": "100", "sort": "relevance_score:desc"}
-    url = "https://api.openalex.org/works?" + urllib.parse.urlencode(params)
-    data = fetch_json(url, RAW / f"openalex_{family.key}.json")
-    count = int(data.get("meta", {}).get("count", 0))
-    for item in data.get("results", []):
-        primary = item.get("primary_location") or {}
-        source = primary.get("source") or {}
-        add_candidate(
-            candidates,
-            source="OpenAlex",
-            query_family=family.key,
-            id=item.get("id", ""),
-            year=item.get("publication_year", ""),
-            title=item.get("display_name", ""),
-            venue=source.get("display_name", ""),
-            doi=item.get("doi", ""),
-            url=item.get("doi") or item.get("id", ""),
-            cited_by_count=item.get("cited_by_count", ""),
-        )
-    return count
+def run_openalex(family: QueryFamily, candidates: list[dict[str, Any]]) -> tuple[int, bool]:
+    cursor = "*"
+    retrieved = 0
+    count = 0
+    for page in range(MAX_RECORDS // PAGE_SIZE):
+        params = {
+            "search": family.plain,
+            "per-page": str(PAGE_SIZE),
+            "sort": SORT_OPENALEX,
+            "cursor": cursor,
+        }
+        if POLITE_MAILTO:
+            params["mailto"] = POLITE_MAILTO
+        url = "https://api.openalex.org/works?" + urllib.parse.urlencode(params)
+        data = fetch_json(url, RAW / f"openalex_{family.key}_p{page:02d}.json")
+        meta = data.get("meta", {})
+        count = int(meta.get("count", 0))
+        results = data.get("results", [])
+        for item in results:
+            primary = item.get("primary_location") or {}
+            source = primary.get("source") or {}
+            add_candidate(
+                candidates,
+                source="OpenAlex",
+                query_family=family.key,
+                id=item.get("id", ""),
+                year=item.get("publication_year", ""),
+                title=item.get("display_name", ""),
+                venue=source.get("display_name", ""),
+                doi=item.get("doi", ""),
+                url=item.get("doi") or item.get("id", ""),
+                cited_by_count=item.get("cited_by_count", ""),
+            )
+        retrieved += len(results)
+        next_cursor = meta.get("next_cursor")
+        if not results or not next_cursor or retrieved >= count:
+            break
+        cursor = next_cursor
+        time.sleep(0.4)
+    return count, count > retrieved
 
 
-def run_arxiv(family: QueryFamily, candidates: list[dict[str, Any]]) -> int:
-    query = f'all:"{family.label}" OR all:"{family.plain[:80]}"'
-    params = {
-        "search_query": query,
-        "start": "0",
-        "max_results": "50",
-        "sortBy": "relevance",
-        "sortOrder": "descending",
-    }
-    url = "https://export.arxiv.org/api/query?" + urllib.parse.urlencode(params)
-    text = fetch_text(url, RAW / f"arxiv_{family.key}.xml")
-    if text.lstrip().startswith("<!DOCTYPE html>") or "<feed" not in text:
-        return 0
+def run_arxiv(family: QueryFamily, candidates: list[dict[str, Any]]) -> tuple[int, bool]:
+    query = family.arxiv
     ns = {"atom": "http://www.w3.org/2005/Atom"}
-    root = ET.fromstring(text)
-    entries = root.findall("atom:entry", ns)
-    for entry in entries:
-        title = " ".join((entry.findtext("atom:title", "", ns) or "").split())
-        published = entry.findtext("atom:published", "", ns)
-        link = entry.findtext("atom:id", "", ns)
-        add_candidate(
-            candidates,
-            source="arXiv",
-            query_family=family.key,
-            id=link.rsplit("/", 1)[-1],
-            year=published[:4],
-            title=title,
-            venue="arXiv",
-            doi="",
-            url=link,
-        )
-    return len(entries)
+    retrieved = 0
+    total = 0
+    for page, start in enumerate(range(0, MAX_RECORDS, PAGE_SIZE)):
+        params = {
+            "search_query": query,
+            "start": str(start),
+            "max_results": str(PAGE_SIZE),
+            "sortBy": SORT_ARXIV,
+            "sortOrder": "descending",
+        }
+        url = "https://export.arxiv.org/api/query?" + urllib.parse.urlencode(params)
+        text = fetch_text(url, RAW / f"arxiv_{family.key}_p{page:02d}.xml")
+        if text.lstrip().startswith("<!DOCTYPE html>") or "<feed" not in text:
+            return retrieved, False
+        root = ET.fromstring(text)
+        total_text = root.findtext("{http://a9.com/-/spec/opensearch/1.1/}totalResults", "0")
+        total = int(total_text or 0)
+        entries = root.findall("atom:entry", ns)
+        for entry in entries:
+            title = " ".join((entry.findtext("atom:title", "", ns) or "").split())
+            published = entry.findtext("atom:published", "", ns)
+            link = entry.findtext("atom:id", "", ns)
+            add_candidate(
+                candidates,
+                source="arXiv",
+                query_family=family.key,
+                id=link.rsplit("/", 1)[-1],
+                year=published[:4],
+                title=title,
+                venue="arXiv",
+                doi="",
+                url=link,
+            )
+        retrieved += len(entries)
+        if len(entries) < PAGE_SIZE or retrieved >= total:
+            break
+        time.sleep(3.2)
+    return total or retrieved, bool(total) and total > retrieved
 
 
 def dedupe(candidates: list[dict[str, Any]]) -> list[dict[str, Any]]:
@@ -278,9 +382,12 @@ def main() -> None:
             ("arXiv", lambda: run_arxiv(family, candidates)),
         ]:
             try:
-                count = fn()
-                counts.append({"source": source, "query_family": family.key, "count": count, "status": "ok"})
-                print(f"  {source}: {count}")
+                count, truncated = fn()
+                status = "ok_truncated_at_max_records" if truncated else "ok"
+                counts.append(
+                    {"source": source, "query_family": family.key, "count": count, "status": status}
+                )
+                print(f"  {source}: {count}{' (truncated)' if truncated else ''}")
             except Exception as exc:  # noqa: BLE001
                 counts.append(
                     {

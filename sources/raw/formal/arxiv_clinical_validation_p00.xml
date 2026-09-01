@@ -1,0 +1,196 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/ymRkZGKiC2VM0C2VGgQ710fBri4</id>
+  <title>arXiv Query: search_query=(abs:"digital biomarker" OR abs:"digital phenotype" OR abs:"voice biomarker" OR abs:"speech biomarker" OR abs:"acoustic biomarker") AND (abs:"clinical validation" OR abs:"analytical validation" OR abs:"external validation" OR abs:"clinical utility")&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-09-01T08:51:24Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(abs:%22digital+biomarker%22+OR+(abs:%22digital+phenotype%22+OR+(abs:%22voice+biomarker%22+OR+(abs:%22speech+biomarker%22+OR+abs:%22acoustic+biomarker%22))))+AND+(abs:%22clinical+validation%22+OR+(abs:%22analytical+validation%22+OR+(abs:%22external+validation%22+OR+abs:%22clinical+utility%22)))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>7</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2604.14354v1</id>
+    <title>Who is Speaking or Who is Depressed? A Controlled Study of Speaker Leakage in Speech-Based Depression Detection</title>
+    <updated>2026-04-15T19:14:48Z</updated>
+    <link href="https://arxiv.org/abs/2604.14354v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.14354v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This study investigates whether speech-based depression detection models learn depression-related acoustic biomarkers or instead rely on speaker identity cues. Using the DAIC-WOZ dataset, we propose a data-splitting strategy that controls speaker overlap between training and test sets while keeping the training size constant, and evaluate three models of varying complexity. Results show that speaker overlap significantly boosts performance, whereas accuracy drops sharply on unseen speakers. Even with a Domain-Adversarial Neural Network, a substantial performance gap remains. These findings indicate that depression-related features extracted by current speech models are highly entangled with speaker identity. Conventional evaluation protocols may therefore overestimate generalization and clinical utility, highlighting the need for strictly speaker-independent evaluation.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-15T19:14:48Z</published>
+    <arxiv:comment>Submitted to Interspeech 2026</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Hsiang-Chen Yeh</name>
+    </author>
+    <author>
+      <name>Luqi Sun</name>
+    </author>
+    <author>
+      <name>Aurosweta Mahapatra</name>
+    </author>
+    <author>
+      <name>Shreeram Suresh Chandra</name>
+    </author>
+    <author>
+      <name>Emily Mower Provost</name>
+    </author>
+    <author>
+      <name>Berrak Sisman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.03995v1</id>
+    <title>Early Detection of Alzheimer's Disease Using Explainable Machine Learning on Clinical Biomarkers: A Multi-Class Classification Study Using the Alzheimer's Disease Neuroimaging Initiative (ADNI) Dataset</title>
+    <updated>2026-04-14T10:54:14Z</updated>
+    <link href="https://arxiv.org/abs/2606.03995v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.03995v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Background: Alzheimer's disease (AD) affects over 55 million people worldwide. Accurate, interpretable detection of normal cognition (NC), mild cognitive impairment (MCI), and AD from routine clinical assessments remains a critical unmet need. Methods: An XGBoost classifier was developed for three-class detection using eight clinical features from the Alzheimer's Disease Neuroimaging Initiative (ADNI): MMSE, CDR Global, CDR Sum of Boxes (CDR-SB), MoCA, FAQ, age, sex, and education. Hyperparameters were optimised using Optuna (50 trials); class imbalance was addressed with SMOTE. Performance was evaluated by macro AUC-ROC with 1,000-iteration bootstrap 95% confidence intervals, macro F1, balanced accuracy, and Cohen's kappa. SHAP values provided feature-level explainability. Results: The dataset comprised 1,641 baseline subjects (608 NC, 767 MCI, 266 AD). On five-fold cross-validation, mean macro AUC was 0.983 (SD 0.007), accuracy 0.944 (SD 0.006), and macro F1 0.929 (SD 0.008). On the held-out test set (n = 247), macro AUC was 0.982 (95% CI: 0.965--0.995), accuracy 0.943, balanced accuracy 0.932, macro F1 0.927, and Cohen's kappa 0.909. SHAP analysis identified CDR Global as the dominant predictor for NC and MCI, while CDR-SB and MMSE together drove AD classification. Conclusion: An explainable machine learning model trained on routine clinical assessments achieves near-perfect three-class Alzheimer's detection. SHAP analysis reveals clinically plausible, class-specific feature importance patterns supporting clinical validity. Future work will extend this framework with speech biomarkers for multimodal detection.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-14T10:54:14Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Afshan Hashmi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.15950v1</id>
+    <title>Cross-dataset Multivariate Time-series Model for Parkinson's Diagnosis via Keyboard Dynamics</title>
+    <updated>2025-10-10T17:42:08Z</updated>
+    <link href="https://arxiv.org/abs/2510.15950v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.15950v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Parkinson's disease (PD) presents a growing global challenge, affecting over 10 million individuals, with prevalence expected to double by 2040. Early diagnosis remains difficult due to the late emergence of motor symptoms and limitations of traditional clinical assessments. In this study, we propose a novel pipeline that leverages keystroke dynamics as a non-invasive and scalable biomarker for remote PD screening and telemonitoring. Our methodology involves three main stages: (i) preprocessing of data from four distinct datasets, extracting four temporal signals and addressing class imbalance through the comparison of three methods; (ii) pre-training eight state-of-the-art deep-learning architectures on the two largest datasets, optimizing temporal windowing, stride, and other hyperparameters; (iii) fine-tuning on an intermediate-sized dataset and performing external validation on a fourth, independent cohort. Our results demonstrate that hybrid convolutional-recurrent and transformer-based models achieve strong external validation performance, with AUC-ROC scores exceeding 90% and F1-Score over 70%. Notably, a temporal convolutional model attains an AUC-ROC of 91.14% in external validation, outperforming existing methods that rely solely on internal validation. These findings underscore the potential of keystroke dynamics as a reliable digital biomarker for PD, offering a promising avenue for early detection and continuous monitoring.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-10T17:42:08Z</published>
+    <arxiv:comment>Proceedings of the Workshop on Artificial Intelligence for Biomedical Data (AIBio 2025), 28th European Conference on Artificial Intelligence 2025, Springer CCIS</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Arianna Francesconi</name>
+    </author>
+    <author>
+      <name>Donato Cappetta</name>
+    </author>
+    <author>
+      <name>Fabio Rebecchi</name>
+    </author>
+    <author>
+      <name>Paolo Soda</name>
+    </author>
+    <author>
+      <name>Valerio Guarrasi</name>
+    </author>
+    <author>
+      <name>Rosa Sicilia</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.14089v1</id>
+    <title>Systematic FAIRness Assessment of Open Voice Biomarker Datasets for Mental Health and Neurodegenerative Diseases</title>
+    <updated>2025-08-14T06:55:27Z</updated>
+    <link href="https://arxiv.org/abs/2508.14089v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.14089v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Voice biomarkers--human-generated acoustic signals such as speech, coughing, and breathing--are promising tools for scalable, non-invasive detection and monitoring of mental health and neurodegenerative diseases. Yet, their clinical adoption remains constrained by inconsistent quality and limited usability of publicly available datasets. To address this gap, we present the first systematic FAIR (Findable, Accessible, Interoperable, Reusable) evaluation of 27 publicly available voice biomarker datasets focused on these disease areas. Using the FAIR Data Maturity Model and a structured, priority-weighted scoring method, we assessed FAIRness at subprinciple, principle, and composite levels. Our analysis revealed consistently high Findability but substantial variability and weaknesses in Accessibility, Interoperability, and Reusability. Mental health datasets exhibited greater variability in FAIR scores, while neurodegenerative datasets were slightly more consistent. Repository choice also significantly influenced FAIRness scores. To enhance dataset quality and clinical utility, we recommend adopting structured, domain-specific metadata standards, prioritizing FAIR-compliant repositories, and routinely applying structured FAIR evaluation frameworks. These findings provide actionable guidance to improve dataset interoperability and reuse, thereby accelerating the clinical translation of voice biomarker technologies.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-14T06:55:27Z</published>
+    <arxiv:comment>To appear in the Proceedings of the 28th International Conference on Text, Speech and Dialogue (TSD 2025), Erlangen, Germany, August 25-28, 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Ishaan Mahapatra</name>
+    </author>
+    <author>
+      <name>Nihar R. Mahapatra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.12990v4</id>
+    <title>Artificial Intelligence-derived Photoplethysmography Age as a Digital Biomarker for Cardiovascular Health</title>
+    <updated>2025-09-25T06:33:43Z</updated>
+    <link href="https://arxiv.org/abs/2502.12990v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.12990v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Background: Photoplethysmography (PPG), increasingly available through wearable devices, provides a non-invasive means of monitoring human hemodynamics. In this study, we introduce artificial intelligence-derived photoplethysmography (AI-PPG) age, a deep learning-based estimate of biological age from raw PPG signals, and evaluate its potential as a digital biomarker for cardiovascular health.
+  Methods: We developed a deep learning model with a distribution-aware loss function to reduce bias from imbalanced data. The model was trained and evaluated on the UK Biobank cohort (N = 212,231). We analyzed the association between the AI-PPG age gap (AI-PPG age minus calendar age) and multiple cardiovascular and metabolic outcomes, assessed its longitudinal value using serial PPG measurements, and externally validated its generalizability in an independent MIMIC-III-derived cohort (N = 2,343).
+  Results: After adjusting for key confounders, participants with an AI-PPG age gap greater than 9 years have a significantly higher risk of major adverse cardiovascular and cerebrovascular events (hazard ratio of 2.37, p = 8.46x10$^{-80}$), as well as seven secondary outcomes including coronary heart disease and myocardial infarction (all p &lt; 0.005). Conversely, those with a gap below -9 years show a lower risk profile. Longitudinal analysis demonstrates that changes in AI-PPG age add predictive value over time. In the external validation cohort, each one-year increase in AI-PPG age gap is associated with higher in-hospital mortality (odds ratio of 1.02, p = 0.01).
+  Conclusions: AI-PPG age is a scalable, non-invasive biomarker for cardiovascular health assessment. Integrated with wearable devices, it may enable population-level screening, personalized monitoring, and early intervention.</summary>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-18T16:12:28Z</published>
+    <arxiv:primary_category term="eess.SP"/>
+    <author>
+      <name>Guangkun Nie</name>
+    </author>
+    <author>
+      <name>Qinghao Zhao</name>
+    </author>
+    <author>
+      <name>Gongzheng Tang</name>
+    </author>
+    <author>
+      <name>Yaxin Li</name>
+    </author>
+    <author>
+      <name>Shenda Hong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.18731v2</id>
+    <title>Evaluating Spoken Language as a Biomarker for Automated Screening of Cognitive Impairment</title>
+    <updated>2026-03-02T19:33:35Z</updated>
+    <link href="https://arxiv.org/abs/2501.18731v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.18731v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Timely and accurate assessment of cognitive impairment remains a major unmet need. Speech biomarkers offer a scalable, non-invasive, cost-effective solution for automated screening. However, the clinical utility of machine learning (ML) remains limited by interpretability and generalisability to real-world speech datasets. We evaluate explainable ML for screening of Alzheimer's disease and related dementias (ADRD) and severity prediction using benchmark DementiaBank speech (N = 291, 64% female, 69.8 (SD = 8.6) years). We validate generalisability on pilot data collected in-residence (N = 22, 59% female, 76.2 (SD = 8.0) years). To enhance clinical utility, we stratify risk for actionable triage and assess linguistic feature importance. We show that a Random Forest trained on linguistic features for ADRD detection achieves a mean sensitivity of 69.4% (95% confidence interval (CI) = 66.4-72.5) and specificity of 83.3% (78.0-88.7). On pilot data, this model yields a mean sensitivity of 70.0% (58.0-82.0) and specificity of 52.5% (39.3-65.7). For prediction of Mini-Mental State Examination (MMSE) scores, a Random Forest Regressor achieves a mean absolute MMSE error of 3.7 (3.7-3.8), with comparable performance of 3.3 (3.1-3.5) on pilot data. Risk stratification improves specificity by 13% on the test set, offering a pathway for clinical triage. Linguistic features associated with ADRD include increased use of pronouns and adverbs, greater disfluency, reduced analytical thinking, lower lexical diversity, and fewer words that reflect a psychological state of completion. Our predictive modelling shows promise for integration with conversational technology at home to monitor cognitive health and triage higher-risk individuals, enabling early screening and intervention.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-30T20:17:17Z</published>
+    <arxiv:comment>Published in Nature Communications Medicine (2025)</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Maria R. Lima</name>
+    </author>
+    <author>
+      <name>Alexander Capstick</name>
+    </author>
+    <author>
+      <name>Fatemeh Geranmayeh</name>
+    </author>
+    <author>
+      <name>Ramin Nilforooshan</name>
+    </author>
+    <author>
+      <name>Maja Matarić</name>
+    </author>
+    <author>
+      <name>Ravi Vaidyanathan</name>
+    </author>
+    <author>
+      <name>Payam Barnaghi</name>
+    </author>
+    <arxiv:doi>10.1038/s43856-025-01263-1</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s43856-025-01263-1" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2212.14490v1</id>
+    <title>Multi-modal deep learning system for depression and anxiety detection</title>
+    <updated>2022-12-30T00:02:58Z</updated>
+    <link href="https://arxiv.org/abs/2212.14490v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2212.14490v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Traditional screening practices for anxiety and depression pose an impediment to monitoring and treating these conditions effectively. However, recent advances in NLP and speech modelling allow textual, acoustic, and hand-crafted language-based features to jointly form the basis of future mental health screening and condition detection. Speech is a rich and readily available source of insight into an individual's cognitive state and by leveraging different aspects of speech, we can develop new digital biomarkers for depression and anxiety. To this end, we propose a multi-modal system for the screening of depression and anxiety from self-administered speech tasks. The proposed model integrates deep-learned features from audio and text, as well as hand-crafted features that are informed by clinically-validated domain knowledge. We find that augmenting hand-crafted features with deep-learned features improves our overall classification F1 score comparing to a baseline of hand-crafted features alone from 0.58 to 0.63 for depression and from 0.54 to 0.57 for anxiety. The findings of our work suggest that speech-based biomarkers for depression and anxiety hold significant promise in the future of digital health.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-12-30T00:02:58Z</published>
+    <arxiv:comment>accepted to the PAI4MH workshop at NeurIPS 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Brian Diep</name>
+    </author>
+    <author>
+      <name>Marija Stanojevic</name>
+    </author>
+    <author>
+      <name>Jekaterina Novikova</name>
+    </author>
+  </entry>
+</feed>

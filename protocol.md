@@ -7,17 +7,27 @@ Method basis: K-Dense `literature-review`, `paper-lookup`, and `citation-managem
 
 ## Review Type
 
-Initial design: systematic mapping review with PRISMA-style search reporting.
+Confirmed design: **systematic mapping review of the field**. This is the review type of record; earlier drafts also described the work as a "systematic review" and as a "living" review, and both descriptions are superseded here.
 
-Escalation path: convert to a systematic review if pilot search yields a manageable and clinically coherent subset.
+Reporting standards:
 
-Working confirmation: this is an academic systematic review of the field, not a venue-driven review.
+- **PRISMA-ScR** (Tricco et al., 2018, doi:10.7326/M18-0850) is the reporting guideline of record. PRISMA 2020 governs systematic reviews of effectiveness; mapping and scoping syntheses are reported against the ScR extension.
+- **PRISMA-S** (Rethlefsen et al., 2021, doi:10.1186/s13643-020-01542-z) governs search reporting: exact strings, filters, dates, counts, raw exports, and re-runnable queries for every source.
+- **JBI scoping-review guidance** (Peters et al., 2020, doi:10.11124/JBIES-20-00167) governs conduct.
+
+Registration: PROSPERO does not accept scoping or mapping reviews. Registration, when made, goes to the Open Science Framework.
+
+Not a living review: the current design has no committed re-search cadence. The word "living" must not be used unless an update interval and re-run trigger are specified in this protocol.
+
+Escalation path: convert to a systematic review reported against PRISMA 2020 if full-text screening yields a manageable and clinically coherent subset.
+
+Critical appraisal: optional under PRISMA-ScR. This review performs it anyway, because validation maturity and reproducibility are mapped dimensions (RQ4, RQ6), not eligibility filters.
 
 ## Methodological Benchmark
 
 This review will follow a staged systematic mapping-review design, using the methodological pattern observed in Abdalla Z. Mohamed's work as an operational benchmark:
 
-1. Systematic review discipline: PECO/PICOS framing, PRISMA reporting, prospective registration when possible, full database-specific search strings, explicit exclusion reasons, and risk-of-bias assessment.
+1. Systematic review discipline: PCC framing per PRISMA-ScR (PECO/PICOS if the review escalates to PRISMA 2020), PRISMA-family reporting, prospective registration when possible, full database-specific search strings, explicit exclusion reasons, and risk-of-bias assessment.
 2. Technical benchmarking discipline: validation claims must be tied to numerical evidence, such as subject-level split, external validation, repeated-measure reliability, calibration, subgroup performance, or robustness to recording protocol.
 3. Data-infrastructure discipline: data availability, code availability, preprocessing documentation, quality-control metrics, and standardization of input data must be extracted as first-class outcomes.
 
@@ -37,15 +47,25 @@ RQ5. Which model/feature families dominate: hand-crafted acoustic features, ling
 
 RQ6. How reproducible and transportable are the reported biomarker claims with respect to data access, code access, preprocessing specification, recording protocol, subject-level separation, external validation, language/population generalization, and clinical reference standard?
 
-## Population, Index, Comparator, Outcome
+## Eligibility Framework: Population, Concept, Context (PCC)
+
+PRISMA-ScR and JBI guidance frame eligibility for mapping and scoping reviews as PCC rather than PICO/PECO. PICO presumes a comparator and an effect estimate, which a mapping review does not require: this review characterizes what the field has studied, not whether one intervention outperforms another.
 
 | Element | Definition |
 |---|---|
-| Population | Humans of any age group, language, geography, health status, or clinical population. |
-| Index signal | Voice, speech, vocalization, cough, breathing, or speech-language features extracted from audio. |
+| **Population** | Humans of any age group, language, geography, health status, or clinical population. Non-human vocalization is excluded. |
+| **Concept** | Voice, speech, vocalization, cough, breathing, or speech-language features extracted from audio and used as a biomarker, proxy marker, screening marker, monitoring marker, risk marker, or aging marker. The concept explicitly includes the *maturity* of that use: validation level attained (RQ4) and reproducibility/transportability of the claim (RQ6). |
+| **Context** | Any recording and deployment setting: clinic, hospital, laboratory, home, remote or telehealth, population cohort, and any elicitation task, device, acoustic environment, or language. Both clinical and non-clinical research contexts are in scope. |
+
+Comparator and outcome are not eligibility criteria in this review, but they remain mandatory *extraction* fields, because the map records what each study compared against and what it reported:
+
+| Extraction dimension | Definition |
+|---|---|
 | Comparator | Clinical labels, chronological age, biological/omic/physiologic clocks, standard clinical scores, longitudinal follow-up, healthy controls, or external cohorts. |
 | Outcomes | Biomarker performance, association with health/aging measures, generalization, validation evidence, bias/fairness, clinical utility. |
 | Reproducibility outcome | Data/code availability, recording-protocol completeness, preprocessing transparency, split design, external validation, subgroup reporting, and auditability of the evidence claim. |
+
+If the review escalates to a systematic review of effectiveness under PRISMA 2020, this framework converts back to PECO/PICOS and the comparator becomes an eligibility criterion.
 
 ## Inclusion Criteria
 

@@ -26,7 +26,7 @@ This governance layer is adapted from local AI-scientist source critiques:
 
 The review adopts three controls as a benchmark for methodological rigor:
 
-1. Systematic-review controls: PECO/PICOS framing, PRISMA reporting, prospective registration when possible, database-specific search strings, exclusion-reason tables, and risk-of-bias assessment.
+1. Systematic-review controls: PCC (Population, Concept, Context) framing per PRISMA-ScR, PRISMA-family reporting, prospective registration when possible, database-specific search strings, exclusion-reason tables, and risk-of-bias assessment.
 2. Technical-benchmark controls: validation claims must be grounded in explicit metrics, not prose. For voice-biomarker papers this includes subject-level separation, external validation, calibration, repeated-measure reliability, robustness to recording task/device/environment, subgroup performance, and language/population transportability.
 3. Data-infrastructure controls: data availability, code availability, preprocessing specification, feature definitions, model availability, quality-control procedures, and standard formats must be extracted and scored.
 

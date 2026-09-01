@@ -1,0 +1,759 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/NamegOIr7RvFDvaUZt6g+MHupTw</id>
+  <title>arXiv Query: search_query=abs:"voice biomarker" OR abs:"vocal biomarker" OR abs:"speech biomarker" OR abs:"speech-based digital biomarker" OR abs:"voice-derived digital biomarker" OR abs:"speech-derived digital biomarker"&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-09-01T08:47:51Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22voice+biomarker%22+OR+(abs:%22vocal+biomarker%22+OR+(abs:%22speech+biomarker%22+OR+(abs:%22speech-based+digital+biomarker%22+OR+(abs:%22voice-derived+digital+biomarker%22+OR+abs:%22speech-derived+digital+biomarker%22))))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>24</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2607.08714v1</id>
+    <title>Multimodal Digital Biomarker for Asthma: Complementary Roles of Vocal, Clinical and Demographic Factors</title>
+    <updated>2026-07-09T17:24:30Z</updated>
+    <link href="https://arxiv.org/abs/2607.08714v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.08714v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Asthma affects over 260 million people worldwide, yet diagnosis remains dependent on spirometry and specialist assessment, limiting accessibility in primary care and low-resource settings. Vocal biomarkers offer a promising non-invasive alternative, but prior studies have largely focused on acoustic features without integrating clinical context. We present a multimodal Mixture-of-Experts framework for asthma detection that adaptively combines acoustic embeddings from sustained vowel phonation and reading passage tasks with structured clinical and demographic data. The model was evaluated on a matched cohort of 1,218 asthma cases and healthy controls from the Colive Voice study. The multimodal model achieved an AUROC of 0.85 and Brier score of 0.17, outperforming unimodal and bimodal approaches. Adaptive gating analysis revealed increased reliance on audio features in participants with greater respiratory symptom burden, whereas clinical features contributed more strongly in less symptomatic individuals. These findings support scalable and explainable asthma screening using smartphone-collected voice recordings.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-09T17:24:30Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Vladimir Despotovic</name>
+    </author>
+    <author>
+      <name>Milena Despotovic</name>
+    </author>
+    <author>
+      <name>Abir Elbeji</name>
+    </author>
+    <author>
+      <name>Petr V. Nazarov</name>
+    </author>
+    <author>
+      <name>Guy Fagherazzi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.03039v1</id>
+    <title>Mixed-Precision Information Bottlenecks for On-Device Trait-State Disentanglement in Bipolar Agitation Detection</title>
+    <updated>2026-05-04T18:06:17Z</updated>
+    <link href="https://arxiv.org/abs/2605.03039v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.03039v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Continuous monitoring of bipolar disorder agitation via voice biomarkers requires disentangling stable speaker traits from volatile affective states on resource-constrained edge devices. We introduce MP-IB, the first framework to treat mixed-precision quantization as an information bottleneck for clinical trait-state separation. The core insight is that numerical precision itself controls capacity: an FP16 trait head (1,024 bits) encodes speaker identity, while an INT4 state head (128 bits) captures agitation, yielding 8x information asymmetry without adversarial training. We augment this with Dynamic Precision Scheduling and Multi-Scale Temporal Fusion. On Bridge2AI-Voice (N=833, 4 sessions/participant, strict speaker-independent CV), MP-IB achieves rho = 0.117 (95\% CI: [0.089, 0.145], p=0.003 vs. chance), outperforming 94M-parameter WavLM-Adapter with in-domain SSL continuation (rho = -0.042), beta VAE disentanglement (rho = 0.089), and hand-crafted prosody (rho = 0.031) by 2.8--15.9 points absolute. Zero-shot transfer to CREMA-D achieves AUC=0.817. Identity leakage is suppressed to near-random (EER=0.42, MIA-AUC=0.52). End-to-end latency is 23.4 ms with a 617 KB footprint, enabling real-time monitoring on sub 20 dollar devices.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-04T18:06:17Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Joydeep Chandra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.03995v1</id>
+    <title>Early Detection of Alzheimer's Disease Using Explainable Machine Learning on Clinical Biomarkers: A Multi-Class Classification Study Using the Alzheimer's Disease Neuroimaging Initiative (ADNI) Dataset</title>
+    <updated>2026-04-14T10:54:14Z</updated>
+    <link href="https://arxiv.org/abs/2606.03995v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.03995v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Background: Alzheimer's disease (AD) affects over 55 million people worldwide. Accurate, interpretable detection of normal cognition (NC), mild cognitive impairment (MCI), and AD from routine clinical assessments remains a critical unmet need. Methods: An XGBoost classifier was developed for three-class detection using eight clinical features from the Alzheimer's Disease Neuroimaging Initiative (ADNI): MMSE, CDR Global, CDR Sum of Boxes (CDR-SB), MoCA, FAQ, age, sex, and education. Hyperparameters were optimised using Optuna (50 trials); class imbalance was addressed with SMOTE. Performance was evaluated by macro AUC-ROC with 1,000-iteration bootstrap 95% confidence intervals, macro F1, balanced accuracy, and Cohen's kappa. SHAP values provided feature-level explainability. Results: The dataset comprised 1,641 baseline subjects (608 NC, 767 MCI, 266 AD). On five-fold cross-validation, mean macro AUC was 0.983 (SD 0.007), accuracy 0.944 (SD 0.006), and macro F1 0.929 (SD 0.008). On the held-out test set (n = 247), macro AUC was 0.982 (95% CI: 0.965--0.995), accuracy 0.943, balanced accuracy 0.932, macro F1 0.927, and Cohen's kappa 0.909. SHAP analysis identified CDR Global as the dominant predictor for NC and MCI, while CDR-SB and MMSE together drove AD classification. Conclusion: An explainable machine learning model trained on routine clinical assessments achieves near-perfect three-class Alzheimer's detection. SHAP analysis reveals clinically plausible, class-specific feature importance patterns supporting clinical validity. Future work will extend this framework with speech biomarkers for multimodal detection.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-14T10:54:14Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Afshan Hashmi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.00308v1</id>
+    <title>Vocal Prognostic Digital Biomarkers in Monitoring Chronic Heart Failure: A Longitudinal Observational Study</title>
+    <updated>2026-03-31T23:08:43Z</updated>
+    <link href="https://arxiv.org/abs/2604.00308v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.00308v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Objective: This study aimed to evaluate which voice features can predict health deterioration in patients with chronic HF.
+  Background: Heart failure (HF) is a chronic condition with progressive deterioration and acute decompensations, often requiring hospitalization and imposing substantial healthcare and economic burdens. Current standard-of-care (SoC) home monitoring, such as weight tracking, lacks predictive accuracy and requires high patient engagement. Voice is a promising non-invasive biomarker, though prior studies have mainly focused on acute HF stages.
+  Methods: In a 2-month longitudinal study, 32 patients with HF collected daily voice recordings and SoC measures of weight and blood pressure at home, with biweekly questionnaires for health status. Acoustic analysis generated detailed vowel and speech features. Time-series features were extracted from aggregated lookback windows (e.g., 7 days) to predict next-day health status. Explainable machine learning with nested cross-validation identified top vocal biomarkers, and a case study illustrated model application.
+  Results: A total of 21,863 recordings were analyzed. Acoustic vowel features showed strong correlations with health status. Time-series voice features within the lookback window outperformed corresponding standard care measures, achieving peak sensitivity and specificity of 0.826 and 0.782 versus 0.783 and 0.567 for SoC metrics. Key prognostic voice features identifying deterioration included delayed energy shift, low energy variability, and higher shimmer variability in vowels, along with reduced speaking and articulation rate, lower phonation ratio, decreased voice quality, and increased formant variability in speech.
+  Conclusion: Voice-based monitoring offers a non-invasive approach to detect early health changes in chronic HF, supporting proactive and personalized care.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-31T23:08:43Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Fan Wu</name>
+    </author>
+    <author>
+      <name>Matthias P. Nägele</name>
+    </author>
+    <author>
+      <name>Daryush D. Mehta</name>
+    </author>
+    <author>
+      <name>Elgar Fleisch</name>
+    </author>
+    <author>
+      <name>Frank Ruschitzka</name>
+    </author>
+    <author>
+      <name>Andreas J. Flammer</name>
+    </author>
+    <author>
+      <name>Filipe Barata</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.07978v1</id>
+    <title>Cross-Linguistic Persona-Driven Data Synthesis for Robust Multimodal Cognitive Decline Detection</title>
+    <updated>2026-02-08T14:10:05Z</updated>
+    <link href="https://arxiv.org/abs/2602.07978v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.07978v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech-based digital biomarkers represent a scalable, non-invasive frontier for the early identification of Mild Cognitive Impairment (MCI). However, the development of robust diagnostic models remains impeded by acute clinical data scarcity and a lack of interpretable reasoning. Current solutions frequently struggle with cross-lingual generalization and fail to provide the transparent rationales essential for clinical trust. To address these barriers, we introduce SynCog, a novel framework integrating controllable zero-shot multimodal data synthesis with Chain-of-Thought (CoT) deduction fine-tuning. Specifically, SynCog simulates diverse virtual subjects with varying cognitive profiles to effectively alleviate clinical data scarcity. This generative paradigm enables the rapid, zero-shot expansion of clinical corpora across diverse languages, effectively bypassing data bottlenecks in low-resource settings and bolstering the diagnostic performance of Multimodal Large Language Models (MLLMs). Leveraging this synthesized dataset, we fine-tune a foundational multimodal backbone using a CoT deduction strategy, empowering the model to explicitly articulate diagnostic thought processes rather than relying on black-box predictions. Extensive experiments on the ADReSS and ADReSSo benchmarks demonstrate that augmenting limited clinical data with synthetic phenotypes yields competitive diagnostic performance, achieving Macro-F1 scores of 80.67% and 78.46%, respectively, outperforming current baseline models. Furthermore, evaluation on an independent real-world Mandarin cohort (CIR-E) demonstrates robust cross-linguistic generalization, attaining a Macro-F1 of 48.71%. These findings constitute a critical step toward providing clinically trustworthy and linguistically inclusive cognitive assessment tools for global healthcare.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-08T14:10:05Z</published>
+    <arxiv:comment>18 pages, 7 figures, 6 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Rui Feng</name>
+    </author>
+    <author>
+      <name>Zhiyao Luo</name>
+    </author>
+    <author>
+      <name>Liuyu Wu</name>
+    </author>
+    <author>
+      <name>Wei Wang</name>
+    </author>
+    <author>
+      <name>Yuting Song</name>
+    </author>
+    <author>
+      <name>Yong Liu</name>
+    </author>
+    <author>
+      <name>Kok Pin Ng</name>
+    </author>
+    <author>
+      <name>Jianqing Li</name>
+    </author>
+    <author>
+      <name>Xingyao Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.24628v1</id>
+    <title>AI-Driven Acoustic Voice Biomarker-Based Hierarchical Classification of Benign Laryngeal Voice Disorders from Sustained Vowels</title>
+    <updated>2025-12-31T05:04:54Z</updated>
+    <link href="https://arxiv.org/abs/2512.24628v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.24628v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Benign laryngeal voice disorders affect nearly one in five individuals and often manifest as dysphonia, while also serving as non-invasive indicators of broader physiological dysfunction. We introduce a clinically inspired hierarchical machine learning framework for automated classification of eight benign voice disorders alongside healthy controls, using acoustic features extracted from short, sustained vowel phonations. Experiments utilized 15,132 recordings from 1,261 speakers in the Saarbruecken Voice Database, covering vowels /a/, /i/, and /u/ at neutral, high, low, and gliding pitches. Mirroring clinical triage workflows, the framework operates in three sequential stages: Stage 1 performs binary screening of pathological versus non-pathological voices by integrating convolutional neural network-derived mel-spectrogram features with 21 interpretable acoustic biomarkers; Stage 2 stratifies voices into Healthy, Functional or Psychogenic, and Structural or Inflammatory groups using a cubic support vector machine; Stage 3 achieves fine-grained classification by incorporating probabilistic outputs from prior stages, improving discrimination of structural and inflammatory disorders relative to functional conditions. The proposed system consistently outperformed flat multi-class classifiers and pre-trained self-supervised models, including META HuBERT and Google HeAR, whose generic objectives are not optimized for sustained clinical phonation. By combining deep spectral representations with interpretable acoustic features, the framework enhances transparency and clinical alignment. These results highlight the potential of quantitative voice biomarkers as scalable, non-invasive tools for early screening, diagnostic triage, and longitudinal monitoring of vocal health.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-31T05:04:54Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Mohsen Annabestani</name>
+    </author>
+    <author>
+      <name>Samira Aghadoost</name>
+    </author>
+    <author>
+      <name>Anais Rameau</name>
+    </author>
+    <author>
+      <name>Olivier Elemento</name>
+    </author>
+    <author>
+      <name>Gloria Chia-Yi Chiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.16856v1</id>
+    <title>The use of vocal biomarkers in the detection of Parkinson's disease: a robust statistical performance comparison of classic machine learning models</title>
+    <updated>2025-11-20T23:43:38Z</updated>
+    <link href="https://arxiv.org/abs/2511.16856v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.16856v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Parkinson's disease (PD) is a progressive neurodegenerative disorder that, in addition to directly impairing functional mobility, is frequently associated with vocal impairments such as hypophonia and dysarthria, which typically manifest in the early stages. The use of vocal biomarkers to support the early diagnosis of PD presents a non-invasive, low-cost, and accessible alternative in clinical settings. Thus, the objective of this cross-sectional study was to consistently evaluate the effectiveness of a Deep Neural Network (DNN) in distinguishing individuals with Parkinson's disease from healthy controls, in comparison with traditional Machine Learning (ML) methods, using vocal biomarkers. Two publicly available voice datasets were used. Mel-frequency cepstral coefficients (MFCCs) were extracted from the samples, and model robustness was assessed using a validation strategy with 1000 independent random executions. Performance was evaluated using classification statistics. Since normality assumptions were not satisfied, non-parametric tests (Kruskal-Wallis and Bonferroni post-hoc tests) were applied to verify whether the tested classification models were similar or different in the classification of PD. With an average accuracy of $98.65\%$ and $92.11\%$ on the Italian Voice dataset and Parkinson's Telemonitoring dataset, respectively, the DNN demonstrated superior performance and efficiency compared to traditional ML models, while also achieving competitive results when benchmarked against relevant studies. Overall, this study confirms the efficiency of DNNs and emphasizes their potential to provide greater accuracy and reliability for the early detection of neurodegenerative diseases using voice-based biomarkers.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-20T23:43:38Z</published>
+    <arxiv:comment>18 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Katia Pires Nascimento do Sacramento</name>
+    </author>
+    <author>
+      <name>Elliot Q. C. Garcia</name>
+    </author>
+    <author>
+      <name>Nicéias Silva Vilela</name>
+    </author>
+    <author>
+      <name>Vinicius P. Sacramento</name>
+    </author>
+    <author>
+      <name>Tiago A. E. Ferreira</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.18169v1</id>
+    <title>Hearing Health in Home Healthcare: Leveraging LLMs for Illness Scoring and ALMs for Vocal Biomarker Extraction</title>
+    <updated>2025-10-20T23:46:46Z</updated>
+    <link href="https://arxiv.org/abs/2510.18169v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.18169v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The growing demand for home healthcare calls for tools that can support care delivery. In this study, we explore automatic health assessment from voice using real-world home care visit data, leveraging the diverse patient information it contains. First, we utilize Large Language Models (LLMs) to integrate Subjective, Objective, Assessment, and Plan (SOAP) notes derived from unstructured audio transcripts and structured vital signs into a holistic illness score that reflects a patient's overall health. This compact representation facilitates cross-visit health status comparisons and downstream analysis. Next, we design a multi-stage preprocessing pipeline to extract short speech segments from target speakers in home care recordings for acoustic analysis. We then employ an Audio Language Model (ALM) to produce plain-language descriptions of vocal biomarkers and examine their association with individuals' health status. Our experimental results benchmark both commercial and open-source LLMs in estimating illness scores, demonstrating their alignment with actual clinical outcomes, and revealing that SOAP notes are substantially more informative than vital signs. Building on the illness scores, we provide the first evidence that ALMs can identify health-related acoustic patterns from home care recordings and present them in a human-readable form. Together, these findings highlight the potential of LLMs and ALMs to harness heterogeneous in-home visit data for better patient monitoring and care.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-20T23:46:46Z</published>
+    <arxiv:comment>The Second Workshop on GenAI for Health at NeurIPS 2025</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Yu-Wen Chen</name>
+    </author>
+    <author>
+      <name>William Ho</name>
+    </author>
+    <author>
+      <name>Sasha M. Vergez</name>
+    </author>
+    <author>
+      <name>Grace Flaherty</name>
+    </author>
+    <author>
+      <name>Pallavi Gupta</name>
+    </author>
+    <author>
+      <name>Zhihong Zhang</name>
+    </author>
+    <author>
+      <name>Maryam Zolnoori</name>
+    </author>
+    <author>
+      <name>Margaret V. McDonald</name>
+    </author>
+    <author>
+      <name>Maxim Topaz</name>
+    </author>
+    <author>
+      <name>Zoran Kostic</name>
+    </author>
+    <author>
+      <name>Julia Hirschberg</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.14089v1</id>
+    <title>Systematic FAIRness Assessment of Open Voice Biomarker Datasets for Mental Health and Neurodegenerative Diseases</title>
+    <updated>2025-08-14T06:55:27Z</updated>
+    <link href="https://arxiv.org/abs/2508.14089v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.14089v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Voice biomarkers--human-generated acoustic signals such as speech, coughing, and breathing--are promising tools for scalable, non-invasive detection and monitoring of mental health and neurodegenerative diseases. Yet, their clinical adoption remains constrained by inconsistent quality and limited usability of publicly available datasets. To address this gap, we present the first systematic FAIR (Findable, Accessible, Interoperable, Reusable) evaluation of 27 publicly available voice biomarker datasets focused on these disease areas. Using the FAIR Data Maturity Model and a structured, priority-weighted scoring method, we assessed FAIRness at subprinciple, principle, and composite levels. Our analysis revealed consistently high Findability but substantial variability and weaknesses in Accessibility, Interoperability, and Reusability. Mental health datasets exhibited greater variability in FAIR scores, while neurodegenerative datasets were slightly more consistent. Repository choice also significantly influenced FAIRness scores. To enhance dataset quality and clinical utility, we recommend adopting structured, domain-specific metadata standards, prioritizing FAIR-compliant repositories, and routinely applying structured FAIR evaluation frameworks. These findings provide actionable guidance to improve dataset interoperability and reuse, thereby accelerating the clinical translation of voice biomarker technologies.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-14T06:55:27Z</published>
+    <arxiv:comment>To appear in the Proceedings of the 28th International Conference on Text, Speech and Dialogue (TSD 2025), Erlangen, Germany, August 25-28, 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Ishaan Mahapatra</name>
+    </author>
+    <author>
+      <name>Nihar R. Mahapatra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.20058v4</id>
+    <title>Modeling Parkinson's Disease Progression Using Longitudinal Voice Biomarkers: A Comparative Study of Statistical and Neural Mixed-Effects Models</title>
+    <updated>2026-04-27T06:59:28Z</updated>
+    <link href="https://arxiv.org/abs/2507.20058v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.20058v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Longitudinal voice biomarkers provide a non-invasive source of information for monitoring Parkinson's disease progression, but their statistical analysis is difficult because repeated measurements from the same subject are correlated, clinical cohorts are often small, and disease trajectories can vary substantially across individuals. This study evaluates statistical and neural mixed-effects approaches for modeling Parkinson's disease progression from telemonitoring voice data. Using the Oxford Parkinson's telemonitoring dataset (N=42), we compare Neural Mixed Effects (NME) models, Generalized Neural Network Mixed Models (GNMMs), and semi-parametric Generalized Additive Mixed Models (GAMMs) under the same longitudinal prediction setting. The results show that neural mixed-effects models provide flexible nonlinear representations but can overfit severely in this small-sample setting, whereas GAMMs achieve stronger predictive performance and retain interpretable smooth effects and subject-level structure. In particular, the GAMM-based approach attains the lowest prediction error (MSE 6.56), while the neural baselines have substantially larger errors (MSE &gt; 90). These findings support the use of interpretable statistical mixed-effects models for small longitudinal telemonitoring studies and suggest that larger and more diverse cohorts are needed before highly flexible neural mixed-effects models can be reliably assessed in this application.</summary>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-26T20:56:32Z</published>
+    <arxiv:comment>Published version: Computer Methods and Programs in Biomedicine Update, DOI: 10.1016/j.cmpbup.2026.100242. Version note: https://doi.org/10.5281/zenodo.19804672</arxiv:comment>
+    <arxiv:primary_category term="stat.ML"/>
+    <arxiv:journal_ref>Computer Methods and Programs in Biomedicine Update, Volume 9, 2026, Article 100242</arxiv:journal_ref>
+    <author>
+      <name>Ran Tong</name>
+    </author>
+    <author>
+      <name>Lanruo Wang</name>
+    </author>
+    <author>
+      <name>Tong Wang</name>
+    </author>
+    <author>
+      <name>Wei Yan</name>
+    </author>
+    <arxiv:doi>10.1016/j.cmpbup.2026.100242</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.cmpbup.2026.100242" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.23822v3</id>
+    <title>Speech as a Multimodal Digital Phenotype for Multi-Task LLM-based Mental Health Prediction</title>
+    <updated>2025-07-23T14:16:49Z</updated>
+    <link href="https://arxiv.org/abs/2505.23822v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.23822v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech is a noninvasive digital phenotype that can offer valuable insights into mental health conditions, but it is often treated as a single modality. In contrast, we propose the treatment of patient speech data as a trimodal multimedia data source for depression detection. This study explores the potential of large language model-based architectures for speech-based depression prediction in a multimodal regime that integrates speech-derived text, acoustic landmarks, and vocal biomarkers. Adolescent depression presents a significant challenge and is often comorbid with multiple disorders, such as suicidal ideation and sleep disturbances. This presents an additional opportunity to integrate multi-task learning (MTL) into our study by simultaneously predicting depression, suicidal ideation, and sleep disturbances using the multimodal formulation. We also propose a longitudinal analysis strategy that models temporal changes across multiple clinical interactions, allowing for a comprehensive understanding of the conditions' progression. Our proposed approach, featuring trimodal, longitudinal MTL is evaluated on the Depression Early Warning dataset. It achieves a balanced accuracy of 70.8%, which is higher than each of the unimodal, single-task, and non-longitudinal methods.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-28T04:07:17Z</published>
+    <arxiv:comment>6 pages, 1 figure, 3 tables. The corresponding author is Mai Ali (maia dot ali at mail dot utoronto dot ca). Christopher Lucasius and Tanmay P. Patel contributed equally</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Mai Ali</name>
+    </author>
+    <author>
+      <name>Christopher Lucasius</name>
+    </author>
+    <author>
+      <name>Tanmay P. Patel</name>
+    </author>
+    <author>
+      <name>Madison Aitken</name>
+    </author>
+    <author>
+      <name>Jacob Vorstman</name>
+    </author>
+    <author>
+      <name>Peter Szatmari</name>
+    </author>
+    <author>
+      <name>Marco Battaglia</name>
+    </author>
+    <author>
+      <name>Deepa Kundur</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.16490v2</id>
+    <title>HPP-Voice: A Large-Scale Evaluation of Speech Embeddings for Multi-Phenotypic Classification</title>
+    <updated>2025-05-25T10:12:09Z</updated>
+    <link href="https://arxiv.org/abs/2505.16490v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.16490v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Human speech contains paralinguistic cues that reflect a speaker's physiological and neurological state, potentially enabling non-invasive detection of various medical phenotypes. We introduce the Human Phenotype Project Voice corpus (HPP-Voice): a dataset of 7,188 recordings in which Hebrew-speaking adults count for 30 seconds, with each speaker linked to up to 15 potentially voice-related phenotypes spanning respiratory, sleep, mental health, metabolic, immune, and neurological conditions. We present a systematic comparison of 14 modern speech embedding models, where modern speech embeddings from these 30-second counting tasks outperform MFCCs and demographics for downstream health condition classifications. We found that embedding learned from a speaker identification model can predict objectively measured moderate to severe sleep apnea in males with an AUC of 0.64 $\pm$ 0.03, while MFCC and demographic features led to AUCs of 0.56 $\pm$ 0.02 and 0.57 $\pm$ 0.02, respectively. Additionally, our results reveal gender-specific patterns in model effectiveness across different medical domains. For males, speaker identification and diarization models consistently outperformed speech foundation models for respiratory conditions (e.g., asthma: 0.61 $\pm$ 0.03 vs. 0.56 $\pm$ 0.02) and sleep-related conditions (insomnia: 0.65 $\pm$ 0.04 vs. 0.59 $\pm$ 0.05). For females, speaker diarization models performed best for smoking status (0.61 $\pm$ 0.02 vs 0.55 $\pm$ 0.02), while Hebrew-specific models performed best (0.59 $\pm$ 0.02 vs. 0.58 $\pm$ 0.02) in classifying anxiety compared to speech foundation models. Our findings provide evidence that a simple counting task can support large-scale, multi-phenotypic voice screening and highlight which embedding families generalize best to specific conditions, insights that can guide future vocal biomarker research and clinical deployment.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-22T10:22:15Z</published>
+    <arxiv:comment>supplementary figures added; typos corrected</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>David Krongauz</name>
+    </author>
+    <author>
+      <name>Hido Pinto</name>
+    </author>
+    <author>
+      <name>Sarah Kohn</name>
+    </author>
+    <author>
+      <name>Yanir Marmor</name>
+    </author>
+    <author>
+      <name>Eran Segal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.06412v1</id>
+    <title>Voice biomarkers of perinatal depression: cross-sectional nationwide pilot study report</title>
+    <updated>2025-05-09T20:26:14Z</updated>
+    <link href="https://arxiv.org/abs/2505.06412v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.06412v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Perinatal depression (PND) affects 1 in 5 mothers, with 85% lacking support. Digital health tools offer early identification and prevention, potentially reducing PND risk by over 50% and improving engagement. Despite high interest, user retention needs improvement for maximum benefit. Voice biomarkers have emerged as a possible digital alternative to collecting mood questionnaires to inform individualized user adherence and retention. However, no voice biomarkers have been developed specifically for pregnant mothers. We aimed to test an unstructured speech sample for the feasibility of yielding a machine learning (ML) model to predict PND. We surveyed 446 women nationwide at 22 weeks of gestation. We measured PHQ-8 and modified EPDS and four voice samples. Participants were classified as depressed if their PHQ-8 or EPDS were equal or higher than 10. In the present report, we focus on a 2-minute unstructured speech prompt. A standardized cleaning pipeline was applied to the audio files, including a uniform format conversion, segment filtering for background noise, extraneous acoustic events, and file size. This resulted in 112 high-quality voice recordings, i.e., a rate of 25%. The ML modeling strategy utilized the Allie ML framework on 80% of the data for training on the binary classification task (depressed or not). The analysis included steps for feature selection using referenced speech audio embeddings, followed by a TPOT classifier for ML. We report the validation results for the 20% held-out data. For PHQ-8, we achieved a balanced accuracy of ~71%, precision of 73%, recall of 68%, and AUC of 0.71. For EPDS, we achieved a balanced accuracy of 80%, precision of 92%, recall of 80%, and AUC of 0.80. In conclusion, we demonstrate the feasibility at scale and a promising accuracy for detecting PND using 120 seconds of unstructured speech audio data in expectant mothers.</summary>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-09T20:26:14Z</published>
+    <arxiv:comment>Study pre-registration: http://dx.doi.org/10.17605/OSF.IO/K387T</arxiv:comment>
+    <arxiv:primary_category term="q-bio.QM"/>
+    <author>
+      <name>Rachel L. Wiley</name>
+    </author>
+    <author>
+      <name>Jim Schwoebel</name>
+    </author>
+    <author>
+      <name>Joel Shor</name>
+    </author>
+    <author>
+      <name>Bindu Chanagala</name>
+    </author>
+    <author>
+      <name>Matias Caccia</name>
+    </author>
+    <author>
+      <name>Adolfo M. García</name>
+    </author>
+    <author>
+      <name>Sheehan D. Fisher</name>
+    </author>
+    <author>
+      <name>Martin G. Frasch</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.10896v1</id>
+    <title>Developing Conversational Speech Systems for Robots to Detect Speech Biomarkers of Cognition in People Living with Dementia</title>
+    <updated>2025-02-15T20:25:58Z</updated>
+    <link href="https://arxiv.org/abs/2502.10896v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.10896v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This study presents the development and testing of a conversational speech system designed for robots to detect speech biomarkers indicative of cognitive impairments in people living with dementia (PLwD). The system integrates a backend Python WebSocket server and a central core module with a large language model (LLM) fine-tuned for dementia to process user input and generate robotic conversation responses in real-time in less than 1.5 seconds. The frontend user interface, a Progressive Web App (PWA), displays information and biomarker score graphs on a smartphone in real-time to human users (PLwD, caregivers, clinicians). Six speech biomarkers based on the existing literature - Altered Grammar, Pragmatic Impairments, Anomia, Disrupted Turn-Taking, Slurred Pronunciation, and Prosody Changes - were developed for the robot conversation system using two datasets, one that included conversations of PLwD with a human clinician (DementiaBank dataset) and one that included conversations of PLwD with a robot (Indiana dataset). We also created a composite speech biomarker that combined all six individual biomarkers into a single score. The speech system's performance was first evaluated on the DementiaBank dataset showing moderate correlation with MMSE scores, with the composite biomarker score outperforming individual biomarkers. Analysis of the Indiana dataset revealed higher and more variable biomarker scores, suggesting potential differences due to study populations (e.g. severity of dementia) and the conversational scenario (human-robot conversations are different from human-human). The findings underscore the need for further research on the impact of conversational scenarios on speech biomarkers and the potential clinical applications of robotic speech systems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-15T20:25:58Z</published>
+    <arxiv:comment>Main paper 28 pages long (pg 2-30), includes 5 figures, 5 tables, 1 Appendix at end</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Rohith Perumandla</name>
+    </author>
+    <author>
+      <name>Young-Ho Bae</name>
+    </author>
+    <author>
+      <name>Diego Izaguirre</name>
+    </author>
+    <author>
+      <name>Esther Hwang</name>
+    </author>
+    <author>
+      <name>Andrew Murphy</name>
+    </author>
+    <author>
+      <name>Long-Jing Hsu</name>
+    </author>
+    <author>
+      <name>Selma Sabanovic</name>
+    </author>
+    <author>
+      <name>Casey C. Bennett</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.18731v2</id>
+    <title>Evaluating Spoken Language as a Biomarker for Automated Screening of Cognitive Impairment</title>
+    <updated>2026-03-02T19:33:35Z</updated>
+    <link href="https://arxiv.org/abs/2501.18731v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.18731v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Timely and accurate assessment of cognitive impairment remains a major unmet need. Speech biomarkers offer a scalable, non-invasive, cost-effective solution for automated screening. However, the clinical utility of machine learning (ML) remains limited by interpretability and generalisability to real-world speech datasets. We evaluate explainable ML for screening of Alzheimer's disease and related dementias (ADRD) and severity prediction using benchmark DementiaBank speech (N = 291, 64% female, 69.8 (SD = 8.6) years). We validate generalisability on pilot data collected in-residence (N = 22, 59% female, 76.2 (SD = 8.0) years). To enhance clinical utility, we stratify risk for actionable triage and assess linguistic feature importance. We show that a Random Forest trained on linguistic features for ADRD detection achieves a mean sensitivity of 69.4% (95% confidence interval (CI) = 66.4-72.5) and specificity of 83.3% (78.0-88.7). On pilot data, this model yields a mean sensitivity of 70.0% (58.0-82.0) and specificity of 52.5% (39.3-65.7). For prediction of Mini-Mental State Examination (MMSE) scores, a Random Forest Regressor achieves a mean absolute MMSE error of 3.7 (3.7-3.8), with comparable performance of 3.3 (3.1-3.5) on pilot data. Risk stratification improves specificity by 13% on the test set, offering a pathway for clinical triage. Linguistic features associated with ADRD include increased use of pronouns and adverbs, greater disfluency, reduced analytical thinking, lower lexical diversity, and fewer words that reflect a psychological state of completion. Our predictive modelling shows promise for integration with conversational technology at home to monitor cognitive health and triage higher-risk individuals, enabling early screening and intervention.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-30T20:17:17Z</published>
+    <arxiv:comment>Published in Nature Communications Medicine (2025)</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Maria R. Lima</name>
+    </author>
+    <author>
+      <name>Alexander Capstick</name>
+    </author>
+    <author>
+      <name>Fatemeh Geranmayeh</name>
+    </author>
+    <author>
+      <name>Ramin Nilforooshan</name>
+    </author>
+    <author>
+      <name>Maja Matarić</name>
+    </author>
+    <author>
+      <name>Ravi Vaidyanathan</name>
+    </author>
+    <author>
+      <name>Payam Barnaghi</name>
+    </author>
+    <arxiv:doi>10.1038/s43856-025-01263-1</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s43856-025-01263-1" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.20989v1</id>
+    <title>Contrasting Deep Learning Models for Direct Respiratory Insufficiency Detection Versus Blood Oxygen Saturation Estimation</title>
+    <updated>2024-07-30T17:26:16Z</updated>
+    <link href="https://arxiv.org/abs/2407.20989v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.20989v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We contrast high effectiveness of state of the art deep learning architectures designed for general audio classification tasks, refined for respiratory insufficiency (RI) detection and blood oxygen saturation (SpO$_2$) estimation and classification through automated audio analysis. Recently, multiple deep learning architectures have been proposed to detect RI in COVID patients through audio analysis, achieving accuracy above 95% and F1-score above 0.93. RI is a condition associated with low SpO$_2$ levels, commonly defined as the threshold SpO$_2$ &lt;92%. While SpO$_2$ serves as a crucial determinant of RI, a medical doctor's diagnosis typically relies on multiple factors. These include respiratory frequency, heart rate, SpO$_2$ levels, among others. Here we study pretrained audio neural networks (CNN6, CNN10 and CNN14) and the Masked Autoencoder (Audio-MAE) for RI detection, where these models achieve near perfect accuracy, surpassing previous results. Yet, for the regression task of estimating SpO$_2$ levels, the models achieve root mean square error values exceeding the accepted clinical range of 3.5% for finger oximeters. Additionally, Pearson correlation coefficients fail to surpass 0.3. As deep learning models perform better in classification than regression, we transform SpO$_2$-regression into a SpO$_2$-threshold binary classification problem, with a threshold of 92%. However, this task still yields an F1-score below 0.65. Thus, audio analysis offers valuable insights into a patient's RI status, but does not provide accurate information about actual SpO$_2$ levels, indicating a separation of domains in which voice and speech biomarkers may and may not be useful in medical diagnostics under current technologies.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-30T17:26:16Z</published>
+    <arxiv:comment>23 pages, 4 figures, in review at Journal of Biomedical Signal Processing and Control</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Marcelo Matheus Gauy</name>
+    </author>
+    <author>
+      <name>Natalia Hitomi Koza</name>
+    </author>
+    <author>
+      <name>Ricardo Mikio Morita</name>
+    </author>
+    <author>
+      <name>Gabriel Rocha Stanzione</name>
+    </author>
+    <author>
+      <name>Arnaldo Candido Junior</name>
+    </author>
+    <author>
+      <name>Larissa Cristina Berti</name>
+    </author>
+    <author>
+      <name>Anna Sara Shafferman Levin</name>
+    </author>
+    <author>
+      <name>Ester Cerdeira Sabino</name>
+    </author>
+    <author>
+      <name>Flaviane Romani Fernandes Svartman</name>
+    </author>
+    <author>
+      <name>Marcelo Finger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.17505v2</id>
+    <title>Survey on biomarkers in human vocalizations</title>
+    <updated>2024-08-08T20:22:10Z</updated>
+    <link href="https://arxiv.org/abs/2407.17505v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.17505v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent years has witnessed an increase in technologies that use speech for the sensing of the health of the talker. This survey paper proposes a general taxonomy of the technologies and a broad overview of current progress and challenges. Vocal biomarkers are often secondary measures that are approximating a signal of another sensor or identifying an underlying mental, cognitive, or physiological state. Their measurement involve disturbances and uncertainties that may be considered as noise sources and the biomarkers are coarsely qualified in terms of the various sources of noise involved in their determination. While in some proposed biomarkers the error levels seem high, there are vocal biomarkers where the errors are expected to be low and thus are more likely to qualify as candidates for adoption in healthcare applications.</summary>
+    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-07T08:09:28Z</published>
+    <arxiv:primary_category term="q-bio.NC"/>
+    <author>
+      <name>Aki Härmä</name>
+    </author>
+    <author>
+      <name>Bert den Brinker</name>
+    </author>
+    <author>
+      <name>Ulf Grossekathofer</name>
+    </author>
+    <author>
+      <name>Okke Ouweltjes</name>
+    </author>
+    <author>
+      <name>Srikanth Nallanthighal</name>
+    </author>
+    <author>
+      <name>Sidharth Abrol</name>
+    </author>
+    <author>
+      <name>Vibhu Sharma</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.13812v2</id>
+    <title>Voice-Driven Mortality Prediction in Hospitalized Heart Failure Patients: A Machine Learning Approach Enhanced with Diagnostic Biomarkers</title>
+    <updated>2024-08-14T18:55:22Z</updated>
+    <link href="https://arxiv.org/abs/2402.13812v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.13812v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Addressing heart failure (HF) as a prevalent global health concern poses difficulties in implementing innovative approaches for enhanced patient care. Predicting mortality rates in HF patients, in particular, is difficult yet critical, necessitating individualized care, proactive management, and enabling educated decision-making to enhance outcomes. Recently, the significance of voice biomarkers coupled with Machine Learning (ML) has surged, demonstrating remarkable efficacy, particularly in predicting heart failure. The synergy of voice analysis and ML algorithms provides a non-invasive and easily accessible means to evaluate patients' health. However, there is a lack of voice biomarkers for predicting mortality rates among heart failure patients with standardized speech protocols. Here, we demonstrate a powerful and effective ML model for predicting mortality rates in hospitalized HF patients through the utilization of voice biomarkers. By seamlessly integrating voice biomarkers into routine patient monitoring, this strategy has the potential to improve patient outcomes, optimize resource allocation, and advance patient-centered HF management. In this study, a Machine Learning system, specifically a logistic regression model, is trained to predict patients' 5-year mortality rates using their speech as input. The model performs admirably and consistently, as demonstrated by cross-validation and statistical approaches (p-value &lt; 0.001). Furthermore, integrating NT-proBNP, a diagnostic biomarker in HF, improves the model's predictive accuracy substantially.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-21T13:50:46Z</published>
+    <arxiv:comment>11 pages, 6 figures, 5 tables. The first 2 authors have contributed equally</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Nihat Ahmadli</name>
+    </author>
+    <author>
+      <name>Mehmet Ali Sarsil</name>
+    </author>
+    <author>
+      <name>Berk Mizrak</name>
+    </author>
+    <author>
+      <name>Kurtulus Karauzum</name>
+    </author>
+    <author>
+      <name>Ata Shaker</name>
+    </author>
+    <author>
+      <name>Erol Tulumen</name>
+    </author>
+    <author>
+      <name>Didar Mirzamidinov</name>
+    </author>
+    <author>
+      <name>Dilek Ural</name>
+    </author>
+    <author>
+      <name>Onur Ergen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.00897v1</id>
+    <title>Screening method for early dementia using sound objects as voice biomarkers</title>
+    <updated>2024-01-31T19:20:08Z</updated>
+    <link href="https://arxiv.org/abs/2402.00897v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.00897v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Introduction: We present a screening method for early dementia using features based on sound objects as voice biomarkers.
+  Methods: The final dataset used for machine learning models consisted of 266 observations, with a distribution of 186 healthy individuals, 46 diagnosed with Alzheimer's, and 34 with MCI. This method is based on six-second recordings of the sustained vowel /a/ spoken by the subject. The main original contribution of this work is the use of carefully crafted features based on sound objects. This approach allows one to first represent the sound spectrum in a more accurate way than the standard spectrum, and then build interpretable features containing relevant information about subjects' control over their voice.
+  Results: ROC AUC obtained in this work for distinguishing healthy subjects from those with MCI was 0.85, while accuracy was 0.76. For distinguishing between healthy subjects and those with either MCI or Alzheimer's the results were 0.84, 0.77, respectively.
+  Conclusion: The use of features based on sound objects enables screening for early dementia even on very short recordings of language-independent voice samples.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-01-31T19:20:08Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Adam Pluta</name>
+    </author>
+    <author>
+      <name>Zbigniew Pioch</name>
+    </author>
+    <author>
+      <name>Jędrzej Kardach</name>
+    </author>
+    <author>
+      <name>Piotr Zioło</name>
+    </author>
+    <author>
+      <name>Tomasz Kręcicki</name>
+    </author>
+    <author>
+      <name>Elżbieta Trypka</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2311.05435v2</id>
+    <title>Parkinson's Disease Detection through Vocal Biomarkers and Advanced Machine Learning Algorithms</title>
+    <updated>2023-12-03T00:40:49Z</updated>
+    <link href="https://arxiv.org/abs/2311.05435v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2311.05435v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Parkinson's disease (PD) is a prevalent neurodegenerative disorder known for its impact on motor neurons, causing symptoms like tremors, stiffness, and gait difficulties. This study explores the potential of vocal feature alterations in PD patients as a means of early disease prediction. This research aims to predict the onset of Parkinson's disease. Utilizing a variety of advanced machine-learning algorithms, including XGBoost, LightGBM, Bagging, AdaBoost, and Support Vector Machine, among others, the study evaluates the predictive performance of these models using metrics such as accuracy, area under the curve (AUC), sensitivity, and specificity. The findings of this comprehensive analysis highlight LightGBM as the most effective model, achieving an impressive accuracy rate of 96% alongside a matching AUC of 96%. LightGBM exhibited a remarkable sensitivity of 100% and specificity of 94.43%, surpassing other machine learning algorithms in accuracy and AUC scores. Given the complexities of Parkinson's disease and its challenges in early diagnosis, this study underscores the significance of leveraging vocal biomarkers coupled with advanced machine-learning techniques for precise and timely PD detection.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-11-09T15:21:10Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Md Abu Sayed</name>
+    </author>
+    <author>
+      <name>Maliha Tayaba</name>
+    </author>
+    <author>
+      <name>MD Tanvir Islam</name>
+    </author>
+    <author>
+      <name>Md Eyasin Ul Islam Pavel</name>
+    </author>
+    <author>
+      <name>Md Tuhin Mia</name>
+    </author>
+    <author>
+      <name>Eftekhar Hossain Ayon</name>
+    </author>
+    <author>
+      <name>Nur Nob</name>
+    </author>
+    <author>
+      <name>Bishnu Padh Ghosh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.01327v1</id>
+    <title>Careful Whisper -- leveraging advances in automatic speech recognition for robust and interpretable aphasia subtype classification</title>
+    <updated>2023-08-02T15:53:59Z</updated>
+    <link href="https://arxiv.org/abs/2308.01327v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.01327v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper presents a fully automated approach for identifying speech anomalies from voice recordings to aid in the assessment of speech impairments. By combining Connectionist Temporal Classification (CTC) and encoder-decoder-based automatic speech recognition models, we generate rich acoustic and clean transcripts. We then apply several natural language processing methods to extract features from these transcripts to produce prototypes of healthy speech. Basic distance measures from these prototypes serve as input features for standard machine learning classifiers, yielding human-level accuracy for the distinction between recordings of people with aphasia and a healthy control group. Furthermore, the most frequently occurring aphasia types can be distinguished with 90% accuracy. The pipeline is directly applicable to other diseases and languages, showing promise for robustly extracting diagnostic speech biomarkers.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-02T15:53:59Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Laurin Wagner</name>
+    </author>
+    <author>
+      <name>Mario Zusag</name>
+    </author>
+    <author>
+      <name>Theresa Bloder</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.10837v1</id>
+    <title>Multi-class versus One-class classifier in spontaneous speech analysis oriented to Alzheimer Disease diagnosis</title>
+    <updated>2022-03-21T09:57:20Z</updated>
+    <link href="https://arxiv.org/abs/2203.10837v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.10837v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Most of medical developments require the ability to identify samples that are anomalous with respect to a target group or control group, in the sense they could belong to a new, previously unseen class or are not class data. In this case when there are not enough data to train two-class One-class classification appear like an available solution. On the other hand non-linear approaches could give very useful information. The aim of our project is to contribute to earlier diagnosis of AD and better estimates of its severity by using automatic analysis performed through new biomarkers extracted from speech signal. The methods selected in this case are speech biomarkers oriented to Spontaneous Speech and Emotional Response Analysis. In this approach One-class classifiers and two-class classifiers are analyzed. The use of information about outlier and Fractal Dimension features improves the system performance.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-21T09:57:20Z</published>
+    <arxiv:comment>10 pages, published in International Conference on NONLINEAR SPEECH PROCESSING, NOLISP 2015 jointly organized with the 25th Italian Workshop on Neural Networks, WIRN 2015, held at May 2015, Vietri sul Mare, Salerno, Italy</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <arxiv:journal_ref>Recent Advances in Nonlinear Speech Processing. Smart Innovation, Systems and Technologies, vol 48. Springer, Cham 2015</arxiv:journal_ref>
+    <author>
+      <name>K. López-de-Ipiña</name>
+    </author>
+    <author>
+      <name>Marcos Faundez-Zanuy</name>
+    </author>
+    <author>
+      <name>Jordi Solé-Casals</name>
+    </author>
+    <author>
+      <name>Fernando Zelarin</name>
+    </author>
+    <author>
+      <name>Pilar Calvo</name>
+    </author>
+    <arxiv:doi>10.1007/978-3-319-28109-4_7</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/978-3-319-28109-4_7" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2011.06739v3</id>
+    <title>Generalized Dilated CNN Models for Depression Detection Using Inverted Vocal Tract Variables</title>
+    <updated>2021-04-09T04:29:46Z</updated>
+    <link href="https://arxiv.org/abs/2011.06739v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2011.06739v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Depression detection using vocal biomarkers is a highly researched area. Articulatory coordination features (ACFs) are developed based on the changes in neuromotor coordination due to psychomotor slowing, a key feature of Major Depressive Disorder. However findings of existing studies are mostly validated on a single database which limits the generalizability of results. Variability across different depression databases adversely affects the results in cross corpus evaluations (CCEs). We propose to develop a generalized classifier for depression detection using a dilated Convolutional Neural Network which is trained on ACFs extracted from two depression databases. We show that ACFs derived from Vocal Tract Variables (TVs) show promise as a robust set of features for depression detection. Our model achieves relative accuracy improvements of ~10% compared to CCEs performed on models trained on a single database. We extend the study to show that fusing TVs and Mel-Frequency Cepstral Coefficients can further improve the performance of this classifier.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-11-13T03:12:36Z</published>
+    <arxiv:comment>5 pages, Submitted to Interspeech 2021</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Nadee Seneviratne</name>
+    </author>
+    <author>
+      <name>Carol Espy-Wilson</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1906.07222v2</id>
+    <title>DigiVoice: Voice Biomarker Featurization and Analysis Pipeline</title>
+    <updated>2019-06-19T03:45:30Z</updated>
+    <link href="https://arxiv.org/abs/1906.07222v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1906.07222v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In recent years, data-driven models have enabled significant advances in medicine. Simultaneously, voice has shown potential for analysis in precision medicine as a biomarker for screening illnesses. There has been a growing trend to pursue voice data to understand neuropsychiatric diseases. In this paper, we present DigiVoice, a comprehensive feature extraction and analysis pipeline for voice data. DigiVoice supports raw .WAV files and text transcriptions in order to analyze the entire content of voice. DigiVoice supports feature extraction including acoustic, natural language, linguistic complexity, and semantic coherence features. DigiVoice also supports machine learning capabilities including data visualization, feature selection, feature transformation, and modeling. To our knowledge, DigiVoice provides the most comprehensive voice feature set for data analysis to date. With DigiVoice, we plan to accelerate research to correlate voice biomarkers with illness to enable data-driven treatment. We have worked closely with our industry partner, NeuroLex Laboratories, to make voice computing open source and accessible. DigiVoice enables researchers to leverage our technology across the domains of voice computing and precision medicine without domain-specific expertise. Our work allows any researchers to use voice as a biomarker in their past, current, or future studies.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-06-17T18:57:05Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Larry Zhang</name>
+    </author>
+    <author>
+      <name>Xiaotong Chen</name>
+    </author>
+    <author>
+      <name>Abbad Vakil</name>
+    </author>
+    <author>
+      <name>Ali Byott</name>
+    </author>
+    <author>
+      <name>Reza Hosseini Ghomi</name>
+    </author>
+  </entry>
+</feed>
