@@ -23,15 +23,25 @@ Escalation path: convert to a systematic review reported against PRISMA 2020 if 
 
 Critical appraisal: optional under PRISMA-ScR. This review performs it anyway, because validation maturity and reproducibility are mapped dimensions (RQ4, RQ6), not eligibility filters.
 
-## Methodological Benchmark
+## Methodological Standards
 
-This review will follow a staged systematic mapping-review design, using the methodological pattern observed in Abdalla Z. Mohamed's work as an operational benchmark:
+This review will follow a staged systematic mapping-review design. Quality and reproducibility assessment rests on three established instruments, not on a bespoke rubric:
 
-1. Systematic review discipline: PCC framing per PRISMA-ScR (PECO/PICOS if the review escalates to PRISMA 2020), PRISMA-family reporting, prospective registration when possible, full database-specific search strings, explicit exclusion reasons, and risk-of-bias assessment.
+- **V3 / V3+** (Goldsack et al., 2020, doi:10.1038/s41746-020-0260-4; Bakker et al., 2025) supplies the validation lens: verification, analytical validation, clinical validation, and usability. RQ4 is expressed in these terms.
+- **PROBAST** (Wolff et al., 2019, doi:10.7326/M18-1376) supplies the risk-of-bias structure for prediction-model studies, which is what most voice-biomarker papers are.
+- **TRIPOD+AI** (Collins et al., 2024, doi:10.1136/bmj-2023-078378) supplies the reporting expectations for machine-learning prediction models.
+
+`governance/reproducibility-risk-of-bias-rubric.md` maps every rubric element to one of these instruments and states what the voice-specific adaptation adds. The adaptation is confined to domain specifics such as elicitation task, microphone and environment, speaker- and session-level leakage, and language or accent confounding.
+
+Three operational disciplines are applied on top of the instruments above:
+
+1. Systematic review discipline: PCC framing per PRISMA-ScR (PECO/PICOS if the review escalates to PRISMA 2020), PRISMA-family reporting, prospective registration when possible, full database-specific search strings, explicit exclusion reasons, and PROBAST-based risk-of-bias assessment.
 2. Technical benchmarking discipline: validation claims must be tied to numerical evidence, such as subject-level split, external validation, repeated-measure reliability, calibration, subgroup performance, or robustness to recording protocol.
 3. Data-infrastructure discipline: data availability, code availability, preprocessing documentation, quality-control metrics, and standardization of input data must be extracted as first-class outcomes.
 
 The review will not treat reproducibility as a narrative limitation only. Reproducibility is an extraction and synthesis dimension.
+
+The reporting and data-infrastructure style of Abdalla Z. Mohamed's systematic review, technical benchmarking, and data-descriptor papers was used as a worked example of these disciplines while drafting the protocol. It is an illustration of reporting practice, not a methodological standard for this review, and it is not a substitute for V3, PROBAST, or TRIPOD+AI.
 
 ## Research Questions
 
