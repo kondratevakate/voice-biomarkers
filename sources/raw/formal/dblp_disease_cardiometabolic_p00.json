@@ -1,0 +1,507 @@
+{
+"result":{
+"query":"speech*|voice*|vocal*|acoustic* cardiac*|cardiovascular*|diabetes*|frailty*|apnea*",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"45.26"
+},
+"completions":{
+"@total":"6",
+"@computed":"6",
+"@sent":"6",
+"c":[
+{
+"@sc":"31",
+"@dc":"31",
+"@oc":"31",
+"@id":"70465180",
+"text":"apnea"
+},
+{
+"@sc":"19",
+"@dc":"19",
+"@oc":"19",
+"@id":"70640653",
+"text":"cardiac"
+},
+{
+"@sc":"15",
+"@dc":"13",
+"@oc":"15",
+"@id":"70799588",
+"text":"diabetes"
+},
+{
+"@sc":"8",
+"@dc":"8",
+"@oc":"8",
+"@id":"70640948",
+"text":"cardiovascular"
+},
+{
+"@sc":"3",
+"@dc":"3",
+"@oc":"3",
+"@id":"70465183",
+"text":"apneas"
+},
+{
+"@sc":"1",
+"@dc":"1",
+"@oc":"1",
+"@id":"70971650",
+"text":"frailty"
+}
+]
+},
+"hits":{
+"@total":"73",
+"@computed":"73",
+"@sent":"73",
+"@first":"0",
+"hit":[{
+"@score":"5",
+"@id":"693668",
+"info":{"authors":{"author":[{"@pid":"316/8059","text":"Kelvin Summoogum"},{"@pid":"138/1077","text":"Debayan Das"},{"@pid":"393/1870","text":"Sathish Kumaran"},{"@pid":"427/6614","text":"Sumit Bhagra"}]},"title":"A Voice-based triage for Type 2 Diabetes using a Conversational Virtual Assistant in the Home Environment: Voice-based triage for Type 2 diabetes using seven non-identifiable acoustic biomarkers collected via a home virtual assistant.","venue":"ICMHI","pages":"260-269","year":"2025","type":"Conference and Workshop Papers","access":"closed","key":"conf/icmhi/SummoogumDKB25","doi":"10.1145/3761712.3761773","ee":"https://doi.org/10.1145/3761712.3761773","url":"https://dblp.org/rec/conf/icmhi/SummoogumDKB25"},
+"url":"URL#693668"
+},
+{
+"@score":"3",
+"@id":"1262469",
+"info":{"authors":{"author":[{"@pid":"351/5704","text":"Behrad Taghibeyglou"},{"@pid":"389/3711","text":"Alexander Chow"},{"@pid":"389/3697","text":"Parker Mclaurin"},{"@pid":"389/3469","text":"Oviga Yasokaran"},{"@pid":"389/3841","text":"Rene Adams"},{"@pid":"389/3795","text":"Majida Mohammed"},{"@pid":"46/2583","text":"Mandeep Singh"},{"@pid":"389/3529","text":"Najib Ayas"},{"@pid":"124/6164","text":"Sachin R. Pendharkar"},{"@pid":"389/3770","text":"Fernanda R. Almeida"},{"@pid":"389/3826","text":"Valeria Rac"},{"@pid":"01/9133","text":"Azadeh Yadollahi"}]},"title":"Accessible Obstructive Sleep Apnea Screening Using Classical Acoustic Speech Representations.","venue":"EUSIPCO","pages":"356-360","year":"2024","type":"Conference and Workshop Papers","access":"closed","key":"conf/eusipco/TaghibeyglouCMY24","ee":"https://ieeexplore.ieee.org/document/10714938","url":"https://dblp.org/rec/conf/eusipco/TaghibeyglouCMY24"},
+"url":"URL#1262469"
+},
+{
+"@score":"3",
+"@id":"2449527",
+"info":{"authors":{"author":[{"@pid":"183/1735","text":"Chenhan Xu"},{"@pid":"83/10146-2","text":"Tianyu Chen 0002"},{"@pid":"204/1605","text":"Huining Li"},{"@pid":"339/6523","text":"Alexander Gherardi"},{"@pid":"339/6813","text":"Michelle Weng"},{"@pid":"217/8466","text":"Zhengxiong Li"},{"@pid":"11/6689","text":"Wenyao Xu"}]},"title":"Hearing Heartbeat from Voice: Towards Next Generation Voice-User Interfaces with Cardiac Sensing Functions.","venue":"SenSys","pages":"149-163","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/sensys/XuCLGWLX22","doi":"10.1145/3560905.3568508","ee":"https://doi.org/10.1145/3560905.3568508","url":"https://dblp.org/rec/conf/sensys/XuCLGWLX22"},
+"url":"URL#2449527"
+},
+{
+"@score":"3",
+"@id":"3481585",
+"info":{"authors":{"author":[{"@pid":"249/3654","text":"Yolanda Castillo-Escario"},{"@pid":"249/3935","text":"Ignasi Ferrer-Lluis"},{"@pid":"249/3936","text":"Josep Maria Montserrat"},{"@pid":"35/10666","text":"Raimon Jané"}]},"title":"Entropy Analysis of Acoustic Signals Recorded With a Smartphone for Detecting Apneas and Hypopneas: A Comparison With a Commercial System for Home Sleep Apnea Diagnosis.","venue":"IEEE Access","volume":"7","pages":"128224-128241","year":"2019","type":"Journal Articles","access":"open","key":"journals/access/Castillo-Escario19","doi":"10.1109/ACCESS.2019.2939749","ee":"https://doi.org/10.1109/ACCESS.2019.2939749","url":"https://dblp.org/rec/journals/access/Castillo-Escario19"},
+"url":"URL#3481585"
+},
+{
+"@score":"3",
+"@id":"4055892",
+"info":{"authors":{"author":[{"@pid":"212/8603","text":"Elliot G. Mitchell"},{"@pid":"199/3040","text":"Marissa Burgermaster"},{"@pid":"185/9294","text":"Elizabeth M. Heitkemper"},{"@pid":"220/0217","text":"Meghan J. Reading"},{"@pid":"185/9544","text":"Matthew E. Levine"},{"@pid":"239/0754","text":"Yishen Miao"},{"@pid":"217/9375","text":"Pooja M. Desai"},{"@pid":"78/5047","text":"Lena Mamykina"}]},"title":"An Intelligent Voice Assistant for Diabetes Self-Management: T2D2 - Taming Type 2 Diabetes, Together.","venue":"AMIA","year":"2018","type":"Conference and Workshop Papers","access":"unavailable","key":"conf/amia/MitchellBHRLMDM18","ee":"https://knowledge.amia.org/67852-amia-1.4259402/t008-1.4262115/t008-1.4262116/2976569-1.4262135/2976896-1.4262132","url":"https://dblp.org/rec/conf/amia/MitchellBHRLMDM18"},
+"url":"URL#4055892"
+},
+{
+"@score":"3",
+"@id":"7414739",
+"info":{"authors":{"author":[{"@pid":"84/2080","text":"Eugenijus Kaniusas"},{"@pid":"64/5847","text":"Helmut Pfützner"},{"@pid":"118/6375","text":"Bernd Saletu"}]},"title":"Acoustical signal properties for cardiac/respiratory activity and apneas.","venue":"IEEE Trans. Biomed. Eng.","volume":"52","number":"11","pages":"1812-1822","year":"2005","type":"Journal Articles","access":"closed","key":"journals/tbe/KaniusasPS05","doi":"10.1109/TBME.2005.856294","ee":"https://doi.org/10.1109/TBME.2005.856294","url":"https://dblp.org/rec/journals/tbe/KaniusasPS05"},
+"url":"URL#7414739"
+},
+{
+"@score":"2",
+"@id":"590",
+"info":{"authors":{"author":[{"@pid":"346/0183","text":"Peizheng Wang"},{"@pid":"90/10994","text":"Arnab Majumdar"},{"@pid":"87/6168","text":"Wen-Te Liu"},{"@pid":"230/2015","text":"Jiunn-Horng Kang"},{"@pid":"14/970","text":"Jon Gudnason"},{"@pid":"32/9391","text":"Ying-Ying Chen"},{"@pid":"443/9869","text":"I-Jung Liu"},{"@pid":"298/8778","text":"Kang-Yun Lee"},{"@pid":"225/4144","text":"Tzu-Tao Chen"},{"@pid":"159/7351","text":"Hsin-Chien Lee"},{"@pid":"385/2790","text":"Yi-Chih Lin"},{"@pid":"310/3021","text":"Yi-Chun Kuan"},{"@pid":"50/3461","text":"Yu-Hsiang Chang"},{"@pid":"18/9895","text":"Cheng-Yu Tsai"}]},"title":"Dual contrastive learning with clinically guided multimodal fusion for speech-based severe sleep apnea risk screening.","venue":"Expert Syst. Appl.","volume":"333","pages":"133852","year":"2027","type":"Journal Articles","access":"closed","key":"journals/eswa/WangMLKGCLLCLLKCT27","doi":"10.1016/J.ESWA.2026.133852","ee":"https://doi.org/10.1016/j.eswa.2026.133852","url":"https://dblp.org/rec/journals/eswa/WangMLKGCLLCLLKCT27"},
+"url":"URL#590"
+},
+{
+"@score":"2",
+"@id":"99162",
+"info":{"authors":{"author":[{"@pid":"155/0714","text":"Yi Lyu"},{"@pid":"385/7788","text":"Hai-Mei Wu"},{"@pid":"02/1003","text":"Rui Chen"},{"@pid":"161/4923","text":"Jing Hong"},{"@pid":"439/6904","text":"Chun-Feng Chen"},{"@pid":"262/2764","text":"Yu-Jing Shi"},{"@pid":"237/3125","text":"Yi-Qin Wang"},{"@pid":"307/0385","text":"Hai-Xia Yan"},{"@pid":"97/3265","text":"Jin Xu"}]},"title":"Multimodal deep learning for cardiovascular disease detection using pulse wave and vocal signals: a prediction model development and validation study.","venue":"BMC Medical Informatics Decis. Mak.","volume":"26","number":"1","pages":"209","year":"2026","type":"Journal Articles","access":"open","key":"journals/midm/LyuWCHCSWYX26","doi":"10.1186/S12911-026-03518-W","ee":"https://doi.org/10.1186/s12911-026-03518-w","url":"https://dblp.org/rec/journals/midm/LyuWCHCSWYX26"},
+"url":"URL#99162"
+},
+{
+"@score":"2",
+"@id":"175932",
+"info":{"authors":{"author":[{"@pid":"44/1832","text":"Himanshu Sharma"},{"@pid":"08/2976","text":"Pradip K. Das"}]},"title":"CAAM-Net: A Chrono-Acoustic Attention MobileNet for Snore-Based Sleep Apnea Screening.","venue":"BIOSTEC","pages":"87-93","year":"2026","type":"Conference and Workshop Papers","access":"closed","key":"conf/biostec/SharmaD26","doi":"10.5220/0014357800004070","ee":"https://doi.org/10.5220/0014357800004070","url":"https://dblp.org/rec/conf/biostec/SharmaD26"},
+"url":"URL#175932"
+},
+{
+"@score":"2",
+"@id":"419412",
+"info":{"authors":{"author":[{"@pid":"369/3596","text":"Francisco David González Martínez"},{"@pid":"260/6480","text":"Juan De La Torre Cruz"},{"@pid":"02/7055","text":"Julio J. Carabias-Orti"},{"@pid":"46/7053","text":"Francisco J. Cañadas-Quesada"},{"@pid":"409/3160","text":"Alejandro Antonio Salvador-Navarro"},{"@pid":"11/796","text":"José Ranilla"},{"@pid":"409/3808","text":"Lyam Lamrini-H. Laarbi"}]},"title":"Polygraph and audio synchronization applied to apnea event analysis based on non-negative matrix factorization.","venue":"EURASIP J. Audio Speech Music. Process.","volume":"2025","number":"1","pages":"24","year":"2025","type":"Journal Articles","access":"open","key":"journals/ejasmp/MartinezCCCSRL25","doi":"10.1186/S13636-025-00410-9","ee":"https://doi.org/10.1186/s13636-025-00410-9","url":"https://dblp.org/rec/journals/ejasmp/MartinezCCCSRL25"},
+"url":"URL#419412"
+},
+{
+"@score":"2",
+"@id":"429907",
+"info":{"authors":{"author":[{"@pid":"423/3984","text":"Arkers Kwan Ching Wong"},{"@pid":"423/1612","text":"Luna Ziqi Liu"},{"@pid":"406/2110","text":"Frances Kam Yuet Wong"},{"@pid":"57/1143","text":"Jun Liang"},{"@pid":"423/1673","text":"Danny Wah Kun Tong"},{"@pid":"423/2094","text":"Man Li Chan"},{"@pid":"423/3061","text":"Man Kin Wong"},{"@pid":"423/4123","text":"Bo Chu Wong"},{"@pid":"423/3909","text":"Cecilia Yeuk Sze Tang"},{"@pid":"423/4328","text":"Wai Hing Ho"},{"@pid":"423/3056","text":"Sau Ching Chiang"}]},"title":"Voices from the field: healthcare professionals&apos; insights on sustaining telemedicine for diabetes management in Hong Kong primary care.","venue":"Frontiers Digit. Health","volume":"7","year":"2025","type":"Journal Articles","access":"open","key":"journals/fdgth/WongLWLTCWWTHC25","doi":"10.3389/FDGTH.2025.1665424","ee":"https://doi.org/10.3389/fdgth.2025.1665424","url":"https://dblp.org/rec/journals/fdgth/WongLWLTCWWTHC25"},
+"url":"URL#429907"
+},
+{
+"@score":"2",
+"@id":"453104",
+"info":{"title":"Retraction Note: Efficient diabetes mellitus prediction with grid based random forest classifier in association with natural language processing.","venue":"Int. J. Speech Technol.","volume":"28","number":"1","pages":"315","year":"2025","type":"Journal Articles","access":"closed","key":"journals/ijst/AbokhzamGB25","doi":"10.1007/S10772-025-10179-Z","ee":"https://doi.org/10.1007/s10772-025-10179-z","url":"https://dblp.org/rec/journals/ijst/AbokhzamGB25"},
+"url":"URL#453104"
+},
+{
+"@score":"2",
+"@id":"544429",
+"info":{"authors":{"author":[{"@pid":"178/1017","text":"Zhixing Gao"},{"@pid":"20/1168","text":"Yuqi Wang"},{"@pid":"224/9814","text":"Xingchen Xu"},{"@pid":"366/9704","text":"Chaohong Zhang"},{"@pid":"372/5230","text":"Zhiwei Dai"},{"@pid":"23/2533","text":"Haiying Zhang"},{"@pid":"29/4190-115","text":"Jun Zhang 0115"},{"@pid":"54/4089-54","text":"Hao Yang 0054"}]},"title":"A Portable Cardiac Dynamic Monitoring System in the Framework of Electro-Mechano-Acoustic Mapping.","venue":"IEEE Trans. Biomed. Circuits Syst.","volume":"19","number":"5","pages":"950-967","year":"2025","type":"Journal Articles","access":"closed","key":"journals/tbcas/GaoWXZDZZY25","doi":"10.1109/TBCAS.2023.3307188","ee":"https://doi.org/10.1109/TBCAS.2023.3307188","url":"https://dblp.org/rec/journals/tbcas/GaoWXZDZZY25"},
+"url":"URL#544429"
+},
+{
+"@score":"2",
+"@id":"563400",
+"info":{"authors":{"author":[{"@pid":"243/4109","text":"Alexander S. Machikhin"},{"@pid":"393/4215","text":"Sergey A. Titov"},{"@pid":"18/11305","text":"Chih-Chung Huang"},{"@pid":"371/9820","text":"Anastasia Guryleva"},{"@pid":"393/1028","text":"Alexander B. Burlakov"},{"@pid":"392/9513","text":"Lidia A. Zykova"},{"@pid":"393/2609","text":"Valeriya I. Bukova"}]},"title":"Combined Optical and Acoustic Microscopy for Noninvasive Cardiovascular Studies Using Zebrafish Model.","venue":"IEEE Trans. Instrum. Meas.","volume":"74","pages":"1-13","year":"2025","type":"Journal Articles","access":"closed","key":"journals/tim/MachikhinTHGBZB25","doi":"10.1109/TIM.2024.3502743","ee":"https://doi.org/10.1109/TIM.2024.3502743","url":"https://dblp.org/rec/journals/tim/MachikhinTHGBZB25"},
+"url":"URL#563400"
+},
+{
+"@score":"2",
+"@id":"770107",
+"info":{"authors":{"author":[{"@pid":"426/6744","text":"Abhishek Gangani"},{"@pid":"89/5992-13","text":"Li Zhang 0013"},{"@pid":"399/3877","text":"Arjun Panesar"}]},"title":"Deep Fusion Networks with Hybrid Attention Mechanisms for Voice Diabetes Detection.","venue":"SMC","pages":"5491-5498","year":"2025","type":"Conference and Workshop Papers","access":"closed","key":"conf/smc/GanganiZP25","doi":"10.1109/SMC58881.2025.11343208","ee":"https://doi.org/10.1109/SMC58881.2025.11343208","url":"https://dblp.org/rec/conf/smc/GanganiZP25"},
+"url":"URL#770107"
+},
+{
+"@score":"2",
+"@id":"878036",
+"info":{"authors":{"author":[{"@pid":"394/3451","text":"Beka Begiashvili"},{"@pid":"240/3974","text":"Carlos Javier Fernández Candel"},{"@pid":"413/2816","text":"Matías Pérez Paredes"}]},"title":"Acoustic Index: A Novel AI-Driven Parameter for Cardiac Disease Risk Stratification Using Echocardiography.","venue":"CoRR","volume":"abs/2507.13542","year":"2025","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2507-13542","doi":"10.48550/ARXIV.2507.13542","ee":"https://doi.org/10.48550/arXiv.2507.13542","url":"https://dblp.org/rec/journals/corr/abs-2507-13542"},
+"url":"URL#878036"
+},
+{
+"@score":"2",
+"@id":"993370",
+"info":{"authors":{"author":[{"@pid":"351/5704","text":"Behrad Taghibeyglou"},{"@pid":"203/1093","text":"Ivana Culjak"},{"@pid":"78/7442","text":"Fatemeh Bagheri"},{"@pid":"384/1171","text":"Haarini Suntharalingam"},{"@pid":"01/9133","text":"Azadeh Yadollahi"}]},"title":"Estimating the severity of obstructive sleep apnea during wakefulness using speech: A review.","venue":"Comput. Biol. Medicine","volume":"181","pages":"109020","year":"2024","type":"Journal Articles","access":"open","key":"journals/cbm/TaghibeyglouCBSY24","doi":"10.1016/J.COMPBIOMED.2024.109020","ee":"https://doi.org/10.1016/j.compbiomed.2024.109020","url":"https://dblp.org/rec/journals/cbm/TaghibeyglouCBSY24"},
+"url":"URL#993370"
+},
+{
+"@score":"2",
+"@id":"1005407",
+"info":{"authors":{"author":[{"@pid":"232/2379","text":"Nataliya Shakhovska"},{"@pid":"417/1306","text":"Ivan Zagorodniy"}]},"title":"Classification of Acoustic Tones and Cardiac Murmurs Based on Digital Signal Analysis Leveraging Machine Learning Methods.","venue":"Comput.","volume":"12","number":"10","pages":"208","year":"2024","type":"Journal Articles","access":"open","key":"journals/computation/ShakhovskaZ24","doi":"10.3390/COMPUTATION12100208","ee":"https://doi.org/10.3390/computation12100208","url":"https://dblp.org/rec/journals/computation/ShakhovskaZ24"},
+"url":"URL#1005407"
+},
+{
+"@score":"2",
+"@id":"1057687",
+"info":{"authors":{"author":[{"@pid":"24/10036-2","text":"Yu Rong 0002"},{"@pid":"369/8474","text":"Isabella Lenz"},{"@pid":"25/2644","text":"Daniel W. Bliss"}]},"title":"Noncontact Cardiac Parameters Estimation Using Radar Acoustics for Healthcare IoT.","venue":"IEEE Internet Things J.","volume":"11","number":"5","pages":"7630-7639","year":"2024","type":"Journal Articles","access":"closed","key":"journals/iotj/RongLB24","doi":"10.1109/JIOT.2023.3317670","ee":"https://doi.org/10.1109/JIOT.2023.3317670","url":"https://dblp.org/rec/journals/iotj/RongLB24"},
+"url":"URL#1057687"
+},
+{
+"@score":"2",
+"@id":"1125779",
+"info":{"authors":{"author":[{"@pid":"188/6243","text":"Bashima Islam"},{"@pid":"226/2027","text":"Nancy L. McElwain"},{"@pid":"32/11008-2","text":"Jialu Li 0002"},{"@pid":"230/2231","text":"Maria I. Davila"},{"@pid":"133/3740","text":"Yannan Hu"},{"@pid":"142/2132","text":"Kexin Hu"},{"@pid":"369/4247","text":"Jordan M. Bodway"},{"@pid":"98/7554","text":"Ashutosh Dhekne"},{"@pid":"19/6964","text":"Romit Roy Choudhury"},{"@pid":"70/3186","text":"Mark Hasegawa-Johnson"}]},"title":"Preliminary Technical Validation of LittleBeats™: A Multimodal Sensing Platform to Capture Cardiac Physiology, Motion, and Vocalizations.","venue":"Sensors","volume":"24","number":"3","pages":"901","year":"2024","type":"Journal Articles","access":"open","key":"journals/sensors/IslamMLDHHBDCH24","doi":"10.3390/S24030901","ee":"https://doi.org/10.3390/s24030901","url":"https://dblp.org/rec/journals/sensors/IslamMLDHHBDCH24"},
+"url":"URL#1125779"
+},
+{
+"@score":"2",
+"@id":"1169121",
+"info":{"authors":{"author":[{"@pid":"284/0473","text":"Zifan Jiang"},{"@pid":"277/6929","text":"Salman Seyedi"},{"@pid":"370/7772","text":"Emily Griner"},{"@pid":"65/64","text":"Ahmed Abbasi"},{"@pid":"148/9744","text":"Ali Bahrami Rad"},{"@pid":"169/4836","text":"Hyeokhyen Kwon"},{"@pid":"370/8241","text":"Robert O. Cotes"},{"@pid":"72/5989","text":"Gari D. Clifford"}]},"title":"Multimodal Mental Health Digital Biomarker Analysis From Remote Interviews Using Facial, Vocal, Linguistic, and Cardiovascular Patterns.","venue":"IEEE J. Biomed. Health Informatics","volume":"28","number":"3","pages":"1680-1691","year":"2024","type":"Journal Articles","access":"closed","key":"journals/titb/JiangSGARKCC24","doi":"10.1109/JBHI.2024.3352075","ee":"https://doi.org/10.1109/JBHI.2024.3352075","url":"https://dblp.org/rec/journals/titb/JiangSGARKCC24"},
+"url":"URL#1169121"
+},
+{
+"@score":"2",
+"@id":"1255778",
+"info":{"authors":{"author":[{"@pid":"351/5704","text":"Behrad Taghibeyglou"},{"@pid":"389/3711","text":"Alexander Chow"},{"@pid":"389/3697","text":"Parker Mclaurin"},{"@pid":"389/3469","text":"Oviga Yasokaran"},{"@pid":"389/3841","text":"Rene Adams"},{"@pid":"389/3795","text":"Majida Mohammed"},{"@pid":"46/2583","text":"Mandeep Singh"},{"@pid":"389/3529","text":"Najib Ayas"},{"@pid":"124/6164","text":"Sachin R. Pendharkar"},{"@pid":"389/3770","text":"Fernanda R. Almeida"},{"@pid":"389/3826","text":"Valeria Rac"},{"@pid":"171/9110","text":"Shumit Saha"},{"@pid":"01/9133","text":"Azadeh Yadollahi"}]},"title":"Towards an Accessible Speech-based Obstructive Sleep Apnea Screening Tool for Underserved Populations.","venue":"EMBC","pages":"1-4","year":"2024","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/TaghibeyglouCMY24","doi":"10.1109/EMBC53108.2024.10782866","ee":"https://doi.org/10.1109/EMBC53108.2024.10782866","url":"https://dblp.org/rec/conf/embc/TaghibeyglouCMY24"},
+"url":"URL#1255778"
+},
+{
+"@score":"2",
+"@id":"1271939",
+"info":{"authors":{"author":[{"@pid":"97/10041","text":"Takahiro Miura"},{"@pid":"123/2519","text":"Ken-ichiro Yabu"},{"@pid":"200/7283","text":"Emiko Uchiyama"},{"@pid":"327/3898","text":"Kenta Kamikokuryo"},{"@pid":"282/6180","text":"Vincent Hernandez"},{"@pid":"276/6382","text":"Bokyung Son"},{"@pid":"191/6301","text":"Katsuya Iijima"}]},"title":"Estimating Subjective Ikigai of Older Adults Based on the Analysis of Voice Communication in Social Activities: A Case Study of Frailty Check Activity Scenes.","venue":"HCI","pages":"248-255","year":"2024","type":"Conference and Workshop Papers","access":"closed","key":"conf/hci/MiuraYUKHSI24","doi":"10.1007/978-3-031-76818-7_17","ee":"https://doi.org/10.1007/978-3-031-76818-7_17","url":"https://dblp.org/rec/conf/hci/MiuraYUKHSI24"},
+"url":"URL#1271939"
+},
+{
+"@score":"2",
+"@id":"1527829",
+"info":{"authors":{"author":[{"@pid":"316/8059","text":"Kelvin Summoogum"},{"@pid":"138/1077","text":"Debayan Das"},{"@pid":"393/1870","text":"Sathish Kumaran"}]},"title":"A Voice-based Triage for Type 2 Diabetes using a Conversational Virtual Assistant in the Home Environment.","venue":"CoRR","volume":"abs/2411.19204","year":"2024","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2411-19204","doi":"10.48550/ARXIV.2411.19204","ee":"https://doi.org/10.48550/arXiv.2411.19204","url":"https://dblp.org/rec/journals/corr/abs-2411-19204"},
+"url":"URL#1527829"
+},
+{
+"@score":"2",
+"@id":"1535435",
+"info":{"authors":{"author":[{"@pid":"395/4609","text":"Xiaofan Mu"},{"@pid":"277/6929","text":"Salman Seyedi"},{"@pid":"395/5766","text":"Iris Zheng"},{"@pid":"284/0473","text":"Zifan Jiang"},{"@pid":"71/8598","text":"Liu Chen"},{"@pid":"395/4940","text":"Bolaji Omofojoye"},{"@pid":"395/4909","text":"Rachel Hershenberg"},{"@pid":"183/6991","text":"Allan I. Levey"},{"@pid":"72/5989","text":"Gari D. Clifford"},{"@pid":"181/6825","text":"Hiroko H. Dodge"},{"@pid":"169/4836","text":"Hyeokhyen Kwon"}]},"title":"Detecting Cognitive Impairment and Psychological Well-being among Older Adults Using Facial, Acoustic, Linguistic, and Cardiovascular Patterns Derived from Remote Conversations.","venue":"CoRR","volume":"abs/2412.14194","year":"2024","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2412-14194","doi":"10.48550/ARXIV.2412.14194","ee":"https://doi.org/10.48550/arXiv.2412.14194","url":"https://dblp.org/rec/journals/corr/abs-2412-14194"},
+"url":"URL#1535435"
+},
+{
+"@score":"2",
+"@id":"1542586",
+"info":{"title":"RETRACTED ARTICLE: Deep learning based cardiovascular disease diagnosis system from heartbeat sound.","venue":"Int. J. Speech Technol.","volume":"27","number":"2","pages":"517","year":"2024","type":"Withdrawn Items","access":"withdrawn","key":"journals/ijst/YadavTJD24","doi":"10.1007/S10772-021-09890-4","ee":"https://doi.org/10.1007/s10772-021-09890-4","url":"https://dblp.org/rec/journals/ijst/YadavTJD24"},
+"url":"URL#1542586"
+},
+{
+"@score":"2",
+"@id":"1576704",
+"info":{"authors":{"author":[{"@pid":"20/8528","text":"Derya Yilmaz"},{"@pid":"17/8753","text":"Metin Yildiz"},{"@pid":"349/1687","text":"Yasemin Uyar Toprak"},{"@pid":"07/7299","text":"Sinan Yetkin"}]},"title":"Obstructive sleep apnea detection with nonlinear analysis of speech.","venue":"Biomed. Signal Process. Control.","volume":"84","pages":"104956","year":"2023","type":"Journal Articles","access":"closed","key":"journals/bspc/YilmazYTY23","doi":"10.1016/J.BSPC.2023.104956","ee":"https://doi.org/10.1016/j.bspc.2023.104956","url":"https://dblp.org/rec/journals/bspc/YilmazYTY23"},
+"url":"URL#1576704"
+},
+{
+"@score":"2",
+"@id":"1892839",
+"info":{"authors":{"author":[{"@pid":"72/9686","text":"Kaibo Zhang"},{"@pid":"26/3903","text":"Lili Cao"},{"@pid":"49/9829","text":"Yiming Ding"},{"@pid":"66/10205","text":"Yanru Li"},{"@pid":"94/3019-31","text":"Chao Zhang 0031"},{"@pid":"91/4957-2","text":"Ji Wu 0002"},{"@pid":"68/1461","text":"Demin Han"}]},"title":"Obstructive Sleep Apnea Detection using Pre-trained Speech Representations.","venue":"INTERSPEECH","pages":"1139-1143","year":"2023","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/ZhangCDLZWH23","doi":"10.21437/INTERSPEECH.2023-278","ee":"https://doi.org/10.21437/Interspeech.2023-278","url":"https://dblp.org/rec/conf/interspeech/ZhangCDLZWH23"},
+"url":"URL#1892839"
+},
+{
+"@score":"2",
+"@id":"2179113",
+"info":{"authors":{"author":[{"@pid":"311/2896","text":"Kang-Gao Pang"},{"@pid":"13/4812","text":"Tai-Chiu Hsung"},{"@pid":"279/6970","text":"Guozhao Liao"},{"@pid":"l/WingKuenLing","text":"Wing-Kuen Ling"},{"@pid":"311/3378","text":"Alex Ka-Wing Law"},{"@pid":"310/2561","text":"Wing-Shan Choi"}]},"title":"Obstructive Sleep Apnea Detection Using Speech Signals with High Frequency Components.","venue":"J. Commun.","volume":"17","number":"1","pages":"49-55","year":"2022","type":"Journal Articles","access":"closed","key":"journals/jcm/PangHLLLC22","doi":"10.12720/JCM.17.1.49-55","ee":"https://doi.org/10.12720/jcm.17.1.49-55","url":"https://dblp.org/rec/journals/jcm/PangHLLLC22"},
+"url":"URL#2179113"
+},
+{
+"@score":"2",
+"@id":"2236728",
+"info":{"authors":{"author":[{"@pid":"333/7313","text":"Eydis H. Magnusdottir"},{"@pid":"37/8898","text":"Kamilla R. Johannsdottir"},{"@pid":"90/10994","text":"Arnab Majumdar"},{"@pid":"14/970","text":"Jón Guðnason"}]},"title":"Assessing Cognitive Workload Using Cardiovascular Measures and Voice.","venue":"Sensors","volume":"22","number":"18","pages":"6894","year":"2022","type":"Journal Articles","access":"open","key":"journals/sensors/MagnusdottirJMG22","doi":"10.3390/S22186894","ee":"https://doi.org/10.3390/s22186894","url":"https://dblp.org/rec/journals/sensors/MagnusdottirJMG22"},
+"url":"URL#2236728"
+},
+{
+"@score":"2",
+"@id":"2274153",
+"info":{"authors":{"author":[{"@pid":"239/5981","text":"Hector E. Romero"},{"@pid":"60/3634-2","text":"Ning Ma 0002"},{"@pid":"b/GuyJBrown","text":"Guy J. Brown"},{"@pid":"324/7725","text":"Elizabeth A. Hill"}]},"title":"Acoustic Screening for Obstructive Sleep Apnea in Home Environments Based on Deep Neural Networks.","venue":"IEEE J. Biomed. Health Informatics","volume":"26","number":"7","pages":"2941-2950","year":"2022","type":"Journal Articles","access":"closed","key":"journals/titb/Romero0BH22","doi":"10.1109/JBHI.2022.3154719","ee":"https://doi.org/10.1109/JBHI.2022.3154719","url":"https://dblp.org/rec/journals/titb/Romero0BH22"},
+"url":"URL#2274153"
+},
+{
+"@score":"2",
+"@id":"2326860",
+"info":{"authors":{"author":[{"@pid":"275/2541","text":"Masud Rabbani"},{"@pid":"302/1805","text":"Shiyu Tian"},{"@pid":"326/2939","text":"Adib Ahmed Anik"},{"@pid":"157/6484","text":"Jake Luo"},{"@pid":"148/1870","text":"Min Sook Park"},{"@pid":"326/3063","text":"Jeff Whittle"},{"@pid":"a/SheikhIqbalAhamed","text":"Sheikh Iqbal Ahamed"},{"@pid":"212/8456","text":"Hyunkyoung Oh"}]},"title":"Towards Developing a Voice-activated Self-monitoring Application (VoiS) for Adults with Diabetes and Hypertension.","venue":"COMPSAC","pages":"512-519","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/compsac/RabbaniTALPWAO22","doi":"10.1109/COMPSAC54236.2022.00095","ee":"https://doi.org/10.1109/COMPSAC54236.2022.00095","url":"https://dblp.org/rec/conf/compsac/RabbaniTALPWAO22"},
+"url":"URL#2326860"
+},
+{
+"@score":"2",
+"@id":"2426246",
+"info":{"authors":{"author":[{"@pid":"323/2045","text":"Sonia Rafi"},{"@pid":"323/2469","text":"Cedric Gangloff"},{"@pid":"323/1831","text":"Etienne Paulhet"},{"@pid":"323/1886","text":"Ollivier Grimault"},{"@pid":"323/2273","text":"Louis Soulat"},{"@pid":"166/8316","text":"Guillaume Bouzillé"},{"@pid":"78/7307","text":"Marc Cuggia"}]},"title":"Out-of-Hospital Cardiac Arrest Detection by Machine Learning Based on the Phonetic Characteristics of the Caller&apos;s Voice.","venue":"MIE","pages":"445-449","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/mie/RafiGPGSBC22","doi":"10.3233/SHTI220498","ee":"https://doi.org/10.3233/SHTI220498","url":"https://dblp.org/rec/conf/mie/RafiGPGSBC22"},
+"url":"URL#2426246"
+},
+{
+"@score":"2",
+"@id":"2597046",
+"info":{"authors":{"author":[{"@pid":"25/3246","text":"Tian Wang"},{"@pid":"301/6900","text":"Meihui Gong"},{"@pid":"123/9177","text":"Xiaoyu Yu"},{"@pid":"301/7155","text":"Guangdong Lan"},{"@pid":"115/9564","text":"Yunbo Shi"}]},"title":"Acoustic-pressure sensor array system for cardiac-sound acquisition.","venue":"Biomed. Signal Process. Control.","volume":"69","pages":"102836","year":"2021","type":"Journal Articles","access":"open","key":"journals/bspc/WangGYLS21","doi":"10.1016/J.BSPC.2021.102836","ee":"https://doi.org/10.1016/j.bspc.2021.102836","url":"https://dblp.org/rec/journals/bspc/WangGYLS21"},
+"url":"URL#2597046"
+},
+{
+"@score":"2",
+"@id":"2880206",
+"info":{"authors":{"author":[{"@pid":"277/3639","text":"Catarina Botelho"},{"@pid":"71/1198","text":"Alberto Abad"},{"@pid":"s/TanjaSchultz","text":"Tanja Schultz"},{"@pid":"72/6829","text":"Isabel Trancoso"}]},"title":"Visual Speech for Obstructive Sleep Apnea Detection.","venue":"Interspeech","pages":"2516-2520","year":"2021","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/BotelhoAST21","doi":"10.21437/INTERSPEECH.2021-1717","ee":"https://doi.org/10.21437/Interspeech.2021-1717","url":"https://dblp.org/rec/conf/interspeech/BotelhoAST21"},
+"url":"URL#2880206"
+},
+{
+"@score":"2",
+"@id":"3031023",
+"info":{"title":"Efficient diabetes mellitus prediction with grid based random forest classifier in association with natural language processing.","venue":"Int. J. Speech Technol.","volume":"24","number":"3","pages":"601-614","year":"2021","type":"Withdrawn Items","access":"withdrawn","key":"journals/ijst/AbokhzamGB21","doi":"10.1007/S10772-021-09825-Z","ee":"https://doi.org/10.1007/s10772-021-09825-z","url":"https://dblp.org/rec/journals/ijst/AbokhzamGB21"},
+"url":"URL#3031023"
+},
+{
+"@score":"2",
+"@id":"3032689",
+"info":{"authors":{"author":{"@pid":"66/11030","text":"Dulip Lakmal Herath"}},"title":"Obstructive sleep apnea detection using automatic speech recognition approaches","year":"2020","type":"Books and Theses","access":"closed","key":"phd/au/Herath20","ee":"https://search.library.uq.edu.au/permalink/f/l3gdeh/61UQ_eSpaced2b638b","url":"https://dblp.org/rec/phd/au/Herath20"},
+"url":"URL#3032689"
+},
+{
+"@score":"2",
+"@id":"3144449",
+"info":{"authors":{"author":[{"@pid":"238/9570","text":"Juan M. Perero-Codosero"},{"@pid":"121/1859","text":"Fernando Espinoza-Cuadros"},{"@pid":"238/9648","text":"Javier Antón-Martín"},{"@pid":"263/6409","text":"Miguel Antonio Barbero-Álvarez"},{"@pid":"83/3907","text":"Luis A. Hernández Gómez"}]},"title":"Modeling Obstructive Sleep Apnea Voices Using Deep Neural Network Embeddings and Domain-Adversarial Training.","venue":"IEEE J. Sel. Top. Signal Process.","volume":"14","number":"2","pages":"240-250","year":"2020","type":"Journal Articles","access":"closed","key":"journals/jstsp/Perero-Codosero20","doi":"10.1109/JSTSP.2019.2957977","ee":"https://doi.org/10.1109/JSTSP.2019.2957977","url":"https://dblp.org/rec/journals/jstsp/Perero-Codosero20"},
+"url":"URL#3144449"
+},
+{
+"@score":"2",
+"@id":"3144454",
+"info":{"authors":{"author":[{"@pid":"231/2567","text":"Ruby Melody Simply"},{"@pid":"142/8730","text":"Eliran Dafna"},{"@pid":"49/7824","text":"Yaniv Zigel"}]},"title":"Diagnosis of Obstructive Sleep Apnea Using Speech Signals From Awake Subjects.","venue":"IEEE J. Sel. Top. Signal Process.","volume":"14","number":"2","pages":"251-260","year":"2020","type":"Journal Articles","access":"closed","key":"journals/jstsp/SimplyDZ20","doi":"10.1109/JSTSP.2019.2955019","ee":"https://doi.org/10.1109/JSTSP.2019.2955019","url":"https://dblp.org/rec/journals/jstsp/SimplyDZ20"},
+"url":"URL#3144454"
+},
+{
+"@score":"2",
+"@id":"3148294",
+"info":{"authors":{"author":[{"@pid":"254/8178","text":"Farahnaz Hajipour"},{"@pid":"34/9128","text":"Eleni Giannouli"},{"@pid":"11/7522","text":"Zahra Moussavi"}]},"title":"Acoustic characterization of upper airway variations from wakefulness to sleep with respect to obstructive sleep apnea.","venue":"Medical Biol. Eng. Comput.","volume":"58","number":"10","pages":"2375-2385","year":"2020","type":"Journal Articles","access":"closed","key":"journals/mbec/HajipourGM20","doi":"10.1007/S11517-020-02234-5","ee":"https://doi.org/10.1007/s11517-020-02234-5","url":"https://dblp.org/rec/journals/mbec/HajipourGM20"},
+"url":"URL#3148294"
+},
+{
+"@score":"2",
+"@id":"3236954",
+"info":{"authors":{"author":[{"@pid":"164/6618","text":"Qingxue Zhang"},{"@pid":"282/4165","text":"Ryan Boente"}]},"title":"DeepWave: Non-contact Acoustic Receiver Powered by Deep Learning to Detect Sleep Apnea.","venue":"BIBE","pages":"723-727","year":"2020","type":"Conference and Workshop Papers","access":"closed","key":"conf/bibe/ZhangB20","doi":"10.1109/BIBE50027.2020.00123","ee":"https://doi.org/10.1109/BIBE50027.2020.00123","url":"https://dblp.org/rec/conf/bibe/ZhangB20"},
+"url":"URL#3236954"
+},
+{
+"@score":"2",
+"@id":"3313696",
+"info":{"authors":{"author":[{"@pid":"41/8631","text":"Keren Hochman"},{"@pid":"a/AmirAverbuch","text":"Amir Averbuch"},{"@pid":"35/1270","text":"Alon Schclar"},{"@pid":"08/7443","text":"Raid Saabni"}]},"title":"A Manifold Learning Framework for the Detection of Cardiac Disorders in Acoustic Signals.","venue":"ICPRAM","pages":"192-197","year":"2020","type":"Conference and Workshop Papers","access":"closed","key":"conf/icpram/HochmanASS20","doi":"10.5220/0009094401920197","ee":"https://doi.org/10.5220/0009094401920197","url":"https://dblp.org/rec/conf/icpram/HochmanASS20"},
+"url":"URL#3313696"
+},
+{
+"@score":"2",
+"@id":"3676935",
+"info":{"authors":{"author":[{"@pid":"293/1427","text":"Nóra Imre"},{"@pid":"293/2128","text":"Réka Balogh"},{"@pid":"51/1288","text":"Gábor Gosztolya"},{"@pid":"69/3781-1","text":"László Tóth 0001"},{"@pid":"333/7928","text":"Tamás Várkonyi"},{"@pid":"333/8065","text":"Csaba Lengyel"},{"@pid":"173/6377","text":"Magdolna Pákáski"},{"@pid":"173/6462","text":"János Kálmán"}]},"title":"Automatic recognition of temporal speech features in type 2 diabetes mellitus with mild cognitive impairment.","venue":"CogInfoCom","pages":"27-28","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/coginfocom/ImreBG0VLPK19","doi":"10.1109/COGINFOCOM47531.2019.9089949","ee":"https://doi.org/10.1109/CogInfoCom47531.2019.9089949","url":"https://dblp.org/rec/conf/coginfocom/ImreBG0VLPK19"},
+"url":"URL#3676935"
+},
+{
+"@score":"2",
+"@id":"3717364",
+"info":{"authors":{"author":[{"@pid":"277/3639","text":"Catarina Botelho"},{"@pid":"72/6829","text":"Isabel Trancoso"},{"@pid":"71/1198","text":"Alberto Abad"},{"@pid":"68/7049","text":"Teresa Paiva"}]},"title":"Speech as a Biomarker for Obstructive Sleep Apnea Detection.","venue":"ICASSP","pages":"5851-5855","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/BotelhoTAP19","doi":"10.1109/ICASSP.2019.8682431","ee":"https://doi.org/10.1109/ICASSP.2019.8682431","url":"https://dblp.org/rec/conf/icassp/BotelhoTAP19"},
+"url":"URL#3717364"
+},
+{
+"@score":"2",
+"@id":"3781998",
+"info":{"authors":{"author":[{"@pid":"145/7788","text":"Samuel Tan"},{"@pid":"143/3766","text":"Farhad Fatehi"}]},"title":"Sweet Talking: Voice Technology and Virtual Assistants in Clinical Diabetes Management.","venue":"MedInfo","pages":"1787-1788","year":"2019","type":"Conference and Workshop Papers","access":"open","key":"conf/medinfo/TanF19","doi":"10.3233/SHTI190648","ee":"https://doi.org/10.3233/SHTI190648","url":"https://dblp.org/rec/conf/medinfo/TanF19"},
+"url":"URL#3781998"
+},
+{
+"@score":"2",
+"@id":"4064096",
+"info":{"authors":{"author":[{"@pid":"188/2568","text":"Christos Sapsanis"},{"@pid":"232/8149","text":"Nathaniel Welsh"},{"@pid":"223/4553","text":"Michael Pozin"},{"@pid":"23/9577","text":"Guillaume Garreau"},{"@pid":"161/4515","text":"Gaspar Tognetti"},{"@pid":"161/4482","text":"Hani Bakhshaee"},{"@pid":"36/4078","text":"Philippe O. Pouliquen"},{"@pid":"60/1673-2","text":"Rajat Mittal 0002"},{"@pid":"161/4470","text":"William R. Thompson"},{"@pid":"a/AndreasGAndreou","text":"Andreas G. Andreou"}]},"title":"StethoVest: A simultaneous multichannel wearable system for cardiac acoustic mapping.","venue":"BioCAS","pages":"1-4","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/biocas/SapsanisWPGTBPM18","doi":"10.1109/BIOCAS.2018.8584742","ee":"https://doi.org/10.1109/BIOCAS.2018.8584742","url":"https://dblp.org/rec/conf/biocas/SapsanisWPGTBPM18"},
+"url":"URL#4064096"
+},
+{
+"@score":"2",
+"@id":"4068281",
+"info":{"authors":{"author":[{"@pid":"216/6458","text":"Amy Cheng"},{"@pid":"216/6552","text":"Vaishnavi Raghavaraju"},{"@pid":"216/6721","text":"Jayanth Kanugo"},{"@pid":"216/6598","text":"Yohanes P. Handrianto"},{"@pid":"10/967","text":"Yi Shang"}]},"title":"Development and evaluation of a healthy coping voice interface application using the Google home for elderly patients with type 2 diabetes.","venue":"CCNC","pages":"1-5","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/ccnc/ChengRKHS18","doi":"10.1109/CCNC.2018.8319283","ee":"https://doi.org/10.1109/CCNC.2018.8319283","url":"https://dblp.org/rec/conf/ccnc/ChengRKHS18"},
+"url":"URL#4068281"
+},
+{
+"@score":"2",
+"@id":"4098695",
+"info":{"authors":{"author":[{"@pid":"231/2567","text":"Ruby Melody Simply"},{"@pid":"142/8730","text":"Eliran Dafna"},{"@pid":"49/7824","text":"Yaniv Zigel"}]},"title":"Obstructive Sleep Apnea (OSA) Classification Using Analysis of Breathing Sounds During Speech.","venue":"EUSIPCO","pages":"1132-1136","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/eusipco/SimplyDZ18","doi":"10.23919/EUSIPCO.2018.8553353","ee":"https://doi.org/10.23919/EUSIPCO.2018.8553353","url":"https://dblp.org/rec/conf/eusipco/SimplyDZ18"},
+"url":"URL#4098695"
+},
+{
+"@score":"2",
+"@id":"4162440",
+"info":{"authors":{"author":[{"@pid":"229/2347","text":"Hadri Hussain"},{"@pid":"42/1168","text":"Sh-Hussain Salleh"},{"@pid":"86/10527","text":"Chee-Ming Ting"},{"@pid":"210/5964","text":"Fuad Noman"},{"@pid":"210/5819","text":"M. M. Mohammad"},{"@pid":"232/0792","text":"Ahmad Zubaidi Abdul Latif"},{"@pid":"232/0882","text":"Osamah Al-Hamdani"}]},"title":"Performance Study for Multimodel Client Identification System Using Cardiac and Speech Signals.","venue":"ISMICT","pages":"1-6","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/ismict/HussainSTNMLA18","doi":"10.1109/ISMICT.2018.8573692","ee":"https://doi.org/10.1109/ISMICT.2018.8573692","url":"https://dblp.org/rec/conf/ismict/HussainSTNMLA18"},
+"url":"URL#4162440"
+},
+{
+"@score":"2",
+"@id":"4663045",
+"info":{"authors":{"author":[{"@pid":"178/9109","text":"Hasan H. Khaleel"},{"@pid":"94/2530","text":"Rahmita Wirza O. K. Rahmat"},{"@pid":"80/9113","text":"D. M. Zamrin"}]},"title":"Voice activation visualisation of cardiovascular angiography and 3D coronary arteries in surgery.","venue":"Int. J. Comput. Appl. Technol.","volume":"53","number":"3","pages":"255-260","year":"2016","type":"Journal Articles","access":"closed","key":"journals/ijcat/KhaleelRZ16","doi":"10.1504/IJCAT.2016.075515","ee":"https://doi.org/10.1504/IJCAT.2016.075515","url":"https://dblp.org/rec/journals/ijcat/KhaleelRZ16"},
+"url":"URL#4663045"
+},
+{
+"@score":"2",
+"@id":"4766849",
+"info":{"authors":{"author":[{"@pid":"226/0803","text":"Kang Pei"},{"@pid":"81/4345-11","text":"Fei Chen 0011"},{"@pid":"98/9138","text":"Dingchang Zheng"}]},"title":"Effect of Autonomic Cardiac Modulation on Speech Perception in Noise.","venue":"CinC","year":"2016","type":"Conference and Workshop Papers","access":"open","key":"conf/cinc/Pei0Z16","ee":"http://www.cinc.org/archives/2016/pdf/148-192.pdf","url":"https://dblp.org/rec/conf/cinc/Pei0Z16"},
+"url":"URL#4766849"
+},
+{
+"@score":"2",
+"@id":"4784445",
+"info":{"authors":{"author":[{"@pid":"55/9878","text":"Richard Hummel"},{"@pid":"78/9878","text":"T. Douglas Bradley"},{"@pid":"188/3220","text":"Devin Packer"},{"@pid":"34/9874","text":"Hisham Alshaer"}]},"title":"Distinguishing obstructive from central sleep apneas and hypopneas using linear SVM and acoustic features.","venue":"EMBC","pages":"2236-2240","year":"2016","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/HummelBPA16","doi":"10.1109/EMBC.2016.7591174","ee":"https://doi.org/10.1109/EMBC.2016.7591174","url":"https://dblp.org/rec/conf/embc/HummelBPA16"},
+"url":"URL#4784445"
+},
+{
+"@score":"2",
+"@id":"4784903",
+"info":{"authors":{"author":[{"@pid":"241/9837","text":"Dvir Ben Or"},{"@pid":"142/8730","text":"Eliran Dafna"},{"@pid":"116/3470","text":"Ariel Tarasiuk"},{"@pid":"49/7824","text":"Yaniv Zigel"}]},"title":"Obstructive sleep apnea severity estimation: Fusion of speech-based systems.","venue":"EMBC","pages":"3207-3210","year":"2016","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/OrDTZ16","doi":"10.1109/EMBC.2016.7591411","ee":"https://doi.org/10.1109/EMBC.2016.7591411","url":"https://dblp.org/rec/conf/embc/OrDTZ16"},
+"url":"URL#4784903"
+},
+{
+"@score":"2",
+"@id":"4958071",
+"info":{"authors":{"author":[{"@pid":"121/1859","text":"Fernando Espinoza-Cuadros"},{"@pid":"71/1449","text":"Rubén Fernández Pozo"},{"@pid":"03/1861","text":"Doroteo T. Toledano"},{"@pid":"19/9177","text":"José Alcázar Ramírez"},{"@pid":"77/9176","text":"Eduardo López Gonzalo"},{"@pid":"83/3907","text":"Luis A. Hernández Gómez"}]},"title":"Speech Signal and Facial Image Processing for Obstructive Sleep Apnea Assessment.","venue":"Comput. Math. Methods Medicine","volume":"2015","pages":"489761:1-489761:13","year":"2015","type":"Journal Articles","access":"open","key":"journals/cmmm/Espinoza-Cuadros15","doi":"10.1155/2015/489761","ee":"https://doi.org/10.1155/2015/489761","url":"https://dblp.org/rec/journals/cmmm/Espinoza-Cuadros15"},
+"url":"URL#4958071"
+},
+{
+"@score":"2",
+"@id":"5100720",
+"info":{"authors":{"author":[{"@pid":"52/5239-1","text":"Paulo Carvalho 0001"},{"@pid":"50/3339","text":"Rui Pedro Paiva"},{"@pid":"29/7009","text":"Jorge Henriques"},{"@pid":"43/3644","text":"Dinesh Kumar"},{"@pid":"93/6635","text":"Ricardo Couceiro"},{"@pid":"308/4724","text":"Tiago Sapata"},{"@pid":"24/10230","text":"Isabel Quintal"},{"@pid":"308/4801","text":"Romeu Baptista"},{"@pid":"60/824","text":"Manuel Antunes"}]},"title":"Acoustic cardiac signal analysis: A toolbox.","venue":"exp.at","pages":"7-12","year":"2015","type":"Conference and Workshop Papers","access":"closed","key":"conf/expat/CarvalhoPHKCSQB15","doi":"10.1109/EXPAT.2015.7463205","ee":"https://doi.org/10.1109/EXPAT.2015.7463205","url":"https://dblp.org/rec/conf/expat/CarvalhoPHKCSQB15"},
+"url":"URL#5100720"
+},
+{
+"@score":"2",
+"@id":"5150671",
+"info":{"authors":{"author":[{"@pid":"24/870","text":"Laurens van der Werff"},{"@pid":"14/970","text":"Jón Guðnason"},{"@pid":"37/8898","text":"Kamilla Rún Jóhannsdóttir"}]},"title":"Detection of cardiovascular reactivity in speech.","venue":"INTERSPEECH","pages":"1111-1115","year":"2015","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/WerffGJ15","doi":"10.21437/INTERSPEECH.2015-292","ee":"https://doi.org/10.21437/Interspeech.2015-292","url":"https://dblp.org/rec/conf/interspeech/WerffGJ15"},
+"url":"URL#5150671"
+},
+{
+"@score":"2",
+"@id":"5252226",
+"info":{"authors":{"author":[{"@pid":"95/3100","text":"Jordi Solé-Casals"},{"@pid":"42/4751-2","text":"Cristian Munteanu 0002"},{"@pid":"149/0652","text":"Oriol Capdevila Martín"},{"@pid":"149/0430","text":"Ferrán Barbé"},{"@pid":"149/0541","text":"Carlos Queipo"},{"@pid":"149/0578","text":"José Amilibia"},{"@pid":"149/0690","text":"Joaquín Durán-Cantolla"}]},"title":"Detection of severe obstructive sleep apnea through voice analysis.","venue":"Appl. Soft Comput.","volume":"23","pages":"346-354","year":"2014","type":"Journal Articles","access":"closed","key":"journals/asc/Sole-CasalsMMBQAD14","doi":"10.1016/J.ASOC.2014.06.017","ee":"https://doi.org/10.1016/j.asoc.2014.06.017","url":"https://dblp.org/rec/journals/asc/Sole-CasalsMMBQAD14"},
+"url":"URL#5252226"
+},
+{
+"@score":"2",
+"@id":"5366356",
+"info":{"authors":{"author":[{"@pid":"139/5708","text":"Ghafoor Shah"},{"@pid":"09/203-1","text":"Peter Koch 0001"},{"@pid":"00/3307","text":"Constantinos B. Papadias"}]},"title":"Analysis of Acoustic Cardiac Signals for Heart Rate Variability and Murmur Detection Using Nonnegative Matrix Factorization-Based Hierarchical Decomposition.","venue":"BIBE","pages":"46-53","year":"2014","type":"Conference and Workshop Papers","access":"closed","key":"conf/bibe/ShahKP14","doi":"10.1109/BIBE.2014.14","ee":"https://doi.org/10.1109/BIBE.2014.14","url":"https://dblp.org/rec/conf/bibe/ShahKP14"},
+"url":"URL#5366356"
+},
+{
+"@score":"2",
+"@id":"5394486",
+"info":{"authors":{"author":[{"@pid":"149/0117","text":"Maya Kriboy"},{"@pid":"116/3470","text":"Ariel Tarasiuk"},{"@pid":"49/7824","text":"Yaniv Zigel"}]},"title":"Detection of Obstructive sleep apnea in awake subjects by exploiting body posture effects on the speech signal.","venue":"EMBC","pages":"4224-4227","year":"2014","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/KriboyTZ14","doi":"10.1109/EMBC.2014.6944556","ee":"https://doi.org/10.1109/EMBC.2014.6944556","url":"https://dblp.org/rec/conf/embc/KriboyTZ14"},
+"url":"URL#5394486"
+},
+{
+"@score":"2",
+"@id":"5417377",
+"info":{"authors":{"author":[{"@pid":"149/0117","text":"Maya Kriboy"},{"@pid":"116/3470","text":"Ariel Tarasiuk"},{"@pid":"49/7824","text":"Yaniv Zigel"}]},"title":"A novel method for obstructive sleep apnea severity estimation using speech signals.","venue":"ICASSP","pages":"3606-3610","year":"2014","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/KriboyTZ14","doi":"10.1109/ICASSP.2014.6854273","ee":"https://doi.org/10.1109/ICASSP.2014.6854273","url":"https://dblp.org/rec/conf/icassp/KriboyTZ14"},
+"url":"URL#5417377"
+},
+{
+"@score":"2",
+"@id":"5555713",
+"info":{"authors":{"author":[{"@pid":"16/9238","text":"José Luis Blanco Murillo"},{"@pid":"83/3907","text":"Luis A. Hernández Gómez"},{"@pid":"71/1449","text":"Rubén Fernández Pozo"},{"@pid":"15/1367-1","text":"Daniel Ramos 0001"}]},"title":"Improving Automatic Detection of Obstructive Sleep Apnea Through Nonlinear Analysis of Sustained Speech.","venue":"Cogn. Comput.","volume":"5","number":"4","pages":"458-472","year":"2013","type":"Journal Articles","access":"closed","key":"journals/cogcom/MurilloGPR13","doi":"10.1007/S12559-012-9168-X","ee":"https://doi.org/10.1007/s12559-012-9168-x","url":"https://dblp.org/rec/journals/cogcom/MurilloGPR13"},
+"url":"URL#5555713"
+},
+{
+"@score":"2",
+"@id":"5958315",
+"info":{"authors":{"author":[{"@pid":"01/9133","text":"Azadeh Yadollahi"},{"@pid":"13/9879","text":"Ali Azarbarzin"},{"@pid":"208/5028","text":"Aman Montazeri"},{"@pid":"11/7522","text":"Zahra Moussavi"}]},"title":"Acoustical flow estimation in patients with obstructive sleep apnea during Sleep.","venue":"EMBC","pages":"3640-3643","year":"2012","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/YadollahiAMM12","doi":"10.1109/EMBC.2012.6346755","ee":"https://doi.org/10.1109/EMBC.2012.6346755","url":"https://dblp.org/rec/conf/embc/YadollahiAMM12"},
+"url":"URL#5958315"
+},
+{
+"@score":"2",
+"@id":"6164016",
+"info":{"authors":{"author":[{"@pid":"116/3142","text":"Evgenia Goldshtein"},{"@pid":"116/3470","text":"Ariel Tarasiuk"},{"@pid":"49/7824","text":"Yaniv Zigel"}]},"title":"Automatic Detection of Obstructive Sleep Apnea Using Speech Signals.","venue":"IEEE Trans. Biomed. Eng.","volume":"58","number":"5","pages":"1373-1382","year":"2011","type":"Journal Articles","access":"closed","key":"journals/tbe/GoldshteinTZ11","doi":"10.1109/TBME.2010.2100096","ee":"https://doi.org/10.1109/TBME.2010.2100096","url":"https://dblp.org/rec/journals/tbe/GoldshteinTZ11"},
+"url":"URL#6164016"
+},
+{
+"@score":"2",
+"@id":"6190463",
+"info":{"authors":{"author":[{"@pid":"52/5239-1","text":"Paulo Carvalho 0001"},{"@pid":"50/3339","text":"Rui Pedro Paiva"},{"@pid":"43/3644","text":"Dinesh Kumar"},{"@pid":"254/7092","text":"João Pedro Ramos"},{"@pid":"85/9782","text":"Sérgio Santos"},{"@pid":"29/7009","text":"Jorge Henriques"}]},"title":"A Framework for Acoustic Cardiac Signal Analysis.","venue":"BIOSIGNALS","pages":"151-160","year":"2011","type":"Conference and Workshop Papers","access":"unavailable","key":"conf/biostec/CarvalhoPKRSH11","url":"https://dblp.org/rec/conf/biostec/CarvalhoPKRSH11"},
+"url":"URL#6190463"
+},
+{
+"@score":"2",
+"@id":"6194197",
+"info":{"authors":{"author":[{"@pid":"23/7041","text":"M. H. Radfar"},{"@pid":"77/5806","text":"M. Hamilton"},{"@pid":"22/10455","text":"A. Ming"}]},"title":"A voice activated device for insulin dosage calculations for visually impaired diabetes.","venue":"CCECE","pages":"904-907","year":"2011","type":"Conference and Workshop Papers","access":"closed","key":"conf/ccece/RadfarHM11","doi":"10.1109/CCECE.2011.6030589","ee":"https://doi.org/10.1109/CCECE.2011.6030589","url":"https://dblp.org/rec/conf/ccece/RadfarHM11"},
+"url":"URL#6194197"
+},
+{
+"@score":"2",
+"@id":"6263880",
+"info":{"authors":{"author":[{"@pid":"16/9238","text":"José Luis Blanco Murillo"},{"@pid":"71/1449","text":"Rubén Fernández Pozo"},{"@pid":"03/1861","text":"Doroteo Torre Toledano"},{"@pid":"53/9348","text":"Javier Caminero"},{"@pid":"48/2505","text":"Eduardo López"}]},"title":"Analyzing Training Dependencies and Posterior Fusion in Discriminant Classification of Apnea Patients Based on Sustained and Connected Speech.","venue":"INTERSPEECH","pages":"3033-3036","year":"2011","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/MurilloPTCL11","doi":"10.21437/INTERSPEECH.2011-759","ee":"https://doi.org/10.21437/Interspeech.2011-759","url":"https://dblp.org/rec/conf/interspeech/MurilloPTCL11"},
+"url":"URL#6263880"
+},
+{
+"@score":"2",
+"@id":"6278877",
+"info":{"authors":{"author":[{"@pid":"142/8704","text":"Oren Elisha"},{"@pid":"116/3470","text":"Ariel Tarasiuk"},{"@pid":"49/7824","text":"Yaniv Zigel"}]},"title":"Detection of obstructive sleep apnea using speech signal analysis.","venue":"MAVEBA","pages":"13-16","year":"2011","type":"Conference and Workshop Papers","access":"open","key":"conf/maveba/ElishaTZ11","ee":"https://www.isca-archive.org/maveba_2011/elisha11_maveba.html","url":"https://dblp.org/rec/conf/maveba/ElishaTZ11"},
+"url":"URL#6278877"
+},
+{
+"@score":"2",
+"@id":"6286693",
+"info":{"authors":{"author":[{"@pid":"16/9238","text":"José Luis Blanco Murillo"},{"@pid":"83/3907","text":"Luis A. Hernández Gómez"},{"@pid":"71/1449","text":"Rubén Fernández Pozo"},{"@pid":"15/1367-1","text":"Daniel Ramos 0001"}]},"title":"Introducing Non-linear Analysis into Sustained Speech Characterization to Improve Sleep Apnea Detection.","venue":"NOLISP","pages":"215-223","year":"2011","type":"Conference and Workshop Papers","access":"closed","key":"conf/nolisp/MurilloGPR11","doi":"10.1007/978-3-642-25020-0_28","ee":"https://doi.org/10.1007/978-3-642-25020-0_28","url":"https://dblp.org/rec/conf/nolisp/MurilloGPR11"},
+"url":"URL#6286693"
+},
+{
+"@score":"2",
+"@id":"6570075",
+"info":{"authors":{"author":{"@pid":"67/4350","text":"Guy Amit"}},"title":"Automatic analysis of vibro-acoustic heart signals: combining signal processing and computational learning techniques for non-invasive evaluation and monitoring of cardiac function","year":"2009","type":"Books and Theses","access":"closed","key":"phd/il/Amit09","ee":"https://tau.primo.exlibrisgroup.com/permalink/972TAU_INST/bai57q/alma990021881300204146","url":"https://dblp.org/rec/phd/il/Amit09"},
+"url":"URL#6570075"
+},
+{
+"@score":"2",
+"@id":"6879740",
+"info":{"authors":{"author":[{"@pid":"67/4350","text":"Guy Amit"},{"@pid":"35/6187","text":"Jonathan Lessick"},{"@pid":"63/6280","text":"Noam Gavriely"},{"@pid":"87/4330","text":"Nathan Intrator"}]},"title":"Acoustic Indices of Cardiac Functionality.","venue":"BIOSIGNALS","pages":"77-83","year":"2008","type":"Conference and Workshop Papers","access":"unavailable","key":"conf/biostec/AmitLGI08","url":"https://dblp.org/rec/conf/biostec/AmitLGI08"},
+"url":"URL#6879740"
+},
+{
+"@score":"2",
+"@id":"7057511",
+"info":{"authors":{"author":[{"@pid":"54/4517","text":"Zeeshan Syed"},{"@pid":"31/1595","text":"Daniel Leeds"},{"@pid":"15/7894","text":"Daniel Curtis"},{"@pid":"116/5676","text":"Francesca Nesta"},{"@pid":"12/367","text":"Robert A. Levine"},{"@pid":"g/JohnVGuttag","text":"John V. Guttag"}]},"title":"A Framework for the Analysis of Acoustical Cardiac Signals.","venue":"IEEE Trans. Biomed. Eng.","volume":"54","number":"4","pages":"651-662","year":"2007","type":"Journal Articles","access":"closed","key":"journals/tbe/SyedLCNLG07","doi":"10.1109/TBME.2006.889189","ee":"https://doi.org/10.1109/TBME.2006.889189","url":"https://dblp.org/rec/journals/tbe/SyedLCNLG07"},
+"url":"URL#7057511"
+},
+{
+"@score":"2",
+"@id":"7282576",
+"info":{"authors":{"author":[{"@pid":"01/9133","text":"Azadeh Yadollahi"},{"@pid":"11/7522","text":"Zahra Moussavi"}]},"title":"Apnea Detection by Acoustical Means.","venue":"EMBC","pages":"4623-4626","year":"2006","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/YadollahiM06","doi":"10.1109/IEMBS.2006.260391","ee":"https://doi.org/10.1109/IEMBS.2006.260391","url":"https://dblp.org/rec/conf/embc/YadollahiM06"},
+"url":"URL#7282576"
+},
+{
+"@score":"2",
+"@id":"7577538",
+"info":{"authors":{"author":[{"@pid":"66/663","text":"Lesley-Ann Black"},{"@pid":"91/3737","text":"Michael F. McTear"},{"@pid":"b/NormanDBlack","text":"Norman D. Black"},{"@pid":"273/6205","text":"C. McMeel"},{"@pid":"82/6771","text":"Roy Harper"},{"@pid":"34/2246","text":"Michelle Lemon"}]},"title":"Talking Telemedicine: Is the Interactive Voice-Logbook Evolving into the Cornerstone of Diabetes Healthcare?","venue":"AAAI Technical Report","pages":"13-17","year":"2004","type":"Conference and Workshop Papers","access":"closed","key":"conf/aaaifs/BlackMBMHL04","ee":"https://www.aaai.org/Library/Symposia/Fall/2004/fs04-04-003.php","url":"https://dblp.org/rec/conf/aaaifs/BlackMBMHL04"},
+"url":"URL#7577538"
+}
+]
+}
+}
+}

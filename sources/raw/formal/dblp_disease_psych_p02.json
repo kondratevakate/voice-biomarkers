@@ -1,0 +1,655 @@
+{
+"result":{
+"query":"speech*|voice*|acoustic* depression*|schizophrenia*|psychosis*|bipolar*|suicidality*",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"10.54"
+},
+"completions":{
+"@total":"4",
+"@computed":"4",
+"@sent":"4",
+"c":[
+{
+"@sc":"348",
+"@dc":"341",
+"@oc":"348",
+"@id":"70788436",
+"text":"depression"
+},
+{
+"@sc":"29",
+"@dc":"29",
+"@oc":"29",
+"@id":"70572560",
+"text":"bipolar"
+},
+{
+"@sc":"24",
+"@dc":"24",
+"@oc":"24",
+"@id":"71944523",
+"text":"schizophrenia"
+},
+{
+"@sc":"8",
+"@dc":"8",
+"@oc":"8",
+"@id":"71792593",
+"text":"psychosis"
+}
+]
+},
+"hits":{
+"@total":"398",
+"@computed":"300",
+"@sent":"100",
+"@first":"200",
+"hit":[{
+"@score":"2",
+"@id":"1776091",
+"info":{"authors":{"author":[{"@pid":"328/1396","text":"Sidharrth Nagappan"},{"@pid":"118/0718","text":"Chern Hong Lim"},{"@pid":"78/10583","text":"Anuja Thimali Dharmaratne"}]},"title":"Towards AST-LLDs for the Analysis of Depression in Speech Signals.","venue":"APSIPA ASC","pages":"1323-1328","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/apsipa/NagappanLD23","doi":"10.1109/APSIPAASC58517.2023.10317141","ee":"https://doi.org/10.1109/APSIPAASC58517.2023.10317141","url":"https://dblp.org/rec/conf/apsipa/NagappanLD23"},
+"url":"URL#1776091"
+},
+{
+"@score":"2",
+"@id":"1777738",
+"info":{"authors":{"author":[{"@pid":"358/6925","text":"Ziyun Cui"},{"@pid":"92/382-7","text":"Wen Wu 0007"},{"@pid":"72/6674-1","text":"Wei-Qiang Zhang 0001"},{"@pid":"91/4957-2","text":"Ji Wu 0002"},{"@pid":"94/3019-31","text":"Chao Zhang 0031"}]},"title":"Transferring Speech-Generic and Depression-Specific Knowledge for Alzheimer&apos;s Disease Detection.","venue":"ASRU","pages":"1-8","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/asru/CuiWZWZ23","doi":"10.1109/ASRU57964.2023.10389785","ee":"https://doi.org/10.1109/ASRU57964.2023.10389785","url":"https://dblp.org/rec/conf/asru/CuiWZWZ23"},
+"url":"URL#1777738"
+},
+{
+"@score":"2",
+"@id":"1780763",
+"info":{"authors":{"author":[{"@pid":"334/5696","text":"Eunkyoung Jeon"},{"@pid":"318/9360","text":"Sehwan Moon"},{"@pid":"334/5534","text":"Seihyoung Lee"},{"@pid":"368/1121","text":"Aram Lee"},{"@pid":"183/1476","text":"Sanghyun Kim"},{"@pid":"22/6759","text":"Kiwon Park"},{"@pid":"75/1725","text":"Jeong Eun Kim"}]},"title":"A Comparative Study of AI Models for Depression Assessment using Voice Features.","venue":"BIBM","pages":"4905-4906","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/bibm/JeonMLLKPK23","doi":"10.1109/BIBM58861.2023.10385900","ee":"https://doi.org/10.1109/BIBM58861.2023.10385900","url":"https://dblp.org/rec/conf/bibm/JeonMLLKPK23"},
+"url":"URL#1780763"
+},
+{
+"@score":"2",
+"@id":"1787335",
+"info":{"authors":{"author":[{"@pid":"99/7033-1","text":"Xiaojie Wang 0001"},{"@pid":"80/4026","text":"Xin Wan"},{"@pid":"09/8234","text":"Zhaolong Ning"},{"@pid":"360/3789","text":"Zihan Qie"},{"@pid":"332/6079","text":"Jiameng Li"},{"@pid":"343/0460","text":"Yulong Xiao"}]},"title":"A Multimodal Fusion Depression Recognition Assisted Decision-Making System Based on EEG and Speech Signals.","venue":"CCCI","pages":"1-8","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/ccci/WangWNQLX23","doi":"10.1109/CCCI58712.2023.10290732","ee":"https://doi.org/10.1109/CCCI58712.2023.10290732","url":"https://dblp.org/rec/conf/ccci/WangWNQLX23"},
+"url":"URL#1787335"
+},
+{
+"@score":"2",
+"@id":"1816457",
+"info":{"authors":{"author":[{"@pid":"212/6180","text":"Maurice Gerczuk"},{"@pid":"154/2865","text":"Shahin Amiriparian"},{"@pid":"315/0117","text":"Alexander Kathan"},{"@pid":"23/2452","text":"Jonathan Bauer"},{"@pid":"138/3809","text":"Matthias Berking 0002"},{"@pid":"54/4934","text":"Björn W. Schuller"}]},"title":"Noise Robust Recognition of Depression Status and Treatment Response from Speech via Unsupervised Feature Aggregation.","venue":"EMBC","pages":"1-4","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/GerczukAKB0S23","doi":"10.1109/EMBC40787.2023.10340985","ee":"https://doi.org/10.1109/EMBC40787.2023.10340985","url":"https://dblp.org/rec/conf/embc/GerczukAKB0S23"},
+"url":"URL#1816457"
+},
+{
+"@score":"2",
+"@id":"1823034",
+"info":{"authors":{"author":[{"@pid":"305/5121","text":"Mirela Gheorghe"},{"@pid":"253/8697","text":"Serban Mihalache"},{"@pid":"53/2643","text":"Dragos Burileanu"}]},"title":"Using Deep Neural Networks for Detecting Depression from Speech.","venue":"EUSIPCO","pages":"411-415","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/eusipco/GheorgheMB23","doi":"10.23919/EUSIPCO58844.2023.10289973","ee":"https://doi.org/10.23919/EUSIPCO58844.2023.10289973","url":"https://dblp.org/rec/conf/eusipco/GheorgheMB23"},
+"url":"URL#1823034"
+},
+{
+"@score":"2",
+"@id":"1837383",
+"info":{"authors":{"author":[{"@pid":"342/1627","text":"Muhammad Fahreza Alghifari"},{"@pid":"76/4601","text":"Teddy Surya Gunawan"},{"@pid":"75/1470","text":"Mira Kartiwi"}]},"title":"Development of Sorrow Analysis Dataset for Speech Depression Prediction.","venue":"I2MTC","pages":"1-6","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/i2mtc/AlghifariGK23","doi":"10.1109/I2MTC53148.2023.10176040","ee":"https://doi.org/10.1109/I2MTC53148.2023.10176040","url":"https://dblp.org/rec/conf/i2mtc/AlghifariGK23"},
+"url":"URL#1837383"
+},
+{
+"@score":"2",
+"@id":"1842548",
+"info":{"authors":{"author":[{"@pid":"249/3301","text":"Kexin Feng"},{"@pid":"59/10649","text":"Theodora Chaspari"}]},"title":"A Knowledge-Driven Vowel-Based Approach of Depression Classification from Speech Using Data Augmentation.","venue":"ICASSP","pages":"1-5","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/FengC23","doi":"10.1109/ICASSP49357.2023.10096105","ee":"https://doi.org/10.1109/ICASSP49357.2023.10096105","url":"https://dblp.org/rec/conf/icassp/FengC23"},
+"url":"URL#1842548"
+},
+{
+"@score":"2",
+"@id":"1844129",
+"info":{"authors":{"author":[{"@pid":"277/3926","text":"Fuxiang Tao"},{"@pid":"246/5735","text":"Xuri Ge"},{"@pid":"32/32","text":"Wei Ma"},{"@pid":"66/396","text":"Anna Esposito"},{"@pid":"09/6044","text":"Alessandro Vinciarelli"}]},"title":"Multi-Local Attention for Speech-Based Depression Detection.","venue":"ICASSP","pages":"1-5","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/TaoGMEV23","doi":"10.1109/ICASSP49357.2023.10095757","ee":"https://doi.org/10.1109/ICASSP49357.2023.10095757","url":"https://dblp.org/rec/conf/icassp/TaoGMEV23"},
+"url":"URL#1844129"
+},
+{
+"@score":"2",
+"@id":"1844437",
+"info":{"authors":{"author":[{"@pid":"92/382-7","text":"Wen Wu 0007"},{"@pid":"94/3019-31","text":"Chao Zhang 0031"},{"@pid":"42/153","text":"Philip C. Woodland"}]},"title":"Self-Supervised Representations in Speech-Based Depression Detection.","venue":"ICASSP","pages":"1-5","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/WuZW23","doi":"10.1109/ICASSP49357.2023.10094910","ee":"https://doi.org/10.1109/ICASSP49357.2023.10094910","url":"https://dblp.org/rec/conf/icassp/WuZW23"},
+"url":"URL#1844437"
+},
+{
+"@score":"2",
+"@id":"1850309",
+"info":{"authors":{"author":[{"@pid":"224/6916","text":"Surekha Reddy Bandela"},{"@pid":"361/9173","text":"Kondaveti Jishitha"},{"@pid":"361/7759","text":"V. Akshaya Bhavani"},{"@pid":"361/8466","text":"P. Aishwarya"}]},"title":"Development of a Depression Detection System using Speech and Text Data.","venue":"ICCCNT","pages":"1-7","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/icccnt/ReddyJBA23","doi":"10.1109/ICCCNT56998.2023.10306928","ee":"https://doi.org/10.1109/ICCCNT56998.2023.10306928","url":"https://dblp.org/rec/conf/icccnt/ReddyJBA23"},
+"url":"URL#1850309"
+},
+{
+"@score":"2",
+"@id":"1852200",
+"info":{"authors":{"author":[{"@pid":"40/3934","text":"Dong Wang"},{"@pid":"266/6211","text":"Qifei Li"},{"@pid":"173/6544","text":"Yingming Gao"},{"@pid":"29/4867-2","text":"Yong Liu 0002"},{"@pid":"51/4056-1","text":"Ya Li 0001"}]},"title":"Exploring the interpretability in speech-based adolescent depression detection by SHAP.","venue":"ICCIP","pages":"562-567","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/iccip/WangLGLL23","doi":"10.1145/3638884.3638972","ee":"https://doi.org/10.1145/3638884.3638972","url":"https://dblp.org/rec/conf/iccip/WangLGLL23"},
+"url":"URL#1852200"
+},
+{
+"@score":"2",
+"@id":"1891877",
+"info":{"authors":{"author":[{"@pid":"227/6271","text":"Edward L. Campbell"},{"@pid":"238/0542","text":"Judith Dineley"},{"@pid":"248/9798","text":"Pauline Conde"},{"@pid":"263/9944","text":"Faith Matcham"},{"@pid":"290/7694","text":"Katie M. White"},{"@pid":"290/7910","text":"Carolin Oetzmann"},{"@pid":"290/7259","text":"Sara Simblett"},{"@pid":"290/7126","text":"Stuart Bruce"},{"@pid":"185/5256","text":"Amos A. Folarin"},{"@pid":"166/7824","text":"Til Wykes"},{"@pid":"35/10744","text":"Srinivasan Vairavan"},{"@pid":"51/5120","text":"Richard J. B. Dobson"},{"@pid":"15/1583","text":"Laura Docío Fernández"},{"@pid":"73/930","text":"Carmen García-Mateo"},{"@pid":"40/2286","text":"Vaibhav A. Narayan"},{"@pid":"165/8919","text":"Matthew Hotopf"},{"@pid":"79/10648","text":"Nicholas Cummins"}]},"title":"Classifying depression symptom severity: Assessment of speech representations in personalized and generalized machine learning models.","venue":"INTERSPEECH","pages":"1738-1742","year":"2023","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/CampbellDCMWOSB23","doi":"10.21437/INTERSPEECH.2023-1721","ee":"https://doi.org/10.21437/Interspeech.2023-1721","url":"https://dblp.org/rec/conf/interspeech/CampbellDCMWOSB23"},
+"url":"URL#1891877"
+},
+{
+"@score":"2",
+"@id":"1892001",
+"info":{"authors":{"author":[{"@pid":"148/6940","text":"Salvatore Fara"},{"@pid":"333/0596","text":"Orlaith Hickey"},{"@pid":"304/1097","text":"Alexandra Livia Georgescu"},{"@pid":"317/7094","text":"Stefano Goria"},{"@pid":"212/5889","text":"Emilia Molimpakis"},{"@pid":"79/10648","text":"Nicholas Cummins"}]},"title":"Bayesian Networks for the robust and unbiased prediction of depression and its symptoms utilizing speech and multimodal data.","venue":"INTERSPEECH","pages":"1728-1732","year":"2023","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/FaraHGGMC23","doi":"10.21437/INTERSPEECH.2023-1709","ee":"https://doi.org/10.21437/Interspeech.2023-1709","url":"https://dblp.org/rec/conf/interspeech/FaraHGGMC23"},
+"url":"URL#1892001"
+},
+{
+"@score":"2",
+"@id":"1892280",
+"info":{"authors":{"author":[{"@pid":"266/6211","text":"Qifei Li"},{"@pid":"40/3934","text":"Dong Wang"},{"@pid":"249/4315-1","text":"Yiming Ren 0001"},{"@pid":"173/6544","text":"Yingming Gao"},{"@pid":"51/4056-1","text":"Ya Li 0001"}]},"title":"FTA-net: A Frequency and Time Attention Network for Speech Depression Detection.","venue":"INTERSPEECH","pages":"1723-1727","year":"2023","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/LiWRGL23","doi":"10.21437/INTERSPEECH.2023-296","ee":"https://doi.org/10.21437/Interspeech.2023-296","url":"https://dblp.org/rec/conf/interspeech/LiWRGL23"},
+"url":"URL#1892280"
+},
+{
+"@score":"2",
+"@id":"1892412",
+"info":{"authors":{"author":[{"@pid":"82/7836-1","text":"Michael Neumann 0001"},{"@pid":"277/3483","text":"Hardik Kothare"},{"@pid":"244/0281","text":"Doug Habberstad"},{"@pid":"33/9231","text":"Vikram Ramanarayanan"}]},"title":"A Multimodal Investigation of Speech, Text, Cognitive and Facial Video Features for Characterizing Depression With and Without Medication.","venue":"INTERSPEECH","pages":"1219-1223","year":"2023","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/NeumannKHR23","doi":"10.21437/INTERSPEECH.2023-2194","ee":"https://doi.org/10.21437/Interspeech.2023-2194","url":"https://dblp.org/rec/conf/interspeech/NeumannKHR23"},
+"url":"URL#1892412"
+},
+{
+"@score":"2",
+"@id":"1892432",
+"info":{"authors":{"author":[{"@pid":"330/8989","text":"Minxue Niu"},{"@pid":"276/7555","text":"Amrit Romana"},{"@pid":"194/4887","text":"Mimansa Jaiswal"},{"@pid":"62/7508","text":"Melvin G. McInnis"},{"@pid":"58/4610","text":"Emily Mower Provost"}]},"title":"Capturing Mismatch between Textual and Acoustic Emotion Expressions for Mood Identification in Bipolar Disorder.","venue":"INTERSPEECH","pages":"1718-1722","year":"2023","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/NiuRJMP23","doi":"10.21437/INTERSPEECH.2023-1990","ee":"https://doi.org/10.21437/Interspeech.2023-1990","url":"https://dblp.org/rec/conf/interspeech/NiuRJMP23"},
+"url":"URL#1892432"
+},
+{
+"@score":"2",
+"@id":"1892647",
+"info":{"authors":{"author":[{"@pid":"277/3926","text":"Fuxiang Tao"},{"@pid":"66/396","text":"Anna Esposito"},{"@pid":"09/6044","text":"Alessandro Vinciarelli"}]},"title":"The Androids Corpus: A New Publicly Available Benchmark for Speech Based Depression Detection.","venue":"INTERSPEECH","pages":"4149-4153","year":"2023","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/TaoEV23","doi":"10.21437/INTERSPEECH.2023-894","ee":"https://doi.org/10.21437/Interspeech.2023-894","url":"https://dblp.org/rec/conf/interspeech/TaoEV23"},
+"url":"URL#1892647"
+},
+{
+"@score":"2",
+"@id":"1892701",
+"info":{"authors":{"author":[{"@pid":"296/0569","text":"Jinhan Wang"},{"@pid":"226/1922","text":"Vijay Ravi"},{"@pid":"40/6586","text":"Abeer Alwan"}]},"title":"Non-uniform Speaker Disentanglement For Depression Detection From Raw Speech Signals.","venue":"INTERSPEECH","pages":"2343-2347","year":"2023","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/WangRA23","doi":"10.21437/INTERSPEECH.2023-2101","ee":"https://doi.org/10.21437/Interspeech.2023-2101","url":"https://dblp.org/rec/conf/interspeech/WangRA23"},
+"url":"URL#1892701"
+},
+{
+"@score":"2",
+"@id":"1980535",
+"info":{"authors":{"author":[{"@pid":"133/4903","text":"Mashrura Tasnim"},{"@pid":"142/3126","text":"Jekaterina Novikova"}]},"title":"Cost-effective Models for Detecting Depression from Speech.","venue":"CoRR","volume":"abs/2302.09214","year":"2023","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2302-09214","doi":"10.48550/ARXIV.2302.09214","ee":"https://doi.org/10.48550/arXiv.2302.09214","url":"https://dblp.org/rec/journals/corr/abs-2302-09214"},
+"url":"URL#1980535"
+},
+{
+"@score":"2",
+"@id":"2004798",
+"info":{"authors":{"author":[{"@pid":"92/382-7","text":"Wen Wu 0007"},{"@pid":"94/3019-31","text":"Chao Zhang 0031"},{"@pid":"42/153","text":"Philip C. Woodland"}]},"title":"Self-supervised representations in speech-based depression detection.","venue":"CoRR","volume":"abs/2305.12263","year":"2023","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2305-12263","doi":"10.48550/ARXIV.2305.12263","ee":"https://doi.org/10.48550/arXiv.2305.12263","url":"https://dblp.org/rec/journals/corr/abs-2305-12263"},
+"url":"URL#2004798"
+},
+{
+"@score":"2",
+"@id":"2015527",
+"info":{"authors":{"author":[{"@pid":"133/4903","text":"Mashrura Tasnim"},{"@pid":"330/9225","text":"Malikeh Ehghaghi"},{"@pid":"337/0437","text":"Brian Diep"},{"@pid":"142/3126","text":"Jekaterina Novikova"}]},"title":"DEPAC: a Corpus for Depression and Anxiety Detection from Speech.","venue":"CoRR","volume":"abs/2306.12443","year":"2023","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2306-12443","doi":"10.48550/ARXIV.2306.12443","ee":"https://doi.org/10.48550/arXiv.2306.12443","url":"https://dblp.org/rec/journals/corr/abs-2306-12443"},
+"url":"URL#2015527"
+},
+{
+"@score":"2",
+"@id":"2019173",
+"info":{"authors":{"author":[{"@pid":"277/3926","text":"Fuxiang Tao"},{"@pid":"32/32","text":"Wei Ma"},{"@pid":"246/5735","text":"Xuri Ge"},{"@pid":"66/396","text":"Anna Esposito"},{"@pid":"09/6044","text":"Alessandro Vinciarelli"}]},"title":"The Relationship Between Speech Features Changes When You Get Depressed: Feature Correlations for Improving Speed and Performance of Depression Detection.","venue":"CoRR","volume":"abs/2307.02892","year":"2023","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2307-02892","doi":"10.48550/ARXIV.2307.02892","ee":"https://doi.org/10.48550/arXiv.2307.02892","url":"https://dblp.org/rec/journals/corr/abs-2307-02892"},
+"url":"URL#2019173"
+},
+{
+"@score":"2",
+"@id":"2031385",
+"info":{"authors":{"author":[{"@pid":"64/4216-7","text":"Xiao Xu 0007"},{"@pid":"181/2842","text":"Yang Wang"},{"@pid":"215/6875","text":"Xinru Wei"},{"@pid":"52/3194-64","text":"Fei Wang 0064"},{"@pid":"79/1033","text":"Xizhe Zhang"}]},"title":"Attention-Based Acoustic Feature Fusion Network for Depression Detection.","venue":"CoRR","volume":"abs/2308.12478","year":"2023","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2308-12478","doi":"10.48550/ARXIV.2308.12478","ee":"https://doi.org/10.48550/arXiv.2308.12478","url":"https://dblp.org/rec/journals/corr/abs-2308-12478"},
+"url":"URL#2031385"
+},
+{
+"@score":"2",
+"@id":"2039766",
+"info":{"authors":{"author":[{"@pid":"357/4683","text":"Qingkun Deng"},{"@pid":"92/1880","text":"Saturnino Luz"},{"@pid":"230/8326","text":"Sofia de la Fuente Garcia"}]},"title":"Hierarchical attention interpretation: an interpretable speech-level transformer for bi-modal depression detection.","venue":"CoRR","volume":"abs/2309.13476","year":"2023","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2309-13476","doi":"10.48550/ARXIV.2309.13476","ee":"https://doi.org/10.48550/arXiv.2309.13476","url":"https://dblp.org/rec/journals/corr/abs-2309-13476"},
+"url":"URL#2039766"
+},
+{
+"@score":"2",
+"@id":"2043896",
+"info":{"authors":{"author":[{"@pid":"358/6925","text":"Ziyun Cui"},{"@pid":"92/382-7","text":"Wen Wu 0007"},{"@pid":"72/6674-1","text":"Wei-Qiang Zhang 0001"},{"@pid":"91/4957-2","text":"Ji Wu 0002"},{"@pid":"94/3019-31","text":"Chao Zhang 0031"}]},"title":"Transferring speech-generic and depression-specific knowledge for Alzheimer&apos;s disease detection.","venue":"CoRR","volume":"abs/2310.04358","year":"2023","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2310-04358","doi":"10.48550/ARXIV.2310.04358","ee":"https://doi.org/10.48550/arXiv.2310.04358","url":"https://dblp.org/rec/journals/corr/abs-2310-04358"},
+"url":"URL#2043896"
+},
+{
+"@score":"2",
+"@id":"2105928",
+"info":{"authors":{"author":[{"@pid":"249/2377","text":"Emna Rejaibi"},{"@pid":"118/5688","text":"Ali Komaty"},{"@pid":"70/6285","text":"Fabrice Mériaudeau"},{"@pid":"249/2233","text":"Said Agrebi"},{"@pid":"226/3511","text":"Alice Othmani"}]},"title":"MFCC-based Recurrent Neural Network for automatic clinical depression recognition and assessment from speech.","venue":"Biomed. Signal Process. Control.","volume":"71","number":"Part","pages":"103107","year":"2022","type":"Journal Articles","access":"closed","key":"journals/bspc/RejaibiKMAO22","doi":"10.1016/J.BSPC.2021.103107","ee":"https://doi.org/10.1016/j.bspc.2021.103107","url":"https://dblp.org/rec/journals/bspc/RejaibiKMAO22"},
+"url":"URL#2105928"
+},
+{
+"@score":"2",
+"@id":"2106105",
+"info":{"authors":{"author":[{"@pid":"19/2521","text":"Yujuan Xing"},{"@pid":"74/4038-6","text":"Zhenyu Liu 0006"},{"@pid":"62/2655","text":"Gang Li"},{"@pid":"211/1644","text":"ZhiJie Ding"},{"@pid":"00/6381-1","text":"Bin Hu 0001"}]},"title":"2-level hierarchical depression recognition method based on task-stimulated and integrated speech features.","venue":"Biomed. Signal Process. Control.","volume":"72","number":"Part","pages":"103287","year":"2022","type":"Journal Articles","access":"closed","key":"journals/bspc/XingLLDH22","doi":"10.1016/J.BSPC.2021.103287","ee":"https://doi.org/10.1016/j.bspc.2021.103287","url":"https://dblp.org/rec/journals/bspc/XingLLDH22"},
+"url":"URL#2106105"
+},
+{
+"@score":"2",
+"@id":"2109410",
+"info":{"authors":{"author":[{"@pid":"121/3444","text":"Baljeet Kaur"},{"@pid":"253/9952","text":"Swati Rathi"},{"@pid":"30/6573","text":"R. K. Agrawal 0001"}]},"title":"Enhanced depression detection from speech using Quantum Whale Optimization Algorithm for feature selection.","venue":"Comput. Biol. Medicine","volume":"150","pages":"106122","year":"2022","type":"Journal Articles","access":"closed","key":"journals/cbm/KaurRA22","doi":"10.1016/J.COMPBIOMED.2022.106122","ee":"https://doi.org/10.1016/j.compbiomed.2022.106122","url":"https://dblp.org/rec/journals/cbm/KaurRA22"},
+"url":"URL#2109410"
+},
+{
+"@score":"2",
+"@id":"2109599",
+"info":{"authors":{"author":[{"@pid":"330/7114","text":"Shamim Mobram"},{"@pid":"20/9261","text":"Mansour Vali"}]},"title":"Depression detection based on linear and nonlinear speech features in I-vector/SVDA framework.","venue":"Comput. Biol. Medicine","volume":"149","pages":"105926","year":"2022","type":"Journal Articles","access":"closed","key":"journals/cbm/MobramV22","doi":"10.1016/J.COMPBIOMED.2022.105926","ee":"https://doi.org/10.1016/j.compbiomed.2022.105926","url":"https://dblp.org/rec/journals/cbm/MobramV22"},
+"url":"URL#2109599"
+},
+{
+"@score":"2",
+"@id":"2171382",
+"info":{"authors":{"author":[{"@pid":"138/3661","text":"Katarzyna Kaczmarek-Majer"},{"@pid":"83/9992","text":"Gabriella Casalino"},{"@pid":"94/398","text":"Giovanna Castellano"},{"@pid":"28/1597","text":"Olgierd Hryniewicz"},{"@pid":"256/0011","text":"Monika Dominiak"}]},"title":"Explaining smartphone-based acoustic data in bipolar disorder: Semi-supervised fuzzy clustering and relative linguistic summaries.","venue":"Inf. Sci.","volume":"588","pages":"174-195","year":"2022","type":"Journal Articles","access":"open","key":"journals/isci/Kaczmarek-Majer22","doi":"10.1016/J.INS.2021.12.049","ee":"https://doi.org/10.1016/j.ins.2021.12.049","url":"https://dblp.org/rec/journals/isci/Kaczmarek-Majer22"},
+"url":"URL#2171382"
+},
+{
+"@score":"2",
+"@id":"2215093",
+"info":{"authors":{"author":[{"@pid":"170/5344","text":"Brian Stasak"},{"@pid":"17/2695","text":"Dale Joachim"},{"@pid":"92/6424","text":"Julien Epps"}]},"title":"Breaking Age Barriers With Automatic Voice-Based Depression Detection.","venue":"IEEE Pervasive Comput.","volume":"21","number":"2","pages":"10-19","year":"2022","type":"Journal Articles","access":"closed","key":"journals/pervasive/StasakJE22","doi":"10.1109/MPRV.2022.3163656","ee":"https://doi.org/10.1109/MPRV.2022.3163656","url":"https://dblp.org/rec/journals/pervasive/StasakJE22"},
+"url":"URL#2215093"
+},
+{
+"@score":"2",
+"@id":"2234541",
+"info":{"authors":{"author":[{"@pid":"43/6875","text":"Masakazu Higuchi"},{"@pid":"311/0471","text":"Noriaki Sonota"},{"@pid":"179/4192","text":"Mitsuteru Nakamura"},{"@pid":"311/0635","text":"Kenji Miyazaki"},{"@pid":"86/4354","text":"Shuji Shinohara"},{"@pid":"167/9799","text":"Yasuhiro Omiya"},{"@pid":"76/5045","text":"Takeshi Takano"},{"@pid":"04/1476","text":"Shunji Mitsuyoshi"},{"@pid":"179/4183","text":"Shinichi Tokuno"}]},"title":"Performance Evaluation of a Voice-Based Depression Assessment System Considering the Number and Type of Input Utterances.","venue":"Sensors","volume":"22","number":"1","pages":"67","year":"2022","type":"Journal Articles","access":"open","key":"journals/sensors/HiguchiSNMSOTMT22","doi":"10.3390/S22010067","ee":"https://doi.org/10.3390/s22010067","url":"https://dblp.org/rec/journals/sensors/HiguchiSNMSOTMT22"},
+"url":"URL#2234541"
+},
+{
+"@score":"2",
+"@id":"2254017",
+"info":{"authors":{"author":[{"@pid":"170/5320","text":"Zhaocheng Huang"},{"@pid":"92/6424","text":"Julien Epps"},{"@pid":"17/2695","text":"Dale Joachim"}]},"title":"Investigation of Speech Landmark Patterns for Depression Detection.","venue":"IEEE Trans. Affect. Comput.","volume":"13","number":"2","pages":"666-679","year":"2022","type":"Journal Articles","access":"closed","key":"journals/taffco/HuangEJ22","doi":"10.1109/TAFFC.2019.2944380","ee":"https://doi.org/10.1109/TAFFC.2019.2944380","url":"https://dblp.org/rec/journals/taffco/HuangEJ22"},
+"url":"URL#2254017"
+},
+{
+"@score":"2",
+"@id":"2309248",
+"info":{"authors":{"author":[{"@pid":"58/3833","text":"Qingxiang Wang"},{"@pid":"131/7811","text":"Ningyu Liu"}]},"title":"Speech Detection of Depression Based on Multi-mlp.","venue":"BIBM","pages":"3896-3898","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/bibm/WangL22","doi":"10.1109/BIBM55620.2022.9995447","ee":"https://doi.org/10.1109/BIBM55620.2022.9995447","url":"https://dblp.org/rec/conf/bibm/WangL22"},
+"url":"URL#2309248"
+},
+{
+"@score":"2",
+"@id":"2325261",
+"info":{"authors":{"author":[{"@pid":"330/9225","text":"Malikeh Ehghaghi"},{"@pid":"36/6505","text":"Frank Rudzicz"},{"@pid":"142/3126","text":"Jekaterina Novikova"}]},"title":"Data-driven Approach to Differentiating between Depression and Dementia from Noisy Speech and Language Data.","venue":"W-NUT@COLING","pages":"24-37","year":"2022","type":"Conference and Workshop Papers","access":"open","key":"conf/coling/EhghaghiRN22","ee":"https://aclanthology.org/2022.wnut-1.3","url":"https://dblp.org/rec/conf/coling/EhghaghiRN22"},
+"url":"URL#2325261"
+},
+{
+"@score":"2",
+"@id":"2333586",
+"info":{"authors":{"author":[{"@pid":"166/2761","text":"Laura Verde"},{"@pid":"236/6723","text":"Lelio Campanile"},{"@pid":"42/7563","text":"Fiammetta Marulli"},{"@pid":"08/6606-1","text":"Stefano Marrone 0001"}]},"title":"Speech-based Evaluation of Emotions-Depression Correlation.","venue":"DASC/PiCom/CBDCom/CyberSciTech","pages":"1-6","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/dasc/VerdeCMM22","doi":"10.1109/DASC/PICOM/CBDCOM/CY55231.2022.9927758","ee":"https://doi.org/10.1109/DASC/PiCom/CBDCom/Cy55231.2022.9927758","url":"https://dblp.org/rec/conf/dasc/VerdeCMM22"},
+"url":"URL#2333586"
+},
+{
+"@score":"2",
+"@id":"2342179",
+"info":{"authors":{"author":[{"@pid":"339/9451","text":"Jantima Angkapanichkit"},{"@pid":"70/1553","text":"Thatsanee Charoenporn"},{"@pid":"339/9486","text":"Suthasinee Piyapasuntra"}]},"title":"Steps to Emotion Corpus Creation in Thai: An Exploration of Thai Emotion Wordlists, Depression Corpus and Facial Expression in Speech Situation.","venue":"EJC","pages":"235-246","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/ejc/AngkapanichkitC22","doi":"10.3233/FAIA220505","ee":"https://doi.org/10.3233/FAIA220505","url":"https://dblp.org/rec/conf/ejc/AngkapanichkitC22"},
+"url":"URL#2342179"
+},
+{
+"@score":"2",
+"@id":"2342732",
+"info":{"authors":{"author":[{"@pid":"12/3412","text":"Yue Cui"},{"@pid":"253/9727","text":"Zhuohang Li"},{"@pid":"69/8167","text":"Luyang Liu"},{"@pid":"32/7698-5","text":"Jiaxin Zhang 0005"},{"@pid":"35/295-1","text":"Jian Liu 0001"}]},"title":"Privacy-preserving Speech-based Depression Diagnosis via Federated Learning.","venue":"EMBC","pages":"1371-1374","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/CuiLLZL22","doi":"10.1109/EMBC48229.2022.9871861","ee":"https://doi.org/10.1109/EMBC48229.2022.9871861","url":"https://dblp.org/rec/conf/embc/CuiLLZL22"},
+"url":"URL#2342732"
+},
+{
+"@score":"2",
+"@id":"2343618",
+"info":{"authors":{"author":[{"@pid":"13/3015-1","text":"Ziping Zhao 0001"},{"@pid":"46/6054","text":"Keru Wang"}]},"title":"Unaligned Multimodal Sequences for Depression Assessment From Speech.","venue":"EMBC","pages":"3409-3413","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/ZhaoW22","doi":"10.1109/EMBC48229.2022.9871556","ee":"https://doi.org/10.1109/EMBC48229.2022.9871556","url":"https://dblp.org/rec/conf/embc/ZhaoW22"},
+"url":"URL#2343618"
+},
+{
+"@score":"2",
+"@id":"2348162",
+"info":{"authors":{"author":[{"@pid":"233/0779","text":"Christos Garoufis"},{"@pid":"40/8056","text":"Athanasia Zlatintsi"},{"@pid":"210/1927","text":"Panayiotis Paraskevas Filntisis"},{"@pid":"164/9422","text":"Niki Efthymiou"},{"@pid":"277/9154","text":"Emmanouil Kalisperakis"},{"@pid":"277/9269","text":"Thomas Karantinos"},{"@pid":"299/6406","text":"Vasiliki Garyfalli"},{"@pid":"277/9437","text":"Marina Lazaridi"},{"@pid":"68/714","text":"Nikolaos Smyrnis"},{"@pid":"22/4003","text":"Petros Maragos"}]},"title":"Towards Unsupervised Subject-Independent Speech-Based Relapse Detection in Patients with Psychosis using Variational Autoencoders.","venue":"EUSIPCO","pages":"175-179","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/eusipco/GaroufisZFEKKGL22","ee":"https://ieeexplore.ieee.org/document/9909841","url":"https://dblp.org/rec/conf/eusipco/GaroufisZFEKKGL22"},
+"url":"URL#2348162"
+},
+{
+"@score":"2",
+"@id":"2364911",
+"info":{"authors":{"author":[{"@pid":"283/7008","text":"Suhas BN"},{"@pid":"73/10660","text":"Saeed Abdullah"}]},"title":"Privacy Sensitive Speech Analysis Using Federated Learning to Assess Depression.","venue":"ICASSP","pages":"6272-6276","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/BNA22","doi":"10.1109/ICASSP43922.2022.9746827","ee":"https://doi.org/10.1109/ICASSP43922.2022.9746827","url":"https://dblp.org/rec/conf/icassp/BNA22"},
+"url":"URL#2364911"
+},
+{
+"@score":"2",
+"@id":"2365179",
+"info":{"authors":{"author":[{"@pid":"240/7820","text":"Cunhang Fan"},{"@pid":"38/6148","text":"Zhao Lv"},{"@pid":"232/7002","text":"Shengbing Pei"},{"@pid":"231/3883","text":"Mingyue Niu"}]},"title":"Csenet: Complex Squeeze-and-Excitation Network for Speech Depression Level Prediction.","venue":"ICASSP","pages":"546-550","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/FanLPN22","doi":"10.1109/ICASSP43922.2022.9746011","ee":"https://doi.org/10.1109/ICASSP43922.2022.9746011","url":"https://dblp.org/rec/conf/icassp/FanLPN22"},
+"url":"URL#2365179"
+},
+{
+"@score":"2",
+"@id":"2365602",
+"info":{"authors":{"author":[{"@pid":"51/4056-1","text":"Ya Li 0001"},{"@pid":"231/3883","text":"Mingyue Niu"},{"@pid":"13/3015-1","text":"Ziping Zhao 0001"},{"@pid":"46/2916-1","text":"Jianhua Tao 0001"}]},"title":"Automatic Depression Level Assessment from Speech By Long-Term Global Information Embedding.","venue":"ICASSP","pages":"8507-8511","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/LiNZT22","doi":"10.1109/ICASSP43922.2022.9747292","ee":"https://doi.org/10.1109/ICASSP43922.2022.9747292","url":"https://dblp.org/rec/conf/icassp/LiNZT22"},
+"url":"URL#2365602"
+},
+{
+"@score":"2",
+"@id":"2365728",
+"info":{"authors":{"author":[{"@pid":"246/6169","text":"José Vicente Egas López"},{"@pid":"51/801","text":"Gábor Kiss"},{"@pid":"13/4231","text":"Dávid Sztahó"},{"@pid":"51/1288","text":"Gábor Gosztolya"}]},"title":"Automatic Assessment of the Degree of Clinical Depression from Speech Using X-Vectors.","venue":"ICASSP","pages":"8502-8506","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/LopezKSG22","doi":"10.1109/ICASSP43922.2022.9746068","ee":"https://doi.org/10.1109/ICASSP43922.2022.9746068","url":"https://dblp.org/rec/conf/icassp/LopezKSG22"},
+"url":"URL#2365728"
+},
+{
+"@score":"2",
+"@id":"2365969",
+"info":{"authors":{"author":[{"@pid":"226/1922","text":"Vijay Ravi"},{"@pid":"296/0569","text":"Jinhan Wang"},{"@pid":"28/6736","text":"Jonathan Flint"},{"@pid":"40/6586","text":"Abeer Alwan"}]},"title":"Fraug: A Frame Rate Based Data Augmentation Method for Depression Detection from Speech Signals.","venue":"ICASSP","pages":"6267-6271","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/RaviWFA22","doi":"10.1109/ICASSP43922.2022.9746307","ee":"https://doi.org/10.1109/ICASSP43922.2022.9746307","url":"https://dblp.org/rec/conf/icassp/RaviWFA22"},
+"url":"URL#2365969"
+},
+{
+"@score":"2",
+"@id":"2371948",
+"info":{"authors":{"author":[{"@pid":"323/5475","text":"Marie Gotthardt"},{"@pid":"273/8726","text":"Julian Striegl"},{"@pid":"116/7477","text":"Claudia Loitsch"},{"@pid":"w/GerhardWeber2","text":"Gerhard Weber 0002"}]},"title":"Voice Assistant-Based CBT for Depression in Students: Effects of Empathy-Driven Dialog Management.","venue":"ICCHP-AAATE","pages":"451-461","year":"2022","type":"Conference and Workshop Papers","access":"open","key":"conf/icchp/GotthardtSLW22","doi":"10.1007/978-3-031-08648-9_52","ee":"https://doi.org/10.1007/978-3-031-08648-9_52","url":"https://dblp.org/rec/conf/icchp/GotthardtSLW22"},
+"url":"URL#2371948"
+},
+{
+"@score":"2",
+"@id":"2372022",
+"info":{"authors":{"author":[{"@pid":"273/8726","text":"Julian Striegl"},{"@pid":"323/5475","text":"Marie Gotthardt"},{"@pid":"116/7477","text":"Claudia Loitsch"},{"@pid":"w/GerhardWeber2","text":"Gerhard Weber 0002"}]},"title":"Investigating the Usability of Voice Assistant-Based CBT for Age-Related Depression.","venue":"ICCHP-AAATE","pages":"432-441","year":"2022","type":"Conference and Workshop Papers","access":"open","key":"conf/icchp/StrieglGLW22","doi":"10.1007/978-3-031-08648-9_50","ee":"https://doi.org/10.1007/978-3-031-08648-9_50","url":"https://dblp.org/rec/conf/icchp/StrieglGLW22"},
+"url":"URL#2372022"
+},
+{
+"@score":"2",
+"@id":"2383437",
+"info":{"authors":{"author":[{"@pid":"332/2685","text":"Vanessa Richter"},{"@pid":"82/7836-1","text":"Michael Neumann 0001"},{"@pid":"277/3483","text":"Hardik Kothare"},{"@pid":"237/8423","text":"Oliver Roesler"},{"@pid":"59/3748","text":"Jackson Liscombe"},{"@pid":"92/5083","text":"David Suendermann-Oeft"},{"@pid":"332/2656","text":"Sebastian Prokop"},{"@pid":"332/2645","text":"Anzalee Khan"},{"@pid":"332/2676","text":"Christian Yavorsky"},{"@pid":"332/2619","text":"Jean-Pierre Lindenmayer"},{"@pid":"33/9231","text":"Vikram Ramanarayanan"}]},"title":"Towards Multimodal Dialog-Based Speech &amp; Facial Biomarkers of Schizophrenia.","venue":"ICMI Companion","pages":"171-176","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/icmi/RichterNKRLSPKY22","doi":"10.1145/3536220.3558075","ee":"https://doi.org/10.1145/3536220.3558075","url":"https://dblp.org/rec/conf/icmi/RichterNKRLSPKY22"},
+"url":"URL#2383437"
+},
+{
+"@score":"2",
+"@id":"2385012",
+"info":{"authors":{"author":[{"@pid":"133/4903","text":"Mashrura Tasnim"},{"@pid":"142/3126","text":"Jekaterina Novikova"}]},"title":"Cost-effective Models for Detecting Depression from Speech.","venue":"ICMLA","pages":"1687-1694","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/icmla/TasnimN22","doi":"10.1109/ICMLA55696.2022.00259","ee":"https://doi.org/10.1109/ICMLA55696.2022.00259","url":"https://dblp.org/rec/conf/icmla/TasnimN22"},
+"url":"URL#2385012"
+},
+{
+"@score":"2",
+"@id":"2391242",
+"info":{"authors":{"author":[{"@pid":"320/5123","text":"Alexander Ramos-Cuadros"},{"@pid":"320/5520","text":"Luis Palomino-Santillan"},{"@pid":"120/2429","text":"Willy Ugarte"}]},"title":"Model to Assess the Level of Depression by Analyzing Facial Images and Voice of Patients.","venue":"ICT4AWE","pages":"26-36","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/ict4ageingwell/Ramos-CuadrosPU22","doi":"10.5220/0011034500003188","ee":"https://doi.org/10.5220/0011034500003188","url":"https://dblp.org/rec/conf/ict4ageingwell/Ramos-CuadrosPU22"},
+"url":"URL#2391242"
+},
+{
+"@score":"2",
+"@id":"2391243",
+"info":{"authors":{"author":[{"@pid":"320/5123","text":"Alexander Ramos-Cuadros"},{"@pid":"320/5520","text":"Luis Palomino-Santillan"},{"@pid":"120/2429","text":"Willy Ugarte"}]},"title":"Evaluating the Depression Level Based on Facial Image Analyzing and Patient Voice.","venue":"ICT4AWE","pages":"35-55","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/ict4ageingwell/Ramos-CuadrosPU22a","doi":"10.1007/978-3-031-37496-8_3","ee":"https://doi.org/10.1007/978-3-031-37496-8_3","url":"https://dblp.org/rec/conf/ict4ageingwell/Ramos-CuadrosPU22a"},
+"url":"URL#2391243"
+},
+{
+"@score":"2",
+"@id":"2403640",
+"info":{"authors":{"author":[{"@pid":"40/3934","text":"Dong Wang"},{"@pid":"42/1366","text":"Yanhui Ding"},{"@pid":"78/6217","text":"Qing Zhao"},{"@pid":"71/9062","text":"Peilin Yang"},{"@pid":"121/5621","text":"Shuping Tan"},{"@pid":"51/4056","text":"Ya Li"}]},"title":"ECAPA-TDNN Based Depression Detection from Clinical Speech.","venue":"INTERSPEECH","pages":"3333-3337","year":"2022","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/WangDZYTL22","doi":"10.21437/INTERSPEECH.2022-10051","ee":"https://doi.org/10.21437/Interspeech.2022-10051","url":"https://dblp.org/rec/conf/interspeech/WangDZYTL22"},
+"url":"URL#2403640"
+},
+{
+"@score":"2",
+"@id":"2403655",
+"info":{"authors":{"author":[{"@pid":"296/0569","text":"Jinhan Wang"},{"@pid":"226/1922","text":"Vijay Ravi"},{"@pid":"28/6736","text":"Jonathan Flint"},{"@pid":"40/6586","text":"Abeer Alwan"}]},"title":"Unsupervised Instance Discriminative Learning for Depression Detection from Speech Signals.","venue":"INTERSPEECH","pages":"2018-2022","year":"2022","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/WangRFA22","doi":"10.21437/INTERSPEECH.2022-10814","ee":"https://doi.org/10.21437/Interspeech.2022-10814","url":"https://dblp.org/rec/conf/interspeech/WangRFA22"},
+"url":"URL#2403655"
+},
+{
+"@score":"2",
+"@id":"2421556",
+"info":{"authors":{"author":[{"@pid":"330/6682","text":"Maria Forjó"},{"@pid":"330/6753","text":"Daniel Neto"},{"@pid":"71/1198","text":"Alberto Abad"},{"@pid":"p/HelenaSofiaPinto","text":"H. Sofia Pinto"},{"@pid":"330/6487","text":"Joaquim Gago"}]},"title":"A new European Portuguese corpus for the study of Psychosis through speech analysis.","venue":"LREC","pages":"7298-7304","year":"2022","type":"Conference and Workshop Papers","access":"open","key":"conf/lrec/ForjoNAPG22","ee":"https://aclanthology.org/2022.lrec-1.793","url":"https://dblp.org/rec/conf/lrec/ForjoNAPG22"},
+"url":"URL#2421556"
+},
+{
+"@score":"2",
+"@id":"2443896",
+"info":{"authors":{"author":[{"@pid":"345/2298","text":"Huanan Wu"},{"@pid":"68/5196","text":"Weiping Hu"},{"@pid":"345/2301","text":"Deli Fu"}]},"title":"Autoencoder Based on Vmd and Mutual Information to Detect Depression from speech.","venue":"RICAI","pages":"424-428","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/ricai/WuHF22","doi":"10.1145/3584376.3584453","ee":"https://doi.org/10.1145/3584376.3584453","url":"https://dblp.org/rec/conf/ricai/WuHF22"},
+"url":"URL#2443896"
+},
+{
+"@score":"2",
+"@id":"2454606",
+"info":{"authors":{"author":{"@pid":"79/10648","text":"Nicholas Cummins"}},"title":"The Potential of smartphones voice recordings to monitor depression severity.","venue":"SMM","year":"2022","type":"Conference and Workshop Papers","access":"open","key":"conf/smm/Cummins22","ee":"https://www.isca-archive.org/smm_2022/cummins22_smm.html","url":"https://dblp.org/rec/conf/smm/Cummins22"},
+"url":"URL#2454606"
+},
+{
+"@score":"2",
+"@id":"2459073",
+"info":{"authors":{"author":{"@pid":"51/801","text":"Gábor Kiss"}},"title":"Investigation of speech-based language-independent possibilities of depression recognition.","venue":"TSP","pages":"226-229","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/tsp/Kiss22","doi":"10.1109/TSP55681.2022.9851347","ee":"https://doi.org/10.1109/TSP55681.2022.9851347","url":"https://dblp.org/rec/conf/tsp/Kiss22"},
+"url":"URL#2459073"
+},
+{
+"@score":"2",
+"@id":"2486312",
+"info":{"authors":{"author":[{"@pid":"297/6762","text":"Pinar Baki"},{"@pid":"77/8212","text":"Heysem Kaya"},{"@pid":"314/6154","text":"Elvan Çiftçi"},{"@pid":"231/3889","text":"Hüseyin Güleç"},{"@pid":"75/4848","text":"Albert Ali Salah"}]},"title":"Speech Analysis for Automatic Mania Assessment in Bipolar Disorder.","venue":"CoRR","volume":"abs/2202.06766","year":"2022","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2202-06766","ee":"https://arxiv.org/abs/2202.06766","url":"https://dblp.org/rec/journals/corr/abs-2202-06766"},
+"url":"URL#2486312"
+},
+{
+"@score":"2",
+"@id":"2503632",
+"info":{"authors":{"author":[{"@pid":"283/7008","text":"Suhas BN"},{"@pid":"73/10660","text":"Saeed Abdullah"}]},"title":"Privacy Sensitive Speech Analysis Using Federated Learning to Assess Depression.","venue":"CoRR","volume":"abs/2205.00111","year":"2022","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2205-00111","doi":"10.48550/ARXIV.2205.00111","ee":"https://doi.org/10.48550/arXiv.2205.00111","url":"https://dblp.org/rec/journals/corr/abs-2205-00111"},
+"url":"URL#2503632"
+},
+{
+"@score":"2",
+"@id":"2538539",
+"info":{"authors":{"author":[{"@pid":"330/9225","text":"Malikeh Ehghaghi"},{"@pid":"36/6505","text":"Frank Rudzicz"},{"@pid":"142/3126","text":"Jekaterina Novikova"}]},"title":"Data-driven Approach to Differentiating between Depression and Dementia from Noisy Speech and Language Data.","venue":"CoRR","volume":"abs/2210.03303","year":"2022","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2210-03303","doi":"10.48550/ARXIV.2210.03303","ee":"https://doi.org/10.48550/arXiv.2210.03303","url":"https://dblp.org/rec/journals/corr/abs-2210-03303"},
+"url":"URL#2538539"
+},
+{
+"@score":"2",
+"@id":"2544370",
+"info":{"authors":{"author":[{"@pid":"249/3301","text":"Kexin Feng"},{"@pid":"59/10649","text":"Theodora Chaspari"}]},"title":"A knowledge-driven vowel-based approach of depression classification from speech using data augmentation.","venue":"CoRR","volume":"abs/2210.15261","year":"2022","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2210-15261","doi":"10.48550/ARXIV.2210.15261","ee":"https://doi.org/10.48550/arXiv.2210.15261","url":"https://dblp.org/rec/journals/corr/abs-2210-15261"},
+"url":"URL#2544370"
+},
+{
+"@score":"2",
+"@id":"2629795",
+"info":{"authors":{"author":[{"@pid":"88/5320-37","text":"Yan Zhao 0037"},{"@pid":"245/5547","text":"Zhenlin Liang"},{"@pid":"97/4461","text":"Jing Du"},{"@pid":"89/5992-13","text":"Li Zhang 0013"},{"@pid":"36/7955-1","text":"Chengyu Liu 0001"},{"@pid":"97/4708-3","text":"Li Zhao 0003"}]},"title":"Multi-Head Attention-Based Long Short-Term Memory for Depression Detection From Speech.","venue":"Frontiers Neurorobotics","volume":"15","pages":"684037","year":"2021","type":"Journal Articles","access":"open","key":"journals/finr/ZhaoLD0L021","doi":"10.3389/FNBOT.2021.684037","ee":"https://doi.org/10.3389/fnbot.2021.684037","url":"https://dblp.org/rec/journals/finr/ZhaoLD0L021"},
+"url":"URL#2629795"
+},
+{
+"@score":"2",
+"@id":"2632867",
+"info":{"authors":{"author":[{"@pid":"70/1200","text":"Mireia Farrús"},{"@pid":"55/1951","text":"Joan Codina-Filbà"},{"@pid":"283/7055","text":"Joan Escudero"}]},"title":"Acoustic and prosodic information for home monitoring of bipolar disorder.","venue":"Health Informatics J.","volume":"27","number":"1","pages":"146045822097275","year":"2021","type":"Journal Articles","access":"open","key":"journals/hij/FarrusCE21","doi":"10.1177/1460458220972755","ee":"https://doi.org/10.1177/1460458220972755","url":"https://dblp.org/rec/journals/hij/FarrusCE21"},
+"url":"URL#2632867"
+},
+{
+"@score":"2",
+"@id":"2636267",
+"info":{"authors":{"author":[{"@pid":"88/5320-37","text":"Yan Zhao 0037"},{"@pid":"22/3309","text":"Yue Xie"},{"@pid":"42/6262","text":"Ruiyu Liang"},{"@pid":"89/5992-13","text":"Li Zhang 0013"},{"@pid":"97/4708-3","text":"Li Zhao 0003"},{"@pid":"36/7955-1","text":"Chengyu Liu 0001"}]},"title":"Detecting Depression from Speech through an Attentive LSTM Network.","venue":"IEICE Trans. Inf. Syst.","volume":"104-D","number":"11","pages":"2019-2023","year":"2021","type":"Journal Articles","access":"closed","key":"journals/ieicetd/ZhaoXLZZL21","doi":"10.1587/TRANSINF.2020EDL8132","ee":"https://doi.org/10.1587/transinf.2020edl8132","url":"https://dblp.org/rec/journals/ieicetd/ZhaoXLZZL21"},
+"url":"URL#2636267"
+},
+{
+"@score":"2",
+"@id":"2735855",
+"info":{"authors":{"author":[{"@pid":"13/6794","text":"Fei He"},{"@pid":"33/4686","text":"Jia Fu"},{"@pid":"50/4559-3","text":"Ling He 0003"},{"@pid":"41/5232","text":"Yuanyuan Li"},{"@pid":"88/7706","text":"Xi Xiong"}]},"title":"Automatic Detection of Negative Symptoms in Schizophrenia via Acoustically Measured Features Associated With Affective Flattening.","venue":"IEEE Trans Autom. Sci. Eng.","volume":"18","number":"2","pages":"586-602","year":"2021","type":"Journal Articles","access":"closed","key":"journals/tase/HeFHLX21","doi":"10.1109/TASE.2020.3022037","ee":"https://doi.org/10.1109/TASE.2020.3022037","url":"https://dblp.org/rec/journals/tase/HeFHLX21"},
+"url":"URL#2735855"
+},
+{
+"@score":"2",
+"@id":"2772981",
+"info":{"authors":{"author":[{"@pid":"315/2036","text":"Clinton Lau"},{"@pid":"45/4855","text":"Wai-Yip Chan"},{"@pid":"93/310","text":"Xiaodan Zhu 0001"}]},"title":"Improving Depression Assessment With Multi-Task Learning From Speech and Text Information.","venue":"ACSCC","pages":"449-453","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/acssc/LauCZ21","doi":"10.1109/IEEECONF53345.2021.9723273","ee":"https://doi.org/10.1109/IEEECONF53345.2021.9723273","url":"https://dblp.org/rec/conf/acssc/LauCZ21"},
+"url":"URL#2772981"
+},
+{
+"@score":"2",
+"@id":"2777691",
+"info":{"authors":{"author":[{"@pid":"332/1183","text":"Evgeniya Zavorina"},{"@pid":"161/1790","text":"Ilya Makarov"}]},"title":"Depression Detection by Person&apos;s Voice.","venue":"AIST","pages":"250-262","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/aist/ZavorinaM21","doi":"10.1007/978-3-031-16500-9_21","ee":"https://doi.org/10.1007/978-3-031-16500-9_21","url":"https://dblp.org/rec/conf/aist/ZavorinaM21"},
+"url":"URL#2777691"
+},
+{
+"@score":"2",
+"@id":"2785259",
+"info":{"authors":{"author":[{"@pid":"233/0779","text":"Christos Garoufis"},{"@pid":"40/8056","text":"Athanasia Zlatintsi"},{"@pid":"210/1927","text":"Panagiotis Paraskevas Filntisis"},{"@pid":"164/9422","text":"Niki Efthymiou"},{"@pid":"277/9154","text":"Emmanouil Kalisperakis"},{"@pid":"299/6406","text":"Vasiliki Garyfalli"},{"@pid":"277/9269","text":"Thomas Karantinos"},{"@pid":"299/6981","text":"L. Mantonakis"},{"@pid":"68/714","text":"Nikolaos Smyrnis"},{"@pid":"22/4003","text":"Petros Maragos"}]},"title":"An Unsupervised Learning Approach for Detecting Relapses from Spontaneous Speech in Patients with Psychosis.","venue":"BHI","pages":"1-5","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/bhi/GaroufisZFEKGKM21","doi":"10.1109/BHI50953.2021.9508515","ee":"https://doi.org/10.1109/BHI50953.2021.9508515","url":"https://dblp.org/rec/conf/bhi/GaroufisZFEKGKM21"},
+"url":"URL#2785259"
+},
+{
+"@score":"2",
+"@id":"2799801",
+"info":{"authors":{"author":[{"@pid":"231/9227","text":"Raffaele Manna"},{"@pid":"33/9656","text":"Johanna Monti"}]},"title":"UniOR NLP at eRisk 2021: Assessing the Severity of Depression with Part of Speech and Syntactic Features.","venue":"CLEF","pages":"1022-1030","year":"2021","type":"Conference and Workshop Papers","access":"open","key":"conf/clef/MannaM21","ee":"https://ceur-ws.org/Vol-2936/paper-82.pdf","url":"https://dblp.org/rec/conf/clef/MannaM21"},
+"url":"URL#2799801"
+},
+{
+"@score":"2",
+"@id":"2817893",
+"info":{"authors":{"author":[{"@pid":"173/6642","text":"Nittayapa Klangpornkun"},{"@pid":"316/8136","text":"Mathurada Ruangritchai"},{"@pid":"174/7458","text":"Adirek Munthuli"},{"@pid":"29/10650","text":"Chutamanee Onsuwan"},{"@pid":"316/7181","text":"Kankamol Jaisin"},{"@pid":"316/7510","text":"Keerati Pattanaseri"},{"@pid":"316/7539","text":"Juthawadee Lortrakul"},{"@pid":"316/7466","text":"Pattaranis Thanakulakkarachai"},{"@pid":"227/9353","text":"Thanaporn Anansiripinyo"},{"@pid":"316/7167","text":"Atita Amornlaksananon"},{"@pid":"316/7445","text":"Sirikhwan Laohawee"},{"@pid":"75/9234","text":"Charturong Tantibundhit"}]},"title":"Classification of Depression and Other Psychiatric Conditions Using Speech Features Extracted from a Thai Psychiatric and Verbal Screening Test.","venue":"EMBC","pages":"651-656","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/KlangpornkunRMO21","doi":"10.1109/EMBC46164.2021.9629571","ee":"https://doi.org/10.1109/EMBC46164.2021.9629571","url":"https://dblp.org/rec/conf/embc/KlangpornkunRMO21"},
+"url":"URL#2817893"
+},
+{
+"@score":"2",
+"@id":"2817938",
+"info":{"authors":{"author":[{"@pid":"29/4530","text":"Namhee Kwon"},{"@pid":"68/5004","text":"Samuel Kim"}]},"title":"Depression Severity Detection Using Read Speech with a Divide-and-Conquer Approach.","venue":"EMBC","pages":"633-637","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/KwonK21","doi":"10.1109/EMBC46164.2021.9629868","ee":"https://doi.org/10.1109/EMBC46164.2021.9629868","url":"https://dblp.org/rec/conf/embc/KwonK21"},
+"url":"URL#2817938"
+},
+{
+"@score":"2",
+"@id":"2818510",
+"info":{"authors":{"author":[{"@pid":"170/5344","text":"Brian Stasak"},{"@pid":"170/5320","text":"Zhaocheng Huang"},{"@pid":"92/6424","text":"Julien Epps"},{"@pid":"17/2695","text":"Dale Joachim"}]},"title":"Depression Classification Using n-Gram Speech Errors from Manual and Automatic Stroop Color Test Transcripts.","venue":"EMBC","pages":"1631-1635","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/StasakHEJ21","doi":"10.1109/EMBC46164.2021.9629881","ee":"https://doi.org/10.1109/EMBC46164.2021.9629881","url":"https://dblp.org/rec/conf/embc/StasakHEJ21"},
+"url":"URL#2818510"
+},
+{
+"@score":"2",
+"@id":"2835908",
+"info":{"authors":{"author":[{"@pid":"116/6142","text":"Daimin Shi"},{"@pid":"20/6907","text":"Xiaoyong Lu"},{"@pid":"51/3710","text":"Yang Liu"},{"@pid":"248/7785","text":"Jingyi Yuan"},{"@pid":"40/2510","text":"Tao Pan"},{"@pid":"119/3319","text":"Yanqin Li"}]},"title":"Research on Depression Recognition Using Machine Learning from Speech.","venue":"IALP","pages":"52-56","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/ialp/ShiLLYPL21","doi":"10.1109/IALP54817.2021.9675271","ee":"https://doi.org/10.1109/IALP54817.2021.9675271","url":"https://dblp.org/rec/conf/ialp/ShiLLYPL21"},
+"url":"URL#2835908"
+},
+{
+"@score":"2",
+"@id":"2839773",
+"info":{"authors":{"author":[{"@pid":"263/4830","text":"Amir Harati"},{"@pid":"53/2688","text":"Elizabeth Shriberg"},{"@pid":"263/4941","text":"Tomasz Rutowski"},{"@pid":"274/6521","text":"Piotr Chlebek"},{"@pid":"16/6317","text":"Yang Lu"},{"@pid":"87/2804","text":"Ricardo Oliveira"}]},"title":"Speech-Based Depression Prediction Using Encoder-Weight-Only Transfer Learning and a Large Corpus.","venue":"ICASSP","pages":"7273-7277","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/HaratiSRCLO21","doi":"10.1109/ICASSP39728.2021.9414208","ee":"https://doi.org/10.1109/ICASSP39728.2021.9414208","url":"https://dblp.org/rec/conf/icassp/HaratiSRCLO21"},
+"url":"URL#2839773"
+},
+{
+"@score":"2",
+"@id":"2840553",
+"info":{"authors":{"author":[{"@pid":"170/5344","text":"Brian Stasak"},{"@pid":"170/5320","text":"Zhaocheng Huang"},{"@pid":"17/2695","text":"Dale Joachim"},{"@pid":"92/6424","text":"Julien Epps"}]},"title":"Automatic Elicitation Compliance for Short-Duration Speech Based Depression Detection.","venue":"ICASSP","pages":"7283-7287","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/StasakHJE21","doi":"10.1109/ICASSP39728.2021.9414366","ee":"https://doi.org/10.1109/ICASSP39728.2021.9414366","url":"https://dblp.org/rec/conf/icassp/StasakHJE21"},
+"url":"URL#2840553"
+},
+{
+"@score":"2",
+"@id":"2840741",
+"info":{"authors":{"author":[{"@pid":"72/6811-34","text":"Bo Wang 0034"},{"@pid":"41/5979-16","text":"Yue Wu 0016"},{"@pid":"248/2298","text":"Nemanja Vaci"},{"@pid":"65/6264","text":"Maria Liakata"},{"@pid":"165/7993","text":"Terry J. Lyons"},{"@pid":"225/9388","text":"Kate E. A. Saunders"}]},"title":"Modelling Paralinguistic Properties in Conversational Speech to Detect Bipolar Disorder and Borderline Personality Disorder.","venue":"ICASSP","pages":"7243-7247","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/WangWVLLS21","doi":"10.1109/ICASSP39728.2021.9413891","ee":"https://doi.org/10.1109/ICASSP39728.2021.9413891","url":"https://dblp.org/rec/conf/icassp/WangWVLLS21"},
+"url":"URL#2840741"
+},
+{
+"@score":"2",
+"@id":"2867955",
+"info":{"authors":{"author":[{"@pid":"166/2761","text":"Laura Verde"},{"@pid":"275/6266","text":"Gennaro Raimo"},{"@pid":"76/387","text":"Federica Vitale"},{"@pid":"73/9538","text":"Bruno Carbonaro"},{"@pid":"26/4019","text":"Gennaro Cordasco"},{"@pid":"08/6606-1","text":"Stefano Marrone 0001"},{"@pid":"66/396","text":"Anna Esposito"}]},"title":"A Lightweight Machine Learning Approach to Detect Depression from Speech Analysis.","venue":"ICTAI","pages":"330-335","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/ictai/VerdeRVCC0E21","doi":"10.1109/ICTAI52525.2021.00054","ee":"https://doi.org/10.1109/ICTAI52525.2021.00054","url":"https://dblp.org/rec/conf/ictai/VerdeRVCC0E21"},
+"url":"URL#2867955"
+},
+{
+"@score":"2",
+"@id":"2880525",
+"info":{"authors":{"author":[{"@pid":"51/801","text":"Gábor Kiss"},{"@pid":"13/4231","text":"Dávid Sztahó"},{"@pid":"184/3287","text":"Miklós Gábriel Tulics"}]},"title":"Application for Detecting Depression, Parkinson&apos;s Disease and Dysphonic Speech.","venue":"Interspeech","pages":"956-957","year":"2021","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/KissST21","ee":"https://www.isca-speech.org/archive/interspeech_2021/kiss21_interspeech.html","url":"https://dblp.org/rec/conf/interspeech/KissST21"},
+"url":"URL#2880525"
+},
+{
+"@score":"2",
+"@id":"2880844",
+"info":{"authors":{"author":[{"@pid":"226/1785","text":"Nadee Seneviratne"},{"@pid":"12/1594","text":"Carol Y. Espy-Wilson"}]},"title":"Speech Based Depression Severity Level Classification Using a Multi-Stage Dilated CNN-LSTM Model.","venue":"Interspeech","pages":"2526-2530","year":"2021","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/SeneviratneE21","doi":"10.21437/INTERSPEECH.2021-1967","ee":"https://doi.org/10.21437/Interspeech.2021-1967","url":"https://dblp.org/rec/conf/interspeech/SeneviratneE21"},
+"url":"URL#2880844"
+},
+{
+"@score":"2",
+"@id":"2880950",
+"info":{"authors":{"author":[{"@pid":"21/2544","text":"Esaú Villatoro-Tello"},{"@pid":"243/6832","text":"S. Pavankumar Dubagunta"},{"@pid":"243/6646","text":"Julian Fritsch"},{"@pid":"98/7929","text":"Gabriela Ramírez-de-la-Rosa"},{"@pid":"15/3204","text":"Petr Motlícek"},{"@pid":"76/3728","text":"Mathew Magimai-Doss"}]},"title":"Late Fusion of the Available Lexicon and Raw Waveform-Based Acoustic Modeling for Depression and Dementia Recognition.","venue":"Interspeech","pages":"1927-1931","year":"2021","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/Villatoro-Tello21","doi":"10.21437/INTERSPEECH.2021-1288","ee":"https://doi.org/10.21437/Interspeech.2021-1288","url":"https://dblp.org/rec/conf/interspeech/Villatoro-Tello21"},
+"url":"URL#2880950"
+},
+{
+"@score":"2",
+"@id":"2917850",
+"info":{"authors":{"author":[{"@pid":"277/9534","text":"Ana-Maria Bucur"},{"@pid":"298/7228","text":"Ioana R. Podina"},{"@pid":"50/3644","text":"Liviu P. Dinu"}]},"title":"A Psychologically Informed Part-of-Speech Analysis of Depression in Social Media.","venue":"RANLP","pages":"199-207","year":"2021","type":"Conference and Workshop Papers","access":"open","key":"conf/ranlp/BucurPD21","ee":"https://aclanthology.org/2021.ranlp-1.24","url":"https://dblp.org/rec/conf/ranlp/BucurPD21"},
+"url":"URL#2917850"
+},
+{
+"@score":"2",
+"@id":"2929174",
+"info":{"authors":{"author":[{"@pid":"148/9851","text":"Sri Harsha Dumpala"},{"@pid":"214/4641","text":"Rudolf Uher"},{"@pid":"m/StanMatwin","text":"Stan Matwin"},{"@pid":"34/1494","text":"Michael Kiefte"},{"@pid":"67/4980","text":"Sageev Oore"}]},"title":"Sine-Wave Speech and Privacy-Preserving Depression Detection.","venue":"SMM","year":"2021","type":"Conference and Workshop Papers","access":"open","key":"conf/smm/DumpalaUMKO21","doi":"10.21437/SMM.2021-3","ee":"https://doi.org/10.21437/SMM.2021-3","url":"https://dblp.org/rec/conf/smm/DumpalaUMKO21"},
+"url":"URL#2929174"
+},
+{
+"@score":"2",
+"@id":"2930885",
+"info":{"authors":{"author":[{"@pid":"90/6497","text":"Horia-Nicolai Teodorescu"},{"@pid":"305/5080","text":"Sorin Andrian"},{"@pid":"305/5251","text":"Cristina Angela Ghiorghe"},{"@pid":"305/5399","text":"Stefan Gheltu"},{"@pid":"305/4728","text":"Ionut Taraboanta"}]},"title":"Speech under combined Schizophrenia and Salivary Flow Alterations - Preliminary Data and Results.","venue":"SpeD","pages":"25-30","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/sped/TeodorescuAGGT21","doi":"10.1109/SPED53181.2021.9587347","ee":"https://doi.org/10.1109/SpeD53181.2021.9587347","url":"https://dblp.org/rec/conf/sped/TeodorescuAGGT21"},
+"url":"URL#2930885"
+},
+{
+"@score":"2",
+"@id":"2959578",
+"info":{"authors":{"author":[{"@pid":"72/6811-34","text":"Bo Wang 0034"},{"@pid":"41/5979-16","text":"Yue Wu 0016"},{"@pid":"248/2298","text":"Nemanja Vaci"},{"@pid":"65/6264","text":"Maria Liakata"},{"@pid":"165/7993","text":"Terry J. Lyons"},{"@pid":"225/9388","text":"Kate E. A. Saunders"}]},"title":"Modelling Paralinguistic Properties in Conversational Speech to Detect Bipolar Disorder and Borderline Personality Disorder.","venue":"CoRR","volume":"abs/2102.09607","year":"2021","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2102-09607","ee":"https://arxiv.org/abs/2102.09607","url":"https://dblp.org/rec/journals/corr/abs-2102-09607"},
+"url":"URL#2959578"
+},
+{
+"@score":"2",
+"@id":"2970581",
+"info":{"authors":{"author":[{"@pid":"226/1785","text":"Nadee Seneviratne"},{"@pid":"12/1594","text":"Carol Y. Espy-Wilson"}]},"title":"Speech based Depression Severity Level Classification Using a Multi-Stage Dilated CNN-LSTM Model.","venue":"CoRR","volume":"abs/2104.04195","year":"2021","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2104-04195","ee":"https://arxiv.org/abs/2104.04195","url":"https://dblp.org/rec/journals/corr/abs-2104-04195"},
+"url":"URL#2970581"
+},
+{
+"@score":"2",
+"@id":"2995484",
+"info":{"authors":{"author":[{"@pid":"277/9534","text":"Ana-Maria Bucur"},{"@pid":"298/7228","text":"Ioana R. Podina"},{"@pid":"50/3644","text":"Liviu P. Dinu"}]},"title":"A Psychologically Informed Part-of-Speech Analysis of Depression in Social Media.","venue":"CoRR","volume":"abs/2108.00279","year":"2021","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2108-00279","ee":"https://arxiv.org/abs/2108.00279","url":"https://dblp.org/rec/journals/corr/abs-2108-00279"},
+"url":"URL#2995484"
+},
+{
+"@score":"2",
+"@id":"3055505",
+"info":{"authors":{"author":[{"@pid":"79/2888-9","text":"Le Yang 0009"},{"@pid":"47/1926","text":"Dongmei Jiang"},{"@pid":"33/4493","text":"Hichem Sahli"}]},"title":"Feature Augmenting Networks for Improving Depression Severity Estimation From Speech Signals.","venue":"IEEE Access","volume":"8","pages":"24033-24045","year":"2020","type":"Journal Articles","access":"open","key":"journals/access/YangJS20","doi":"10.1109/ACCESS.2020.2970496","ee":"https://doi.org/10.1109/ACCESS.2020.2970496","url":"https://dblp.org/rec/journals/access/YangJS20"},
+"url":"URL#3055505"
+},
+{
+"@score":"2",
+"@id":"3092778",
+"info":{"authors":{"author":[{"@pid":"272/4470","text":"Adrián Vázquez-Romero"},{"@pid":"74/6077","text":"Ascensión Gallardo-Antolín"}]},"title":"Automatic Detection of Depression in Speech Using Ensemble Convolutional Neural Networks.","venue":"Entropy","volume":"22","number":"6","pages":"688","year":"2020","type":"Journal Articles","access":"open","key":"journals/entropy/Vazquez-RomeroG20","doi":"10.3390/E22060688","ee":"https://doi.org/10.3390/e22060688","url":"https://dblp.org/rec/journals/entropy/Vazquez-RomeroG20"},
+"url":"URL#3092778"
+},
+{
+"@score":"2",
+"@id":"3144483",
+"info":{"authors":{"author":[{"@pid":"13/3015-1","text":"Ziping Zhao 0001"},{"@pid":"246/3382","text":"Zhongtian Bao"},{"@pid":"02/10648-1","text":"Zixing Zhang 0001"},{"@pid":"80/6481","text":"Jun Deng"},{"@pid":"79/10648","text":"Nicholas Cummins"},{"@pid":"163/0767","text":"Haishuai Wang"},{"@pid":"46/2916-1","text":"Jianhua Tao 0001"},{"@pid":"54/4934","text":"Björn W. Schuller"}]},"title":"Automatic Assessment of Depression From Speech via a Hierarchical Attention Transfer Network and Attention Autoencoders.","venue":"IEEE J. Sel. Top. Signal Process.","volume":"14","number":"2","pages":"423-434","year":"2020","type":"Journal Articles","access":"closed","key":"journals/jstsp/ZhaoBZDCWTS20","doi":"10.1109/JSTSP.2019.2955012","ee":"https://doi.org/10.1109/JSTSP.2019.2955012","url":"https://dblp.org/rec/journals/jstsp/ZhaoBZDCWTS20"},
+"url":"URL#3144483"
+},
+{
+"@score":"2",
+"@id":"3179136",
+"info":{"authors":{"author":[{"@pid":"86/4354","text":"Shuji Shinohara"},{"@pid":"32/4046","text":"Hiroyuki Toda"},{"@pid":"179/4192","text":"Mitsuteru Nakamura"},{"@pid":"167/9799","text":"Yasuhiro Omiya"},{"@pid":"43/6875","text":"Masakazu Higuchi"},{"@pid":"76/5045","text":"Takeshi Takano"},{"@pid":"76/2204","text":"Taku Saito"},{"@pid":"234/3409","text":"Masaaki Tanichi"},{"@pid":"275/0474","text":"Shuken Boku"},{"@pid":"04/1476","text":"Shunji Mitsuyoshi"},{"@pid":"234/3777","text":"Mirai So"},{"@pid":"234/3406","text":"Aihide Yoshino"},{"@pid":"179/4183","text":"Shinichi Tokuno"}]},"title":"Evaluation of the Severity of Major Depression Using a Voice Index for Emotional Arousal.","venue":"Sensors","volume":"20","number":"18","pages":"5041","year":"2020","type":"Journal Articles","access":"open","key":"journals/sensors/ShinoharaTNOHTS20","doi":"10.3390/S20185041","ee":"https://doi.org/10.3390/s20185041","url":"https://dblp.org/rec/journals/sensors/ShinoharaTNOHTS20"},
+"url":"URL#3179136"
+},
+{
+"@score":"2",
+"@id":"3179378",
+"info":{"authors":{"author":[{"@pid":"177/5069","text":"Brian Sumali"},{"@pid":"52/4413","text":"Yasue Mitsukura"},{"@pid":"67/1274","text":"Kuo-ching Liang"},{"@pid":"263/3997","text":"Michitaka Yoshimura"},{"@pid":"263/4127","text":"Momoko Kitazawa"},{"@pid":"270/8149","text":"Akihiro Takamiya"},{"@pid":"01/1936","text":"Takanori Fujita"},{"@pid":"157/5870","text":"Masaru Mimura"},{"@pid":"233/6602","text":"Taishiro Kishimoto"}]},"title":"Speech Quality Feature Analysis for Classification of Depression and Dementia Patients.","venue":"Sensors","volume":"20","number":"12","pages":"3599","year":"2020","type":"Journal Articles","access":"open","key":"journals/sensors/SumaliMLYKTFMK20","doi":"10.3390/S20123599","ee":"https://doi.org/10.3390/s20123599","url":"https://dblp.org/rec/journals/sensors/SumaliMLYKTFMK20"},
+"url":"URL#3179378"
+},
+{
+"@score":"2",
+"@id":"3192248",
+"info":{"authors":{"author":[{"@pid":"79/10648","text":"Nicholas Cummins"},{"@pid":"52/7823","text":"Vidhyasaharan Sethu"},{"@pid":"92/6424","text":"Julien Epps"},{"@pid":"68/1665","text":"James R. Williamson"},{"@pid":"67/4478","text":"Thomas F. Quatieri"},{"@pid":"37/119","text":"Jarek Krajewski"}]},"title":"Generalized Two-Stage Rank Regression Framework for Depression Score Prediction from Speech.","venue":"IEEE Trans. Affect. Comput.","volume":"11","number":"2","pages":"272-283","year":"2020","type":"Journal Articles","access":"closed","key":"journals/taffco/CumminsSEWQK20","doi":"10.1109/TAFFC.2017.2766145","ee":"https://doi.org/10.1109/TAFFC.2017.2766145","url":"https://dblp.org/rec/journals/taffco/CumminsSEWQK20"},
+"url":"URL#3192248"
+},
+{
+"@score":"2",
+"@id":"3192259",
+"info":{"authors":{"author":[{"@pid":"159/9931","text":"Kun-Yi Huang"},{"@pid":"20/924","text":"Chung-Hsien Wu 0001"},{"@pid":"83/6635","text":"Ming-Hsiang Su"},{"@pid":"83/3514","text":"Yu-Ting Kuo"}]},"title":"Detecting Unipolar and Bipolar Depressive Disorders from Elicited Speech Responses Using Latent Affective Structure Model.","venue":"IEEE Trans. Affect. Comput.","volume":"11","number":"3","pages":"393-404","year":"2020","type":"Journal Articles","access":"closed","key":"journals/taffco/HuangWSK20","doi":"10.1109/TAFFC.2018.2803178","ee":"https://doi.org/10.1109/TAFFC.2018.2803178","url":"https://dblp.org/rec/journals/taffco/HuangWSK20"},
+"url":"URL#3192259"
+},
+{
+"@score":"2",
+"@id":"3237223",
+"info":{"authors":{"author":[{"@pid":"74/4038-6","text":"Zhenyu Liu 0006"},{"@pid":"132/5369","text":"Yaping Xu"},{"@pid":"211/1644","text":"ZhiJie Ding"},{"@pid":"283/3991","text":"Qiongqiong Chen"}]},"title":"Time-frequency Analysis Based on Hilbert-Huang Transform for Depression Recognition in Speech.","venue":"BIBM","pages":"1072-1076","year":"2020","type":"Conference and Workshop Papers","access":"closed","key":"conf/bibm/LiuXDC20","doi":"10.1109/BIBM49941.2020.9313587","ee":"https://doi.org/10.1109/BIBM49941.2020.9313587","url":"https://dblp.org/rec/conf/bibm/LiuXDC20"},
+"url":"URL#3237223"
+},
+{
+"@score":"2",
+"@id":"3287680",
+"info":{"authors":{"author":[{"@pid":"20/6907","text":"Xiaoyong Lu"},{"@pid":"116/6142","text":"Daimin Shi"},{"@pid":"51/3710","text":"Yang Liu"},{"@pid":"248/7785","text":"Jingyi Yuan"},{"@pid":"40/2510","text":"Tao Pan"},{"@pid":"119/3319","text":"Yanqin Li"}]},"title":"Self-speech Recognition in High Depression-Inclined Individuals.","venue":"IALP","pages":"210-214","year":"2020","type":"Conference and Workshop Papers","access":"closed","key":"conf/ialp/LuSLYPL20","doi":"10.1109/IALP51396.2020.9310458","ee":"https://doi.org/10.1109/IALP51396.2020.9310458","url":"https://dblp.org/rec/conf/ialp/LuSLYPL20"},
+"url":"URL#3287680"
+},
+{
+"@score":"2",
+"@id":"3292144",
+"info":{"authors":{"author":[{"@pid":"13/3015-1","text":"Ziping Zhao 0001"},{"@pid":"246/3382","text":"Zhongtian Bao"},{"@pid":"02/10648-1","text":"Zixing Zhang 0001"},{"@pid":"79/10648","text":"Nicholas Cummins"},{"@pid":"163/0767","text":"Haishuai Wang"},{"@pid":"54/4934","text":"Björn W. Schuller"}]},"title":"Hierarchical Attention Transfer Networks for Depression Assessment from Speech.","venue":"ICASSP","pages":"7159-7163","year":"2020","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/ZhaoB0CWS20","doi":"10.1109/ICASSP40776.2020.9053207","ee":"https://doi.org/10.1109/ICASSP40776.2020.9053207","url":"https://dblp.org/rec/conf/icassp/ZhaoB0CWS20"},
+"url":"URL#3292144"
+},
+{
+"@score":"2",
+"@id":"3297387",
+"info":{"authors":{"author":[{"@pid":"20/6907","text":"Xiaoyong Lu"},{"@pid":"116/6142","text":"Daimin Shi"}]},"title":"Review of Depression Recognition Based on Speech.","venue":"ICCE","year":"2020","type":"Conference and Workshop Papers","access":"open","key":"conf/icce/LuS20","ee":"https://library.apsce.net/index.php/ICCE/article/view/4029","url":"https://dblp.org/rec/conf/icce/LuS20"},
+"url":"URL#3297387"
+},
+{
+"@score":"2",
+"@id":"3302660",
+"info":{"authors":{"author":[{"@pid":"54/3203","text":"Vered Aharonson"},{"@pid":"287/7517","text":"Alexandra de Nooy"},{"@pid":"287/7493","text":"Seth Bulkin"},{"@pid":"287/7485","text":"Gareth Sessel"}]},"title":"Automated Classification of Depression Severity Using Speech - A Comparison of Two Machine Learning Architectures.","venue":"ICHI","pages":"1-4","year":"2020","type":"Conference and Workshop Papers","access":"closed","key":"conf/ichi/AharonsonNBS20","doi":"10.1109/ICHI48887.2020.9374335","ee":"https://doi.org/10.1109/ICHI48887.2020.9374335","url":"https://dblp.org/rec/conf/ichi/AharonsonNBS20"},
+"url":"URL#3302660"
+},
+{
+"@score":"2",
+"@id":"3305714",
+"info":{"authors":{"author":[{"@pid":"291/0567","text":"Yuanhua Zhang"},{"@pid":"68/5196","text":"Weiping Hu"},{"@pid":"62/66","text":"Qing Wu"}]},"title":"Autoencoder Based on Cepstrum Separation to Detect Depression from Speech.","venue":"ICITEE","pages":"508-510","year":"2020","type":"Conference and Workshop Papers","access":"closed","key":"conf/icitee/ZhangHW20","doi":"10.1145/3452940.3453038","ee":"https://doi.org/10.1145/3452940.3453038","url":"https://dblp.org/rec/conf/icitee/ZhangHW20"},
+"url":"URL#3305714"
+}
+]
+}
+}
+}

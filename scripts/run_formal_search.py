@@ -11,6 +11,7 @@ import json
 import os
 import re
 import time
+import urllib.error
 import urllib.parse
 import urllib.request
 import xml.etree.ElementTree as ET
@@ -42,6 +43,8 @@ FETCH_RETRIES = 4
 USER_AGENT = "voice-biomarkers-review/1.0 (systematic mapping review; +https://github.com/kondratevakate/voice-biomarkers)"
 POLITE_MAILTO = os.environ.get("OPENALEX_MAILTO", "").strip()
 FETCH_BACKOFF_SECONDS = 5
+RATE_LIMIT_BACKOFF_SECONDS = 90
+DBLP_PAGE_DELAY_SECONDS = 3.0
 
 
 @dataclass(frozen=True)
@@ -230,8 +233,14 @@ def _fetch(url: str, errors: str) -> str:
                 return response.read().decode("utf-8", errors=errors)
         except Exception as exc:  # noqa: BLE001 - retried, then reported
             last = exc
-            if attempt < FETCH_RETRIES - 1:
-                time.sleep(FETCH_BACKOFF_SECONDS * (attempt + 1))
+            if attempt >= FETCH_RETRIES - 1:
+                break
+            # A rate limit needs a wait on the order of the provider's window,
+            # not the seconds that suffice for a transient DNS failure. Backing
+            # off for a few seconds against HTTP 429 just burns the retries.
+            rate_limited = isinstance(exc, urllib.error.HTTPError) and exc.code == 429
+            delay = RATE_LIMIT_BACKOFF_SECONDS if rate_limited else FETCH_BACKOFF_SECONDS
+            time.sleep(delay * (attempt + 1))
     raise last  # type: ignore[misc]
 
 
@@ -515,7 +524,9 @@ def run_dblp(family: QueryFamily, candidates: list[dict[str, Any]]) -> tuple[int
         retrieved += len(records)
         if len(records) < PAGE_SIZE or retrieved >= total:
             break
-        time.sleep(0.6)
+        # DBLP closes the connection on rapid deep paging; its usage policy asks
+        # for a slower rate than the other sources tolerate.
+        time.sleep(DBLP_PAGE_DELAY_SECONDS)
     return total, total > retrieved
 
 

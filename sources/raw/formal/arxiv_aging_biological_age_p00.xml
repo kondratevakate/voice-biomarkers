@@ -2,7 +2,7 @@
 <feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
   <id>https://arxiv.org/api/QMxfkLsQtgT6nW5rSbn/cc/EeWg</id>
   <title>arXiv Query: search_query=abs:"vocal aging" OR abs:"voice aging" OR abs:"speech aging" OR abs:"voice-based biological clock" OR abs:"speaker age estimation" OR abs:"age estimation from speech" OR abs:"age estimation from voice"&amp;id_list=&amp;start=0&amp;max_results=100</title>
-  <updated>2026-09-01T08:54:58Z</updated>
+  <updated>2026-09-01T14:32:10Z</updated>
   <link href="https://arxiv.org/api/query?search_query=abs:%22vocal+aging%22+OR+(abs:%22voice+aging%22+OR+(abs:%22speech+aging%22+OR+(abs:%22voice-based+biological+clock%22+OR+(abs:%22speaker+age+estimation%22+OR+(abs:%22age+estimation+from+speech%22+OR+abs:%22age+estimation+from+voice%22)))))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
   <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
   <opensearch:totalResults>8</opensearch:totalResults>

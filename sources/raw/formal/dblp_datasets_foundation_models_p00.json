@@ -1,0 +1,267 @@
+{
+"result":{
+"query":"speech*|voice* corpus*|dataset*|benchmark* clinical*|medical*|pathological*|health*",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"156.55"
+},
+"completions":{
+"@total":"6",
+"@computed":"6",
+"@sent":"6",
+"c":[
+{
+"@sc":"13",
+"@dc":"13",
+"@oc":"13",
+"@id":"71479788",
+"text":"medical"
+},
+{
+"@sc":"10",
+"@dc":"10",
+"@oc":"10",
+"@id":"70699596",
+"text":"clinical"
+},
+{
+"@sc":"6",
+"@dc":"6",
+"@oc":"6",
+"@id":"71104840",
+"text":"health"
+},
+{
+"@sc":"3",
+"@dc":"3",
+"@oc":"3",
+"@id":"71105047",
+"text":"healthy"
+},
+{
+"@sc":"2",
+"@dc":"2",
+"@oc":"2",
+"@id":"71703849",
+"text":"pathological"
+},
+{
+"@sc":"1",
+"@dc":"1",
+"@oc":"1",
+"@id":"70699612",
+"text":"clinically"
+}
+]
+},
+"hits":{
+"@total":"33",
+"@computed":"33",
+"@sent":"33",
+"@first":"0",
+"hit":[{
+"@score":"6",
+"@id":"714441",
+"info":{"authors":{"author":[{"@pid":"18/9219","text":"Johnny Tam"},{"@pid":"418/2930","text":"Christine Weaver"},{"@pid":"72/8808","text":"Oliver Watts"},{"@pid":"247/5056","text":"Siddharthan Chandran"},{"@pid":"280/2905","text":"Suvankar Pal"},{"@pid":"420/6137","text":"Rowling Speech Consortium"}]},"title":"Anne Rowling Neurological Speech Corpus: clinically annotated longitudinal dataset for developing speech biomarkers in neurodegenerative disorders.","venue":"INTERSPEECH","year":"2025","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/TamWWCPC25","doi":"10.21437/INTERSPEECH.2025-2000","ee":"https://doi.org/10.21437/Interspeech.2025-2000","url":"https://dblp.org/rec/conf/interspeech/TamWWCPC25"},
+"url":"URL#714441"
+},
+{
+"@score":"4",
+"@id":"213818",
+"info":{"authors":{"author":[{"@pid":"430/7253","text":"Tung X. Nguyen"},{"@pid":"372/6383","text":"Nhu Vo"},{"@pid":"52/7499","text":"Giang-Son Nguyen"},{"@pid":"430/7120","text":"Duy Mai Hoang"},{"@pid":"430/6322","text":"Chien Dinh Huynh"},{"@pid":"202/2331","text":"Inigo Jauregi Unanue"},{"@pid":"p/MassimoPiccardi","text":"Massimo Piccardi"},{"@pid":"72/3885","text":"Wray L. Buntine"},{"@pid":"186/1477","text":"Dung D. Le"}]},"title":"ViMedCSS: A Vietnamese Medical Code-Switching Speech Dataset &amp; Benchmark.","venue":"LREC","pages":"5657-5665","year":"2026","type":"Conference and Workshop Papers","access":"closed","key":"conf/lrec/NguyenVNHHUPBL26","doi":"10.63317/58UWRQUO3ZNB","ee":"https://doi.org/10.63317/58uwrquo3znb","url":"https://dblp.org/rec/conf/lrec/NguyenVNHHUPBL26"},
+"url":"URL#213818"
+},
+{
+"@score":"4",
+"@id":"256418",
+"info":{"authors":{"author":[{"@pid":"430/7253","text":"Tung X. Nguyen"},{"@pid":"372/6383","text":"Nhu Vo"},{"@pid":"52/7499","text":"Giang-Son Nguyen"},{"@pid":"430/7120","text":"Duy Mai Hoang"},{"@pid":"430/6322","text":"Chien Dinh Huynh"},{"@pid":"202/2331","text":"Inigo Jauregi Unanue"},{"@pid":"p/MassimoPiccardi","text":"Massimo Piccardi"},{"@pid":"72/3885","text":"Wray L. Buntine"},{"@pid":"186/1477","text":"Dung D. Le"}]},"title":"ViMedCSS: A Vietnamese Medical Code-Switching Speech Dataset &amp; Benchmark.","venue":"CoRR","volume":"abs/2602.12911","year":"2026","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2602-12911","doi":"10.48550/ARXIV.2602.12911","ee":"https://doi.org/10.48550/arXiv.2602.12911","url":"https://dblp.org/rec/journals/corr/abs-2602-12911"},
+"url":"URL#256418"
+},
+{
+"@score":"4",
+"@id":"267061",
+"info":{"authors":{"author":[{"@pid":"271/4266","text":"Bence Mark Halpern"},{"@pid":"317/5237","text":"Thomas Tienkamp"},{"@pid":"329/8124","text":"Defne Abur"},{"@pid":"85/741","text":"Tomoki Toda"}]},"title":"PathBench: Speech Intelligibility Benchmark for Automatic Pathological Speech Assessment.","venue":"CoRR","volume":"abs/2603.08097","year":"2026","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2603-08097","doi":"10.48550/ARXIV.2603.08097","ee":"https://doi.org/10.48550/arXiv.2603.08097","url":"https://dblp.org/rec/journals/corr/abs-2603-08097"},
+"url":"URL#267061"
+},
+{
+"@score":"4",
+"@id":"323700",
+"info":{"authors":{"author":[{"@pid":"271/8427","text":"Sejal Bhalla"},{"@pid":"437/3613","text":"Larry Kieu"},{"@pid":"440/0462","text":"Aina Merchant"},{"@pid":"59/2063","text":"Eyal de Lara"},{"@pid":"116/0750","text":"Alex Mariakakis"}]},"title":"SpeechDx: A Multi-Task Benchmark for Clinical Speech AI.","venue":"CoRR","volume":"abs/2606.17339","year":"2026","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2606-17339","doi":"10.48550/ARXIV.2606.17339","ee":"https://doi.org/10.48550/arXiv.2606.17339","url":"https://dblp.org/rec/journals/corr/abs-2606-17339"},
+"url":"URL#323700"
+},
+{
+"@score":"4",
+"@id":"1232786",
+"info":{"authors":{"author":{"@pid":"331/8306","text":"Khai Le-Duc"}},"title":"VietMed: A Dataset and Benchmark for Automatic Speech Recognition of Vietnamese in the Medical Domain.","venue":"LREC/COLING","pages":"17365-17370","year":"2024","type":"Conference and Workshop Papers","access":"open","key":"conf/coling/Le-Duc24","ee":"https://aclanthology.org/2024.lrec-main.1509","url":"https://dblp.org/rec/conf/coling/Le-Duc24"},
+"url":"URL#1232786"
+},
+{
+"@score":"4",
+"@id":"1446169",
+"info":{"authors":{"author":{"@pid":"331/8306","text":"Khai Le-Duc"}},"title":"VietMed: A Dataset and Benchmark for Automatic Speech Recognition of Vietnamese in the Medical Domain.","venue":"CoRR","volume":"abs/2404.05659","year":"2024","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2404-05659","doi":"10.48550/ARXIV.2404.05659","ee":"https://doi.org/10.48550/arXiv.2404.05659","url":"https://dblp.org/rec/journals/corr/abs-2404-05659"},
+"url":"URL#1446169"
+},
+{
+"@score":"4",
+"@id":"3582684",
+"info":{"authors":{"author":[{"@pid":"62/29","text":"Ying Xiong"},{"@pid":"22/1280","text":"Zhongmin Wang"},{"@pid":"238/7882","text":"Dehuan Jiang"},{"@pid":"91/952-1","text":"Xiaolong Wang 0001"},{"@pid":"15/1052","text":"Qingcai Chen"},{"@pid":"31/4114-1","text":"Hua Xu 0001"},{"@pid":"89/5901-10","text":"Jun Yan 0010"},{"@pid":"00/7437","text":"Buzhou Tang"}]},"title":"A fine-grained Chinese word segmentation and part-of-speech tagging corpus for clinical text.","venue":"BMC Medical Informatics Decis. Mak.","volume":"19-S","number":"2","pages":"179-184","year":"2019","type":"Journal Articles","access":"open","key":"journals/midm/XiongWJWCXYT19","doi":"10.1186/S12911-019-0770-7","ee":"https://doi.org/10.1186/s12911-019-0770-7","url":"https://dblp.org/rec/journals/midm/XiongWJWCXYT19"},
+"url":"URL#3582684"
+},
+{
+"@score":"4",
+"@id":"6514563",
+"info":{"authors":{"author":[{"@pid":"88/7413","text":"Caroline Williams"},{"@pid":"73/8158","text":"Andrew Thwaites"},{"@pid":"45/8156","text":"Paula Buttery"},{"@pid":"g/JeroenGeertzen","text":"Jeroen Geertzen"},{"@pid":"15/8155","text":"Billi Randall"},{"@pid":"84/7227","text":"Meredith A. Shafto"},{"@pid":"97/4572","text":"Barry Devereux"},{"@pid":"98/5229","text":"Lorraine K. Tyler"}]},"title":"The Cambridge Cookie-Theft Corpus: A Corpus of Directed and Spontaneous Speech of Brain-Damaged Patients and Healthy Individuals.","venue":"LREC","year":"2010","type":"Conference and Workshop Papers","access":"open","key":"conf/lrec/WilliamsTBGRSDT10","ee":"http://www.lrec-conf.org/proceedings/lrec2010/summaries/327.html","url":"https://dblp.org/rec/conf/lrec/WilliamsTBGRSDT10"},
+"url":"URL#6514563"
+},
+{
+"@score":"4",
+"@id":"7215574",
+"info":{"authors":{"author":[{"@pid":"55/1703","text":"Serguei V. S. Pakhomov"},{"@pid":"24/566","text":"Anni Coden"},{"@pid":"13/5552","text":"Christopher G. Chute"}]},"title":"Developing a corpus of clinical notes manually annotated for part-of-speech.","venue":"Int. J. Medical Informatics","volume":"75","number":"6","pages":"418-429","year":"2006","type":"Journal Articles","access":"closed","key":"journals/ijmi/PakhomovCC06","doi":"10.1016/J.IJMEDINF.2005.08.006","ee":"https://doi.org/10.1016/j.ijmedinf.2005.08.006","url":"https://dblp.org/rec/journals/ijmi/PakhomovCC06"},
+"url":"URL#7215574"
+},
+{
+"@score":"3",
+"@id":"213726",
+"info":{"authors":{"author":[{"@pid":"15/3628-2","text":"Vincent P. Martin"},{"@pid":"69/2845","text":"Jean-Luc Rouas"},{"@pid":"386/0254","text":"Colleen Beaumard"},{"@pid":"161/3441","text":"Pierre Philip"}]},"title":"SOMVOICE: A First Dataset to Study the Effects of Sleep Deprivation on Voice Characteristics of Healthy French Speakers.","venue":"LREC","pages":"5597-5606","year":"2026","type":"Conference and Workshop Papers","access":"closed","key":"conf/lrec/MartinRBP26","doi":"10.63317/5GZHBUD3VBOF","ee":"https://doi.org/10.63317/5gzhbud3vbof","url":"https://dblp.org/rec/conf/lrec/MartinRBP26"},
+"url":"URL#213726"
+},
+{
+"@score":"3",
+"@id":"468989",
+"info":{"authors":{"author":[{"@pid":"331/4588","text":"Eleonora Mancini"},{"@pid":"215/8839","text":"Ana Tanevska"},{"@pid":"208/4245","text":"Andrea Galassi"},{"@pid":"293/9395","text":"Alessio Galatolo"},{"@pid":"256/2276","text":"Federico Ruggeri"},{"@pid":"t/PaoloTorroni","text":"Paolo Torroni"}]},"title":"Promoting the Responsible Development of Speech Datasets for Mental Health and Neurological Disorders Research.","venue":"J. Artif. Intell. Res.","volume":"82","pages":"937-972","year":"2025","type":"Journal Articles","access":"open","key":"journals/jair/ManciniTGGRT25","doi":"10.1613/JAIR.1.16406","ee":"https://doi.org/10.1613/jair.1.16406","url":"https://dblp.org/rec/journals/jair/ManciniTGGRT25"},
+"url":"URL#468989"
+},
+{
+"@score":"3",
+"@id":"611555",
+"info":{"authors":{"author":[{"@pid":"306/6731","text":"Navya Martin Kollapally"},{"@pid":"430/4927","text":"Christa Akes"}]},"title":"Benchmarking Automatic Speech Recognition for Aphasia: A Clinical Evaluation Framework.","venue":"BIBM","pages":"7599-7607","year":"2025","type":"Conference and Workshop Papers","access":"closed","key":"conf/bibm/KollapallyA25","doi":"10.1109/BIBM66473.2025.11356945","ee":"https://doi.org/10.1109/BIBM66473.2025.11356945","url":"https://dblp.org/rec/conf/bibm/KollapallyA25"},
+"url":"URL#611555"
+},
+{
+"@score":"3",
+"@id":"776422",
+"info":{"authors":{"author":[{"@pid":"414/6376","text":"Ishaan Mahapatra"},{"@pid":"36/722","text":"Nihar R. Mahapatra"}]},"title":"Systematic FAIRness Assessment of Open Voice Biomarker Datasets for Mental Health and Neurodegenerative Diseases.","venue":"TSD","pages":"356-368","year":"2025","type":"Conference and Workshop Papers","access":"closed","key":"conf/tsd/MahapatraM25","doi":"10.1007/978-3-032-02548-7_30","ee":"https://doi.org/10.1007/978-3-032-02548-7_30","url":"https://dblp.org/rec/conf/tsd/MahapatraM25"},
+"url":"URL#776422"
+},
+{
+"@score":"3",
+"@id":"814938",
+"info":{"authors":{"author":{"@pid":"388/0991","text":"Kabir Kumar"}},"title":"Benchmarking Automatic Speech Recognition coupled LLM Modules for Medical Diagnostics.","venue":"CoRR","volume":"abs/2502.13982","year":"2025","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2502-13982","doi":"10.48550/ARXIV.2502.13982","ee":"https://doi.org/10.48550/arXiv.2502.13982","url":"https://dblp.org/rec/journals/corr/abs-2502-13982"},
+"url":"URL#814938"
+},
+{
+"@score":"3",
+"@id":"877698",
+"info":{"authors":{"author":[{"@pid":"85/2699","text":"John H. L. Hansen"},{"@pid":"263/9323","text":"Satwik Dutta"},{"@pid":"413/3540","text":"Ellen Grand"}]},"title":"Best Practices and Considerations for Child Speech Corpus Collection and Curation in Educational, Clinical, and Forensic Scenarios.","venue":"CoRR","volume":"abs/2507.12870","year":"2025","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2507-12870","doi":"10.48550/ARXIV.2507.12870","ee":"https://doi.org/10.48550/arXiv.2507.12870","url":"https://dblp.org/rec/journals/corr/abs-2507-12870"},
+"url":"URL#877698"
+},
+{
+"@score":"3",
+"@id":"890926",
+"info":{"authors":{"author":[{"@pid":"414/6376","text":"Ishaan Mahapatra"},{"@pid":"36/722","text":"Nihar R. Mahapatra"}]},"title":"Systematic FAIRness Assessment of Open Voice Biomarker Datasets for Mental Health and Neurodegenerative Diseases.","venue":"CoRR","volume":"abs/2508.14089","year":"2025","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2508-14089","doi":"10.48550/ARXIV.2508.14089","ee":"https://doi.org/10.48550/arXiv.2508.14089","url":"https://dblp.org/rec/journals/corr/abs-2508-14089"},
+"url":"URL#890926"
+},
+{
+"@score":"3",
+"@id":"900658",
+"info":{"authors":{"author":[{"@pid":"417/5755","text":"Eden Mama"},{"@pid":"417/5565","text":"Liel Sheri"},{"@pid":"324/5828","text":"Yehudit Aperstein"},{"@pid":"99/6217","text":"Alexander Apartsin"}]},"title":"From Fuzzy Speech to Medical Insight: Benchmarking LLMs on Noisy Patient Narratives.","venue":"CoRR","volume":"abs/2509.11803","year":"2025","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2509-11803","doi":"10.48550/ARXIV.2509.11803","ee":"https://doi.org/10.48550/arXiv.2509.11803","url":"https://dblp.org/rec/journals/corr/abs-2509-11803"},
+"url":"URL#900658"
+},
+{
+"@score":"3",
+"@id":"1466320",
+"info":{"authors":{"author":[{"@pid":"331/4588","text":"Eleonora Mancini"},{"@pid":"215/8839","text":"Ana Tanevska"},{"@pid":"208/4245","text":"Andrea Galassi"},{"@pid":"293/9395","text":"Alessio Galatolo"},{"@pid":"256/2276","text":"Federico Ruggeri"},{"@pid":"t/PaoloTorroni","text":"Paolo Torroni"}]},"title":"Promoting Fairness and Diversity in Speech Datasets for Mental Health and Neurological Disorders Research.","venue":"CoRR","volume":"abs/2406.04116","year":"2024","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2406-04116","doi":"10.48550/ARXIV.2406.04116","ee":"https://doi.org/10.48550/arXiv.2406.04116","url":"https://dblp.org/rec/journals/corr/abs-2406-04116"},
+"url":"URL#1466320"
+},
+{
+"@score":"3",
+"@id":"1594107",
+"info":{"authors":{"author":[{"@pid":"212/5739","text":"Suman Dowlagar"},{"@pid":"134/6779","text":"Radhika Mamidi"}]},"title":"A code-mixed task-oriented dialog dataset for medical domain.","venue":"Comput. Speech Lang.","volume":"78","pages":"101449","year":"2023","type":"Journal Articles","access":"closed","key":"journals/csl/DowlagarM23","doi":"10.1016/J.CSL.2022.101449","ee":"https://doi.org/10.1016/j.csl.2022.101449","url":"https://dblp.org/rec/journals/csl/DowlagarM23"},
+"url":"URL#1594107"
+},
+{
+"@score":"3",
+"@id":"1629653",
+"info":{"authors":{"author":[{"@pid":"350/6539","text":"Seok-Joo Chun"},{"@pid":"161/9361","text":"Jung Bin Park"},{"@pid":"350/6165","text":"Hyejo Ryu"},{"@pid":"332/2162","text":"Bum-Sup Jang"}]},"title":"Development and benchmarking of a Korean audio speech recognition model for Clinician-Patient conversations in radiation oncology clinics.","venue":"Int. J. Medical Informatics","volume":"176","pages":"105112","year":"2023","type":"Journal Articles","access":"closed","key":"journals/ijmi/ChunPRJ23","doi":"10.1016/J.IJMEDINF.2023.105112","ee":"https://doi.org/10.1016/j.ijmedinf.2023.105112","url":"https://dblp.org/rec/journals/ijmi/ChunPRJ23"},
+"url":"URL#1629653"
+},
+{
+"@score":"3",
+"@id":"1629708",
+"info":{"authors":{"author":[{"@pid":"309/8476","text":"Máté Hires"},{"@pid":"126/4204","text":"Peter Drotár"},{"@pid":"89/174","text":"Nemuel Daniel Pah"},{"@pid":"305/1708","text":"Quoc Cuong Ngo"},{"@pid":"27/4020","text":"Dinesh Kant Kumar"}]},"title":"On the inter-dataset generalization of machine learning approaches to Parkinson&apos;s disease detection from voice.","venue":"Int. J. Medical Informatics","volume":"179","pages":"105237","year":"2023","type":"Journal Articles","access":"closed","key":"journals/ijmi/HiresDPNK23","doi":"10.1016/J.IJMEDINF.2023.105237","ee":"https://doi.org/10.1016/j.ijmedinf.2023.105237","url":"https://dblp.org/rec/journals/ijmi/HiresDPNK23"},
+"url":"URL#1629708"
+},
+{
+"@score":"3",
+"@id":"1722331",
+"info":{"authors":{"author":[{"@pid":"228/6984","text":"Tobi Olatunji"},{"@pid":"256/1135","text":"Tejumade Afonja"},{"@pid":"305/4988","text":"Aditya Yadavalli"},{"@pid":"261/9858","text":"Chris Chinenye Emezue"},{"@pid":"244/2329","text":"Sahib Singh"},{"@pid":"261/9506","text":"Bonaventure F. P. Dossou"},{"@pid":"346/9285","text":"Joanne I. Osuchukwu"},{"@pid":"275/9920","text":"Salomey Osei"},{"@pid":"312/3167","text":"Atnafu Lambebo Tonja"},{"@pid":"345/8598","text":"Naome A. Etori"},{"@pid":"309/5992","text":"Clinton Mbataku"}]},"title":"AfriSpeech-200: Pan-African Accented Speech Dataset for Clinical and General Domain ASR.","venue":"Trans. Assoc. Comput. Linguistics","volume":"11","pages":"1669-1685","year":"2023","type":"Journal Articles","access":"open","key":"journals/tacl/OlatunjiAYESDOO23","doi":"10.1162/TACL_A_00627","ee":"https://doi.org/10.1162/tacl_a_00627","url":"https://dblp.org/rec/journals/tacl/OlatunjiAYESDOO23"},
+"url":"URL#1722331"
+},
+{
+"@score":"3",
+"@id":"1844027",
+"info":{"authors":{"author":[{"@pid":"255/0014","text":"Meishu Song"},{"@pid":"220/3060","text":"Andreas Triantafyllopoulos"},{"@pid":"97/3485-7","text":"Zijiang Yang 0007"},{"@pid":"75/5898","text":"Hiroki Takeuchi"},{"@pid":"38/1367","text":"Toru Nakamura"},{"@pid":"264/6197","text":"Akifumi Kishi"},{"@pid":"359/7795","text":"Tetsuro Ishizawa"},{"@pid":"165/8969","text":"Kazuhiro Yoshiuchi"},{"@pid":"03/11308-1","text":"Xin Jing 0001"},{"@pid":"161/8169","text":"Vincent Karas"},{"@pid":"243/7458","text":"Zhonghao Zhao"},{"@pid":"77/2062-3","text":"Kun Qian 0003"},{"@pid":"00/6381-1","text":"Bin Hu 0001"},{"@pid":"54/4934","text":"Björn W. Schuller"},{"@pid":"14/7919","text":"Yoshiharu Yamamoto"}]},"title":"Daily Mental Health Monitoring from Speech: A Real-World Japanese Dataset and Multitask Learning Analysis.","venue":"ICASSP","pages":"1-5","year":"2023","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/SongTYTNKIYJKZQHSY23","doi":"10.1109/ICASSP49357.2023.10096884","ee":"https://doi.org/10.1109/ICASSP49357.2023.10096884","url":"https://dblp.org/rec/conf/icassp/SongTYTNKIYJKZQHSY23"},
+"url":"URL#1844027"
+},
+{
+"@score":"3",
+"@id":"2041823",
+"info":{"authors":{"author":[{"@pid":"228/6984","text":"Tobi Olatunji"},{"@pid":"256/1135","text":"Tejumade Afonja"},{"@pid":"305/4988","text":"Aditya Yadavalli"},{"@pid":"261/9858","text":"Chris Chinenye Emezue"},{"@pid":"244/2329","text":"Sahib Singh"},{"@pid":"261/9506","text":"Bonaventure F. P. Dossou"},{"@pid":"346/9285","text":"Joanne I. Osuchukwu"},{"@pid":"275/9920","text":"Salomey Osei"},{"@pid":"312/3167","text":"Atnafu Lambebo Tonja"},{"@pid":"345/8598","text":"Naome A. Etori"},{"@pid":"309/5992","text":"Clinton Mbataku"}]},"title":"AfriSpeech-200: Pan-African Accented Speech Dataset for Clinical and General Domain ASR.","venue":"CoRR","volume":"abs/2310.00274","year":"2023","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2310-00274","doi":"10.48550/ARXIV.2310.00274","ee":"https://doi.org/10.48550/arXiv.2310.00274","url":"https://dblp.org/rec/journals/corr/abs-2310-00274"},
+"url":"URL#2041823"
+},
+{
+"@score":"3",
+"@id":"2402797",
+"info":{"authors":{"author":[{"@pid":"330/9434","text":"Nina Benway"},{"@pid":"330/9745","text":"Jonathan L. Preston"},{"@pid":"173/6570","text":"Elaine Hitchcock"},{"@pid":"131/0606","text":"Asif Salekin"},{"@pid":"191/1598","text":"Harshit Sharma"},{"@pid":"173/6455","text":"Tara McAllister Byun"}]},"title":"PERCEPT-R: An Open-Access American English Child/Clinical Speech Corpus Specialized for the Audio Classification of /ɹ/.","venue":"INTERSPEECH","pages":"3648-3652","year":"2022","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/BenwayPHSSB22","doi":"10.21437/INTERSPEECH.2022-10785","ee":"https://doi.org/10.21437/Interspeech.2022-10785","url":"https://dblp.org/rec/conf/interspeech/BenwayPHSSB22"},
+"url":"URL#2402797"
+},
+{
+"@score":"3",
+"@id":"2839575",
+"info":{"authors":{"author":[{"@pid":"149/0731","text":"Maria Joana Correia"},{"@pid":"226/1601","text":"Francisco Teixeira"},{"@pid":"277/3639","text":"Catarina Botelho"},{"@pid":"72/6829","text":"Isabel Trancoso"},{"@pid":"60/3996","text":"Bhiksha Raj"}]},"title":"The in-the-Wild Speech Medical Corpus.","venue":"ICASSP","pages":"6973-6977","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/CorreiaTBTR21","doi":"10.1109/ICASSP39728.2021.9414230","ee":"https://doi.org/10.1109/ICASSP39728.2021.9414230","url":"https://dblp.org/rec/conf/icassp/CorreiaTBTR21"},
+"url":"URL#2839575"
+},
+{
+"@score":"3",
+"@id":"2880423",
+"info":{"authors":{"author":[{"@pid":"199/4864","text":"R&apos;mani Haulcy"},{"@pid":"37/6580","text":"James R. Glass"}]},"title":"CLAC: A Speech Corpus of Healthy English Speakers.","venue":"Interspeech","pages":"2966-2970","year":"2021","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/HaulcyG21","doi":"10.21437/INTERSPEECH.2021-1810","ee":"https://doi.org/10.21437/Interspeech.2021-1810","url":"https://dblp.org/rec/conf/interspeech/HaulcyG21"},
+"url":"URL#2880423"
+},
+{
+"@score":"3",
+"@id":"4112264",
+"info":{"authors":{"author":[{"@pid":"235/2865","text":"Muhammad Reza Qorib"},{"@pid":"15/6057","text":"Mirna Adriani"}]},"title":"Building MEDISCO: Indonesian Speech Corpus for Medical Domain.","venue":"IALP","pages":"133-138","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/ialp/QoribA18","doi":"10.1109/IALP.2018.8629259","ee":"https://doi.org/10.1109/IALP.2018.8629259","url":"https://dblp.org/rec/conf/ialp/QoribA18"},
+"url":"URL#4112264"
+},
+{
+"@score":"3",
+"@id":"4842976",
+"info":{"authors":{"author":[{"@pid":"14/5457-3","text":"Dongdong Li 0003"},{"@pid":"98/6805","text":"Jianyu Wang"},{"@pid":"07/3676","text":"Yingchun Yang"}]},"title":"PVD: A new pathological voice dataset for intra-speaker recognition research interest.","venue":"ISCSLP","pages":"1-5","year":"2016","type":"Conference and Workshop Papers","access":"closed","key":"conf/iscslp/LiWY16","doi":"10.1109/ISCSLP.2016.7918488","ee":"https://doi.org/10.1109/ISCSLP.2016.7918488","url":"https://dblp.org/rec/conf/iscslp/LiWY16"},
+"url":"URL#4842976"
+},
+{
+"@score":"3",
+"@id":"5356212",
+"info":{"authors":{"author":[{"@pid":"148/8685","text":"Narayan Choudhary"},{"@pid":"45/11297","text":"Parth Pathak"},{"@pid":"178/0598","text":"Pinal Patel"},{"@pid":"185/9014","text":"Vishal Panchal"}]},"title":"Annotating a Large Representative Corpus of Clinical Notes for Parts of Speech.","venue":"LAW@COLING","pages":"87-92","year":"2014","type":"Conference and Workshop Papers","access":"open","key":"conf/acllaw/ChoudharyPPP14","doi":"10.3115/V1/W14-4913","ee":"https://doi.org/10.3115/v1/w14-4913","url":"https://dblp.org/rec/conf/acllaw/ChoudharyPPP14"},
+"url":"URL#5356212"
+},
+{
+"@score":"3",
+"@id":"5632846",
+"info":{"authors":{"author":[{"@pid":"133/2214","text":"Betul Erdogdu Sakar"},{"@pid":"133/2226","text":"M. Erdem Isenkul"},{"@pid":"35/8527","text":"Cemal Okan Sakar"},{"@pid":"23/8633","text":"Ahmet Sertbas"},{"@pid":"g/FikretSGurgen","text":"Fikret Gürgen"},{"@pid":"133/2293","text":"Sakir Delil"},{"@pid":"133/2307","text":"Hulya Apaydin"},{"@pid":"48/4776","text":"Olcay Kursun"}]},"title":"Collection and Analysis of a Parkinson Speech Dataset With Multiple Types of Sound Recordings.","venue":"IEEE J. Biomed. Health Informatics","volume":"17","number":"4","pages":"828-834","year":"2013","type":"Journal Articles","access":"closed","key":"journals/titb/SakarISSGDAK13","doi":"10.1109/JBHI.2013.2245674","ee":"https://doi.org/10.1109/JBHI.2013.2245674","url":"https://dblp.org/rec/journals/titb/SakarISSGDAK13"},
+"url":"URL#5632846"
+},
+{
+"@score":"3",
+"@id":"7583660",
+"info":{"authors":{"author":[{"@pid":"55/1703","text":"Serguei Pakhomov"},{"@pid":"24/566","text":"Anni Coden"},{"@pid":"13/5552","text":"Christopher G. Chute"}]},"title":"Creating a Test Corpus of Clinical Notes Manually Tagged for Part-of-Speech Information.","venue":"NLPBA/BioNLP","year":"2004","type":"Conference and Workshop Papers","access":"open","key":"conf/bionlp/PakhomovCC04","ee":"https://aclanthology.org/W04-1211/","url":"https://dblp.org/rec/conf/bionlp/PakhomovCC04"},
+"url":"URL#7583660"
+}
+]
+}
+}
+}

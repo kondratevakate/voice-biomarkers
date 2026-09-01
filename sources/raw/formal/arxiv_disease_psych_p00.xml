@@ -1,0 +1,1328 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/DcUwdBqDMVXxaPq639ZSlyB7pCU</id>
+  <title>arXiv Query: search_query=(abs:"voice biomarker" OR abs:"vocal biomarker" OR abs:"speech biomarker" OR abs:"acoustic biomarker" OR abs:"voice-based digital biomarker" OR abs:"speech-based digital biomarker" OR abs:"speech analysis" OR abs:"acoustic features" OR abs:"pathological speech") AND (abs:depression OR abs:anxiety OR abs:schizophrenia OR abs:psychosis OR abs:bipolar OR abs:"mental health")&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-09-01T14:55:50Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(abs:%22voice+biomarker%22+OR+(abs:%22vocal+biomarker%22+OR+(abs:%22speech+biomarker%22+OR+(abs:%22acoustic+biomarker%22+OR+(abs:%22voice-based+digital+biomarker%22+OR+(abs:%22speech-based+digital+biomarker%22+OR+(abs:%22speech+analysis%22+OR+(abs:%22acoustic+features%22+OR+abs:%22pathological+speech%22))))))))+AND+(abs:depression+OR+(abs:anxiety+OR+(abs:schizophrenia+OR+(abs:psychosis+OR+(abs:bipolar+OR+abs:%22mental+health%22)))))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>47</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2606.31730v1</id>
+    <title>A Fair and Transparent Framework for Speech-Based Depression Detection: Balancing Interpretability and Performance</title>
+    <updated>2026-06-30T14:29:20Z</updated>
+    <link href="https://arxiv.org/abs/2606.31730v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.31730v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>While speech provides rich, non-invasive biomarkers for mental-health assessment, clinical adoption is limited by opaque models and potential demographic bias. In this work we propose a methodological framework to evaluate robustness and interpretability for automated depression detection on the extended DAIC-WOZ dataset using low-complexity machine learning baselines (RF, SVM, and MLP) chosen to mitigate overfitting and enhance generalization in combination with human-understandable acoustic features (MFCCs, eGeMAPS). To balance accuracy with clinical trust, we leverage explainability methods (LIME and SHAP) for feature selection, validating our findings with statistical significance tests and demographic fairness analyses to mitigate spurious, artifact-driven correlations. Empirical results demonstrate that an optimized subset of explainable AI (XAI)-selected features combined with an MLP architecture achieves a state-of-the-art test accuracy of 82\%. Ultimately, this work provides a transparent framework for robust and ethical assistive technologies that can be applied to any other binary task.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-30T14:29:20Z</published>
+    <arxiv:comment>7 pages, 2 figures, 3 tables. This work has been submitted to the IEEE for possible publication</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Mariel Estevez</name>
+    </author>
+    <author>
+      <name>Alfonso Ortega</name>
+    </author>
+    <author>
+      <name>Antonio Miguel</name>
+    </author>
+    <author>
+      <name>Eduardo Lleida</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2608.26148v1</id>
+    <title>Towards Interpretable Depression Detection: Linking Acoustic Features to DSM-5 Indicators</title>
+    <updated>2026-06-29T07:17:46Z</updated>
+    <link href="https://arxiv.org/abs/2608.26148v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2608.26148v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Depression affects millions worldwide, yet diagnosis relies on subjective self-reports that may miss authentic behavior. This paper presents an approach linking speech acoustics to DSM-5 depressive-behavior indicators through a transparent Linkage Framework. Unlike black-box models, the framework explicitly maps acoustic features (pitch variability, pauses, speech tempo) to clinical indicators, enabling interpretable, indicator-level outputs. The system runs locally on commodity hardware (HW) to preserve privacy. Preliminary evaluation on DAIC-WOZ shows directionally consistent associations between acoustic features and DSM-5 indicators for psychomotor change and concentration difficulty, supporting the design rationale. Future work will validate on longitudinal datasets and extend multimodal integration while maintaining edge constraints.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-29T07:17:46Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Jonas Länzlinger</name>
+    </author>
+    <author>
+      <name>Katharina O. E. Müller</name>
+    </author>
+    <author>
+      <name>Burkhard Stiller</name>
+    </author>
+    <author>
+      <name>Bruno Rodrigues</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.19987v1</id>
+    <title>PolSeT: Polish Semantics of Timbre Dataset</title>
+    <updated>2026-06-18T09:28:25Z</updated>
+    <link href="https://arxiv.org/abs/2606.19987v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.19987v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This data report introduces PolSeT (Polish Semantic Timbre), a dataset designed to facilitate research in psychoacoustics and Music Information Retrieval (MIR) in Polish and cross-cultural contexts. The dataset contains data from two sequential experiments. Experiment 1 (N=60) was a free-verbalization task aimed at creating a lexicon of Polish semantic descriptors. Using 11 stimuli, a total of 1901 descriptors (701 unique) were gathered. Experiment 2 (N=105) utilized this lexicon to conduct a semantic differential study, where participants rated 18 instrument sounds on 8 bipolar scales, with repeated trials for reliability analysis. The released dataset includes raw listener responses, comprehensive demographics (experience, gender, age), audio stimuli, and extracted acoustic features with Python extraction code. This dataset addresses a gap in open timbre research data, providing both the qualitative linguistic groundwork and the quantitative ratings necessary for psychoacoustic research and the training of multilingual semantic embedding models.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-18T09:28:25Z</published>
+    <arxiv:comment>8 pages, 7 figures. Data descriptor for the PolSeT dataset (Polish Semantics of Timbre), available at https://doi.org/10.5281/zenodo.17830609 under CC BY 4.0</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Jan Jasiński</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.03039v1</id>
+    <title>Mixed-Precision Information Bottlenecks for On-Device Trait-State Disentanglement in Bipolar Agitation Detection</title>
+    <updated>2026-05-04T18:06:17Z</updated>
+    <link href="https://arxiv.org/abs/2605.03039v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.03039v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Continuous monitoring of bipolar disorder agitation via voice biomarkers requires disentangling stable speaker traits from volatile affective states on resource-constrained edge devices. We introduce MP-IB, the first framework to treat mixed-precision quantization as an information bottleneck for clinical trait-state separation. The core insight is that numerical precision itself controls capacity: an FP16 trait head (1,024 bits) encodes speaker identity, while an INT4 state head (128 bits) captures agitation, yielding 8x information asymmetry without adversarial training. We augment this with Dynamic Precision Scheduling and Multi-Scale Temporal Fusion. On Bridge2AI-Voice (N=833, 4 sessions/participant, strict speaker-independent CV), MP-IB achieves rho = 0.117 (95\% CI: [0.089, 0.145], p=0.003 vs. chance), outperforming 94M-parameter WavLM-Adapter with in-domain SSL continuation (rho = -0.042), beta VAE disentanglement (rho = 0.089), and hand-crafted prosody (rho = 0.031) by 2.8--15.9 points absolute. Zero-shot transfer to CREMA-D achieves AUC=0.817. Identity leakage is suppressed to near-random (EER=0.42, MIA-AUC=0.52). End-to-end latency is 23.4 ms with a 617 KB footprint, enabling real-time monitoring on sub 20 dollar devices.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-04T18:06:17Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Joydeep Chandra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.08165v1</id>
+    <title>Low-Cost Detection of Degraded Voice Clones via Source-Output Acoustic Consistency</title>
+    <updated>2026-05-04T17:33:28Z</updated>
+    <link href="https://arxiv.org/abs/2605.08165v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.08165v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in generative speech have increased the need for automatic detection of obviously failed synthetic outputs. This is particularly important in clinical settings such as AVATAR therapy, in which schizophrenia patients engage with a computer-generated representation of their hallucinated voices and degraded synthesis may disrupt immersion and therapeutic engagement. We investigate whether low-dimensional, interpretable source-output acoustic features can provide a lightweight first-pass detector of degraded voice-cloning outputs. Motivated by source-filter models of speech, we first test median fundamental frequency (f0) as a source-related consistency measure, and compare it with vocal tract length (VTL) as a filter-related measure and Harmonics-to-Noise Ratio (HNR) as a noise-related descriptor. Human-labeled voice-cloning samples generated with two vocoder families, WaveRNN (n=54) and HiFi-GAN (n=40), were evaluated using an asymmetric thresholding procedure in the input-output feature space. For WaveRNN, f0 and HNR both achieved 85.2% accuracy, outperforming VTL (64.8%). For HiFi-GAN, HNR achieved 80.0% accuracy, followed by f0 at 77.5% and VTL at 67.5%. Sample-level overlap and spectrographic inspection showed that f0 and HNR capture partly distinct failure patterns, rather than providing redundant rankings of the same samples. These results show that simple source-output acoustic consistency measures can provide useful first-pass detection of degraded voice clones, and support the use of interpretable threshold-based screening in applications where failed synthetic speech must be rejected quickly.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-04T17:33:28Z</published>
+    <arxiv:comment>7 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Jana Shokr</name>
+    </author>
+    <author>
+      <name>Minos Papadopoulos</name>
+    </author>
+    <author>
+      <name>Jeremy Cooperstock</name>
+    </author>
+    <author>
+      <name>Pavo Orepic</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.14354v1</id>
+    <title>Who is Speaking or Who is Depressed? A Controlled Study of Speaker Leakage in Speech-Based Depression Detection</title>
+    <updated>2026-04-15T19:14:48Z</updated>
+    <link href="https://arxiv.org/abs/2604.14354v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.14354v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This study investigates whether speech-based depression detection models learn depression-related acoustic biomarkers or instead rely on speaker identity cues. Using the DAIC-WOZ dataset, we propose a data-splitting strategy that controls speaker overlap between training and test sets while keeping the training size constant, and evaluate three models of varying complexity. Results show that speaker overlap significantly boosts performance, whereas accuracy drops sharply on unseen speakers. Even with a Domain-Adversarial Neural Network, a substantial performance gap remains. These findings indicate that depression-related features extracted by current speech models are highly entangled with speaker identity. Conventional evaluation protocols may therefore overestimate generalization and clinical utility, highlighting the need for strictly speaker-independent evaluation.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-15T19:14:48Z</published>
+    <arxiv:comment>Submitted to Interspeech 2026</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Hsiang-Chen Yeh</name>
+    </author>
+    <author>
+      <name>Luqi Sun</name>
+    </author>
+    <author>
+      <name>Aurosweta Mahapatra</name>
+    </author>
+    <author>
+      <name>Shreeram Suresh Chandra</name>
+    </author>
+    <author>
+      <name>Emily Mower Provost</name>
+    </author>
+    <author>
+      <name>Berrak Sisman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.02937v1</id>
+    <title>Bias and Fairness in Self-Supervised Acoustic Representations for Cognitive Impairment Detection</title>
+    <updated>2026-03-03T12:47:31Z</updated>
+    <link href="https://arxiv.org/abs/2603.02937v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.02937v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech-based detection of cognitive impairment (CI) offers a promising non-invasive approach for early diagnosis, yet performance disparities across demographic and clinical subgroups remain underexplored, raising concerns around fairness and generalizability. This study presents a systematic bias analysis of acoustic-based CI and depression classification using the DementiaBank Pitt Corpus. We compare traditional acoustic features (MFCCs, eGeMAPS) with contextualized speech embeddings from Wav2Vec 2.0 (W2V2), and evaluate classification performance across gender, age, and depression-status subgroups. For CI detection, higher-layer W2V2 embeddings outperform baseline features (UAR up to 80.6\%), but exhibit performance disparities; specifically, females and younger participants demonstrate lower discriminative power (\(AUC\): 0.769 and 0.746, respectively) and substantial specificity disparities (\(Δ_{spec}\) up to 18\% and 15\%, respectively), leading to a higher risk of misclassifications than their counterparts. These disparities reflect representational biases, defined as systematic differences in model performance across demographic or clinical subgroups. Depression detection within CI subjects yields lower overall performance, with mild improvements from low and mid-level W2V2 layers. Cross-task generalization between CI and depression classification is limited, indicating that each task depends on distinct representations. These findings emphasize the need for fairness-aware model evaluation and subgroup-specific analysis in clinical speech applications, particularly in light of demographic and clinical heterogeneity in real-world applications.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-03T12:47:31Z</published>
+    <arxiv:comment>12 pages, 4 figures, 6 tables, Journal paper</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Kashaf Gulzar</name>
+    </author>
+    <author>
+      <name>Korbinian Riedhammer</name>
+    </author>
+    <author>
+      <name>Elmar Nöth</name>
+    </author>
+    <author>
+      <name>Andreas K. Maier</name>
+    </author>
+    <author>
+      <name>Paula Andrea Pérez-Toro</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2511.03086v1</id>
+    <title>Speech-Based Prioritization for Schizophrenia Intervention</title>
+    <updated>2025-11-05T00:22:48Z</updated>
+    <link href="https://arxiv.org/abs/2511.03086v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2511.03086v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Millions of people suffer from mental health conditions, yet many remain undiagnosed or receive delayed care due to limited clinical resources and labor-intensive assessment methods. While most machine-assisted approaches focus on diagnostic classification, estimating symptom severity is essential for prioritizing care, particularly in resource-constrained settings. Speech-based AI provides a scalable alternative by enabling automated, continuous, and remote monitoring, reducing reliance on subjective self-reports and time-consuming evaluations. In this paper, we introduce a speech-based model for pairwise comparison of schizophrenia symptom severity, leveraging articulatory and acoustic features. These comparisons are used to generate severity rankings via the Bradley-Terry model. Our approach outperforms previous regression-based models on ranking-based metrics, offering a more effective solution for clinical triage and prioritization.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-05T00:22:48Z</published>
+    <arxiv:comment>Submitted for ICASSP 2026</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Gowtham Premananth</name>
+    </author>
+    <author>
+      <name>Philip Resnik</name>
+    </author>
+    <author>
+      <name>Sonia Bansal</name>
+    </author>
+    <author>
+      <name>Deanna L. Kelly</name>
+    </author>
+    <author>
+      <name>Carol Espy-Wilson</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.08593v2</id>
+    <title>Hierarchical Self-Supervised Representation Learning for Depression Detection from Speech</title>
+    <updated>2026-01-21T07:20:16Z</updated>
+    <link href="https://arxiv.org/abs/2510.08593v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.08593v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech-based depression detection (SDD) has emerged as a non-invasive and scalable alternative to conventional clinical assessments. However, existing methods still struggle to capture robust depression-related speech characteristics, which are sparse and heterogeneous. Although pretrained self-supervised learning (SSL) models provide rich representations, most recent SDD studies extract features from a single layer of the pretrained SSL model for the downstream classifier. This practice overlooks the complementary roles of low-level acoustic features and high-level semantic information inherently encoded in different SSL model layers. To explicitly model interactions between acoustic and semantic representations within an utterance, we propose a hierarchical adaptive representation encoder with prior knowledge that disengages and re-aligns acoustic and semantic information through asymmetric cross-attention, enabling fine-grained acoustic patterns to be interpreted in semantic context. In addition, a Connectionist Temporal Classification (CTC) objective is applied as auxiliary supervision to handle the irregular temporal distribution of depressive characteristics without requiring frame-level annotations. Experiments on DAIC-WOZ and MODMA demonstrate that HAREN-CTC consistently outperforms existing methods under both performance upper-bound evaluation and generalization evaluation settings, achieving Macro F1 scores of 0.81 and 0.82 respectively in upper-bound evaluation, and maintaining superior performance with statistically significant improvements in precision and AUC under rigorous cross-validation. These findings suggest that modeling hierarchical acoustic-semantic interactions better reflects how depressive characteristics manifest in natural speech, enabling scalable and objective depression assessment.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-05T09:32:12Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yuxin Li</name>
+    </author>
+    <author>
+      <name>Eng Siong Chng</name>
+    </author>
+    <author>
+      <name>Cuntai Guan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.22729v1</id>
+    <title>Multi-Modal Sentiment Analysis with Dynamic Attention Fusion</title>
+    <updated>2025-09-25T09:54:04Z</updated>
+    <link href="https://arxiv.org/abs/2509.22729v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.22729v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Traditional sentiment analysis has long been a unimodal task, relying solely on text. This approach overlooks non-verbal cues such as vocal tone and prosody that are essential for capturing true emotional intent. We introduce Dynamic Attention Fusion (DAF), a lightweight framework that combines frozen text embeddings from a pretrained language model with acoustic features from a speech encoder, using an adaptive attention mechanism to weight each modality per utterance. Without any finetuning of the underlying encoders, our proposed DAF model consistently outperforms both static fusion and unimodal baselines on a large multimodal benchmark. We report notable gains in F1-score and reductions in prediction error and perform a variety of ablation studies that support our hypothesis that the dynamic weighting strategy is crucial for modeling emotionally complex inputs. By effectively integrating verbal and non-verbal information, our approach offers a more robust foundation for sentiment prediction and carries broader impact for affective computing applications -- from emotion recognition and mental health assessment to more natural human computer interaction.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-25T09:54:04Z</published>
+    <arxiv:comment>Paper accepted for presentation at the ACS/IEEE 22nd International Conference on Computer Systems and Applications (AICCSA 2025)</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Sadia Abdulhalim</name>
+    </author>
+    <author>
+      <name>Muaz Albaghdadi</name>
+    </author>
+    <author>
+      <name>Moshiur Farazi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.14089v1</id>
+    <title>Systematic FAIRness Assessment of Open Voice Biomarker Datasets for Mental Health and Neurodegenerative Diseases</title>
+    <updated>2025-08-14T06:55:27Z</updated>
+    <link href="https://arxiv.org/abs/2508.14089v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.14089v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Voice biomarkers--human-generated acoustic signals such as speech, coughing, and breathing--are promising tools for scalable, non-invasive detection and monitoring of mental health and neurodegenerative diseases. Yet, their clinical adoption remains constrained by inconsistent quality and limited usability of publicly available datasets. To address this gap, we present the first systematic FAIR (Findable, Accessible, Interoperable, Reusable) evaluation of 27 publicly available voice biomarker datasets focused on these disease areas. Using the FAIR Data Maturity Model and a structured, priority-weighted scoring method, we assessed FAIRness at subprinciple, principle, and composite levels. Our analysis revealed consistently high Findability but substantial variability and weaknesses in Accessibility, Interoperability, and Reusability. Mental health datasets exhibited greater variability in FAIR scores, while neurodegenerative datasets were slightly more consistent. Repository choice also significantly influenced FAIRness scores. To enhance dataset quality and clinical utility, we recommend adopting structured, domain-specific metadata standards, prioritizing FAIR-compliant repositories, and routinely applying structured FAIR evaluation frameworks. These findings provide actionable guidance to improve dataset interoperability and reuse, thereby accelerating the clinical translation of voice biomarker technologies.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-14T06:55:27Z</published>
+    <arxiv:comment>To appear in the Proceedings of the 28th International Conference on Text, Speech and Dialogue (TSD 2025), Erlangen, Germany, August 25-28, 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Ishaan Mahapatra</name>
+    </author>
+    <author>
+      <name>Nihar R. Mahapatra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.08093v1</id>
+    <title>MDD-Net: Multimodal Depression Detection through Mutual Transformer</title>
+    <updated>2025-08-11T15:32:56Z</updated>
+    <link href="https://arxiv.org/abs/2508.08093v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.08093v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Depression is a major mental health condition that severely impacts the emotional and physical well-being of individuals. The simple nature of data collection from social media platforms has attracted significant interest in properly utilizing this information for mental health research. A Multimodal Depression Detection Network (MDD-Net), utilizing acoustic and visual data obtained from social media networks, is proposed in this work where mutual transformers are exploited to efficiently extract and fuse multimodal features for efficient depression detection. The MDD-Net consists of four core modules: an acoustic feature extraction module for retrieving relevant acoustic attributes, a visual feature extraction module for extracting significant high-level patterns, a mutual transformer for computing the correlations among the generated features and fusing these features from multiple modalities, and a detection layer for detecting depression using the fused feature representations. The extensive experiments are performed using the multimodal D-Vlog dataset, and the findings reveal that the developed multimodal depression detection network surpasses the state-of-the-art by up to 17.37% for F1-Score, demonstrating the greater performance of the proposed system. The source code is accessible at https://github.com/rezwanh001/Multimodal-Depression-Detection.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-11T15:32:56Z</published>
+    <arxiv:comment>Accepted for the 2025 IEEE International Conference on Systems, Man, and Cybernetics (SMC), Vienna, Austria</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Md Rezwanul Haque</name>
+    </author>
+    <author>
+      <name>Md. Milon Islam</name>
+    </author>
+    <author>
+      <name>S M Taslim Uddin Raju</name>
+    </author>
+    <author>
+      <name>Hamdi Altaheri</name>
+    </author>
+    <author>
+      <name>Lobna Nassar</name>
+    </author>
+    <author>
+      <name>Fakhri Karray</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.10025v1</id>
+    <title>Detecting and explaining postpartum depression in real-time with generative artificial intelligence</title>
+    <updated>2025-08-08T07:57:05Z</updated>
+    <link href="https://arxiv.org/abs/2508.10025v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.10025v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Among the many challenges mothers undergo after childbirth, postpartum depression (PPD) is a severe condition that significantly impacts their mental and physical well-being. Consequently, the rapid detection of ppd and their associated risk factors is critical for in-time assessment and intervention through specialized prevention procedures. Accordingly, this work addresses the need to help practitioners make decisions with the latest technological advancements to enable real-time screening and treatment recommendations. Mainly, our work contributes to an intelligent PPD screening system that combines Natural Language Processing, Machine Learning (ML), and Large Language Models (LLMs) towards an affordable, real-time, and non-invasive free speech analysis. Moreover, it addresses the black box problem since the predictions are described to the end users thanks to the combination of LLMs with interpretable ml models (i.e., tree-based algorithms) using feature importance and natural language. The results obtained are 90 % on ppd detection for all evaluation metrics, outperforming the competing solutions in the literature. Ultimately, our solution contributes to the rapid detection of PPD and their associated risk factors, critical for in-time and proper assessment and intervention.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-08T07:57:05Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Silvia García-Méndez</name>
+    </author>
+    <author>
+      <name>Francisco de Arriba-Pérez</name>
+    </author>
+    <arxiv:doi>10.1080/08839514.2025.2515063</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1080/08839514.2025.2515063" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.07118v1</id>
+    <title>RBA-FE: A Robust Brain-Inspired Audio Feature Extractor for Depression Diagnosis</title>
+    <updated>2025-06-08T13:00:45Z</updated>
+    <link href="https://arxiv.org/abs/2506.07118v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.07118v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This article proposes a robust brain-inspired audio feature extractor (RBA-FE) model for depression diagnosis, using an improved hierarchical network architecture. Most deep learning models achieve state-of-the-art performance for image-based diagnostic tasks, ignoring the counterpart audio features. In order to tailor the noise challenge, RBA-FE leverages six acoustic features extracted from the raw audio, capturing both spatial characteristics and temporal dependencies. This hybrid attribute helps alleviate the precision limitation in audio feature extraction within other learning models like deep residual shrinkage networks. To deal with the noise issues, our model incorporates an improved spiking neuron model, called adaptive rate smooth leaky integrate-and-fire (ARSLIF). The ARSLIF model emulates the mechanism of ``retuning of cellular signal selectivity" in the brain attention systems, which enhances the model robustness against environmental noises in audio data. Experimental results demonstrate that RBA-FE achieves state-of-the-art accuracy on the MODMA dataset, respectively with 0.8750, 0.8974, 0.8750 and 0.8750 in precision, accuracy, recall and F1 score. Extensive experiments on the AVEC2014 and DAIC-WOZ datasets both show enhancements in noise robustness. It is further indicated by comparison that the ARSLIF neuron model suggest the abnormal firing pattern within the feature extraction on depressive audio data, offering brain-inspired interpretability.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-08T13:00:45Z</published>
+    <arxiv:comment>14 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Yu-Xuan Wu</name>
+    </author>
+    <author>
+      <name>Ziyan Huang</name>
+    </author>
+    <author>
+      <name>Bin Hu</name>
+    </author>
+    <author>
+      <name>Zhi-Hong Guan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.01129v2</id>
+    <title>Comparative Evaluation of Acoustic Feature Extraction Tools for Clinical Speech Analysis</title>
+    <updated>2025-08-17T13:50:14Z</updated>
+    <link href="https://arxiv.org/abs/2506.01129v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.01129v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This study compares three acoustic feature extraction toolkits (OpenSMILE, Praat, and Librosa) applied to clinical speech data from individuals with schizophrenia spectrum disorders (SSD) and healthy controls (HC). By standardizing extraction parameters across the toolkits, we analyzed speech samples from 77 SSD and 87 HC participants and found significant toolkit-dependent variations. While F0 percentiles showed high cross-toolkit correlation (r=0.962 to 0.999), measures like F0 standard deviation and formant values often had poor, even negative, agreement. Additionally, correlation patterns differed between SSD and HC groups. Classification analysis identified F0 mean, HNR, and MFCC1 (AUC greater than 0.70) as promising discriminators. These findings underscore reproducibility concerns and advocate for standardized protocols, multi-toolkit cross-validation, and transparent reporting.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-01T19:26:25Z</published>
+    <arxiv:comment>Accepted to Interspeech 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Anna Seo Gyeong Choi</name>
+    </author>
+    <author>
+      <name>Alexander Richardson</name>
+    </author>
+    <author>
+      <name>Ryan Partlan</name>
+    </author>
+    <author>
+      <name>Sunny Tang</name>
+    </author>
+    <author>
+      <name>Sunghye Cho</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.23822v3</id>
+    <title>Speech as a Multimodal Digital Phenotype for Multi-Task LLM-based Mental Health Prediction</title>
+    <updated>2025-07-23T14:16:49Z</updated>
+    <link href="https://arxiv.org/abs/2505.23822v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.23822v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech is a noninvasive digital phenotype that can offer valuable insights into mental health conditions, but it is often treated as a single modality. In contrast, we propose the treatment of patient speech data as a trimodal multimedia data source for depression detection. This study explores the potential of large language model-based architectures for speech-based depression prediction in a multimodal regime that integrates speech-derived text, acoustic landmarks, and vocal biomarkers. Adolescent depression presents a significant challenge and is often comorbid with multiple disorders, such as suicidal ideation and sleep disturbances. This presents an additional opportunity to integrate multi-task learning (MTL) into our study by simultaneously predicting depression, suicidal ideation, and sleep disturbances using the multimodal formulation. We also propose a longitudinal analysis strategy that models temporal changes across multiple clinical interactions, allowing for a comprehensive understanding of the conditions' progression. Our proposed approach, featuring trimodal, longitudinal MTL is evaluated on the Depression Early Warning dataset. It achieves a balanced accuracy of 70.8%, which is higher than each of the unimodal, single-task, and non-longitudinal methods.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-28T04:07:17Z</published>
+    <arxiv:comment>6 pages, 1 figure, 3 tables. The corresponding author is Mai Ali (maia dot ali at mail dot utoronto dot ca). Christopher Lucasius and Tanmay P. Patel contributed equally</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Mai Ali</name>
+    </author>
+    <author>
+      <name>Christopher Lucasius</name>
+    </author>
+    <author>
+      <name>Tanmay P. Patel</name>
+    </author>
+    <author>
+      <name>Madison Aitken</name>
+    </author>
+    <author>
+      <name>Jacob Vorstman</name>
+    </author>
+    <author>
+      <name>Peter Szatmari</name>
+    </author>
+    <author>
+      <name>Marco Battaglia</name>
+    </author>
+    <author>
+      <name>Deepa Kundur</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.20491v1</id>
+    <title>In-context learning capabilities of Large Language Models to detect suicide risk among adolescents from speech transcripts</title>
+    <updated>2025-05-26T19:52:57Z</updated>
+    <link href="https://arxiv.org/abs/2505.20491v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.20491v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Early suicide risk detection in adolescents is critical yet hindered by scalability challenges of current assessments. This paper presents our approach to the first SpeechWellness Challenge (SW1), which aims to assess suicide risk in Chinese adolescents through speech analysis. Due to speech anonymization constraints, we focused on linguistic features, leveraging Large Language Models (LLMs) for transcript-based classification. Using DSPy for systematic prompt engineering, we developed a robust in-context learning approach that outperformed traditional fine-tuning on both linguistic and acoustic markers. Our systems achieved third and fourth places among 180+ submissions, with 0.68 accuracy (F1=0.7) using only transcripts. Ablation analyses showed that increasing prompt example improved performance (p=0.003), with varying effects across model types and sizes. These findings advance automated suicide risk assessment and demonstrate LLMs' value in mental health applications.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-26T19:52:57Z</published>
+    <arxiv:comment>Accepted to Interspeech 2025</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Filomene Roquefort</name>
+    </author>
+    <author>
+      <name>Alexandre Ducorroy</name>
+    </author>
+    <author>
+      <name>Rachid Riad</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.16490v2</id>
+    <title>HPP-Voice: A Large-Scale Evaluation of Speech Embeddings for Multi-Phenotypic Classification</title>
+    <updated>2025-05-25T10:12:09Z</updated>
+    <link href="https://arxiv.org/abs/2505.16490v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.16490v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Human speech contains paralinguistic cues that reflect a speaker's physiological and neurological state, potentially enabling non-invasive detection of various medical phenotypes. We introduce the Human Phenotype Project Voice corpus (HPP-Voice): a dataset of 7,188 recordings in which Hebrew-speaking adults count for 30 seconds, with each speaker linked to up to 15 potentially voice-related phenotypes spanning respiratory, sleep, mental health, metabolic, immune, and neurological conditions. We present a systematic comparison of 14 modern speech embedding models, where modern speech embeddings from these 30-second counting tasks outperform MFCCs and demographics for downstream health condition classifications. We found that embedding learned from a speaker identification model can predict objectively measured moderate to severe sleep apnea in males with an AUC of 0.64 $\pm$ 0.03, while MFCC and demographic features led to AUCs of 0.56 $\pm$ 0.02 and 0.57 $\pm$ 0.02, respectively. Additionally, our results reveal gender-specific patterns in model effectiveness across different medical domains. For males, speaker identification and diarization models consistently outperformed speech foundation models for respiratory conditions (e.g., asthma: 0.61 $\pm$ 0.03 vs. 0.56 $\pm$ 0.02) and sleep-related conditions (insomnia: 0.65 $\pm$ 0.04 vs. 0.59 $\pm$ 0.05). For females, speaker diarization models performed best for smoking status (0.61 $\pm$ 0.02 vs 0.55 $\pm$ 0.02), while Hebrew-specific models performed best (0.59 $\pm$ 0.02 vs. 0.58 $\pm$ 0.02) in classifying anxiety compared to speech foundation models. Our findings provide evidence that a simple counting task can support large-scale, multi-phenotypic voice screening and highlight which embedding families generalize best to specific conditions, insights that can guide future vocal biomarker research and clinical deployment.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-22T10:22:15Z</published>
+    <arxiv:comment>supplementary figures added; typos corrected</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>David Krongauz</name>
+    </author>
+    <author>
+      <name>Hido Pinto</name>
+    </author>
+    <author>
+      <name>Sarah Kohn</name>
+    </author>
+    <author>
+      <name>Yanir Marmor</name>
+    </author>
+    <author>
+      <name>Eran Segal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.06412v1</id>
+    <title>Voice biomarkers of perinatal depression: cross-sectional nationwide pilot study report</title>
+    <updated>2025-05-09T20:26:14Z</updated>
+    <link href="https://arxiv.org/abs/2505.06412v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.06412v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Perinatal depression (PND) affects 1 in 5 mothers, with 85% lacking support. Digital health tools offer early identification and prevention, potentially reducing PND risk by over 50% and improving engagement. Despite high interest, user retention needs improvement for maximum benefit. Voice biomarkers have emerged as a possible digital alternative to collecting mood questionnaires to inform individualized user adherence and retention. However, no voice biomarkers have been developed specifically for pregnant mothers. We aimed to test an unstructured speech sample for the feasibility of yielding a machine learning (ML) model to predict PND. We surveyed 446 women nationwide at 22 weeks of gestation. We measured PHQ-8 and modified EPDS and four voice samples. Participants were classified as depressed if their PHQ-8 or EPDS were equal or higher than 10. In the present report, we focus on a 2-minute unstructured speech prompt. A standardized cleaning pipeline was applied to the audio files, including a uniform format conversion, segment filtering for background noise, extraneous acoustic events, and file size. This resulted in 112 high-quality voice recordings, i.e., a rate of 25%. The ML modeling strategy utilized the Allie ML framework on 80% of the data for training on the binary classification task (depressed or not). The analysis included steps for feature selection using referenced speech audio embeddings, followed by a TPOT classifier for ML. We report the validation results for the 20% held-out data. For PHQ-8, we achieved a balanced accuracy of ~71%, precision of 73%, recall of 68%, and AUC of 0.71. For EPDS, we achieved a balanced accuracy of 80%, precision of 92%, recall of 80%, and AUC of 0.80. In conclusion, we demonstrate the feasibility at scale and a promising accuracy for detecting PND using 120 seconds of unstructured speech audio data in expectant mothers.</summary>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-09T20:26:14Z</published>
+    <arxiv:comment>Study pre-registration: http://dx.doi.org/10.17605/OSF.IO/K387T</arxiv:comment>
+    <arxiv:primary_category term="q-bio.QM"/>
+    <author>
+      <name>Rachel L. Wiley</name>
+    </author>
+    <author>
+      <name>Jim Schwoebel</name>
+    </author>
+    <author>
+      <name>Joel Shor</name>
+    </author>
+    <author>
+      <name>Bindu Chanagala</name>
+    </author>
+    <author>
+      <name>Matias Caccia</name>
+    </author>
+    <author>
+      <name>Adolfo M. García</name>
+    </author>
+    <author>
+      <name>Sheehan D. Fisher</name>
+    </author>
+    <author>
+      <name>Martin G. Frasch</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.18285v1</id>
+    <title>Uncertainty Modeling in Multimodal Speech Analysis Across the Psychosis Spectrum</title>
+    <updated>2025-02-25T15:19:21Z</updated>
+    <link href="https://arxiv.org/abs/2502.18285v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.18285v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Capturing subtle speech disruptions across the psychosis spectrum is challenging because of the inherent variability in speech patterns. This variability reflects individual differences and the fluctuating nature of symptoms in both clinical and non-clinical populations. Accounting for uncertainty in speech data is essential for predicting symptom severity and improving diagnostic precision. Speech disruptions characteristic of psychosis appear across the spectrum, including in non-clinical individuals. We develop an uncertainty-aware model integrating acoustic and linguistic features to predict symptom severity and psychosis-related traits. Quantifying uncertainty in specific modalities allows the model to address speech variability, improving prediction accuracy. We analyzed speech data from 114 participants, including 32 individuals with early psychosis and 82 with low or high schizotypy, collected through structured interviews, semi-structured autobiographical tasks, and narrative-driven interactions in German. The model improved prediction accuracy, reducing RMSE and achieving an F1-score of 83% with ECE = 4.5e-2, showing robust performance across different interaction contexts. Uncertainty estimation improved model interpretability by identifying reliability differences in speech markers such as pitch variability, fluency disruptions, and spectral instability. The model dynamically adjusted to task structures, weighting acoustic features more in structured settings and linguistic features in unstructured contexts. This approach strengthens early detection, personalized assessment, and clinical decision-making in psychosis-spectrum research.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-25T15:19:21Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Morteza Rohanian</name>
+    </author>
+    <author>
+      <name>Roya M. Hüppi</name>
+    </author>
+    <author>
+      <name>Farhad Nooralahzadeh</name>
+    </author>
+    <author>
+      <name>Noemi Dannecker</name>
+    </author>
+    <author>
+      <name>Yves Pauli</name>
+    </author>
+    <author>
+      <name>Werner Surbeck</name>
+    </author>
+    <author>
+      <name>Iris Sommer</name>
+    </author>
+    <author>
+      <name>Wolfram Hinzen</name>
+    </author>
+    <author>
+      <name>Nicolas Langer</name>
+    </author>
+    <author>
+      <name>Michael Krauthammer</name>
+    </author>
+    <author>
+      <name>Philipp Homan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.08696v1</id>
+    <title>Deep Learning-Based Feature Fusion for Emotion Analysis and Suicide Risk Differentiation in Chinese Psychological Support Hotlines</title>
+    <updated>2025-01-15T10:09:38Z</updated>
+    <link href="https://arxiv.org/abs/2501.08696v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.08696v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Mental health is a critical global public health issue, and psychological support hotlines play a pivotal role in providing mental health assistance and identifying suicide risks at an early stage. However, the emotional expressions conveyed during these calls remain underexplored in current research. This study introduces a method that combines pitch acoustic features with deep learning-based features to analyze and understand emotions expressed during hotline interactions. Using data from China's largest psychological support hotline, our method achieved an F1-score of 79.13% for negative binary emotion classification.Additionally, the proposed approach was validated on an open dataset for multi-class emotion classification,where it demonstrated better performance compared to the state-of-the-art methods. To explore its clinical relevance, we applied the model to analysis the frequency of negative emotions and the rate of emotional change in the conversation, comparing 46 subjects with suicidal behavior to those without. While the suicidal group exhibited more frequent emotional changes than the non-suicidal group, the difference was not statistically significant.Importantly, our findings suggest that emotional fluctuation intensity and frequency could serve as novel features for psychological assessment scales and suicide risk prediction.The proposed method provides valuable insights into emotional dynamics and has the potential to advance early intervention and improve suicide prevention strategies through integration with clinical tools and assessments The source code is publicly available at https://github.com/Sco-field/Speechemotionrecognition/tree/main.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-15T10:09:38Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Han Wang</name>
+    </author>
+    <author>
+      <name>Jianqiang Li</name>
+    </author>
+    <author>
+      <name>Qing Zhao</name>
+    </author>
+    <author>
+      <name>Zhonglong Chen</name>
+    </author>
+    <author>
+      <name>Changwei Song</name>
+    </author>
+    <author>
+      <name>Jing Tang</name>
+    </author>
+    <author>
+      <name>Yuning Huang</name>
+    </author>
+    <author>
+      <name>Wei Zhai</name>
+    </author>
+    <author>
+      <name>Yongsheng Tong</name>
+    </author>
+    <author>
+      <name>Guanghui Fu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.06474v2</id>
+    <title>The 1st SpeechWellness Challenge: Detecting Suicide Risk Among Adolescents</title>
+    <updated>2025-05-20T06:54:09Z</updated>
+    <link href="https://arxiv.org/abs/2501.06474v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.06474v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The 1st SpeechWellness Challenge (SW1) aims to advance methods for detecting current suicide risk in adolescents using speech analysis techniques. Suicide among adolescents is a critical public health issue globally. Early detection of suicidal tendencies can lead to timely intervention and potentially save lives. Traditional methods of assessment often rely on self-reporting or clinical interviews, which may not always be accessible. The SW1 challenge addresses this gap by exploring speech as a non-invasive and readily available indicator of mental health. We release the SW1 dataset which contains speech recordings from 600 adolescents aged 10-18 years. By focusing on speech generated from natural tasks, the challenge seeks to uncover patterns and markers that correlate with current suicide risk.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-11T08:03:41Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Wen Wu</name>
+    </author>
+    <author>
+      <name>Ziyun Cui</name>
+    </author>
+    <author>
+      <name>Chang Lei</name>
+    </author>
+    <author>
+      <name>Yinan Duan</name>
+    </author>
+    <author>
+      <name>Diyang Qu</name>
+    </author>
+    <author>
+      <name>Ji Wu</name>
+    </author>
+    <author>
+      <name>Bowen Zhou</name>
+    </author>
+    <author>
+      <name>Runsen Chen</name>
+    </author>
+    <author>
+      <name>Chao Zhang</name>
+    </author>
+    <arxiv:doi>10.21437/Interspeech.2025-124</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.21437/Interspeech.2025-124" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.19209v1</id>
+    <title>Context-Aware Deep Learning for Multi Modal Depression Detection</title>
+    <updated>2024-12-26T13:19:26Z</updated>
+    <link href="https://arxiv.org/abs/2412.19209v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.19209v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this study, we focus on automated approaches to detect depression from clinical interviews using multi-modal machine learning (ML). Our approach differentiates from other successful ML methods such as context-aware analysis through feature engineering and end-to-end deep neural networks for depression detection utilizing the Distress Analysis Interview Corpus. We propose a novel method that incorporates: (1) pre-trained Transformer combined with data augmentation based on topic modelling for textual data; and (2) deep 1D convolutional neural network (CNN) for acoustic feature modeling. The simulation results demonstrate the effectiveness of the proposed method for training multi-modal deep learning models. Our deep 1D CNN and Transformer models achieved state-of-the-art performance for audio and text modalities respectively. Combining them in a multi-modal framework also outperforms state-of-the-art for the combined setting. Code available at https://github.com/genandlam/multi-modal-depression-detection</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-26T13:19:26Z</published>
+    <arxiv:comment>Presented as an Oral at International Conference on Acoustics, Speech and Signal Processing 2019, United Kingdom</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Genevieve Lam</name>
+    </author>
+    <author>
+      <name>Huang Dongyan</name>
+    </author>
+    <author>
+      <name>Weisi Lin</name>
+    </author>
+    <arxiv:doi>10.1109/ICASSP.2019.8683027</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/ICASSP.2019.8683027" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.04142v1</id>
+    <title>Unified Pathological Speech Analysis with Prompt Tuning</title>
+    <updated>2024-11-05T06:47:26Z</updated>
+    <link href="https://arxiv.org/abs/2411.04142v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.04142v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Pathological speech analysis has been of interest in the detection of certain diseases like depression and Alzheimer's disease and attracts much interest from researchers. However, previous pathological speech analysis models are commonly designed for a specific disease while overlooking the connection between diseases, which may constrain performance and lower training efficiency. Instead of fine-tuning deep models for different tasks, prompt tuning is a much more efficient training paradigm. We thus propose a unified pathological speech analysis system for as many as three diseases with the prompt tuning technique. This system uses prompt tuning to adjust only a small part of the parameters to detect different diseases from speeches of possible patients. Our system leverages a pre-trained spoken language model and demonstrates strong performance across multiple disorders while only fine-tuning a fraction of the parameters. This efficient training approach leads to faster convergence and improved F1 scores by allowing knowledge to be shared across tasks. Our experiments on Alzheimer's disease, Depression, and Parkinson's disease show competitive results, highlighting the effectiveness of our method in pathological speech analysis.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-05T06:47:26Z</published>
+    <arxiv:comment>This work has been submitted to the IEEE for possible publication</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Fei Yang</name>
+    </author>
+    <author>
+      <name>Xuenan Xu</name>
+    </author>
+    <author>
+      <name>Mengyue Wu</name>
+    </author>
+    <author>
+      <name>Kai Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.00477v1</id>
+    <title>Multi Modal Information Fusion of Acoustic and Linguistic Data for Decoding Dairy Cow Vocalizations in Animal Welfare Assessment</title>
+    <updated>2024-11-01T09:48:30Z</updated>
+    <link href="https://arxiv.org/abs/2411.00477v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.00477v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Understanding animal vocalizations through multi-source data fusion is crucial for assessing emotional states and enhancing animal welfare in precision livestock farming. This study aims to decode dairy cow contact calls by employing multi-modal data fusion techniques, integrating transcription, semantic analysis, contextual and emotional assessment, and acoustic feature extraction. We utilized the Natural Language Processing model to transcribe audio recordings of cow vocalizations into written form. By fusing multiple acoustic features frequency, duration, and intensity with transcribed textual data, we developed a comprehensive representation of cow vocalizations. Utilizing data fusion within a custom-developed ontology, we categorized vocalizations into high frequency calls associated with distress or arousal, and low frequency calls linked to contentment or calmness. Analyzing the fused multi dimensional data, we identified anxiety related features indicative of emotional distress, including specific frequency measurements and sound spectrum results. Assessing the sentiment and acoustic features of vocalizations from 20 individual cows allowed us to determine differences in calling patterns and emotional states. Employing advanced machine learning algorithms, Random Forest, Support Vector Machine, and Recurrent Neural Networks, we effectively processed and fused multi-source data to classify cow vocalizations. These models were optimized to handle computational demands and data quality challenges inherent in practical farm environments. Our findings demonstrate the effectiveness of multi-source data fusion and intelligent processing techniques in animal welfare monitoring. This study represents a significant advancement in animal welfare assessment, highlighting the role of innovative fusion technologies in understanding and improving the emotional wellbeing of dairy cows.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-01T09:48:30Z</published>
+    <arxiv:comment>31 pages, 22 figures, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Bubacarr Jobarteh</name>
+    </author>
+    <author>
+      <name>Madalina Mincu</name>
+    </author>
+    <author>
+      <name>Gavojdian Dinu</name>
+    </author>
+    <author>
+      <name>Suresh Neethirajan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.19042v1</id>
+    <title>Probing mental health information in speech foundation models</title>
+    <updated>2024-09-27T17:38:34Z</updated>
+    <link href="https://arxiv.org/abs/2409.19042v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.19042v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Non-invasive methods for diagnosing mental health conditions, such as speech analysis, offer promising potential in modern medicine. Recent advancements in machine learning, particularly speech foundation models, have shown significant promise in detecting mental health states by capturing diverse features. This study investigates which pretext tasks in these models best transfer to mental health detection and examines how different model layers encode features relevant to mental health conditions. We also probed the optimal length of audio segments and the best pooling strategies to improve detection accuracy. Using the Callyope-GP and Androids datasets, we evaluated the models' effectiveness across different languages and speech tasks, aiming to enhance the generalizability of speech-based mental health diagnostics. Our approach achieved SOTA scores in depression detection on the Androids dataset.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-27T17:38:34Z</published>
+    <arxiv:comment>6 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Marc de Gennes</name>
+    </author>
+    <author>
+      <name>Adrien Lesage</name>
+    </author>
+    <author>
+      <name>Martin Denais</name>
+    </author>
+    <author>
+      <name>Xuan-Nga Cao</name>
+    </author>
+    <author>
+      <name>Simon Chang</name>
+    </author>
+    <author>
+      <name>Pierre Van Remoortere</name>
+    </author>
+    <author>
+      <name>Cyrille Dakhlia</name>
+    </author>
+    <author>
+      <name>Rachid Riad</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.14769v1</id>
+    <title>Language-Agnostic Analysis of Speech Depression Detection</title>
+    <updated>2024-09-23T07:35:56Z</updated>
+    <link href="https://arxiv.org/abs/2409.14769v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.14769v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The people with Major Depressive Disorder (MDD) exhibit the symptoms of tonal variations in their speech compared to the healthy counterparts. However, these tonal variations not only confine to the state of MDD but also on the language, which has unique tonal patterns. This work analyzes automatic speech-based depression detection across two languages, English and Malayalam, which exhibits distinctive prosodic and phonemic characteristics. We propose an approach that utilizes speech data collected along with self-reported labels from participants reading sentences from IViE corpus, in both English and Malayalam. The IViE corpus consists of five sets of sentences: simple sentences, WH-questions, questions without morphosyntactic markers, inversion questions and coordinations, that can naturally prompt speakers to speak in different tonal patterns. Convolutional Neural Networks (CNNs) are employed for detecting depression from speech. The CNN model is trained to identify acoustic features associated with depression in speech, focusing on both languages. The model's performance is evaluated on the collected dataset containing recordings from both depressed and non-depressed speakers, analyzing its effectiveness in detecting depression across the two languages. Our findings and collected data could contribute to the development of language-agnostic speech-based depression detection systems, thereby enhancing accessibility for diverse populations.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-23T07:35:56Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Sona Binu</name>
+    </author>
+    <author>
+      <name>Jismi Jose</name>
+    </author>
+    <author>
+      <name>Fathima Shimna K</name>
+    </author>
+    <author>
+      <name>Alino Luke Hans</name>
+    </author>
+    <author>
+      <name>Reni K. Cherian</name>
+    </author>
+    <author>
+      <name>Starlet Ben Alex</name>
+    </author>
+    <author>
+      <name>Priyanka Srivastava</name>
+    </author>
+    <author>
+      <name>Chiranjeevi Yarra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.05292v4</id>
+    <title>Mpox Narrative on Instagram: A Labeled Multilingual Dataset of Instagram Posts on Mpox for Sentiment, Hate Speech, and Anxiety Analysis</title>
+    <updated>2024-10-11T17:19:44Z</updated>
+    <link href="https://arxiv.org/abs/2409.05292v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.05292v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The world is currently experiencing an outbreak of mpox, which has been declared a Public Health Emergency of International Concern by WHO. No prior work related to social media mining has focused on the development of a dataset of Instagram posts about the mpox outbreak. The work presented in this paper aims to address this research gap and makes two scientific contributions to this field. First, it presents a multilingual dataset of 60,127 Instagram posts about mpox, published between July 23, 2022, and September 5, 2024. The dataset, available at https://dx.doi.org/10.21227/7fvc-y093, contains Instagram posts about mpox in 52 languages. For each of these posts, the Post ID, Post Description, Date of publication, language, and translated version of the post (translation to English was performed using the Google Translate API) are presented as separate attributes in the dataset. After developing this dataset, sentiment analysis, hate speech detection, and anxiety or stress detection were performed. This process included classifying each post into (i) one of the sentiment classes, i.e., fear, surprise, joy, sadness, anger, disgust, or neutral, (ii) hate or not hate, and (iii) anxiety/stress detected or no anxiety/stress detected. These results are presented as separate attributes in the dataset. Second, this paper presents the results of performing sentiment analysis, hate speech analysis, and anxiety or stress analysis. The variation of the sentiment classes - fear, surprise, joy, sadness, anger, disgust, and neutral were observed to be 27.95%, 2.57%, 8.69%, 5.94%, 2.69%, 1.53%, and 50.64%, respectively. In terms of hate speech detection, 95.75% of the posts did not contain hate and the remaining 4.25% of the posts contained hate. Finally, 72.05% of the posts did not indicate any anxiety/stress, and the remaining 27.95% of the posts represented some form of anxiety/stress.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-09T03:00:53Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Nirmalya Thakur</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.16000v1</id>
+    <title>Predicting Individual Depression Symptoms from Acoustic Features During Speech</title>
+    <updated>2024-06-23T03:26:47Z</updated>
+    <link href="https://arxiv.org/abs/2406.16000v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.16000v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Current automatic depression detection systems provide predictions directly without relying on the individual symptoms/items of depression as denoted in the clinical depression rating scales. In contrast, clinicians assess each item in the depression rating scale in a clinical setting, thus implicitly providing a more detailed rationale for a depression diagnosis. In this work, we make a first step towards using the acoustic features of speech to predict individual items of the depression rating scale before obtaining the final depression prediction. For this, we use convolutional (CNN) and recurrent (long short-term memory (LSTM)) neural networks. We consider different approaches to learning the temporal context of speech. Further, we analyze two variants of voting schemes for individual item prediction and depression detection. We also include an animated visualization that shows an example of item prediction over time as the speech progresses.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-23T03:26:47Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Sebastian Rodriguez</name>
+    </author>
+    <author>
+      <name>Sri Harsha Dumpala</name>
+    </author>
+    <author>
+      <name>Katerina Dikaios</name>
+    </author>
+    <author>
+      <name>Sheri Rempel</name>
+    </author>
+    <author>
+      <name>Rudolf Uher</name>
+    </author>
+    <author>
+      <name>Sageev Oore</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.06774v1</id>
+    <title>ComFeAT: Combination of Neural and Spectral Features for Improved Depression Detection</title>
+    <updated>2024-06-10T20:23:04Z</updated>
+    <link href="https://arxiv.org/abs/2406.06774v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.06774v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this work, we focus on the detection of depression through speech analysis. Previous research has widely explored features extracted from pre-trained models (PTMs) primarily trained for paralinguistic tasks. Although these features have led to sufficient advances in speech-based depression detection, their performance declines in real-world settings. To address this, in this paper, we introduce ComFeAT, an application that employs a CNN model trained on a combination of features extracted from PTMs, a.k.a. neural features and spectral features to enhance depression detection. Spectral features are robust to domain variations, but, they are not as good as neural features in performance, suprisingly, combining them shows complementary behavior and improves over both neural and spectral features individually. The proposed method also improves over previous state-of-the-art (SOTA) works on E-DAIC benchmark.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-10T20:23:04Z</published>
+    <arxiv:comment>Accepted to INTERSPEECH 2024 Show &amp; Tell Demonstrations</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Orchid Chetia Phukan</name>
+    </author>
+    <author>
+      <name>Sarthak Jain</name>
+    </author>
+    <author>
+      <name>Shubham Singh</name>
+    </author>
+    <author>
+      <name>Muskaan Singh</name>
+    </author>
+    <author>
+      <name>Arun Balaji Buduru</name>
+    </author>
+    <author>
+      <name>Rajesh Sharma</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.03138v4</id>
+    <title>An interpretable speech foundation model for depression detection by revealing prediction-relevant acoustic features from long speech</title>
+    <updated>2026-03-25T11:26:29Z</updated>
+    <link href="https://arxiv.org/abs/2406.03138v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.03138v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech-based depression detection tools could aid early screening. Here, we propose an interpretable speech foundation model approach to enhance the clinical applicability of such tools. We introduce a speech-level Audio Spectrogram Transformer (AST) to detect depression using long-duration speech instead of short segments, along with a novel interpretation method that reveals prediction-relevant acoustic features for clinician interpretation. Our experiments show the proposed model outperforms a segment-level AST, highlighting the impact of segment-level labelling noise and the advantage of leveraging longer speech duration for more reliable depression detection. Through interpretation, we observe our model identifies reduced loudness and F0 as relevant depression signals, aligning with documented clinical findings. This interpretability supports a responsible AI approach for speech-based depression detection, rendering such tools more clinically applicable.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-05T10:47:00Z</published>
+    <arxiv:comment>5 pages, 3 figures. arXiv admin note: substantial text overlap with arXiv:2309.13476</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Qingkun Deng</name>
+    </author>
+    <author>
+      <name>Saturnino Luz</name>
+    </author>
+    <author>
+      <name>Sofia de la Fuente Garcia</name>
+    </author>
+    <arxiv:doi>10.21437/Interspeech.2025-1968</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.21437/Interspeech.2025-1968" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.03510v2</id>
+    <title>Speech-based Clinical Depression Screening: An Empirical Study</title>
+    <updated>2024-06-12T08:13:04Z</updated>
+    <link href="https://arxiv.org/abs/2406.03510v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.03510v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This study investigates the utility of speech signals for AI-based depression screening across varied interaction scenarios, including psychiatric interviews, chatbot conversations, and text readings. Participants include depressed patients recruited from the outpatient clinics of Peking University Sixth Hospital and control group members from the community, all diagnosed by psychiatrists following standardized diagnostic protocols. We extracted acoustic and deep speech features from each participant's segmented recordings. Classifications were made using neural networks or SVMs, with aggregated clip outcomes determining final assessments. Our analysis across interaction scenarios, speech processing techniques, and feature types confirms speech as a crucial marker for depression screening. Specifically, human-computer interaction matches clinical interview efficacy, surpassing reading tasks. Segment duration and quantity significantly affect model performance, with deep speech features substantially outperforming traditional acoustic features.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-05T09:43:54Z</published>
+    <arxiv:comment>5 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Yangbin Chen</name>
+    </author>
+    <author>
+      <name>Chenyang Xu</name>
+    </author>
+    <author>
+      <name>Chunfeng Liang</name>
+    </author>
+    <author>
+      <name>Yanbao Tao</name>
+    </author>
+    <author>
+      <name>Chuan Shi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.12132v3</id>
+    <title>Non-Invasive Suicide Risk Prediction Through Speech Analysis</title>
+    <updated>2024-10-30T15:08:51Z</updated>
+    <link href="https://arxiv.org/abs/2404.12132v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.12132v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The delayed access to specialized psychiatric assessments and care for patients at risk of suicidal tendencies in emergency departments creates a notable gap in timely intervention, hindering the provision of adequate mental health support during critical situations. To address this, we present a non-invasive, speech-based approach for automatic suicide risk assessment. For our study, we collected a novel speech recording dataset from $20$ patients. We extract three sets of features, including wav2vec, interpretable speech and acoustic features, and deep learning-based spectral representations. We proceed by conducting a binary classification to assess suicide risk in a leave-one-subject-out fashion. Our most effective speech model achieves a balanced accuracy of $66.2\,\%$. Moreover, we show that integrating our speech model with a series of patients' metadata, such as the history of suicide attempts or access to firearms, improves the overall result. The metadata integration yields a balanced accuracy of $94.4\,\%$, marking an absolute improvement of $28.2\,\%$, demonstrating the efficacy of our proposed approaches for automatic suicide risk assessment in emergency medicine.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-04-18T12:33:57Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Shahin Amiriparian</name>
+    </author>
+    <author>
+      <name>Maurice Gerczuk</name>
+    </author>
+    <author>
+      <name>Justina Lutz</name>
+    </author>
+    <author>
+      <name>Wolfgang Strube</name>
+    </author>
+    <author>
+      <name>Irina Papazova</name>
+    </author>
+    <author>
+      <name>Alkomiet Hasan</name>
+    </author>
+    <author>
+      <name>Alexander Kathan</name>
+    </author>
+    <author>
+      <name>Björn W. Schuller</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.12478v1</id>
+    <title>Attention-Based Acoustic Feature Fusion Network for Depression Detection</title>
+    <updated>2023-08-24T00:31:51Z</updated>
+    <link href="https://arxiv.org/abs/2308.12478v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.12478v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Depression, a common mental disorder, significantly influences individuals and imposes considerable societal impacts. The complexity and heterogeneity of the disorder necessitate prompt and effective detection, which nonetheless, poses a difficult challenge. This situation highlights an urgent requirement for improved detection methods. Exploiting auditory data through advanced machine learning paradigms presents promising research directions. Yet, existing techniques mainly rely on single-dimensional feature models, potentially neglecting the abundance of information hidden in various speech characteristics. To rectify this, we present the novel Attention-Based Acoustic Feature Fusion Network (ABAFnet) for depression detection. ABAFnet combines four different acoustic features into a comprehensive deep learning model, thereby effectively integrating and blending multi-tiered features. We present a novel weight adjustment module for late fusion that boosts performance by efficaciously synthesizing these features. The effectiveness of our approach is confirmed via extensive validation on two clinical speech databases, CNRAC and CS-NRAC, thereby outperforming previous methods in depression detection and subtype classification. Further in-depth analysis confirms the key role of each feature and highlights the importance of MFCCrelated features in speech-based depression detection.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-24T00:31:51Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Xiao Xu</name>
+    </author>
+    <author>
+      <name>Yang Wang</name>
+    </author>
+    <author>
+      <name>Xinru Wei</name>
+    </author>
+    <author>
+      <name>Fei Wang</name>
+    </author>
+    <author>
+      <name>Xizhe Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2302.09214v1</id>
+    <title>Cost-effective Models for Detecting Depression from Speech</title>
+    <updated>2023-02-18T02:46:21Z</updated>
+    <link href="https://arxiv.org/abs/2302.09214v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2302.09214v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Depression is the most common psychological disorder and is considered as a leading cause of disability and suicide worldwide. An automated system capable of detecting signs of depression in human speech can contribute to ensuring timely and effective mental health care for individuals suffering from the disorder. Developing such automated system requires accurate machine learning models, capable of capturing signs of depression. However, state-of-the-art models based on deep acoustic representations require abundant data, meticulous selection of features, and rigorous training; the procedure involves enormous computational resources. In this work, we explore the effectiveness of two different acoustic feature groups - conventional hand-curated and deep representation features, for predicting the severity of depression from speech. We explore the relevance of possible contributing factors to the models' performance, including gender of the individual, severity of the disorder, content and length of speech. Our findings suggest that models trained on conventional acoustic features perform equally well or better than the ones trained on deep representation features at significantly lower computational cost, irrespective of other factors, e.g. content and length of speech, gender of the speaker and severity of the disorder. This makes such models a better fit for deployment where availability of computational resources is restricted, such as real time depression monitoring applications in smart devices.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-02-18T02:46:21Z</published>
+    <arxiv:comment>Accepted to ICMLA 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Mashrura Tasnim</name>
+    </author>
+    <author>
+      <name>Jekaterina Novikova</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2205.00111v2</id>
+    <title>Privacy Sensitive Speech Analysis Using Federated Learning to Assess Depression</title>
+    <updated>2022-05-20T17:17:45Z</updated>
+    <link href="https://arxiv.org/abs/2205.00111v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.00111v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent studies have used speech signals to assess depression. However, speech features can lead to serious privacy concerns. To address these concerns, prior work has used privacy-preserving speech features. However, using a subset of features can lead to information loss and, consequently, non-optimal model performance. Furthermore, prior work relies on a centralized approach to support continuous model updates, posing privacy risks. This paper proposes to use Federated Learning (FL) to enable decentralized, privacy-preserving speech analysis to assess depression. Using an existing dataset (DAIC-WOZ), we show that FL models enable a robust assessment of depression with only 4--6% accuracy loss compared to a centralized approach. These models also outperform prior work using the same dataset. Furthermore, the FL models have short inference latency and small memory footprints while being energy-efficient. These models, thus, can be deployed on mobile devices for real-time, continuous, and privacy-preserving depression assessment at scale.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-04-30T00:01:24Z</published>
+    <arxiv:comment>5 pages, 4 figures. Published in IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP 2022)</arxiv:comment>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Suhas BN</name>
+    </author>
+    <author>
+      <name>Saeed Abdullah</name>
+    </author>
+    <arxiv:doi>10.1109/ICASSP43922.2022.9746827</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/ICASSP43922.2022.9746827" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2202.05912v1</id>
+    <title>FrAUG: A Frame Rate Based Data Augmentation Method for Depression Detection from Speech Signals</title>
+    <updated>2022-02-11T21:37:22Z</updated>
+    <link href="https://arxiv.org/abs/2202.05912v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2202.05912v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, a data augmentation method is proposed for depression detection from speech signals. Samples for data augmentation were created by changing the frame-width and the frame-shift parameters during the feature extraction process. Unlike other data augmentation methods (such as VTLP, pitch perturbation, or speed perturbation), the proposed method does not explicitly change acoustic parameters but rather the time-frequency resolution of frame-level features. The proposed method was evaluated using two different datasets, models, and input acoustic features. For the DAIC-WOZ (English) dataset when using the DepAudioNet model and mel-Spectrograms as input, the proposed method resulted in an improvement of 5.97% (validation) and 25.13% (test) when compared to the baseline. The improvements for the CONVERGE (Mandarin) dataset when using the x-vector embeddings with CNN as the backend and MFCCs as input features were 9.32% (validation) and 12.99% (test). Baseline systems do not incorporate any data augmentation. Further, the proposed method outperformed commonly used data-augmentation methods such as noise augmentation, VTLP, Speed, and Pitch Perturbation. All improvements were statistically significant.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-02-11T21:37:22Z</published>
+    <arxiv:comment>Accepted to ICASSP 2022. copyright 2022 IEEE. Personal use of this material is permitted</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Vijay Ravi</name>
+    </author>
+    <author>
+      <name>Jinhan Wang</name>
+    </author>
+    <author>
+      <name>Jonathan Flint</name>
+    </author>
+    <author>
+      <name>Abeer Alwan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2201.09130v2</id>
+    <title>Artificial Intelligence for Suicide Assessment using Audiovisual Cues: A Review</title>
+    <updated>2022-11-03T13:08:18Z</updated>
+    <link href="https://arxiv.org/abs/2201.09130v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2201.09130v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Death by suicide is the seventh leading death cause worldwide. The recent advancement in Artificial Intelligence (AI), specifically AI applications in image and voice processing, has created a promising opportunity to revolutionize suicide risk assessment. Subsequently, we have witnessed fast-growing literature of research that applies AI to extract audiovisual non-verbal cues for mental illness assessment. However, the majority of the recent works focus on depression, despite the evident difference between depression symptoms and suicidal behavior and non-verbal cues. This paper reviews recent works that study suicide ideation and suicide behavior detection through audiovisual feature analysis, mainly suicidal voice/speech acoustic features analysis and suicidal visual cues. Automatic suicide assessment is a promising research direction that is still in the early stages. Accordingly, there is a lack of large datasets that can be used to train machine learning and deep learning models proven to be effective in other, similar tasks.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-01-22T21:17:19Z</published>
+    <arxiv:comment>Manuscript submitted to Arificial Intelligence Reviews (2022)</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Sahraoui Dhelim</name>
+    </author>
+    <author>
+      <name>Liming Chen</name>
+    </author>
+    <author>
+      <name>Huansheng Ning</name>
+    </author>
+    <author>
+      <name>Chris Nugent</name>
+    </author>
+    <arxiv:doi>10.1007/s10462-022-10290-6</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/s10462-022-10290-6" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2108.00279v1</id>
+    <title>A Psychologically Informed Part-of-Speech Analysis of Depression in Social Media</title>
+    <updated>2021-07-31T16:23:22Z</updated>
+    <link href="https://arxiv.org/abs/2108.00279v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2108.00279v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this work, we provide an extensive part-of-speech analysis of the discourse of social media users with depression. Research in psychology revealed that depressed users tend to be self-focused, more preoccupied with themselves and ruminate more about their lives and emotions. Our work aims to make use of large-scale datasets and computational methods for a quantitative exploration of discourse. We use the publicly available depression dataset from the Early Risk Prediction on the Internet Workshop (eRisk) 2018 and extract part-of-speech features and several indices based on them. Our results reveal statistically significant differences between the depressed and non-depressed individuals confirming findings from the existing psychology literature. Our work provides insights regarding the way in which depressed individuals are expressing themselves on social media platforms, allowing for better-informed computational models to help monitor and prevent mental illnesses.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-07-31T16:23:22Z</published>
+    <arxiv:comment>Accepted to RANLP 2021</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ana-Maria Bucur</name>
+    </author>
+    <author>
+      <name>Ioana R. Podină</name>
+    </author>
+    <author>
+      <name>Liviu P. Dinu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2106.01684v1</id>
+    <title>Language Independent Speech Emotion and Non-invasive Early Detection of Neurocognitive Disorder</title>
+    <updated>2021-06-03T08:38:22Z</updated>
+    <link href="https://arxiv.org/abs/2106.01684v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2106.01684v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Emotions(like fear,anger,sadness,happiness etc.) are the fundamental features of human behavior and governs his/her mental health. The subtlety of emotional fluctuations can be examined through perturbation in conversations or speech. Analysis of emotional state of a person from acoustical features of speech signal leads to discovery of vital cues determining his or her mental health. Hence, it's an important field of research in the area of Human Computer Interaction(HCI). In a recent work we have shown that how the contrast in Hurst-Exponent calculated from the non-stationary and nonlinear aspects of "angry" and "sad" speech(spoken in English language) recordings in the Toronto-Emotional-Speech-Set(TESS) can be used for early detection and diagnosis of Alzheimer's Disease. In this work we have extended the work and extracted Hurst-exponent for the speech-signals of similar emotions but spoken in German language. It has been observed that the Hurst-exponent efficiently segregates the contrasting emotions of "anger" and "sadness" in the speech spoken in German language, in similar fashion it has been doing for English speech. Hence it can be concluded that the Hurst-exponent can differentiate among speech spoken out of different emotions in language-independent manner. We propose algorithm for a language-independent application for early non-invasive detection of various severe neurocognitive-disorders like Alzheimer's Disease, MND(motor-neuron-disorder), ASD(autism-spectrum-disorder), depression, suicidal-tendency etc. which is not possible with the state of the art medical science.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-06-03T08:38:22Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Susmita Bhaduri</name>
+    </author>
+    <author>
+      <name>Anirban Bhaduri</name>
+    </author>
+    <author>
+      <name>Rajib Sarkar</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2011.06739v3</id>
+    <title>Generalized Dilated CNN Models for Depression Detection Using Inverted Vocal Tract Variables</title>
+    <updated>2021-04-09T04:29:46Z</updated>
+    <link href="https://arxiv.org/abs/2011.06739v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2011.06739v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Depression detection using vocal biomarkers is a highly researched area. Articulatory coordination features (ACFs) are developed based on the changes in neuromotor coordination due to psychomotor slowing, a key feature of Major Depressive Disorder. However findings of existing studies are mostly validated on a single database which limits the generalizability of results. Variability across different depression databases adversely affects the results in cross corpus evaluations (CCEs). We propose to develop a generalized classifier for depression detection using a dilated Convolutional Neural Network which is trained on ACFs extracted from two depression databases. We show that ACFs derived from Vocal Tract Variables (TVs) show promise as a robust set of features for depression detection. Our model achieves relative accuracy improvements of ~10% compared to CCEs performed on models trained on a single database. We extend the study to show that fusing TVs and Mel-Frequency Cepstral Coefficients can further improve the performance of this classifier.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-11-13T03:12:36Z</published>
+    <arxiv:comment>5 pages, Submitted to Interspeech 2021</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Nadee Seneviratne</name>
+    </author>
+    <author>
+      <name>Carol Espy-Wilson</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2010.16201v2</id>
+    <title>AudVowelConsNet: A Phoneme-Level Based Deep CNN Architecture for Clinical Depression Diagnosis</title>
+    <updated>2020-11-04T11:59:01Z</updated>
+    <link href="https://arxiv.org/abs/2010.16201v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2010.16201v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Depression is a common and serious mood disorder that negatively affects the patient's capacity of functioning normally in daily tasks. Speech is proven to be a vigorous tool in depression diagnosis. Research in psychiatry concentrated on performing fine-grained analysis on word-level speech components contributing to the manifestation of depression in speech and revealed significant variations at the phoneme-level in depressed speech. On the other hand, research in Machine Learning-based automatic recognition of depression from speech focused on the exploration of various acoustic features for the detection of depression and its severity level. Few have focused on incorporating phoneme-level speech components in automatic assessment systems. In this paper, we propose an Artificial Intelligence (AI) based application for clinical depression recognition and assessment from speech. We investigate the acoustic characteristics of phoneme units, specifically vowels and consonants for depression recognition via Deep Learning. We present and compare three spectrogram-based Deep Neural Network architectures, trained on phoneme consonant and vowel units and their fusion respectively. Our experiments show that the deep learned consonant-based acoustic characteristics lead to better recognition results than vowel-based ones. The fusion of vowel and consonant speech characteristics through a deep network significantly outperforms the single space networks as well as the state-of-art deep learning approaches on the DAIC-WOZ database.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-10-30T11:36:26Z</published>
+    <arxiv:comment>12 pages, 8 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Muhammad Muzammel</name>
+    </author>
+    <author>
+      <name>Hanan Salam</name>
+    </author>
+    <author>
+      <name>Yann Hoffmann</name>
+    </author>
+    <author>
+      <name>Mohamed Chetouani</name>
+    </author>
+    <author>
+      <name>Alice Othmani</name>
+    </author>
+    <arxiv:doi>10.1016/j.mlwa.2020.100005</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.mlwa.2020.100005" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2005.00096v2</id>
+    <title>An Early Study on Intelligent Analysis of Speech under COVID-19: Severity, Sleep Quality, Fatigue, and Anxiety</title>
+    <updated>2020-05-14T10:00:08Z</updated>
+    <link href="https://arxiv.org/abs/2005.00096v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2005.00096v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The COVID-19 outbreak was announced as a global pandemic by the World Health Organisation in March 2020 and has affected a growing number of people in the past few weeks. In this context, advanced artificial intelligence techniques are brought to the fore in responding to fight against and reduce the impact of this global health crisis. In this study, we focus on developing some potential use-cases of intelligent speech analysis for COVID-19 diagnosed patients. In particular, by analysing speech recordings from these patients, we construct audio-only-based models to automatically categorise the health state of patients from four aspects, including the severity of illness, sleep quality, fatigue, and anxiety. For this purpose, two established acoustic feature sets and support vector machines are utilised. Our experiments show that an average accuracy of .69 obtained estimating the severity of illness, which is derived from the number of days in hospitalisation. We hope that this study can foster an extremely fast, low-cost, and convenient way to automatically detect the COVID-19 disease.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-04-30T20:47:05Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Jing Han</name>
+    </author>
+    <author>
+      <name>Kun Qian</name>
+    </author>
+    <author>
+      <name>Meishu Song</name>
+    </author>
+    <author>
+      <name>Zijiang Yang</name>
+    </author>
+    <author>
+      <name>Zhao Ren</name>
+    </author>
+    <author>
+      <name>Shuo Liu</name>
+    </author>
+    <author>
+      <name>Juan Liu</name>
+    </author>
+    <author>
+      <name>Huaiyuan Zheng</name>
+    </author>
+    <author>
+      <name>Wei Ji</name>
+    </author>
+    <author>
+      <name>Tomoya Koike</name>
+    </author>
+    <author>
+      <name>Xiao Li</name>
+    </author>
+    <author>
+      <name>Zixing Zhang</name>
+    </author>
+    <author>
+      <name>Yoshiharu Yamamoto</name>
+    </author>
+    <author>
+      <name>Björn W. Schuller</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1910.05115v2</id>
+    <title>Identifying Mood Episodes Using Dialogue Features from Clinical Interviews</title>
+    <updated>2022-03-24T21:01:05Z</updated>
+    <link href="https://arxiv.org/abs/1910.05115v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1910.05115v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Bipolar disorder, a severe chronic mental illness characterized by pathological mood swings from depression to mania, requires ongoing symptom severity tracking to both guide and measure treatments that are critical for maintaining long-term health. Mental health professionals assess symptom severity through semi-structured clinical interviews. During these interviews, they observe their patients' spoken behaviors, including both what the patients say and how they say it. In this work, we move beyond acoustic and lexical information, investigating how higher-level interactive patterns also change during mood episodes. We then perform a secondary analysis, asking if these interactive patterns, measured through dialogue features, can be used in conjunction with acoustic features to automatically recognize mood episodes. Our results show that it is beneficial to consider dialogue features when analyzing and building automated systems for predicting and monitoring mood.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-09-29T01:11:53Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Zakaria Aldeneh</name>
+    </author>
+    <author>
+      <name>Mimansa Jaiswal</name>
+    </author>
+    <author>
+      <name>Michael Picheny</name>
+    </author>
+    <author>
+      <name>Melvin McInnis</name>
+    </author>
+    <author>
+      <name>Emily Mower Provost</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1909.07208v2</id>
+    <title>MFCC-based Recurrent Neural Network for Automatic Clinical Depression Recognition and Assessment from Speech</title>
+    <updated>2020-03-12T13:09:24Z</updated>
+    <link href="https://arxiv.org/abs/1909.07208v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1909.07208v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Clinical depression or Major Depressive Disorder (MDD) is a common and serious medical illness. In this paper, a deep recurrent neural network-based framework is presented to detect depression and to predict its severity level from speech. Low-level and high-level audio features are extracted from audio recordings to predict the 24 scores of the Patient Health Questionnaire and the binary class of depression diagnosis. To overcome the problem of the small size of Speech Depression Recognition (SDR) datasets, expanding training labels and transferred features are considered. The proposed approach outperforms the state-of-art approaches on the DAIC-WOZ database with an overall accuracy of 76.27% and a root mean square error of 0.4 in assessing depression, while a root mean square error of 0.168 is achieved in predicting the depression severity levels. The proposed framework has several advantages (fastness, non-invasiveness, and non-intrusion), which makes it convenient for real-time applications. The performances of the proposed approach are evaluated under a multi-modal and a multi-features experiments. MFCC based high-level features hold relevant information related to depression. Yet, adding visual action units and different other acoustic features further boosts the classification results by 20% and 10% to reach an accuracy of 95.6% and 86%, respectively. Considering visual-facial modality needs to be carefully studied as it sparks patient privacy concerns while adding more acoustic features increases the computation time.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-09-16T14:03:01Z</published>
+    <arxiv:comment>14 pages, 7 figures, 9 tables</arxiv:comment>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Emna Rejaibi</name>
+    </author>
+    <author>
+      <name>Ali Komaty</name>
+    </author>
+    <author>
+      <name>Fabrice Meriaudeau</name>
+    </author>
+    <author>
+      <name>Said Agrebi</name>
+    </author>
+    <author>
+      <name>Alice Othmani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1606.04518v1</id>
+    <title>Sparsely Connected and Disjointly Trained Deep Neural Networks for Low Resource Behavioral Annotation: Acoustic Classification in Couples' Therapy</title>
+    <updated>2016-06-14T19:32:34Z</updated>
+    <link href="https://arxiv.org/abs/1606.04518v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1606.04518v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Observational studies are based on accurate assessment of human state. A behavior recognition system that models interlocutors' state in real-time can significantly aid the mental health domain. However, behavior recognition from speech remains a challenging task since it is difficult to find generalizable and representative features because of noisy and high-dimensional data, especially when data is limited and annotated coarsely and subjectively. Deep Neural Networks (DNN) have shown promise in a wide range of machine learning tasks, but for Behavioral Signal Processing (BSP) tasks their application has been constrained due to limited quantity of data. We propose a Sparsely-Connected and Disjointly-Trained DNN (SD-DNN) framework to deal with limited data. First, we break the acoustic feature set into subsets and train multiple distinct classifiers. Then, the hidden layers of these classifiers become parts of a deeper network that integrates all feature streams. The overall system allows for full connectivity while limiting the number of parameters trained at any time and allows convergence possible with even limited data. We present results on multiple behavior codes in the couples' therapy domain and demonstrate the benefits in behavior classification accuracy. We also show the viability of this system towards live behavior annotations.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-06-14T19:32:34Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Haoqi Li</name>
+    </author>
+    <author>
+      <name>Brian Baucom</name>
+    </author>
+    <author>
+      <name>Panayiotis Georgiou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1606.02231v1</id>
+    <title>Emotional Intensity analysis in Bipolar subjects</title>
+    <updated>2016-06-07T17:44:44Z</updated>
+    <link href="https://arxiv.org/abs/1606.02231v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1606.02231v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The massive availability of digital repositories of human thought opens radical novel way of studying the human mind. Natural language processing tools and computational models have evolved such that many mental conditions are predicted by analysing speech. Transcription of interviews and discourses are analyzed using syntactic, grammatical or sentiment analysis to infer the mental state. Here we set to investigate if classification of Bipolar and control subjects is possible. We develop the Emotion Intensity Index based on the Dictionary of Affect, and find that subjects categories are distinguishable. Using classical classification techniques we get more than 75\% of labeling performance. These results sumed to previous studies show that current automated speech analysis is capable of identifying altered mental states towards a quantitative psychiatry.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-06-07T17:44:44Z</published>
+    <arxiv:comment>Presented at MLINI-2015 workshop, 2015 (arXiv:cs/0101200)</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Facundo Carrillo</name>
+    </author>
+    <author>
+      <name>Natalia Mota</name>
+    </author>
+    <author>
+      <name>Mauro Copelli</name>
+    </author>
+    <author>
+      <name>Sidarta Ribeiro</name>
+    </author>
+    <author>
+      <name>Mariano Sigman</name>
+    </author>
+    <author>
+      <name>Guillermo Cecchi</name>
+    </author>
+    <author>
+      <name>Diego Fernandez Slezak</name>
+    </author>
+  </entry>
+</feed>

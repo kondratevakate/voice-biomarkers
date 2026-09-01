@@ -1,0 +1,291 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/fSqkYeB6MAWUB1k78W65poh9jp0</id>
+  <title>arXiv Query: search_query=(abs:"voice biomarker" OR abs:"vocal biomarker" OR abs:"speech biomarker" OR abs:"acoustic biomarker" OR abs:"voice-based digital biomarker" OR abs:"speech-based digital biomarker" OR abs:"speech analysis" OR abs:"acoustic features" OR abs:"pathological speech") AND (abs:"heart failure" OR abs:cardiovascular OR abs:diabetes OR abs:frailty OR abs:"sleep apnea")&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-09-01T15:19:34Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(abs:%22voice+biomarker%22+OR+(abs:%22vocal+biomarker%22+OR+(abs:%22speech+biomarker%22+OR+(abs:%22acoustic+biomarker%22+OR+(abs:%22voice-based+digital+biomarker%22+OR+(abs:%22speech-based+digital+biomarker%22+OR+(abs:%22speech+analysis%22+OR+(abs:%22acoustic+features%22+OR+abs:%22pathological+speech%22))))))))+AND+(abs:%22heart+failure%22+OR+(abs:cardiovascular+OR+(abs:diabetes+OR+(abs:frailty+OR+abs:%22sleep+apnea%22))))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>9</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2604.00308v1</id>
+    <title>Vocal Prognostic Digital Biomarkers in Monitoring Chronic Heart Failure: A Longitudinal Observational Study</title>
+    <updated>2026-03-31T23:08:43Z</updated>
+    <link href="https://arxiv.org/abs/2604.00308v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.00308v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Objective: This study aimed to evaluate which voice features can predict health deterioration in patients with chronic HF.
+  Background: Heart failure (HF) is a chronic condition with progressive deterioration and acute decompensations, often requiring hospitalization and imposing substantial healthcare and economic burdens. Current standard-of-care (SoC) home monitoring, such as weight tracking, lacks predictive accuracy and requires high patient engagement. Voice is a promising non-invasive biomarker, though prior studies have mainly focused on acute HF stages.
+  Methods: In a 2-month longitudinal study, 32 patients with HF collected daily voice recordings and SoC measures of weight and blood pressure at home, with biweekly questionnaires for health status. Acoustic analysis generated detailed vowel and speech features. Time-series features were extracted from aggregated lookback windows (e.g., 7 days) to predict next-day health status. Explainable machine learning with nested cross-validation identified top vocal biomarkers, and a case study illustrated model application.
+  Results: A total of 21,863 recordings were analyzed. Acoustic vowel features showed strong correlations with health status. Time-series voice features within the lookback window outperformed corresponding standard care measures, achieving peak sensitivity and specificity of 0.826 and 0.782 versus 0.783 and 0.567 for SoC metrics. Key prognostic voice features identifying deterioration included delayed energy shift, low energy variability, and higher shimmer variability in vowels, along with reduced speaking and articulation rate, lower phonation ratio, decreased voice quality, and increased formant variability in speech.
+  Conclusion: Voice-based monitoring offers a non-invasive approach to detect early health changes in chronic HF, supporting proactive and personalized care.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-31T23:08:43Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Fan Wu</name>
+    </author>
+    <author>
+      <name>Matthias P. Nägele</name>
+    </author>
+    <author>
+      <name>Daryush D. Mehta</name>
+    </author>
+    <author>
+      <name>Elgar Fleisch</name>
+    </author>
+    <author>
+      <name>Frank Ruschitzka</name>
+    </author>
+    <author>
+      <name>Andreas J. Flammer</name>
+    </author>
+    <author>
+      <name>Filipe Barata</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.19674v2</id>
+    <title>Continuous Telemonitoring of Heart Failure using Personalised Speech Dynamics</title>
+    <updated>2026-02-25T01:57:23Z</updated>
+    <link href="https://arxiv.org/abs/2602.19674v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.19674v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Remote monitoring of heart failure (HF) via speech signals provides a non-invasive and cost-effective solution for long-term patient management. However, substantial inter-individual heterogeneity in vocal characteristics often limits the accuracy of traditional cross-sectional classification models. To address this, we propose a Longitudinal Intra-Patient Tracking (LIPT) scheme designed to capture the trajectory of relative symptomatic changes within individuals. Central to this framework is a Personalised Sequential Encoder (PSE), which transforms longitudinal speech recordings into context-aware latent representations. By incorporating historical data at each timestamp, the PSE facilitates a holistic assessment of the clinical trajectory rather than modelling discrete visits independently. Experimental results from a cohort of 225 patients demonstrate that the LIPT paradigm significantly outperforms the classic cross-sectional approaches, achieving a recognition accuracy of 99.7% for clinical status transitions. The model's high sensitivity was further corroborated by additional follow-up data, confirming its efficacy in predicting HF deterioration and its potential to secure patient safety in remote, home-based settings. Furthermore, this work addresses the gap in existing literature by providing a comprehensive analysis of different speech task designs and acoustic features. Taken together, the superior performance of the LIPT framework and PSE architecture validates their readiness for integration into long-term telemonitoring systems, offering a scalable solution for remote heart failure management.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-23T10:19:17Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Yue Pan</name>
+    </author>
+    <author>
+      <name>Xingyao Wang</name>
+    </author>
+    <author>
+      <name>Hanyue Zhang</name>
+    </author>
+    <author>
+      <name>Liwei Liu</name>
+    </author>
+    <author>
+      <name>Changxin Li</name>
+    </author>
+    <author>
+      <name>Gang Yang</name>
+    </author>
+    <author>
+      <name>Rong Sheng</name>
+    </author>
+    <author>
+      <name>Yili Xia</name>
+    </author>
+    <author>
+      <name>Ming Chu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.19750v1</id>
+    <title>Cuffless Blood Pressure Prediction from Speech Sentences using Deep Learning Methods</title>
+    <updated>2025-09-24T04:05:22Z</updated>
+    <link href="https://arxiv.org/abs/2509.19750v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.19750v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This research presents a novel method for noninvasive arterial blood pressure ABP prediction using speech signals employing a BERT based regression model Arterial blood pressure is a vital indicator of cardiovascular health and accurate monitoring is essential in preventing hypertension related complications Traditional cuff based methods often yield inconsistent results due to factors like whitecoat and masked hypertension Our approach leverages the acoustic characteristics of speech capturing voice features to establish correlations with blood pressure levels Utilizing advanced deep learning techniques we analyze speech signals to extract relevant patterns enabling real time monitoring without the discomfort of conventional methods In our study we employed a dataset comprising recordings from 95 participants ensuring diverse representation The BERT model was fine tuned on extracted features from speech leading to impressive performance metrics achieving a mean absolute error MAE of 136 mmHg for systolic blood pressure SBP and 124 mmHg for diastolic blood pressure DBP with R scores of 099 and 094 respectively These results indicate the models robustness in accurately predicting blood pressure levels Furthermore the training and validation loss analysis demonstrates effective learning and minimal overfitting Our findings suggest that integrating deep learning with speech analysis presents a viable alternative for blood pressure monitoring paving the way for improved applications in telemedicine and remote health monitoring By providing a user friendly and accurate method for blood pressure assessment this research has significant implications for enhancing patient care and proactive management of cardiovascular health</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-24T04:05:22Z</published>
+    <arxiv:comment>MS Thesis</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name> Kainat</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.16490v2</id>
+    <title>HPP-Voice: A Large-Scale Evaluation of Speech Embeddings for Multi-Phenotypic Classification</title>
+    <updated>2025-05-25T10:12:09Z</updated>
+    <link href="https://arxiv.org/abs/2505.16490v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.16490v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Human speech contains paralinguistic cues that reflect a speaker's physiological and neurological state, potentially enabling non-invasive detection of various medical phenotypes. We introduce the Human Phenotype Project Voice corpus (HPP-Voice): a dataset of 7,188 recordings in which Hebrew-speaking adults count for 30 seconds, with each speaker linked to up to 15 potentially voice-related phenotypes spanning respiratory, sleep, mental health, metabolic, immune, and neurological conditions. We present a systematic comparison of 14 modern speech embedding models, where modern speech embeddings from these 30-second counting tasks outperform MFCCs and demographics for downstream health condition classifications. We found that embedding learned from a speaker identification model can predict objectively measured moderate to severe sleep apnea in males with an AUC of 0.64 $\pm$ 0.03, while MFCC and demographic features led to AUCs of 0.56 $\pm$ 0.02 and 0.57 $\pm$ 0.02, respectively. Additionally, our results reveal gender-specific patterns in model effectiveness across different medical domains. For males, speaker identification and diarization models consistently outperformed speech foundation models for respiratory conditions (e.g., asthma: 0.61 $\pm$ 0.03 vs. 0.56 $\pm$ 0.02) and sleep-related conditions (insomnia: 0.65 $\pm$ 0.04 vs. 0.59 $\pm$ 0.05). For females, speaker diarization models performed best for smoking status (0.61 $\pm$ 0.02 vs 0.55 $\pm$ 0.02), while Hebrew-specific models performed best (0.59 $\pm$ 0.02 vs. 0.58 $\pm$ 0.02) in classifying anxiety compared to speech foundation models. Our findings provide evidence that a simple counting task can support large-scale, multi-phenotypic voice screening and highlight which embedding families generalize best to specific conditions, insights that can guide future vocal biomarker research and clinical deployment.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-22T10:22:15Z</published>
+    <arxiv:comment>supplementary figures added; typos corrected</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>David Krongauz</name>
+    </author>
+    <author>
+      <name>Hido Pinto</name>
+    </author>
+    <author>
+      <name>Sarah Kohn</name>
+    </author>
+    <author>
+      <name>Yanir Marmor</name>
+    </author>
+    <author>
+      <name>Eran Segal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.13884v1</id>
+    <title>Exploring Finetuned Audio-LLM on Heart Murmur Features</title>
+    <updated>2025-01-23T17:57:18Z</updated>
+    <link href="https://arxiv.org/abs/2501.13884v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.13884v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) for audio have excelled in recognizing and analyzing human speech, music, and environmental sounds. However, their potential for understanding other types of sounds, particularly biomedical sounds, remains largely underexplored despite significant scientific interest. In this study, we focus on diagnosing cardiovascular diseases using phonocardiograms, i.e., heart sounds. Most existing deep neural network (DNN) paradigms are restricted to heart murmur classification (healthy vs unhealthy) and do not predict other acoustic features of the murmur such as timing, grading, harshness, pitch, and quality, which are important in helping physicians diagnose the underlying heart conditions. We propose to finetune an audio LLM, Qwen2-Audio, on the PhysioNet CirCor DigiScope phonocardiogram (PCG) dataset and evaluate its performance in classifying 11 expert-labeled murmur features. Additionally, we aim to achieve more noise-robust and generalizable system by exploring a preprocessing segmentation algorithm using an audio representation model, SSAMBA. Our results indicate that the LLM-based model outperforms state-of-the-art methods in 8 of the 11 features and performs comparably in the remaining 3. Moreover, the LLM successfully classifies long-tail murmur features with limited training data, a task that all previous methods have failed to classify. These findings underscore the potential of audio LLMs as assistants to human cardiologists in enhancing heart disease diagnosis.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-23T17:57:18Z</published>
+    <arxiv:comment>5 pages, 1 figure, and 3 tables. Submitted to IEEE/ACM Conference on Connected Health: Applications, Systems , and Engineering Technologies</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Adrian Florea</name>
+    </author>
+    <author>
+      <name>Xilin Jiang</name>
+    </author>
+    <author>
+      <name>Nima Mesgarani</name>
+    </author>
+    <author>
+      <name>Xiaofan Jiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.19204v3</id>
+    <title>A Voice-based Triage for Type 2 Diabetes using a Conversational Virtual Assistant in the Home Environment</title>
+    <updated>2025-07-10T15:28:37Z</updated>
+    <link href="https://arxiv.org/abs/2411.19204v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.19204v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Incorporating cloud technology with Internet of Medical Things for ubiquitous healthcare has seen many successful applications in the last decade with the advent of machine learning and deep learning techniques. One of these applications, namely voice-based pathology, has yet to receive notable attention from academia and industry. Applying voice analysis to early detection of fatal diseases holds much promise to improve health outcomes and quality of life of patients. In this paper, we propose a novel application of acoustic machine learning based triaging into commoditised conversational virtual assistant systems to pre-screen for onset of diabetes. Specifically, we developed a triaging system which extracts acoustic features from the voices of n=24 older adults when they converse with a virtual assistant and predict the incidence of Diabetes Mellitus (Type 2) or not. Our triaging system achieved hit-rates of 70% and 60% for male and female older adult subjects, respectively. Our proposed triaging uses 7 non-identifiable voice-based features and can operate within resource-constrained embedded systems running voice-based virtual assistants. This application demonstrates the feasibility of applying voice-based pathology analysis to improve health outcomes of older adults within the home environment by early detection of life-changing chronic conditions like diabetes.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-28T15:23:48Z</published>
+    <arxiv:comment>8 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Kelvin Summoogum</name>
+      <arxiv:affiliation>MD</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Debayan Das</name>
+      <arxiv:affiliation>MD</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Sathish Kumaran</name>
+      <arxiv:affiliation>MD</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Sumit Bhagra</name>
+      <arxiv:affiliation>MD</arxiv:affiliation>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.02449v3</id>
+    <title>Chronic Obstructive Pulmonary Disease Prediction Using Deep Convolutional Network</title>
+    <updated>2025-09-28T22:02:24Z</updated>
+    <link href="https://arxiv.org/abs/2411.02449v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.02449v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Artificial intelligence and deep learning are increasingly applied in the clinical domain, particularly for early and accurate disease detection using medical imaging and sound. Due to limited trained personnel, there is a growing demand for automated tools to support clinicians in managing rising patient loads. Respiratory diseases such as cancer and diabetes remain major global health concerns requiring timely diagnosis and intervention. Auscultation of lung sounds, combined with chest X-rays, is an established diagnostic method for respiratory illness. This study presents a Deep Convolutional Neural Network (CNN)-based approach for the analysis of respiratory sound data to detect Chronic Obstructive Pulmonary Disease (COPD). Acoustic features extracted with the Librosa library, including Mel-Frequency Cepstral Coefficients (MFCCs), Mel-Spectrogram, Chroma, Chroma (Constant Q), and Chroma CENS, were used in training. The system also classifies disease severity as mild, moderate, or severe. Evaluation on the ICBHI database achieved 96% accuracy using 10-fold cross-validation and 90% accuracy without cross-validation. The proposed network outperforms existing methods, demonstrating potential as a practical tool for clinical deployment.</summary>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-03T05:01:49Z</published>
+    <arxiv:comment>16 Pages, 11 Figures</arxiv:comment>
+    <arxiv:primary_category term="eess.IV"/>
+    <author>
+      <name>Shahran Rahman Alve</name>
+    </author>
+    <author>
+      <name>Muhammad Zawad Mahmud</name>
+    </author>
+    <author>
+      <name>Samiha Islam</name>
+    </author>
+    <author>
+      <name>Mohammad Monirujjaman Khan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.13812v2</id>
+    <title>Voice-Driven Mortality Prediction in Hospitalized Heart Failure Patients: A Machine Learning Approach Enhanced with Diagnostic Biomarkers</title>
+    <updated>2024-08-14T18:55:22Z</updated>
+    <link href="https://arxiv.org/abs/2402.13812v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.13812v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Addressing heart failure (HF) as a prevalent global health concern poses difficulties in implementing innovative approaches for enhanced patient care. Predicting mortality rates in HF patients, in particular, is difficult yet critical, necessitating individualized care, proactive management, and enabling educated decision-making to enhance outcomes. Recently, the significance of voice biomarkers coupled with Machine Learning (ML) has surged, demonstrating remarkable efficacy, particularly in predicting heart failure. The synergy of voice analysis and ML algorithms provides a non-invasive and easily accessible means to evaluate patients' health. However, there is a lack of voice biomarkers for predicting mortality rates among heart failure patients with standardized speech protocols. Here, we demonstrate a powerful and effective ML model for predicting mortality rates in hospitalized HF patients through the utilization of voice biomarkers. By seamlessly integrating voice biomarkers into routine patient monitoring, this strategy has the potential to improve patient outcomes, optimize resource allocation, and advance patient-centered HF management. In this study, a Machine Learning system, specifically a logistic regression model, is trained to predict patients' 5-year mortality rates using their speech as input. The model performs admirably and consistently, as demonstrated by cross-validation and statistical approaches (p-value &lt; 0.001). Furthermore, integrating NT-proBNP, a diagnostic biomarker in HF, improves the model's predictive accuracy substantially.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-21T13:50:46Z</published>
+    <arxiv:comment>11 pages, 6 figures, 5 tables. The first 2 authors have contributed equally</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Nihat Ahmadli</name>
+    </author>
+    <author>
+      <name>Mehmet Ali Sarsil</name>
+    </author>
+    <author>
+      <name>Berk Mizrak</name>
+    </author>
+    <author>
+      <name>Kurtulus Karauzum</name>
+    </author>
+    <author>
+      <name>Ata Shaker</name>
+    </author>
+    <author>
+      <name>Erol Tulumen</name>
+    </author>
+    <author>
+      <name>Didar Mirzamidinov</name>
+    </author>
+    <author>
+      <name>Dilek Ural</name>
+    </author>
+    <author>
+      <name>Onur Ergen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.13346v1</id>
+    <title>A Snoring Sound Dataset for Body Position Recognition: Collection, Annotation, and Analysis</title>
+    <updated>2023-07-25T09:03:27Z</updated>
+    <link href="https://arxiv.org/abs/2307.13346v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.13346v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Obstructive Sleep Apnea-Hypopnea Syndrome (OSAHS) is a chronic breathing disorder caused by a blockage in the upper airways. Snoring is a prominent symptom of OSAHS, and previous studies have attempted to identify the obstruction site of the upper airways by snoring sounds. Despite some progress, the classification of the obstruction site remains challenging in real-world clinical settings due to the influence of sleep body position on upper airways. To address this challenge, this paper proposes a snore-based sleep body position recognition dataset (SSBPR) consisting of 7570 snoring recordings, which comprises six distinct labels for sleep body position: supine, supine but left lateral head, supine but right lateral head, left-side lying, right-side lying and prone. Experimental results show that snoring sounds exhibit certain acoustic features that enable their effective utilization for identifying body posture during sleep in real-world scenarios.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-25T09:03:27Z</published>
+    <arxiv:comment>Accepted to INTERSPEECH 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Li Xiao</name>
+    </author>
+    <author>
+      <name>Xiuping Yang</name>
+    </author>
+    <author>
+      <name>Xinhong Li</name>
+    </author>
+    <author>
+      <name>Weiping Tu</name>
+    </author>
+    <author>
+      <name>Xiong Chen</name>
+    </author>
+    <author>
+      <name>Weiyan Yi</name>
+    </author>
+    <author>
+      <name>Jie Lin</name>
+    </author>
+    <author>
+      <name>Yuhong Yang</name>
+    </author>
+    <author>
+      <name>Yanzhen Ren</name>
+    </author>
+  </entry>
+</feed>

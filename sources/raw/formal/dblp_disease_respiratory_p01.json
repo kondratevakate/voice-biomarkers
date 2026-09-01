@@ -1,0 +1,697 @@
+{
+"result":{
+"query":"speech*|voice*|vocal*|cough* asthma*|COPD*|respiratory*|dysphonia*|laryngeal*",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"520.42"
+},
+"completions":{
+"@total":"11",
+"@computed":"11",
+"@sent":"10",
+"c":[
+{
+"@sc":"70",
+"@dc":"69",
+"@oc":"70",
+"@id":"71857731",
+"text":"respiratory"
+},
+{
+"@sc":"65",
+"@dc":"64",
+"@oc":"65",
+"@id":"71362283",
+"text":"laryngeal"
+},
+{
+"@sc":"34",
+"@dc":"34",
+"@oc":"34",
+"@id":"70848930",
+"text":"dysphonia"
+},
+{
+"@sc":"17",
+"@dc":"16",
+"@oc":"17",
+"@id":"70488345",
+"text":"asthma"
+},
+{
+"@sc":"15",
+"@dc":"15",
+"@oc":"15",
+"@id":"70723273",
+"text":"copd"
+},
+{
+"@sc":"3",
+"@dc":"3",
+"@oc":"3",
+"@id":"70488356",
+"text":"asthmatic"
+},
+{
+"@sc":"3",
+"@dc":"3",
+"@oc":"3",
+"@id":"70723275",
+"text":"copda"
+},
+{
+"@sc":"3",
+"@dc":"3",
+"@oc":"3",
+"@id":"71362286",
+"text":"laryngealization"
+},
+{
+"@sc":"1",
+"@dc":"1",
+"@oc":"1",
+"@id":"70848931",
+"text":"dysphonias"
+},
+{
+"@sc":"1",
+"@dc":"1",
+"@oc":"1",
+"@id":"70488360",
+"text":"asthmaxcel"
+}
+]
+},
+"hits":{
+"@total":"206",
+"@computed":"200",
+"@sent":"100",
+"@first":"100",
+"hit":[{
+"@score":"2",
+"@id":"2274220",
+"info":{"authors":{"author":[{"@pid":"122/2963","text":"Brian Tracey"},{"@pid":"54/31","text":"Shyamal Patel"},{"@pid":"57/3892","text":"Yao Zhang"},{"@pid":"321/7876","text":"Kara Chappie"},{"@pid":"279/4273","text":"Dmitri Volfson"},{"@pid":"159/7391","text":"Federico Parisi"},{"@pid":"217/9248","text":"Catherine P. Adans-Dester"},{"@pid":"321/8224","text":"Francesco Bertacchi"},{"@pid":"37/6693","text":"Paolo Bonato"},{"@pid":"284/8914","text":"Paul W. Wacnik"}]},"title":"Voice Biomarkers of Recovery From Acute Respiratory Illness.","venue":"IEEE J. Biomed. Health Informatics","volume":"26","number":"6","pages":"2787-2795","year":"2022","type":"Journal Articles","access":"open","key":"journals/titb/TraceyPZCVPABBW22","doi":"10.1109/JBHI.2021.3137050","ee":"https://doi.org/10.1109/JBHI.2021.3137050","url":"https://dblp.org/rec/journals/titb/TraceyPZCVPABBW22"},
+"url":"URL#2274220"
+},
+{
+"@score":"2",
+"@id":"2307784",
+"info":{"authors":{"author":[{"@pid":"235/1547","text":"Vita Santa Barletta"},{"@pid":"166/6160","text":"Fabio Cassano"},{"@pid":"34/9798","text":"Alessandro Pagano"},{"@pid":"31/6578","text":"Antonio Piccinno"}]},"title":"A collaborative AI dataset creation for speech therapies.","venue":"CoPDA@AVI","pages":"81-85","year":"2022","type":"Conference and Workshop Papers","access":"open","key":"conf/avi/BarlettaCPP22","ee":"https://ceur-ws.org/Vol-3136/paper-10.pdf","url":"https://dblp.org/rec/conf/avi/BarlettaCPP22"},
+"url":"URL#2307784"
+},
+{
+"@score":"2",
+"@id":"2402733",
+"info":{"authors":{"author":[{"@pid":"277/3884","text":"Sondes Abderrazek"},{"@pid":"42/2411","text":"Corinne Fredouille"},{"@pid":"26/4212","text":"Alain Ghio"},{"@pid":"212/7262","text":"Muriel Lalain"},{"@pid":"34/8158","text":"Christine Meunier"},{"@pid":"38/10649","text":"Virginie Woisard"}]},"title":"Validation of the Neuro-Concept Detector framework for the characterization of speech disorders: A comparative study including Dysarthria and Dysphonia.","venue":"INTERSPEECH","pages":"3638-3642","year":"2022","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/AbderrazekFGLMW22","doi":"10.21437/INTERSPEECH.2022-10631","ee":"https://doi.org/10.21437/Interspeech.2022-10631","url":"https://dblp.org/rec/conf/interspeech/AbderrazekFGLMW22"},
+"url":"URL#2402733"
+},
+{
+"@score":"2",
+"@id":"2403348",
+"info":{"authors":{"author":[{"@pid":"263/4958","text":"Venkata Srikanth Nallanthighal"},{"@pid":"21/5537","text":"Aki Härmä"},{"@pid":"68/1093","text":"Helmer Strik"}]},"title":"COVID-19 detection based on respiratory sensing from speech.","venue":"INTERSPEECH","pages":"2498-2502","year":"2022","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/NallanthighalHS22","doi":"10.21437/INTERSPEECH.2022-11209","ee":"https://doi.org/10.21437/Interspeech.2022-11209","url":"https://dblp.org/rec/conf/interspeech/NallanthighalHS22"},
+"url":"URL#2403348"
+},
+{
+"@score":"2",
+"@id":"2403800",
+"info":{"authors":{"author":[{"@pid":"129/8195","text":"Zhaoyan Zhang"},{"@pid":"75/4903","text":"Jason Zhang"},{"@pid":"41/7151","text":"Jody Kreiman"}]},"title":"Effects of laryngeal manipulations on voice gender perception.","venue":"INTERSPEECH","pages":"1856-1860","year":"2022","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/ZhangZK22","doi":"10.21437/INTERSPEECH.2022-10815","ee":"https://doi.org/10.21437/Interspeech.2022-10815","url":"https://dblp.org/rec/conf/interspeech/ZhangZK22"},
+"url":"URL#2403800"
+},
+{
+"@score":"2",
+"@id":"2413609",
+"info":{"authors":{"author":[{"@pid":"251/2830","text":"Fahad Taha AL-Dhief"},{"@pid":"56/805","text":"Nurul Muazzah Abdul Latiff"},{"@pid":"27/10798","text":"Nik Noordini Nik Abd. Malik"},{"@pid":"264/5141","text":"Marina Mat Baki"},{"@pid":"84/11102","text":"Naseer Sabri"},{"@pid":"251/2771","text":"Musatafa Abbas Abbood Albadr"}]},"title":"Dysphonia Detection Based on Voice Signals Using Naive Bayes Classifier.","venue":"ISTT","pages":"56-61","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/istt/AL-DhiefLMBSA22","doi":"10.1109/ISTT56288.2022.9966535","ee":"https://doi.org/10.1109/ISTT56288.2022.9966535","url":"https://dblp.org/rec/conf/istt/AL-DhiefLMBSA22"},
+"url":"URL#2413609"
+},
+{
+"@score":"2",
+"@id":"2439607",
+"info":{"authors":{"author":[{"@pid":"296/4577","text":"Tina Sedaghat"},{"@pid":"257/3354","text":"Salaar Liaqat"},{"@pid":"177/8583","text":"Daniyal Liaqat"},{"@pid":"15/1099-2","text":"Robert Wu 0002"},{"@pid":"183/1396","text":"Andrea Gershon"},{"@pid":"243/6445","text":"Tatiana Son"},{"@pid":"27/1611","text":"Tiago H. Falk"},{"@pid":"117/8009","text":"Moshe Gabel"},{"@pid":"116/0750","text":"Alex Mariakakis"},{"@pid":"59/2063","text":"Eyal de Lara"}]},"title":"Unobtrusive Monitoring of COPD Patients using Speech Collected from Smartwatches in the Wild.","venue":"PerCom Workshops","pages":"818-823","year":"2022","type":"Conference and Workshop Papers","access":"closed","key":"conf/percom/SedaghatLLWGSFG22","doi":"10.1109/PERCOMWORKSHOPS53856.2022.9767283","ee":"https://doi.org/10.1109/PerComWorkshops53856.2022.9767283","url":"https://dblp.org/rec/conf/percom/SedaghatLLWGSFG22"},
+"url":"URL#2439607"
+},
+{
+"@score":"2",
+"@id":"2531838",
+"info":{"authors":{"author":[{"@pid":"329/3900","text":"Wafaa Aljbawi"},{"@pid":"368/7156","text":"Sami O. Simons"},{"@pid":"97/7117","text":"Visara Urovi"}]},"title":"Developing a multi-variate prediction model for the detection of COVID-19 from Crowd-sourced Respiratory Voice Data.","venue":"CoRR","volume":"abs/2209.03727","year":"2022","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2209-03727","doi":"10.48550/ARXIV.2209.03727","ee":"https://doi.org/10.48550/arXiv.2209.03727","url":"https://dblp.org/rec/journals/corr/abs-2209-03727"},
+"url":"URL#2531838"
+},
+{
+"@score":"2",
+"@id":"2694350",
+"info":{"authors":{"author":[{"@pid":"263/4958","text":"Venkata Srikanth Nallanthighal"},{"@pid":"158/1964","text":"Zohreh Mostaani"},{"@pid":"21/5537","text":"Aki Härmä"},{"@pid":"68/1093","text":"Helmer Strik"},{"@pid":"76/3728","text":"Mathew Magimai-Doss"}]},"title":"Deep learning architectures for estimating breathing signal and respiratory parameters from speech recordings.","venue":"Neural Networks","volume":"141","pages":"211-224","year":"2021","type":"Journal Articles","access":"open","key":"journals/nn/NallanthighalMH21","doi":"10.1016/J.NEUNET.2021.03.029","ee":"https://doi.org/10.1016/j.neunet.2021.03.029","url":"https://dblp.org/rec/journals/nn/NallanthighalMH21"},
+"url":"URL#2694350"
+},
+{
+"@score":"2",
+"@id":"2720464",
+"info":{"authors":{"author":[{"@pid":"232/1661","text":"Balamurali B. T."},{"@pid":"213/9572","text":"Hwan Ing Hee"},{"@pid":"295/9577","text":"Saumitra Kapoor"},{"@pid":"295/9202","text":"Oon Hoe Teoh"},{"@pid":"295/9268","text":"Sung Shin Teng"},{"@pid":"295/9933","text":"Khai Pin Lee"},{"@pid":"132/1691","text":"Dorien Herremans"},{"@pid":"226/2072","text":"Jer-Ming Chen"}]},"title":"Deep Neural Network-Based Respiratory Pathology Classification Using Cough Sounds.","venue":"Sensors","volume":"21","number":"16","pages":"5555","year":"2021","type":"Journal Articles","access":"open","key":"journals/sensors/THKTTLHC21","doi":"10.3390/S21165555","ee":"https://doi.org/10.3390/s21165555","url":"https://dblp.org/rec/journals/sensors/THKTTLHC21"},
+"url":"URL#2720464"
+},
+{
+"@score":"2",
+"@id":"2728589",
+"info":{"authors":{"author":{"@pid":"203/4793","text":"Qandeel Hussain"}},"title":"Phonetic correlates of laryngeal and place contrasts of Burushaski.","venue":"Speech Commun.","volume":"126","pages":"71-89","year":"2021","type":"Journal Articles","access":"closed","key":"journals/speech/Hussain21","doi":"10.1016/J.SPECOM.2020.11.001","ee":"https://doi.org/10.1016/j.specom.2020.11.001","url":"https://dblp.org/rec/journals/speech/Hussain21"},
+"url":"URL#2728589"
+},
+{
+"@score":"2",
+"@id":"2742077",
+"info":{"authors":{"author":[{"@pid":"310/7768","text":"Mahraz Kabache"},{"@pid":"10/2661","text":"Mhania Guerti"}]},"title":"Acoustic Analysis of Voice Signal of Patients with Unilateral Laryngeal Paralysis a View to Objective Evaluation after Rehabilitation.","venue":"Traitement du Signal","volume":"38","number":"5","pages":"1339-1344","year":"2021","type":"Journal Articles","access":"closed","key":"journals/tds/KabacheG21","doi":"10.18280/TS.380508","ee":"https://doi.org/10.18280/ts.380508","url":"https://dblp.org/rec/journals/tds/KabacheG21"},
+"url":"URL#2742077"
+},
+{
+"@score":"2",
+"@id":"2770913",
+"info":{"authors":{"author":[{"@pid":"258/8636","text":"Edresson Casanova"},{"@pid":"297/9463","text":"Lucas Gris"},{"@pid":"348/7251","text":"Augusto Camargo Neto"},{"@pid":"305/0162","text":"Daniel Peixoto Pinto da Silva"},{"@pid":"297/9886","text":"Murilo Gazzola"},{"@pid":"45/4484","text":"Ester C. Sabino"},{"@pid":"13/8087","text":"Anna Levin"},{"@pid":"10/7438","text":"Arnaldo Cândido Jr."},{"@pid":"86/332","text":"Sandra M. Aluísio"},{"@pid":"50/3312","text":"Marcelo Finger"}]},"title":"Deep Learning against COVID-19: Respiratory Insufficiency Detection in Brazilian Portuguese Speech.","venue":"ACL/IJCNLP","pages":"625-633","year":"2021","type":"Conference and Workshop Papers","access":"open","key":"conf/acl/CasanovaGCSGSLC21","doi":"10.18653/V1/2021.FINDINGS-ACL.55","ee":"https://doi.org/10.18653/v1/2021.findings-acl.55","url":"https://dblp.org/rec/conf/acl/CasanovaGCSGSLC21"},
+"url":"URL#2770913"
+},
+{
+"@score":"2",
+"@id":"2823435",
+"info":{"authors":{"author":[{"@pid":"263/4958","text":"Venkata Srikanth Nallanthighal"},{"@pid":"21/5537","text":"Aki Härmä"},{"@pid":"68/1093","text":"Helmer Strik"},{"@pid":"76/3728","text":"Mathew Magimai-Doss"}]},"title":"Phoneme Based Respiratory Analysis of Read Speech.","venue":"EUSIPCO","pages":"191-195","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/eusipco/NallanthighalHS21","doi":"10.23919/EUSIPCO54536.2021.9615986","ee":"https://doi.org/10.23919/EUSIPCO54536.2021.9615986","url":"https://dblp.org/rec/conf/eusipco/NallanthighalHS21"},
+"url":"URL#2823435"
+},
+{
+"@score":"2",
+"@id":"2827537",
+"info":{"authors":{"author":[{"@pid":"307/7645","text":"Natsuki Ida"},{"@pid":"95/1827","text":"Haruki Kawanaka"},{"@pid":"16/1060","text":"Koji Oguri"}]},"title":"Discriminant Analysis of Voluntary Cough Using Respiratory Waveform Extracted from Photoplethysmography.","venue":"GCCE","pages":"176-178","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/gcce/IdaKO21","doi":"10.1109/GCCE53005.2021.9621843","ee":"https://doi.org/10.1109/GCCE53005.2021.9621843","url":"https://dblp.org/rec/conf/gcce/IdaKO21"},
+"url":"URL#2827537"
+},
+{
+"@score":"2",
+"@id":"2880333",
+"info":{"authors":{"author":[{"@pid":"315/6188","text":"Mikey Elmers"},{"@pid":"315/6406","text":"Raphael Werner"},{"@pid":"262/4736","text":"Beeke Muhlack"},{"@pid":"79/4327","text":"Bernd Möbius"},{"@pid":"23/6608","text":"Jürgen Trouvain"}]},"title":"Take a Breath: Respiratory Sounds Improve Recollection in Synthetic Speech.","venue":"Interspeech","pages":"3196-3200","year":"2021","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/ElmersWMMT21","doi":"10.21437/INTERSPEECH.2021-1496","ee":"https://doi.org/10.21437/Interspeech.2021-1496","url":"https://dblp.org/rec/conf/interspeech/ElmersWMMT21"},
+"url":"URL#2880333"
+},
+{
+"@score":"2",
+"@id":"2930781",
+"info":{"authors":{"author":[{"@pid":"302/0336","text":"Loes van Bemmel"},{"@pid":"277/3787","text":"Wieke Harmsen"},{"@pid":"28/1285","text":"Catia Cucchiarini"},{"@pid":"68/1093","text":"Helmer Strik"}]},"title":"Automatic Selection of the Most Characterizing Features for Detecting COPD in Speech.","venue":"SPECOM","pages":"737-748","year":"2021","type":"Conference and Workshop Papers","access":"closed","key":"conf/specom/BemmelHCS21","doi":"10.1007/978-3-030-87802-3_66","ee":"https://doi.org/10.1007/978-3-030-87802-3_66","url":"https://dblp.org/rec/conf/specom/BemmelHCS21"},
+"url":"URL#2930781"
+},
+{
+"@score":"2",
+"@id":"2987592",
+"info":{"authors":{"author":[{"@pid":"232/1661","text":"Balamurali B. T."},{"@pid":"213/9572","text":"Hwan Ing Hee"},{"@pid":"295/9577","text":"Saumitra Kapoor"},{"@pid":"295/9202","text":"Oon Hoe Teoh"},{"@pid":"295/9268","text":"Sung Shin Teng"},{"@pid":"295/9933","text":"Khai Pin Lee"},{"@pid":"132/1691","text":"Dorien Herremans"},{"@pid":"226/2072","text":"Jer-Ming Chen"}]},"title":"Deep Neural Network Based Respiratory Pathology Classification Using Cough Sounds.","venue":"CoRR","volume":"abs/2106.12174","year":"2021","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2106-12174","ee":"https://arxiv.org/abs/2106.12174","url":"https://dblp.org/rec/journals/corr/abs-2106-12174"},
+"url":"URL#2987592"
+},
+{
+"@score":"2",
+"@id":"3160471",
+"info":{"authors":{"author":{"@pid":"264/6431","text":"Vladimir Kulikov"}},"title":"Laryngeal Contrast in Qatari Arabic: Effect of Speaking Rate on Voice Onset Time.","venue":"Phonetica","volume":"77","number":"3","pages":"163-185","year":"2020","type":"Journal Articles","access":"closed","key":"journals/phonetica/Kulikov20","doi":"10.1159/000497277","ee":"https://doi.org/10.1159/000497277","url":"https://dblp.org/rec/journals/phonetica/Kulikov20"},
+"url":"URL#3160471"
+},
+{
+"@score":"2",
+"@id":"3292039",
+"info":{"authors":{"author":[{"@pid":"153/4371","text":"Shivani Yadav"},{"@pid":"270/4382","text":"Merugu Keerthana"},{"@pid":"18/4190","text":"Dipanjan Gope"},{"@pid":"207/9866","text":"Uma Maheswari Krishnaswamy"},{"@pid":"73/6634","text":"Prasanta Kumar Ghosh"}]},"title":"Analysis of Acoustic Features for Speech Sound Based Classification of Asthmatic and Healthy Subjects.","venue":"ICASSP","pages":"6789-6793","year":"2020","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/YadavKGKG20","doi":"10.1109/ICASSP40776.2020.9054062","ee":"https://doi.org/10.1109/ICASSP40776.2020.9054062","url":"https://dblp.org/rec/conf/icassp/YadavKGKG20"},
+"url":"URL#3292039"
+},
+{
+"@score":"2",
+"@id":"3329588",
+"info":{"authors":{"author":[{"@pid":"33/9231","text":"Vikram Ramanarayanan"},{"@pid":"237/8423","text":"Oliver Roesler"},{"@pid":"82/7836-1","text":"Michael Neumann 0001"},{"@pid":"48/3395","text":"David Pautler"},{"@pid":"244/0281","text":"Doug Habberstad"},{"@pid":"244/0367","text":"Andrew Cornish"},{"@pid":"277/3483","text":"Hardik Kothare"},{"@pid":"230/3451","text":"Vignesh Murali"},{"@pid":"59/3748","text":"Jackson Liscombe"},{"@pid":"73/10038","text":"Dirk Schnelle-Walka"},{"@pid":"188/8957","text":"Patrick L. Lange"},{"@pid":"92/5083","text":"David Suendermann-Oeft"}]},"title":"Toward Remote Patient Monitoring of Speech, Video, Cognitive and Respiratory Biomarkers Using Multimodal Dialog Technology.","venue":"INTERSPEECH","pages":"492-493","year":"2020","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/RamanarayananRN20","ee":"https://www.isca-speech.org/archive/interspeech_2020/ramanarayanan20b_interspeech.html","url":"https://dblp.org/rec/conf/interspeech/RamanarayananRN20"},
+"url":"URL#3329588"
+},
+{
+"@score":"2",
+"@id":"3346979",
+"info":{"authors":{"author":[{"@pid":"322/0554","text":"Julia Merkus"},{"@pid":"266/0994","text":"Ferdy Hubers"},{"@pid":"28/1285","text":"Catia Cucchiarini"},{"@pid":"68/1093","text":"Helmer Strik"}]},"title":"Digital Eavesdropper - Acoustic Speech Characteristics as Markers of Exacerbations in COPD Patients.","venue":"RaPID@LREC","year":"2020","type":"Conference and Workshop Papers","access":"unavailable","key":"conf/lrec/MerkusHCS20","url":"https://dblp.org/rec/conf/lrec/MerkusHCS20"},
+"url":"URL#3346979"
+},
+{
+"@score":"2",
+"@id":"3353973",
+"info":{"authors":{"author":[{"@pid":"216/7977","text":"Anthony Windmon"},{"@pid":"76/6786","text":"Sriram Chellappan"},{"@pid":"170/1630","text":"Ponrathi R. Athilingam"}]},"title":"Evaluating the Effectiveness of Inhaler Use Among COPD Patients via Recording and Processing Cough and Breath Sounds from Smartphones.","venue":"MobiCASE","pages":"102-120","year":"2020","type":"Conference and Workshop Papers","access":"closed","key":"conf/mobicase/WindmonCA20","doi":"10.1007/978-3-030-64214-3_7","ee":"https://doi.org/10.1007/978-3-030-64214-3_7","url":"https://dblp.org/rec/conf/mobicase/WindmonCA20"},
+"url":"URL#3353973"
+},
+{
+"@score":"2",
+"@id":"3380647",
+"info":{"authors":{"author":[{"@pid":"278/2225","text":"Amelia Pettirossi"},{"@pid":"09/6477","text":"Nicolas Audibert"},{"@pid":"21/8156","text":"Lise Crevier-Buchman"}]},"title":"Corrélats acoustiques et perceptifs de la personnalité perçue à travers la voix dans une population de dysphoniques légères (Acoustical and perceptual correlates of perceived personality through voice in minor dysphonia).","venue":"JEP-TALN-RECITAL","pages":"489-497","year":"2020","type":"Conference and Workshop Papers","access":"open","key":"conf/taln/PettirossiAC20","ee":"https://aclanthology.org/2020.jeptalnrecital-jep.55/","url":"https://dblp.org/rec/conf/taln/PettirossiAC20"},
+"url":"URL#3380647"
+},
+{
+"@score":"2",
+"@id":"3460437",
+"info":{"authors":{"author":[{"@pid":"279/4210","text":"Meemnur Rashid"},{"@pid":"279/3672","text":"Kaisar Ahmed Alman"},{"@pid":"25/11243","text":"Khaled Hasan"},{"@pid":"85/2699","text":"John H. L. Hansen"},{"@pid":"30/8763","text":"Taufiq Hasan"}]},"title":"Respiratory Distress Detection from Telephone Speech using Acoustic and Prosodic Features.","venue":"CoRR","volume":"abs/2011.09270","year":"2020","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2011-09270","ee":"https://arxiv.org/abs/2011.09270","url":"https://dblp.org/rec/journals/corr/abs-2011-09270"},
+"url":"URL#3460437"
+},
+{
+"@score":"2",
+"@id":"3491243",
+"info":{"authors":{"author":[{"@pid":"166/2761","text":"Laura Verde"},{"@pid":"64/4882","text":"Giuseppe De Pietro"},{"@pid":"150/0864","text":"Mubarak Alrashoud"},{"@pid":"g/AhmedGhoneim","text":"Ahmed Ghoneim"},{"@pid":"240/7174","text":"Khaled N. Al-Mutib"},{"@pid":"53/8145","text":"Giovanna Sannino"}]},"title":"Dysphonia Detection Index (DDI): A New Multi-Parametric Marker to Evaluate Voice Quality.","venue":"IEEE Access","volume":"7","pages":"55689-55697","year":"2019","type":"Journal Articles","access":"open","key":"journals/access/VerdePAGAS19","doi":"10.1109/ACCESS.2019.2913444","ee":"https://doi.org/10.1109/ACCESS.2019.2913444","url":"https://dblp.org/rec/journals/access/VerdePAGAS19"},
+"url":"URL#3491243"
+},
+{
+"@score":"2",
+"@id":"3552517",
+"info":{"authors":{"author":[{"@pid":"184/3287","text":"Miklós Gábriel Tulics"},{"@pid":"54/3160","text":"Klára Vicsi"}]},"title":"The automatic assessment of the severity of dysphonia.","venue":"Int. J. Speech Technol.","volume":"22","number":"2","pages":"341-350","year":"2019","type":"Journal Articles","access":"open","key":"journals/ijst/TulicsV19","doi":"10.1007/S10772-019-09592-Y","ee":"https://doi.org/10.1007/s10772-019-09592-y","url":"https://dblp.org/rec/journals/ijst/TulicsV19"},
+"url":"URL#3552517"
+},
+{
+"@score":"2",
+"@id":"3574920",
+"info":{"authors":{"author":[{"@pid":"46/9279","text":"Taehong Cho"},{"@pid":"78/9339","text":"Douglas H. Whalen"},{"@pid":"173/6465","text":"Gerard Docherty"}]},"title":"Voice onset time and beyond: Exploring laryngeal contrast in 19 languages.","venue":"J. Phonetics","volume":"72","pages":"52-65","year":"2019","type":"Journal Articles","access":"open","key":"journals/jphonetics/ChoWD19","doi":"10.1016/J.WOCN.2018.11.002","ee":"https://doi.org/10.1016/j.wocn.2018.11.002","url":"https://dblp.org/rec/journals/jphonetics/ChoWD19"},
+"url":"URL#3574920"
+},
+{
+"@score":"2",
+"@id":"3683522",
+"info":{"authors":{"author":[{"@pid":"277/6142","text":"Ali S. Hamad"},{"@pid":"157/7363","text":"Megan Haney"},{"@pid":"171/8104","text":"Teresa E. Lever"},{"@pid":"06/3172","text":"Filiz Bunyak"}]},"title":"Automated Segmentation of the Vocal Folds in Laryngeal Endoscopy Videos Using Deep Convolutional Regression Networks.","venue":"CVPR Workshops","pages":"140-148","year":"2019","type":"Conference and Workshop Papers","access":"open","key":"conf/cvpr/HamadHLB19","doi":"10.1109/CVPRW.2019.00023","ee":"http://openaccess.thecvf.com/content_CVPRW_2019/html/BIC/Hamad_Automated_Segmentation_of_the_Vocal_Folds_in_Laryngeal_Endoscopy_Videos_CVPRW_2019_paper.html","url":"https://dblp.org/rec/conf/cvpr/HamadHLB19"},
+"url":"URL#3683522"
+},
+{
+"@score":"2",
+"@id":"3718323",
+"info":{"authors":{"author":[{"@pid":"208/3154","text":"Alice Rueda"},{"@pid":"184/9465","text":"Sridhar Krishnan 0001"}]},"title":"Augmenting Dysphonia Voice Using Fourier-based Synchrosqueezing Transform for a CNN Classifier.","venue":"ICASSP","pages":"6415-6419","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/Rueda019","doi":"10.1109/ICASSP.2019.8682391","ee":"https://doi.org/10.1109/ICASSP.2019.8682391","url":"https://dblp.org/rec/conf/icassp/Rueda019"},
+"url":"URL#3718323"
+},
+{
+"@score":"2",
+"@id":"3760834",
+"info":{"authors":{"author":[{"@pid":"263/4828","text":"Oksana Rasskazova"},{"@pid":"34/9241","text":"Christine Mooshammer"},{"@pid":"59/1227","text":"Susanne Fuchs"}]},"title":"Temporal Coordination of Articulatory and Respiratory Events Prior to Speech Initiation.","venue":"INTERSPEECH","pages":"884-888","year":"2019","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/RasskazovaMF19","doi":"10.21437/INTERSPEECH.2019-2876","ee":"https://doi.org/10.21437/Interspeech.2019-2876","url":"https://dblp.org/rec/conf/interspeech/RasskazovaMF19"},
+"url":"URL#3760834"
+},
+{
+"@score":"2",
+"@id":"3769189",
+"info":{"authors":{"author":[{"@pid":"243/7074","text":"Bruno Villegas"},{"@pid":"243/7110","text":"Kevin M. Flores"},{"@pid":"243/7170","text":"Kevin Pacheco-Barrios"},{"@pid":"243/7185","text":"Dante A. Elías"}]},"title":"Monitoring of respiratory patterns and biosignals during speech from adults who stutter and do not stutter: A comparative analysis.","venue":"ISMICT","pages":"1-5","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/ismict/VillegasFPE19","doi":"10.1109/ISMICT.2019.8743844","ee":"https://doi.org/10.1109/ISMICT.2019.8743844","url":"https://dblp.org/rec/conf/ismict/VillegasFPE19"},
+"url":"URL#3769189"
+},
+{
+"@score":"2",
+"@id":"3786242",
+"info":{"authors":{"author":[{"@pid":"197/0116","text":"Stephanie Githa Nadarajah"},{"@pid":"197/0090","text":"Peder Walz Pedersen"},{"@pid":"242/3316","text":"Bastian Ilsø Hougaard"},{"@pid":"49/2350","text":"Hendrik Knoche"}]},"title":"Am I Coughing More Than Usual?: Patient Reflections and User Needs on Tracking COPD Data in a Telehealth System.","venue":"HealthMedia@MM","pages":"2-8","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/mm/NadarajahPHK19","doi":"10.1145/3347444.3356237","ee":"https://doi.org/10.1145/3347444.3356237","url":"https://dblp.org/rec/conf/mm/NadarajahPHK19"},
+"url":"URL#3786242"
+},
+{
+"@score":"2",
+"@id":"3791835",
+"info":{"authors":{"author":[{"@pid":"181/7573","text":"Arnav Kapur"},{"@pid":"229/1770","text":"Utkarsh Sarawgi"},{"@pid":"267/7510","text":"Eric Wadkins"},{"@pid":"267/7502","text":"Matthew Wu"},{"@pid":"154/4482","text":"Nora Hollenstein"},{"@pid":"m/PattieMaes","text":"Pattie Maes"}]},"title":"Non-Invasive Silent Speech Recognition in Multiple Sclerosis with Dysphonia.","venue":"ML4H@NeurIPS","pages":"25-38","year":"2019","type":"Conference and Workshop Papers","access":"open","key":"conf/nips/KapurSWWHM19","ee":"http://proceedings.mlr.press/v116/kapur20a.html","url":"https://dblp.org/rec/conf/nips/KapurSWWHM19"},
+"url":"URL#3791835"
+},
+{
+"@score":"2",
+"@id":"4020817",
+"info":{"authors":{"author":[{"@pid":"231/8274","text":"Guiyue Kou"},{"@pid":"231/8148","text":"Xinghu Li"},{"@pid":"59/2227","text":"Yan Wang"},{"@pid":"231/8381","text":"Mouyou Lin"},{"@pid":"89/10785","text":"Yuping Zeng"},{"@pid":"231/8447","text":"Xiaopin Yang"},{"@pid":"80/6818","text":"Yanyan Yang"},{"@pid":"231/8451","text":"Zhimei Gan"}]},"title":"CFD Simulation of Airflow Dynamics During Cough Based on CT-Scanned Respiratory Airway Geometries.","venue":"Symmetry","volume":"10","number":"11","pages":"595","year":"2018","type":"Journal Articles","access":"open","key":"journals/symmetry/KouLWLZYYG18","doi":"10.3390/SYM10110595","ee":"https://doi.org/10.3390/sym10110595","url":"https://dblp.org/rec/journals/symmetry/KouLWLZYYG18"},
+"url":"URL#4020817"
+},
+{
+"@score":"2",
+"@id":"4064664",
+"info":{"authors":{"author":[{"@pid":"216/7977","text":"Anthony Windmon"},{"@pid":"203/1288","text":"Mona Minakshi"},{"@pid":"76/6786","text":"Sriram Chellappan"},{"@pid":"170/1630","text":"Ponrathi Athilingam"},{"@pid":"216/7886","text":"Marcia Johansson"},{"@pid":"216/7960","text":"Bradlee A. Jenkins"}]},"title":"On Detecting Chronic Obstructive Pulmonary Disease (COPD) Cough using Audio Signals Recorded from Smart-Phones.","venue":"HEALTHINF","pages":"329-338","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/biostec/WindmonMCAJJ18","doi":"10.5220/0006549603290338","ee":"https://doi.org/10.5220/0006549603290338","url":"https://dblp.org/rec/conf/biostec/WindmonMCAJJ18"},
+"url":"URL#4064664"
+},
+{
+"@score":"2",
+"@id":"4079063",
+"info":{"authors":{"author":[{"@pid":"118/9856","text":"Khuong An Nguyen"},{"@pid":"63/2469-1","text":"Zhiyuan Luo 0001"}]},"title":"Cover your cough: detection of respiratory events with confidence using a smartwatch.","venue":"COPA","pages":"114-131","year":"2018","type":"Conference and Workshop Papers","access":"open","key":"conf/copa/NguyenL18","ee":"http://proceedings.mlr.press/v91/nguyen18a.html","url":"https://dblp.org/rec/conf/copa/NguyenL18"},
+"url":"URL#4079063"
+},
+{
+"@score":"2",
+"@id":"4094339",
+"info":{"authors":{"author":[{"@pid":"153/4371","text":"Shivani Yadav"},{"@pid":"228/9690","text":"Kausthubha NK"},{"@pid":"18/4190","text":"Dipanjan Gope"},{"@pid":"207/9866","text":"Uma Maheswari Krishnaswamy"},{"@pid":"73/6634","text":"Prasanta Kumar Ghosh"}]},"title":"Comparison of Cough, Wheeze and Sustained Phonations for Automatic Classification Between Healthy Subjects and Asthmatic Patients.","venue":"EMBC","pages":"1400-1403","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/YadavNGKG18","doi":"10.1109/EMBC.2018.8512496","ee":"https://doi.org/10.1109/EMBC.2018.8512496","url":"https://dblp.org/rec/conf/embc/YadavNGKG18"},
+"url":"URL#4094339"
+},
+{
+"@score":"2",
+"@id":"4116411",
+"info":{"authors":{"author":[{"@pid":"117/4725","text":"Arindam Jati"},{"@pid":"223/5205","text":"Paula G. Williams"},{"@pid":"67/9231","text":"Brian R. Baucom"},{"@pid":"80/7046","text":"Panayiotis G. Georgiou"}]},"title":"Towards Predicting Physiology from Speech During Stressful Conversations: Heart Rate and Respiratory Sinus Arrhythmia.","venue":"ICASSP","pages":"4944-4948","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/JatiWBG18","doi":"10.1109/ICASSP.2018.8461500","ee":"https://doi.org/10.1109/ICASSP.2018.8461500","url":"https://dblp.org/rec/conf/icassp/JatiWBG18"},
+"url":"URL#4116411"
+},
+{
+"@score":"2",
+"@id":"4278240",
+"info":{"authors":{"author":{"@pid":"135/3419","text":"Gustavo Andrade-Miranda"}},"title":"Analyzing of the vocal fold dynamics using laryngeal videos. (Analyse de la dynamique du plis vocaux à l&apos;aide de vidéos laryngées).","year":"2017","type":"Books and Theses","access":"open","key":"phd/hal/AndradeMiranda17","ee":"https://tel.archives-ouvertes.fr/tel-01585708","url":"https://dblp.org/rec/phd/hal/AndradeMiranda17"},
+"url":"URL#4278240"
+},
+{
+"@score":"2",
+"@id":"4388154",
+"info":{"authors":{"author":[{"@pid":"08/3036","text":"Christopher Dromey"},{"@pid":"210/1675","text":"Katherine M. Black"}]},"title":"Effects of Laryngeal Activity on Articulation.","venue":"IEEE ACM Trans. Audio Speech Lang. Process.","volume":"25","number":"12","pages":"2272-2280","year":"2017","type":"Journal Articles","access":"closed","key":"journals/taslp/DromeyB17","doi":"10.1109/TASLP.2017.2738564","ee":"https://doi.org/10.1109/TASLP.2017.2738564","url":"https://dblp.org/rec/journals/taslp/DromeyB17"},
+"url":"URL#4388154"
+},
+{
+"@score":"2",
+"@id":"4416253",
+"info":{"authors":{"author":[{"@pid":"212/1089","text":"Rania M. Ghoniem"},{"@pid":"53/2530","text":"Khaled Shaalan"}]},"title":"FCSR - Fuzzy Continuous Speech Recognition Approach for Identifying Laryngeal Pathologies Using New Weighted Spectrum Features.","venue":"AISI","pages":"384-395","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/aisi/GhoniemS17","doi":"10.1007/978-3-319-64861-3_36","ee":"https://doi.org/10.1007/978-3-319-64861-3_36","url":"https://dblp.org/rec/conf/aisi/GhoniemS17"},
+"url":"URL#4416253"
+},
+{
+"@score":"2",
+"@id":"4454340",
+"info":{"authors":{"author":[{"@pid":"79/10648","text":"Nicholas Cummins"},{"@pid":"180/5757","text":"Maximilian Schmitt"},{"@pid":"154/2865","text":"Shahin Amiriparian"},{"@pid":"37/119","text":"Jarek Krajewski"},{"@pid":"54/4934","text":"Björn W. Schuller"}]},"title":"&quot;You sound ill, take the day off&quot;: Automatic recognition of speech affected by upper respiratory tract infection.","venue":"EMBC","pages":"3806-3809","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/CumminsSAKS17","doi":"10.1109/EMBC.2017.8037686","ee":"https://doi.org/10.1109/EMBC.2017.8037686","url":"https://dblp.org/rec/conf/embc/CumminsSAKS17"},
+"url":"URL#4454340"
+},
+{
+"@score":"2",
+"@id":"4454529",
+"info":{"authors":{"author":[{"@pid":"186/0304","text":"Christian Infante"},{"@pid":"171/9646","text":"Daniel B. Chamberlain"},{"@pid":"172/4733","text":"Rahul Kodgule"},{"@pid":"60/8869","text":"Richard Ribón Fletcher"}]},"title":"Classification of voluntary coughs applied to the screening of respiratory disease.","venue":"EMBC","pages":"1413-1416","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/InfanteCKF17","doi":"10.1109/EMBC.2017.8037098","ee":"https://doi.org/10.1109/EMBC.2017.8037098","url":"https://dblp.org/rec/conf/embc/InfanteCKF17"},
+"url":"URL#4454529"
+},
+{
+"@score":"2",
+"@id":"4454970",
+"info":{"authors":{"author":[{"@pid":"208/3154","text":"Alice Rueda"},{"@pid":"184/9465","text":"Sridhar Krishnan 0001"}]},"title":"Feature analysis of dysphonia speech for monitoring Parkinson&apos;s disease.","venue":"EMBC","pages":"2308-2311","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/RuedaK17","doi":"10.1109/EMBC.2017.8037317","ee":"https://doi.org/10.1109/EMBC.2017.8037317","url":"https://dblp.org/rec/conf/embc/RuedaK17"},
+"url":"URL#4454970"
+},
+{
+"@score":"2",
+"@id":"4459314",
+"info":{"authors":{"author":[{"@pid":"207/9679","text":"M. V. Achuth Rao"},{"@pid":"207/9773","text":"N. K. Kausthubha"},{"@pid":"153/4371","text":"Shivani Yadav"},{"@pid":"18/4190","text":"Dipanjan Gope"},{"@pid":"207/9866","text":"Uma Maheswari Krishnaswamy"},{"@pid":"73/6634","text":"Prasanta Kumar Ghosh"}]},"title":"Automatic prediction of spirometry readings from cough and wheeze for monitoring of asthma severity.","venue":"EUSIPCO","pages":"41-45","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/eusipco/RaoKYGKG17","doi":"10.23919/EUSIPCO.2017.8081165","ee":"https://doi.org/10.23919/EUSIPCO.2017.8081165","url":"https://dblp.org/rec/conf/eusipco/RaoKYGKG17"},
+"url":"URL#4459314"
+},
+{
+"@score":"2",
+"@id":"4512343",
+"info":{"authors":{"author":[{"@pid":"212/6219","text":"Rodrigo Manríquez"},{"@pid":"128/2568","text":"Sean D. Peterson"},{"@pid":"212/6170","text":"Pavel Prado"},{"@pid":"155/6671","text":"Patricio Orio"},{"@pid":"115/7415","text":"Matías Zañartu"}]},"title":"Modeling Laryngeal Muscle Activation Noise for Low-Order Physiological Based Speech Synthesis.","venue":"INTERSPEECH","pages":"1378-1382","year":"2017","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/ManriquezPPOZ17","doi":"10.21437/INTERSPEECH.2017-1722","ee":"https://doi.org/10.21437/Interspeech.2017-1722","url":"https://dblp.org/rec/conf/interspeech/ManriquezPPOZ17"},
+"url":"URL#4512343"
+},
+{
+"@score":"2",
+"@id":"4512671",
+"info":{"authors":{"author":[{"@pid":"66/10649","text":"Marcin Wlodarczak"},{"@pid":"98/2383","text":"Kornel Laskowski"},{"@pid":"84/6620","text":"Mattias Heldner"},{"@pid":"212/6437","text":"Kätlin Aare"}]},"title":"Improving Prediction of Speech Activity Using Multi-Participant Respiratory State.","venue":"INTERSPEECH","pages":"1666-1670","year":"2017","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/WlodarczakLHA17","doi":"10.21437/INTERSPEECH.2017-1176","ee":"https://doi.org/10.21437/Interspeech.2017-1176","url":"https://dblp.org/rec/conf/interspeech/WlodarczakLHA17"},
+"url":"URL#4512671"
+},
+{
+"@score":"2",
+"@id":"4539766",
+"info":{"authors":{"author":[{"@pid":"194/7196","text":"Tamer Elfaramawy"},{"@pid":"171/8808","text":"Cheikh Latyr Fall"},{"@pid":"184/4477","text":"Martin Morissette"},{"@pid":"184/4299","text":"Francois Lellouche"},{"@pid":"05/1858","text":"Benoit Gosselin"}]},"title":"Wireless respiratory monitoring and coughing detection using a wearable patch sensor network.","venue":"NEWCAS","pages":"197-200","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/newcas/ElfaramawyFMLG17","doi":"10.1109/NEWCAS.2017.8010139","ee":"https://doi.org/10.1109/NEWCAS.2017.8010139","url":"https://dblp.org/rec/conf/newcas/ElfaramawyFMLG17"},
+"url":"URL#4539766"
+},
+{
+"@score":"2",
+"@id":"4630016",
+"info":{"authors":{"author":[{"@pid":"142/8723","text":"Jakob Unger"},{"@pid":"02/336","text":"Maria Schuster"},{"@pid":"116/3148","text":"Dietmar J. Hecker"},{"@pid":"116/3432","text":"Bernhard Schick"},{"@pid":"25/4683","text":"Jörg Lohscheller"}]},"title":"A generalized procedure for analyzing sustained and dynamic vocal fold vibrations from laryngeal high-speed videos using phonovibrograms.","venue":"Artif. Intell. Medicine","volume":"66","pages":"15-28","year":"2016","type":"Journal Articles","access":"closed","key":"journals/artmed/UngerSHSL16","doi":"10.1016/J.ARTMED.2015.10.002","ee":"https://doi.org/10.1016/j.artmed.2015.10.002","url":"https://dblp.org/rec/journals/artmed/UngerSHSL16"},
+"url":"URL#4630016"
+},
+{
+"@score":"2",
+"@id":"4635908",
+"info":{"authors":{"author":[{"@pid":"176/7920","text":"Daria Hemmerling"},{"@pid":"54/8483","text":"Andrzej Skalski"},{"@pid":"169/1785","text":"Janusz Gajda"}]},"title":"Voice data mining for laryngeal pathology assessment.","venue":"Comput. Biol. Medicine","volume":"69","pages":"270-276","year":"2016","type":"Journal Articles","access":"closed","key":"journals/cbm/HemmerlingSG16","doi":"10.1016/J.COMPBIOMED.2015.07.026","ee":"https://doi.org/10.1016/j.compbiomed.2015.07.026","url":"https://dblp.org/rec/journals/cbm/HemmerlingSG16"},
+"url":"URL#4635908"
+},
+{
+"@score":"2",
+"@id":"4637149",
+"info":{"authors":{"author":[{"@pid":"188/8110","text":"Joris Vandermeulen"},{"@pid":"125/1848","text":"Claudia Bahr"},{"@pid":"188/8371","text":"Dayle Johnston"},{"@pid":"188/8146","text":"Bernadette Earley"},{"@pid":"178/2110","text":"Emanuela Tullo"},{"@pid":"178/2043","text":"Ilaria Fontana"},{"@pid":"143/7835","text":"Marcella Guarino"},{"@pid":"133/6991","text":"Vasileios Exadaktylos"},{"@pid":"27/4474","text":"Daniel Berckmans"}]},"title":"Early recognition of bovine respiratory disease in calves using automated continuous monitoring of cough sounds.","venue":"Comput. Electron. Agric.","volume":"129","pages":"15-26","year":"2016","type":"Journal Articles","access":"closed","key":"journals/cea/VandermeulenBJE16","doi":"10.1016/J.COMPAG.2016.07.014","ee":"https://doi.org/10.1016/j.compag.2016.07.014","url":"https://dblp.org/rec/journals/cea/VandermeulenBJE16"},
+"url":"URL#4637149"
+},
+{
+"@score":"2",
+"@id":"4644530",
+"info":{"authors":{"author":[{"@pid":"211/1031","text":"Maja Rogic Vidakovic"},{"@pid":"189/1900","text":"Ana Jerkovic"},{"@pid":"153/1092","text":"Tomislav Juric"},{"@pid":"189/2039","text":"Igor Vujovic"},{"@pid":"137/5566","text":"Josko Soda"},{"@pid":"189/1998","text":"Nikola Erceg"},{"@pid":"10/7496","text":"Andreja Bubic"},{"@pid":"189/1965","text":"Marina Zmajevic Schönwald"},{"@pid":"152/6838","text":"Pantelis Lioumis"},{"@pid":"189/1951","text":"Dragan Gabelica"},{"@pid":"189/1849","text":"Zoran Dogas"}]},"title":"Neurophysiologic markers of primary motor cortex for laryngeal muscles and premotor cortex in caudal opercular part of inferior frontal gyrus investigated in motor speech disorder: a navigated transcranial magnetic stimulation (TMS) study.","venue":"Cogn. Process.","volume":"17","number":"4","pages":"429-442","year":"2016","type":"Journal Articles","access":"closed","key":"journals/cp/RogicJJVSEBSLGD16","doi":"10.1007/S10339-016-0766-5","ee":"https://doi.org/10.1007/s10339-016-0766-5","url":"https://dblp.org/rec/journals/cp/RogicJJVSEBSLGD16"},
+"url":"URL#4644530"
+},
+{
+"@score":"2",
+"@id":"4689901",
+"info":{"authors":{"author":[{"@pid":"46/10885","text":"Leonardo Lancia"},{"@pid":"87/4278","text":"Daniel Voigt"},{"@pid":"186/0099","text":"Georgy Krasovitskiy"}]},"title":"Characterization of laryngealization as irregular vocal fold vibration and interaction with prosodic prominence.","venue":"J. Phonetics","volume":"54","pages":"80-97","year":"2016","type":"Journal Articles","access":"closed","key":"journals/jphonetics/LanciaVK16","doi":"10.1016/J.WOCN.2015.08.001","ee":"https://doi.org/10.1016/j.wocn.2015.08.001","url":"https://dblp.org/rec/journals/jphonetics/LanciaVK16"},
+"url":"URL#4689901"
+},
+{
+"@score":"2",
+"@id":"4689902",
+"info":{"authors":{"author":[{"@pid":"46/10885","text":"Leonardo Lancia"},{"@pid":"87/4278","text":"Daniel Voigt"},{"@pid":"186/0099","text":"Georgy Krasovitskiy"}]},"title":"Erratum to &quot;Characterization of laryngealization as irregular vocal fold vibrations and interaction with prosodic prominence&quot; [J. Phon. 54 (2016) 80-97].","venue":"J. Phonetics","volume":"57","pages":"71","year":"2016","type":"Journal Articles","access":"closed","key":"journals/jphonetics/LanciaVK16a","doi":"10.1016/J.WOCN.2016.05.005","ee":"https://doi.org/10.1016/j.wocn.2016.05.005","url":"https://dblp.org/rec/journals/jphonetics/LanciaVK16a"},
+"url":"URL#4689902"
+},
+{
+"@score":"2",
+"@id":"4769555",
+"info":{"authors":{"author":[{"@pid":"08/7219","text":"Branimir Dropuljic"},{"@pid":"86/373","text":"Davor Petrinovic"},{"@pid":"30/5940","text":"Kresimir Cosic"}]},"title":"Novel speech features of disturbances in laryngeal muscle coordination.","venue":"CogInfoCom","pages":"175-180","year":"2016","type":"Conference and Workshop Papers","access":"closed","key":"conf/coginfocom/DropuljicPC16","doi":"10.1109/COGINFOCOM.2016.7804545","ee":"https://doi.org/10.1109/CogInfoCom.2016.7804545","url":"https://dblp.org/rec/conf/coginfocom/DropuljicPC16"},
+"url":"URL#4769555"
+},
+{
+"@score":"2",
+"@id":"4805842",
+"info":{"authors":{"author":[{"@pid":"52/3220","text":"Wei Ji"},{"@pid":"87/6284-9","text":"Yun Li 0009"}]},"title":"Stable dysphonia measures selection for Parkinson speech rehabilitation via diversity regularized ensemble.","venue":"ICASSP","pages":"2264-2268","year":"2016","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/JiL16","doi":"10.1109/ICASSP.2016.7472080","ee":"https://doi.org/10.1109/ICASSP.2016.7472080","url":"https://dblp.org/rec/conf/icassp/JiL16"},
+"url":"URL#4805842"
+},
+{
+"@score":"2",
+"@id":"4843026",
+"info":{"authors":{"author":[{"@pid":"199/7626","text":"Ming Xiu"},{"@pid":"124/9129","text":"Camille Fauth"},{"@pid":"69/9295","text":"Béatrice Vaxelaire"},{"@pid":"199/7651","text":"Jean-François Rodier"},{"@pid":"199/7627","text":"Pierre-Philippe Volkmar"},{"@pid":"29/9295","text":"Rudolph Sock"}]},"title":"A post-thyroidectomy voice quality study in patients suffering or not from Recurrent laryngeal paralysis.","venue":"ISCSLP","pages":"1-4","year":"2016","type":"Conference and Workshop Papers","access":"closed","key":"conf/iscslp/XiuFVRVS16","doi":"10.1109/ISCSLP.2016.7918411","ee":"https://doi.org/10.1109/ISCSLP.2016.7918411","url":"https://dblp.org/rec/conf/iscslp/XiuFVRVS16"},
+"url":"URL#4843026"
+},
+{
+"@score":"2",
+"@id":"4853792",
+"info":{"authors":{"author":[{"@pid":"136/5064","text":"Philipp Aichinger"},{"@pid":"153/1645","text":"Imme Roesner"},{"@pid":"184/8916","text":"Matthias Leonhard"},{"@pid":"184/8887","text":"Doris-Maria Denk-Linnert"},{"@pid":"136/5195","text":"Wolfgang Bigenzahn"},{"@pid":"136/5011","text":"Berit Schneider-Stickler"}]},"title":"A Database of Laryngeal High-Speed Videos with Simultaneous High-Quality Audio Recordings of Pathological and Non-Pathological Voices.","venue":"LREC","year":"2016","type":"Conference and Workshop Papers","access":"open","key":"conf/lrec/AichingerRLDBS16","ee":"http://www.lrec-conf.org/proceedings/lrec2016/summaries/378.html","url":"https://dblp.org/rec/conf/lrec/AichingerRLDBS16"},
+"url":"URL#4853792"
+},
+{
+"@score":"2",
+"@id":"4886532",
+"info":{"authors":{"author":[{"@pid":"184/3287","text":"Miklós Gábriel Tulics"},{"@pid":"171/1115","text":"Ferenc Kazinczi"},{"@pid":"54/3160","text":"Klára Vicsi"}]},"title":"Statistical Analysis of Acoustical Parameters in the Voice of Children with Juvenile Dysphonia.","venue":"SPECOM","pages":"667-674","year":"2016","type":"Conference and Workshop Papers","access":"closed","key":"conf/specom/TulicsKV16","doi":"10.1007/978-3-319-43958-7_81","ee":"https://doi.org/10.1007/978-3-319-43958-7_81","url":"https://dblp.org/rec/conf/specom/TulicsKV16"},
+"url":"URL#4886532"
+},
+{
+"@score":"2",
+"@id":"4953171",
+"info":{"authors":{"author":[{"@pid":"38/543","text":"H. Irem Türkmen"},{"@pid":"50/1345","text":"M. Elif Karsligil"},{"@pid":"142/4129","text":"Ismail Kocak"}]},"title":"Classification of laryngeal disorders based on shape and vascular defects of vocal folds.","venue":"Comput. Biol. Medicine","volume":"62","pages":"76-85","year":"2015","type":"Journal Articles","access":"closed","key":"journals/cbm/TurkmenKK15","doi":"10.1016/J.COMPBIOMED.2015.02.001","ee":"https://doi.org/10.1016/j.compbiomed.2015.02.001","url":"https://dblp.org/rec/journals/cbm/TurkmenKK15"},
+"url":"URL#4953171"
+},
+{
+"@score":"2",
+"@id":"4970288",
+"info":{"authors":{"author":[{"@pid":"47/10731","text":"Evaldas Vaiciukynas"},{"@pid":"v/AntanasVerikas","text":"Antanas Verikas"},{"@pid":"38/638","text":"Adas Gelzinis"},{"@pid":"67/6669","text":"Marija Bacauskiene"},{"@pid":"157/1122","text":"Jonas Minelga"},{"@pid":"92/7166","text":"Magnus Hållander"},{"@pid":"157/1131","text":"Evaldas Padervinskis"},{"@pid":"95/5875","text":"Virgilijus Uloza"}]},"title":"Fusing voice and query data for non-invasive detection of laryngeal disorders.","venue":"Expert Syst. Appl.","volume":"42","number":"22","pages":"8445-8453","year":"2015","type":"Journal Articles","access":"closed","key":"journals/eswa/VaiciukynasVGBM15","doi":"10.1016/J.ESWA.2015.07.001","ee":"https://doi.org/10.1016/j.eswa.2015.07.001","url":"https://dblp.org/rec/journals/eswa/VaiciukynasVGBM15"},
+"url":"URL#4970288"
+},
+{
+"@score":"2",
+"@id":"5041830",
+"info":{"authors":{"author":[{"@pid":"59/10369","text":"Juan Rafael Orozco-Arroyave"},{"@pid":"150/3554","text":"Elkyn Alexander Belalcázar-Bolaños"},{"@pid":"99/8461","text":"Julián David Arias-Londoño"},{"@pid":"91/7443","text":"Jesús Francisco Vargas-Bonilla"},{"@pid":"140/2802","text":"Sabine Skodda"},{"@pid":"50/10325","text":"Jan Rusz"},{"@pid":"67/9719","text":"Khaled Daqrouq"},{"@pid":"68/7247","text":"Florian Hönig"},{"@pid":"30/1288","text":"Elmar Nöth"}]},"title":"Characterization Methods for the Detection of Multiple Voice Disorders: Neurological, Functional, and Laryngeal Diseases.","venue":"IEEE J. Biomed. Health Informatics","volume":"19","number":"6","pages":"1820-1828","year":"2015","type":"Journal Articles","access":"closed","key":"journals/titb/Orozco-Arroyave15","doi":"10.1109/JBHI.2015.2467375","ee":"https://doi.org/10.1109/JBHI.2015.2467375","url":"https://dblp.org/rec/journals/titb/Orozco-Arroyave15"},
+"url":"URL#5041830"
+},
+{
+"@score":"2",
+"@id":"5066369",
+"info":{"authors":{"author":[{"@pid":"18/8579","text":"Lijuan Shi"},{"@pid":"70/2932-11","text":"Jian Zhao 0011"},{"@pid":"46/5932","text":"Lirong Wang"},{"@pid":"27/8457","text":"Zhiyong An"},{"@pid":"189/1363","text":"Biao Shang"},{"@pid":"17/5705","text":"Hao Li"}]},"title":"Design of Measurement System for Respiratory Training Device Based on Speech Training for Hearing-Impaired Children.","venue":"BDCloud","pages":"203-206","year":"2015","type":"Conference and Workshop Papers","access":"closed","key":"conf/bdcloud/ShiZWASL15","doi":"10.1109/BDCLOUD.2015.20","ee":"https://doi.org/10.1109/BDCloud.2015.20","url":"https://dblp.org/rec/conf/bdcloud/ShiZWASL15"},
+"url":"URL#5066369"
+},
+{
+"@score":"2",
+"@id":"5074987",
+"info":{"authors":{"author":[{"@pid":"181/2008","text":"João Paulo Teixeira 0002"},{"@pid":"135/3585","text":"Paula Odete Fernandes"}]},"title":"Acoustic Analysis of Vocal Dysphonia.","venue":"CENTERIS/ProjMAN/HCist","pages":"466-473","year":"2015","type":"Conference and Workshop Papers","access":"closed","key":"conf/centeris/TeixeiraF15","doi":"10.1016/J.PROCS.2015.08.544","ee":"https://doi.org/10.1016/j.procs.2015.08.544","url":"https://dblp.org/rec/conf/centeris/TeixeiraF15"},
+"url":"URL#5074987"
+},
+{
+"@score":"2",
+"@id":"5093822",
+"info":{"authors":{"author":[{"@pid":"171/8002","text":"Taisa D. Costa"},{"@pid":"51/993","text":"Guilherme Nunes Nogueira-Neto"},{"@pid":"84/5497","text":"Percy Nohama"}]},"title":"Cough detection through mechanomyographic signal in synchronized respiratory electrical stimulation systems.","venue":"EMBC","pages":"4590-4593","year":"2015","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/CostaNN15","doi":"10.1109/EMBC.2015.7319416","ee":"https://doi.org/10.1109/EMBC.2015.7319416","url":"https://dblp.org/rec/conf/embc/CostaNN15"},
+"url":"URL#5093822"
+},
+{
+"@score":"2",
+"@id":"5135225",
+"info":{"authors":{"author":[{"@pid":"38/9268","text":"Melissa Barkat-Defradas"},{"@pid":"124/9129","text":"Camille Fauth"},{"@pid":"203/5517","text":"Ivana DidirkovaIvana Didirková"},{"@pid":"203/4921","text":"Benoit Amy de la Bretèque"},{"@pid":"01/9239","text":"Fabrice Hirsch"},{"@pid":"87/9261","text":"Christelle Dodane"},{"@pid":"203/5281","text":"Jérémi Sauvage"}]},"title":"Dysphonia is beautiful: A perceptual and acoustic analysis of vocal roughness.","venue":"ICPhS","year":"2015","type":"Conference and Workshop Papers","access":"open","key":"conf/icphs/Barkat-Defradas15","ee":"https://www.internationalphoneticassociation.org/icphs-proceedings/ICPhS2015/Papers/ICPHS0478.pdf","url":"https://dblp.org/rec/conf/icphs/Barkat-Defradas15"},
+"url":"URL#5135225"
+},
+{
+"@score":"2",
+"@id":"5239014",
+"info":{"authors":{"author":{"@pid":"166/9395","text":"Yusuf A. Amrulloh"}},"title":"Automated methods for cough assessments and applications in screening paediatric respiratory diseases","year":"2014","type":"Books and Theses","access":"closed","key":"phd/au/Amrulloh14","doi":"10.14264/UQL.2015.134","ee":"https://doi.org/10.14264/uql.2015.134","url":"https://dblp.org/rec/phd/au/Amrulloh14"},
+"url":"URL#5239014"
+},
+{
+"@score":"2",
+"@id":"5241542",
+"info":{"authors":{"author":{"@pid":"42/9070","text":"Georg Luegmair"}},"title":"3D-reconstruction of vocal fold surface dynamics in functional dysphonia (3D-Rekonstruktion von Stimmlippenschwingungen bei funktioneller Dysphonie).","pages":"1-138","publisher":"Shaker","year":"2014","type":"Books and Theses","access":"unavailable","key":"phd/dnb/Luegmair14","ee":"https://d-nb.info/1045300373","url":"https://dblp.org/rec/phd/dnb/Luegmair14"},
+"url":"URL#5241542"
+},
+{
+"@score":"2",
+"@id":"5252263",
+"info":{"authors":{"author":[{"@pid":"47/10731","text":"Evaldas Vaiciukynas"},{"@pid":"v/AntanasVerikas","text":"Antanas Verikas"},{"@pid":"38/638","text":"Adas Gelzinis"},{"@pid":"67/6669","text":"Marija Bacauskiene"},{"@pid":"77/9269","text":"Zvi Kons"},{"@pid":"140/2690","text":"Aharon Satt"},{"@pid":"50/2590","text":"Ron Hoory"}]},"title":"Fusion of voice signal information for detection of mild laryngeal pathology.","venue":"Appl. Soft Comput.","volume":"18","pages":"91-103","year":"2014","type":"Journal Articles","access":"closed","key":"journals/asc/VaiciukynasVGBKSH14","doi":"10.1016/J.ASOC.2014.01.012","ee":"https://doi.org/10.1016/j.asoc.2014.01.012","url":"https://dblp.org/rec/journals/asc/VaiciukynasVGBKSH14"},
+"url":"URL#5252263"
+},
+{
+"@score":"2",
+"@id":"5255712",
+"info":{"authors":{"author":[{"@pid":"157/4657","text":"Naxhilda Rruqja"},{"@pid":"86/7348","text":"Philippe H. Dejonckere"},{"@pid":"78/10649","text":"Giovanna Cantarella"},{"@pid":"29/3947","text":"Jean Schoentgen"},{"@pid":"142/8702","text":"Silvia Orlandi"},{"@pid":"157/4646","text":"Salvatore D. Barbagallo"},{"@pid":"10/5074","text":"Claudia Manfredi"}]},"title":"Testing software tools with synthesized deviant voices for medicolegal assessment of occupational dysphonia.","venue":"Biomed. Signal Process. Control.","volume":"13","pages":"71-78","year":"2014","type":"Journal Articles","access":"closed","key":"journals/bspc/RruqjaDCSOBM14","doi":"10.1016/J.BSPC.2014.03.011","ee":"https://doi.org/10.1016/j.bspc.2014.03.011","url":"https://dblp.org/rec/journals/bspc/RruqjaDCSOBM14"},
+"url":"URL#5255712"
+},
+{
+"@score":"2",
+"@id":"5446556",
+"info":{"authors":{"author":[{"@pid":"67/6383-9","text":"Gang Chen 0009"},{"@pid":"97/4497","text":"Soo Jin Park"},{"@pid":"41/7151","text":"Jody Kreiman"},{"@pid":"40/6586","text":"Abeer Alwan"}]},"title":"Investigating the effect of F0 and vocal intensity on harmonic magnitudes: data from high-speed laryngeal videoendoscopy.","venue":"INTERSPEECH","pages":"1668-1672","year":"2014","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/0009PKA14","doi":"10.21437/INTERSPEECH.2014-25","ee":"https://doi.org/10.21437/Interspeech.2014-25","url":"https://dblp.org/rec/conf/interspeech/0009PKA14"},
+"url":"URL#5446556"
+},
+{
+"@score":"2",
+"@id":"5554877",
+"info":{"authors":{"author":[{"@pid":"77/3498","text":"Chung-Feng Jeffrey Kuo"},{"@pid":"134/8067","text":"Po-Chun Wang"},{"@pid":"134/8265","text":"Yueng-Hsiang Chu"},{"@pid":"134/8197","text":"Hsing-Won Wang"},{"@pid":"134/8294","text":"Chun-Yu Lai"}]},"title":"Using image processing technology combined with decision tree algorithm in laryngeal video stroboscope automatic identification of common vocal fold diseases.","venue":"Comput. Methods Programs Biomed.","volume":"112","number":"1","pages":"228-236","year":"2013","type":"Journal Articles","access":"closed","key":"journals/cmpb/KuoWCWL13","doi":"10.1016/J.CMPB.2013.06.021","ee":"https://doi.org/10.1016/j.cmpb.2013.06.021","url":"https://dblp.org/rec/journals/cmpb/KuoWCWL13"},
+"url":"URL#5554877"
+},
+{
+"@score":"2",
+"@id":"5653960",
+"info":{"authors":{"author":[{"@pid":"54/10648","text":"Anna Katharina Fuchs"},{"@pid":"85/9297","text":"Juan Andres Morales-Cordovilla"},{"@pid":"47/5569","text":"Martin Hagmüller"}]},"title":"ASR for electro-laryngeal speech.","venue":"ASRU","pages":"234-238","year":"2013","type":"Conference and Workshop Papers","access":"closed","key":"conf/asru/FuchsMH13","doi":"10.1109/ASRU.2013.6707735","ee":"https://doi.org/10.1109/ASRU.2013.6707735","url":"https://dblp.org/rec/conf/asru/FuchsMH13"},
+"url":"URL#5653960"
+},
+{
+"@score":"2",
+"@id":"5735596",
+"info":{"authors":{"author":[{"@pid":"46/10885","text":"Leonardo Lancia"},{"@pid":"140/2659","text":"Heriberto Avelino"},{"@pid":"87/4278","text":"Daniel Voigt"}]},"title":"Measuring laryngealization in running speech: interaction with contrastive tones in yalálag zapotec.","venue":"INTERSPEECH","pages":"602-606","year":"2013","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/LanciaAV13","doi":"10.21437/INTERSPEECH.2013-164","ee":"https://doi.org/10.21437/Interspeech.2013-164","url":"https://dblp.org/rec/conf/interspeech/LanciaAV13"},
+"url":"URL#5735596"
+},
+{
+"@score":"2",
+"@id":"5735987",
+"info":{"authors":{"author":[{"@pid":"27/9999","text":"Xiao Yao"},{"@pid":"32/5931","text":"Takatoshi Jitsuhiro"},{"@pid":"57/571","text":"Chiyomi Miyajima"},{"@pid":"07/6964","text":"Norihide Kitaoka"},{"@pid":"38/3483","text":"Kazuya Takeda"}]},"title":"Classification of speech under stress by modeling the aerodynamics of the laryngeal ventricle.","venue":"INTERSPEECH","pages":"837-841","year":"2013","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/YaoJMKT13","doi":"10.21437/INTERSPEECH.2013-238","ee":"https://doi.org/10.21437/Interspeech.2013-238","url":"https://dblp.org/rec/conf/interspeech/YaoJMKT13"},
+"url":"URL#5735987"
+},
+{
+"@score":"2",
+"@id":"5760760",
+"info":{"authors":{"author":[{"@pid":"42/3570","text":"Carlos M. Travieso"},{"@pid":"61/6223","text":"Jesús B. Alonso"},{"@pid":"59/10369","text":"Juan Rafael Orozco-Arroyave"},{"@pid":"95/3100","text":"Jordi Solé-Casals"},{"@pid":"34/11285","text":"Esteve Gallego-Jutglà"}]},"title":"Automatic Detection of Laryngeal Pathologies in Running Speech Based on the HMM Transformation of the Nonlinear Dynamics.","venue":"NOLISP","pages":"136-143","year":"2013","type":"Conference and Workshop Papers","access":"closed","key":"conf/nolisp/TraviesoAOSG13","doi":"10.1007/978-3-642-38847-7_18","ee":"https://doi.org/10.1007/978-3-642-38847-7_18","url":"https://dblp.org/rec/conf/nolisp/TraviesoAOSG13"},
+"url":"URL#5760760"
+},
+{
+"@score":"2",
+"@id":"5831618",
+"info":{"authors":{"author":[{"@pid":"96/4646","text":"Rubén Fraile"},{"@pid":"83/9502","text":"Malte Kob"},{"@pid":"25/1996","text":"Juan Ignacio Godino-Llorente"},{"@pid":"74/753","text":"Nicolás Sáenz-Lechón"},{"@pid":"34/4981","text":"Víctor Osma-Ruiz"},{"@pid":"29/9244","text":"Juana M. Gutiérrez-Arriola"}]},"title":"Physical simulation of laryngeal disorders using a multiple-mass vocal fold model.","venue":"Biomed. Signal Process. Control.","volume":"7","number":"1","pages":"65-78","year":"2012","type":"Journal Articles","access":"closed","key":"journals/bspc/FraileKGSOG12","doi":"10.1016/J.BSPC.2011.04.002","ee":"https://doi.org/10.1016/j.bspc.2011.04.002","url":"https://dblp.org/rec/journals/bspc/FraileKGSOG12"},
+"url":"URL#5831618"
+},
+{
+"@score":"2",
+"@id":"5847847",
+"info":{"authors":{"author":[{"@pid":"v/AntanasVerikas","text":"Antanas Verikas"},{"@pid":"67/6669","text":"Marija Bacauskiene"},{"@pid":"38/638","text":"Adas Gelzinis"},{"@pid":"47/10731","text":"Evaldas Vaiciukynas"},{"@pid":"95/5875","text":"Virgilijus Uloza"}]},"title":"Questionnaire- versus voice-based screening for laryngeal disorders.","venue":"Expert Syst. Appl.","volume":"39","number":"6","pages":"6254-6262","year":"2012","type":"Journal Articles","access":"closed","key":"journals/eswa/VerikasBGVU12","doi":"10.1016/J.ESWA.2011.12.037","ee":"https://doi.org/10.1016/j.eswa.2011.12.037","url":"https://dblp.org/rec/journals/eswa/VerikasBGVU12"},
+"url":"URL#5847847"
+},
+{
+"@score":"2",
+"@id":"5957498",
+"info":{"authors":{"author":[{"@pid":"160/6614","text":"Keegan Kosasih"},{"@pid":"00/6840","text":"Udantha R. Abeyratne"},{"@pid":"79/9130","text":"Vinayak Swarnkar"}]},"title":"High frequency analysis of cough sounds in pediatric patients with respiratory diseases.","venue":"EMBC","pages":"5654-5657","year":"2012","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/KosasihAS12","doi":"10.1109/EMBC.2012.6347277","ee":"https://doi.org/10.1109/EMBC.2012.6347277","url":"https://dblp.org/rec/conf/embc/KosasihAS12"},
+"url":"URL#5957498"
+},
+{
+"@score":"2",
+"@id":"6192078",
+"info":{"authors":{"author":[{"@pid":"48/10077","text":"Andrew Bates"},{"@pid":"03/3943","text":"Martin J. Ling"},{"@pid":"49/9230","text":"Christian Geng"},{"@pid":"90/9329","text":"Alice Turk"},{"@pid":"80/1679","text":"D. K. Arvind 0001"}]},"title":"Accelerometer-Based Respiratory Measurement During Speech.","venue":"BSN","pages":"95-100","year":"2011","type":"Conference and Workshop Papers","access":"closed","key":"conf/bsn/BatesLGTA11","doi":"10.1109/BSN.2011.27","ee":"https://doi.org/10.1109/BSN.2011.27","url":"https://dblp.org/rec/conf/bsn/BatesLGTA11"},
+"url":"URL#6192078"
+},
+{
+"@score":"2",
+"@id":"6251406",
+"info":{"authors":{"author":{"@pid":"17/3494","text":"Toshiko Isei-Jaakkola"}},"title":"A Linguistic Rhythm Observed from the Respiratory Muscle Movements and Speech Waveforms by English, Japanese and Chinese L1 and L2 - The Recitation of a Story.","venue":"ICPhS","pages":"942-945","year":"2011","type":"Conference and Workshop Papers","access":"open","key":"conf/icphs/Isei-Jaakkola11","ee":"https://www.internationalphoneticassociation.org/icphs-proceedings/ICPhS2011/OnlineProceedings/RegularSession/Isei-Jaakkola/Isei-Jaakkola.pdf","url":"https://dblp.org/rec/conf/icphs/Isei-Jaakkola11"},
+"url":"URL#6251406"
+},
+{
+"@score":"2",
+"@id":"6278882",
+"info":{"authors":{"author":[{"@pid":"95/1770","text":"Andrea Giordano"},{"@pid":"86/7348","text":"Philippe H. Dejonckere"},{"@pid":"10/5074","text":"Claudia Manfredi"}]},"title":"Acoustic assessment of spasmodic dysphonia using a new multipurpose voice analysis tool.","venue":"MAVEBA","pages":"147-150","year":"2011","type":"Conference and Workshop Papers","access":"open","key":"conf/maveba/GiordanoDM11","ee":"https://www.isca-archive.org/maveba_2011/giordano11_maveba.html","url":"https://dblp.org/rec/conf/maveba/GiordanoDM11"},
+"url":"URL#6278882"
+},
+{
+"@score":"2",
+"@id":"6305693",
+"info":{"authors":{"author":[{"@pid":"92/1549","text":"Tobias Bocklet"},{"@pid":"30/1288","text":"Elmar Nöth"},{"@pid":"37/5618","text":"Georg Stemmer"}]},"title":"Voice Assessment of Speakers with Laryngeal Cancer by Glottal Excitation Modeling Based on a 2-Mass Model.","venue":"TSD","pages":"348-355","year":"2011","type":"Conference and Workshop Papers","access":"closed","key":"conf/tsd/BockletNS11","doi":"10.1007/978-3-642-23538-2_44","ee":"https://doi.org/10.1007/978-3-642-23538-2_44","url":"https://dblp.org/rec/conf/tsd/BockletNS11"},
+"url":"URL#6305693"
+},
+{
+"@score":"2",
+"@id":"6344792",
+"info":{"authors":{"author":[{"@pid":"v/AntanasVerikas","text":"Antanas Verikas"},{"@pid":"38/638","text":"Adas Gelzinis"},{"@pid":"67/6669","text":"Marija Bacauskiene"},{"@pid":"92/7166","text":"Magnus Hållander"},{"@pid":"95/5875","text":"Virgilijus Uloza"},{"@pid":"29/8090","text":"Marius Kaseta"}]},"title":"Combining image, voice, and the patient&apos;s questionnaire data to categorize laryngeal disorders.","venue":"Artif. Intell. Medicine","volume":"49","number":"1","pages":"43-50","year":"2010","type":"Journal Articles","access":"closed","key":"journals/artmed/VerikasGBHUK10","doi":"10.1016/J.ARTMED.2010.02.002","ee":"https://doi.org/10.1016/j.artmed.2010.02.002","url":"https://dblp.org/rec/journals/artmed/VerikasGBHUK10"},
+"url":"URL#6344792"
+},
+{
+"@score":"2",
+"@id":"6499862",
+"info":{"authors":{"author":[{"@pid":"94/2514","text":"Martti Vainio"},{"@pid":"71/360","text":"Matti Airas"},{"@pid":"90/9230","text":"Juhani Järvikivi"},{"@pid":"99/2726","text":"Paavo Alku"}]},"title":"Laryngeal voice quality in the expression of focus.","venue":"INTERSPEECH","pages":"921-924","year":"2010","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/VainioAJA10","doi":"10.21437/INTERSPEECH.2010-312","ee":"https://doi.org/10.21437/Interspeech.2010-312","url":"https://dblp.org/rec/conf/interspeech/VainioAJA10"},
+"url":"URL#6499862"
+},
+{
+"@score":"2",
+"@id":"6590048",
+"info":{"authors":{"author":[{"@pid":"42/2411","text":"Corinne Fredouille"},{"@pid":"21/8155","text":"Gilles Pouchoulin"},{"@pid":"26/4212","text":"Alain Ghio"},{"@pid":"90/9176","text":"Joana Revis"},{"@pid":"72/3130","text":"Jean-François Bonastre"},{"@pid":"81/9177","text":"Antoine Giovanni"}]},"title":"Back-and-Forth Methodology for Objective Voice Quality Assessment: From/to Expert Knowledge to/from Automatic Classification of Dysphonia.","venue":"EURASIP J. Adv. Signal Process.","volume":"2009","year":"2009","type":"Journal Articles","access":"open","key":"journals/ejasp/FredouillePGRBG09","doi":"10.1155/2009/982102","ee":"https://doi.org/10.1155/2009/982102","url":"https://dblp.org/rec/journals/ejasp/FredouillePGRBG09"},
+"url":"URL#6590048"
+},
+{
+"@score":"2",
+"@id":"6725190",
+"info":{"authors":{"author":[{"@pid":"47/9239","text":"Krzysztof Izdebski"},{"@pid":"67/6209","text":"Yuling Yan"},{"@pid":"68/9238","text":"Melda Kunduk"}]},"title":"Acoustic and high-speed digital imaging based analysis of pathological voice contributes to better understanding and differential diagnosis of neurological dysphonias and of mimicking phonatory disorders.","venue":"INTERSPEECH","pages":"932-934","year":"2009","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/IzdebskiYK09","ee":"https://www.isca-speech.org/archive/interspeech_2009/izdebski09_interspeech.html","url":"https://dblp.org/rec/conf/interspeech/IzdebskiYK09"},
+"url":"URL#6725190"
+},
+{
+"@score":"2",
+"@id":"6739150",
+"info":{"authors":{"author":[{"@pid":"143/6547","text":"Katrin J. Neumann"},{"@pid":"86/7348","text":"Philippe H. Dejonckere"}]},"title":"Voice related quality of life in spasmodic dysphonia: a detailed VHI-analysis before and after botulinum treatment.","venue":"MAVEBA","pages":"65","year":"2009","type":"Conference and Workshop Papers","access":"open","key":"conf/maveba/NeumannD09","ee":"https://www.isca-archive.org/maveba_2009/neumann09_maveba.html","url":"https://dblp.org/rec/conf/maveba/NeumannD09"},
+"url":"URL#6739150"
+},
+{
+"@score":"2",
+"@id":"6806523",
+"info":{"authors":{"author":[{"@pid":"38/638","text":"Adas Gelzinis"},{"@pid":"v/AntanasVerikas","text":"Antanas Verikas"},{"@pid":"67/6669","text":"Marija Bacauskiene"}]},"title":"Automated speech analysis applied to laryngeal disease categorization.","venue":"Comput. Methods Programs Biomed.","volume":"91","number":"1","pages":"36-47","year":"2008","type":"Journal Articles","access":"closed","key":"journals/cmpb/GelzinisVB08","doi":"10.1016/J.CMPB.2008.01.008","ee":"https://doi.org/10.1016/j.cmpb.2008.01.008","url":"https://dblp.org/rec/journals/cmpb/GelzinisVB08"},
+"url":"URL#6806523"
+},
+{
+"@score":"2",
+"@id":"6862189",
+"info":{"authors":{"author":[{"@pid":"25/4683","text":"Jörg Lohscheller"},{"@pid":"08/49","text":"Ulrich Eysholdt"},{"@pid":"57/1823","text":"Hikmet Toy"},{"@pid":"48/598","text":"Michael Döllinger"}]},"title":"Phonovibrography: Mapping High-Speed Movies of Vocal Fold Vibrations Into 2-D Diagrams for Visualizing and Analyzing the Underlying Laryngeal Dynamics.","venue":"IEEE Trans. Medical Imaging","volume":"27","number":"3","pages":"300-309","year":"2008","type":"Journal Articles","access":"closed","key":"journals/tmi/LohschellerETD08","doi":"10.1109/TMI.2007.903690","ee":"https://doi.org/10.1109/TMI.2007.903690","url":"https://dblp.org/rec/journals/tmi/LohschellerETD08"},
+"url":"URL#6862189"
+},
+{
+"@score":"2",
+"@id":"7133759",
+"info":{"authors":{"author":{"@pid":"52/9247","text":"Victor J. Boucher"}},"title":"Acoustic correlates of laryngeal-muscle fatigue: findings for a phonometric prevention of acquired voice pathologies.","venue":"INTERSPEECH","pages":"1202-1205","year":"2007","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/Boucher07","doi":"10.21437/INTERSPEECH.2007-387","ee":"https://doi.org/10.21437/Interspeech.2007-387","url":"https://dblp.org/rec/conf/interspeech/Boucher07"},
+"url":"URL#7133759"
+},
+{
+"@score":"2",
+"@id":"7146947",
+"info":{"authors":{"author":[{"@pid":"86/6466","text":"Sara Ferrari"},{"@pid":"143/7871","text":"Mitchell Silva"},{"@pid":"143/7835","text":"Marcella Guarino"},{"@pid":"27/4474","text":"Daniel Berckmans"}]},"title":"Characterisation of cough sounds to monitor respiratory infections in intensive pig farming.","venue":"MAVEBA","pages":"75-78","year":"2007","type":"Conference and Workshop Papers","access":"open","key":"conf/maveba/FerrariSGB07","ee":"https://www.isca-archive.org/maveba_2007/ferrari07_maveba.html","url":"https://dblp.org/rec/conf/maveba/FerrariSGB07"},
+"url":"URL#7146947"
+},
+{
+"@score":"2",
+"@id":"7220578",
+"info":{"authors":{"author":[{"@pid":"62/648","text":"Anthony P. Salvatore"},{"@pid":"51/5421","text":"Amitava Biswas"},{"@pid":"k/VladikKreinovich","text":"Vladik Kreinovich"},{"@pid":"34/3062","text":"Bertha Manriquez"},{"@pid":"17/414","text":"Michael P. Cannito"},{"@pid":"07/1512","text":"Robert J. Sinard"}]},"title":"Expert System-Type Approach to Voice Disorders: Scheduling Botulinum Toxin Treatment for Adductor Spasmodic Dysphonia.","venue":"J. Adv. Comput. Intell. Intell. Informatics","volume":"10","number":"3","pages":"332-338","year":"2006","type":"Journal Articles","access":"open","key":"journals/jaciii/SalvatoreBKMCS06","doi":"10.20965/JACIII.2006.P0332","ee":"https://doi.org/10.20965/jaciii.2006.p0332","url":"https://dblp.org/rec/journals/jaciii/SalvatoreBKMCS06"},
+"url":"URL#7220578"
+},
+{
+"@score":"2",
+"@id":"7260582",
+"info":{"authors":{"author":[{"@pid":"148/9420","text":"Thomas Wasser"},{"@pid":"64/1134","text":"Robert Miller"},{"@pid":"148/9498","text":"Andrzej Pilacik"}]},"title":"Using Graphical and Statistical Software to Diagnosis Pediatric Asthma with Vocal Cord Dysfunction (VCD).","venue":"AMIA","year":"2006","type":"Conference and Workshop Papers","access":"unavailable","key":"conf/amia/WasserMP06","ee":"https://knowledge.amia.org/amia-55142-a2006a-1.620145/t-002-1.622268/f-001-1.622269/a-466-1.622341/a-467-1.622338","url":"https://dblp.org/rec/conf/amia/WasserMP06"},
+"url":"URL#7260582"
+},
+{
+"@score":"2",
+"@id":"7475884",
+"info":{"authors":{"author":[{"@pid":"v/AntanasVerikas","text":"Antanas Verikas"},{"@pid":"38/638","text":"Adas Gelzinis"},{"@pid":"67/6669","text":"Marija Bacauskiene"},{"@pid":"95/5875","text":"Virgilijus Uloza"}]},"title":"Intelligent Vocal Cord Image Analysis for Categorizing Laryngeal Diseases.","venue":"IEA/AIE","pages":"69-78","year":"2005","type":"Conference and Workshop Papers","access":"closed","key":"conf/ieaaie/VerikasGBU05","doi":"10.1007/11504894_11","ee":"https://doi.org/10.1007/11504894_11","url":"https://dblp.org/rec/conf/ieaaie/VerikasGBU05"},
+"url":"URL#7475884"
+},
+{
+"@score":"2",
+"@id":"7480582",
+"info":{"authors":{"author":[{"@pid":"42/2411","text":"Corinne Fredouille"},{"@pid":"21/8155","text":"Gilles Pouchoulin"},{"@pid":"72/3130","text":"Jean-François Bonastre"},{"@pid":"23/9268","text":"M. Azzarello"},{"@pid":"81/9177","text":"Antoine Giovanni"},{"@pid":"26/4212","text":"Alain Ghio"}]},"title":"Application of automatic speaker recognition techniques to pathological voice assessment (dysphonia).","venue":"INTERSPEECH","pages":"149-152","year":"2005","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/FredouillePBAGG05","doi":"10.21437/INTERSPEECH.2005-90","ee":"https://doi.org/10.21437/Interspeech.2005-90","url":"https://dblp.org/rec/conf/interspeech/FredouillePBAGG05"},
+"url":"URL#7480582"
+},
+{
+"@score":"2",
+"@id":"7493230",
+"info":{"authors":{"author":[{"@pid":"143/7835","text":"Marcella Guarino"},{"@pid":"143/9151","text":"Annamaria Costa"},{"@pid":"143/8431","text":"S. Patelli"},{"@pid":"143/7871","text":"Mitchell Silva"},{"@pid":"27/4474","text":"Daniel Berckmans"}]},"title":"Cough analysis and classification by labelling sound in swine respiratory disease.","venue":"MAVEBA","pages":"77-80","year":"2005","type":"Conference and Workshop Papers","access":"open","key":"conf/maveba/GuarinoCPSB05","ee":"https://www.isca-archive.org/maveba_2005/guarino05_maveba.html","url":"https://dblp.org/rec/conf/maveba/GuarinoCPSB05"},
+"url":"URL#7493230"
+},
+{
+"@score":"2",
+"@id":"7624837",
+"info":{"authors":{"author":[{"@pid":"81/3989","text":"Gernot Kubin"},{"@pid":"47/5569","text":"Martin Hagmüller"}]},"title":"Voice enhancement of male speakers with laryngeal neoplasm.","venue":"INTERSPEECH","pages":"541-544","year":"2004","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/KubinH04","doi":"10.21437/INTERSPEECH.2004-90","ee":"https://doi.org/10.21437/Interspeech.2004-90","url":"https://dblp.org/rec/conf/interspeech/KubinH04"},
+"url":"URL#7624837"
+},
+{
+"@score":"2",
+"@id":"7684648",
+"info":{"authors":{"author":[{"@pid":"04/3711","text":"Petar Mitev"},{"@pid":"62/80","text":"Stefan Todorov Hadjitodorov"}]},"title":"Fundamental frequency estimation of voice of patients with laryngeal disorders.","venue":"Inf. Sci.","volume":"156","number":"1-2","pages":"3-19","year":"2003","type":"Journal Articles","access":"closed","key":"journals/isci/MitevH03","doi":"10.1016/S0020-0255(03)00161-0","ee":"https://doi.org/10.1016/S0020-0255(03)00161-0","url":"https://dblp.org/rec/journals/isci/MitevH03"},
+"url":"URL#7684648"
+}
+]
+}
+}
+}

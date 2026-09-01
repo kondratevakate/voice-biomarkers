@@ -1,0 +1,697 @@
+{
+"result":{
+"query":"speech*|voice*|acoustic* Parkinson*|Alzheimer*|dementia*|aphasia*|dysarthria*",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"10.40"
+},
+"completions":{
+"@total":"15",
+"@computed":"15",
+"@sent":"10",
+"c":[
+{
+"@sc":"539",
+"@dc":"527",
+"@oc":"539",
+"@id":"71698408",
+"text":"parkinson"
+},
+{
+"@sc":"240",
+"@dc":"239",
+"@oc":"240",
+"@id":"70440601",
+"text":"alzheimer"
+},
+{
+"@sc":"175",
+"@dc":"173",
+"@oc":"175",
+"@id":"70784480",
+"text":"dementia"
+},
+{
+"@sc":"120",
+"@dc":"118",
+"@oc":"120",
+"@id":"70848751",
+"text":"dysarthria"
+},
+{
+"@sc":"81",
+"@dc":"81",
+"@oc":"81",
+"@id":"70464548",
+"text":"aphasia"
+},
+{
+"@sc":"24",
+"@dc":"24",
+"@oc":"24",
+"@id":"71698416",
+"text":"parkinsonian"
+},
+{
+"@sc":"4",
+"@dc":"4",
+"@oc":"4",
+"@id":"71698423",
+"text":"parkinsonism"
+},
+{
+"@sc":"3",
+"@dc":"3",
+"@oc":"3",
+"@id":"70848752",
+"text":"dysarthrias"
+},
+{
+"@sc":"3",
+"@dc":"3",
+"@oc":"3",
+"@id":"71698426",
+"text":"parkinsons"
+},
+{
+"@sc":"2",
+"@dc":"2",
+"@oc":"2",
+"@id":"70440605",
+"text":"alzheimers"
+}
+]
+},
+"hits":{
+"@total":"1115",
+"@computed":"1000",
+"@sent":"100",
+"@first":"900",
+"hit":[{
+"@score":"2",
+"@id":"3718110",
+"info":{"authors":{"author":[{"@pid":"230/8048","text":"Juliette Millet"},{"@pid":"180/2570","text":"Neil Zeghidour"}]},"title":"Learning to Detect Dysarthria from Raw Speech.","venue":"ICASSP","pages":"5831-5835","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/MilletZ19","doi":"10.1109/ICASSP.2019.8682324","ee":"https://doi.org/10.1109/ICASSP.2019.8682324","url":"https://dblp.org/rec/conf/icassp/MilletZ19"},
+"url":"URL#3718110"
+},
+{
+"@score":"2",
+"@id":"3718254",
+"info":{"authors":{"author":[{"@pid":"169/3629","text":"Amir Hossein Poorjam"},{"@pid":"185/4004","text":"Yordan P. Raykov"},{"@pid":"219/1028","text":"Reham Badawy"},{"@pid":"93/9878","text":"Jesper Rindom Jensen"},{"@pid":"69/5399","text":"Mads Græsbøll Christensen"},{"@pid":"56/4954","text":"Max A. Little"}]},"title":"Quality Control of Voice Recordings in Remote Parkinson&apos;s Disease Monitoring Using the Infinite Hidden Markov Model.","venue":"ICASSP","pages":"805-809","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/PoorjamRBJCL19","doi":"10.1109/ICASSP.2019.8682523","ee":"https://doi.org/10.1109/ICASSP.2019.8682523","url":"https://dblp.org/rec/conf/icassp/PoorjamRBJCL19"},
+"url":"URL#3718254"
+},
+{
+"@score":"2",
+"@id":"3718272",
+"info":{"authors":{"author":[{"@pid":"49/5370","text":"Ying Qin"},{"@pid":"57/5024","text":"Tan Lee"},{"@pid":"180/2811","text":"Anthony Pak-Hin Kong"}]},"title":"Combining Phone Posteriorgrams from Strong and Weak Recognizers for Automatic Speech Assessment of People with Aphasia.","venue":"ICASSP","pages":"6420-6424","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/QinLK19","doi":"10.1109/ICASSP.2019.8683835","ee":"https://doi.org/10.1109/ICASSP.2019.8683835","url":"https://dblp.org/rec/conf/icassp/QinLK19"},
+"url":"URL#3718272"
+},
+{
+"@score":"2",
+"@id":"3732510",
+"info":{"authors":{"author":[{"@pid":"154/9345","text":"Oche Alexander Egaji"},{"@pid":"143/3121","text":"Ikram Asghar"},{"@pid":"302/7355","text":"Mark Griffiths 0002"},{"@pid":"61/6092","text":"William Warren"}]},"title":"Digital Speech Therapy for the Aphasia Patients: Challenges, Opportunities and Solutions.","venue":"ICICM","pages":"85-88","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/icicm/EgajiAGW19","doi":"10.1145/3357419.3357449","ee":"https://doi.org/10.1145/3357419.3357449","url":"https://dblp.org/rec/conf/icicm/EgajiAGW19"},
+"url":"URL#3732510"
+},
+{
+"@score":"2",
+"@id":"3740774",
+"info":{"authors":{"author":[{"@pid":"231/1002","text":"Ye Jin Lee"},{"@pid":"88/7460","text":"Dae-Hyeon Kim"},{"@pid":"66/767","text":"Rhee Man Kil"},{"@pid":"99/5043","text":"Hee Yong Youn"}]},"title":"Classifying Speech Data in Parkinson&apos;s Disease Based on Class Probability Output Networks.","venue":"ICONIP","pages":"512-523","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/iconip/LeeKKY19","doi":"10.1007/978-3-030-36708-4_42","ee":"https://doi.org/10.1007/978-3-030-36708-4_42","url":"https://dblp.org/rec/conf/iconip/LeeKKY19"},
+"url":"URL#3740774"
+},
+{
+"@score":"2",
+"@id":"3760286",
+"info":{"authors":{"author":[{"@pid":"85/5901","text":"Jun Chen"},{"@pid":"00/4868","text":"Ji Zhu"},{"@pid":"03/5454","text":"Jieping Ye"}]},"title":"An Attention-Based Hybrid Network for Automatic Detection of Alzheimer&apos;s Disease from Narrative Speech.","venue":"INTERSPEECH","pages":"4085-4089","year":"2019","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/ChenZY19","doi":"10.21437/INTERSPEECH.2019-2872","ee":"https://doi.org/10.21437/Interspeech.2019-2872","url":"https://dblp.org/rec/conf/interspeech/ChenZY19"},
+"url":"URL#3760286"
+},
+{
+"@score":"2",
+"@id":"3760441",
+"info":{"authors":{"author":[{"@pid":"263/4990","text":"Yermiyahu Hauptman"},{"@pid":"96/9238","text":"Ruth Aloni-Lavi"},{"@pid":"71/9230","text":"Itshak Lapidot"},{"@pid":"263/5016","text":"Tanya Gurevich"},{"@pid":"263/4995","text":"Yael Manor"},{"@pid":"263/5034","text":"Stav Naor"},{"@pid":"263/5035","text":"Noa Diamant"},{"@pid":"90/1120","text":"Irit Opher"}]},"title":"Identifying Distinctive Acoustic and Spectral Features in Parkinson&apos;s Disease.","venue":"INTERSPEECH","pages":"2498-2502","year":"2019","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/HauptmanALGMNDO19","doi":"10.21437/INTERSPEECH.2019-2465","ee":"https://doi.org/10.21437/Interspeech.2019-2465","url":"https://dblp.org/rec/conf/interspeech/HauptmanALGMNDO19"},
+"url":"URL#3760441"
+},
+{
+"@score":"2",
+"@id":"3760639",
+"info":{"authors":{"author":[{"@pid":"246/6169","text":"José Vicente Egas López"},{"@pid":"59/10369","text":"Juan Rafael Orozco-Arroyave"},{"@pid":"51/1288","text":"Gábor Gosztolya"}]},"title":"Assessing Parkinson&apos;s Disease from Speech Using Fisher Vectors.","venue":"INTERSPEECH","pages":"3063-3067","year":"2019","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/LopezOG19","doi":"10.21437/INTERSPEECH.2019-2217","ee":"https://doi.org/10.21437/Interspeech.2019-2217","url":"https://dblp.org/rec/conf/interspeech/LopezOG19"},
+"url":"URL#3760639"
+},
+{
+"@score":"2",
+"@id":"3760721",
+"info":{"authors":{"author":[{"@pid":"173/6483","text":"Laureano Moro-Velázquez"},{"@pid":"225/4664","text":"Jaejin Cho"},{"@pid":"39/3245-1","text":"Shinji Watanabe 0001"},{"@pid":"70/3186","text":"Mark A. Hasegawa-Johnson"},{"@pid":"87/1365","text":"Odette Scharenborg"},{"@pid":"12/704","text":"Heejin Kim"},{"@pid":"18/2810","text":"Najim Dehak"}]},"title":"Study of the Performance of Automatic Speech Recognition Systems in Speakers with Parkinson&apos;s Disease.","venue":"INTERSPEECH","pages":"3875-3879","year":"2019","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/Moro-VelazquezC19","doi":"10.21437/INTERSPEECH.2019-2993","ee":"https://doi.org/10.21437/Interspeech.2019-2993","url":"https://dblp.org/rec/conf/interspeech/Moro-VelazquezC19"},
+"url":"URL#3760721"
+},
+{
+"@score":"2",
+"@id":"3766557",
+"info":{"authors":{"author":[{"@pid":"234/3531","text":"Randa Ben Ammar"},{"@pid":"44/3444","text":"Yassine Ben Ayed"}]},"title":"Evaluation of Acoustic Features for Early Diagnosis of Alzheimer Disease.","venue":"ISDA","pages":"172-181","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/isda/AmmarA19","doi":"10.1007/978-3-030-49342-4_17","ee":"https://doi.org/10.1007/978-3-030-49342-4_17","url":"https://dblp.org/rec/conf/isda/AmmarA19"},
+"url":"URL#3766557"
+},
+{
+"@score":"2",
+"@id":"3776062",
+"info":{"authors":{"author":[{"@pid":"201/2033","text":"Andrés Gómez-Rodellar"},{"@pid":"130/4426","text":"Daniel Palacios-Alonso"},{"@pid":"41/2868","text":"José Manuel Ferrández de Vicente"},{"@pid":"94/8897","text":"Jirí Mekyska"},{"@pid":"53/1897","text":"Agustín Álvarez-Marquina"},{"@pid":"91/5631","text":"Pedro Gómez-Vilda"}]},"title":"Evaluating Instability on Phonation in Parkinson&apos;s Disease and Aging Speech.","venue":"IWINAC","pages":"340-351","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/iwinac/Gomez-RodellarP19","doi":"10.1007/978-3-030-19651-6_33","ee":"https://doi.org/10.1007/978-3-030-19651-6_33","url":"https://dblp.org/rec/conf/iwinac/Gomez-RodellarP19"},
+"url":"URL#3776062"
+},
+{
+"@score":"2",
+"@id":"3782112",
+"info":{"authors":{"author":[{"@pid":"154/4980","text":"Alessio Atzori"},{"@pid":"08/8917","text":"Alessio Carullo"},{"@pid":"66/8916","text":"Alberto Vallan"},{"@pid":"247/4971","text":"Viviana Cennamo"},{"@pid":"127/9434","text":"Arianna Astolfi"}]},"title":"Parkinson disease voice features for rehabilitation therapy and screening purposes.","venue":"MeMeA","pages":"1-6","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/memea/AtzoriCVCA19","doi":"10.1109/MEMEA.2019.8802223","ee":"https://doi.org/10.1109/MeMeA.2019.8802223","url":"https://dblp.org/rec/conf/memea/AtzoriCVCA19"},
+"url":"URL#3782112"
+},
+{
+"@score":"2",
+"@id":"3784904",
+"info":{"authors":{"author":[{"@pid":"215/3857","text":"Moritz Einfalt"},{"@pid":"l/RainerLienhart","text":"Rainer Lienhart"},{"@pid":"16/6847","text":"Matthew Lee 0006"},{"@pid":"03/8400","text":"Lyndon Kennedy"}]},"title":"Detecting Speech Impairments from Temporal Visual Facial Features of Aphasia Patients.","venue":"MIPR","pages":"103-108","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/mipr/EinfaltLLK19","doi":"10.1109/MIPR.2019.00026","ee":"https://doi.org/10.1109/MIPR.2019.00026","url":"https://dblp.org/rec/conf/mipr/EinfaltLLK19"},
+"url":"URL#3784904"
+},
+{
+"@score":"2",
+"@id":"3787037",
+"info":{"authors":{"author":[{"@pid":"217/8449","text":"Hanbin Zhang"},{"@pid":"14/5979-1","text":"Chen Song 0001"},{"@pid":"158/8262","text":"Aosen Wang"},{"@pid":"183/1735","text":"Chenhan Xu"},{"@pid":"27/1131-12","text":"Dongmei Li 0012"},{"@pid":"11/6689","text":"Wenyao Xu"}]},"title":"PDVocal: Towards Privacy-preserving Parkinson&apos;s Disease Detection using Non-speech Body Sounds.","venue":"MobiCom","pages":"16:1-16:16","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/mobicom/Zhang0WXLX19","doi":"10.1145/3300061.3300125","ee":"https://doi.org/10.1145/3300061.3300125","url":"https://dblp.org/rec/conf/mobicom/Zhang0WXLX19"},
+"url":"URL#3787037"
+},
+{
+"@score":"2",
+"@id":"3811855",
+"info":{"authors":{"author":[{"@pid":"181/9867","text":"Sheng-Yi Hong"},{"@pid":"254/5188","text":"Li-Hung Yao"},{"@pid":"234/0950","text":"Wen-Ting Cheah"},{"@pid":"47/3004","text":"Wei-Der Chang"},{"@pid":"95/245","text":"Li-Chen Fu"},{"@pid":"53/8019","text":"Yu-Ling Chang"}]},"title":"A Novel Screening System for Alzheimer&apos;s Disease Based on Speech Transcripts Using Neural Network.","venue":"SMC","pages":"2440-2445","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/smc/HongYCCFC19","doi":"10.1109/SMC.2019.8914628","ee":"https://doi.org/10.1109/SMC.2019.8914628","url":"https://dblp.org/rec/conf/smc/HongYCCFC19"},
+"url":"URL#3811855"
+},
+{
+"@score":"2",
+"@id":"3814285",
+"info":{"authors":{"author":[{"@pid":"246/6169","text":"José Vicente Egas López"},{"@pid":"69/3781-1","text":"László Tóth 0001"},{"@pid":"146/6866","text":"Ildikó Hoffmann"},{"@pid":"173/6462","text":"János Kálmán"},{"@pid":"173/6377","text":"Magdolna Pákáski"},{"@pid":"51/1288","text":"Gábor Gosztolya"}]},"title":"Assessing Alzheimer&apos;s Disease from Speech Using the i-vector Approach.","venue":"SPECOM","pages":"289-298","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/specom/LopezTHKPG19","doi":"10.1007/978-3-030-26061-3_30","ee":"https://doi.org/10.1007/978-3-030-26061-3_30","url":"https://dblp.org/rec/conf/specom/LopezTHKPG19"},
+"url":"URL#3814285"
+},
+{
+"@score":"2",
+"@id":"3816142",
+"info":{"authors":{"author":{"@pid":"177/2055","text":"Ioana Andra Codreanu"}},"title":"A Proposed Automatic Speech and Sentiment Recognition Serious Game for Older Adults with Parkinson&apos;s Disease.","venue":"SYNASC","pages":"343-344","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/synasc/Codreanu19","doi":"10.1109/SYNASC49474.2019.00058","ee":"https://doi.org/10.1109/SYNASC49474.2019.00058","url":"https://dblp.org/rec/conf/synasc/Codreanu19"},
+"url":"URL#3816142"
+},
+{
+"@score":"2",
+"@id":"3836465",
+"info":{"authors":{"author":{"@pid":"351/6777","text":"Carlos Prez"}},"title":"Parkinson Dataset with replicated acoustic features.","venue":"UCI-MLR","publisher":"UCI-MLR","year":"2019","type":"Data and Artifacts","access":"open","key":"data/10/Prez19","doi":"10.24432/C5701F","ee":"https://doi.org/10.24432/C5701F","url":"https://dblp.org/rec/data/10/Prez19"},
+"url":"URL#3836465"
+},
+{
+"@score":"2",
+"@id":"3852744",
+"info":{"authors":{"author":[{"@pid":"65/1922","text":"Siddharth Arora"},{"@pid":"51/8759","text":"Ladan Baghai-Ravary"},{"@pid":"66/8761","text":"Athanasios Tsanas"}]},"title":"Developing a large scale population screening tool for the assessment of Parkinson&apos;s disease using telephone-quality voice.","venue":"CoRR","volume":"abs/1905.00377","year":"2019","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-1905-00377","ee":"http://arxiv.org/abs/1905.00377","url":"https://dblp.org/rec/journals/corr/abs-1905-00377"},
+"url":"URL#3852744"
+},
+{
+"@score":"2",
+"@id":"3856752",
+"info":{"authors":{"author":[{"@pid":"169/3629","text":"Amir Hossein Poorjam"},{"@pid":"18/9059","text":"Mathew Shaji Kavalekalam"},{"@pid":"149/7960","text":"Liming Shi"},{"@pid":"185/4004","text":"Yordan P. Raykov"},{"@pid":"93/9878","text":"Jesper Rindom Jensen"},{"@pid":"56/4954","text":"Max A. Little"},{"@pid":"69/5399","text":"Mads Græsbøll Christensen"}]},"title":"Automatic Quality Control and Enhancement for Voice-Based Remote Parkinson&apos;s Disease Detection.","venue":"CoRR","volume":"abs/1905.11785","year":"2019","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-1905-11785","ee":"http://arxiv.org/abs/1905.11785","url":"https://dblp.org/rec/journals/corr/abs-1905-11785"},
+"url":"URL#3856752"
+},
+{
+"@score":"2",
+"@id":"3887290",
+"info":{"authors":{"author":[{"@pid":"255/7478","text":"Huy Phi"},{"@pid":"255/7426","text":"Sanjeev Janarthanan"},{"@pid":"64/10862","text":"Larry Zhang"},{"@pid":"229/0477","text":"Reza Hosseini Ghomi"}]},"title":"Voice Biomarker Identification for Effects of Deep-Brain Stimulation on Parkinson&apos;s Disease.","venue":"CoRR","volume":"abs/1912.00866","year":"2019","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-1912-00866","ee":"http://arxiv.org/abs/1912.00866","url":"https://dblp.org/rec/journals/corr/abs-1912-00866"},
+"url":"URL#3887290"
+},
+{
+"@score":"2",
+"@id":"3902631",
+"info":{"authors":{"author":[{"@pid":"208/3154","text":"Alice Rueda"},{"@pid":"184/9465","text":"Sridhar Krishnan 0001"}]},"title":"Clustering Parkinson&apos;s and Age-Related Voice Impairment Signal Features for Unsupervised Learning.","venue":"Adv. Data Sci. Adapt. Anal.","volume":"10","number":"2","pages":"1840007:1-1840007:24","year":"2018","type":"Journal Articles","access":"closed","key":"journals/aada/Rueda018","doi":"10.1142/S2424922X18400077","ee":"https://doi.org/10.1142/S2424922X18400077","url":"https://dblp.org/rec/journals/aada/Rueda018"},
+"url":"URL#3902631"
+},
+{
+"@score":"2",
+"@id":"3919685",
+"info":{"authors":{"author":[{"@pid":"225/0863","text":"Savitha S. Upadhya"},{"@pid":"34/9702","text":"Alice Cheeran"},{"@pid":"141/7068","text":"Jagannath H. Nirmal"}]},"title":"Thomson Multitaper MFCC and PLP voice features for early detection of Parkinson disease.","venue":"Biomed. Signal Process. Control.","volume":"46","pages":"293-301","year":"2018","type":"Journal Articles","access":"closed","key":"journals/bspc/UpadhyaCN18","doi":"10.1016/J.BSPC.2018.07.019","ee":"https://doi.org/10.1016/j.bspc.2018.07.019","url":"https://dblp.org/rec/journals/bspc/UpadhyaCN18"},
+"url":"URL#3919685"
+},
+{
+"@score":"2",
+"@id":"3934267",
+"info":{"authors":{"author":[{"@pid":"228/6479","text":"Anayeli Paulino"},{"@pid":"46/3331","text":"Gerardo Sierra"},{"@pid":"228/6535","text":"Laura Hernández-Domínguez"},{"@pid":"82/6081","text":"Iria da Cunha"},{"@pid":"65/1331","text":"Gemma Bel Enguix"}]},"title":"Rhetorical Relations in the Speech of Alzheimer&apos;s Patients and Healthy Elderly Subjects: An Approach from the RST.","venue":"Computación y Sistemas","volume":"22","number":"3","year":"2018","type":"Journal Articles","access":"unavailable","key":"journals/cys/PaulinoSHCE18","doi":"10.13053/CYS-22-3-3028","ee":"https://doi.org/10.13053/cys-22-3-3028","url":"https://dblp.org/rec/journals/cys/PaulinoSHCE18"},
+"url":"URL#3934267"
+},
+{
+"@score":"2",
+"@id":"3936561",
+"info":{"authors":{"author":[{"@pid":"59/10369","text":"Juan Rafael Orozco-Arroyave"},{"@pid":"172/6510","text":"Juan Camilo Vásquez-Correa"},{"@pid":"91/7443","text":"Jesús Francisco Vargas-Bonilla"},{"@pid":"54/3202","text":"Raman Arora"},{"@pid":"18/2810","text":"Najim Dehak"},{"@pid":"158/4168","text":"Phani S. Nidadavolu"},{"@pid":"02/2429","text":"Heidi Christensen"},{"@pid":"36/6505","text":"Frank Rudzicz"},{"@pid":"136/8654","text":"Maria Yancheva"},{"@pid":"26/5084","text":"Hamid R. Chinaei"},{"@pid":"201/7367","text":"Alyssa Vann"},{"@pid":"201/7173","text":"Nikolai Vogler"},{"@pid":"92/1549","text":"Tobias Bocklet"},{"@pid":"60/2378","text":"Milos Cernak"},{"@pid":"142/2657","text":"Julius Hannink"},{"@pid":"30/1288","text":"Elmar Nöth"}]},"title":"NeuroSpeech: An open-source software for Parkinson&apos;s speech analysis.","venue":"Digit. Signal Process.","volume":"77","pages":"207-221","year":"2018","type":"Journal Articles","access":"closed","key":"journals/dsp/Orozco-Arroyave18","doi":"10.1016/J.DSP.2017.07.004","ee":"https://doi.org/10.1016/j.dsp.2017.07.004","url":"https://dblp.org/rec/journals/dsp/Orozco-Arroyave18"},
+"url":"URL#3936561"
+},
+{
+"@score":"2",
+"@id":"3961383",
+"info":{"authors":{"author":[{"@pid":"167/1737","text":"Kebin Wu"},{"@pid":"z/DavidZhang","text":"David Zhang 0001"},{"@pid":"78/4785-2","text":"Guangming Lu 0002"},{"@pid":"41/294-1","text":"Zhenhua Guo 0001"}]},"title":"Learning acoustic features to detect Parkinson&apos;s disease.","venue":"Neurocomputing","volume":"318","pages":"102-108","year":"2018","type":"Journal Articles","access":"closed","key":"journals/ijon/WuZLG18","doi":"10.1016/J.NEUCOM.2018.08.036","ee":"https://doi.org/10.1016/j.neucom.2018.08.036","url":"https://dblp.org/rec/journals/ijon/WuZLG18"},
+"url":"URL#3961383"
+},
+{
+"@score":"2",
+"@id":"3963309",
+"info":{"authors":{"author":[{"@pid":"195/0057","text":"Elmehdi Benmalek"},{"@pid":"194/9994","text":"Jamal Elmhamdi"},{"@pid":"10/8238","text":"Abdelilah Jilbab"}]},"title":"Multiclass classification of Parkinson&apos;s disease using cepstral analysis.","venue":"Int. J. Speech Technol.","volume":"21","number":"1","pages":"39-49","year":"2018","type":"Journal Articles","access":"closed","key":"journals/ijst/BenmalekEJ18","doi":"10.1007/S10772-017-9485-2","ee":"https://doi.org/10.1007/s10772-017-9485-2","url":"https://dblp.org/rec/journals/ijst/BenmalekEJ18"},
+"url":"URL#3963309"
+},
+{
+"@score":"2",
+"@id":"3996464",
+"info":{"authors":{"author":[{"@pid":"71/9413","text":"Roozbeh Behroozmand"},{"@pid":"266/7163","text":"Lorelei Phillip Johnson"},{"@pid":"212/2995","text":"Karim Johari"},{"@pid":"74/7226","text":"Leonardo Bonilha"},{"@pid":"15/7228","text":"Chris Rorden"},{"@pid":"90/5749","text":"Gregory Hickok"},{"@pid":"49/8258","text":"Julius Fridriksson"}]},"title":"Sensorimotor impairment of speech auditory feedback processing in aphasia.","venue":"NeuroImage","volume":"165","pages":"102-111","year":"2018","type":"Journal Articles","access":"closed","key":"journals/neuroimage/BehroozmandPJBR18","doi":"10.1016/J.NEUROIMAGE.2017.10.014","ee":"https://doi.org/10.1016/j.neuroimage.2017.10.014","url":"https://dblp.org/rec/journals/neuroimage/BehroozmandPJBR18"},
+"url":"URL#3996464"
+},
+{
+"@score":"2",
+"@id":"4046652",
+"info":{"authors":{"author":[{"@pid":"204/6913","text":"Philipp Klumpp"},{"@pid":"243/6646","text":"Julian Fritsch"},{"@pid":"30/1288","text":"Elmar Nöth"}]},"title":"ANN-based Alzheimer&apos;s disease classification from bag of words.","venue":"ITG Symposium on Speech Communication","pages":"1-4","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/ITGspeech/KlumppFN18","ee":"https://ieeexplore.ieee.org/document/8578051","url":"https://dblp.org/rec/conf/ITGspeech/KlumppFN18"},
+"url":"URL#4046652"
+},
+{
+"@score":"2",
+"@id":"4051624",
+"info":{"authors":{"author":[{"@pid":"234/3531","text":"Randa Ben Ammar"},{"@pid":"44/3444","text":"Yassine Ben Ayed"}]},"title":"Speech Processing for Early Alzheimer Disease Diagnosis: Machine Learning Based Approach.","venue":"AICCSA","pages":"1-8","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/aiccsa/AmmarA18","doi":"10.1109/AICCSA.2018.8612831","ee":"https://doi.org/10.1109/AICCSA.2018.8612831","url":"https://dblp.org/rec/conf/aiccsa/AmmarA18"},
+"url":"URL#4051624"
+},
+{
+"@score":"2",
+"@id":"4061732",
+"info":{"authors":{"author":[{"@pid":"217/8449","text":"Hanbin Zhang"},{"@pid":"158/8262","text":"Aosen Wang"},{"@pid":"27/1131","text":"Dongmei Li"},{"@pid":"11/6689","text":"Wenyao Xu"}]},"title":"DeepVoice: A voiceprint-based mobile health framework for Parkinson&apos;s disease identification.","venue":"BHI","pages":"214-217","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/bhi/ZhangWLX18","doi":"10.1109/BHI.2018.8333407","ee":"https://doi.org/10.1109/BHI.2018.8333407","url":"https://dblp.org/rec/conf/bhi/ZhangWLX18"},
+"url":"URL#4061732"
+},
+{
+"@score":"2",
+"@id":"4067713",
+"info":{"authors":{"author":[{"@pid":"229/0485","text":"Amr Gaballah"},{"@pid":"63/1126","text":"Vijay Parsa"},{"@pid":"229/0667","text":"Monika Andreetta"},{"@pid":"160/8221","text":"Scott Adams"}]},"title":"Assessment of Amplified Parkinsonian Speech Quality Using Deep Learning.","venue":"CCECE","pages":"1-4","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/ccece/GaballahPAA18","doi":"10.1109/CCECE.2018.8447721","ee":"https://doi.org/10.1109/CCECE.2018.8447721","url":"https://dblp.org/rec/conf/ccece/GaballahPAA18"},
+"url":"URL#4067713"
+},
+{
+"@score":"2",
+"@id":"4076359",
+"info":{"authors":{"author":[{"@pid":"51/801","text":"Gábor Kiss"},{"@pid":"333/8124","text":"Artur Bendeguz Takacs"},{"@pid":"13/4231","text":"Dávid Sztahó"},{"@pid":"54/3160","text":"Klára Vicsi"}]},"title":"Detection Possibilities of Depression and Parkinson&apos;s disease Based on the Ratio of Transient Parts of the Speech.","venue":"CogInfoCom","pages":"165-168","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/coginfocom/KissTSV18","doi":"10.1109/COGINFOCOM.2018.8639901","ee":"https://doi.org/10.1109/CogInfoCom.2018.8639901","url":"https://dblp.org/rec/conf/coginfocom/KissTSV18"},
+"url":"URL#4076359"
+},
+{
+"@score":"2",
+"@id":"4093033",
+"info":{"authors":{"author":[{"@pid":"228/9737","text":"Sai Bharadwaj Appakaya"},{"@pid":"96/785","text":"Ravi Sankar"}]},"title":"Classification of Parkinson&apos;s disease Using Pitch Synchronous Speech Analysis.","venue":"EMBC","pages":"1420-1423","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/AppakayaS18","doi":"10.1109/EMBC.2018.8512481","ee":"https://doi.org/10.1109/EMBC.2018.8512481","url":"https://dblp.org/rec/conf/embc/AppakayaS18"},
+"url":"URL#4093033"
+},
+{
+"@score":"2",
+"@id":"4093347",
+"info":{"authors":{"author":[{"@pid":"229/0485","text":"Amr Gaballah"},{"@pid":"63/1126","text":"Vijay Parsa"},{"@pid":"229/0667","text":"Monika Andreetta"},{"@pid":"160/8221","text":"Scott Adams"}]},"title":"Objective and Subjective Assessment of Amplified Parkinsonian Speech Quality.","venue":"EMBC","pages":"2084-2087","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/GaballahPAA18","doi":"10.1109/EMBC.2018.8512618","ee":"https://doi.org/10.1109/EMBC.2018.8512618","url":"https://dblp.org/rec/conf/embc/GaballahPAA18"},
+"url":"URL#4093347"
+},
+{
+"@score":"2",
+"@id":"4098320",
+"info":{"authors":{"author":[{"@pid":"154/1322","text":"Yolanda Campos-Roca"},{"@pid":"201/4325","text":"Fernando Calle-Alonso"},{"@pid":"154/1294","text":"Carlos J. Pérez 0001"},{"@pid":"154/1373","text":"Lizbeth Naranjo"}]},"title":"Computational Diagnosis of Parkinson&apos;s Disease from Speech Based on Regularization Methods.","venue":"EUSIPCO","pages":"1127-1131","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/eusipco/Campos-RocaCPN18","doi":"10.23919/EUSIPCO.2018.8553505","ee":"https://doi.org/10.23919/EUSIPCO.2018.8553505","url":"https://dblp.org/rec/conf/eusipco/Campos-RocaCPN18"},
+"url":"URL#4098320"
+},
+{
+"@score":"2",
+"@id":"4098605",
+"info":{"authors":{"author":[{"@pid":"154/1373","text":"Lizbeth Naranjo"},{"@pid":"154/1294","text":"Carlos J. Pérez 0001"},{"@pid":"18/5645","text":"Jacinto Martín"},{"@pid":"201/4325","text":"Fernando Calle-Alonso"}]},"title":"A New Asymmetric Link-Based Binary Regression Model to Detect Parkinson&apos;s Disease by Using Replicated Voice Recordings.","venue":"EUSIPCO","pages":"1182-1186","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/eusipco/NaranjoPMC18","doi":"10.23919/EUSIPCO.2018.8553292","ee":"https://doi.org/10.23919/EUSIPCO.2018.8553292","url":"https://dblp.org/rec/conf/eusipco/NaranjoPMC18"},
+"url":"URL#4098605"
+},
+{
+"@score":"2",
+"@id":"4108233",
+"info":{"authors":{"author":[{"@pid":"222/6488","text":"Shota Nakatani"},{"@pid":"93/2855","text":"Sachio Saiki"},{"@pid":"71/2858","text":"Masahide Nakamura"},{"@pid":"36/4258","text":"Kiyoshi Yasuda"}]},"title":"Generating Personalized Virtual Agent in Speech Dialogue System for People with Dementia.","venue":"HCI","pages":"326-337","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/hci/NakataniSNY18","doi":"10.1007/978-3-319-91397-1_27","ee":"https://doi.org/10.1007/978-3-319-91397-1_27","url":"https://dblp.org/rec/conf/hci/NakataniSNY18"},
+"url":"URL#4108233"
+},
+{
+"@score":"2",
+"@id":"4114463",
+"info":{"authors":{"author":[{"@pid":"230/2929","text":"Satyabrata Aich"},{"@pid":"316/4463","text":"Kim Younga"},{"@pid":"316/1406","text":"Kueh Lee Hui"},{"@pid":"167/2167","text":"Ahmed Abdulhakim Al-Absi"},{"@pid":"43/7955","text":"Mangal Sain"}]},"title":"A nonlinear decision tree based classification approach to predict the Parkinson&apos;s disease using different feature sets of voice data.","venue":"ICACT","pages":"638-642","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icact/AichYHAS18a","doi":"10.23919/ICACT.2018.8323864","ee":"https://doi.org/10.23919/ICACT.2018.8323864","url":"https://dblp.org/rec/conf/icact/AichYHAS18a"},
+"url":"URL#4114463"
+},
+{
+"@score":"2",
+"@id":"4116006",
+"info":{"authors":{"author":[{"@pid":"173/6657","text":"Tomás Arias-Vergara"},{"@pid":"172/6510","text":"Juan Camilo Vásquez-Correa"},{"@pid":"59/10369","text":"Juan Rafael Orozco-Arroyave"},{"@pid":"204/6913","text":"Philipp Klumpp"},{"@pid":"30/1288","text":"Elmar Nöth"}]},"title":"Unobtrusive Monitoring of Speech Impairments of Parkinson&apos;S Disease Patients Through Mobile Devices.","venue":"ICASSP","pages":"6004-6008","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/Arias-VergaraVO18","doi":"10.1109/ICASSP.2018.8462332","ee":"https://doi.org/10.1109/ICASSP.2018.8462332","url":"https://dblp.org/rec/conf/icassp/Arias-VergaraVO18"},
+"url":"URL#4116006"
+},
+{
+"@score":"2",
+"@id":"4116566",
+"info":{"authors":{"author":[{"@pid":"226/5488","text":"Gongfeng Li"},{"@pid":"99/6959","text":"Khalid Daoudi"},{"@pid":"142/8726","text":"Jirí Klempír"},{"@pid":"50/10325","text":"Jan Rusz"}]},"title":"Linear Classification in Speech-Based Objective Differential Diagnosis of Parkinsonism.","venue":"ICASSP","pages":"5999-6003","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/LiDKR18","doi":"10.1109/ICASSP.2018.8462681","ee":"https://doi.org/10.1109/ICASSP.2018.8462681","url":"https://dblp.org/rec/conf/icassp/LiDKR18"},
+"url":"URL#4116566"
+},
+{
+"@score":"2",
+"@id":"4154274",
+"info":{"authors":{"author":[{"@pid":"49/5370","text":"Ying Qin"},{"@pid":"57/5024","text":"Tan Lee"},{"@pid":"14/8368-1","text":"Siyuan Feng 0001"},{"@pid":"180/2811","text":"Anthony Pak-Hin Kong"}]},"title":"Automatic Speech Assessment for People with Aphasia Using TDNN-BLSTM with Multi-Task Learning.","venue":"INTERSPEECH","pages":"3418-3422","year":"2018","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/QinLFK18","doi":"10.21437/INTERSPEECH.2018-1630","ee":"https://doi.org/10.21437/Interspeech.2018-1630","url":"https://dblp.org/rec/conf/interspeech/QinLFK18"},
+"url":"URL#4154274"
+},
+{
+"@score":"2",
+"@id":"4154468",
+"info":{"authors":{"author":[{"@pid":"120/6770","text":"Jochen Weiner"},{"@pid":"226/2085","text":"Miguel Angrick"},{"@pid":"36/5441","text":"Srinivasan Umesh"},{"@pid":"s/TanjaSchultz","text":"Tanja Schultz"}]},"title":"Investigating the Effect of Audio Duration on Dementia Detection Using Acoustic Features.","venue":"INTERSPEECH","pages":"2324-2328","year":"2018","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/WeinerAUS18","doi":"10.21437/INTERSPEECH.2018-57","ee":"https://doi.org/10.21437/Interspeech.2018-57","url":"https://dblp.org/rec/conf/interspeech/WeinerAUS18"},
+"url":"URL#4154468"
+},
+{
+"@score":"2",
+"@id":"4160295",
+"info":{"authors":{"author":[{"@pid":"49/5370","text":"Ying Qin"},{"@pid":"57/5024","text":"Tan Lee"},{"@pid":"209/9621","text":"Yuzhong Wu"},{"@pid":"180/2811","text":"Anthony Pak-Hin Kong"}]},"title":"An End-to-End Approach to Automatic Speech Assessment for People with Aphasia.","venue":"ISCSLP","pages":"66-70","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/iscslp/QinLWK18","doi":"10.1109/ISCSLP.2018.8706690","ee":"https://doi.org/10.1109/ISCSLP.2018.8706690","url":"https://dblp.org/rec/conf/iscslp/QinLWK18"},
+"url":"URL#4160295"
+},
+{
+"@score":"2",
+"@id":"4162256",
+"info":{"authors":{"author":[{"@pid":"66/5992","text":"Sylvio Barbon Junior"},{"@pid":"203/9327","text":"Victor G. Turrisi da Costa"},{"@pid":"85/420","text":"Shi-Huang Chen"},{"@pid":"30/1980","text":"Rodrigo Capobianco Guido"}]},"title":"U-Healthcare System for Pre-Diagnosis of Parkinson&apos;s Disease from Voice Signal.","venue":"ISM","pages":"271-274","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/ism/JuniorCCG18","doi":"10.1109/ISM.2018.00039","ee":"https://doi.org/10.1109/ISM.2018.00039","url":"https://dblp.org/rec/conf/ism/JuniorCCG18"},
+"url":"URL#4162256"
+},
+{
+"@score":"2",
+"@id":"4203190",
+"info":{"authors":{"author":[{"@pid":"210/3071","text":"Yi-Wei Chien"},{"@pid":"181/9867","text":"Sheng-Yi Hong"},{"@pid":"234/0950","text":"Wen-Ting Cheah"},{"@pid":"95/245","text":"Li-Chen Fu"},{"@pid":"53/8019","text":"Yu-Ling Chang"}]},"title":"An Assessment System for Alzheimer&apos;s Disease Based on Speech Using a Novel Feature Sequence Design and Recurrent Neural Network.","venue":"SMC","pages":"3289-3294","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/smc/ChienHCFC18","doi":"10.1109/SMC.2018.00557","ee":"https://doi.org/10.1109/SMC.2018.00557","url":"https://dblp.org/rec/conf/smc/ChienHCFC18"},
+"url":"URL#4203190"
+},
+{
+"@score":"2",
+"@id":"4204265",
+"info":{"authors":{"author":[{"@pid":"121/5793","text":"Lígia Sousa"},{"@pid":"198/7113","text":"Diogo Braga"},{"@pid":"76/2833","text":"Ana Madureira"},{"@pid":"48/8762","text":"Luís Pinto Coelho"},{"@pid":"75/3179","text":"Francesco Renna"}]},"title":"Characterizing Parkinson&apos;s Disease from Speech Samples Using Deep Structured Learning.","venue":"SoCPaR","pages":"137-146","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/socpar/SousaBMCR18","doi":"10.1007/978-3-030-17065-3_14","ee":"https://doi.org/10.1007/978-3-030-17065-3_14","url":"https://dblp.org/rec/conf/socpar/SousaBMCR18"},
+"url":"URL#4204265"
+},
+{
+"@score":"2",
+"@id":"4206093",
+"info":{"authors":{"author":[{"@pid":"120/6770","text":"Jochen Weiner"},{"@pid":"s/TanjaSchultz","text":"Tanja Schultz"}]},"title":"Selecting Features for Automatic Screening for Dementia Based on Speech.","venue":"SPECOM","pages":"747-756","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/specom/WeinerS18","doi":"10.1007/978-3-319-99579-3_76","ee":"https://doi.org/10.1007/978-3-319-99579-3_76","url":"https://dblp.org/rec/conf/specom/WeinerS18"},
+"url":"URL#4206093"
+},
+{
+"@score":"2",
+"@id":"4210510",
+"info":{"authors":{"author":[{"@pid":"172/6510","text":"Juan Camilo Vásquez-Correa"},{"@pid":"172/6518","text":"Nicanor García-Ospina"},{"@pid":"59/10369","text":"Juan Rafael Orozco-Arroyave"},{"@pid":"60/2378","text":"Milos Cernak"},{"@pid":"30/1288","text":"Elmar Nöth"}]},"title":"Phonological Posteriors and GRU Recurrent Units to Assess Speech Impairments of Patients with Parkinson&apos;s Disease.","venue":"TSD","pages":"453-461","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/tsd/Vasquez-CorreaG18","doi":"10.1007/978-3-030-00794-2_49","ee":"https://doi.org/10.1007/978-3-030-00794-2_49","url":"https://dblp.org/rec/conf/tsd/Vasquez-CorreaG18"},
+"url":"URL#4210510"
+},
+{
+"@score":"2",
+"@id":"4210597",
+"info":{"authors":{"author":[{"@pid":"225/3433","text":"Ilke Kurt"},{"@pid":"32/9877","text":"Sezer Ulukaya"},{"@pid":"35/7655","text":"Oguzhan Erdem"}]},"title":"Musical Feature Based Classification of Parkinson&apos;s Disease Using Dysphonic Speech.","venue":"TSP","pages":"1-4","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/tsp/KurtUE18","doi":"10.1109/TSP.2018.8441484","ee":"https://doi.org/10.1109/TSP.2018.8441484","url":"https://dblp.org/rec/conf/tsp/KurtUE18"},
+"url":"URL#4210597"
+},
+{
+"@score":"2",
+"@id":"4210646",
+"info":{"authors":{"author":[{"@pid":"95/9414","text":"Massimo Pettorino"},{"@pid":"176/7920","text":"Daria Hemmerling"},{"@pid":"203/6012","text":"Marilisa Vitale"},{"@pid":"175/0202","text":"Anna De Meo"}]},"title":"Towards a Speech-Test for Parkinson&apos;s Disease Detection: a Diachronic Study on Michael J. Fox.","venue":"TSP","pages":"1-5","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/tsp/PettorinoHVM18","doi":"10.1109/TSP.2018.8441268","ee":"https://doi.org/10.1109/TSP.2018.8441268","url":"https://dblp.org/rec/conf/tsp/PettorinoHVM18"},
+"url":"URL#4210646"
+},
+{
+"@score":"2",
+"@id":"4229473",
+"info":{"authors":{"author":[{"@pid":"212/6506","text":"Jan Hlavnicka"},{"@pid":"23/461","text":"Roman Cmejla"},{"@pid":"212/6350","text":"Tereza Tykalová"},{"@pid":"399/4920","text":"Karel Sonka"},{"@pid":"142/8691","text":"Evzen Ruzicka"},{"@pid":"50/10325","text":"Jan Rusz"}]},"title":"Early biomarkers of Parkinson&apos;s disease based on natural connected speech Data Set.","venue":"UCI-MLR","publisher":"UCI-MLR","year":"2018","type":"Data and Artifacts","access":"open","key":"data/10/HlavnikaMTORRJ18","doi":"10.24432/C5QK6J","ee":"https://doi.org/10.24432/C5QK6J","url":"https://dblp.org/rec/data/10/HlavnikaMTORRJ18"},
+"url":"URL#4229473"
+},
+{
+"@score":"2",
+"@id":"4266498",
+"info":{"authors":{"author":[{"@pid":"92/1880","text":"Saturnino Luz"},{"@pid":"230/8326","text":"Sofia de la Fuente"},{"@pid":"219/5472","text":"Pierre Albert"}]},"title":"A Method for Analysis of Patient Speech in Dialogue for Dementia Detection.","venue":"CoRR","volume":"abs/1811.09919","year":"2018","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-1811-09919","ee":"http://arxiv.org/abs/1811.09919","url":"https://dblp.org/rec/journals/corr/abs-1811-09919"},
+"url":"URL#4266498"
+},
+{
+"@score":"2",
+"@id":"4266892",
+"info":{"authors":{"author":[{"@pid":"230/8048","text":"Juliette Millet"},{"@pid":"180/2570","text":"Neil Zeghidour"}]},"title":"Learning to detect dysarthria from raw speech.","venue":"CoRR","volume":"abs/1811.11101","year":"2018","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-1811-11101","ee":"http://arxiv.org/abs/1811.11101","url":"https://dblp.org/rec/journals/corr/abs-1811-11101"},
+"url":"URL#4266892"
+},
+{
+"@score":"2",
+"@id":"4267257",
+"info":{"authors":{"author":[{"@pid":"220/5484","text":"Aparna Balagopalan"},{"@pid":"142/3126","text":"Jekaterina Novikova"},{"@pid":"36/6505","text":"Frank Rudzicz"},{"@pid":"145/6563","text":"Marzyeh Ghassemi"}]},"title":"The Effect of Heterogeneous Data for Alzheimer&apos;s Disease Detection from Speech.","venue":"CoRR","volume":"abs/1811.12254","year":"2018","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-1811-12254","ee":"http://arxiv.org/abs/1811.12254","url":"https://dblp.org/rec/journals/corr/abs-1811-12254"},
+"url":"URL#4267257"
+},
+{
+"@score":"2",
+"@id":"4269479",
+"info":{"authors":{"author":[{"@pid":"68/3520","text":"Zhijing Xu"},{"@pid":"74/3634-14","text":"Juan Wang 0014"},{"@pid":"13/6769-1","text":"Ying Zhang 0001"},{"@pid":"75/2122","text":"Xiangjian He"}]},"title":"Voiceprint recognition of Parkinson patients based on deep learning.","venue":"CoRR","volume":"abs/1812.06613","year":"2018","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-1812-06613","ee":"http://arxiv.org/abs/1812.06613","url":"https://dblp.org/rec/journals/corr/abs-1812-06613"},
+"url":"URL#4269479"
+},
+{
+"@score":"2",
+"@id":"4275941",
+"info":{"authors":{"author":{"@pid":"140/2850","text":"Kathleen C. Fraser"}},"title":"Automatic Text and Speech Processing for the Detection of Dementia.","year":"2017","type":"Books and Theses","access":"closed","key":"phd/ca/Fraser17","ee":"http://hdl.handle.net/1807/76426","url":"https://dblp.org/rec/phd/ca/Fraser17"},
+"url":"URL#4275941"
+},
+{
+"@score":"2",
+"@id":"4280936",
+"info":{"authors":{"author":{"@pid":"93/10471","text":"Duc Le"}},"title":"Towards Automatic Speech-Language Assessment for Aphasia Rehabilitation.","year":"2017","type":"Books and Theses","access":"closed","key":"phd/us/Le17a","ee":"https://hdl.handle.net/2027.42/140840","url":"https://dblp.org/rec/phd/us/Le17a"},
+"url":"URL#4280936"
+},
+{
+"@score":"2",
+"@id":"4293106",
+"info":{"authors":{"author":[{"@pid":"20/5924","text":"Abdellah Kacha"},{"@pid":"53/9232","text":"Christophe Mertens"},{"@pid":"63/1802","text":"Francis Grenez"},{"@pid":"140/2802","text":"Sabine Skodda"},{"@pid":"29/3947","text":"Jean Schoentgen"}]},"title":"On the harmonic-to-noise ratio as an acoustic cue of vocal timbre of Parkinson speakers.","venue":"Biomed. Signal Process. Control.","volume":"37","pages":"32-38","year":"2017","type":"Journal Articles","access":"closed","key":"journals/bspc/KachaMGSS17","doi":"10.1016/J.BSPC.2016.09.004","ee":"https://doi.org/10.1016/j.bspc.2016.09.004","url":"https://dblp.org/rec/journals/bspc/KachaMGSS17"},
+"url":"URL#4293106"
+},
+{
+"@score":"2",
+"@id":"4300326",
+"info":{"authors":{"author":[{"@pid":"55/245","text":"Yunfeng Wu"},{"@pid":"156/8308","text":"Pinnan Chen"},{"@pid":"181/0237","text":"Yuchen Yao"},{"@pid":"203/2986","text":"Xiaoquan Ye"},{"@pid":"203/3050","text":"Yugui Xiao"},{"@pid":"165/1865","text":"Lifang Liao"},{"@pid":"72/3366","text":"Meihong Wu"},{"@pid":"49/6002-3","text":"Jian Chen 0003"}]},"title":"Dysphonic Voice Pattern Analysis of Patients in Parkinson&apos;s Disease Using Minimum Interclass Probability Risk Feature Selection and Bagging Ensemble Learning Methods.","venue":"Comput. Math. Methods Medicine","volume":"2017","pages":"4201984:1-4201984:11","year":"2017","type":"Journal Articles","access":"open","key":"journals/cmmm/WuCYYXLWC17","doi":"10.1155/2017/4201984","ee":"https://doi.org/10.1155/2017/4201984","url":"https://dblp.org/rec/journals/cmmm/WuCYYXLWC17"},
+"url":"URL#4300326"
+},
+{
+"@score":"2",
+"@id":"4300511",
+"info":{"authors":{"author":[{"@pid":"154/1373","text":"Lizbeth Naranjo"},{"@pid":"154/1294","text":"Carlos J. Pérez 0001"},{"@pid":"18/5645","text":"Jacinto Martín"},{"@pid":"154/1322","text":"Yolanda Campos-Roca"}]},"title":"A two-stage variable selection and classification approach for Parkinson&apos;s disease detection by using voice recording replications.","venue":"Comput. Methods Programs Biomed.","volume":"142","pages":"147-156","year":"2017","type":"Journal Articles","access":"closed","key":"journals/cmpb/NaranjoPMC17","doi":"10.1016/J.CMPB.2017.02.019","ee":"https://doi.org/10.1016/j.cmpb.2017.02.019","url":"https://dblp.org/rec/journals/cmpb/NaranjoPMC17"},
+"url":"URL#4300511"
+},
+{
+"@score":"2",
+"@id":"4301345",
+"info":{"authors":{"author":[{"@pid":"173/6657","text":"Tomás Arias-Vergara"},{"@pid":"172/6510","text":"Juan Camilo Vásquez-Correa"},{"@pid":"59/10369","text":"Juan Rafael Orozco-Arroyave"}]},"title":"Parkinson&apos;s Disease and Aging: Analysis of Their Effect in Phonation and Articulation of Speech.","venue":"Cogn. Comput.","volume":"9","number":"6","pages":"731-748","year":"2017","type":"Journal Articles","access":"closed","key":"journals/cogcom/Arias-VergaraVO17","doi":"10.1007/S12559-017-9497-X","ee":"https://doi.org/10.1007/s12559-017-9497-x","url":"https://dblp.org/rec/journals/cogcom/Arias-VergaraVO17"},
+"url":"URL#4301345"
+},
+{
+"@score":"2",
+"@id":"4316291",
+"info":{"authors":{"author":[{"@pid":"91/5631","text":"Pedro Gómez-Vilda"},{"@pid":"94/8897","text":"Jirí Mekyska"},{"@pid":"41/2868","text":"José M. Ferrández"},{"@pid":"130/4426","text":"Daniel Palacios-Alonso"},{"@pid":"201/2033","text":"Andrés Gómez-Rodellar"},{"@pid":"99/3455","text":"María Victoria Rodellar Biarge"},{"@pid":"177/9829","text":"Zoltan Galaz"},{"@pid":"49/6099","text":"Zdenek Smékal"},{"@pid":"166/0518","text":"Ilona Eliasova"},{"@pid":"166/0498","text":"Milena Kostalova"},{"@pid":"21/9633","text":"Irena Rektorová"}]},"title":"Parkinson Disease Detection from Speech Articulation Neuromechanics.","venue":"Frontiers Neuroinformatics","volume":"11","pages":"56","year":"2017","type":"Journal Articles","access":"open","key":"journals/fini/VildaMFPGBGSEKR17","doi":"10.3389/FNINF.2017.00056","ee":"https://doi.org/10.3389/fninf.2017.00056","url":"https://dblp.org/rec/journals/fini/VildaMFPGBGSEKR17"},
+"url":"URL#4316291"
+},
+{
+"@score":"2",
+"@id":"4334190",
+"info":{"authors":{"author":[{"@pid":"195/0057","text":"Elmehdi Benmalek"},{"@pid":"194/9994","text":"Jamal Elmhamdi"},{"@pid":"10/8238","text":"Abdelilah Jilbab"}]},"title":"Multiclass classification of Parkinson&apos;s disease using different classifiers and LLBFS feature selection algorithm.","venue":"Int. J. Speech Technol.","volume":"20","number":"1","pages":"179-184","year":"2017","type":"Journal Articles","access":"closed","key":"journals/ijst/BenmalekEJ17","doi":"10.1007/S10772-017-9401-9","ee":"https://doi.org/10.1007/s10772-017-9401-9","url":"https://dblp.org/rec/journals/ijst/BenmalekEJ17"},
+"url":"URL#4334190"
+},
+{
+"@score":"2",
+"@id":"4334209",
+"info":{"authors":{"author":[{"@pid":"10/8238","text":"Abdelilah Jilbab"},{"@pid":"183/9611","text":"Achraf Benba"},{"@pid":"90/5401","text":"Ahmed Hammouch"}]},"title":"Quantification system of Parkinson&apos;s disease.","venue":"Int. J. Speech Technol.","volume":"20","number":"1","pages":"143-150","year":"2017","type":"Journal Articles","access":"closed","key":"journals/ijst/JilbabBH17","doi":"10.1007/S10772-016-9394-9","ee":"https://doi.org/10.1007/s10772-016-9394-9","url":"https://dblp.org/rec/journals/ijst/JilbabBH17"},
+"url":"URL#4334209"
+},
+{
+"@score":"2",
+"@id":"4359828",
+"info":{"authors":{"author":[{"@pid":"154/1373","text":"Lizbeth Naranjo"},{"@pid":"154/1294","text":"Carlos J. Pérez 0001"},{"@pid":"18/5645","text":"Jacinto Martín"}]},"title":"Addressing voice recording replications for tracking Parkinson&apos;s disease progression.","venue":"Medical Biol. Eng. Comput.","volume":"55","number":"3","pages":"365-373","year":"2017","type":"Journal Articles","access":"closed","key":"journals/mbec/NaranjoPM17","doi":"10.1007/S11517-016-1512-Y","ee":"https://doi.org/10.1007/s11517-016-1512-y","url":"https://dblp.org/rec/journals/mbec/NaranjoPM17"},
+"url":"URL#4359828"
+},
+{
+"@score":"2",
+"@id":"4365358",
+"info":{"authors":{"author":[{"@pid":"60/7724","text":"Rekh Ram Janghel"},{"@pid":"13/3129","text":"Anupam Shukla"},{"@pid":"164/3010","text":"Chandra Prakash Rathore"},{"@pid":"30/8776","text":"Kshitiz Verma"},{"@pid":"204/1063","text":"Swati Rathore"}]},"title":"A comparison of soft computing models for Parkinson&apos;s disease diagnosis using voice and gait features.","venue":"Netw. Model. Anal. Health Informatics Bioinform.","volume":"6","number":"1","pages":"14","year":"2017","type":"Journal Articles","access":"closed","key":"journals/netmahib/JanghelSRVR17","doi":"10.1007/S13721-017-0155-8","ee":"https://doi.org/10.1007/s13721-017-0155-8","url":"https://dblp.org/rec/journals/netmahib/JanghelSRVR17"},
+"url":"URL#4365358"
+},
+{
+"@score":"2",
+"@id":"4410714",
+"info":{"authors":{"author":[{"@pid":"182/5885","text":"Hendrike Frieg"},{"@pid":"182/5871","text":"Juliane Muehlhaus"},{"@pid":"28/1860","text":"Ute Ritterfeld"},{"@pid":"182/5689","text":"Kerstin Bilda"}]},"title":"ISi-Speech: A Digital Training System for Acquired Dysarthria.","venue":"AAATE Conf.","pages":"330-334","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/aaate/FriegMRB17","doi":"10.3233/978-1-61499-798-6-330","ee":"https://doi.org/10.3233/978-1-61499-798-6-330","url":"https://dblp.org/rec/conf/aaate/FriegMRB17"},
+"url":"URL#4410714"
+},
+{
+"@score":"2",
+"@id":"4439491",
+"info":{"authors":{"author":[{"@pid":"13/4231","text":"Dávid Sztahó"},{"@pid":"184/3287","text":"Miklós Gábriel Tulics"},{"@pid":"54/3160","text":"Klára Vicsi"},{"@pid":"253/8669","text":"István Valálik"}]},"title":"Automatic estimation of severity of Parkinson&apos;s disease based on speech rhythm related features.","venue":"CogInfoCom","pages":"11-16","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/coginfocom/SztahoTVV17","doi":"10.1109/COGINFOCOM.2017.8268208","ee":"https://doi.org/10.1109/CogInfoCom.2017.8268208","url":"https://dblp.org/rec/conf/coginfocom/SztahoTVV17"},
+"url":"URL#4439491"
+},
+{
+"@score":"2",
+"@id":"4439892",
+"info":{"authors":{"author":[{"@pid":"16/10573","text":"Vanja Kljajevic"},{"@pid":"212/4319","text":"Estibaliz Ugarte Gómez"},{"@pid":"128/6364","text":"Cristina López"},{"@pid":"212/4547","text":"Yolanda Balboa Bandeira"},{"@pid":"136/2497","text":"Agustín Vicente"}]},"title":"Inner speech in post-stroke motor aphasia.","venue":"CogSci","year":"2017","type":"Conference and Workshop Papers","access":"open","key":"conf/cogsci/KljajevicGLBV17","ee":"https://escholarship.org/uc/item/0wv8d4br","url":"https://dblp.org/rec/conf/cogsci/KljajevicGLBV17"},
+"url":"URL#4439892"
+},
+{
+"@score":"2",
+"@id":"4441647",
+"info":{"authors":{"author":[{"@pid":"116/0450","text":"Kairit Sirts"},{"@pid":"139/7601","text":"Olivier Piguet"},{"@pid":"75/6632-1","text":"Mark Johnson 0001"}]},"title":"Idea density for predicting Alzheimer&apos;s disease from transcribed speech.","venue":"CoNLL","pages":"322-332","year":"2017","type":"Conference and Workshop Papers","access":"open","key":"conf/conll/SirtsPJ17","doi":"10.18653/V1/K17-1033","ee":"https://doi.org/10.18653/v1/K17-1033","url":"https://dblp.org/rec/conf/conll/SirtsPJ17"},
+"url":"URL#4441647"
+},
+{
+"@score":"2",
+"@id":"4454941",
+"info":{"authors":{"author":[{"@pid":"175/0554","text":"Hamideh Ramezani"},{"@pid":"119/2390","text":"Hossein Khaki"},{"@pid":"15/2739","text":"Engin Erzin"},{"@pid":"79/3670","text":"Özgür B. Akan"}]},"title":"Speech features for telemonitoring of Parkinson&apos;s disease symptoms.","venue":"EMBC","pages":"3801-3805","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/RamezaniKEA17","doi":"10.1109/EMBC.2017.8037685","ee":"https://doi.org/10.1109/EMBC.2017.8037685","url":"https://dblp.org/rec/conf/embc/RamezaniKEA17"},
+"url":"URL#4454941"
+},
+{
+"@score":"2",
+"@id":"4454970",
+"info":{"authors":{"author":[{"@pid":"208/3154","text":"Alice Rueda"},{"@pid":"184/9465","text":"Sridhar Krishnan 0001"}]},"title":"Feature analysis of dysphonia speech for monitoring Parkinson&apos;s disease.","venue":"EMBC","pages":"2308-2311","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/RuedaK17","doi":"10.1109/EMBC.2017.8037317","ee":"https://doi.org/10.1109/EMBC.2017.8037317","url":"https://dblp.org/rec/conf/embc/RuedaK17"},
+"url":"URL#4454970"
+},
+{
+"@score":"2",
+"@id":"4467177",
+"info":{"authors":{"author":[{"@pid":"47/10731","text":"Evaldas Vaiciukynas"},{"@pid":"38/638","text":"Adas Gelzinis"},{"@pid":"v/AntanasVerikas","text":"Antanas Verikas"},{"@pid":"67/6669","text":"Marija Bacauskiene"}]},"title":"Parkinson&apos;s Disease Detection from Speech Using Convolutional Neural Networks.","venue":"GOODTECHS","pages":"206-215","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/goodtechs/VaiciukynasGVB17","doi":"10.1007/978-3-319-76111-4_21","ee":"https://doi.org/10.1007/978-3-319-76111-4_21","url":"https://dblp.org/rec/conf/goodtechs/VaiciukynasGVB17"},
+"url":"URL#4467177"
+},
+{
+"@score":"2",
+"@id":"4468909",
+"info":{"authors":{"author":[{"@pid":"145/5711","text":"Hsin-Chang Lo"},{"@pid":"92/5676","text":"Shih-Tsang Tang"},{"@pid":"159/6274","text":"Wan-Li Wei"},{"@pid":"145/5758","text":"Ching-Chang Chuang"}]},"title":"Design and Usability Evaluation of Speech Rehabilitation APP Interface for Patients with Parkinson&apos;s Disease.","venue":"HCI","pages":"65-75","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/hci/LoTWC17","doi":"10.1007/978-3-319-58700-4_6","ee":"https://doi.org/10.1007/978-3-319-58700-4_6","url":"https://dblp.org/rec/conf/hci/LoTWC17"},
+"url":"URL#4468909"
+},
+{
+"@score":"2",
+"@id":"4469002",
+"info":{"authors":{"author":[{"@pid":"182/5871","text":"Juliane Mühlhaus"},{"@pid":"182/5885","text":"Hendrike Frieg"},{"@pid":"182/5689","text":"Kerstin Bilda"},{"@pid":"28/1860","text":"Ute Ritterfeld"}]},"title":"Game-Based Speech Rehabilitation for People with Parkinson&apos;s Disease.","venue":"HCI","pages":"76-85","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/hci/MuhlhausFBR17","doi":"10.1007/978-3-319-58700-4_7","ee":"https://doi.org/10.1007/978-3-319-58700-4_7","url":"https://dblp.org/rec/conf/hci/MuhlhausFBR17"},
+"url":"URL#4469002"
+},
+{
+"@score":"2",
+"@id":"4469661",
+"info":{"authors":{"author":[{"@pid":"190/3519","text":"Christian Kohlschein"},{"@pid":"180/5757","text":"Maximilian Schmitt"},{"@pid":"54/4934","text":"Björn W. Schuller"},{"@pid":"j/SabinaJeschke","text":"Sabina Jeschke"},{"@pid":"125/4827","text":"Cornelius J. Werner"}]},"title":"A machine learning based system for the automatic evaluation of aphasia speech.","venue":"Healthcom","pages":"1-6","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/healthcom/KohlscheinSSJW17","doi":"10.1109/HEALTHCOM.2017.8210766","ee":"https://doi.org/10.1109/HealthCom.2017.8210766","url":"https://dblp.org/rec/conf/healthcom/KohlscheinSSJW17"},
+"url":"URL#4469661"
+},
+{
+"@score":"2",
+"@id":"4469665",
+"info":{"authors":{"author":[{"@pid":"225/2500-3","text":"Yongming Li 0003"},{"@pid":"82/6384","text":"Cheng Zhang"},{"@pid":"42/6727","text":"Yunjian Jia"},{"@pid":"37/1304","text":"Ping Wang"},{"@pid":"40/5108","text":"Xiaoheng Zhang"},{"@pid":"211/4824","text":"Tingjie Xie"}]},"title":"Simultaneous learning of speech feature and segment for classification of Parkinson disease.","venue":"Healthcom","pages":"1-6","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/healthcom/LiZJWZX17","doi":"10.1109/HEALTHCOM.2017.8210820","ee":"https://doi.org/10.1109/HealthCom.2017.8210820","url":"https://dblp.org/rec/conf/healthcom/LiZJWZX17"},
+"url":"URL#4469665"
+},
+{
+"@score":"2",
+"@id":"4469706",
+"info":{"authors":{"author":[{"@pid":"86/1463-1","text":"Jianxin Zhang 0001"},{"@pid":"28/5782","text":"Weifeng Xu"},{"@pid":"72/3527-8","text":"Qiang Zhang 0008"},{"@pid":"74/3468-1","text":"Bo Jin 0001"},{"@pid":"12/4440","text":"Xiaopeng Wei"}]},"title":"Exploring risk factors and predicting UPDRS score based on Parkinson&apos;s speech signals.","venue":"Healthcom","pages":"1-6","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/healthcom/ZhangXZ0W17","doi":"10.1109/HEALTHCOM.2017.8210785","ee":"https://doi.org/10.1109/HealthCom.2017.8210785","url":"https://dblp.org/rec/conf/healthcom/ZhangXZ0W17"},
+"url":"URL#4469706"
+},
+{
+"@score":"2",
+"@id":"4475796",
+"info":{"authors":{"author":[{"@pid":"180/2886","text":"Stephanie Gillespie"},{"@pid":"55/1900","text":"Elliot Moore II"},{"@pid":"180/2607","text":"Jacqueline Laures-Gore"},{"@pid":"180/2583","text":"Matthew Farina"},{"@pid":"20/4722","text":"Scott Russell"},{"@pid":"201/7170","text":"Yash-Yee Logan"}]},"title":"Detecting stress and depression in adults with aphasia through speech analysis.","venue":"ICASSP","pages":"5140-5144","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/GillespieMLFRL17","doi":"10.1109/ICASSP.2017.7953136","ee":"https://doi.org/10.1109/ICASSP.2017.7953136","url":"https://dblp.org/rec/conf/icassp/GillespieMLFRL17"},
+"url":"URL#4475796"
+},
+{
+"@score":"2",
+"@id":"4477265",
+"info":{"authors":{"author":[{"@pid":"313/0744","text":"Sabah Al-Hameed"},{"@pid":"98/4523","text":"Mohammed Benaissa"},{"@pid":"02/2429","text":"Heidi Christensen"}]},"title":"Detecting and Predicting Alzheimer&apos;s Disease Severity in Longitudinal Acoustic Data.","venue":"ICBRA","pages":"57-61","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/icbra/Al-HameedBC17","doi":"10.1145/3175587.3175589","ee":"https://doi.org/10.1145/3175587.3175589","url":"https://dblp.org/rec/conf/icbra/Al-HameedBC17"},
+"url":"URL#4477265"
+},
+{
+"@score":"2",
+"@id":"4486593",
+"info":{"authors":{"author":[{"@pid":"165/9033","text":"Domenico Mirarchi"},{"@pid":"74/10787","text":"Patrizia Vizza"},{"@pid":"95/1778","text":"Giuseppe Tradigo"},{"@pid":"68/4422","text":"Nicola Lombardo"},{"@pid":"205/9944","text":"Gennarina Arabia"},{"@pid":"v/PierangeloVeltri","text":"Pierangelo Veltri"}]},"title":"Signal Analysis for Voice Evaluation in Parkinson&apos;s Disease.","venue":"ICHI","pages":"530-535","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/ichi/MirarchiVTLAV17","doi":"10.1109/ICHI.2017.72","ee":"https://doi.org/10.1109/ICHI.2017.72","url":"https://dblp.org/rec/conf/ichi/MirarchiVTLAV17"},
+"url":"URL#4486593"
+},
+{
+"@score":"2",
+"@id":"4492876",
+"info":{"authors":{"author":[{"@pid":"216/4157","text":"Ismail El Moudden"},{"@pid":"203/0895","text":"Mounir Ouzir"},{"@pid":"143/1541","text":"Souad El Bernoussi"}]},"title":"Automatic Speech Analysis in Patients with Parkinson&apos;s Disease using Feature Dimension Reduction.","venue":"ICMRE","pages":"167-171","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/icmre/MouddenOB17","doi":"10.1145/3068796.3068813","ee":"https://doi.org/10.1145/3068796.3068813","url":"https://dblp.org/rec/conf/icmre/MouddenOB17"},
+"url":"URL#4492876"
+},
+{
+"@score":"2",
+"@id":"4511959",
+"info":{"authors":{"author":[{"@pid":"12/2088","text":"Visar Berisha"},{"@pid":"136/5109","text":"Julie Liss"},{"@pid":"176/8081","text":"Timothy Huston"},{"@pid":"156/0321","text":"Alan Wisler"},{"@pid":"06/1539","text":"Yishan Jiao"},{"@pid":"212/6473","text":"Jonathan Eig"}]},"title":"Float Like a Butterfly Sting Like a Bee: Changes in Speech Preceded Parkinsonism Diagnosis for Muhammad Ali.","venue":"INTERSPEECH","pages":"1809-1813","year":"2017","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/BerishaLHWJE17","doi":"10.21437/INTERSPEECH.2017-25","ee":"https://doi.org/10.21437/Interspeech.2017-25","url":"https://dblp.org/rec/conf/interspeech/BerishaLHWJE17"},
+"url":"URL#4511959"
+},
+{
+"@score":"2",
+"@id":"4512441",
+"info":{"authors":{"author":[{"@pid":"95/9414","text":"Massimo Pettorino"},{"@pid":"04/914","text":"Wentao Gu"},{"@pid":"212/6246","text":"Pawel Pólrola"},{"@pid":"58/7279","text":"Ping Fan"}]},"title":"Rhythmic Characteristics of Parkinsonian Speech: A Study on Mandarin and Polish.","venue":"INTERSPEECH","pages":"3172-3176","year":"2017","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/PettorinoGPF17","doi":"10.21437/INTERSPEECH.2017-850","ee":"https://doi.org/10.21437/Interspeech.2017-850","url":"https://dblp.org/rec/conf/interspeech/PettorinoGPF17"},
+"url":"URL#4512441"
+},
+{
+"@score":"2",
+"@id":"4512495",
+"info":{"authors":{"author":[{"@pid":"173/6628","text":"Roozbeh Sadeghian"},{"@pid":"45/2336","text":"J. David Schaffer"},{"@pid":"76/8762","text":"Stephen A. Zahorian"}]},"title":"Speech Processing Approach for Diagnosing Dementia in an Early Stage.","venue":"INTERSPEECH","pages":"2705-2709","year":"2017","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/SadeghianSZ17","doi":"10.21437/INTERSPEECH.2017-1712","ee":"https://doi.org/10.21437/Interspeech.2017-1712","url":"https://dblp.org/rec/conf/interspeech/SadeghianSZ17"},
+"url":"URL#4512495"
+},
+{
+"@score":"2",
+"@id":"4512660",
+"info":{"authors":{"author":[{"@pid":"120/6770","text":"Jochen Weiner"},{"@pid":"212/6248","text":"Mathis Engelbart"},{"@pid":"s/TanjaSchultz","text":"Tanja Schultz"}]},"title":"Manual and Automatic Transcriptions in Dementia Detection from Speech.","venue":"INTERSPEECH","pages":"3117-3121","year":"2017","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/WeinerES17","doi":"10.21437/INTERSPEECH.2017-112","ee":"https://doi.org/10.21437/Interspeech.2017-112","url":"https://dblp.org/rec/conf/interspeech/WeinerES17"},
+"url":"URL#4512660"
+},
+{
+"@score":"2",
+"@id":"4544759",
+"info":{"authors":{"author":[{"@pid":"53/10244","text":"Johannes Tröger"},{"@pid":"211/3914","text":"Nicklas Linz"},{"@pid":"40/581","text":"Jan Alexandersson"},{"@pid":"158/4216","text":"Alexandra König"},{"@pid":"158/4312","text":"Philippe H. Robert"}]},"title":"Automated speech-based screening for alzheimer&apos;s disease in a care service scenario.","venue":"PervasiveHealth","pages":"292-297","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/ph/TrogerLAKR17","doi":"10.1145/3154862.3154915","ee":"https://doi.org/10.1145/3154862.3154915","url":"https://dblp.org/rec/conf/ph/TrogerLAKR17"},
+"url":"URL#4544759"
+},
+{
+"@score":"2",
+"@id":"4560007",
+"info":{"authors":{"author":[{"@pid":"220/7030","text":"Clara Jiménez-Recio"},{"@pid":"54/7247-3","text":"Alexander Zlotnik 0003"},{"@pid":"74/6077","text":"Ascensión Gallardo-Antolín"},{"@pid":"34/706","text":"Juan Manuel Montero"},{"@pid":"220/7035","text":"Juan Carlos Martínez-Castrillo"}]},"title":"Prediction of the Degree of Parkinson&apos;s Condition Using Recordings of Patients&apos; Voices.","venue":"SoCPaR","pages":"120-129","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/socpar/Jimenez-RecioZG17","doi":"10.1007/978-3-319-76357-6_12","ee":"https://doi.org/10.1007/978-3-319-76357-6_12","url":"https://dblp.org/rec/conf/socpar/Jimenez-RecioZG17"},
+"url":"URL#4560007"
+},
+{
+"@score":"2",
+"@id":"4561811",
+"info":{"authors":{"author":[{"@pid":"205/2083","text":"Michaela Strinzel"},{"@pid":"120/2936","text":"Vasilisa Verkhodanova"},{"@pid":"205/2232","text":"Fedor Jalvingh"},{"@pid":"205/2021","text":"Roel Jonkers"},{"@pid":"185/6695","text":"Matt Coler"}]},"title":"Acoustic and Perceptual Correlates of Vowel Articulation in Parkinson&apos;s Disease With and Without Mild Cognitive Impairment: A Pilot Study.","venue":"SPECOM","pages":"56-64","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/specom/StrinzelVJJC17","doi":"10.1007/978-3-319-66429-3_5","ee":"https://doi.org/10.1007/978-3-319-66429-3_5","url":"https://dblp.org/rec/conf/specom/StrinzelVJJC17"},
+"url":"URL#4561811"
+},
+{
+"@score":"2",
+"@id":"4565221",
+"info":{"authors":{"author":[{"@pid":"173/6657","text":"Tomás Arias-Vergara"},{"@pid":"204/6913","text":"Philipp Klumpp"},{"@pid":"172/6510","text":"Juan Camilo Vásquez-Correa"},{"@pid":"59/10369","text":"Juan Rafael Orozco-Arroyave"},{"@pid":"30/1288","text":"Elmar Nöth"}]},"title":"Parkinson&apos;s Disease Progression Assessment from Speech Using a Mobile Device-Based Application.","venue":"TSD","pages":"371-379","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/tsd/Arias-VergaraKV17","doi":"10.1007/978-3-319-64206-2_42","ee":"https://doi.org/10.1007/978-3-319-64206-2_42","url":"https://dblp.org/rec/conf/tsd/Arias-VergaraKV17"},
+"url":"URL#4565221"
+},
+{
+"@score":"2",
+"@id":"4565256",
+"info":{"authors":{"author":[{"@pid":"124/9210","text":"Anna Pompili"},{"@pid":"71/1198","text":"Alberto Abad"},{"@pid":"r/PaoloRomano0","text":"Paolo Romano 0002"},{"@pid":"132/3058","text":"Isabel P. Martins"},{"@pid":"204/6967","text":"Rita Cardoso"},{"@pid":"58/7105","text":"Helena Santos"},{"@pid":"147/6165","text":"Joana Carvalho"},{"@pid":"187/4136","text":"Isabel Guimarães"},{"@pid":"239/9577","text":"Joaquim J. Ferreira"}]},"title":"Automatic Detection of Parkinson&apos;s Disease: An Experimental Analysis of Common Speech Production Tasks Used for Diagnosis.","venue":"TSD","pages":"411-419","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/tsd/PompiliARMCSCGF17","doi":"10.1007/978-3-319-64206-2_46","ee":"https://doi.org/10.1007/978-3-319-64206-2_46","url":"https://dblp.org/rec/conf/tsd/PompiliARMCSCGF17"},
+"url":"URL#4565256"
+},
+{
+"@score":"2",
+"@id":"4565393",
+"info":{"authors":{"author":[{"@pid":"207/6140","text":"Jan Mucha"},{"@pid":"177/9829","text":"Zoltan Galaz"},{"@pid":"94/8897","text":"Jirí Mekyska"},{"@pid":"190/9146","text":"Tomas Kiska"},{"@pid":"207/6123","text":"Vojtech Zvoncak"},{"@pid":"49/6099","text":"Zdenek Smékal"},{"@pid":"166/0518","text":"Ilona Eliasova"},{"@pid":"166/0481","text":"Martina Mrackova"},{"@pid":"166/0498","text":"Milena Kostalova"},{"@pid":"21/9633","text":"Irena Rektorová"},{"@pid":"84/5534","text":"Marcos Faúndez-Zanuy"},{"@pid":"61/6223","text":"Jesús Bernardino Alonso Hernández"}]},"title":"Identification of hypokinetic dysarthria using acoustic analysis of poem recitation.","venue":"TSP","pages":"739-742","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/tsp/MuchaGMKZSEMKRF17","doi":"10.1109/TSP.2017.8076086","ee":"https://doi.org/10.1109/TSP.2017.8076086","url":"https://dblp.org/rec/conf/tsp/MuchaGMKZSEMKRF17"},
+"url":"URL#4565393"
+},
+{
+"@score":"2",
+"@id":"4583209",
+"info":{"authors":{"author":[{"@pid":"212/6506","text":"Jan Hlavnicka"},{"@pid":"23/461","text":"Roman Cmejla"},{"@pid":"212/6350","text":"Tereza Tykalová"},{"@pid":"399/4920","text":"Karel Sonka"},{"@pid":"142/8691","text":"Evzen Ruzicka"},{"@pid":"50/10325","text":"Jan Rusz"}]},"title":"Early biomarkers of Parkinson&apos;s disease based on natural connected speech.","venue":"UCI-MLR","publisher":"UCI-MLR","year":"2017","type":"Data and Artifacts","access":"open","key":"data/10/HlavnikaTORRJ17","doi":"10.24432/C5W02Q","ee":"https://doi.org/10.24432/C5W02Q","url":"https://dblp.org/rec/data/10/HlavnikaTORRJ17"},
+"url":"URL#4583209"
+},
+{
+"@score":"2",
+"@id":"4597050",
+"info":{"authors":{"author":[{"@pid":"116/0450","text":"Kairit Sirts"},{"@pid":"139/7601","text":"Olivier Piguet"},{"@pid":"75/6632-1","text":"Mark Johnson 0001"}]},"title":"Idea density for predicting Alzheimer&apos;s disease from transcribed speech.","venue":"CoRR","volume":"abs/1706.04473","year":"2017","type":"Informal and Other Publications","access":"open","key":"journals/corr/SirtsPJ17","ee":"http://arxiv.org/abs/1706.04473","url":"https://dblp.org/rec/journals/corr/SirtsPJ17"},
+"url":"URL#4597050"
+},
+{
+"@score":"2",
+"@id":"4619183",
+"info":{"authors":{"author":{"@pid":"59/10369","text":"Juan Rafael Orozco-Arroyave"}},"title":"Analysis of speech of people with Parkinson&apos;s disease.","pages":"1-128","publisher":"Logos Verlag Berlin GmbH","year":"2016","type":"Books and Theses","access":"unavailable","key":"phd/dnb/Orozco-Arroyave16","ee":"https://d-nb.info/1119254485","url":"https://dblp.org/rec/phd/dnb/Orozco-Arroyave16"},
+"url":"URL#4619183"
+},
+{
+"@score":"2",
+"@id":"4623640",
+"info":{"authors":{"author":{"@pid":"176/9699","text":"Grant M. Walker"}},"title":"Computational Modeling of Speech Production and Aphasia","year":"2016","type":"Books and Theses","access":"closed","key":"phd/us/Walker16","ee":"https://www.escholarship.org/uc/item/1cp5g22d","url":"https://dblp.org/rec/phd/us/Walker16"},
+"url":"URL#4623640"
+},
+{
+"@score":"2",
+"@id":"4638638",
+"info":{"authors":{"author":[{"@pid":"180/9085","text":"Mahda Nasrolahzadeh"},{"@pid":"180/9102","text":"Zeinab Mohammadpoori"},{"@pid":"53/1210","text":"Javad Haddadnia"}]},"title":"Analysis of mean square error surface and its corresponding contour plots of spontaneous speech signals in Alzheimer&apos;s disease with adaptive wiener filter.","venue":"Comput. Hum. Behav.","volume":"61","pages":"364-371","year":"2016","type":"Journal Articles","access":"closed","key":"journals/chb/NasrolahzadehMH16","doi":"10.1016/J.CHB.2016.03.031","ee":"https://doi.org/10.1016/j.chb.2016.03.031","url":"https://dblp.org/rec/journals/chb/NasrolahzadehMH16"},
+"url":"URL#4638638"
+},
+{
+"@score":"2",
+"@id":"4641332",
+"info":{"authors":{"author":[{"@pid":"177/9829","text":"Zoltan Galaz"},{"@pid":"94/8897","text":"Jirí Mekyska"},{"@pid":"178/0059","text":"Zdenek Mzourek"},{"@pid":"49/6099","text":"Zdenek Smékal"},{"@pid":"21/9633","text":"Irena Rektorová"},{"@pid":"166/0518","text":"Ilona Eliasova"},{"@pid":"166/0498","text":"Milena Kostalova"},{"@pid":"166/0481","text":"Martina Mrackova"},{"@pid":"177/9783","text":"Dagmar Berankova"}]},"title":"Prosodic analysis of neutral, stress-modified and rhymed speech in patients with Parkinson&apos;s disease.","venue":"Comput. Methods Programs Biomed.","volume":"127","pages":"301-317","year":"2016","type":"Journal Articles","access":"closed","key":"journals/cmpb/GalazMMSREKMB16","doi":"10.1016/J.CMPB.2015.12.011","ee":"https://doi.org/10.1016/j.cmpb.2015.12.011","url":"https://dblp.org/rec/journals/cmpb/GalazMMSREKMB16"},
+"url":"URL#4641332"
+},
+{
+"@score":"2",
+"@id":"4653550",
+"info":{"authors":{"author":[{"@pid":"154/1373","text":"Lizbeth Naranjo"},{"@pid":"154/1294","text":"Carlos J. Pérez 0001"},{"@pid":"154/1322","text":"Yolanda Campos-Roca"},{"@pid":"18/5645","text":"Jacinto Martín"}]},"title":"Addressing voice recording replications for Parkinson&apos;s disease detection.","venue":"Expert Syst. Appl.","volume":"46","pages":"286-292","year":"2016","type":"Journal Articles","access":"closed","key":"journals/eswa/NaranjoPCM16","doi":"10.1016/J.ESWA.2015.10.034","ee":"https://doi.org/10.1016/j.eswa.2015.10.034","url":"https://dblp.org/rec/journals/eswa/NaranjoPCM16"},
+"url":"URL#4653550"
+}
+]
+}
+}
+}

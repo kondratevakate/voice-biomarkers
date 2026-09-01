@@ -1,0 +1,410 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/yP4nH//NtQXqEfMlo72ZFnTz9hg</id>
+  <title>arXiv Query: search_query=(abs:"voice biomarker" OR abs:"vocal biomarker" OR abs:"speech biomarker" OR abs:"acoustic biomarker" OR abs:"voice-based digital biomarker" OR abs:"speech-based digital biomarker" OR abs:"speech analysis" OR abs:"acoustic features" OR abs:"pathological speech") AND (abs:Parkinson OR abs:Alzheimer OR abs:dementia OR abs:"cognitive impairment" OR abs:ALS OR abs:aphasia OR abs:dysarthria)&amp;id_list=&amp;start=100&amp;max_results=100</title>
+  <updated>2026-09-01T14:43:43Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(abs:%22voice+biomarker%22+OR+(abs:%22vocal+biomarker%22+OR+(abs:%22speech+biomarker%22+OR+(abs:%22acoustic+biomarker%22+OR+(abs:%22voice-based+digital+biomarker%22+OR+(abs:%22speech-based+digital+biomarker%22+OR+(abs:%22speech+analysis%22+OR+(abs:%22acoustic+features%22+OR+abs:%22pathological+speech%22))))))))+AND+(abs:Parkinson+OR+(abs:Alzheimer+OR+(abs:dementia+OR+(abs:%22cognitive+impairment%22+OR+(abs:ALS+OR+(abs:aphasia+OR+abs:dysarthria))))))&amp;start=100&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>115</opensearch:totalResults>
+  <opensearch:startIndex>100</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2005.14646v1</id>
+    <title>The INESC-ID Multi-Modal System for the ADReSS 2020 Challenge</title>
+    <updated>2020-05-29T16:16:02Z</updated>
+    <link href="https://arxiv.org/abs/2005.14646v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2005.14646v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper describes a multi-modal approach for the automatic detection of Alzheimer's disease proposed in the context of the INESC-ID Human Language Technology Laboratory participation in the ADReSS 2020 challenge. Our classification framework takes advantage of both acoustic and textual feature embeddings, which are extracted independently and later combined. Speech signals are encoded into acoustic features using DNN speaker embeddings extracted from pre-trained models. For textual input, contextual embedding vectors are first extracted using an English Bert model and then used either to directly compute sentence embeddings or to feed a bidirectional LSTM-RNNs with attention. Finally, an SVM classifier with linear kernel is used for the individual evaluation of the three systems. Our best system, based on the combination of linguistic and acoustic information, attained a classification accuracy of 81.25%. Results have shown the importance of linguistic features in the classification of Alzheimer's Disease, which outperforms the acoustic ones in terms of accuracy. Early stage features fusion did not provide additional improvements, confirming that the discriminant ability conveyed by speech in this case is smooth out by linguistic data.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-05-29T16:16:02Z</published>
+    <arxiv:comment>5 pages, 1 figure. Submitted to INTERSPEECH2020</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Anna Pompili</name>
+    </author>
+    <author>
+      <name>Thomas Rolland</name>
+    </author>
+    <author>
+      <name>Alberto Abad</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2004.14846v2</id>
+    <title>The role of context in neural pitch accent detection in English</title>
+    <updated>2020-10-12T08:25:23Z</updated>
+    <link href="https://arxiv.org/abs/2004.14846v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2004.14846v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Prosody is a rich information source in natural language, serving as a marker for phenomena such as contrast. In order to make this information available to downstream tasks, we need a way to detect prosodic events in speech. We propose a new model for pitch accent detection, inspired by the work of Stehwien et al. (2018), who presented a CNN-based model for this task. Our model makes greater use of context by using full utterances as input and adding an LSTM layer. We find that these innovations lead to an improvement from 87.5% to 88.7% accuracy on pitch accent detection on American English speech in the Boston University Radio News Corpus, a state-of-the-art result. We also find that a simple baseline that just predicts a pitch accent on every content word yields 82.2% accuracy, and we suggest that this is the appropriate baseline for this task. Finally, we conduct ablation tests that show pitch is the most important acoustic feature for this task and this corpus.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-04-30T14:59:05Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <arxiv:journal_ref>Proceedings of the 2020 Conference on Empirical Methods in Natural Language Processing</arxiv:journal_ref>
+    <author>
+      <name>Elizabeth Nielsen</name>
+    </author>
+    <author>
+      <name>Mark Steedman</name>
+    </author>
+    <author>
+      <name>Sharon Goldwater</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2002.12788v1</id>
+    <title>Identification of Dementia Using Audio Biomarkers</title>
+    <updated>2020-02-27T13:54:00Z</updated>
+    <link href="https://arxiv.org/abs/2002.12788v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2002.12788v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Dementia is a syndrome, generally of a chronic nature characterized by a deterioration in cognitive function, especially in the geriatric population and is severe enough to impact their daily activities. Early diagnosis of dementia is essential to provide timely treatment to alleviate the effects and sometimes to slow the progression of dementia. Speech has been known to provide an indication of a person's cognitive state. The objective of this work is to use speech processing and machine learning techniques to automatically identify the stage of dementia such as mild cognitive impairment (MCI) or Alzheimers disease (AD). Non-linguistic acoustic parameters are used for this purpose, making this a language independent approach. We analyze the patients audio excerpts from a clinician-participant conversations taken from the Pitt corpus of DementiaBank database, to identify the speech parameters that best distinguish between MCI, AD and healthy (HC) speech. We analyze the contribution of various types of acoustic features such as spectral, temporal, cepstral their feature-level fusion and selection towards the identification of dementia stage. Additionally, we compare the performance of using feature-level fusion and score-level fusion. An accuracy of 82% is achieved using score-level fusion with an absolute improvement of 5% over feature-level fusion.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-02-27T13:54:00Z</published>
+    <arxiv:comment>5 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Rupayan Chakraborty</name>
+    </author>
+    <author>
+      <name>Meghna Pandharipande</name>
+    </author>
+    <author>
+      <name>Chitralekha Bhat</name>
+    </author>
+    <author>
+      <name>Sunil Kumar Kopparapu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1911.11360v4</id>
+    <title>Robust Estimation of Hypernasality in Dysarthria with Acoustic Model Likelihood Features</title>
+    <updated>2020-08-06T03:38:35Z</updated>
+    <link href="https://arxiv.org/abs/1911.11360v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1911.11360v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Hypernasality is a common characteristic symptom across many motor-speech disorders. For voiced sounds, hypernasality introduces an additional resonance in the lower frequencies and, for unvoiced sounds, there is reduced articulatory precision due to air escaping through the nasal cavity. However, the acoustic manifestation of these symptoms is highly variable, making hypernasality estimation very challenging, both for human specialists and automated systems. Previous work in this area relies on either engineered features based on statistical signal processing or machine learning models trained on clinical ratings. Engineered features often fail to capture the complex acoustic patterns associated with hypernasality, whereas metrics based on machine learning are prone to overfitting to the small disease-specific speech datasets on which they are trained. Here we propose a new set of acoustic features that capture these complementary dimensions. The features are based on two acoustic models trained on a large corpus of healthy speech. The first acoustic model aims to measure nasal resonance from voiced sounds, whereas the second acoustic model aims to measure articulatory imprecision from unvoiced sounds. To demonstrate that the features derived from these acoustic models are specific to hypernasal speech, we evaluate them across different dysarthria corpora. Our results show that the features generalize even when training on hypernasal speech from one disease and evaluating on hypernasal speech from another disease (e.g. training on Parkinson's disease, evaluation on Huntington's disease), and when training on neurologically disordered speech but evaluating on cleft palate speech.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-11-26T06:11:21Z</published>
+    <arxiv:comment>12 pages, 9 figures, 2 tables</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <arxiv:journal_ref>IEEE/ACM Trans. on Audio, Speech, and Language Proc. 28 (2020) 2511-2522</arxiv:journal_ref>
+    <author>
+      <name>Michael Saxon</name>
+    </author>
+    <author>
+      <name>Ayush Tripathi</name>
+    </author>
+    <author>
+      <name>Yishan Jiao</name>
+    </author>
+    <author>
+      <name>Julie Liss</name>
+    </author>
+    <author>
+      <name>Visar Berisha</name>
+    </author>
+    <arxiv:doi>10.1109/TASLP.2020.3015035</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/TASLP.2020.3015035" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1912.00866v1</id>
+    <title>Voice Biomarker Identification for Effects of Deep-Brain Stimulation on Parkinson's Disease</title>
+    <updated>2019-11-25T07:46:27Z</updated>
+    <link href="https://arxiv.org/abs/1912.00866v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1912.00866v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Deep-Brain Stimulation (DBS) is a therapy used in conjunction with medication to help alleviate the motor symptoms of Parkinson's Disease (PD). However, the monitoring and adjustment of DBS settings is tedious and expensive, requiring long programming appointments every few months. We investigated the possible correlation between PD motor score severity and digitally extracted patient voice features to potentially aid clinicians in their monitoring and treatment of PD with DBS, and eventually enable a closed-loop DBS system. 5 DBS PD patients were enrolled. Voice samples were collected for various voice tasks (single phoneme vocalization, free speech task, sentence reading task, counting backward task, categorical fluency task) for DBS ON and OFF states. Motor scores per the Unified Parkinson's Disease Rating Scale (UPDRS) were also collected for DBS ON and OFF states. Voice samples were then analyzed to extract voice features using publicly available voice feature library sets, and statistically compared for DBS ON and OFF. Of the feature categories explored (Acoustic, Prosodic, Linguistic) 6 features from the GeMAPS feature set for acoustic features demonstrated significant differences with DBS ON and OFF (p&lt;0.05). Prosodic features such as pause length/percentage were found to be negatively correlated with increased motor symptom severity. Non-significant differences were found for linguistic features. These findings provide preliminary evidence for acoustic and prosodic speech features to act as potential biomarkers for PD disease severity in DBS patients. We hope to explore further by expanding our data set, identifying other features, applying machine learning models, and working towards a closed-loop DBS system that can auto-tune itself based on changes in a patient's voice.</summary>
+    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-11-25T07:46:27Z</published>
+    <arxiv:comment>5 pages, including 3 tables, 2 figures, and references</arxiv:comment>
+    <arxiv:primary_category term="q-bio.NC"/>
+    <author>
+      <name>Huy Phi</name>
+    </author>
+    <author>
+      <name>Sanjeev Janarthanan</name>
+    </author>
+    <author>
+      <name>Larry Zhang</name>
+    </author>
+    <author>
+      <name>Reza Hosseini Ghomi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1904.00361v1</id>
+    <title>An End-to-End Approach to Automatic Speech Assessment for Cantonese-speaking People with Aphasia</title>
+    <updated>2019-03-31T09:04:17Z</updated>
+    <link href="https://arxiv.org/abs/1904.00361v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1904.00361v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Conventional automatic assessment of pathological speech usually follows two main steps: (1) extraction of pathology-specific features; (2) classification or regression on extracted features. Given the great variety of speech and language disorders, feature design is never a straightforward task, and yet it is most crucial to the performance of assessment. This paper presents an end-to-end approach to automatic speech assessment for Cantonese-speaking People With Aphasia (PWA). The assessment is formulated as a binary classification task to discriminate PWA with high scores of subjective assessment from those with low scores. The sequence-to-one Recurrent Neural Network with Gated Recurrent Unit (GRU-RNN) and Convolutional Neural Network (CNN) models are applied to realize the end-to-end mapping from fundamental speech features to the classification result. The pathology-specific features used for assessment can be learned implicitly by the neural network model. Class Activation Mapping (CAM) method is utilized to visualize how those features contribute to the assessment result. Our experimental results show that the end-to-end approach outperforms the conventional two-step approach in the classification task, and confirm that the CNN model is able to learn impairment-related features that are similar to human-designed features. The experimental results also suggest that CNN model performs better than sequence-to-one GRU-RNN model in this specific task.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-03-31T09:04:17Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Ying Qin</name>
+    </author>
+    <author>
+      <name>Yuzhong Wu</name>
+    </author>
+    <author>
+      <name>Tan Lee</name>
+    </author>
+    <author>
+      <name>Anthony Pak Hin Kong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1811.12254v1</id>
+    <title>The Effect of Heterogeneous Data for Alzheimer's Disease Detection from Speech</title>
+    <updated>2018-11-29T15:37:45Z</updated>
+    <link href="https://arxiv.org/abs/1811.12254v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1811.12254v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech datasets for identifying Alzheimer's disease (AD) are generally restricted to participants performing a single task, e.g. describing an image shown to them. As a result, models trained on linguistic features derived from such datasets may not be generalizable across tasks. Building on prior work demonstrating that same-task data of healthy participants helps improve AD detection on a single-task dataset of pathological speech, we augment an AD-specific dataset consisting of subjects describing a picture with multi-task healthy data. We demonstrate that normative data from multiple speech-based tasks helps improve AD detection by up to 9%. Visualization of decision boundaries reveals that models trained on a combination of structured picture descriptions and unstructured conversational speech have the least out-of-task error and show the most potential to generalize to multiple tasks. We analyze the impact of age of the added samples and if they affect fairness in classification. We also provide explanations for a possible inductive bias effect across tasks using model-agnostic feature anchors. This work highlights the need for heterogeneous datasets for encoding changes in multiple facets of cognition and for developing a task-independent AD detection model.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-11-29T15:37:45Z</published>
+    <arxiv:comment>Machine Learning for Health (ML4H) Workshop at NeurIPS 2018 arXiv:1811.07216</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Aparna Balagopalan</name>
+    </author>
+    <author>
+      <name>Jekaterina Novikova</name>
+    </author>
+    <author>
+      <name>Frank Rudzicz</name>
+    </author>
+    <author>
+      <name>Marzyeh Ghassemi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1807.10948v1</id>
+    <title>Articulatory Features for ASR of Pathological Speech</title>
+    <updated>2018-07-28T15:04:53Z</updated>
+    <link href="https://arxiv.org/abs/1807.10948v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1807.10948v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this work, we investigate the joint use of articulatory and acoustic features for automatic speech recognition (ASR) of pathological speech. Despite long-lasting efforts to build speaker- and text-independent ASR systems for people with dysarthria, the performance of state-of-the-art systems is still considerably lower on this type of speech than on normal speech. The most prominent reason for the inferior performance is the high variability in pathological speech that is characterized by the spectrotemporal deviations caused by articulatory impairments due to various etiologies. To cope with this high variation, we propose to use speech representations which utilize articulatory information together with the acoustic properties. A designated acoustic model, namely a fused-feature-map convolutional neural network (fCNN), which performs frequency convolution on acoustic features and time convolution on articulatory features is trained and tested on a Dutch and a Flemish pathological speech corpus. The ASR performance of fCNN-based ASR system using joint features is compared to other neural network architectures such conventional CNNs and time-frequency convolutional networks (TFCNNs) in several training scenarios.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-07-28T15:04:53Z</published>
+    <arxiv:comment>Accepted for publication at Interspeech 2018</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Emre Yılmaz</name>
+    </author>
+    <author>
+      <name>Vikramjit Mitra</name>
+    </author>
+    <author>
+      <name>Chris Bartels</name>
+    </author>
+    <author>
+      <name>Horacio Franco</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1712.09347v1</id>
+    <title>Smart Fog: Fog Computing Framework for Unsupervised Clustering Analytics in Wearable Internet of Things</title>
+    <updated>2017-12-25T02:08:39Z</updated>
+    <link href="https://arxiv.org/abs/1712.09347v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1712.09347v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The increasing use of wearables in smart telehealth generates heterogeneous medical big data. Cloud and fog services process these data for assisting clinical procedures. IoT based ehealthcare have greatly benefited from efficient data processing. This paper proposed and evaluated use of low resource machine learning on Fog devices kept close to the wearables for smart healthcare. In state of the art telecare systems, the signal processing and machine learning modules are deployed in the cloud for processing physiological data. We developed a prototype of Fog-based unsupervised machine learning big data analysis for discovering patterns in physiological data. We employed Intel Edison and Raspberry Pi as Fog computer in proposed architecture. We performed validation studies on real-world pathological speech data from in home monitoring of patients with Parkinson's disease (PD). Proposed architecture employed machine learning for analysis of pathological speech data obtained from smartwatches worn by the patients with PD. Results showed that proposed architecture is promising for low-resource clinical machine learning. It could be useful for other applications within wearable IoT for smart telehealth scenarios by translating machine learning approaches from the cloud backend to edge computing devices such as Fog.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-12-25T02:08:39Z</published>
+    <arxiv:comment>5 pages, 3 figures. 5th IEEE Global Conference on Signal and Information Processing GlobalSIP 2017</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Debanjan Borthakur</name>
+    </author>
+    <author>
+      <name>Harishchandra Dubey</name>
+    </author>
+    <author>
+      <name>Nicholas Constant</name>
+    </author>
+    <author>
+      <name>Leslie Mahler</name>
+    </author>
+    <author>
+      <name>Kunal Mankodiya</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1710.00171v1</id>
+    <title>Confirmation detection in human-agent interaction using non-lexical speech cues</title>
+    <updated>2017-09-30T09:32:23Z</updated>
+    <link href="https://arxiv.org/abs/1710.00171v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1710.00171v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Even if only the acoustic channel is considered, human communication is highly multi-modal. Non-lexical cues provide a variety of information such as emotion or agreement. The ability to process such cues is highly relevant for spoken dialog systems, especially in assistance systems. In this paper we focus on the recognition of non-lexical confirmations such as "mhm", as they enhance the system's ability to accurately interpret human intent in natural communication. The architecture uses a Support Vector Machine to detect confirmations based on acoustic features. In a systematic comparison, several feature sets were evaluated for their performance on a corpus of human-agent interaction in a setting with naive users including elderly and cognitively impaired people. Our results show that using stacked formants as features yield an accuracy of 84% outperforming regular formants and MFCC or pitch based features for online classification.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-09-30T09:32:23Z</published>
+    <arxiv:comment>6 pages, Symposium on Natural Communication for Human-Robot Collaboration, AAAI Fall Symposium Series 2017</arxiv:comment>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Mara Brandt</name>
+    </author>
+    <author>
+      <name>Britta Wrede</name>
+    </author>
+    <author>
+      <name>Franz Kummert</name>
+    </author>
+    <author>
+      <name>Lars Schillingmann</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1506.02170v1</id>
+    <title>Hybridized Feature Extraction and Acoustic Modelling Approach for Dysarthric Speech Recognition</title>
+    <updated>2015-06-06T17:05:00Z</updated>
+    <link href="https://arxiv.org/abs/1506.02170v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1506.02170v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Dysarthria is malfunctioning of motor speech caused by faintness in the human nervous system. It is characterized by the slurred speech along with physical impairment which restricts their communication and creates the lack of confidence and affects the lifestyle. This paper attempt to increase the efficiency of Automatic Speech Recognition (ASR) system for unimpaired speech signal. It describes state of art of research into improving ASR for speakers with dysarthria by means of incorporated knowledge of their speech production. Hybridized approach for feature extraction and acoustic modelling technique along with evolutionary algorithm is proposed for increasing the efficiency of the overall system. Here number of feature vectors are varied and tested the system performance. It is observed that system performance is boosted by genetic algorithm. System with 16 acoustic features optimized with genetic algorithm has obtained highest recognition rate of 98.28% with training time of 5:30:17.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-06-06T17:05:00Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Megha Rughani</name>
+    </author>
+    <author>
+      <name>D. Shivakrishna</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1401.1768v1</id>
+    <title>The clustering of galaxies in the SDSS-III Baryon Oscillation Spectroscopic Survey: galaxy clustering measurements in the low redshift sample of Data Release 11</title>
+    <updated>2014-01-08T18:25:54Z</updated>
+    <link href="https://arxiv.org/abs/1401.1768v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1401.1768v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present the distance measurement to z = 0.32 using the 11th data release of the Sloan Digital Sky Survey-III Baryon Acoustic Oscillation Survey (BOSS). We use 313,780 galaxies of the low-redshift (LOWZ) sample over 7,341 square-degrees to compute $D_V = (1264 \pm 25)(r_d/r_{d,fid})$ - a sub 2% measurement - using the baryon acoustic feature measured in the galaxy two-point correlation function and power-spectrum. We compare our results to those obtained in DR10. We study observational systematics in the LOWZ sample and quantify potential effects due to photometric offsets between the northern and southern Galactic caps. We find the sample to be robust to all systematic effects found to impact on the targeting of higher-redshift BOSS galaxies, and that the observed north-south tensions can be explained by either limitations in photometric calibration or by sample variance, and have no impact on our final result. Our measurement, combined with the baryonic acoustic scale at z = 0.57, is used in Anderson et al. (2013a) to constrain cosmological parameters.</summary>
+    <category term="astro-ph.CO" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2014-01-08T18:25:54Z</published>
+    <arxiv:comment>17 pages. Submitted to MNRAS</arxiv:comment>
+    <arxiv:primary_category term="astro-ph.CO"/>
+    <author>
+      <name>Rita Tojeiro</name>
+      <arxiv:affiliation>ICG, Portsmouth</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Ashley J. Ross</name>
+    </author>
+    <author>
+      <name>Angela Burden</name>
+    </author>
+    <author>
+      <name>Lado Samushia</name>
+    </author>
+    <author>
+      <name>Marc Manera</name>
+    </author>
+    <author>
+      <name>Will J. Percival</name>
+    </author>
+    <author>
+      <name>Florian Beutler</name>
+    </author>
+    <author>
+      <name>Antonio J. Cuesta</name>
+    </author>
+    <author>
+      <name>Kyle Dawson</name>
+    </author>
+    <author>
+      <name>Daniel J. Eisenstein</name>
+    </author>
+    <author>
+      <name>Shirley Ho</name>
+    </author>
+    <author>
+      <name>Cullan Howett</name>
+    </author>
+    <author>
+      <name>Cameron K. McBride</name>
+    </author>
+    <author>
+      <name>Francisco Montesano</name>
+    </author>
+    <author>
+      <name>John K. Parejko</name>
+    </author>
+    <author>
+      <name>Beth Reid</name>
+    </author>
+    <author>
+      <name>Ariel G. Sánchez</name>
+    </author>
+    <author>
+      <name>David J. Schlegel</name>
+    </author>
+    <author>
+      <name>Donald P. Schneider</name>
+    </author>
+    <author>
+      <name>Jeremy L. Tinker</name>
+    </author>
+    <author>
+      <name>Mariana Vargas Magaña</name>
+    </author>
+    <author>
+      <name>Martin White</name>
+    </author>
+    <arxiv:doi>10.1093/mnras/stu371</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1093/mnras/stu371" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0705.1843v1</id>
+    <title>Power spectrum of the maxBCG cluster sample: new evidence for the acoustic features</title>
+    <updated>2007-05-13T18:08:02Z</updated>
+    <link href="https://arxiv.org/abs/0705.1843v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0705.1843v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We use the direct Fourier method to calculate the redshift-space power spectrum of the maxBCG cluster catalog (Koester et al. 2007) -- currently by far the largest existing galaxy cluster sample. The total number of clusters used in our analysis is 12,616. After accounting for the radial smearing effect caused by photometric redshift errors and also introducing a simple treatment for the nonlinear effects, we show that currently favored low matter density ``concordance'' LambdaCDM cosmology provides a very good fit to the estimated power. Thanks to the large volume (~ 0.4 h^{-3} Gpc^3), high clustering amplitude (linear effective bias parameter b_{eff} ~ 3x(0.85/sigma_8)), and sufficiently high sampling density (~ 3x10^{-5} h^{3} Mpc^{-3}) the recovered power spectrum has high enough signal to noise to allow us to find weak evidence (~ 2sigma CL) for the acoustic features. These results are encouraging in light of the several proposed large cluster surveys. In case we use the photometric redshift errors as suggested in Koester et al. (2007) we are left with the excess large-scale power which has previously been noticed by several other authors.</summary>
+    <category term="astro-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2007-05-13T18:08:02Z</published>
+    <arxiv:comment>10 pages, submitted to MNRAS</arxiv:comment>
+    <arxiv:primary_category term="astro-ph"/>
+    <author>
+      <name>Gert Huetsi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/astro-ph/0512201v1</id>
+    <title>Acoustic oscillations in the SDSS DR4 Luminous Red Galaxy sample power spectrum</title>
+    <updated>2005-12-07T20:15:44Z</updated>
+    <link href="https://arxiv.org/abs/astro-ph/0512201v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/astro-ph/0512201v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We calculate the redshift-space power spectrum of the Sloan Digital Sky Survey (SDSS) Data Release 4 (DR4) Luminous Red Galaxy (LRG) sample, finding evidence for a full series of acoustic features down to the scales of \sim 0.2 hMpc^{-1}. This corresponds up to the 7th peak in the CMB angular power spectrum. The acoustic scale derived, (105.4 \pm 2.3) h^{-1}Mpc, agrees very well with the ``concordance'' model prediction and also with the one determined via the analysis of the spatial two-point correlation function by Eisenstein et al. (2005). The models with baryonic features are favored by 3.3 σover their ``smoothed-out'' counterparts without any oscillatory behavior.</summary>
+    <category term="astro-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2005-12-07T20:15:44Z</published>
+    <arxiv:comment>Extended version of the previous work astro-ph/0507678, now including new data from the SDSS DR4. 17 pages, 18 figures, accepted for publication in A&amp;A</arxiv:comment>
+    <arxiv:primary_category term="astro-ph"/>
+    <arxiv:journal_ref>Astron.Astrophys.449:891-902,2006</arxiv:journal_ref>
+    <author>
+      <name>Gert Huetsi</name>
+    </author>
+    <arxiv:doi>10.1051/0004-6361:20053939</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1051/0004-6361:20053939" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/astro-ph/0507678v1</id>
+    <title>Acoustic oscillations in the SDSS Luminous Red Galaxy sample power spectrum</title>
+    <updated>2005-07-28T20:35:20Z</updated>
+    <link href="https://arxiv.org/abs/astro-ph/0507678v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/astro-ph/0507678v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  We calculate the redshift-space power spectrum of the Sloan Digital Sky Survey (SDSS) Luminous Red Galaxy (LRG) sample, finding evidence for a full series of acoustic features down to the scales of ~0.25 h Mpc^{-1}. This corresponds up to the 9. peak in the CMB angular power spectrum. The acoustic scale derived, (107.8 +- 4.3) h^{-1}Mpc (k &lt; 0.2 h Mpc^{-1}), agrees very well with the ``concordance'' model prediction and also with the one determined via the analysis of the spatial two-point correlation function by Eisenstein et al.(2005). This is not only an independent confirmation of Eisenstein et al.(2005) results made with different methods and software but also, according to our knowledge, the first determination of the power spectrum of the SDSS LRG sample. By calculating the two-point correlation function using the smooth cubic spline model fitted to the observed bandpowers and comparing with the results of the direct determination we demonstrate the consistency of our results.</summary>
+    <category term="astro-ph" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2005-07-28T20:35:20Z</published>
+    <arxiv:comment>7 pages, 9 figures, A&amp;A submitted</arxiv:comment>
+    <arxiv:primary_category term="astro-ph"/>
+    <author>
+      <name>Gert Huetsi</name>
+    </author>
+  </entry>
+</feed>
