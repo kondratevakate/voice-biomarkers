@@ -39,6 +39,7 @@ Status vocabulary: `pending`, `searched_exported`, `searched_no_export`, `supple
 | arXiv | api_failed | 2026-06-05 | `sources/formal-search-summary.md` | 429, timeout, and 503 errors; retry required. |
 | Semantic Scholar | api_failed | 2026-06-05 | `sources/search-log.md` | Pilot failed with 429; API key or slow retry required. |
 | Google Scholar-style broad web | supplementary_only | 2026-06-05 | `sources/search-log.md` | Useful for sensitivity only unless exportable. |
+| Consensus (Semantic Scholar/PubMed/Scopus/arXiv) | supplementary_only | 2026-08-31 | `sources/seed-supplement-candidates.csv`; `governance/tool-run-log.csv` TR-20260831-001..004 | Free tier caps results at 3 per query and has no export endpoint. Used only as a false-negative probe; surfaced 4 records (FNA-009..012), 3 of them from IEEE/GSA venues. Must not be used for PRISMA counts. |
 | CNKI | pending | TBD | TBD | Must be searched or logged as access unavailable. |
 | Wanfang | pending | TBD | TBD | Must be searched or logged as access unavailable. |
 | VIP Chinese Journals | pending | TBD | TBD | Must be searched or logged as access unavailable. |
@@ -54,6 +55,11 @@ Status vocabulary: `pending`, `searched_exported`, `searched_no_export`, `supple
 | EU Clinical Trials Register | pending | TBD | TBD | Needed for trial-registry coverage. |
 
 ## Reproducibility Notes
+
+- **Stage 1 counts are not re-runnable and must be regenerated (DEV-007, 2026-08-31).** Every Stage 1 formal search was executed with relevance sorting and a single 100-record page per source. Relevance ranking is not stable over time and single-page retrieval silently truncated large result sets, so `sources/formal-candidates.csv`, `sources/formal-search-counts.csv`, and their disease-refined variants cannot be reproduced by re-running the script. `scripts/run_formal_search.py` now sorts by publication date and paginates, and reports truncation as `ok_truncated_at_max_records`. When the search is re-run, preserve the superseded counts in this log rather than overwriting them.
+- Search parameters are contract-tested against the live APIs by `scripts/test_search_api_contract.py`; run it before trusting any new search output.
+- **arXiv was never validly queried in Stage 1 (DEV-008, 2026-08-31).** The arXiv query string was assembled from a human-readable family label and a truncated slice of the generic query, producing unbalanced quotes; arXiv parsed it as a disjunction of bare words and matched its entire corpus. Stage 1 recorded this as an API failure, but the query was also malformed. Each family now carries an explicit arXiv query. Corrected hit counts, measured 2026-08-31: core terminology 24, clinical validation 7, aging and biological age 8, disease monitoring 30, datasets and foundation models 254.
+- **Stage 2 deterministic re-run completed 2026-09-01 (TR-20260901-001, completed by TR-20260901-002).** All 25 source-family combinations succeeded: zero error rows, arXiv retrieved validly for the first time (24 / 7 / 8 / 30 / 255 topical hits per family). Result: 10,347 deduplicated candidates in `sources/formal-candidates.csv`. Stage 1 outputs are preserved verbatim in `sources/formal-candidates-stage1-superseded.csv` and `sources/formal-search-counts-stage1-superseded.csv`. Twelve source-family combinations report `ok_truncated_at_max_records`; the dominant ones are OpenAlex disease_monitoring (886,668 hits, 1,000 retrieved) and Europe PMC disease_monitoring (254,067 hits, 1,000 retrieved). Because retrieval is date-sorted, truncated families over-sample recent work; the family must be narrowed before its counts can support synthesis.
 
 - Record exact query string, database, filters, date searched, number of hits, and export filename.
 - Keep raw exports under `sources/raw/` when searches are run.

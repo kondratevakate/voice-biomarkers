@@ -1,26 +1,26 @@
 source,query_family,count,status
-PubMed,core_terminology,57,ok
-EuropePMC,core_terminology,200,ok
-EuropePMC-PPR,core_terminology,10,ok
-OpenAlex,core_terminology,1833,ok
-arXiv,core_terminology,,error: HTTPError: HTTP Error 429: Unknown Error
-PubMed,clinical_validation,41,ok
-EuropePMC,clinical_validation,5024,ok
-EuropePMC-PPR,clinical_validation,30,ok
-OpenAlex,clinical_validation,12723,ok
-arXiv,clinical_validation,,error: HTTPError: HTTP Error 429: Unknown Error
-PubMed,aging_biological_age,28,ok
-EuropePMC,aging_biological_age,90,ok
-EuropePMC-PPR,aging_biological_age,1,ok
-OpenAlex,aging_biological_age,1291,ok
-arXiv,aging_biological_age,,error: timeout: The read operation timed out
-PubMed,disease_monitoring,6580,ok
-EuropePMC,disease_monitoring,248465,ok
-EuropePMC-PPR,disease_monitoring,3021,ok
-OpenAlex,disease_monitoring,749203,ok
-arXiv,disease_monitoring,,error: HTTPError: HTTP Error 503: Service Unavailable
-PubMed,datasets_foundation_models,278,ok
-EuropePMC,datasets_foundation_models,1074,ok
-EuropePMC-PPR,datasets_foundation_models,22,ok
-OpenAlex,datasets_foundation_models,5926,ok
-arXiv,datasets_foundation_models,,error: HTTPError: HTTP Error 429: Unknown Error
+PubMed,core_terminology,67,ok
+EuropePMC,core_terminology,214,ok
+EuropePMC-PPR,core_terminology,11,ok
+OpenAlex,core_terminology,2261,ok_truncated_at_max_records
+arXiv,core_terminology,24,ok
+PubMed,clinical_validation,49,ok
+EuropePMC,clinical_validation,5255,ok_truncated_at_max_records
+EuropePMC-PPR,clinical_validation,34,ok
+OpenAlex,clinical_validation,16625,ok_truncated_at_max_records
+arXiv,clinical_validation,7,ok
+PubMed,aging_biological_age,29,ok
+EuropePMC,aging_biological_age,93,ok
+EuropePMC-PPR,aging_biological_age,3,ok
+OpenAlex,aging_biological_age,1494,ok_truncated_at_max_records
+arXiv,aging_biological_age,8,ok
+PubMed,disease_monitoring,6817,ok_truncated_at_max_records
+EuropePMC,disease_monitoring,254067,ok_truncated_at_max_records
+EuropePMC-PPR,disease_monitoring,3119,ok_truncated_at_max_records
+OpenAlex,disease_monitoring,886668,ok_truncated_at_max_records
+arXiv,disease_monitoring,30,ok
+PubMed,datasets_foundation_models,303,ok
+EuropePMC,datasets_foundation_models,1114,ok_truncated_at_max_records
+EuropePMC-PPR,datasets_foundation_models,26,ok
+OpenAlex,datasets_foundation_models,6957,ok_truncated_at_max_records
+arXiv,datasets_foundation_models,255,ok

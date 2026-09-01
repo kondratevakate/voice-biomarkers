@@ -1,0 +1,1701 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/PkN8+aRtplKXSUeT6InqZz+eBJU</id>
+  <title>arXiv Query: search_query=abs:"speech foundation model" OR abs:"voice foundation model" OR abs:"clinical speech" OR abs:"medical speech" OR abs:"pathological speech" OR abs:"health speech dataset"&amp;id_list=&amp;start=200&amp;max_results=100</title>
+  <updated>2026-09-01T09:03:31Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=abs:%22speech+foundation+model%22+OR+(abs:%22voice+foundation+model%22+OR+(abs:%22clinical+speech%22+OR+(abs:%22medical+speech%22+OR+(abs:%22pathological+speech%22+OR+abs:%22health+speech+dataset%22))))&amp;start=200&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>255</opensearch:totalResults>
+  <opensearch:startIndex>200</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2406.07576v1</id>
+    <title>Towards objective and interpretable speech disorder assessment: a comparative analysis of CNN and transformer-based models</title>
+    <updated>2024-06-07T08:51:52Z</updated>
+    <link href="https://arxiv.org/abs/2406.07576v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.07576v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Head and Neck Cancers (HNC) significantly impact patients' ability to speak, affecting their quality of life. Commonly used metrics for assessing pathological speech are subjective, prompting the need for automated and unbiased evaluation methods. This study proposes a self-supervised Wav2Vec2-based model for phone classification with HNC patients, to enhance accuracy and improve the discrimination of phonetic features for subsequent interpretability purpose. The impact of pre-training datasets, model size, and fine-tuning datasets and parameters are explored. Evaluation on diverse corpora reveals the effectiveness of the Wav2Vec2 architecture, outperforming a CNN-based approach, used in previous work. Correlation with perceptual measures also affirms the model relevance for impaired speech analysis. This work paves the way for better understanding of pathological speech with interpretable approaches for clinicians, by leveraging complex self-learnt speech representations.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-07T08:51:52Z</published>
+    <arxiv:comment>Accepted to Interspeech 2024</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Malo Maisonneuve</name>
+    </author>
+    <author>
+      <name>Corinne Fredouille</name>
+    </author>
+    <author>
+      <name>Muriel Lalain</name>
+    </author>
+    <author>
+      <name>Alain Ghio</name>
+    </author>
+    <author>
+      <name>Virginie Woisard</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.03138v4</id>
+    <title>An interpretable speech foundation model for depression detection by revealing prediction-relevant acoustic features from long speech</title>
+    <updated>2026-03-25T11:26:29Z</updated>
+    <link href="https://arxiv.org/abs/2406.03138v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.03138v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech-based depression detection tools could aid early screening. Here, we propose an interpretable speech foundation model approach to enhance the clinical applicability of such tools. We introduce a speech-level Audio Spectrogram Transformer (AST) to detect depression using long-duration speech instead of short segments, along with a novel interpretation method that reveals prediction-relevant acoustic features for clinician interpretation. Our experiments show the proposed model outperforms a segment-level AST, highlighting the impact of segment-level labelling noise and the advantage of leveraging longer speech duration for more reliable depression detection. Through interpretation, we observe our model identifies reduced loudness and F0 as relevant depression signals, aligning with documented clinical findings. This interpretability supports a responsible AI approach for speech-based depression detection, rendering such tools more clinically applicable.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-05T10:47:00Z</published>
+    <arxiv:comment>5 pages, 3 figures. arXiv admin note: substantial text overlap with arXiv:2309.13476</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Qingkun Deng</name>
+    </author>
+    <author>
+      <name>Saturnino Luz</name>
+    </author>
+    <author>
+      <name>Sofia de la Fuente Garcia</name>
+    </author>
+    <arxiv:doi>10.21437/Interspeech.2025-1968</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.21437/Interspeech.2025-1968" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.14161v1</id>
+    <title>Self-Taught Recognizer: Toward Unsupervised Adaptation for Speech Foundation Models</title>
+    <updated>2024-05-23T04:27:11Z</updated>
+    <link href="https://arxiv.org/abs/2405.14161v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.14161v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We propose an unsupervised adaptation framework, Self-TAught Recognizer (STAR), which leverages unlabeled data to enhance the robustness of automatic speech recognition (ASR) systems in diverse target domains, such as noise and accents. STAR is developed for prevalent speech foundation models based on Transformer-related architecture with auto-regressive decoding (e.g., Whisper, Canary). Specifically, we propose a novel indicator that empirically integrates step-wise information during decoding to assess the token-level quality of pseudo labels without ground truth, thereby guiding model updates for effective unsupervised adaptation. Experimental results show that STAR achieves an average of 13.5% relative reduction in word error rate across 14 target domains, and it sometimes even approaches the upper-bound performance of supervised adaptation. Surprisingly, we also observe that STAR prevents the adapted model from the common catastrophic forgetting problem without recalling source-domain data. Furthermore, STAR exhibits high data efficiency that only requires less than one-hour unlabeled data, and seamless generality to alternative large speech models and speech translation tasks. Our code aims to open source to the research communities.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-23T04:27:11Z</published>
+    <arxiv:comment>23 pages, Preprint</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yuchen Hu</name>
+    </author>
+    <author>
+      <name>Chen Chen</name>
+    </author>
+    <author>
+      <name>Chao-Han Huck Yang</name>
+    </author>
+    <author>
+      <name>Chengwei Qin</name>
+    </author>
+    <author>
+      <name>Pin-Yu Chen</name>
+    </author>
+    <author>
+      <name>Eng Siong Chng</name>
+    </author>
+    <author>
+      <name>Chao Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.02572v1</id>
+    <title>Selfsupervised learning for pathological speech detection</title>
+    <updated>2024-05-16T07:12:47Z</updated>
+    <link href="https://arxiv.org/abs/2406.02572v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.02572v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech production is a complex phenomenon, wherein the brain orchestrates a sequence of processes involving thought processing, motor planning, and the execution of articulatory movements. However, this intricate execution of various processes is susceptible to influence and disruption by various neurodegenerative pathological speech disorders, such as Parkinsons' disease, resulting in dysarthria, apraxia, and other conditions. These disorders lead to pathological speech characterized by abnormal speech patterns and imprecise articulation. Diagnosing these speech disorders in clinical settings typically involves auditory perceptual tests, which are time-consuming, and the diagnosis can vary among clinicians based on their experiences, biases, and cognitive load during the diagnosis. Additionally, unlike neurotypical speakers, patients with speech pathologies or impairments are unable to access various virtual assistants such as Alexa, Siri, etc. To address these challenges, several automatic pathological speech detection (PSD) approaches have been proposed. These approaches aim to provide efficient and accurate detection of speech disorders, thereby facilitating timely intervention and support for individuals affected by these conditions. These approaches mainly vary in two aspects: the input representations utilized and the classifiers employed. Due to the limited availability of data, the performance of detection remains subpar. Self-supervised learning (SSL) embeddings, such as wav2vec2, and their multilingual versions, are being explored as a promising avenue to improve performance. These embeddings leverage self-supervised learning techniques to extract rich representations from audio data, thereby offering a potential solution to address the limitations posed by the scarcity of labeled data.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-16T07:12:47Z</published>
+    <arxiv:comment>in Intersection of Book Chapter in Machine Leanring and Computational Social Sciences CRC (in progress) 2024</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Shakeel Ahmad Sheikh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.08295v3</id>
+    <title>SpeechVerse: A Large-scale Generalizable Audio Language Model</title>
+    <updated>2025-03-24T21:06:53Z</updated>
+    <link href="https://arxiv.org/abs/2405.08295v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.08295v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Large language models (LLMs) have shown incredible proficiency in performing tasks that require semantic understanding of natural language instructions. Recently, many works have further expanded this capability to perceive multimodal audio and text inputs, but their capabilities are often limited to specific fine-tuned tasks such as automatic speech recognition and translation. We therefore develop SpeechVerse, a robust multi-task training and curriculum learning framework that combines pre-trained speech and text foundation models via a small set of learnable parameters, while keeping the pre-trained models frozen during training. The models are instruction finetuned using continuous latent representations extracted from the speech foundation model to achieve optimal zero-shot performance on a diverse range of speech processing tasks using natural language instructions. We perform extensive benchmarking that includes comparing our model performance against traditional baselines across several datasets and tasks. Furthermore, we evaluate the model's capability for generalized instruction following by testing on out-of-domain datasets, novel prompts, and unseen tasks. Our empirical experiments reveal that our multi-task SpeechVerse model is even superior to conventional task-specific baselines on 9 out of the 11 tasks.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-14T03:33:31Z</published>
+    <arxiv:comment>Single Column, 13 page</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Nilaksh Das</name>
+    </author>
+    <author>
+      <name>Saket Dingliwal</name>
+    </author>
+    <author>
+      <name>Srikanth Ronanki</name>
+    </author>
+    <author>
+      <name>Rohit Paturi</name>
+    </author>
+    <author>
+      <name>Zhaocheng Huang</name>
+    </author>
+    <author>
+      <name>Prashant Mathur</name>
+    </author>
+    <author>
+      <name>Jie Yuan</name>
+    </author>
+    <author>
+      <name>Dhanush Bekal</name>
+    </author>
+    <author>
+      <name>Xing Niu</name>
+    </author>
+    <author>
+      <name>Sai Muralidhar Jayanthi</name>
+    </author>
+    <author>
+      <name>Xilai Li</name>
+    </author>
+    <author>
+      <name>Karel Mundnich</name>
+    </author>
+    <author>
+      <name>Monica Sunkara</name>
+    </author>
+    <author>
+      <name>Sravan Bodapati</name>
+    </author>
+    <author>
+      <name>Sundararajan Srinivasan</name>
+    </author>
+    <author>
+      <name>Kyu J Han</name>
+    </author>
+    <author>
+      <name>Katrin Kirchhoff</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2405.06134v2</id>
+    <title>Muting Whisper: A Universal Acoustic Adversarial Attack on Speech Foundation Models</title>
+    <updated>2024-07-17T15:59:26Z</updated>
+    <link href="https://arxiv.org/abs/2405.06134v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2405.06134v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent developments in large speech foundation models like Whisper have led to their widespread use in many automatic speech recognition (ASR) applications. These systems incorporate `special tokens' in their vocabulary, such as $\texttt{&lt;|endoftext|&gt;}$, to guide their language generation process. However, we demonstrate that these tokens can be exploited by adversarial attacks to manipulate the model's behavior. We propose a simple yet effective method to learn a universal acoustic realization of Whisper's $\texttt{&lt;|endoftext|&gt;}$ token, which, when prepended to any speech signal, encourages the model to ignore the speech and only transcribe the special token, effectively `muting' the model. Our experiments demonstrate that the same, universal 0.64-second adversarial audio segment can successfully mute a target Whisper ASR model for over 97\% of speech samples. Moreover, we find that this universal adversarial audio segment often transfers to new datasets and tasks. Overall this work demonstrates the vulnerability of Whisper models to `muting' adversarial attacks, where such attacks can pose both risks and potential benefits in real-world settings: for example the attack can be used to bypass speech moderation systems, or conversely the attack can also be used to protect private speech data.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-09T22:59:23Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Vyas Raina</name>
+    </author>
+    <author>
+      <name>Rao Ma</name>
+    </author>
+    <author>
+      <name>Charles McGhee</name>
+    </author>
+    <author>
+      <name>Kate Knill</name>
+    </author>
+    <author>
+      <name>Mark Gales</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.18851v1</id>
+    <title>A Comprehensive Rubric for Annotating Pathological Speech</title>
+    <updated>2024-04-29T16:44:27Z</updated>
+    <link href="https://arxiv.org/abs/2404.18851v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.18851v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Rubrics are a commonly used tool for labeling voice corpora in speech quality assessment, although their application in the context of pathological speech remains relatively limited. In this study, we introduce a comprehensive rubric based on various dimensions of speech quality, including phonetics, fluency, and prosody. The objective is to establish standardized criteria for identifying errors within the speech of individuals with Down syndrome, thereby enabling the development of automated assessment systems. To achieve this objective, we utilized the Prautocal corpus. To assess the quality of annotations using our rubric, two experiments were conducted, focusing on phonetics and fluency. For phonetic evaluation, we employed the Goodness of Pronunciation (GoP) metric, utilizing automatic segmentation systems and correlating the results with evaluations conducted by a specialized speech therapist. While the obtained correlation values were not notably high, a positive trend was observed. In terms of fluency assessment, deep learning models like wav2vec were used to extract audio features, and we employed an SVM classifier trained on a corpus focused on identifying fluency issues to categorize Prautocal corpus samples. The outcomes highlight the complexities of evaluating such phenomena, with variability depending on the specific type of disfluency detected.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-04-29T16:44:27Z</published>
+    <arxiv:comment>Submitted to LREC-Coling 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Mario Corrales-Astorgano</name>
+    </author>
+    <author>
+      <name>David Escudero-Mancebo</name>
+    </author>
+    <author>
+      <name>Lourdes Aguilar</name>
+    </author>
+    <author>
+      <name>Valle Flores-Lucas</name>
+    </author>
+    <author>
+      <name>Valentín Cardeñoso-Payo</name>
+    </author>
+    <author>
+      <name>Carlos Vivaracho-Pascual</name>
+    </author>
+    <author>
+      <name>César González-Ferreras</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.16407v2</id>
+    <title>U2++ MoE: Scaling 4.7x parameters with minimal impact on RTF</title>
+    <updated>2024-08-08T09:01:00Z</updated>
+    <link href="https://arxiv.org/abs/2404.16407v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.16407v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Scale has opened new frontiers in natural language processing, but at a high cost. In response, by learning to only activate a subset of parameters in training and inference, Mixture-of-Experts (MoE) have been proposed as an energy efficient path to even larger and more capable language models and this shift towards a new generation of foundation models is gaining momentum, particularly within the field of Automatic Speech Recognition (ASR). Recent works that incorporating MoE into ASR models have complex designs such as routing frames via supplementary embedding network, improving multilingual ability for the experts, and utilizing dedicated auxiliary losses for either expert load balancing or specific language handling. We found that delicate designs are not necessary, while an embarrassingly simple substitution of MoE layers for all Feed-Forward Network (FFN) layers is competent for the ASR task. To be more specific, we benchmark our proposed model on a large scale inner-source dataset (160k hours), the results show that we can scale our baseline Conformer (Dense-225M) to its MoE counterparts (MoE-1B) and achieve Dense-1B level Word Error Rate (WER) while maintaining a Dense-225M level Real Time Factor (RTF). Furthermore, by applying Unified 2-pass framework with bidirectional attention decoders (U2++), we achieve the streaming and non-streaming decoding modes in a single MoE based model, which we call U2++ MoE. We hope that our study can facilitate the research on scaling speech foundation models without sacrificing deployment efficiency.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-04-25T08:34:21Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xingchen Song</name>
+    </author>
+    <author>
+      <name>Di Wu</name>
+    </author>
+    <author>
+      <name>Binbin Zhang</name>
+    </author>
+    <author>
+      <name>Dinghao Zhou</name>
+    </author>
+    <author>
+      <name>Zhendong Peng</name>
+    </author>
+    <author>
+      <name>Bo Dang</name>
+    </author>
+    <author>
+      <name>Fuping Pan</name>
+    </author>
+    <author>
+      <name>Chao Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.09385v2</id>
+    <title>A Large-Scale Evaluation of Speech Foundation Models</title>
+    <updated>2024-05-29T21:24:40Z</updated>
+    <link href="https://arxiv.org/abs/2404.09385v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.09385v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The foundation model paradigm leverages a shared foundation model to achieve state-of-the-art (SOTA) performance for various tasks, requiring minimal downstream-specific modeling and data annotation. This approach has proven crucial in the field of Natural Language Processing (NLP). However, the speech processing community lacks a similar setup to explore the paradigm systematically. In this work, we establish the Speech processing Universal PERformance Benchmark (SUPERB) to study the effectiveness of the paradigm for speech. We propose a unified multi-tasking framework to address speech processing tasks in SUPERB using a frozen foundation model followed by task-specialized, lightweight prediction heads. Combining our results with community submissions, we verify that the foundation model paradigm is promising for speech, and our multi-tasking framework is simple yet effective, as the best-performing foundation model shows competitive generalizability across most SUPERB tasks. For reproducibility and extensibility, we have developed a long-term maintained platform that enables deterministic benchmarking, allows for result sharing via an online leaderboard, and promotes collaboration through a community-driven benchmark database to support new development cycles. Finally, we conduct a series of analyses to offer an in-depth understanding of SUPERB and speech foundation models, including information flows across tasks inside the models, the correctness of the weighted-sum benchmarking protocol and the statistical significance and robustness of the benchmark.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-04-15T00:03:16Z</published>
+    <arxiv:comment>The extended journal version for SUPERB and SUPERB-SG. Published in IEEE/ACM TASLP. The Arxiv version is preferred</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Shu-wen Yang</name>
+    </author>
+    <author>
+      <name>Heng-Jui Chang</name>
+    </author>
+    <author>
+      <name>Zili Huang</name>
+    </author>
+    <author>
+      <name>Andy T. Liu</name>
+    </author>
+    <author>
+      <name>Cheng-I Lai</name>
+    </author>
+    <author>
+      <name>Haibin Wu</name>
+    </author>
+    <author>
+      <name>Jiatong Shi</name>
+    </author>
+    <author>
+      <name>Xuankai Chang</name>
+    </author>
+    <author>
+      <name>Hsiang-Sheng Tsai</name>
+    </author>
+    <author>
+      <name>Wen-Chin Huang</name>
+    </author>
+    <author>
+      <name>Tzu-hsun Feng</name>
+    </author>
+    <author>
+      <name>Po-Han Chi</name>
+    </author>
+    <author>
+      <name>Yist Y. Lin</name>
+    </author>
+    <author>
+      <name>Yung-Sung Chuang</name>
+    </author>
+    <author>
+      <name>Tzu-Hsien Huang</name>
+    </author>
+    <author>
+      <name>Wei-Cheng Tseng</name>
+    </author>
+    <author>
+      <name>Kushal Lakhotia</name>
+    </author>
+    <author>
+      <name>Shang-Wen Li</name>
+    </author>
+    <author>
+      <name>Abdelrahman Mohamed</name>
+    </author>
+    <author>
+      <name>Shinji Watanabe</name>
+    </author>
+    <author>
+      <name>Hung-yi Lee</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.08064v4</id>
+    <title>The Impact of Speech Anonymization on Pathology and Its Limits</title>
+    <updated>2024-09-20T13:23:49Z</updated>
+    <link href="https://arxiv.org/abs/2404.08064v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.08064v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Integration of speech into healthcare has intensified privacy concerns due to its potential as a non-invasive biomarker containing individual biometric information. In response, speaker anonymization aims to conceal personally identifiable information while retaining crucial linguistic content. However, the application of anonymization techniques to pathological speech, a critical area where privacy is especially vital, has not been extensively examined. This study investigates anonymization's impact on pathological speech across over 2,700 speakers from multiple German institutions, focusing on privacy, pathological utility, and demographic fairness. We explore both deep-learning-based and signal processing-based anonymization methods. We document substantial privacy improvements across disorders-evidenced by equal error rate increases up to 1933%, with minimal overall impact on utility. Specific disorders such as Dysarthria, Dysphonia, and Cleft Lip and Palate experience minimal utility changes, while Dysglossia shows slight improvements. Our findings underscore that the impact of anonymization varies substantially across different disorders. This necessitates disorder-specific anonymization strategies to optimally balance privacy with diagnostic utility. Additionally, our fairness analysis reveals consistent anonymization effects across most of the demographics. This study demonstrates the effectiveness of anonymization in pathological speech for enhancing privacy, while also highlighting the importance of customized and disorder-specific approaches to account for inversion attacks.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-04-11T18:06:35Z</published>
+    <arxiv:comment>Published in Communications Medicine</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <arxiv:journal_ref>Commun Med 4, (2024)</arxiv:journal_ref>
+    <author>
+      <name>Soroosh Tayebi Arasteh</name>
+    </author>
+    <author>
+      <name>Tomas Arias-Vergara</name>
+    </author>
+    <author>
+      <name>Paula Andrea Perez-Toro</name>
+    </author>
+    <author>
+      <name>Tobias Weise</name>
+    </author>
+    <author>
+      <name>Kai Packhaeuser</name>
+    </author>
+    <author>
+      <name>Maria Schuster</name>
+    </author>
+    <author>
+      <name>Elmar Noeth</name>
+    </author>
+    <author>
+      <name>Andreas Maier</name>
+    </author>
+    <author>
+      <name>Seung Hee Yang</name>
+    </author>
+    <arxiv:doi>10.1038/s43856-024-00609-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s43856-024-00609-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.05659v3</id>
+    <title>VietMed: A Dataset and Benchmark for Automatic Speech Recognition of Vietnamese in the Medical Domain</title>
+    <updated>2025-04-04T15:06:21Z</updated>
+    <link href="https://arxiv.org/abs/2404.05659v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.05659v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Due to privacy restrictions, there's a shortage of publicly available speech recognition datasets in the medical domain. In this work, we present VietMed - a Vietnamese speech recognition dataset in the medical domain comprising 16h of labeled medical speech, 1000h of unlabeled medical speech and 1200h of unlabeled general-domain speech. To our best knowledge, VietMed is by far the world's largest public medical speech recognition dataset in 7 aspects: total duration, number of speakers, diseases, recording conditions, speaker roles, unique medical terms and accents. VietMed is also by far the largest public Vietnamese speech dataset in terms of total duration. Additionally, we are the first to present a medical ASR dataset covering all ICD-10 disease groups and all accents within a country. Moreover, we release the first public large-scale pre-trained models for Vietnamese ASR, w2v2-Viet and XLSR-53-Viet, along with the first public large-scale fine-tuned models for medical ASR. Even without any medical data in unsupervised pre-training, our best pre-trained model XLSR-53-Viet generalizes very well to the medical domain by outperforming state-of-the-art XLSR-53, from 51.8% to 29.6% WER on test set (a relative reduction of more than 40%). All code, data and models are made publicly available: https://github.com/leduckhai/MultiMed/tree/master/VietMed.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-04-08T16:43:52Z</published>
+    <arxiv:comment>LREC-COLING 2024 (Oral), 24 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Khai Le-Duc</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2403.05000v3</id>
+    <title>Medical Speech Symptoms Classification via Disentangled Representation</title>
+    <updated>2024-04-30T01:47:37Z</updated>
+    <link href="https://arxiv.org/abs/2403.05000v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2403.05000v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Intent is defined for understanding spoken language in existing works. Both textual features and acoustic features involved in medical speech contain intent, which is important for symptomatic diagnosis. In this paper, we propose a medical speech classification model named DRSC that automatically learns to disentangle intent and content representations from textual-acoustic data for classification. The intent representations of the text domain and the Mel-spectrogram domain are extracted via intent encoders, and then the reconstructed text feature and the Mel-spectrogram feature are obtained through two exchanges. After combining the intent from two domains into a joint representation, the integrated intent representation is fed into a decision layer for classification. Experimental results show that our model obtains an average accuracy rate of 95% in detecting 25 different medical symptoms.</summary>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-03-08T02:42:34Z</published>
+    <arxiv:comment>Accepted by the 27th International Conference on Computer Supported Cooperative Work in Design (CSCWD 2024)</arxiv:comment>
+    <arxiv:primary_category term="cs.AI"/>
+    <author>
+      <name>Jianzong Wang</name>
+    </author>
+    <author>
+      <name>Pengcheng Li</name>
+    </author>
+    <author>
+      <name>Xulong Zhang</name>
+    </author>
+    <author>
+      <name>Ning Cheng</name>
+    </author>
+    <author>
+      <name>Jing Xiao</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.12654v3</id>
+    <title>OWSM-CTC: An Open Encoder-Only Speech Foundation Model for Speech Recognition, Translation, and Language Identification</title>
+    <updated>2024-08-27T02:22:00Z</updated>
+    <link href="https://arxiv.org/abs/2402.12654v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.12654v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>There has been an increasing interest in large speech models that can perform multiple tasks in a single model. Such models usually adopt an encoder-decoder or decoder-only architecture due to their popularity and good performance in many domains. However, autoregressive models can be slower during inference compared to non-autoregressive models and also have potential risks of hallucination. Though prior studies observed promising results of non-autoregressive models for certain tasks at small scales, it remains unclear if they can be scaled to speech-to-text generation in diverse languages and tasks. Inspired by the Open Whisper-style Speech Model (OWSM) project, we propose OWSM-CTC, a novel encoder-only speech foundation model based on Connectionist Temporal Classification (CTC). It is trained on 180k hours of public audio data for multilingual automatic speech recognition (ASR), speech translation (ST), and language identification (LID). Compared to encoder-decoder OWSM, our OWSM-CTC achieves competitive results on ASR and up to 24% relative improvement on ST, while it is more robust and 3 to 4 times faster for inference. OWSM-CTC also improves the long-form ASR result with 20x speed-up. We will publicly release our code, pre-trained model, and training logs to promote open science in speech foundation models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-20T02:04:38Z</published>
+    <arxiv:comment>Accepted at ACL 2024 main conference</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Yifan Peng</name>
+    </author>
+    <author>
+      <name>Yui Sudo</name>
+    </author>
+    <author>
+      <name>Muhammad Shakeel</name>
+    </author>
+    <author>
+      <name>Shinji Watanabe</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.12025v3</id>
+    <title>Speech Translation with Speech Foundation Models and Large Language Models: What is There and What is Missing?</title>
+    <updated>2024-11-29T10:46:22Z</updated>
+    <link href="https://arxiv.org/abs/2402.12025v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.12025v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The field of natural language processing (NLP) has recently witnessed a transformative shift with the emergence of foundation models, particularly Large Language Models (LLMs) that have revolutionized text-based NLP. This paradigm has extended to other modalities, including speech, where researchers are actively exploring the combination of Speech Foundation Models (SFMs) and LLMs into single, unified models capable of addressing multimodal tasks. Among such tasks, this paper focuses on speech-to-text translation (ST). By examining the published papers on the topic, we propose a unified view of the architectural solutions and training strategies presented so far, highlighting similarities and differences among them. Based on this examination, we not only organize the lessons learned but also show how diverse settings and evaluation approaches hinder the identification of the best-performing solution for each architectural building block and training choice. Lastly, we outline recommendations for future works on the topic aimed at better understanding the strengths and weaknesses of the SFM+LLM solutions for ST.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-19T10:34:13Z</published>
+    <arxiv:comment>Outstanding paper at the ACL 2024 main conference</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Marco Gaido</name>
+    </author>
+    <author>
+      <name>Sara Papi</name>
+    </author>
+    <author>
+      <name>Matteo Negri</name>
+    </author>
+    <author>
+      <name>Luisa Bentivogli</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.08898v1</id>
+    <title>UniEnc-CASSNAT: An Encoder-only Non-autoregressive ASR for Speech SSL Models</title>
+    <updated>2024-02-14T02:11:04Z</updated>
+    <link href="https://arxiv.org/abs/2402.08898v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.08898v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Non-autoregressive automatic speech recognition (NASR) models have gained attention due to their parallelism and fast inference. The encoder-based NASR, e.g. connectionist temporal classification (CTC), can be initialized from the speech foundation models (SFM) but does not account for any dependencies among intermediate tokens. The encoder-decoder-based NASR, like CTC alignment-based single-step non-autoregressive transformer (CASS-NAT), can mitigate the dependency problem but is not able to efficiently integrate SFM. Inspired by the success of recent work of speech-text joint pre-training with a shared transformer encoder, we propose a new encoder-based NASR, UniEnc-CASSNAT, to combine the advantages of CTC and CASS-NAT. UniEnc-CASSNAT consists of only an encoder as the major module, which can be the SFM. The encoder plays the role of both the CASS-NAT encoder and decoder by two forward passes. The first pass of the encoder accepts the speech signal as input, while the concatenation of the speech signal and the token-level acoustic embedding is used as the input for the second pass. Examined on the Librispeech 100h, MyST, and Aishell1 datasets, the proposed UniEnc-CASSNAT achieves state-of-the-art NASR results and is better or comparable to CASS-NAT with only an encoder and hence, fewer model parameters. Our codes are publicly available.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-14T02:11:04Z</published>
+    <arxiv:comment>Published in IEEE Signal Processing Letters</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Ruchao Fan</name>
+    </author>
+    <author>
+      <name>Natarajan Balaji Shanka</name>
+    </author>
+    <author>
+      <name>Abeer Alwan</name>
+    </author>
+    <arxiv:doi>10.1109/LSP.2024.3365036</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/LSP.2024.3365036" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.01824v1</id>
+    <title>Identification of Cognitive Decline from Spoken Language through Feature Selection and the Bag of Acoustic Words Model</title>
+    <updated>2024-02-02T17:06:03Z</updated>
+    <link href="https://arxiv.org/abs/2402.01824v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.01824v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Memory disorders are a central factor in the decline of functioning and daily activities in elderly individuals. The confirmation of the illness, initiation of medication to slow its progression, and the commencement of occupational therapy aimed at maintaining and rehabilitating cognitive abilities require a medical diagnosis. The early identification of symptoms of memory disorders, especially the decline in cognitive abilities, plays a significant role in ensuring the well-being of populations. Features related to speech production are known to connect with the speaker's cognitive ability and changes. The lack of standardized speech tests in clinical settings has led to a growing emphasis on developing automatic machine learning techniques for analyzing naturally spoken language. Non-lexical but acoustic properties of spoken language have proven useful when fast, cost-effective, and scalable solutions are needed for the rapid diagnosis of a disease. The work presents an approach related to feature selection, allowing for the automatic selection of the essential features required for diagnosis from the Geneva minimalistic acoustic parameter set and relative speech pauses, intended for automatic paralinguistic and clinical speech analysis. These features are refined into word histogram features, in which machine learning classifiers are trained to classify control subjects and dementia patients from the Dementia Bank's Pitt audio database. The results show that achieving a 75% average classification accuracy with only twenty-five features with the separate ADReSS 2020 competition test data and the Leave-One-Subject-Out cross-validation of the entire competition data is possible. The results rank at the top compared to international research, where the same dataset and only acoustic features have been used to diagnose patients.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-02T17:06:03Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Marko Niemelä</name>
+    </author>
+    <author>
+      <name>Mikaela von Bonsdorff</name>
+    </author>
+    <author>
+      <name>Sami Äyrämö</name>
+    </author>
+    <author>
+      <name>Tommi Kärkkäinen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.01796v2</id>
+    <title>Speech foundation models in healthcare: Effect of layer selection on pathological speech feature prediction</title>
+    <updated>2024-06-21T13:49:56Z</updated>
+    <link href="https://arxiv.org/abs/2402.01796v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.01796v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Accurately extracting clinical information from speech is critical to the diagnosis and treatment of many neurological conditions. As such, there is interest in leveraging AI for automatic, objective assessments of clinical speech to facilitate diagnosis and treatment of speech disorders. We explore transfer learning using foundation models, focusing on the impact of layer selection for the downstream task of predicting pathological speech features. We find that selecting an optimal layer can greatly improve performance (~15.8% increase in balanced accuracy per feature as compared to worst layer, ~13.6% increase as compared to final layer), though the best layer varies by predicted feature and does not always generalize well to unseen data. A learned weighted sum offers comparable performance to the average best layer in-distribution (only ~1.2% lower) and had strong generalization for out-of-distribution data (only 1.5% lower than the average best layer).</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-02T05:09:42Z</published>
+    <arxiv:comment>Accepted to INTERSPEECH 2024</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Daniela A. Wiepert</name>
+    </author>
+    <author>
+      <name>Rene L. Utianski</name>
+    </author>
+    <author>
+      <name>Joseph R. Duffy</name>
+    </author>
+    <author>
+      <name>John L. Stricker</name>
+    </author>
+    <author>
+      <name>Leland R. Barnard</name>
+    </author>
+    <author>
+      <name>David T. Jones</name>
+    </author>
+    <author>
+      <name>Hugo Botha</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2401.14289v1</id>
+    <title>Speech foundation models on intelligibility prediction for hearing-impaired listeners</title>
+    <updated>2024-01-24T18:26:52Z</updated>
+    <link href="https://arxiv.org/abs/2401.14289v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2401.14289v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech foundation models (SFMs) have been benchmarked on many speech processing tasks, often achieving state-of-the-art performance with minimal adaptation. However, the SFM paradigm has been significantly less explored for applications of interest to the speech perception community. In this paper we present a systematic evaluation of 10 SFMs on one such application: Speech intelligibility prediction. We focus on the non-intrusive setup of the Clarity Prediction Challenge 2 (CPC2), where the task is to predict the percentage of words correctly perceived by hearing-impaired listeners from speech-in-noise recordings. We propose a simple method that learns a lightweight specialized prediction head on top of frozen SFMs to approach the problem. Our results reveal statistically significant differences in performance across SFMs. Our method resulted in the winning submission in the CPC2, demonstrating its promise for speech perception applications.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-01-24T18:26:52Z</published>
+    <arxiv:comment>To be presented in ICASSP 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Santiago Cuervo</name>
+    </author>
+    <author>
+      <name>Ricard Marxer</name>
+    </author>
+    <arxiv:doi>10.1109/ICASSP48485.2024.10447907</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/ICASSP48485.2024.10447907" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2401.00225v1</id>
+    <title>Enhancing dysarthria speech feature representation with empirical mode decomposition and Walsh-Hadamard transform</title>
+    <updated>2023-12-30T13:25:26Z</updated>
+    <link href="https://arxiv.org/abs/2401.00225v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2401.00225v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Dysarthria speech contains the pathological characteristics of vocal tract and vocal fold, but so far, they have not yet been included in traditional acoustic feature sets. Moreover, the nonlinearity and non-stationarity of speech have been ignored. In this paper, we propose a feature enhancement algorithm for dysarthria speech called WHFEMD. It combines empirical mode decomposition (EMD) and fast Walsh-Hadamard transform (FWHT) to enhance features. With the proposed algorithm, the fast Fourier transform of the dysarthria speech is first performed and then followed by EMD to get intrinsic mode functions (IMFs). After that, FWHT is used to output new coefficients and to extract statistical features based on IMFs, power spectral density, and enhanced gammatone frequency cepstral coefficients. To evaluate the proposed approach, we conducted experiments on two public pathological speech databases including UA Speech and TORGO. The results show that our algorithm performed better than traditional features in classification. We achieved improvements of 13.8% (UA Speech) and 3.84% (TORGO), respectively. Furthermore, the incorporation of an imbalanced classification algorithm to address data imbalance has resulted in a 12.18% increase in recognition accuracy. This algorithm effectively addresses the challenges of the imbalanced dataset and non-linearity in dysarthric speech and simultaneously provides a robust representation of the local pathological features of the vocal folds and tracts.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-30T13:25:26Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Ting Zhu</name>
+    </author>
+    <author>
+      <name>Shufei Duan</name>
+    </author>
+    <author>
+      <name>Camille Dingam</name>
+    </author>
+    <author>
+      <name>Huizhi Liang</name>
+    </author>
+    <author>
+      <name>Wei Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2312.12153v1</id>
+    <title>Noise robust distillation of self-supervised speech models via correlation metrics</title>
+    <updated>2023-12-19T13:35:47Z</updated>
+    <link href="https://arxiv.org/abs/2312.12153v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2312.12153v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Compared to large speech foundation models, small distilled models exhibit degraded noise robustness. The student's robustness can be improved by introducing noise at the inputs during pre-training. Despite this, using the standard distillation loss still yields a student with degraded performance. Thus, this paper proposes improving student robustness via distillation with correlation metrics. Teacher behavior is learned by maximizing the teacher and student cross-correlation matrix between their representations towards identity. Noise robustness is encouraged via the student's self-correlation minimization. The proposed method is agnostic of the teacher model and consistently outperforms the previous approach. This work also proposes an heuristic to weigh the importance of the two correlation terms automatically. Experiments show consistently better clean and noise generalization on Intent Classification, Keyword Spotting, and Automatic Speech Recognition tasks on SUPERB Challenge.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-19T13:35:47Z</published>
+    <arxiv:comment>6 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Fabian Ritter-Gutierrez</name>
+    </author>
+    <author>
+      <name>Kuan-Po Huang</name>
+    </author>
+    <author>
+      <name>Dianwen Ng</name>
+    </author>
+    <author>
+      <name>Jeremy H. M. Wong</name>
+    </author>
+    <author>
+      <name>Hung-yi Lee</name>
+    </author>
+    <author>
+      <name>Eng Siong Chng</name>
+    </author>
+    <author>
+      <name>Nancy F. Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2312.08998v1</id>
+    <title>Design, construction and evaluation of emotional multimodal pathological speech database</title>
+    <updated>2023-12-14T14:43:31Z</updated>
+    <link href="https://arxiv.org/abs/2312.08998v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2312.08998v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The lack of an available emotion pathology database is one of the key obstacles in studying the emotion expression status of patients with dysarthria. The first Chinese multimodal emotional pathological speech database containing multi-perspective information is constructed in this paper. It includes 29 controls and 39 patients with different degrees of motor dysarthria, expressing happy, sad, angry and neutral emotions. All emotional speech was labeled for intelligibility, types and discrete dimensional emotions by developed WeChat mini-program. The subjective analysis justifies from emotion discrimination accuracy, speech intelligibility, valence-arousal spatial distribution, and correlation between SCL-90 and disease severity. The automatic recognition tested on speech and glottal data, with average accuracy of 78% for controls and 60% for patients in audio, while 51% for controls and 38% for patients in glottal data, indicating an influence of the disease on emotional expression.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-12-14T14:43:31Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Ting Zhu</name>
+    </author>
+    <author>
+      <name>Shufei Duan</name>
+    </author>
+    <author>
+      <name>Huizhi Liang</name>
+    </author>
+    <author>
+      <name>Wei Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.09843v1</id>
+    <title>Instruction-Following Speech Recognition</title>
+    <updated>2023-09-18T14:59:10Z</updated>
+    <link href="https://arxiv.org/abs/2309.09843v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.09843v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Conventional end-to-end Automatic Speech Recognition (ASR) models primarily focus on exact transcription tasks, lacking flexibility for nuanced user interactions. With the advent of Large Language Models (LLMs) in speech processing, more organic, text-prompt-based interactions have become possible. However, the mechanisms behind these models' speech understanding and "reasoning" capabilities remain underexplored. To study this question from the data perspective, we introduce instruction-following speech recognition, training a Listen-Attend-Spell model to understand and execute a diverse set of free-form text instructions. This enables a multitude of speech recognition tasks -- ranging from transcript manipulation to summarization -- without relying on predefined command sets. Remarkably, our model, trained from scratch on Librispeech, interprets and executes simple instructions without requiring LLMs or pre-trained speech modules. It also offers selective transcription options based on instructions like "transcribe first half and then turn off listening," providing an additional layer of privacy and safety compared to existing LLMs. Our findings highlight the significant potential of instruction-following training to advance speech foundation models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-18T14:59:10Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Cheng-I Jeff Lai</name>
+    </author>
+    <author>
+      <name>Zhiyun Lu</name>
+    </author>
+    <author>
+      <name>Liangliang Cao</name>
+    </author>
+    <author>
+      <name>Ruoming Pang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.08023v3</id>
+    <title>USM-SCD: Multilingual Speaker Change Detection Based on Large Pretrained Foundation Models</title>
+    <updated>2024-01-06T05:27:18Z</updated>
+    <link href="https://arxiv.org/abs/2309.08023v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.08023v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We introduce a multilingual speaker change detection model (USM-SCD) that can simultaneously detect speaker turns and perform ASR for 96 languages. This model is adapted from a speech foundation model trained on a large quantity of supervised and unsupervised data, demonstrating the utility of fine-tuning from a large generic foundation model for a downstream task. We analyze the performance of this multilingual speaker change detection model through a series of ablation studies. We show that the USM-SCD model can achieve more than 75% average speaker change detection F1 score across a test set that consists of data from 96 languages. On American English, the USM-SCD model can achieve an 85.8% speaker change detection F1 score across various public and internal test sets, beating the previous monolingual baseline model by 21% relative. We also show that we only need to fine-tune one-quarter of the trainable model parameters to achieve the best model performance. The USM-SCD model exhibits state-of-the-art ASR quality compared with a strong public ASR baseline, making it suitable to handle both tasks with negligible additional computational cost.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-14T20:46:49Z</published>
+    <arxiv:comment>5 pages, 2 figures, 4 tables</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Guanlong Zhao</name>
+    </author>
+    <author>
+      <name>Yongqiang Wang</name>
+    </author>
+    <author>
+      <name>Jason Pelecanos</name>
+    </author>
+    <author>
+      <name>Yu Zhang</name>
+    </author>
+    <author>
+      <name>Hank Liao</name>
+    </author>
+    <author>
+      <name>Yiling Huang</name>
+    </author>
+    <author>
+      <name>Han Lu</name>
+    </author>
+    <author>
+      <name>Quan Wang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2308.12478v1</id>
+    <title>Attention-Based Acoustic Feature Fusion Network for Depression Detection</title>
+    <updated>2023-08-24T00:31:51Z</updated>
+    <link href="https://arxiv.org/abs/2308.12478v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2308.12478v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Depression, a common mental disorder, significantly influences individuals and imposes considerable societal impacts. The complexity and heterogeneity of the disorder necessitate prompt and effective detection, which nonetheless, poses a difficult challenge. This situation highlights an urgent requirement for improved detection methods. Exploiting auditory data through advanced machine learning paradigms presents promising research directions. Yet, existing techniques mainly rely on single-dimensional feature models, potentially neglecting the abundance of information hidden in various speech characteristics. To rectify this, we present the novel Attention-Based Acoustic Feature Fusion Network (ABAFnet) for depression detection. ABAFnet combines four different acoustic features into a comprehensive deep learning model, thereby effectively integrating and blending multi-tiered features. We present a novel weight adjustment module for late fusion that boosts performance by efficaciously synthesizing these features. The effectiveness of our approach is confirmed via extensive validation on two clinical speech databases, CNRAC and CS-NRAC, thereby outperforming previous methods in depression detection and subtype classification. Further in-depth analysis confirms the key role of each feature and highlights the importance of MFCCrelated features in speech-based depression detection.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-08-24T00:31:51Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Xiao Xu</name>
+    </author>
+    <author>
+      <name>Yang Wang</name>
+    </author>
+    <author>
+      <name>Xinru Wei</name>
+    </author>
+    <author>
+      <name>Fei Wang</name>
+    </author>
+    <author>
+      <name>Xizhe Zhang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.05796v1</id>
+    <title>Improved POS tagging for spontaneous, clinical speech using data augmentation</title>
+    <updated>2023-07-11T20:42:06Z</updated>
+    <link href="https://arxiv.org/abs/2307.05796v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.05796v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper addresses the problem of improving POS tagging of transcripts of speech from clinical populations. In contrast to prior work on parsing and POS tagging of transcribed speech, we do not make use of an in domain treebank for training. Instead, we train on an out of domain treebank of newswire using data augmentation techniques to make these structures resemble natural, spontaneous speech. We trained a parser with and without the augmented data and tested its performance using manually validated POS tags in clinical speech produced by patients with various types of neurodegenerative conditions.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-11T20:42:06Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Seth Kulick</name>
+    </author>
+    <author>
+      <name>Neville Ryant</name>
+    </author>
+    <author>
+      <name>David J. Irwin</name>
+    </author>
+    <author>
+      <name>Naomi Nevler</name>
+    </author>
+    <author>
+      <name>Sunghye Cho</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.08920v1</id>
+    <title>Pushing the Limits of Unsupervised Unit Discovery for SSL Speech Representation</title>
+    <updated>2023-06-15T07:45:12Z</updated>
+    <link href="https://arxiv.org/abs/2306.08920v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.08920v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The excellent generalization ability of self-supervised learning (SSL) for speech foundation models has garnered significant attention. HuBERT is a successful example that utilizes offline clustering to convert speech features into discrete units for a masked language modeling pretext task. However, simply clustering features as targets by k-means does not fully inspire the model's performance. In this work, we present an unsupervised method to improve SSL targets. Two models are proposed, MonoBERT and PolyBERT, which leverage context-independent and context-dependent phoneme-based units for pre-training. Our models outperform other SSL models significantly on the LibriSpeech benchmark without the need for iterative re-clustering and re-training. Furthermore, our models equipped with context-dependent units even outperform target-improvement models that use labeled data during pre-training. How we progressively improve the unit discovery process is demonstrated through experiments.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-15T07:45:12Z</published>
+    <arxiv:comment>Accepted to Interspeech 2023</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ziyang Ma</name>
+    </author>
+    <author>
+      <name>Zhisheng Zheng</name>
+    </author>
+    <author>
+      <name>Guanrou Yang</name>
+    </author>
+    <author>
+      <name>Yu Wang</name>
+    </author>
+    <author>
+      <name>Chao Zhang</name>
+    </author>
+    <author>
+      <name>Xie Chen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2306.01015v3</id>
+    <title>How to Estimate Model Transferability of Pre-Trained Speech Models?</title>
+    <updated>2024-02-06T03:52:48Z</updated>
+    <link href="https://arxiv.org/abs/2306.01015v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2306.01015v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this work, we introduce a "score-based assessment" framework for estimating the transferability of pre-trained speech models (PSMs) for fine-tuning target tasks. We leverage upon two representation theories, Bayesian likelihood estimation and optimal transport, to generate rank scores for the PSM candidates using the extracted representations. Our framework efficiently computes transferability scores without actual fine-tuning of candidate models or layers by making a temporal independent hypothesis. We evaluate some popular supervised speech models (e.g., Conformer RNN-Transducer) and self-supervised speech models (e.g., HuBERT) in cross-layer and cross-model settings using public data. Experimental results show a high Spearman's rank correlation and low $p$-value between our estimation framework and fine-tuning ground truth. Our proposed transferability framework requires less computational time and resources, making it a resource-saving and time-efficient approach for tuning speech foundation models.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.NE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-06-01T04:52:26Z</published>
+    <arxiv:comment>Accepted to Interspeech. Code is available at: https://github.com/virginiakm1988/LogME-CTC. Fixed a typo</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Zih-Ching Chen</name>
+    </author>
+    <author>
+      <name>Chao-Han Huck Yang</name>
+    </author>
+    <author>
+      <name>Bo Li</name>
+    </author>
+    <author>
+      <name>Yu Zhang</name>
+    </author>
+    <author>
+      <name>Nanxin Chen</name>
+    </author>
+    <author>
+      <name>Shuo-Yiin Chang</name>
+    </author>
+    <author>
+      <name>Rohit Prabhavalkar</name>
+    </author>
+    <author>
+      <name>Hung-yi Lee</name>
+    </author>
+    <author>
+      <name>Tara N. Sainath</name>
+    </author>
+    <arxiv:doi>10.21437/Interspeech.2023-1079</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.21437/Interspeech.2023-1079" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.19090v1</id>
+    <title>Prospective Validation of Motor-Based Intervention with Automated Mispronunciation Detection of Rhotics in Residual Speech Sound Disorders</title>
+    <updated>2023-05-30T14:53:01Z</updated>
+    <link href="https://arxiv.org/abs/2305.19090v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.19090v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Because lab accuracy of clinical speech technology systems may be overoptimistic, clinical validation is vital to demonstrate system reproducibility - in this case, the ability of the PERCEPT-R Classifier to predict clinician judgment of American English /r/ during ChainingAI motor-based speech sound disorder intervention. All five participants experienced statistically-significant improvement in untreated words following 10 sessions of combined human-ChainingAI treatment. These gains, despite a wide range of PERCEPT-human and human-human (F1-score) agreement, raise questions about best measuring classification performance for clinical speech that may be perceptually ambiguous.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-30T14:53:01Z</published>
+    <arxiv:comment>To appear in Proceedings of the Annual Conference of the International Speech Communication Association, INTERSPEECH 2023</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <arxiv:journal_ref>Proc. INTERSPEECH 2023, 4558-4562</arxiv:journal_ref>
+    <author>
+      <name>Nina R Benway</name>
+    </author>
+    <author>
+      <name>Jonathan L Preston</name>
+    </author>
+    <arxiv:doi>10.21437/Interspeech.2023-1882</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.21437/Interspeech.2023-1882" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2305.16085v1</id>
+    <title>Acoustic-to-Articulatory Speech Inversion Features for Mispronunciation Detection of /r/ in Child Speech Sound Disorders</title>
+    <updated>2023-05-25T14:19:04Z</updated>
+    <link href="https://arxiv.org/abs/2305.16085v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2305.16085v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Acoustic-to-articulatory speech inversion could enhance automated clinical mispronunciation detection to provide detailed articulatory feedback unattainable by formant-based mispronunciation detection algorithms; however, it is unclear the extent to which a speech inversion system trained on adult speech performs in the context of (1) child and (2) clinical speech. In the absence of an articulatory dataset in children with rhotic speech sound disorders, we show that classifiers trained on tract variables from acoustic-to-articulatory speech inversion meet or exceed the performance of state-of-the-art features when predicting clinician judgment of rhoticity. Index Terms: rhotic, speech sound disorder, mispronunciation detection</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-05-25T14:19:04Z</published>
+    <arxiv:comment>*denotes equal contribution. To appear in Proceedings of the Annual Conference of the International Speech Communication Association, INTERSPEECH 2023</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <arxiv:journal_ref>Proc. INTERSPEECH 2023, 4568-4572</arxiv:journal_ref>
+    <author>
+      <name>Nina R Benway</name>
+    </author>
+    <author>
+      <name>Yashish M Siriwardena</name>
+    </author>
+    <author>
+      <name>Jonathan L Preston</name>
+    </author>
+    <author>
+      <name>Elaine Hitchcock</name>
+    </author>
+    <author>
+      <name>Tara McAllister</name>
+    </author>
+    <author>
+      <name>Carol Espy-Wilson</name>
+    </author>
+    <arxiv:doi>10.21437/Interspeech.2023-1924</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.21437/Interspeech.2023-1924" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2303.10917v1</id>
+    <title>Knowledge Distillation from Multiple Foundation Models for End-to-End Speech Recognition</title>
+    <updated>2023-03-20T07:18:18Z</updated>
+    <link href="https://arxiv.org/abs/2303.10917v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2303.10917v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Although large foundation models pre-trained by self-supervised learning have achieved state-of-the-art performance in many tasks including automatic speech recognition (ASR), knowledge distillation (KD) is often required in practice to transfer the knowledge learned by large teacher models into much smaller student models with affordable computation and memory costs. This paper proposes a novel two-stage KD framework to distil the knowledge from multiple speech foundation models as teachers into a single student neural transducer model for ASR. In the first stage, the student model encoder is pre-trained using the embeddings extracted from multiple teacher models. In the second stage, the student encoder is fine-tuned with the audio-text pairs based on the ASR task. Experiments on the LibriSpeech 100-hour subset show that the proposed KD framework improves the performance of both streaming and non-streaming student models when using only one teacher. The performance of the student model can be further enhanced when multiple teachers are used jointly, achieving word error rate reductions (WERRs) of 17.5% and 10.6%. Our proposed framework can be combined with other existing KD methods to achieve further improvements. Further WERRs were obtained by incorporating extra unlabelled data during encoder pre-training, leading to a total relative WERR of 55.0% on the non-streaming student model.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-03-20T07:18:18Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Xiaoyu Yang</name>
+    </author>
+    <author>
+      <name>Qiujia Li</name>
+    </author>
+    <author>
+      <name>Chao Zhang</name>
+    </author>
+    <author>
+      <name>Philip C. Woodland</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2301.08925v1</id>
+    <title>New Challenges for Content Privacy in Speech and Audio</title>
+    <updated>2023-01-21T09:16:09Z</updated>
+    <link href="https://arxiv.org/abs/2301.08925v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2301.08925v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Privacy in speech and audio has many facets. A particularly under-developed area of privacy in this domain involves consideration for information related to content and context. Speech content can include words and their meaning or even stylistic markers, pathological speech, intonation patterns, or emotion. More generally, audio captured in-the-wild may contain background speech or reveal contextual information such as markers of location, room characteristics, paralinguistic sounds, or other audible events. Audio recording devices and speech technologies are becoming increasingly commonplace in everyday life. At the same time, commercialised speech and audio technologies do not provide consumers with a range of privacy choices. Even where privacy is regulated or protected by law, technical solutions to privacy assurance and enforcement fall short. This position paper introduces three important and timely research challenges for content privacy in speech and audio. We highlight current gaps and opportunities, and identify focus areas, that could have significant implications for developing ethical and safer speech technologies.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-01-21T09:16:09Z</published>
+    <arxiv:comment>Accepted for publication in ISCA SPSC Symposium 2022</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Jennifer Williams</name>
+    </author>
+    <author>
+      <name>Karla Pizzi</name>
+    </author>
+    <author>
+      <name>Shuvayanti Das</name>
+    </author>
+    <author>
+      <name>Paul-Gauthier Noe</name>
+    </author>
+    <arxiv:doi>10.21437/SPSC.2022-1</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.21437/SPSC.2022-1" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2211.02712v1</id>
+    <title>Resource-Efficient Transfer Learning From Speech Foundation Model Using Hierarchical Feature Fusion</title>
+    <updated>2022-11-04T19:03:45Z</updated>
+    <link href="https://arxiv.org/abs/2211.02712v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2211.02712v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Self-supervised pre-training of a speech foundation model, followed by supervised fine-tuning, has shown impressive quality improvements on automatic speech recognition (ASR) tasks. Fine-tuning separate foundation models for many downstream tasks are expensive since the foundation model is usually very big. Parameter-efficient fine-tuning methods (e.g. adapter, sparse update methods) offer an alternative paradigm where a small set of parameters are updated to adapt the foundation model to new tasks. However, these methods still suffer from a high computational memory cost and slow training speed because they require backpropagation through the entire neural network at each step. In the paper, we analyze the performance of features at different layers of a foundation model on the speech recognition task and propose a novel hierarchical feature fusion method for resource-efficient transfer learning from speech foundation models. Experimental results show that the proposed method can achieve better performance on speech recognition task than existing algorithms with fewer number of trainable parameters, less computational memory cost and faster training speed. After combining with Adapters at all layers, the proposed method can achieve the same performance as fine-tuning the whole model with $97\%$ fewer trainable encoder parameters and $53\%$ faster training speed.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-11-04T19:03:45Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Zhouyuan Huo</name>
+    </author>
+    <author>
+      <name>Khe Chai Sim</name>
+    </author>
+    <author>
+      <name>Bo Li</name>
+    </author>
+    <author>
+      <name>Dongseong Hwang</name>
+    </author>
+    <author>
+      <name>Tara N. Sainath</name>
+    </author>
+    <author>
+      <name>Trevor Strohman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2204.06450v3</id>
+    <title>The effect of speech pathology on automatic speaker verification -- a large-scale study</title>
+    <updated>2023-11-22T14:10:56Z</updated>
+    <link href="https://arxiv.org/abs/2204.06450v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2204.06450v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Navigating the challenges of data-driven speech processing, one of the primary hurdles is accessing reliable pathological speech data. While public datasets appear to offer solutions, they come with inherent risks of potential unintended exposure of patient health information via re-identification attacks. Using a comprehensive real-world pathological speech corpus, with over n=3,800 test subjects spanning various age groups and speech disorders, we employed a deep-learning-driven automatic speaker verification (ASV) approach. This resulted in a notable mean equal error rate (EER) of 0.89% with a standard deviation of 0.06%, outstripping traditional benchmarks. Our comprehensive assessments demonstrate that pathological speech overall faces heightened privacy breach risks compared to healthy speech. Specifically, adults with dysphonia are at heightened re-identification risks, whereas conditions like dysarthria yield results comparable to those of healthy speakers. Crucially, speech intelligibility does not influence the ASV system's performance metrics. In pediatric cases, particularly those with cleft lip and palate, the recording environment plays a decisive role in re-identification. Merging data across pathological types led to a marked EER decrease, suggesting the potential benefits of pathological diversity in ASV, accompanied by a logarithmic boost in ASV effectiveness. In essence, this research sheds light on the dynamics between pathological speech and speaker verification, emphasizing its crucial role in safeguarding patient confidentiality in our increasingly digitized healthcare era.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-04-13T15:17:00Z</published>
+    <arxiv:comment>Published in Scientific Reports</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <arxiv:journal_ref>Sci Rep 13, 20476 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Soroosh Tayebi Arasteh</name>
+    </author>
+    <author>
+      <name>Tobias Weise</name>
+    </author>
+    <author>
+      <name>Maria Schuster</name>
+    </author>
+    <author>
+      <name>Elmar Noeth</name>
+    </author>
+    <author>
+      <name>Andreas Maier</name>
+    </author>
+    <author>
+      <name>Seung Hee Yang</name>
+    </author>
+    <arxiv:doi>10.1038/s41598-023-47711-7</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41598-023-47711-7" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2204.04016v2</id>
+    <title>Disentangled Latent Speech Representation for Automatic Pathological Intelligibility Assessment</title>
+    <updated>2022-06-27T14:21:23Z</updated>
+    <link href="https://arxiv.org/abs/2204.04016v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2204.04016v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech intelligibility assessment plays an important role in the therapy of patients suffering from pathological speech disorders. Automatic and objective measures are desirable to assist therapists in their traditionally subjective and labor-intensive assessments. In this work, we investigate a novel approach for obtaining such a measure using the divergence in disentangled latent speech representations of a parallel utterance pair, obtained from a healthy reference and a pathological speaker. Experiments on an English database of Cerebral Palsy patients, using all available utterances per speaker, show high and significant correlation values (R = -0.9) with subjective intelligibility measures, while having only minimal deviation (+-0.01) across four different reference speaker pairs. We also demonstrate the robustness of the proposed method (R = -0.89 deviating +-0.02 over 1000 iterations) by considering a significantly smaller amount of utterances per speaker. Our results are among the first to show that disentangled speech representations can be used for automatic pathological speech intelligibility assessment, resulting in a reference speaker pair invariant method, applicable in scenarios with only few utterances available.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-04-08T12:02:14Z</published>
+    <arxiv:comment>Submitted and Accepted at INTERSPEECH2022</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Tobias Weise</name>
+    </author>
+    <author>
+      <name>Philipp Klumpp</name>
+    </author>
+    <author>
+      <name>Kubilay Can Demir</name>
+    </author>
+    <author>
+      <name>Andreas Maier</name>
+    </author>
+    <author>
+      <name>Elmar Noeth</name>
+    </author>
+    <author>
+      <name>Bjoern Heismann</name>
+    </author>
+    <author>
+      <name>Maria Schuster</name>
+    </author>
+    <author>
+      <name>Seung Hee Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2204.01677v1</id>
+    <title>Self-Supervised Speech Representations Preserve Speech Characteristics while Anonymizing Voices</title>
+    <updated>2022-04-04T17:48:01Z</updated>
+    <link href="https://arxiv.org/abs/2204.01677v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2204.01677v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Collecting speech data is an important step in training speech recognition systems and other speech-based machine learning models. However, the issue of privacy protection is an increasing concern that must be addressed. The current study investigates the use of voice conversion as a method for anonymizing voices. In particular, we train several voice conversion models using self-supervised speech representations including Wav2Vec2.0, Hubert and UniSpeech. Converted voices retain a low word error rate within 1% of the original voice. Equal error rate increases from 1.52% to 46.24% on the LibriSpeech test set and from 3.75% to 45.84% on speakers from the VCTK corpus which signifies degraded performance on speaker verification. Lastly, we conduct experiments on dysarthric speech data to show that speech features relevant to articulation, prosody, phonation and phonology can be extracted from anonymized voices for discriminating between healthy and pathological speech.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-04-04T17:48:01Z</published>
+    <arxiv:comment>Submitted for review at Interspeech 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Abner Hernandez</name>
+    </author>
+    <author>
+      <name>Paula Andrea Pérez-Toro</name>
+    </author>
+    <author>
+      <name>Juan Camilo Vásquez-Correa</name>
+    </author>
+    <author>
+      <name>Juan Rafael Orozco-Arroyave</name>
+    </author>
+    <author>
+      <name>Andreas Maier</name>
+    </author>
+    <author>
+      <name>Seung Hee Yang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.15431v3</id>
+    <title>Investigating Self-supervised Pretraining Frameworks for Pathological Speech Recognition</title>
+    <updated>2022-06-29T09:43:44Z</updated>
+    <link href="https://arxiv.org/abs/2203.15431v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.15431v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We investigate the performance of self-supervised pretraining frameworks on pathological speech datasets used for automatic speech recognition (ASR). Modern end-to-end models require thousands of hours of data to train well, but only a small number of pathological speech datasets are publicly available. A proven solution to this problem is by first pretraining the model on a huge number of healthy speech datasets and then fine-tuning it on the pathological speech datasets. One new pretraining framework called self-supervised learning (SSL) trains a network using only speech data, providing more flexibility in training data requirements and allowing more speech data to be used in pretraining. We investigate SSL frameworks such as the wav2vec 2.0 and WavLM models using different setups and compare their performance with different supervised pretraining setups, using two types of pathological speech, namely, Japanese electrolaryngeal and English dysarthric. Our results show that although SSL has shown success with minimally resourced healthy speech, we do not find this to be the case with pathological speech. The best supervised setup outperforms the best SSL setup by 13.9% character error rate in electrolaryngeal speech and 16.8% word error rate in dysarthric speech.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-29T10:54:35Z</published>
+    <arxiv:comment>Accepted to INTERSPEECH 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Lester Phillip Violeta</name>
+    </author>
+    <author>
+      <name>Wen-Chin Huang</name>
+    </author>
+    <author>
+      <name>Tomoki Toda</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2203.09402v1</id>
+    <title>Robust and Complex Approach of Pathological Speech Signal Analysis</title>
+    <updated>2022-03-17T15:54:44Z</updated>
+    <link href="https://arxiv.org/abs/2203.09402v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2203.09402v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper presents a study of the approaches in the state-of-the-art in the field of pathological speech signal analysis with a special focus on parametrization techniques. It provides a description of 92 speech features where some of them are already widely used in this field of science and some of them have not been tried yet (they come from different areas of speech signal processing like speech recognition or coding). As an original contribution, this work introduces 36 completely new pathological voice measures based on modulation spectra, inferior colliculus coefficients, bicepstrum, sample and approximate entropy and empirical mode decomposition. The significance of these features was tested on 3 (English, Spanish and Czech) pathological voice databases with respect to classification accuracy, sensitivity and specificity.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-03-17T15:54:44Z</published>
+    <arxiv:comment>41 pages, published in Neurocomputing, Volume 167, 2015, Pages 94-111, ISSN 0925-2312</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <arxiv:journal_ref>Neurocomputing, Volume 167, 2015, Pages 94-111, ISSN 0925-2312</arxiv:journal_ref>
+    <author>
+      <name>Jiri Mekyska</name>
+    </author>
+    <author>
+      <name>Eva Janousova</name>
+    </author>
+    <author>
+      <name>Pedro Gomez-Vilda</name>
+    </author>
+    <author>
+      <name>Zdenek Smekal</name>
+    </author>
+    <author>
+      <name>Irena Rektorova</name>
+    </author>
+    <author>
+      <name>Ilona Eliasova</name>
+    </author>
+    <author>
+      <name>Milena Kostalova</name>
+    </author>
+    <author>
+      <name>Martina Mrackova</name>
+    </author>
+    <author>
+      <name>Jesus B. Alonso-Hernandez</name>
+    </author>
+    <author>
+      <name>Marcos Faundez-Zanuy</name>
+    </author>
+    <author>
+      <name>Karmele López-de-Ipiña</name>
+    </author>
+    <arxiv:doi>10.1016/j.neucom.2015.02.085</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.neucom.2015.02.085" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2112.11514v1</id>
+    <title>The Phonetic Footprint of Parkinson's Disease</title>
+    <updated>2021-12-21T20:44:21Z</updated>
+    <link href="https://arxiv.org/abs/2112.11514v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2112.11514v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As one of the most prevalent neurodegenerative disorders, Parkinson's disease (PD) has a significant impact on the fine motor skills of patients. The complex interplay of different articulators during speech production and realization of required muscle tension become increasingly difficult, thus leading to a dysarthric speech. Characteristic patterns such as vowel instability, slurred pronunciation and slow speech can often be observed in the affected individuals and were analyzed in previous studies to determine the presence and progression of PD. In this work, we used a phonetic recognizer trained exclusively on healthy speech data to investigate how PD affected the phonetic footprint of patients. We rediscovered numerous patterns that had been described in previous contributions although our system had never seen any pathological speech previously. Furthermore, we could show that intermediate activations from the neural network could serve as feature vectors encoding information related to the disease state of individuals. We were also able to directly correlate the expert-rated intelligibility of a speaker with the mean confidence of phonetic predictions. Our results support the assumption that pathological data is not necessarily required to train systems that are capable of analyzing PD speech.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-12-21T20:44:21Z</published>
+    <arxiv:comment>https://www.sciencedirect.com/science/article/abs/pii/S0885230821001169</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <arxiv:journal_ref>Elsevier Computer Speech and Language, Volume 72, March 2022</arxiv:journal_ref>
+    <author>
+      <name>Philipp Klumpp</name>
+    </author>
+    <author>
+      <name>Tomás Arias-Vergara</name>
+    </author>
+    <author>
+      <name>Juan Camilo Vásquez-Correa</name>
+    </author>
+    <author>
+      <name>Paula Andrea Pérez-Toro</name>
+    </author>
+    <author>
+      <name>Juan Rafael Orozco-Arroyave</name>
+    </author>
+    <author>
+      <name>Anton Batliner</name>
+    </author>
+    <author>
+      <name>Elmar Nöth</name>
+    </author>
+    <arxiv:doi>10.1016/j.csl.2021.101321</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.csl.2021.101321" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2110.08213v1</id>
+    <title>Towards Identity Preserving Normal to Dysarthric Voice Conversion</title>
+    <updated>2021-10-15T17:18:02Z</updated>
+    <link href="https://arxiv.org/abs/2110.08213v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2110.08213v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a voice conversion framework that converts normal speech into dysarthric speech while preserving the speaker identity. Such a framework is essential for (1) clinical decision making processes and alleviation of patient stress, (2) data augmentation for dysarthric speech recognition. This is an especially challenging task since the converted samples should capture the severity of dysarthric speech while being highly natural and possessing the speaker identity of the normal speaker. To this end, we adopted a two-stage framework, which consists of a sequence-to-sequence model and a nonparallel frame-wise model. Objective and subjective evaluations were conducted on the UASpeech dataset, and results showed that the method was able to yield reasonable naturalness and capture severity aspects of the pathological speech. On the other hand, the similarity to the normal source speaker's voice was limited and requires further improvements.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-10-15T17:18:02Z</published>
+    <arxiv:comment>Submitted to ICASSP 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Wen-Chin Huang</name>
+    </author>
+    <author>
+      <name>Bence Mark Halpern</name>
+    </author>
+    <author>
+      <name>Lester Phillip Violeta</name>
+    </author>
+    <author>
+      <name>Odette Scharenborg</name>
+    </author>
+    <author>
+      <name>Tomoki Toda</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2110.00797v1</id>
+    <title>Significance of Data Augmentation for Improving Cleft Lip and Palate Speech Recognition</title>
+    <updated>2021-10-02T13:03:44Z</updated>
+    <link href="https://arxiv.org/abs/2110.00797v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2110.00797v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The automatic recognition of pathological speech, particularly from children with any articulatory impairment, is a challenging task due to various reasons. The lack of available domain specific data is one such obstacle that hinders its usage for different speech-based applications targeting pathological speakers. In line with the challenge, in this work, we investigate a few data augmentation techniques to simulate training data for improving the children speech recognition considering the case of cleft lip and palate (CLP) speech. The augmentation techniques explored in this study, include vocal tract length perturbation (VTLP), reverberation, speaking rate, pitch modification, and speech feature modification using cycle consistent adversarial networks (CycleGAN). Our study finds that the data augmentation methods significantly improve the CLP speech recognition performance, which is more evident when we used feature modification using CycleGAN, VTLP and reverberation based methods. More specifically, the results from this study show that our systems produce an improved phone error rate compared to the systems without data augmentation.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-10-02T13:03:44Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Protima Nomo Sudro</name>
+    </author>
+    <author>
+      <name>Rohan Kumar Das</name>
+    </author>
+    <author>
+      <name>Rohit Sinha</name>
+    </author>
+    <author>
+      <name>S. R. Mahadeva Prasanna</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2107.00308v1</id>
+    <title>An Objective Evaluation Framework for Pathological Speech Synthesis</title>
+    <updated>2021-07-01T08:55:57Z</updated>
+    <link href="https://arxiv.org/abs/2107.00308v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2107.00308v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The development of pathological speech systems is currently hindered by the lack of a standardised objective evaluation framework. In this work, (1) we utilise existing detection and analysis techniques to propose a general framework for the consistent evaluation of synthetic pathological speech. This framework evaluates the voice quality and the intelligibility aspects of speech and is shown to be complementary using our experiments. (2) Using our proposed evaluation framework, we develop and test a dysarthric voice conversion system (VC) using CycleGAN-VC and a PSOLA-based speech rate modification technique. We show that the developed system is able to synthesise dysarthric speech with different levels of speech intelligibility.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-07-01T08:55:57Z</published>
+    <arxiv:comment>4 pages, 4 figures. Accepted to the ITG Conference on Speech Communication | 29.09.2021 - 01.10.2021 | Kiel</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Bence Mark Halpern</name>
+    </author>
+    <author>
+      <name>Julian Fritsch</name>
+    </author>
+    <author>
+      <name>Enno Hermann</name>
+    </author>
+    <author>
+      <name>Rob van Son</name>
+    </author>
+    <author>
+      <name>Odette Scharenborg</name>
+    </author>
+    <author>
+      <name>Mathew Magimai. -Doss</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2106.08427v1</id>
+    <title>Pathological voice adaptation with autoencoder-based voice conversion</title>
+    <updated>2021-06-15T20:38:10Z</updated>
+    <link href="https://arxiv.org/abs/2106.08427v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2106.08427v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we propose a new approach to pathological speech synthesis. Instead of using healthy speech as a source, we customise an existing pathological speech sample to a new speaker's voice characteristics. This approach alleviates the evaluation problem one normally has when converting typical speech to pathological speech, as in our approach, the voice conversion (VC) model does not need to be optimised for speech degradation but only for the speaker change. This change in the optimisation ensures that any degradation found in naturalness is due to the conversion process and not due to the model exaggerating characteristics of a speech pathology. To show a proof of concept of this method, we convert dysarthric speech using the UASpeech database and an autoencoder-based VC technique. Subjective evaluation results show reasonable naturalness for high intelligibility dysarthric speakers, though lower intelligibility seems to introduce a marginal degradation in naturalness scores for mid and low intelligibility speakers compared to ground truth. Conversion of speaker characteristics for low and high intelligibility speakers is successful, but not for mid. Whether the differences in the results for the different intelligibility levels is due to the intelligibility levels or due to the speakers needs to be further investigated.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-06-15T20:38:10Z</published>
+    <arxiv:comment>6 pages, 3 figures. Accepted to the 11th ISCA Speech Synthesis Workshop (2021)</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Marc Illa</name>
+    </author>
+    <author>
+      <name>Bence Mark Halpern</name>
+    </author>
+    <author>
+      <name>Rob van Son</name>
+    </author>
+    <author>
+      <name>Laureano Moro-Velazquez</name>
+    </author>
+    <author>
+      <name>Odette Scharenborg</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2106.00531v2</id>
+    <title>Supervised Speech Representation Learning for Parkinson's Disease Classification</title>
+    <updated>2021-07-21T13:12:30Z</updated>
+    <link href="https://arxiv.org/abs/2106.00531v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2106.00531v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently proposed automatic pathological speech classification techniques use unsupervised auto-encoders to obtain a high-level abstract representation of speech. Since these representations are learned based on reconstructing the input, there is no guarantee that they are robust to pathology-unrelated cues such as speaker identity information. Further, these representations are not necessarily discriminative for pathology detection. In this paper, we exploit supervised auto-encoders to extract robust and discriminative speech representations for Parkinson's disease classification. To reduce the influence of speaker variabilities unrelated to pathology, we propose to obtain speaker identity-invariant representations by adversarial training of an auto-encoder and a speaker identification task. To obtain a discriminative representation, we propose to jointly train an auto-encoder and a pathological speech classifier. Experimental results on a Spanish database show that the proposed supervised representation learning methods yield more robust and discriminative representations for automatically classifying Parkinson's disease speech, outperforming the baseline unsupervised representation learning system.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-06-01T14:48:08Z</published>
+    <arxiv:comment>Accepted in ITG Conference on Speech Communication 2021</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Parvaneh Janbakhshi</name>
+    </author>
+    <author>
+      <name>Ina Kodrasi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2007.15074v1</id>
+    <title>Exploiting Cross-Lingual Knowledge in Unsupervised Acoustic Modeling for Low-Resource Languages</title>
+    <updated>2020-07-29T19:45:17Z</updated>
+    <link href="https://arxiv.org/abs/2007.15074v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2007.15074v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>(Short version of Abstract) This thesis describes an investigation on unsupervised acoustic modeling (UAM) for automatic speech recognition (ASR) in the zero-resource scenario, where only untranscribed speech data is assumed to be available. UAM is not only important in addressing the general problem of data scarcity in ASR technology development but also essential to many non-mainstream applications, for examples, language protection, language acquisition and pathological speech assessment. The present study is focused on two research problems. The first problem concerns unsupervised discovery of basic (subword level) speech units in a given language. Under the zero-resource condition, the speech units could be inferred only from the acoustic signals, without requiring or involving any linguistic direction and/or constraints. The second problem is referred to as unsupervised subword modeling. In its essence a frame-level feature representation needs to be learned from untranscribed speech. The learned feature representation is the basis of subword unit discovery. It is desired to be linguistically discriminative and robust to non-linguistic factors. Particularly extensive use of cross-lingual knowledge in subword unit discovery and modeling is a focus of this research.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-07-29T19:45:17Z</published>
+    <arxiv:comment>Ph.D. Thesis Submitted in May 2020 in partial fulfilment of the requirements for the Degree of Doctor of Philosophy in Electronic Engineering, The Chinese University of Hong Kong (CUHK) 134 pages</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Siyuan Feng</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1909.12232v1</id>
+    <title>A Comparison of Hybrid and End-to-End Models for Syllable Recognition</title>
+    <updated>2019-09-19T09:51:35Z</updated>
+    <link href="https://arxiv.org/abs/1909.12232v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1909.12232v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This paper presents a comparison of a traditional hybrid speech recognition system (kaldi using WFST and TDNN with lattice-free MMI) and a lexicon-free end-to-end (TensorFlow implementation of multi-layer LSTM with CTC training) models for German syllable recognition on the Verbmobil corpus. The results show that explicitly modeling prior knowledge is still valuable in building recognition systems. With a strong language model (LM) based on syllables, the structured approach significantly outperforms the end-to-end model. The best word error rate (WER) regarding syllables was achieved using kaldi with a 4-gram LM, modeling all syllables observed in the training set. It achieved 10.0% WER w.r.t. the syllables, compared to the end-to-end approach where the best WER was 27.53%. The work presented here has implications for building future recognition systems that operate independent of a large vocabulary, as typically used in a tasks such as recognition of syllabic or agglutinative languages, out-of-vocabulary techniques, keyword search indexing and medical speech processing.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-09-19T09:51:35Z</published>
+    <arxiv:comment>22th International Conference of Text, Speech and Dialogue TSD2019</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Sebastian P. Bayerl</name>
+    </author>
+    <author>
+      <name>Korbinian Riedhammer</name>
+    </author>
+    <arxiv:doi>10.1007/978-3-030-27947-9_30</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/978-3-030-27947-9_30" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1904.00361v1</id>
+    <title>An End-to-End Approach to Automatic Speech Assessment for Cantonese-speaking People with Aphasia</title>
+    <updated>2019-03-31T09:04:17Z</updated>
+    <link href="https://arxiv.org/abs/1904.00361v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1904.00361v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Conventional automatic assessment of pathological speech usually follows two main steps: (1) extraction of pathology-specific features; (2) classification or regression on extracted features. Given the great variety of speech and language disorders, feature design is never a straightforward task, and yet it is most crucial to the performance of assessment. This paper presents an end-to-end approach to automatic speech assessment for Cantonese-speaking People With Aphasia (PWA). The assessment is formulated as a binary classification task to discriminate PWA with high scores of subjective assessment from those with low scores. The sequence-to-one Recurrent Neural Network with Gated Recurrent Unit (GRU-RNN) and Convolutional Neural Network (CNN) models are applied to realize the end-to-end mapping from fundamental speech features to the classification result. The pathology-specific features used for assessment can be learned implicitly by the neural network model. Class Activation Mapping (CAM) method is utilized to visualize how those features contribute to the assessment result. Our experimental results show that the end-to-end approach outperforms the conventional two-step approach in the classification task, and confirm that the CNN model is able to learn impairment-related features that are similar to human-designed features. The experimental results also suggest that CNN model performs better than sequence-to-one GRU-RNN model in this specific task.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2019-03-31T09:04:17Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Ying Qin</name>
+    </author>
+    <author>
+      <name>Yuzhong Wu</name>
+    </author>
+    <author>
+      <name>Tan Lee</name>
+    </author>
+    <author>
+      <name>Anthony Pak Hin Kong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1811.12254v1</id>
+    <title>The Effect of Heterogeneous Data for Alzheimer's Disease Detection from Speech</title>
+    <updated>2018-11-29T15:37:45Z</updated>
+    <link href="https://arxiv.org/abs/1811.12254v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1811.12254v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech datasets for identifying Alzheimer's disease (AD) are generally restricted to participants performing a single task, e.g. describing an image shown to them. As a result, models trained on linguistic features derived from such datasets may not be generalizable across tasks. Building on prior work demonstrating that same-task data of healthy participants helps improve AD detection on a single-task dataset of pathological speech, we augment an AD-specific dataset consisting of subjects describing a picture with multi-task healthy data. We demonstrate that normative data from multiple speech-based tasks helps improve AD detection by up to 9%. Visualization of decision boundaries reveals that models trained on a combination of structured picture descriptions and unstructured conversational speech have the least out-of-task error and show the most potential to generalize to multiple tasks. We analyze the impact of age of the added samples and if they affect fairness in classification. We also provide explanations for a possible inductive bias effect across tasks using model-agnostic feature anchors. This work highlights the need for heterogeneous datasets for encoding changes in multiple facets of cognition and for developing a task-independent AD detection model.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-11-29T15:37:45Z</published>
+    <arxiv:comment>Machine Learning for Health (ML4H) Workshop at NeurIPS 2018 arXiv:1811.07216</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Aparna Balagopalan</name>
+    </author>
+    <author>
+      <name>Jekaterina Novikova</name>
+    </author>
+    <author>
+      <name>Frank Rudzicz</name>
+    </author>
+    <author>
+      <name>Marzyeh Ghassemi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1807.10948v1</id>
+    <title>Articulatory Features for ASR of Pathological Speech</title>
+    <updated>2018-07-28T15:04:53Z</updated>
+    <link href="https://arxiv.org/abs/1807.10948v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1807.10948v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this work, we investigate the joint use of articulatory and acoustic features for automatic speech recognition (ASR) of pathological speech. Despite long-lasting efforts to build speaker- and text-independent ASR systems for people with dysarthria, the performance of state-of-the-art systems is still considerably lower on this type of speech than on normal speech. The most prominent reason for the inferior performance is the high variability in pathological speech that is characterized by the spectrotemporal deviations caused by articulatory impairments due to various etiologies. To cope with this high variation, we propose to use speech representations which utilize articulatory information together with the acoustic properties. A designated acoustic model, namely a fused-feature-map convolutional neural network (fCNN), which performs frequency convolution on acoustic features and time convolution on articulatory features is trained and tested on a Dutch and a Flemish pathological speech corpus. The ASR performance of fCNN-based ASR system using joint features is compared to other neural network architectures such conventional CNNs and time-frequency convolutional networks (TFCNNs) in several training scenarios.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-07-28T15:04:53Z</published>
+    <arxiv:comment>Accepted for publication at Interspeech 2018</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Emre Yılmaz</name>
+    </author>
+    <author>
+      <name>Vikramjit Mitra</name>
+    </author>
+    <author>
+      <name>Chris Bartels</name>
+    </author>
+    <author>
+      <name>Horacio Franco</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1804.10325v1</id>
+    <title>Simulating dysarthric speech for training data augmentation in clinical speech applications</title>
+    <updated>2018-04-27T02:20:24Z</updated>
+    <link href="https://arxiv.org/abs/1804.10325v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1804.10325v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Training machine learning algorithms for speech applications requires large, labeled training data sets. This is problematic for clinical applications where obtaining such data is prohibitively expensive because of privacy concerns or lack of access. As a result, clinical speech applications are typically developed using small data sets with only tens of speakers. In this paper, we propose a method for simulating training data for clinical applications by transforming healthy speech to dysarthric speech using adversarial training. We evaluate the efficacy of our approach using both objective and subjective criteria. We present the transformed samples to five experienced speech-language pathologists (SLPs) and ask them to identify the samples as healthy or dysarthric. The results reveal that the SLPs identify the transformed speech as dysarthric 65% of the time. In a pilot classification experiment, we show that by using the simulated speech samples to balance an existing dataset, the classification accuracy improves by about 10% after data augmentation.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-04-27T02:20:24Z</published>
+    <arxiv:comment>Will appear in Proc. of ICASSP 2018</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Yishan Jiao</name>
+    </author>
+    <author>
+      <name>Ming Tu</name>
+    </author>
+    <author>
+      <name>Visar Berisha</name>
+    </author>
+    <author>
+      <name>Julie Liss</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1712.09347v1</id>
+    <title>Smart Fog: Fog Computing Framework for Unsupervised Clustering Analytics in Wearable Internet of Things</title>
+    <updated>2017-12-25T02:08:39Z</updated>
+    <link href="https://arxiv.org/abs/1712.09347v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1712.09347v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The increasing use of wearables in smart telehealth generates heterogeneous medical big data. Cloud and fog services process these data for assisting clinical procedures. IoT based ehealthcare have greatly benefited from efficient data processing. This paper proposed and evaluated use of low resource machine learning on Fog devices kept close to the wearables for smart healthcare. In state of the art telecare systems, the signal processing and machine learning modules are deployed in the cloud for processing physiological data. We developed a prototype of Fog-based unsupervised machine learning big data analysis for discovering patterns in physiological data. We employed Intel Edison and Raspberry Pi as Fog computer in proposed architecture. We performed validation studies on real-world pathological speech data from in home monitoring of patients with Parkinson's disease (PD). Proposed architecture employed machine learning for analysis of pathological speech data obtained from smartwatches worn by the patients with PD. Results showed that proposed architecture is promising for low-resource clinical machine learning. It could be useful for other applications within wearable IoT for smart telehealth scenarios by translating machine learning approaches from the cloud backend to edge computing devices such as Fog.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-12-25T02:08:39Z</published>
+    <arxiv:comment>5 pages, 3 figures. 5th IEEE Global Conference on Signal and Information Processing GlobalSIP 2017</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Debanjan Borthakur</name>
+    </author>
+    <author>
+      <name>Harishchandra Dubey</name>
+    </author>
+    <author>
+      <name>Nicholas Constant</name>
+    </author>
+    <author>
+      <name>Leslie Mahler</name>
+    </author>
+    <author>
+      <name>Kunal Mankodiya</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1706.08012v1</id>
+    <title>Fog Computing in Medical Internet-of-Things: Architecture, Implementation, and Applications</title>
+    <updated>2017-06-24T23:33:07Z</updated>
+    <link href="https://arxiv.org/abs/1706.08012v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1706.08012v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the era when the market segment of Internet of Things (IoT) tops the chart in various business reports, it is apparently envisioned that the field of medicine expects to gain a large benefit from the explosion of wearables and internet-connected sensors that surround us to acquire and communicate unprecedented data on symptoms, medication, food intake, and daily-life activities impacting one's health and wellness. However, IoT-driven healthcare would have to overcome many barriers, such as: 1) There is an increasing demand for data storage on cloud servers where the analysis of the medical big data becomes increasingly complex, 2) The data, when communicated, are vulnerable to security and privacy issues, 3) The communication of the continuously collected data is not only costly but also energy hungry, 4) Operating and maintaining the sensors directly from the cloud servers are non-trial tasks. This book chapter defined Fog Computing in the context of medical IoT. Conceptually, Fog Computing is a service-oriented intermediate layer in IoT, providing the interfaces between the sensors and cloud servers for facilitating connectivity, data transfer, and queryable local database. The centerpiece of Fog computing is a low-power, intelligent, wireless, embedded computing node that carries out signal conditioning and data analytics on raw data collected from wearables or other medical sensors and offers efficient means to serve telehealth interventions. We implemented and tested an fog computing system using the Intel Edison and Raspberry Pi that allows acquisition, computing, storage and communication of the various medical data such as pathological speech data of individuals with speech disorders, Phonocardiogram (PCG) signal for heart rate estimation, and Electrocardiogram (ECG)-based Q, R, S detection.</summary>
+    <category term="cs.DC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-06-24T23:33:07Z</published>
+    <arxiv:comment>29 pages, 30 figures, 5 tables. Keywords: Big Data, Body Area Network, Body Sensor Network, Edge Computing, Fog Computing, Medical Cyberphysical Systems, Medical Internet-of-Things, Telecare, Tele-treatment, Wearable Devices, Chapter in Handbook of Large-Scale Distributed Computing in Smart Healthcare (2017), Springer</arxiv:comment>
+    <arxiv:primary_category term="cs.DC"/>
+    <author>
+      <name>Harishchandra Dubey</name>
+    </author>
+    <author>
+      <name>Admir Monteiro</name>
+    </author>
+    <author>
+      <name>Nicholas Constant</name>
+    </author>
+    <author>
+      <name>Mohammadreza Abtahi</name>
+    </author>
+    <author>
+      <name>Debanjan Borthakur</name>
+    </author>
+    <author>
+      <name>Leslie Mahler</name>
+    </author>
+    <author>
+      <name>Yan Sun</name>
+    </author>
+    <author>
+      <name>Qing Yang</name>
+    </author>
+    <author>
+      <name>Umer Akbar</name>
+    </author>
+    <author>
+      <name>Kunal Mankodiya</name>
+    </author>
+    <arxiv:doi>10.1007/978-3-319-58280-1_11</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/978-3-319-58280-1_11" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1612.07608v1</id>
+    <title>EchoWear: Smartwatch Technology for Voice and Speech Treatments of Patients with Parkinson's Disease</title>
+    <updated>2016-12-21T00:02:08Z</updated>
+    <link href="https://arxiv.org/abs/1612.07608v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1612.07608v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>About 90 percent of people with Parkinson's disease (PD) experience decreased functional communication due to the presence of voice and speech disorders associated with dysarthria that can be characterized by monotony of pitch (or fundamental frequency), reduced loudness, irregular rate of speech, imprecise consonants, and changes in voice quality. Speech-language pathologists (SLPs) work with patients with PD to improve speech intelligibility using various intensive in-clinic speech treatments. SLPs also prescribe home exercises to enhance generalization of speech strategies outside of the treatment room. Even though speech therapies are found to be highly effective in improving vocal loudness and speech quality, patients with PD find it difficult to follow the prescribed exercise regimes outside the clinic and to continue exercises once the treatment is completed. SLPs need techniques to monitor compliance and accuracy of their patients exercises at home and in ecologically valid communication situations. We have designed EchoWear, a smartwatch-based system, to remotely monitor speech and voice exercises as prescribed by SLPs. We conducted a study of 6 individuals; three with PD and three healthy controls. To assess the performance of EchoWear technology compared with high quality audio equipment obtained in a speech laboratory. Our preliminary analysis shows promising outcomes for using EchoWear in speech therapies for people with PD.
+  Keywords: Dysarthria; knowledge-based speech processing; Parkinson's disease; smartwatch; speech therapy; wearable system.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-12-21T00:02:08Z</published>
+    <arxiv:comment>8 pages, 8 figures, 1 table, 1 equation in Proceedings of the conference on ACM Wireless Health (WH 2015), National Institute of Health, Bethesda, Maryland, USA</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Harishchandra Dubey</name>
+    </author>
+    <author>
+      <name>Jon C. Goldberg</name>
+    </author>
+    <author>
+      <name>Mohammadreza Abtahi</name>
+    </author>
+    <author>
+      <name>Leslie Mahler</name>
+    </author>
+    <author>
+      <name>Kunal Mankodiya</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1605.06236v1</id>
+    <title>FIT A Fog Computing Device for Speech TeleTreatments</title>
+    <updated>2016-05-20T07:51:13Z</updated>
+    <link href="https://arxiv.org/abs/1605.06236v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1605.06236v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>There is an increasing demand for smart fogcomputing gateways as the size of cloud data is growing. This paper presents a Fog computing interface (FIT) for processing clinical speech data. FIT builds upon our previous work on EchoWear, a wearable technology that validated the use of smartwatches for collecting clinical speech data from patients with Parkinson's disease (PD). The fog interface is a low-power embedded system that acts as a smart interface between the smartwatch and the cloud. It collects, stores, and processes the speech data before sending speech features to secure cloud storage. We developed and validated a working prototype of FIT that enabled remote processing of clinical speech data to get speech clinical features such as loudness, short-time energy, zero-crossing rate, and spectral centroid. We used speech data from six patients with PD in their homes for validating FIT. Our results showed the efficacy of FIT as a Fog interface to translate the clinical speech processing chain (CLIP) from a cloud-based backend to a fog-based smart gateway.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2016-05-20T07:51:13Z</published>
+    <arxiv:comment>3 pages, 5 figures, 1 table, 2nd IEEE International Conference on Smart Computing SMARTCOMP 2016, Missouri, USA, 2016</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Admir Monteiro</name>
+    </author>
+    <author>
+      <name>Harishchandra Dubey</name>
+    </author>
+    <author>
+      <name>Leslie Mahler</name>
+    </author>
+    <author>
+      <name>Qing Yang</name>
+    </author>
+    <author>
+      <name>Kunal Mankodiya</name>
+    </author>
+    <arxiv:doi>10.13140/RG.2.1.1023.8328</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.13140/RG.2.1.1023.8328" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1510.01942v1</id>
+    <title>Helping Domain Experts Build Speech Translation Systems</title>
+    <updated>2015-10-07T13:47:12Z</updated>
+    <link href="https://arxiv.org/abs/1510.01942v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1510.01942v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We present a new platform, "Regulus Lite", which supports rapid development and web deployment of several types of phrasal speech translation systems using a minimal formalism. A distinguishing feature is that most development work can be performed directly by domain experts. We motivate the need for platforms of this type and discuss three specific cases: medical speech translation, speech-to-sign-language translation and voice questionnaires. We briefly describe initial experiences in developing practical systems.</summary>
+    <category term="cs.HC" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2015-10-07T13:47:12Z</published>
+    <arxiv:comment>12 pages, 1 figure, to appear in Proc. Future and Emerging Trends in Language Technology 2015, Seville, Spain</arxiv:comment>
+    <arxiv:primary_category term="cs.HC"/>
+    <author>
+      <name>Manny Rayner</name>
+    </author>
+    <author>
+      <name>Alejandro Armando</name>
+    </author>
+    <author>
+      <name>Pierrette Bouillon</name>
+    </author>
+    <author>
+      <name>Sarah Ebling</name>
+    </author>
+    <author>
+      <name>Johanna Gerlach</name>
+    </author>
+    <author>
+      <name>Sonia Halimi</name>
+    </author>
+    <author>
+      <name>Irene Strasly</name>
+    </author>
+    <author>
+      <name>Nikos Tsourakis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1412.6534v2</id>
+    <title>Empirically Estimable Classification Bounds Based on a New Divergence Measure</title>
+    <updated>2015-02-10T19:23:18Z</updated>
+    <link href="https://arxiv.org/abs/1412.6534v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1412.6534v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Information divergence functions play a critical role in statistics and information theory. In this paper we show that a non-parametric f-divergence measure can be used to provide improved bounds on the minimum binary classification probability of error for the case when the training and test data are drawn from the same distribution and for the case where there exists some mismatch between training and test distributions. We confirm the theoretical results by designing feature selection algorithms using the criteria from these bounds and by evaluating the algorithms on a series of pathological speech classification tasks.</summary>
+    <category term="cs.IT" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2014-12-19T21:01:57Z</published>
+    <arxiv:comment>12 pages, 5 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.IT"/>
+    <author>
+      <name>Visar Berisha</name>
+    </author>
+    <author>
+      <name>Alan Wisler</name>
+    </author>
+    <author>
+      <name>Alfred O. Hero</name>
+    </author>
+    <author>
+      <name>Andreas Spanias</name>
+    </author>
+  </entry>
+</feed>
