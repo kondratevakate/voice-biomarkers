@@ -1,0 +1,880 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/yoRn0NSrzoIxEslTaHCh5iapEb8</id>
+  <title>arXiv Query: search_query=(abs:"voice biomarker" OR abs:"speech biomarker" OR abs:"acoustic biomarker" OR abs:"pathological speech" OR abs:"speech-based detection") AND (abs:Parkinson OR abs:Alzheimer OR abs:dementia OR abs:depression OR abs:"heart failure" OR abs:COPD OR abs:ALS OR abs:"cognitive impairment")&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-09-01T09:00:48Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(abs:%22voice+biomarker%22+OR+(abs:%22speech+biomarker%22+OR+(abs:%22acoustic+biomarker%22+OR+(abs:%22pathological+speech%22+OR+abs:%22speech-based+detection%22))))+AND+(abs:Parkinson+OR+(abs:Alzheimer+OR+(abs:dementia+OR+(abs:depression+OR+(abs:%22heart+failure%22+OR+(abs:COPD+OR+(abs:ALS+OR+abs:%22cognitive+impairment%22)))))))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>30</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2607.23977v1</id>
+    <title>Disentangling Acoustic Cues in Alzheimer's Pathology and Perception: The Roles of Language and Gender</title>
+    <updated>2026-07-27T04:02:57Z</updated>
+    <link href="https://arxiv.org/abs/2607.23977v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.23977v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Acoustic biomarkers show promise for detecting Alzheimer's Disease (AD), yet whether the cues driving diagnostic AI align with those salient to human listeners is underexplored across languages and genders, where pathological markers and perceptual strategies differ. We train models to predict clinical AD status (pathology) and human perceptual scores across Mandarin and Greek, male and female speakers. Using SHAP for interpretability and statistical models for validation, we compare feature importance by subgroup. Results reveal a context-dependent divergence: pathological-perceptual alignment is significant for Mandarin and female speakers but disappears for Greek and male speakers, where pathology models did not exceed chance; this is a failure mode that population-specific auditing surfaces. Global Explainable AI (XAI) explanations can mask critical demographic divergences, highlighting the need for population-specific explainability auditing for equitable deployment of clinical speech AI.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-27T04:02:57Z</published>
+    <arxiv:comment>Accepted at Interspeech 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Liu He</name>
+    </author>
+    <author>
+      <name>Yuanchao Li</name>
+    </author>
+    <author>
+      <name>Yin-Long Liu</name>
+    </author>
+    <author>
+      <name>Rui Feng</name>
+    </author>
+    <author>
+      <name>Yiming Wang</name>
+    </author>
+    <author>
+      <name>Jiaxin Chen</name>
+    </author>
+    <author>
+      <name>Yizhe Wang</name>
+    </author>
+    <author>
+      <name>Jiahong Yuan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.22910v1</id>
+    <title>Cross-lingual Retrieval-Augmented Classification for Dysarthria Severity Assessment</title>
+    <updated>2026-06-22T06:51:13Z</updated>
+    <link href="https://arxiv.org/abs/2606.22910v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.22910v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Automatic dysarthria severity assessment is limited by the scarcity of labeled pathological speech data. To address this, we propose Cross-lingual Retrieval-Augmented Classification (CRAC), which leverages speech from a different language via an align-retrieve-fuse pipeline. Supervised contrastive learning first shapes a severity-focused embedding space, then a vector database is built from the opposite-language corpus. During both training and inference, the classifier retrieves top-k references from the aligned space and fuses them with the input via cross-attention. Evaluated on Korean post-stroke and Italian ALS dysarthria datasets under a speaker-independent three-class protocol, CRAC achieves balanced accuracies of 87.3% on Korean and 86.7% on Italian, improving over monolingual baselines by 8.4 and 20.0 percentage points, respectively.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-22T06:51:13Z</published>
+    <arxiv:comment>Accepted to Interspeech 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Taeyoung Jeong</name>
+    </author>
+    <author>
+      <name>Insung Lee</name>
+    </author>
+    <author>
+      <name>Du-Seong Chang</name>
+    </author>
+    <author>
+      <name>Myoung-Wan Koo</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.06170v2</id>
+    <title>CoSTA: Cognitive-State-Conditioned TTS Data Augmentation Using ASR Transcripts for Alzheimer's Disease Detection</title>
+    <updated>2026-06-17T15:00:02Z</updated>
+    <link href="https://arxiv.org/abs/2606.06170v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.06170v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech-based Alzheimer's Disease (AD) detection is constrained by scarce pathological speech data. To address this, we propose CoSTA, a Text-to-Speech (TTS)-based data augmentation framework. Specifically, we first develop two Cognitive-State-Conditioned (CS-Cond) TTS models by adapting CosyVoice2 and F5-TTS to synthesize speech with distinct AD and Healthy Control characteristics. Furthermore, by constructing a transcript pool comprising Manual Transcripts (MT) and 36 Automatic Speech Recognition (ASR) transcripts, we investigate the impact of text sources on TTS-based augmentation. We also perform augmentation-factor analysis and test-time augmentation. Experiments on the ADReSS dataset show that CS-Cond TTS significantly improves synthetic speech utility, and ASR-driven augmentation frequently outperforms MT-driven augmentation. Finally, CoSTA yields a 4.16% gain over the baseline, achieving an audio-only accuracy of 85.83% on the ADReSS test set and outperforming prior methods.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-04T13:41:19Z</published>
+    <arxiv:comment>Accepted by Interspeech 2026</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Yin-Long Liu</name>
+    </author>
+    <author>
+      <name>Yuanchao Li</name>
+    </author>
+    <author>
+      <name>Yiming Wang</name>
+    </author>
+    <author>
+      <name>Yue Li</name>
+    </author>
+    <author>
+      <name>Rui Feng</name>
+    </author>
+    <author>
+      <name>Jiaxin Chen</name>
+    </author>
+    <author>
+      <name>Shaobo Liu</name>
+    </author>
+    <author>
+      <name>Liu He</name>
+    </author>
+    <author>
+      <name>Yuang Chen</name>
+    </author>
+    <author>
+      <name>Jiahong Yuan</name>
+    </author>
+    <author>
+      <name>Zhen-Hua Ling</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.25540v1</id>
+    <title>A Multimodal Framework for Dementia Detection via Linguistic and Acoustic Representation Learning</title>
+    <updated>2026-05-25T07:57:49Z</updated>
+    <link href="https://arxiv.org/abs/2605.25540v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.25540v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Alzheimer's disease (AD) is a progressive neurodegenerative disorder and the leading cause of dementia, affecting memory, reasoning, communication, and daily functioning. Early diagnosis is particularly important, as timely intervention may help slow cognitive decline and improve patient care. Recent studies have demonstrated that spontaneous speech contains valuable linguistic and acoustic biomarkers associated with dementia. However, existing approaches often rely on independently trained modality-specific models, feature concatenation strategies, ensemble methods, or attention-based fusion mechanisms that do not explicitly maximize the dependency between speech and transcript representations. In this work, we propose a multimodal deep learning framework for automatic dementia detection that jointly exploits speech and transcript information in an end-to-end trainable manner. Specifically, speech recordings are divided into 10-second segments and passed through a pre-trained HuBERT model to extract contextualized acoustic representations. To better capture informative temporal speech characteristics, attentive statistics pooling is employed to aggregate frame-level acoustic embeddings. For the textual modality, transcripts are encoded using a pre-trained BERT model, where the [CLS] token representation is used as the linguistic embedding. The acoustic and textual representations are subsequently combined using an attention-based Audio-Text Fusion (AT-Fusion) mechanism. In addition, we introduce a MINE objective to maximize the mutual information between modalities and improve multimodal representation alignment. The fused multimodal representation is finally used for dementia classification. Experiments conducted on the publicly available ADReSS Challenge and PROCESS-2 dataset demonstrate the effectiveness and robustness of the proposed approach for speech-based dementia assessment.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-25T07:57:49Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Loukas Ilias</name>
+    </author>
+    <author>
+      <name>Dimitris Askounis</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.14354v1</id>
+    <title>Who is Speaking or Who is Depressed? A Controlled Study of Speaker Leakage in Speech-Based Depression Detection</title>
+    <updated>2026-04-15T19:14:48Z</updated>
+    <link href="https://arxiv.org/abs/2604.14354v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.14354v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This study investigates whether speech-based depression detection models learn depression-related acoustic biomarkers or instead rely on speaker identity cues. Using the DAIC-WOZ dataset, we propose a data-splitting strategy that controls speaker overlap between training and test sets while keeping the training size constant, and evaluate three models of varying complexity. Results show that speaker overlap significantly boosts performance, whereas accuracy drops sharply on unseen speakers. Even with a Domain-Adversarial Neural Network, a substantial performance gap remains. These findings indicate that depression-related features extracted by current speech models are highly entangled with speaker identity. Conventional evaluation protocols may therefore overestimate generalization and clinical utility, highlighting the need for strictly speaker-independent evaluation.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-15T19:14:48Z</published>
+    <arxiv:comment>Submitted to Interspeech 2026</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Hsiang-Chen Yeh</name>
+    </author>
+    <author>
+      <name>Luqi Sun</name>
+    </author>
+    <author>
+      <name>Aurosweta Mahapatra</name>
+    </author>
+    <author>
+      <name>Shreeram Suresh Chandra</name>
+    </author>
+    <author>
+      <name>Emily Mower Provost</name>
+    </author>
+    <author>
+      <name>Berrak Sisman</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.03995v1</id>
+    <title>Early Detection of Alzheimer's Disease Using Explainable Machine Learning on Clinical Biomarkers: A Multi-Class Classification Study Using the Alzheimer's Disease Neuroimaging Initiative (ADNI) Dataset</title>
+    <updated>2026-04-14T10:54:14Z</updated>
+    <link href="https://arxiv.org/abs/2606.03995v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.03995v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Background: Alzheimer's disease (AD) affects over 55 million people worldwide. Accurate, interpretable detection of normal cognition (NC), mild cognitive impairment (MCI), and AD from routine clinical assessments remains a critical unmet need. Methods: An XGBoost classifier was developed for three-class detection using eight clinical features from the Alzheimer's Disease Neuroimaging Initiative (ADNI): MMSE, CDR Global, CDR Sum of Boxes (CDR-SB), MoCA, FAQ, age, sex, and education. Hyperparameters were optimised using Optuna (50 trials); class imbalance was addressed with SMOTE. Performance was evaluated by macro AUC-ROC with 1,000-iteration bootstrap 95% confidence intervals, macro F1, balanced accuracy, and Cohen's kappa. SHAP values provided feature-level explainability. Results: The dataset comprised 1,641 baseline subjects (608 NC, 767 MCI, 266 AD). On five-fold cross-validation, mean macro AUC was 0.983 (SD 0.007), accuracy 0.944 (SD 0.006), and macro F1 0.929 (SD 0.008). On the held-out test set (n = 247), macro AUC was 0.982 (95% CI: 0.965--0.995), accuracy 0.943, balanced accuracy 0.932, macro F1 0.927, and Cohen's kappa 0.909. SHAP analysis identified CDR Global as the dominant predictor for NC and MCI, while CDR-SB and MMSE together drove AD classification. Conclusion: An explainable machine learning model trained on routine clinical assessments achieves near-perfect three-class Alzheimer's detection. SHAP analysis reveals clinically plausible, class-specific feature importance patterns supporting clinical validity. Future work will extend this framework with speech biomarkers for multimodal detection.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-14T10:54:14Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Afshan Hashmi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.10123v1</id>
+    <title>Training-Free Cross-Lingual Dysarthria Severity Assessment via Phonological Subspace Analysis in Self-Supervised Speech Representations</title>
+    <updated>2026-04-11T09:38:35Z</updated>
+    <link href="https://arxiv.org/abs/2604.10123v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.10123v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Dysarthric speech severity assessment typically requires trained clinicians or supervised models built from labelled pathological speech, limiting scalability across languages and clinical settings. We present a training-free method that quantifies dysarthria severity by measuring degradation in phonological feature subspaces within frozen HuBERT representations. No supervised severity model is trained; feature directions are estimated from healthy control speech using a pretrained forced aligner. For each speaker, we extract phone-level embeddings via Montreal Forced Aligner, compute d-prime scores along phonological contrast directions (nasality, voicing, stridency, sonorance, manner, and four vowel features) derived exclusively from healthy controls, and construct a 12-dimensional phonological profile.Evaluating 890 speakers across 10 corpora, 5 languages (English, Spanish, Dutch, Mandarin, French), and 3 primary aetiologies (Parkinson's disease, cerebral palsy, ALS), we find that all five consonant d-prime features correlate significantly with clinical severity (random-effects meta-analysis rho = -0.50 to -0.56, p &lt; 2e-4; pooled Spearman rho = -0.47 to -0.55 with bootstrap 95% CIs not crossing zero). The effect replicates within individual corpora, survives FDR correction, and remains robust to leave-one-corpus-out removal and alignment quality controls. Nasality d-prime decreases monotonically from control to severe in 6 of 7 severity-graded corpora. Mann-Whitney U tests confirm that all 12 features distinguish controls from severely dysarthric speakers (p &lt; 0.001).The method requires no dysarthric training data and applies to any language with an existing MFA acoustic model (currently 29 languages). We release the full pipeline and phone feature configurations for six languages.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-11T09:38:35Z</published>
+    <arxiv:comment>Submitted to PLOS digital health</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Bernard Muller</name>
+    </author>
+    <author>
+      <name>Antonio Armando Ortiz Barrañón</name>
+    </author>
+    <author>
+      <name>LaVonne Roberts</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2603.02937v1</id>
+    <title>Bias and Fairness in Self-Supervised Acoustic Representations for Cognitive Impairment Detection</title>
+    <updated>2026-03-03T12:47:31Z</updated>
+    <link href="https://arxiv.org/abs/2603.02937v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2603.02937v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech-based detection of cognitive impairment (CI) offers a promising non-invasive approach for early diagnosis, yet performance disparities across demographic and clinical subgroups remain underexplored, raising concerns around fairness and generalizability. This study presents a systematic bias analysis of acoustic-based CI and depression classification using the DementiaBank Pitt Corpus. We compare traditional acoustic features (MFCCs, eGeMAPS) with contextualized speech embeddings from Wav2Vec 2.0 (W2V2), and evaluate classification performance across gender, age, and depression-status subgroups. For CI detection, higher-layer W2V2 embeddings outperform baseline features (UAR up to 80.6\%), but exhibit performance disparities; specifically, females and younger participants demonstrate lower discriminative power (\(AUC\): 0.769 and 0.746, respectively) and substantial specificity disparities (\(Δ_{spec}\) up to 18\% and 15\%, respectively), leading to a higher risk of misclassifications than their counterparts. These disparities reflect representational biases, defined as systematic differences in model performance across demographic or clinical subgroups. Depression detection within CI subjects yields lower overall performance, with mild improvements from low and mid-level W2V2 layers. Cross-task generalization between CI and depression classification is limited, indicating that each task depends on distinct representations. These findings emphasize the need for fairness-aware model evaluation and subgroup-specific analysis in clinical speech applications, particularly in light of demographic and clinical heterogeneity in real-world applications.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-03-03T12:47:31Z</published>
+    <arxiv:comment>12 pages, 4 figures, 6 tables, Journal paper</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Kashaf Gulzar</name>
+    </author>
+    <author>
+      <name>Korbinian Riedhammer</name>
+    </author>
+    <author>
+      <name>Elmar Nöth</name>
+    </author>
+    <author>
+      <name>Andreas K. Maier</name>
+    </author>
+    <author>
+      <name>Paula Andrea Pérez-Toro</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.14671v2</id>
+    <title>Data Augmentation for Pathological Speech Enhancement</title>
+    <updated>2026-05-22T15:17:04Z</updated>
+    <link href="https://arxiv.org/abs/2602.14671v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.14671v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The performance of state-of-the-art speech enhancement (SE) models considerably degrades for pathological speech due to atypical acoustic characteristics and limited data availability. This paper systematically investigates data augmentation (DA) strategies to improve SE performance for pathological speakers affected by Parkinson`s disease, evaluating both predictive and generative SE models. We examine three DA categories, i.e., transformative, generative, and noise augmentation, assessing their impact with objective SE metrics. Experimental results show that noise augmentation consistently delivers the largest and most robust gains, transformative augmentations provide moderate improvements, while generative augmentation yields limited benefits and can harm performance as the amount of synthetic data increases. Furthermore, we show that the effectiveness of DA varies depending on the SE model, with DA being more beneficial for predictive SE models. While our results demonstrate that DA improves SE performance for pathological speakers, a performance gap between neurotypical and pathological speech persists, highlighting the need for future research on targeted DA strategies for pathological speech.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-16T11:50:09Z</published>
+    <arxiv:comment>Accepted at EUSIPCO 2026</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Mingchi Hou</name>
+    </author>
+    <author>
+      <name>Enno Hermann</name>
+    </author>
+    <author>
+      <name>Ina Kodrasi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2602.14655v1</id>
+    <title>Breaking Data Efficiency Dilemma: A Federated and Augmented Learning Framework For Alzheimer's Disease Detection via Speech</title>
+    <updated>2026-02-16T11:26:06Z</updated>
+    <link href="https://arxiv.org/abs/2602.14655v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2602.14655v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Early diagnosis of Alzheimer's Disease (AD) is crucial for delaying its progression. While AI-based speech detection is non-invasive and cost-effective, it faces a critical data efficiency dilemma due to medical data scarcity and privacy barriers. Therefore, we propose FAL-AD, a novel framework that synergistically integrates federated learning with data augmentation to systematically optimize data efficiency. Our approach delivers three key breakthroughs: First, absolute efficiency improvement through voice conversion-based augmentation, which generates diverse pathological speech samples via cross-category voice-content recombination. Second, collaborative efficiency breakthrough via an adaptive federated learning paradigm, maximizing cross-institutional benefits under privacy constraints. Finally, representational efficiency optimization by an attentive cross-modal fusion model, which achieves fine-grained word-level alignment and acoustic-textual interaction. Evaluated on ADReSSo, FAL-AD achieves a state-of-the-art multi-modal accuracy of 91.52%, outperforming all centralized baselines and demonstrating a practical solution to the data efficiency dilemma. Our source code is publicly available at https://github.com/smileix/fal-ad.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-02-16T11:26:06Z</published>
+    <arxiv:comment>5 pages, 1 figures, accepted by ICASSP 2026 conference</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Xiao Wei</name>
+    </author>
+    <author>
+      <name>Bin Wen</name>
+    </author>
+    <author>
+      <name>Yuqin Lin</name>
+    </author>
+    <author>
+      <name>Kai Li</name>
+    </author>
+    <author>
+      <name>Mingyang gu</name>
+    </author>
+    <author>
+      <name>Xiaobao Wang</name>
+    </author>
+    <author>
+      <name>Longbiao Wang</name>
+    </author>
+    <author>
+      <name>Jianwu Dang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2601.16989v1</id>
+    <title>The Voice of Equity: A Systematic Evaluation of Bias Mitigation Techniques for Speech-Based Cognitive Impairment Detection Across Architectures and Demographics</title>
+    <updated>2026-01-07T11:47:24Z</updated>
+    <link href="https://arxiv.org/abs/2601.16989v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2601.16989v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech-based detection of cognitive impairment offers a scalable, non-invasive screening, yet algorithmic bias across demographic and linguistic subgroups remains critically underexplored. We present the first comprehensive fairness analysis framework for speech-based multi-class cognitive impairment detection, systematically evaluating bias mitigation across architectures, and demographic subgroups. We developed two transformer-based architectures, SpeechCARE-AGF and Whisper-LWF-LoRA, on the multilingual NIA PREPARE Challenge dataset. Unlike prior work that typically examines single mitigation techniques, we compared pre-processing, in-processing, and post-processing approaches, assessing fairness via Equality of Opportunity and Equalized Odds across gender, age, education, and language. Both models achieved strong performance (F1: SpeechCARE-AGF 70.87, Whisper-LWF-LoRA 71.46) but exhibited substantial fairness disparities. Adults &gt;=80 showed lower sensitivity versus younger groups; Spanish speakers demonstrated reduced TPR versus English speakers. Mitigation effectiveness varied by architecture: oversampling improved SpeechCARE-AGF for older adults (80+ TPR: 46.19%=&gt;49.97%) but minimally affected Whisper-LWF-LoRA. This study addresses a critical healthcare AI gap by demonstrating that architectural design fundamentally shapes bias patterns and mitigation effectiveness. Adaptive fusion mechanisms enable flexible responses to data interventions, while frequency reweighting offers robust improvements across architectures. Our findings establish that fairness interventions must be tailored to both model architecture and demographic characteristics, providing a systematic framework for developing equitable speech-based screening tools essential for reducing diagnostic disparities in cognitive healthcare.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-01-07T11:47:24Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Yasaman Haghbin</name>
+    </author>
+    <author>
+      <name>Sina Rashidi</name>
+    </author>
+    <author>
+      <name>Ali Zolnour</name>
+    </author>
+    <author>
+      <name>Maryam Zolnoori</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2510.03758v1</id>
+    <title>Cross-Lingual Multi-Granularity Framework for Interpretable Parkinson's Disease Diagnosis from Speech</title>
+    <updated>2025-10-04T09:51:00Z</updated>
+    <link href="https://arxiv.org/abs/2510.03758v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2510.03758v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Parkinson's Disease (PD) affects over 10 million people worldwide, with speech impairments in up to 89% of patients. Current speech-based detection systems analyze entire utterances, potentially overlooking the diagnostic value of specific phonetic elements. We developed a granularity-aware approach for multilingual PD detection using an automated pipeline that extracts time-aligned phonemes, syllables, and words from recordings. Using Italian, Spanish, and English datasets, we implemented a bidirectional LSTM with multi-head attention to compare diagnostic performance across the different granularity levels. Phoneme-level analysis achieved superior performance with AUROC of 93.78% +- 2.34% and accuracy of 92.17% +- 2.43%. This demonstrates enhanced diagnostic capability for cross-linguistic PD detection. Importantly, attention analysis revealed that the most informative speech features align with those used in established clinical protocols: sustained vowels (/a/, /e/, /o/, /i/) at phoneme level, diadochokinetic syllables (/ta/, /pa/, /la/, /ka/) at syllable level, and /pataka/ sequences at word level. Source code will be available at https://github.com/jetliqs/clearpd.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-10-04T09:51:00Z</published>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Ilias Tougui</name>
+    </author>
+    <author>
+      <name>Mehdi Zakroum</name>
+    </author>
+    <author>
+      <name>Mounir Ghogho</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.09385v1</id>
+    <title>Understanding Dementia Speech Alignment with Diffusion-Based Image Generation</title>
+    <updated>2025-08-12T23:00:36Z</updated>
+    <link href="https://arxiv.org/abs/2508.09385v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.09385v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Text-to-image models generate highly realistic images based on natural language descriptions and millions of users use them to create and share images online. While it is expected that such models can align input text and generated image in the same latent space little has been done to understand whether this alignment is possible between pathological speech and generated images. In this work, we examine the ability of such models to align dementia-related speech information with the generated images and develop methods to explain this alignment. Surprisingly, we found that dementia detection is possible from generated images alone achieving 75% accuracy on the ADReSS dataset. We then leverage explainability methods to show which parts of the language contribute to the detection.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-12T23:00:36Z</published>
+    <arxiv:comment>Paper accepted at Interspeech 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name> Mansi</name>
+    </author>
+    <author>
+      <name>Anastasios Lepipas</name>
+    </author>
+    <author>
+      <name>Dominika Woszczyk</name>
+    </author>
+    <author>
+      <name>Yiying Guan</name>
+    </author>
+    <author>
+      <name>Soteris Demetriou</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.20058v4</id>
+    <title>Modeling Parkinson's Disease Progression Using Longitudinal Voice Biomarkers: A Comparative Study of Statistical and Neural Mixed-Effects Models</title>
+    <updated>2026-04-27T06:59:28Z</updated>
+    <link href="https://arxiv.org/abs/2507.20058v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.20058v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Longitudinal voice biomarkers provide a non-invasive source of information for monitoring Parkinson's disease progression, but their statistical analysis is difficult because repeated measurements from the same subject are correlated, clinical cohorts are often small, and disease trajectories can vary substantially across individuals. This study evaluates statistical and neural mixed-effects approaches for modeling Parkinson's disease progression from telemonitoring voice data. Using the Oxford Parkinson's telemonitoring dataset (N=42), we compare Neural Mixed Effects (NME) models, Generalized Neural Network Mixed Models (GNMMs), and semi-parametric Generalized Additive Mixed Models (GAMMs) under the same longitudinal prediction setting. The results show that neural mixed-effects models provide flexible nonlinear representations but can overfit severely in this small-sample setting, whereas GAMMs achieve stronger predictive performance and retain interpretable smooth effects and subject-level structure. In particular, the GAMM-based approach attains the lowest prediction error (MSE 6.56), while the neural baselines have substantially larger errors (MSE &gt; 90). These findings support the use of interpretable statistical mixed-effects models for small longitudinal telemonitoring studies and suggest that larger and more diverse cohorts are needed before highly flexible neural mixed-effects models can be reliably assessed in this application.</summary>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-26T20:56:32Z</published>
+    <arxiv:comment>Published version: Computer Methods and Programs in Biomedicine Update, DOI: 10.1016/j.cmpbup.2026.100242. Version note: https://doi.org/10.5281/zenodo.19804672</arxiv:comment>
+    <arxiv:primary_category term="stat.ML"/>
+    <arxiv:journal_ref>Computer Methods and Programs in Biomedicine Update, Volume 9, 2026, Article 100242</arxiv:journal_ref>
+    <author>
+      <name>Ran Tong</name>
+    </author>
+    <author>
+      <name>Lanruo Wang</name>
+    </author>
+    <author>
+      <name>Tong Wang</name>
+    </author>
+    <author>
+      <name>Wei Yan</name>
+    </author>
+    <arxiv:doi>10.1016/j.cmpbup.2026.100242</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.cmpbup.2026.100242" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.06412v1</id>
+    <title>Voice biomarkers of perinatal depression: cross-sectional nationwide pilot study report</title>
+    <updated>2025-05-09T20:26:14Z</updated>
+    <link href="https://arxiv.org/abs/2505.06412v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.06412v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Perinatal depression (PND) affects 1 in 5 mothers, with 85% lacking support. Digital health tools offer early identification and prevention, potentially reducing PND risk by over 50% and improving engagement. Despite high interest, user retention needs improvement for maximum benefit. Voice biomarkers have emerged as a possible digital alternative to collecting mood questionnaires to inform individualized user adherence and retention. However, no voice biomarkers have been developed specifically for pregnant mothers. We aimed to test an unstructured speech sample for the feasibility of yielding a machine learning (ML) model to predict PND. We surveyed 446 women nationwide at 22 weeks of gestation. We measured PHQ-8 and modified EPDS and four voice samples. Participants were classified as depressed if their PHQ-8 or EPDS were equal or higher than 10. In the present report, we focus on a 2-minute unstructured speech prompt. A standardized cleaning pipeline was applied to the audio files, including a uniform format conversion, segment filtering for background noise, extraneous acoustic events, and file size. This resulted in 112 high-quality voice recordings, i.e., a rate of 25%. The ML modeling strategy utilized the Allie ML framework on 80% of the data for training on the binary classification task (depressed or not). The analysis included steps for feature selection using referenced speech audio embeddings, followed by a TPOT classifier for ML. We report the validation results for the 20% held-out data. For PHQ-8, we achieved a balanced accuracy of ~71%, precision of 73%, recall of 68%, and AUC of 0.71. For EPDS, we achieved a balanced accuracy of 80%, precision of 92%, recall of 80%, and AUC of 0.80. In conclusion, we demonstrate the feasibility at scale and a promising accuracy for detecting PND using 120 seconds of unstructured speech audio data in expectant mothers.</summary>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-09T20:26:14Z</published>
+    <arxiv:comment>Study pre-registration: http://dx.doi.org/10.17605/OSF.IO/K387T</arxiv:comment>
+    <arxiv:primary_category term="q-bio.QM"/>
+    <author>
+      <name>Rachel L. Wiley</name>
+    </author>
+    <author>
+      <name>Jim Schwoebel</name>
+    </author>
+    <author>
+      <name>Joel Shor</name>
+    </author>
+    <author>
+      <name>Bindu Chanagala</name>
+    </author>
+    <author>
+      <name>Matias Caccia</name>
+    </author>
+    <author>
+      <name>Adolfo M. García</name>
+    </author>
+    <author>
+      <name>Sheehan D. Fisher</name>
+    </author>
+    <author>
+      <name>Martin G. Frasch</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2503.14036v1</id>
+    <title>Variational Autoencoder for Personalized Pathological Speech Enhancement</title>
+    <updated>2025-03-18T08:54:00Z</updated>
+    <link href="https://arxiv.org/abs/2503.14036v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2503.14036v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The generalizability of speech enhancement (SE) models across speaker conditions remains largely unexplored, despite its critical importance for broader applicability. This paper investigates the performance of the hybrid variational autoencoder (VAE)-non-negative matrix factorization (NMF) model for SE, focusing primarily on its generalizability to pathological speakers with Parkinson's disease. We show that VAE models trained on large neurotypical datasets perform poorly on pathological speech. While fine-tuning these pre-trained models with pathological speech improves performance, a performance gap remains between neurotypical and pathological speakers. To address this gap, we propose using personalized SE models derived from fine-tuning pre-trained models with only a few seconds of clean data from each speaker. Our results demonstrate that personalized models considerably enhance performance for all speakers, achieving comparable results for both neurotypical and pathological speakers.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-03-18T08:54:00Z</published>
+    <arxiv:comment>Submitted to EUSIPCO 2025</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Mingchi Hou</name>
+    </author>
+    <author>
+      <name>Ina Kodrasi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2502.10896v1</id>
+    <title>Developing Conversational Speech Systems for Robots to Detect Speech Biomarkers of Cognition in People Living with Dementia</title>
+    <updated>2025-02-15T20:25:58Z</updated>
+    <link href="https://arxiv.org/abs/2502.10896v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2502.10896v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This study presents the development and testing of a conversational speech system designed for robots to detect speech biomarkers indicative of cognitive impairments in people living with dementia (PLwD). The system integrates a backend Python WebSocket server and a central core module with a large language model (LLM) fine-tuned for dementia to process user input and generate robotic conversation responses in real-time in less than 1.5 seconds. The frontend user interface, a Progressive Web App (PWA), displays information and biomarker score graphs on a smartphone in real-time to human users (PLwD, caregivers, clinicians). Six speech biomarkers based on the existing literature - Altered Grammar, Pragmatic Impairments, Anomia, Disrupted Turn-Taking, Slurred Pronunciation, and Prosody Changes - were developed for the robot conversation system using two datasets, one that included conversations of PLwD with a human clinician (DementiaBank dataset) and one that included conversations of PLwD with a robot (Indiana dataset). We also created a composite speech biomarker that combined all six individual biomarkers into a single score. The speech system's performance was first evaluated on the DementiaBank dataset showing moderate correlation with MMSE scores, with the composite biomarker score outperforming individual biomarkers. Analysis of the Indiana dataset revealed higher and more variable biomarker scores, suggesting potential differences due to study populations (e.g. severity of dementia) and the conversational scenario (human-robot conversations are different from human-human). The findings underscore the need for further research on the impact of conversational scenarios on speech biomarkers and the potential clinical applications of robotic speech systems.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-02-15T20:25:58Z</published>
+    <arxiv:comment>Main paper 28 pages long (pg 2-30), includes 5 figures, 5 tables, 1 Appendix at end</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Rohith Perumandla</name>
+    </author>
+    <author>
+      <name>Young-Ho Bae</name>
+    </author>
+    <author>
+      <name>Diego Izaguirre</name>
+    </author>
+    <author>
+      <name>Esther Hwang</name>
+    </author>
+    <author>
+      <name>Andrew Murphy</name>
+    </author>
+    <author>
+      <name>Long-Jing Hsu</name>
+    </author>
+    <author>
+      <name>Selma Sabanovic</name>
+    </author>
+    <author>
+      <name>Casey C. Bennett</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.18731v2</id>
+    <title>Evaluating Spoken Language as a Biomarker for Automated Screening of Cognitive Impairment</title>
+    <updated>2026-03-02T19:33:35Z</updated>
+    <link href="https://arxiv.org/abs/2501.18731v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.18731v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Timely and accurate assessment of cognitive impairment remains a major unmet need. Speech biomarkers offer a scalable, non-invasive, cost-effective solution for automated screening. However, the clinical utility of machine learning (ML) remains limited by interpretability and generalisability to real-world speech datasets. We evaluate explainable ML for screening of Alzheimer's disease and related dementias (ADRD) and severity prediction using benchmark DementiaBank speech (N = 291, 64% female, 69.8 (SD = 8.6) years). We validate generalisability on pilot data collected in-residence (N = 22, 59% female, 76.2 (SD = 8.0) years). To enhance clinical utility, we stratify risk for actionable triage and assess linguistic feature importance. We show that a Random Forest trained on linguistic features for ADRD detection achieves a mean sensitivity of 69.4% (95% confidence interval (CI) = 66.4-72.5) and specificity of 83.3% (78.0-88.7). On pilot data, this model yields a mean sensitivity of 70.0% (58.0-82.0) and specificity of 52.5% (39.3-65.7). For prediction of Mini-Mental State Examination (MMSE) scores, a Random Forest Regressor achieves a mean absolute MMSE error of 3.7 (3.7-3.8), with comparable performance of 3.3 (3.1-3.5) on pilot data. Risk stratification improves specificity by 13% on the test set, offering a pathway for clinical triage. Linguistic features associated with ADRD include increased use of pronouns and adverbs, greater disfluency, reduced analytical thinking, lower lexical diversity, and fewer words that reflect a psychological state of completion. Our predictive modelling shows promise for integration with conversational technology at home to monitor cognitive health and triage higher-risk individuals, enabling early screening and intervention.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-30T20:17:17Z</published>
+    <arxiv:comment>Published in Nature Communications Medicine (2025)</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Maria R. Lima</name>
+    </author>
+    <author>
+      <name>Alexander Capstick</name>
+    </author>
+    <author>
+      <name>Fatemeh Geranmayeh</name>
+    </author>
+    <author>
+      <name>Ramin Nilforooshan</name>
+    </author>
+    <author>
+      <name>Maja Matarić</name>
+    </author>
+    <author>
+      <name>Ravi Vaidyanathan</name>
+    </author>
+    <author>
+      <name>Payam Barnaghi</name>
+    </author>
+    <arxiv:doi>10.1038/s43856-025-01263-1</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s43856-025-01263-1" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.13933v1</id>
+    <title>Investigating the Effects of Diffusion-based Conditional Generative Speech Models Used for Speech Enhancement on Dysarthric Speech</title>
+    <updated>2024-12-18T15:18:05Z</updated>
+    <link href="https://arxiv.org/abs/2412.13933v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.13933v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this study, we aim to explore the effect of pre-trained conditional generative speech models for the first time on dysarthric speech due to Parkinson's disease recorded in an ideal/non-noisy condition. Considering one category of generative models, i.e., diffusion-based speech enhancement, these models are previously trained to learn the distribution of clean (i.e, recorded in a noise-free environment) typical speech signals. Therefore, we hypothesized that when being exposed to dysarthric speech they might remove the unseen atypical paralinguistic cues during the enhancement process. By considering the automatic dysarthric speech detection task, in this study, we experimentally show that during the enhancement process of dysarthric speech data recorded in an ideal non-noisy environment, some of the acoustic dysarthric speech cues are lost. Therefore such pre-trained models are not yet suitable in the context of dysarthric speech enhancement since they manipulate the pathological speech cues when they process clean dysarthric speech. Furthermore, we show that the removed acoustics cues by the enhancement models in the form of residue speech signal can provide complementary dysarthric cues when fused with the original input speech signal in the feature space.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-18T15:18:05Z</published>
+    <arxiv:comment>Accepted at ICASSP 2025 Satellite Workshop: Workshop on Speech Pathology Analysis and DEtection (SPADE)</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Joanna Reszka</name>
+    </author>
+    <author>
+      <name>Parvaneh Janbakhshi</name>
+    </author>
+    <author>
+      <name>Tilak Purohit</name>
+    </author>
+    <author>
+      <name>Sadegh Mohammadi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2412.02006v2</id>
+    <title>Unveiling Interpretability in Self-Supervised Speech Representations for Parkinson's Diagnosis</title>
+    <updated>2025-02-10T13:25:26Z</updated>
+    <link href="https://arxiv.org/abs/2412.02006v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2412.02006v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent works in pathological speech analysis have increasingly relied on powerful self-supervised speech representations, leading to promising results. However, the complex, black-box nature of these embeddings and the limited research on their interpretability significantly restrict their adoption for clinical diagnosis. To address this gap, we propose a novel, interpretable framework specifically designed to support Parkinson's Disease (PD) diagnosis. Through the design of simple yet effective cross-attention mechanisms for both embedding- and temporal-level analysis, the proposed framework offers interpretability from two distinct but complementary perspectives. Experimental findings across five well-established speech benchmarks for PD detection demonstrate the framework's capability to identify meaningful speech patterns within self-supervised representations for a wide range of assessment tasks. Fine-grained temporal analyses further underscore its potential to enhance the interpretability of deep-learning pathological speech models, paving the way for the development of more transparent, trustworthy, and clinically applicable computer-assisted diagnosis systems in this domain. Moreover, in terms of classification accuracy, our method achieves results competitive with state-of-the-art approaches, while also demonstrating robustness in cross-lingual scenarios when applied to spontaneous speech production.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-12-02T22:23:43Z</published>
+    <arxiv:comment>Accepted in the Special Issue on "Modelling and Processing Language and Speech in Neurodegenerative Disorders" published by Journal of Selected Topics in Signal Processing (JSTSP)</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>David Gimeno-Gómez</name>
+    </author>
+    <author>
+      <name>Catarina Botelho</name>
+    </author>
+    <author>
+      <name>Anna Pompili</name>
+    </author>
+    <author>
+      <name>Alberto Abad</name>
+    </author>
+    <author>
+      <name>Carlos-D. Martínez-Hinarejos</name>
+    </author>
+    <arxiv:doi>10.1109/JSTSP.2025.3539845</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/JSTSP.2025.3539845" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.04142v1</id>
+    <title>Unified Pathological Speech Analysis with Prompt Tuning</title>
+    <updated>2024-11-05T06:47:26Z</updated>
+    <link href="https://arxiv.org/abs/2411.04142v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.04142v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Pathological speech analysis has been of interest in the detection of certain diseases like depression and Alzheimer's disease and attracts much interest from researchers. However, previous pathological speech analysis models are commonly designed for a specific disease while overlooking the connection between diseases, which may constrain performance and lower training efficiency. Instead of fine-tuning deep models for different tasks, prompt tuning is a much more efficient training paradigm. We thus propose a unified pathological speech analysis system for as many as three diseases with the prompt tuning technique. This system uses prompt tuning to adjust only a small part of the parameters to detect different diseases from speeches of possible patients. Our system leverages a pre-trained spoken language model and demonstrates strong performance across multiple disorders while only fine-tuning a fraction of the parameters. This efficient training approach leads to faster convergence and improved F1 scores by allowing knowledge to be shared across tasks. Our experiments on Alzheimer's disease, Depression, and Parkinson's disease show competitive results, highlighting the effectiveness of our method in pathological speech analysis.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-05T06:47:26Z</published>
+    <arxiv:comment>This work has been submitted to the IEEE for possible publication</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Fei Yang</name>
+    </author>
+    <author>
+      <name>Xuenan Xu</name>
+    </author>
+    <author>
+      <name>Mengyue Wu</name>
+    </author>
+    <author>
+      <name>Kai Yu</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2409.19078v3</id>
+    <title>Differential privacy enables fair and accurate AI-based analysis of speech disorders while protecting patient data</title>
+    <updated>2025-05-30T18:45:56Z</updated>
+    <link href="https://arxiv.org/abs/2409.19078v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2409.19078v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech pathology has impacts on communication abilities and quality of life. While deep learning-based models have shown potential in diagnosing these disorders, the use of sensitive data raises critical privacy concerns. Although differential privacy (DP) has been explored in the medical imaging domain, its application in pathological speech analysis remains largely unexplored despite the equally critical privacy concerns. To the best of our knowledge, this study is the first to investigate DP's impact on pathological speech data, focusing on the trade-offs between privacy, diagnostic accuracy, and fairness. Using a large, real-world dataset of 200 hours of recordings from 2,839 German-speaking participants, we observed a maximum accuracy reduction of 3.85% when training with DP with high privacy levels. To highlight real-world privacy risks, we demonstrated the vulnerability of non-private models to gradient inversion attacks, reconstructing identifiable speech samples and showcasing DP's effectiveness in mitigating these risks. To explore the potential generalizability across languages and disorders, we validated our approach on a dataset of Spanish-speaking Parkinson's disease patients, leveraging pretrained models from healthy English-speaking datasets, and demonstrated that careful pretraining on large-scale task-specific datasets can maintain favorable accuracy under DP constraints. A comprehensive fairness analysis revealed minimal gender bias at reasonable privacy levels but underscored the need for addressing age-related disparities. Our results establish that DP can balance privacy and utility in speech disorder detection, while highlighting unique challenges in privacy-fairness trade-offs for speech data. This provides a foundation for refining DP methodologies and improving fairness across diverse patient groups in real-world deployments.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-09-27T18:25:54Z</published>
+    <arxiv:primary_category term="cs.LG"/>
+    <arxiv:journal_ref>npj Artificial Intelligence 1, 37 (2025)</arxiv:journal_ref>
+    <author>
+      <name>Soroosh Tayebi Arasteh</name>
+    </author>
+    <author>
+      <name>Mahshad Lotfinia</name>
+    </author>
+    <author>
+      <name>Paula Andrea Perez-Toro</name>
+    </author>
+    <author>
+      <name>Tomas Arias-Vergara</name>
+    </author>
+    <author>
+      <name>Mahtab Ranji</name>
+    </author>
+    <author>
+      <name>Juan Rafael Orozco-Arroyave</name>
+    </author>
+    <author>
+      <name>Maria Schuster</name>
+    </author>
+    <author>
+      <name>Andreas Maier</name>
+    </author>
+    <author>
+      <name>Seung Hee Yang</name>
+    </author>
+    <arxiv:doi>10.1038/s44387-025-00040-8</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s44387-025-00040-8" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.02572v1</id>
+    <title>Selfsupervised learning for pathological speech detection</title>
+    <updated>2024-05-16T07:12:47Z</updated>
+    <link href="https://arxiv.org/abs/2406.02572v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.02572v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech production is a complex phenomenon, wherein the brain orchestrates a sequence of processes involving thought processing, motor planning, and the execution of articulatory movements. However, this intricate execution of various processes is susceptible to influence and disruption by various neurodegenerative pathological speech disorders, such as Parkinsons' disease, resulting in dysarthria, apraxia, and other conditions. These disorders lead to pathological speech characterized by abnormal speech patterns and imprecise articulation. Diagnosing these speech disorders in clinical settings typically involves auditory perceptual tests, which are time-consuming, and the diagnosis can vary among clinicians based on their experiences, biases, and cognitive load during the diagnosis. Additionally, unlike neurotypical speakers, patients with speech pathologies or impairments are unable to access various virtual assistants such as Alexa, Siri, etc. To address these challenges, several automatic pathological speech detection (PSD) approaches have been proposed. These approaches aim to provide efficient and accurate detection of speech disorders, thereby facilitating timely intervention and support for individuals affected by these conditions. These approaches mainly vary in two aspects: the input representations utilized and the classifiers employed. Due to the limited availability of data, the performance of detection remains subpar. Self-supervised learning (SSL) embeddings, such as wav2vec2, and their multilingual versions, are being explored as a promising avenue to improve performance. These embeddings leverage self-supervised learning techniques to extract rich representations from audio data, thereby offering a potential solution to address the limitations posed by the scarcity of labeled data.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-05-16T07:12:47Z</published>
+    <arxiv:comment>in Intersection of Book Chapter in Machine Leanring and Computational Social Sciences CRC (in progress) 2024</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Shakeel Ahmad Sheikh</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.13812v2</id>
+    <title>Voice-Driven Mortality Prediction in Hospitalized Heart Failure Patients: A Machine Learning Approach Enhanced with Diagnostic Biomarkers</title>
+    <updated>2024-08-14T18:55:22Z</updated>
+    <link href="https://arxiv.org/abs/2402.13812v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.13812v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Addressing heart failure (HF) as a prevalent global health concern poses difficulties in implementing innovative approaches for enhanced patient care. Predicting mortality rates in HF patients, in particular, is difficult yet critical, necessitating individualized care, proactive management, and enabling educated decision-making to enhance outcomes. Recently, the significance of voice biomarkers coupled with Machine Learning (ML) has surged, demonstrating remarkable efficacy, particularly in predicting heart failure. The synergy of voice analysis and ML algorithms provides a non-invasive and easily accessible means to evaluate patients' health. However, there is a lack of voice biomarkers for predicting mortality rates among heart failure patients with standardized speech protocols. Here, we demonstrate a powerful and effective ML model for predicting mortality rates in hospitalized HF patients through the utilization of voice biomarkers. By seamlessly integrating voice biomarkers into routine patient monitoring, this strategy has the potential to improve patient outcomes, optimize resource allocation, and advance patient-centered HF management. In this study, a Machine Learning system, specifically a logistic regression model, is trained to predict patients' 5-year mortality rates using their speech as input. The model performs admirably and consistently, as demonstrated by cross-validation and statistical approaches (p-value &lt; 0.001). Furthermore, integrating NT-proBNP, a diagnostic biomarker in HF, improves the model's predictive accuracy substantially.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-02-21T13:50:46Z</published>
+    <arxiv:comment>11 pages, 6 figures, 5 tables. The first 2 authors have contributed equally</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Nihat Ahmadli</name>
+    </author>
+    <author>
+      <name>Mehmet Ali Sarsil</name>
+    </author>
+    <author>
+      <name>Berk Mizrak</name>
+    </author>
+    <author>
+      <name>Kurtulus Karauzum</name>
+    </author>
+    <author>
+      <name>Ata Shaker</name>
+    </author>
+    <author>
+      <name>Erol Tulumen</name>
+    </author>
+    <author>
+      <name>Didar Mirzamidinov</name>
+    </author>
+    <author>
+      <name>Dilek Ural</name>
+    </author>
+    <author>
+      <name>Onur Ergen</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2402.00897v1</id>
+    <title>Screening method for early dementia using sound objects as voice biomarkers</title>
+    <updated>2024-01-31T19:20:08Z</updated>
+    <link href="https://arxiv.org/abs/2402.00897v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2402.00897v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Introduction: We present a screening method for early dementia using features based on sound objects as voice biomarkers.
+  Methods: The final dataset used for machine learning models consisted of 266 observations, with a distribution of 186 healthy individuals, 46 diagnosed with Alzheimer's, and 34 with MCI. This method is based on six-second recordings of the sustained vowel /a/ spoken by the subject. The main original contribution of this work is the use of carefully crafted features based on sound objects. This approach allows one to first represent the sound spectrum in a more accurate way than the standard spectrum, and then build interpretable features containing relevant information about subjects' control over their voice.
+  Results: ROC AUC obtained in this work for distinguishing healthy subjects from those with MCI was 0.85, while accuracy was 0.76. For distinguishing between healthy subjects and those with either MCI or Alzheimer's the results were 0.84, 0.77, respectively.
+  Conclusion: The use of features based on sound objects enables screening for early dementia even on very short recordings of language-independent voice samples.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="q-bio.QM" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-01-31T19:20:08Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Adam Pluta</name>
+    </author>
+    <author>
+      <name>Zbigniew Pioch</name>
+    </author>
+    <author>
+      <name>Jędrzej Kardach</name>
+    </author>
+    <author>
+      <name>Piotr Zioło</name>
+    </author>
+    <author>
+      <name>Tomasz Kręcicki</name>
+    </author>
+    <author>
+      <name>Elżbieta Trypka</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2307.10005v1</id>
+    <title>Alzheimer's Disease Detection from Spontaneous Speech and Text: A review</title>
+    <updated>2023-07-19T14:42:37Z</updated>
+    <link href="https://arxiv.org/abs/2307.10005v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2307.10005v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In the past decade, there has been a surge in research examining the use of voice and speech analysis as a means of detecting neurodegenerative diseases such as Alzheimer's. Many studies have shown that certain acoustic features can be used to differentiate between normal aging and Alzheimer's disease, and speech analysis has been found to be a cost-effective method of detecting Alzheimer's dementia. The aim of this review is to analyze the various algorithms used in speech-based detection and classification of Alzheimer's disease. A literature survey was conducted using databases such as Web of Science, Google Scholar, and Science Direct, and articles published from January 2020 to the present were included based on keywords such as ``Alzheimer's detection'', "speech," and "natural language processing." The ADReSS, Pitt corpus, and CCC datasets are commonly used for the analysis of dementia from speech, and this review focuses on the various acoustic and linguistic feature engineering-based classification models drawn from 15 studies.
+  Based on the findings of this study, it appears that a more accurate model for classifying Alzheimer's disease can be developed by considering both linguistic and acoustic data. The review suggests that speech signals can be a useful tool for detecting dementia and may serve as a reliable biomarker for efficiently identifying Alzheimer's disease.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-07-19T14:42:37Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Vrindha M. K.</name>
+    </author>
+    <author>
+      <name>Geethu V.</name>
+    </author>
+    <author>
+      <name>Anurenjan P. R.</name>
+    </author>
+    <author>
+      <name>Deepak S.</name>
+    </author>
+    <author>
+      <name>Sreeni K. G.</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2112.11514v1</id>
+    <title>The Phonetic Footprint of Parkinson's Disease</title>
+    <updated>2021-12-21T20:44:21Z</updated>
+    <link href="https://arxiv.org/abs/2112.11514v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2112.11514v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>As one of the most prevalent neurodegenerative disorders, Parkinson's disease (PD) has a significant impact on the fine motor skills of patients. The complex interplay of different articulators during speech production and realization of required muscle tension become increasingly difficult, thus leading to a dysarthric speech. Characteristic patterns such as vowel instability, slurred pronunciation and slow speech can often be observed in the affected individuals and were analyzed in previous studies to determine the presence and progression of PD. In this work, we used a phonetic recognizer trained exclusively on healthy speech data to investigate how PD affected the phonetic footprint of patients. We rediscovered numerous patterns that had been described in previous contributions although our system had never seen any pathological speech previously. Furthermore, we could show that intermediate activations from the neural network could serve as feature vectors encoding information related to the disease state of individuals. We were also able to directly correlate the expert-rated intelligibility of a speaker with the mean confidence of phonetic predictions. Our results support the assumption that pathological data is not necessarily required to train systems that are capable of analyzing PD speech.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-12-21T20:44:21Z</published>
+    <arxiv:comment>https://www.sciencedirect.com/science/article/abs/pii/S0885230821001169</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <arxiv:journal_ref>Elsevier Computer Speech and Language, Volume 72, March 2022</arxiv:journal_ref>
+    <author>
+      <name>Philipp Klumpp</name>
+    </author>
+    <author>
+      <name>Tomás Arias-Vergara</name>
+    </author>
+    <author>
+      <name>Juan Camilo Vásquez-Correa</name>
+    </author>
+    <author>
+      <name>Paula Andrea Pérez-Toro</name>
+    </author>
+    <author>
+      <name>Juan Rafael Orozco-Arroyave</name>
+    </author>
+    <author>
+      <name>Anton Batliner</name>
+    </author>
+    <author>
+      <name>Elmar Nöth</name>
+    </author>
+    <arxiv:doi>10.1016/j.csl.2021.101321</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.csl.2021.101321" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2106.00531v2</id>
+    <title>Supervised Speech Representation Learning for Parkinson's Disease Classification</title>
+    <updated>2021-07-21T13:12:30Z</updated>
+    <link href="https://arxiv.org/abs/2106.00531v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2106.00531v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently proposed automatic pathological speech classification techniques use unsupervised auto-encoders to obtain a high-level abstract representation of speech. Since these representations are learned based on reconstructing the input, there is no guarantee that they are robust to pathology-unrelated cues such as speaker identity information. Further, these representations are not necessarily discriminative for pathology detection. In this paper, we exploit supervised auto-encoders to extract robust and discriminative speech representations for Parkinson's disease classification. To reduce the influence of speaker variabilities unrelated to pathology, we propose to obtain speaker identity-invariant representations by adversarial training of an auto-encoder and a speaker identification task. To obtain a discriminative representation, we propose to jointly train an auto-encoder and a pathological speech classifier. Experimental results on a Spanish database show that the proposed supervised representation learning methods yield more robust and discriminative representations for automatically classifying Parkinson's disease speech, outperforming the baseline unsupervised representation learning system.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-06-01T14:48:08Z</published>
+    <arxiv:comment>Accepted in ITG Conference on Speech Communication 2021</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Parvaneh Janbakhshi</name>
+    </author>
+    <author>
+      <name>Ina Kodrasi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1811.12254v1</id>
+    <title>The Effect of Heterogeneous Data for Alzheimer's Disease Detection from Speech</title>
+    <updated>2018-11-29T15:37:45Z</updated>
+    <link href="https://arxiv.org/abs/1811.12254v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1811.12254v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Speech datasets for identifying Alzheimer's disease (AD) are generally restricted to participants performing a single task, e.g. describing an image shown to them. As a result, models trained on linguistic features derived from such datasets may not be generalizable across tasks. Building on prior work demonstrating that same-task data of healthy participants helps improve AD detection on a single-task dataset of pathological speech, we augment an AD-specific dataset consisting of subjects describing a picture with multi-task healthy data. We demonstrate that normative data from multiple speech-based tasks helps improve AD detection by up to 9%. Visualization of decision boundaries reveals that models trained on a combination of structured picture descriptions and unstructured conversational speech have the least out-of-task error and show the most potential to generalize to multiple tasks. We analyze the impact of age of the added samples and if they affect fairness in classification. We also provide explanations for a possible inductive bias effect across tasks using model-agnostic feature anchors. This work highlights the need for heterogeneous datasets for encoding changes in multiple facets of cognition and for developing a task-independent AD detection model.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-11-29T15:37:45Z</published>
+    <arxiv:comment>Machine Learning for Health (ML4H) Workshop at NeurIPS 2018 arXiv:1811.07216</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Aparna Balagopalan</name>
+    </author>
+    <author>
+      <name>Jekaterina Novikova</name>
+    </author>
+    <author>
+      <name>Frank Rudzicz</name>
+    </author>
+    <author>
+      <name>Marzyeh Ghassemi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1712.09347v1</id>
+    <title>Smart Fog: Fog Computing Framework for Unsupervised Clustering Analytics in Wearable Internet of Things</title>
+    <updated>2017-12-25T02:08:39Z</updated>
+    <link href="https://arxiv.org/abs/1712.09347v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1712.09347v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The increasing use of wearables in smart telehealth generates heterogeneous medical big data. Cloud and fog services process these data for assisting clinical procedures. IoT based ehealthcare have greatly benefited from efficient data processing. This paper proposed and evaluated use of low resource machine learning on Fog devices kept close to the wearables for smart healthcare. In state of the art telecare systems, the signal processing and machine learning modules are deployed in the cloud for processing physiological data. We developed a prototype of Fog-based unsupervised machine learning big data analysis for discovering patterns in physiological data. We employed Intel Edison and Raspberry Pi as Fog computer in proposed architecture. We performed validation studies on real-world pathological speech data from in home monitoring of patients with Parkinson's disease (PD). Proposed architecture employed machine learning for analysis of pathological speech data obtained from smartwatches worn by the patients with PD. Results showed that proposed architecture is promising for low-resource clinical machine learning. It could be useful for other applications within wearable IoT for smart telehealth scenarios by translating machine learning approaches from the cloud backend to edge computing devices such as Fog.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2017-12-25T02:08:39Z</published>
+    <arxiv:comment>5 pages, 3 figures. 5th IEEE Global Conference on Signal and Information Processing GlobalSIP 2017</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Debanjan Borthakur</name>
+    </author>
+    <author>
+      <name>Harishchandra Dubey</name>
+    </author>
+    <author>
+      <name>Nicholas Constant</name>
+    </author>
+    <author>
+      <name>Leslie Mahler</name>
+    </author>
+    <author>
+      <name>Kunal Mankodiya</name>
+    </author>
+  </entry>
+</feed>
