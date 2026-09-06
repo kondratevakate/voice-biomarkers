@@ -1,7 +1,8 @@
 # Voice Biomarkers Systematic Review
 
 Created: 2026-06-05
-Mode: act
+Last substantive update: 2026-09-01
+Search date of record: 2026-09-01
 
 ## 1. Current State
 
@@ -24,7 +25,11 @@ The working research question is:
 | Evaluation of Speech-Based Digital Biomarkers | review/recommendations | https://pmc.ncbi.nlm.nih.gov/articles/PMC7670321/ | authoritative | confirmed | Candidate validation framework: verification, analytical validation, clinical validation. |
 | Literature-review skill | local method | K-Dense literature-review skill | authoritative | confirmed | Review workflow: search, screening, extraction, quality assessment, synthesis, citation verification. |
 | Task-design skill | local execution method | D:/projects/knowledge-vault/07_skills/task-design.md | authoritative | confirmed | Applied to task card in TASKS.md. |
-| Abdalla Z. Mohamed method pattern | author-style note | `sources/author-style-abdalla-mohamed.md` | methodological analogy | confirmed | Used to harden reproducibility, benchmarking, and data-infrastructure requirements. |
+| V3 / V3+ | reporting framework | doi:10.1038/s41746-020-0260-4 | authoritative | confirmed | Validation lens of record: verification, analytical validation, clinical validation, usability. |
+| PROBAST | risk-of-bias tool | doi:10.7326/M18-1376 | authoritative | confirmed | Risk-of-bias structure for prediction-model studies, which is what most voice-biomarker papers are. |
+| TRIPOD+AI | reporting guideline | doi:10.1136/bmj-2023-078378 | authoritative | confirmed | Reporting expectations for machine-learning prediction models. |
+| PRISMA-ScR / PRISMA-S / JBI | reporting guidelines | doi:10.7326/M18-0850; doi:10.1186/s13643-020-01542-z; doi:10.11124/JBIES-20-00167 | authoritative | confirmed | Reporting and conduct standards for a mapping review and its search. |
+| Abdalla Z. Mohamed method pattern | author-style note | `sources/author-style-abdalla-mohamed.md` | worked example only | confirmed | Illustration of reporting style while drafting the extraction schema. Superseded as a methodological standard by V3, PROBAST and TRIPOD+AI (DEV-014). |
 
 ## 3. Uncertainty
 
@@ -33,19 +38,37 @@ The working research question is:
 - Preprints are not confirmed peer-reviewed evidence; they can seed the search but cannot be treated as settled findings.
 - The formal search still needs query-family decomposition because one broad search is either too narrow in PubMed or too noisy in broad metadata indexes.
 
-## 4. Candidate Next Actions
+## 4. Search State
 
-1. Run formal query-family searches for terminology/validation, aging/frailty, clinical disease domains, and datasets/foundation models.
-2. Re-run arXiv and Semantic Scholar with narrower queries or API access after the pilot failures.
-3. Screen `sources/pilot-candidates.csv`, then revise inclusion/exclusion criteria before full extraction.
+The formal search is complete for five of six sources as of 2026-09-01. Eight
+query families run across PubMed, Europe PMC, Europe PMC preprints, arXiv and
+DBLP, yielding **8,499 deduplicated candidates** with **zero truncated result
+sets**: every completed family retrieved in full, so the date-sorted retrieval
+does not over-sample recent work.
+
+Eight OpenAlex source-family combinations remain outstanding, blocked by a
+rate limit applied to the client IP. They are tracked in `TASKS.md` and reported
+as errors in `sources/formal-search-counts.csv` rather than dropped.
+
+Superseded outputs are preserved rather than overwritten:
+`sources/formal-candidates-stage1-superseded.csv` and the matching
+`-stage2-superseded` pair.
 
 ## 5. Recommended Next Action
 
-Use a systematic mapping review frame first, then narrow to a full systematic review after pilot search counts are visible.
+Human title screening of `screening/screening-packet-stratified.csv`. The packet
+holds 400 records sampled proportionally across all 35 (source, query family)
+buckets, with screening decisions deliberately left empty; the SOP requires
+calibration on 50 records and at least 20% double screening before the
+concentration and validation figures can be recomputed.
 
 ## 6. Why This Is Next
 
-The topic crosses clinical domains, age modeling, speech processing, datasets, and foundation models. A mapping frame prevents premature narrowing while still producing a reproducible evidence map: populations, tasks, recording protocols, model families, validation type, external validation, and clinical readiness.
+Every remaining conclusion depends on screening decisions that no human has yet
+made. The abstract-level figures currently reported in the manuscript come from
+an earlier packet built by a procedure that drew only from PubMed and Europe PMC
+and used a disease-naming keyword list to decide inclusion, so they carry a
+known and documented bias.
 
 ## Workspace
 
@@ -62,10 +85,18 @@ The topic crosses clinical domains, age modeling, speech processing, datasets, a
 - `screening/decisions.md` - inclusion/exclusion decisions and reasons.
 - `draft/review.md` - manuscript skeleton.
 - `figures/figure-plan.md` - planned PRISMA and concept figures.
-- `governance/reproducibility-risk-of-bias-rubric.md` - rubric for R0-R4 reproducibility levels and ML/diagnostic risk-of-bias domains.
+- `governance/reproducibility-risk-of-bias-rubric.md` - rubric for R0-R4 reproducibility levels and risk-of-bias domains, each mapped to V3, PROBAST or TRIPOD+AI.
+- `governance/protocol-deviation-log.csv` - every change made after the formal search began, with reason and impact (DEV-001 to DEV-018).
+- `governance/tool-run-log.csv` - one row per automated run: tool, endpoint, exact input, filters, outputs, status.
+- `scripts/run_formal_search.py` - formal search across six sources, deterministic date sorting, complete pagination.
+- `scripts/test_search_api_contract.py` - nine live contract checks; run before trusting any new search output.
+- `scripts/build_first_screening_packet.py` - stratified screening packet across all source and query-family buckets.
+- `screening/screening-packet-stratified.csv` - the current screening packet, awaiting human decisions.
 
 ## Overleaf / GitHub Sync
 
-This folder is prepared as a root-level LaTeX project. In Overleaf, import the private GitHub repository and set `main.tex` as the main document. The current manuscript is a living systematic mapping review draft, not a final PRISMA-complete article.
+This folder is prepared as a root-level LaTeX project. In Overleaf, import the private GitHub repository and set `main.tex` as the main document.
+
+The manuscript is a **reproducible snapshot** of the literature as of its stated search date, not a living review: it carries no update commitment, and currency is traded for the ability to re-execute the identical search from the preserved queries and raw exports. It is not yet a reporting-complete article; full-text screening, risk-of-bias coding, and the outstanding OpenAlex combinations remain open.
 
 Local LaTeX is not required for GitHub sync; Overleaf can compile the project after import.
