@@ -1,0 +1,468 @@
+{
+"result":{
+"query":"speaker*|voice*|speech* age*|aging* estimation*|prediction*|recognition*",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"41.32"
+},
+"completions":{
+"@total":"3",
+"@computed":"3",
+"@sent":"3",
+"c":[
+{
+"@sc":"111",
+"@dc":"111",
+"@oc":"111",
+"@id":"71842129",
+"text":"recognition"
+},
+{
+"@sc":"50",
+"@dc":"50",
+"@oc":"50",
+"@id":"70907225",
+"text":"estimation"
+},
+{
+"@sc":"10",
+"@dc":"10",
+"@oc":"10",
+"@id":"71772338",
+"text":"prediction"
+}
+]
+},
+"hits":{
+"@total":"170",
+"@computed":"170",
+"@sent":"70",
+"@first":"100",
+"hit":[{
+"@score":"3",
+"@id":"3198925",
+"info":{"authors":{"author":[{"@pid":"272/0276","text":"Horkous Houari"},{"@pid":"10/2661","text":"Mhania Guerti"}]},"title":"Study the Influence of Gender and Age in Recognition of Emotions from Algerian Dialect Speech.","venue":"Traitement du Signal","volume":"37","number":"3","pages":"413-423","year":"2020","type":"Journal Articles","access":"closed","key":"journals/tds/HouariG20","doi":"10.18280/TS.370308","ee":"https://doi.org/10.18280/ts.370308","url":"https://dblp.org/rec/journals/tds/HouariG20"},
+"url":"URL#3198925"
+},
+{
+"@score":"3",
+"@id":"3296261",
+"info":{"authors":{"author":[{"@pid":"276/8757","text":"Sriram Ravishankar"},{"@pid":"276/8107","text":"Prasanna Kumar M. K"},{"@pid":"276/8711","text":"Vinay Vasanth Patage"},{"@pid":"75/8837","text":"Sourabh Tiwari"},{"@pid":"276/9113","text":"Saksham Goyal"}]},"title":"Prediction of Age from Speech Features Using a Multi-Layer Perceptron Model.","venue":"ICCCNT","pages":"1-6","year":"2020","type":"Conference and Workshop Papers","access":"closed","key":"conf/icccnt/RavishankarKPTG20","doi":"10.1109/ICCCNT49239.2020.9225390","ee":"https://doi.org/10.1109/ICCCNT49239.2020.9225390","url":"https://dblp.org/rec/conf/icccnt/RavishankarKPTG20"},
+"url":"URL#3296261"
+},
+{
+"@score":"3",
+"@id":"3378041",
+"info":{"authors":{"author":{"@pid":"246/6017","text":"Maxim Markitantov"}},"title":"Transfer Learning in Speaker&apos;s Age and Gender Recognition.","venue":"SPECOM","pages":"326-335","year":"2020","type":"Conference and Workshop Papers","access":"closed","key":"conf/specom/Markitantov20","doi":"10.1007/978-3-030-60276-5_32","ee":"https://doi.org/10.1007/978-3-030-60276-5_32","url":"https://dblp.org/rec/conf/specom/Markitantov20"},
+"url":"URL#3378041"
+},
+{
+"@score":"3",
+"@id":"3386909",
+"info":{"authors":{"author":[{"@pid":"158/7079","text":"Héctor A. Sánchez-Hevia"},{"@pid":"23/4439","text":"Roberto Gil-Pita"},{"@pid":"93/2050","text":"Manuel Utrilla-Manso"},{"@pid":"77/3839","text":"Manuel Rosa-Zurera"}]},"title":"Age and Gender Recognition from Speech Using Deep Neural Networks.","venue":"WAF","pages":"332-344","year":"2020","type":"Conference and Workshop Papers","access":"closed","key":"conf/waf/Sanchez-HeviaGU20","doi":"10.1007/978-3-030-62579-5_23","ee":"https://doi.org/10.1007/978-3-030-62579-5_23","url":"https://dblp.org/rec/conf/waf/Sanchez-HeviaGU20"},
+"url":"URL#3386909"
+},
+{
+"@score":"3",
+"@id":"3463373",
+"info":{"authors":{"author":[{"@pid":"271/5253","text":"Damian Kwasny"},{"@pid":"176/7920","text":"Daria Hemmerling"}]},"title":"Joint gender and age estimation based on speech signals using x-vectors and transfer learning.","venue":"CoRR","volume":"abs/2012.01551","year":"2020","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-2012-01551","ee":"https://arxiv.org/abs/2012.01551","url":"https://dblp.org/rec/journals/corr/abs-2012-01551"},
+"url":"URL#3463373"
+},
+{
+"@score":"3",
+"@id":"3662367",
+"info":{"authors":{"author":[{"@pid":"02/9809","text":"Huijuan Zhao"},{"@pid":"37/1304","text":"Ping Wang"}]},"title":"A Short Review of Age and Gender Recognition Based on Speech.","venue":"BigDataSecurity/HPSC/IDS","pages":"183-185","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/bigdatasec/ZhaoW19","doi":"10.1109/BIGDATASECURITY-HPSC-IDS.2019.00042","ee":"https://doi.org/10.1109/BigDataSecurity-HPSC-IDS.2019.00042","url":"https://dblp.org/rec/conf/bigdatasec/ZhaoW19"},
+"url":"URL#3662367"
+},
+{
+"@score":"3",
+"@id":"3717802",
+"info":{"authors":{"author":[{"@pid":"189/8274","text":"Shareef Babu Kalluri"},{"@pid":"90/7534","text":"Deepu Vijayasenan"},{"@pid":"23/4298","text":"Sriram Ganapathy"}]},"title":"A Deep Neural Network Based End to End Model for Joint Height and Age Estimation from Short Duration Speech.","venue":"ICASSP","pages":"6580-6584","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/KalluriVG19","doi":"10.1109/ICASSP.2019.8683397","ee":"https://doi.org/10.1109/ICASSP.2019.8683397","url":"https://dblp.org/rec/conf/icassp/KalluriVG19"},
+"url":"URL#3717802"
+},
+{
+"@score":"3",
+"@id":"3809907",
+"info":{"authors":{"author":{"@pid":"240/1113","text":"Madiha Anjum"}},"title":"Emotion Recognition from Speech for an Interactive Robot Agent.","venue":"SII","pages":"363-368","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/sii/Anjum19","doi":"10.1109/SII.2019.8700376","ee":"https://doi.org/10.1109/SII.2019.8700376","url":"https://dblp.org/rec/conf/sii/Anjum19"},
+"url":"URL#3809907"
+},
+{
+"@score":"3",
+"@id":"3814289",
+"info":{"authors":{"author":[{"@pid":"246/6017","text":"Maxim Markitantov"},{"@pid":"226/1855","text":"Oxana Verkholyak"}]},"title":"Automatic Recognition of Speaker Age and Gender Based on Deep Neural Networks.","venue":"SPECOM","pages":"327-336","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/specom/MarkitantovV19","doi":"10.1007/978-3-030-26061-3_34","ee":"https://doi.org/10.1007/978-3-030-26061-3_34","url":"https://dblp.org/rec/conf/specom/MarkitantovV19"},
+"url":"URL#3814289"
+},
+{
+"@score":"3",
+"@id":"3908968",
+"info":{"authors":{"author":[{"@pid":"121/1862","text":"Rubén Zazo-Candil"},{"@pid":"158/4168","text":"Phani Sankar Nidadavolu"},{"@pid":"168/6187","text":"Nanxin Chen"},{"@pid":"44/4281","text":"Joaquin Gonzalez-Rodriguez"},{"@pid":"18/2810","text":"Najim Dehak"}]},"title":"Age Estimation in Short Speech Utterances Based on LSTM Recurrent Neural Networks.","venue":"IEEE Access","volume":"6","pages":"22524-22530","year":"2018","type":"Journal Articles","access":"open","key":"journals/access/Zazo-CandilNCGD18","doi":"10.1109/ACCESS.2018.2816163","ee":"https://doi.org/10.1109/ACCESS.2018.2816163","url":"https://dblp.org/rec/journals/access/Zazo-CandilNCGD18"},
+"url":"URL#3908968"
+},
+{
+"@score":"3",
+"@id":"4062471",
+"info":{"authors":{"author":[{"@pid":"184/3400","text":"Zalimhan Nagoev"},{"@pid":"247/9816","text":"Larisa A. Lyutikova"},{"@pid":"246/8277","text":"Irina Gurtueva"}]},"title":"Model for Automatic Speech Recognition Using Multi-Agent Recursive Cognitive Architecture.","venue":"BICA","pages":"386-392","year":"2018","type":"Conference and Workshop Papers","access":"open","key":"conf/bica/NagoevLG18","doi":"10.1016/J.PROCS.2018.11.089","ee":"https://doi.org/10.1016/j.procs.2018.11.089","url":"https://dblp.org/rec/conf/bica/NagoevLG18"},
+"url":"URL#4062471"
+},
+{
+"@score":"3",
+"@id":"4063697",
+"info":{"authors":{"author":[{"@pid":"02/9809","text":"Huijuan Zhao"},{"@pid":"49/1785-4","text":"Ning Ye 0004"},{"@pid":"85/5653-1","text":"Ruchuan Wang 0001"}]},"title":"Transferring Age and Gender Attributes for Dimensional Emotion Prediction from Big Speech Data Using Hierarchical Deep Learning.","venue":"BigDataSecurity/HPSC/IDS","pages":"20-24","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/bigdatasec/ZhaoY018","doi":"10.1109/BDS/HPSC/IDS18.2018.00018","ee":"https://doi.org/10.1109/BDS/HPSC/IDS18.2018.00018","url":"https://dblp.org/rec/conf/bigdatasec/ZhaoY018"},
+"url":"URL#4063697"
+},
+{
+"@score":"3",
+"@id":"4107068",
+"info":{"authors":{"author":{"@pid":"71/11316","text":"Yuanchao Li"}},"title":"Towards Improving Speech Emotion Recognition for In-Vehicle Agents: Preliminary Results of Incorporating Sentiment Analysis by Using Early and Late Fusion Methods.","venue":"HAI","pages":"365-367","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/hai/Li18","doi":"10.1145/3284432.3287188","ee":"https://doi.org/10.1145/3284432.3287188","url":"https://dblp.org/rec/conf/hai/Li18"},
+"url":"URL#4107068"
+},
+{
+"@score":"3",
+"@id":"4116145",
+"info":{"authors":{"author":[{"@pid":"168/6187","text":"Nanxin Chen"},{"@pid":"211/9841","text":"Jesús Villalba 0001"},{"@pid":"195/0364","text":"Yishay Carmiel"},{"@pid":"18/2810","text":"Najim Dehak"}]},"title":"Measuring Uncertainty in Deep Regression Models: The Case of Age Estimation from Speech.","venue":"ICASSP","pages":"4939-4943","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/ChenVCD18","doi":"10.1109/ICASSP.2018.8462416","ee":"https://doi.org/10.1109/ICASSP.2018.8462416","url":"https://dblp.org/rec/conf/icassp/ChenVCD18"},
+"url":"URL#4116145"
+},
+{
+"@score":"3",
+"@id":"4154499",
+"info":{"authors":{"author":[{"@pid":"60/1812","text":"Gary Yeung"},{"@pid":"40/6586","text":"Abeer Alwan"}]},"title":"On the Difficulties of Automatic Speech Recognition for Kindergarten-Aged Children.","venue":"INTERSPEECH","pages":"1661-1665","year":"2018","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/YeungA18","doi":"10.21437/INTERSPEECH.2018-2297","ee":"https://doi.org/10.21437/Interspeech.2018-2297","url":"https://dblp.org/rec/conf/interspeech/YeungA18"},
+"url":"URL#4154499"
+},
+{
+"@score":"3",
+"@id":"4411016",
+"info":{"authors":{"author":[{"@pid":"89/8772","text":"Hesam Sagha"},{"@pid":"80/6481","text":"Jun Deng"},{"@pid":"54/4934","text":"Björn W. Schuller"}]},"title":"The effect of personality trait, age, and gender on the performance of automatic speech valence recognition.","venue":"ACII","pages":"86-91","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/acii/SaghaDS17","doi":"10.1109/ACII.2017.8273583","ee":"https://doi.org/10.1109/ACII.2017.8273583","url":"https://dblp.org/rec/conf/acii/SaghaDS17"},
+"url":"URL#4411016"
+},
+{
+"@score":"3",
+"@id":"4459278",
+"info":{"authors":{"author":[{"@pid":"146/4797","text":"Evangelia Pantraki"},{"@pid":"k/CKotropoulos","text":"Constantine Kotropoulos"}]},"title":"Multi-way regression for age prediction exploiting speech and face image information.","venue":"EUSIPCO","pages":"2196-2200","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/eusipco/PantrakiK17","doi":"10.23919/EUSIPCO.2017.8081599","ee":"https://doi.org/10.23919/EUSIPCO.2017.8081599","url":"https://dblp.org/rec/conf/eusipco/PantrakiK17"},
+"url":"URL#4459278"
+},
+{
+"@score":"3",
+"@id":"4476619",
+"info":{"authors":{"author":[{"@pid":"28/9635-1","text":"Zhong-Qiu Wang 0001"},{"@pid":"77/785","text":"Ivan Tashev"}]},"title":"Learning utterance-level representations for speech emotion and age/gender recognition using deep neural networks.","venue":"ICASSP","pages":"5150-5154","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/WangT17","doi":"10.1109/ICASSP.2017.7953138","ee":"https://doi.org/10.1109/ICASSP.2017.7953138","url":"https://dblp.org/rec/conf/icassp/WangT17"},
+"url":"URL#4476619"
+},
+{
+"@score":"3",
+"@id":"4561850",
+"info":{"authors":{"author":[{"@pid":"77/4277","text":"Nursuriati Jamil"},{"@pid":"215/3193","text":"Farihah Apandi"},{"@pid":"144/0965","text":"Raseeda Hamzah"}]},"title":"Influences of age in emotion recognition of spontaneous speech: A case of an under-resourced language.","venue":"SpeD","pages":"1-6","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/sped/JamilAH17","doi":"10.1109/SPED.2017.7990448","ee":"https://doi.org/10.1109/SPED.2017.7990448","url":"https://dblp.org/rec/conf/sped/JamilAH17"},
+"url":"URL#4561850"
+},
+{
+"@score":"3",
+"@id":"4849823",
+"info":{"authors":{"author":[{"@pid":"146/4797","text":"Evangelia Pantraki"},{"@pid":"k/CKotropoulos","text":"Constantine Kotropoulos"},{"@pid":"09/3834","text":"Andreas Lanitis"}]},"title":"Age interval and gender prediction using PARAFAC2 applied to speech utterances.","venue":"IWBF","pages":"1-6","year":"2016","type":"Conference and Workshop Papers","access":"closed","key":"conf/iwbf/PantrakiKL16","doi":"10.1109/IWBF.2016.7449694","ee":"https://doi.org/10.1109/IWBF.2016.7449694","url":"https://dblp.org/rec/conf/iwbf/PantrakiKL16"},
+"url":"URL#4849823"
+},
+{
+"@score":"3",
+"@id":"5058438",
+"info":{"authors":{"author":[{"@pid":"88/5361","text":"Mayank Gupta"},{"@pid":"170/4800","text":"Pulkit Verma 0001"},{"@pid":"173/4348","text":"Tuhin Bhattacharya"},{"@pid":"08/2976","text":"Pradip K. Das"}]},"title":"A mobile agents based distributed speech recognition engine for controlling multiple robots.","venue":"AIR","pages":"28:1-28:6","year":"2015","type":"Conference and Workshop Papers","access":"closed","key":"conf/air/GuptaVBD15","doi":"10.1145/2783449.2783477","ee":"https://doi.org/10.1145/2783449.2783477","url":"https://dblp.org/rec/conf/air/GuptaVBD15"},
+"url":"URL#5058438"
+},
+{
+"@score":"3",
+"@id":"5108928",
+"info":{"authors":{"author":[{"@pid":"63/3623","text":"Jeong-Sik Park"},{"@pid":"94/6573","text":"Gil-Jin Jang"}]},"title":"Implementation of Voice Emotion Recognition for Interaction with Mobile Agent.","venue":"HAI","pages":"307-308","year":"2015","type":"Conference and Workshop Papers","access":"closed","key":"conf/hai/ParkJ15","doi":"10.1145/2814940.2815004","ee":"https://doi.org/10.1145/2814940.2815004","url":"https://dblp.org/rec/conf/hai/ParkJ15"},
+"url":"URL#5108928"
+},
+{
+"@score":"3",
+"@id":"5110549",
+"info":{"authors":{"author":[{"@pid":"78/7176","text":"Linghua Ran"},{"@pid":"00/1811","text":"Ling Luo"},{"@pid":"76/1584-53","text":"Xin Zhang 0053"},{"@pid":"00/7176","text":"Taijie Liu"},{"@pid":"145/4794","text":"Chaoyi Zhao"}]},"title":"The Speech Recognition Ability for Different Age Groups on the Chinese Language System.","venue":"HCI","pages":"317-320","year":"2015","type":"Conference and Workshop Papers","access":"closed","key":"conf/hci/RanLZLZ15","doi":"10.1007/978-3-319-21380-4_54","ee":"https://doi.org/10.1007/978-3-319-21380-4_54","url":"https://dblp.org/rec/conf/hci/RanLZLZ15"},
+"url":"URL#5110549"
+},
+{
+"@score":"3",
+"@id":"5150127",
+"info":{"authors":{"author":[{"@pid":"173/6516","text":"Anna Fedorova"},{"@pid":"69/3731","text":"Ondrej Glembek"},{"@pid":"94/4754","text":"Tomi Kinnunen"},{"@pid":"34/3580","text":"Pavel Matejka"}]},"title":"Exploring ANN back-ends for i-vector based speaker age estimation.","venue":"INTERSPEECH","pages":"3036-3040","year":"2015","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/FedorovaGKM15","doi":"10.21437/INTERSPEECH.2015-103","ee":"https://doi.org/10.21437/Interspeech.2015-103","url":"https://dblp.org/rec/conf/interspeech/FedorovaGKM15"},
+"url":"URL#5150127"
+},
+{
+"@score":"3",
+"@id":"5194833",
+"info":{"authors":{"author":[{"@pid":"158/1059","text":"Ergün Yücesoy"},{"@pid":"93/1775","text":"Vasif V. Nabiyev"}]},"title":"Age and gender recognition of a speaker from short-duration phone conversations.","venue":"SIU","pages":"751-754","year":"2015","type":"Conference and Workshop Papers","access":"closed","key":"conf/siu/YucesoyN15","doi":"10.1109/SIU.2015.7129936","ee":"https://doi.org/10.1109/SIU.2015.7129936","url":"https://dblp.org/rec/conf/siu/YucesoyN15"},
+"url":"URL#5194833"
+},
+{
+"@score":"3",
+"@id":"5195033",
+"info":{"authors":{"author":[{"@pid":"95/6406","text":"Mark A. Huckvale"},{"@pid":"171/1159","text":"Aimee Webb"}]},"title":"A Comparison of Human and Machine Estimation of Speaker Age.","venue":"SLSP","pages":"111-122","year":"2015","type":"Conference and Workshop Papers","access":"closed","key":"conf/slsp/HuckvaleW15","doi":"10.1007/978-3-319-25789-1_11","ee":"https://doi.org/10.1007/978-3-319-25789-1_11","url":"https://dblp.org/rec/conf/slsp/HuckvaleW15"},
+"url":"URL#5195033"
+},
+{
+"@score":"3",
+"@id":"5201567",
+"info":{"authors":{"author":[{"@pid":"68/2925","text":"Tino Haderlein"},{"@pid":"91/9176","text":"Catherine Middag"},{"@pid":"68/7247","text":"Florian Hönig"},{"@pid":"42/4663","text":"Jean-Pierre Martens"},{"@pid":"48/598","text":"Michael Döllinger"},{"@pid":"75/9205","text":"Anne Schützenberger"},{"@pid":"30/1288","text":"Elmar Nöth"}]},"title":"Language-Independent Age Estimation from Speech Using Phonological and Phonemic Features.","venue":"TSD","pages":"165-173","year":"2015","type":"Conference and Workshop Papers","access":"closed","key":"conf/tsd/HaderleinMHMDSN15","doi":"10.1007/978-3-319-24033-6_19","ee":"https://doi.org/10.1007/978-3-319-24033-6_19","url":"https://dblp.org/rec/conf/tsd/HaderleinMHMDSN15"},
+"url":"URL#5201567"
+},
+{
+"@score":"3",
+"@id":"5239968",
+"info":{"authors":{"author":{"@pid":"78/8615","text":"Finnian Kelly"}},"title":"Automatic recognition of ageing speakers.","year":"2014","type":"Books and Theses","access":"closed","key":"phd/basesearch/Kelly14","ee":"http://hdl.handle.net/2262/77035","url":"https://dblp.org/rec/phd/basesearch/Kelly14"},
+"url":"URL#5239968"
+},
+{
+"@score":"3",
+"@id":"5269374",
+"info":{"authors":{"author":[{"@pid":"73/10808","text":"Mohamad Hasan Bahari"},{"@pid":"90/4639","text":"Mitchell McLaren"},{"@pid":"77/6519","text":"Hugo Van hamme"},{"@pid":"57/3801","text":"David A. van Leeuwen"}]},"title":"Speaker age estimation using i-vectors.","venue":"Eng. Appl. Artif. Intell.","volume":"34","pages":"99-108","year":"2014","type":"Journal Articles","access":"closed","key":"journals/eaai/BahariMhL14","doi":"10.1016/J.ENGAPPAI.2014.05.003","ee":"https://doi.org/10.1016/j.engappai.2014.05.003","url":"https://dblp.org/rec/journals/eaai/BahariMhL14"},
+"url":"URL#5269374"
+},
+{
+"@score":"3",
+"@id":"5371340",
+"info":{"authors":{"author":[{"@pid":"181/6490","text":"Mengdi Yue"},{"@pid":"17/1237","text":"Ling Chen"},{"@pid":"84/6889-42","text":"Jie Zhang 0042"},{"@pid":"29/5010-8","text":"Hong Liu 0008"}]},"title":"Speaker age recognition based on isolated words by using SVM.","venue":"CCIS","pages":"282-286","year":"2014","type":"Conference and Workshop Papers","access":"closed","key":"conf/ccis/YueCZL14","doi":"10.1109/CCIS.2014.7175743","ee":"https://doi.org/10.1109/CCIS.2014.7175743","url":"https://dblp.org/rec/conf/ccis/YueCZL14"},
+"url":"URL#5371340"
+},
+{
+"@score":"3",
+"@id":"5479181",
+"info":{"authors":{"author":[{"@pid":"47/2928","text":"Annika Hämäläinen"},{"@pid":"13/5211","text":"Hugo Meinedo"},{"@pid":"48/9267","text":"Michael Tjalve"},{"@pid":"32/7534","text":"Thomas Pellegrini"},{"@pid":"72/6829","text":"Isabel Trancoso"},{"@pid":"01/3297","text":"Miguel Sales Dias"}]},"title":"Improving Speech Recognition through Automatic Selection of Age Group - Specific Acoustic Models.","venue":"PROPOR","pages":"12-23","year":"2014","type":"Conference and Workshop Papers","access":"closed","key":"conf/propor/HamalainenMTPTD14","doi":"10.1007/978-3-319-09761-9_2","ee":"https://doi.org/10.1007/978-3-319-09761-9_2","url":"https://dblp.org/rec/conf/propor/HamalainenMTPTD14"},
+"url":"URL#5479181"
+},
+{
+"@score":"3",
+"@id":"5721514",
+"info":{"authors":{"author":[{"@pid":"61/7942","text":"Phuoc Nguyen"},{"@pid":"21/6348","text":"Dat Tran 0001"},{"@pid":"20/8728","text":"Tan Vo"},{"@pid":"00/2922-1","text":"Xu Huang 0001"},{"@pid":"16/1709-3","text":"Wanli Ma 0003"},{"@pid":"71/5859","text":"Dinh Q. Phung"}]},"title":"EEG-Based Age and Gender Recognition Using Tensor Decomposition and Speech Features.","venue":"ICONIP","pages":"632-639","year":"2013","type":"Conference and Workshop Papers","access":"closed","key":"conf/iconip/NguyenTVHMP13","doi":"10.1007/978-3-642-42042-9_78","ee":"https://doi.org/10.1007/978-3-642-42042-9_78","url":"https://dblp.org/rec/conf/iconip/NguyenTVHMP13"},
+"url":"URL#5721514"
+},
+{
+"@score":"3",
+"@id":"5735555",
+"info":{"authors":{"author":[{"@pid":"78/8615","text":"Finnian Kelly"},{"@pid":"56/5068","text":"Naomi Harte"}]},"title":"Auditory detectability of vocal ageing and its effect on forensic automatic speaker recognition.","venue":"INTERSPEECH","pages":"2846-2850","year":"2013","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/KellyH13","doi":"10.21437/INTERSPEECH.2013-248","ee":"https://doi.org/10.21437/Interspeech.2013-248","url":"https://dblp.org/rec/conf/interspeech/KellyH13"},
+"url":"URL#5735555"
+},
+{
+"@score":"3",
+"@id":"5735852",
+"info":{"authors":{"author":[{"@pid":"135/7378","text":"Sven Ewan Shepstone"},{"@pid":"39/4898","text":"Zheng-Hua Tan"},{"@pid":"93/2935","text":"Søren Holdt Jensen"}]},"title":"Demographic recommendation by means of group profile elicitation using speaker age and gender recognition.","venue":"INTERSPEECH","pages":"2827-2831","year":"2013","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/ShepstoneTJ13","doi":"10.21437/INTERSPEECH.2013-244","ee":"https://doi.org/10.21437/Interspeech.2013-244","url":"https://dblp.org/rec/conf/interspeech/ShepstoneTJ13"},
+"url":"URL#5735852"
+},
+{
+"@score":"3",
+"@id":"5883263",
+"info":{"authors":{"author":{"@pid":"115/6231","text":"Mats Dahllöf"}},"title":"Automatic prediction of gender, political affiliation, and age in Swedish politicians from the wording of their speeches - A comparative study of classifiability.","venue":"Lit. Linguistic Comput.","volume":"27","number":"2","pages":"139-153","year":"2012","type":"Journal Articles","access":"closed","key":"journals/lalc/Dahllof12","doi":"10.1093/LLC/FQS010","ee":"https://doi.org/10.1093/llc/fqs010","url":"https://dblp.org/rec/journals/lalc/Dahllof12"},
+"url":"URL#5883263"
+},
+{
+"@score":"3",
+"@id":"5928868",
+"info":{"authors":{"author":[{"@pid":"142/5185","text":"Daisuke Enami"},{"@pid":"160/0314","text":"Faqiang Zhu"},{"@pid":"03/5379","text":"Kazumasa Yamamoto"},{"@pid":"17/1219","text":"Seiichi Nakagawa"}]},"title":"Soft-clustering technique for training data in Age-and gender-independent speech recognition.","venue":"APSIPA","pages":"1-4","year":"2012","type":"Conference and Workshop Papers","access":"closed","key":"conf/apsipa/EnamiZYN12","ee":"https://ieeexplore.ieee.org/document/6411780/","url":"https://dblp.org/rec/conf/apsipa/EnamiZYN12"},
+"url":"URL#5928868"
+},
+{
+"@score":"3",
+"@id":"5957949",
+"info":{"authors":{"author":[{"@pid":"209/0576","text":"Ivan Rochford"},{"@pid":"81/9235","text":"Viliam Rapcan"},{"@pid":"91/9235","text":"Shona D&apos;Arcy"},{"@pid":"47/4242","text":"Richard B. Reilly"}]},"title":"Dynamic minimum pause threshold estimation for speech analysis in studies of cognitive function in ageing.","venue":"EMBC","pages":"3700-3703","year":"2012","type":"Conference and Workshop Papers","access":"closed","key":"conf/embc/RochfordRDR12","doi":"10.1109/EMBC.2012.6346770","ee":"https://doi.org/10.1109/EMBC.2012.6346770","url":"https://dblp.org/rec/conf/embc/RochfordRDR12"},
+"url":"URL#5957949"
+},
+{
+"@score":"3",
+"@id":"6003485",
+"info":{"authors":{"author":[{"@pid":"73/10808","text":"Mohamad Hasan Bahari"},{"@pid":"90/4639","text":"Mitchell McLaren"},{"@pid":"77/6519","text":"Hugo Van hamme"},{"@pid":"57/3801","text":"David A. van Leeuwen"}]},"title":"Age Estimation from Telephone Speech using i-vectors.","venue":"INTERSPEECH","pages":"506-509","year":"2012","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/BahariMhL12","doi":"10.21437/INTERSPEECH.2012-169","ee":"https://doi.org/10.21437/Interspeech.2012-169","url":"https://dblp.org/rec/conf/interspeech/BahariMhL12"},
+"url":"URL#6003485"
+},
+{
+"@score":"3",
+"@id":"6004101",
+"info":{"authors":{"author":[{"@pid":"19/8762","text":"Felix Weninger"},{"@pid":"50/9613","text":"Erik Marchi"},{"@pid":"54/4934","text":"Björn W. Schuller"}]},"title":"Improving Recognition of Speaker States and Traits by Cumulative Evidence: Intoxication, Sleepiness, Age and Gender.","venue":"INTERSPEECH","pages":"1159-1162","year":"2012","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/WeningerMS12","doi":"10.21437/INTERSPEECH.2012-119","ee":"https://doi.org/10.21437/Interspeech.2012-119","url":"https://dblp.org/rec/conf/interspeech/WeningerMS12"},
+"url":"URL#6004101"
+},
+{
+"@score":"3",
+"@id":"6013544",
+"info":{"authors":{"author":[{"@pid":"73/10808","text":"Mohamad Hasan Bahari"},{"@pid":"77/6519","text":"Hugo Van hamme"}]},"title":"Speaker age estimation using Hidden Markov Model weight supervectors.","venue":"ISSPA","pages":"517-521","year":"2012","type":"Conference and Workshop Papers","access":"closed","key":"conf/isspa/Baharih12a","doi":"10.1109/ISSPA.2012.6310606","ee":"https://doi.org/10.1109/ISSPA.2012.6310606","url":"https://dblp.org/rec/conf/isspa/Baharih12a"},
+"url":"URL#6013544"
+},
+{
+"@score":"3",
+"@id":"6028053",
+"info":{"authors":{"author":[{"@pid":"41/4817","text":"Mohamed Fezari"},{"@pid":"49/5191","text":"Ibrahiem M. M. El Emary"},{"@pid":"119/6008","text":"Mohamed Serghir Boumaz"},{"@pid":"119/6038","text":"Hamza Attoui"}]},"title":"Improvement of Spotting Words Speech Recognition Agent for Tele-Operating a Manipulator Arm.","venue":"NDT","pages":"321-331","year":"2012","type":"Conference and Workshop Papers","access":"closed","key":"conf/ndt/FezariEBA12","doi":"10.1007/978-3-642-30567-2_27","ee":"https://doi.org/10.1007/978-3-642-30567-2_27","url":"https://dblp.org/rec/conf/ndt/FezariEBA12"},
+"url":"URL#6028053"
+},
+{
+"@score":"3",
+"@id":"6030486",
+"info":{"authors":{"author":{"@pid":"91/7155","text":"George R. Doddington"}},"title":"The effect of target/non-target age difference on speaker recognition performance.","venue":"Odyssey","pages":"263-267","year":"2012","type":"Conference and Workshop Papers","access":"open","key":"conf/odyssey/Doddington12","ee":"https://www.isca-archive.org/odyssey_2012/doddington12_odyssey.html","url":"https://dblp.org/rec/conf/odyssey/Doddington12"},
+"url":"URL#6030486"
+},
+{
+"@score":"3",
+"@id":"6190294",
+"info":{"authors":{"author":[{"@pid":"73/10808","text":"Mohamad Hasan Bahari"},{"@pid":"77/6519","text":"Hugo Van hamme"}]},"title":"Speaker age estimation and gender detection based on supervised Non-Negative Matrix Factorization.","venue":"BioMS","pages":"1-6","year":"2011","type":"Conference and Workshop Papers","access":"closed","key":"conf/bioms/Baharih11","doi":"10.1109/BIOMS.2011.6052385","ee":"https://doi.org/10.1109/BIOMS.2011.6052385","url":"https://dblp.org/rec/conf/bioms/Baharih11"},
+"url":"URL#6190294"
+},
+{
+"@score":"3",
+"@id":"6269522",
+"info":{"authors":{"author":[{"@pid":"50/11154","text":"Matthew Ager"},{"@pid":"76/1907","text":"Zoran Cvetkovic"},{"@pid":"36/3865","text":"Peter Sollich"}]},"title":"Combined waveform-cepstral representation for robust speech recognition.","venue":"ISIT","pages":"864-868","year":"2011","type":"Conference and Workshop Papers","access":"closed","key":"conf/isit/AgerCS11","doi":"10.1109/ISIT.2011.6034260","ee":"https://doi.org/10.1109/ISIT.2011.6034260","url":"https://dblp.org/rec/conf/isit/AgerCS11"},
+"url":"URL#6269522"
+},
+{
+"@score":"3",
+"@id":"6473622",
+"info":{"authors":{"author":[{"@pid":"09/3190","text":"Charl Johannes van Heerden"},{"@pid":"71/6808","text":"Etienne Barnard"},{"@pid":"79/7158","text":"Marelie H. Davel"},{"@pid":"73/8760","text":"Christiaan van der Walt"},{"@pid":"51/8760","text":"Ewald van Dyk"},{"@pid":"26/2807","text":"Michael Feld"},{"@pid":"57/7848","text":"Christian A. Müller"}]},"title":"Combining regression and classification methods for improving automatic speaker age recognition.","venue":"ICASSP","pages":"5174-5177","year":"2010","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/HeerdenBDWDFM10","doi":"10.1109/ICASSP.2010.5495006","ee":"https://doi.org/10.1109/ICASSP.2010.5495006","url":"https://dblp.org/rec/conf/icassp/HeerdenBDWDFM10"},
+"url":"URL#6473622"
+},
+{
+"@score":"3",
+"@id":"6499327",
+"info":{"authors":{"author":[{"@pid":"26/2807","text":"Michael Feld"},{"@pid":"24/368","text":"Felix Burkhardt"},{"@pid":"57/7848","text":"Christian A. Müller"}]},"title":"Automatic speaker age and gender recognition in the car for tailoring dialog and mobile services.","venue":"INTERSPEECH","pages":"2834-2837","year":"2010","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/FeldBM10","doi":"10.21437/INTERSPEECH.2010-749","ee":"https://doi.org/10.21437/Interspeech.2010-749","url":"https://dblp.org/rec/conf/interspeech/FeldBM10"},
+"url":"URL#6499327"
+},
+{
+"@score":"3",
+"@id":"6499550",
+"info":{"authors":{"author":[{"@pid":"l/MingLi26","text":"Ming Li 0026"},{"@pid":"97/8051","text":"Chi-Sang Jung"},{"@pid":"44/2176","text":"Kyu Jeong Han"}]},"title":"Combining five acoustic level modeling methods for automatic speaker age and gender recognition.","venue":"INTERSPEECH","pages":"2826-2829","year":"2010","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/LiJH10","doi":"10.21437/INTERSPEECH.2010-747","ee":"https://doi.org/10.21437/Interspeech.2010-747","url":"https://dblp.org/rec/conf/interspeech/LiJH10"},
+"url":"URL#6499550"
+},
+{
+"@score":"3",
+"@id":"6499711",
+"info":{"authors":{"author":[{"@pid":"39/9229","text":"Royi Porat"},{"@pid":"72/9231","text":"Dan Lange"},{"@pid":"49/7824","text":"Yaniv Zigel"}]},"title":"Age recognition based on speech signals using weights supervector.","venue":"INTERSPEECH","pages":"2814-2817","year":"2010","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/PoratLZ10","doi":"10.21437/INTERSPEECH.2010-744","ee":"https://doi.org/10.21437/Interspeech.2010-744","url":"https://dblp.org/rec/conf/interspeech/PoratLZ10"},
+"url":"URL#6499711"
+},
+{
+"@score":"3",
+"@id":"6509460",
+"info":{"authors":{"author":[{"@pid":"50/11154","text":"Matthew Ager"},{"@pid":"76/1907","text":"Zoran Cvetkovic"},{"@pid":"36/3865","text":"Peter Sollich"}]},"title":"High-dimensional linear representations for robust speech recognition.","venue":"ITA","pages":"75-79","year":"2010","type":"Conference and Workshop Papers","access":"closed","key":"conf/ita/AgerCS10","doi":"10.1109/ITA.2010.5454172","ee":"https://doi.org/10.1109/ITA.2010.5454172","url":"https://dblp.org/rec/conf/ita/AgerCS10"},
+"url":"URL#6509460"
+},
+{
+"@score":"3",
+"@id":"6514441",
+"info":{"authors":{"author":[{"@pid":"89/5209","text":"Alexander Schmitt"},{"@pid":"05/7474","text":"Tim Polzehl"},{"@pid":"60/2193","text":"Wolfgang Minker"},{"@pid":"59/3748","text":"Jackson Liscombe"}]},"title":"The Influence of the Utterance Length on the Recognition of Aged Voices.","venue":"LREC","year":"2010","type":"Conference and Workshop Papers","access":"open","key":"conf/lrec/SchmittPML10","ee":"http://www.lrec-conf.org/proceedings/lrec2010/summaries/159.html","url":"https://dblp.org/rec/conf/lrec/SchmittPML10"},
+"url":"URL#6514441"
+},
+{
+"@score":"3",
+"@id":"6652391",
+"info":{"authors":{"author":[{"@pid":"04/696","text":"Rebecca J. Passonneau"},{"@pid":"79/4353","text":"Susan L. Epstein"},{"@pid":"88/8155","text":"Joshua B. Gordon"}]},"title":"Help Me Understand You: Addressing the Speech Recognition Bottleneck.","venue":"AAAI Spring Symposium - Agents that Learn from Human Teachers","pages":"119-126","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/aaaiss/PassonneauEG09","ee":"http://www.aaai.org/Library/Symposia/Spring/2009/ss09-01-017.php","url":"https://dblp.org/rec/conf/aaaiss/PassonneauEG09"},
+"url":"URL#6652391"
+},
+{
+"@score":"3",
+"@id":"6659971",
+"info":{"authors":{"author":[{"@pid":"26/2807","text":"Michael Feld"},{"@pid":"71/6808","text":"Etienne Barnard"},{"@pid":"09/3190","text":"Charl Johannes van Heerden"},{"@pid":"57/7848","text":"Christian A. Müller"}]},"title":"Multilingual speaker age recognition: Regression analyses on the Lwazi corpus.","venue":"ASRU","pages":"534-539","year":"2009","type":"Conference and Workshop Papers","access":"closed","key":"conf/asru/FeldBHM09","doi":"10.1109/ASRU.2009.5373374","ee":"https://doi.org/10.1109/ASRU.2009.5373374","url":"https://dblp.org/rec/conf/asru/FeldBHM09"},
+"url":"URL#6659971"
+},
+{
+"@score":"3",
+"@id":"6725065",
+"info":{"authors":{"author":[{"@pid":"74/9237","text":"Gil Dobry"},{"@pid":"40/9237","text":"Ron M. Hecht"},{"@pid":"06/1414","text":"Mireille Avigal"},{"@pid":"49/7824","text":"Yaniv Zigel"}]},"title":"Dimension reduction approaches for SVM based speaker age estimation.","venue":"INTERSPEECH","pages":"2031-2034","year":"2009","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/DobryHAZ09","doi":"10.21437/INTERSPEECH.2009-584","ee":"https://doi.org/10.21437/Interspeech.2009-584","url":"https://dblp.org/rec/conf/interspeech/DobryHAZ09"},
+"url":"URL#6725065"
+},
+{
+"@score":"3",
+"@id":"6839782",
+"info":{"authors":{"author":[{"@pid":"56/6604","text":"James N. Anderson"},{"@pid":"81/8716","text":"Nancie Davidson"},{"@pid":"04/3831","text":"Hazel Morton"},{"@pid":"69/307","text":"Mervyn A. Jack"}]},"title":"Language learning with interactive virtual agent scenarios and speech recognition: Lessons learned.","venue":"Comput. Animat. Virtual Worlds","volume":"19","number":"5","pages":"605-619","year":"2008","type":"Journal Articles","access":"closed","key":"journals/jvca/AndersonDMJ08","doi":"10.1002/CAV.265","ee":"https://doi.org/10.1002/cav.265","url":"https://dblp.org/rec/journals/jvca/AndersonDMJ08"},
+"url":"URL#6839782"
+},
+{
+"@score":"3",
+"@id":"6971416",
+"info":{"authors":{"author":[{"@pid":"24/8201","text":"Mayuka Nishimoto"},{"@pid":"94/8206","text":"Yasuhiro Azuma"},{"@pid":"82/6217","text":"Naoyuki Miyamoto"},{"@pid":"25/7253","text":"Takashi X. Fujisawa"},{"@pid":"82/941","text":"Noriko Nagata"}]},"title":"Subjective age estimation using speech sounds: Comparison with facial images.","venue":"SMC","pages":"1900-1904","year":"2008","type":"Conference and Workshop Papers","access":"closed","key":"conf/smc/NishimotoAMFN08","doi":"10.1109/ICSMC.2008.4811567","ee":"https://doi.org/10.1109/ICSMC.2008.4811567","url":"https://dblp.org/rec/conf/smc/NishimotoAMFN08"},
+"url":"URL#6971416"
+},
+{
+"@score":"3",
+"@id":"7077329",
+"info":{"authors":{"author":[{"@pid":"20/4926","text":"Teppei Nakano"},{"@pid":"14/4942","text":"Shinya Fujie"},{"@pid":"33/569","text":"Tetsunori Kobayashi"}]},"title":"Extensible speech recognition system using proxy-agent.","venue":"ASRU","pages":"601-606","year":"2007","type":"Conference and Workshop Papers","access":"closed","key":"conf/asru/NakanoFK07","doi":"10.1109/ASRU.2007.4430181","ee":"https://doi.org/10.1109/ASRU.2007.4430181","url":"https://dblp.org/rec/conf/asru/NakanoFK07"},
+"url":"URL#7077329"
+},
+{
+"@score":"3",
+"@id":"7109729",
+"info":{"authors":{"author":[{"@pid":"41/1933","text":"Muhammad Taha"},{"@pid":"36/3854","text":"Tarek Helmy"},{"@pid":"72/4186","text":"Reda Abo Alez"}]},"title":"Multi-agent Based Arabic Speech Recognition.","venue":"Web Intelligence/IAT Workshops","pages":"433-436","year":"2007","type":"Conference and Workshop Papers","access":"closed","key":"conf/iat/TahaHA07a","doi":"10.1109/WIIATW.2007.4427623","ee":"https://doi.org/10.1109/WIIATW.2007.4427623","url":"https://dblp.org/rec/conf/iat/TahaHA07a"},
+"url":"URL#7109729"
+},
+{
+"@score":"3",
+"@id":"7118810",
+"info":{"authors":{"author":[{"@pid":"99/4864","text":"Youn-Ho Cho"},{"@pid":"57/5912","text":"Kyu-Sik Park"},{"@pid":"93/5698","text":"Ro Jin Pak"}]},"title":"Speech Emotion Pattern Recognition Agent in Mobile Communication Environment Using Fuzzy-SVM.","venue":"ICFIE","pages":"419-430","year":"2007","type":"Conference and Workshop Papers","access":"closed","key":"conf/icfie/ChoPP07","doi":"10.1007/978-3-540-71441-5_46","ee":"https://doi.org/10.1007/978-3-540-71441-5_46","url":"https://dblp.org/rec/conf/icfie/ChoPP07"},
+"url":"URL#7118810"
+},
+{
+"@score":"3",
+"@id":"7134129",
+"info":{"authors":{"author":[{"@pid":"57/7848","text":"Christian A. Müller"},{"@pid":"24/368","text":"Felix Burkhardt"}]},"title":"Combining short-term cepstral and long-term pitch features for automatic recognition of speaker age.","venue":"INTERSPEECH","pages":"2277-2280","year":"2007","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/MllerB07","doi":"10.21437/INTERSPEECH.2007-618","ee":"https://doi.org/10.21437/Interspeech.2007-618","url":"https://dblp.org/rec/conf/interspeech/MllerB07"},
+"url":"URL#7134129"
+},
+{
+"@score":"3",
+"@id":"7168029",
+"info":{"authors":{"author":[{"@pid":"59/5393","text":"Kajsa Amilon"},{"@pid":"67/3379-2","text":"Joost van de Weijer 0002"},{"@pid":"31/6053","text":"Susanne Schötz"}]},"title":"The Impact of Visual and Auditory Cues in Age Estimation.","venue":"Speaker Classification","pages":"10-21","year":"2007","type":"Conference and Workshop Papers","access":"closed","key":"conf/speakerc/AmilonWS07","doi":"10.1007/978-3-540-74122-0_2","ee":"https://doi.org/10.1007/978-3-540-74122-0_2","url":"https://dblp.org/rec/conf/speakerc/AmilonWS07"},
+"url":"URL#7168029"
+},
+{
+"@score":"3",
+"@id":"7258160",
+"info":{"authors":{"author":[{"@pid":"10/4204","text":"Tatsuya Yoshikawa"},{"@pid":"66/3538","text":"Norihiro Abe"},{"@pid":"97/3378","text":"Hirokazu Taki"},{"@pid":"92/6256","text":"Shoujie He"},{"@pid":"82/4095","text":"Shunji Uchino"},{"@pid":"27/3086","text":"Kazuaki Tanaka"},{"@pid":"34/995","text":"Tetsuya Yagi"}]},"title":"Voice and gesture recognition system facilitating Communication between man and virtual agent.","venue":"AINA","pages":"673-677","year":"2006","type":"Conference and Workshop Papers","access":"closed","key":"conf/aina/YoshikawaATHUTY06","doi":"10.1109/AINA.2006.347","ee":"https://doi.org/10.1109/AINA.2006.347","url":"https://dblp.org/rec/conf/aina/YoshikawaATHUTY06"},
+"url":"URL#7258160"
+},
+{
+"@score":"3",
+"@id":"7316214",
+"info":{"authors":{"author":{"@pid":"57/7848","text":"Christian A. Müller"}},"title":"Automatic recognition of speakers&apos; age and gender on the basis of empirical studies.","venue":"INTERSPEECH","year":"2006","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/Muller06","doi":"10.21437/INTERSPEECH.2006-195","ee":"https://doi.org/10.21437/Interspeech.2006-195","url":"https://dblp.org/rec/conf/interspeech/Muller06"},
+"url":"URL#7316214"
+},
+{
+"@score":"3",
+"@id":"7336247",
+"info":{"authors":{"author":[{"@pid":"64/1678","text":"Anni Dugdale"},{"@pid":"98/1390","text":"Ben Kraal"}]},"title":"Magistrates and voice recognition: reconceptualising agency.","venue":"OZCHI","pages":"127-133","year":"2006","type":"Conference and Workshop Papers","access":"closed","key":"conf/ozchi/DugdaleK06","doi":"10.1145/1228175.1228199","ee":"https://doi.org/10.1145/1228175.1228199","url":"https://dblp.org/rec/conf/ozchi/DugdaleK06"},
+"url":"URL#7336247"
+},
+{
+"@score":"3",
+"@id":"7656335",
+"info":{"authors":{"author":[{"@pid":"94/2014","text":"Dario Bianchi"},{"@pid":"69/5942","text":"Agostino Poggi"}]},"title":"Ontology Based Automatic Speech Recognition and Generation for Human-Agent Interaction.","venue":"WETICE","pages":"65-66","year":"2004","type":"Conference and Workshop Papers","access":"closed","key":"conf/wetice/BianchiP04","doi":"10.1109/ENABL.2004.47","ee":"https://doi.org/10.1109/ENABL.2004.47","url":"https://dblp.org/rec/conf/wetice/BianchiP04"},
+"url":"URL#7656335"
+},
+{
+"@score":"3",
+"@id":"7749096",
+"info":{"authors":{"author":[{"@pid":"37/4325-1","text":"Michael Walsh 0001"},{"@pid":"61/3074","text":"Robert Kelly"},{"@pid":"o/GregoryMPOHare","text":"Gregory M. P. O&apos;Hare"},{"@pid":"81/2648","text":"Julie Carson-Berndsen"},{"@pid":"70/3120","text":"Tarek Abu-Amer"}]},"title":"A Multi-Agent Computational Linguistic Approach to Speech Recognition.","venue":"IJCAI","pages":"1477-","year":"2003","type":"Conference and Workshop Papers","access":"open","key":"conf/ijcai/WalshKOCA03","ee":"http://ijcai.org/Proceedings/03/Papers/245.pdf","url":"https://dblp.org/rec/conf/ijcai/WalshKOCA03"},
+"url":"URL#7749096"
+},
+{
+"@score":"3",
+"@id":"7751095",
+"info":{"authors":{"author":[{"@pid":"33/2121","text":"Nobuaki Minematsu"},{"@pid":"45/9285","text":"Keita Yamauchi"},{"@pid":"05/3477","text":"Keikichi Hirose"}]},"title":"Automatic estimation of perceptual age using speaker modeling techniques.","venue":"INTERSPEECH","pages":"3005-3008","year":"2003","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/MinematsuYH03","doi":"10.21437/EUROSPEECH.2003-770","ee":"https://doi.org/10.21437/Eurospeech.2003-770","url":"https://dblp.org/rec/conf/interspeech/MinematsuYH03"},
+"url":"URL#7751095"
+},
+{
+"@score":"3",
+"@id":"8046469",
+"info":{"authors":{"author":[{"@pid":"36/2087","text":"Elizabeth A. Hinkelman"},{"@pid":"43/3766","text":"Stephen P. Spackman"}]},"title":"Abductive speech act recognition, corporate agents, and the COSMA system.","venue":"Abduction, Belief and Context in Dialogue","pages":"429-455","year":"2000","type":"Parts in Books or Collections","access":"closed","key":"books/bc/00/HinkelmanS00","doi":"10.1075/NLP.1.15HIN","ee":"https://doi.org/10.1075/nlp.1.15hin","url":"https://dblp.org/rec/books/bc/00/HinkelmanS00"},
+"url":"URL#8046469"
+},
+{
+"@score":"3",
+"@id":"8193659",
+"info":{"authors":{"author":{"@pid":"23/4725","text":"Sara Reese Hedberg"}},"title":"Executive Insight: Dictating this Article to My Computer: Automatic Speech Recognition is Coming of Age.","venue":"IEEE Expert","volume":"12","number":"6","pages":"9-11","year":"1997","type":"Journal Articles","access":"closed","key":"journals/expert/Hedberg97d","doi":"10.1109/64.642953","ee":"https://doi.org/10.1109/64.642953","url":"https://dblp.org/rec/journals/expert/Hedberg97d"},
+"url":"URL#8193659"
+},
+{
+"@score":"3",
+"@id":"8227023",
+"info":{"authors":{"author":[{"@pid":"50/5640","text":"Andrew R. Gray"},{"@pid":"21/2589","text":"Richard Kilgour"},{"@pid":"k/NikolaKKasabov","text":"Nikola K. Kasabov"}]},"title":"An Agent Based Framework for Modular Speech Recognition and Language Processing Systems.","venue":"ICONIP","pages":"1076-1079","year":"1997","type":"Conference and Workshop Papers","access":"unavailable","key":"conf/iconip/GrayKK97","url":"https://dblp.org/rec/conf/iconip/GrayKK97"},
+"url":"URL#8227023"
+},
+{
+"@score":"3",
+"@id":"8270329",
+"info":{"authors":{"author":[{"@pid":"96/4190","text":"Don Xiangdong Cai"},{"@pid":"65/243","text":"Kenneth Chan"}]},"title":"Technical Considerations in the Design of an Intelligent Agent Using Automated Speech Recognition (ASR).","venue":"CHI Conference Companion","pages":"250-251","year":"1996","type":"Conference and Workshop Papers","access":"closed","key":"conf/chi/CaiC96","doi":"10.1145/257089.257306","ee":"https://doi.org/10.1145/257089.257306","url":"https://dblp.org/rec/conf/chi/CaiC96"},
+"url":"URL#8270329"
+}
+]
+}
+}
+}

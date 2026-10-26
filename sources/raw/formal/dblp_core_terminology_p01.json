@@ -1,0 +1,161 @@
+{
+"result":{
+"query":"speech*|voice*|vocal*|acoustic* biomarker*",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"25.84"
+},
+"completions":{
+"@total":"2",
+"@computed":"2",
+"@sent":"2",
+"c":[
+{
+"@sc":"80",
+"@dc":"80",
+"@oc":"80",
+"@id":"70570899",
+"text":"biomarkers"
+},
+{
+"@sc":"40",
+"@dc":"40",
+"@oc":"40",
+"@id":"70570897",
+"text":"biomarker"
+}
+]
+},
+"hits":{
+"@total":"120",
+"@computed":"120",
+"@sent":"20",
+"@first":"100",
+"hit":[{
+"@score":"2",
+"@id":"3717364",
+"info":{"authors":{"author":[{"@pid":"277/3639","text":"Catarina Botelho"},{"@pid":"72/6829","text":"Isabel Trancoso"},{"@pid":"71/1198","text":"Alberto Abad"},{"@pid":"68/7049","text":"Teresa Paiva"}]},"title":"Speech as a Biomarker for Obstructive Sleep Apnea Detection.","venue":"ICASSP","pages":"5851-5855","year":"2019","type":"Conference and Workshop Papers","access":"closed","key":"conf/icassp/BotelhoTAP19","doi":"10.1109/ICASSP.2019.8682431","ee":"https://doi.org/10.1109/ICASSP.2019.8682431","url":"https://dblp.org/rec/conf/icassp/BotelhoTAP19"},
+"url":"URL#3717364"
+},
+{
+"@score":"2",
+"@id":"3760759",
+"info":{"authors":{"author":[{"@pid":"263/4896","text":"Camille Noufi"},{"@pid":"80/9229","text":"Adam C. Lammert"},{"@pid":"56/9879","text":"Daryush D. Mehta"},{"@pid":"68/1665","text":"James R. Williamson"},{"@pid":"161/8803","text":"Gregory A. Ciccarelli"},{"@pid":"60/5668","text":"Douglas E. Sturim"},{"@pid":"68/10650","text":"Jordan R. Green"},{"@pid":"127/8697","text":"Thomas F. Campbell"},{"@pid":"67/4478","text":"Thomas F. Quatieri"}]},"title":"Vocal Biomarker Assessment Following Pediatric Traumatic Brain Injury: A Retrospective Cohort Study.","venue":"INTERSPEECH","pages":"3895-3899","year":"2019","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/NoufiLMWCSGCQ19","doi":"10.21437/INTERSPEECH.2019-1200","ee":"https://doi.org/10.21437/Interspeech.2019-1200","url":"https://dblp.org/rec/conf/interspeech/NoufiLMWCSGCQ19"},
+"url":"URL#3760759"
+},
+{
+"@score":"2",
+"@id":"3860465",
+"info":{"authors":{"author":[{"@pid":"64/10862","text":"Larry Zhang"},{"@pid":"195/9015","text":"Xiaotong Chen"},{"@pid":"243/3262","text":"Abbad Vakil"},{"@pid":"243/2658","text":"Ali Byott"},{"@pid":"229/0477","text":"Reza Hosseini Ghomi"}]},"title":"DigiVoice: Voice Biomarker Featurization and Analysis Pipeline.","venue":"CoRR","volume":"abs/1906.07222","year":"2019","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-1906-07222","ee":"http://arxiv.org/abs/1906.07222","url":"https://dblp.org/rec/journals/corr/abs-1906-07222"},
+"url":"URL#3860465"
+},
+{
+"@score":"2",
+"@id":"3887290",
+"info":{"authors":{"author":[{"@pid":"255/7478","text":"Huy Phi"},{"@pid":"255/7426","text":"Sanjeev Janarthanan"},{"@pid":"64/10862","text":"Larry Zhang"},{"@pid":"229/0477","text":"Reza Hosseini Ghomi"}]},"title":"Voice Biomarker Identification for Effects of Deep-Brain Stimulation on Parkinson&apos;s Disease.","venue":"CoRR","volume":"abs/1912.00866","year":"2019","type":"Informal and Other Publications","access":"open","key":"journals/corr/abs-1912-00866","ee":"http://arxiv.org/abs/1912.00866","url":"https://dblp.org/rec/journals/corr/abs-1912-00866"},
+"url":"URL#3887290"
+},
+{
+"@score":"2",
+"@id":"4023580",
+"info":{"authors":{"author":[{"@pid":"169/6765","text":"Sinan Hersek"},{"@pid":"68/7728","text":"Maziyar Baran Pouyan"},{"@pid":"169/6784","text":"Caitlin N. Teague"},{"@pid":"169/6750","text":"Michael N. Sawka"},{"@pid":"169/6737","text":"Mindy L. Millard-Stafford"},{"@pid":"169/6815","text":"Geza F. Kogler"},{"@pid":"206/6341","text":"Paul Wolkoff"},{"@pid":"00/1242","text":"Omer T. Inan"}]},"title":"Acoustical Emission Analysis by Unsupervised Graph Mining: A Novel Biomarker of Knee Health Status.","venue":"IEEE Trans. Biomed. Eng.","volume":"65","number":"6","pages":"1291-1300","year":"2018","type":"Journal Articles","access":"open","key":"journals/tbe/HersekPTSMKWI18","doi":"10.1109/TBME.2017.2743562","ee":"https://doi.org/10.1109/TBME.2017.2743562","url":"https://dblp.org/rec/journals/tbe/HersekPTSMKWI18"},
+"url":"URL#4023580"
+},
+{
+"@score":"2",
+"@id":"4064563",
+"info":{"authors":{"author":[{"@pid":"77/2029","text":"Ana Londral"},{"@pid":"91/5631","text":"Pedro Gómez-Vilda"},{"@pid":"201/2033","text":"Andrés Gómez-Rodellar"}]},"title":"Biomarkers of Neurodegenerative Progression from Spontaneous Speech Recorded in Mobile Devices: An Approach based on Articulation Speed Estimation - A Study of Patients Suffering from Amyotrophic Lateral Sclerosis.","venue":"BIOSIGNALS","pages":"269-275","year":"2018","type":"Conference and Workshop Papers","access":"closed","key":"conf/biostec/LondralVG18","doi":"10.5220/0006731302690275","ee":"https://doi.org/10.5220/0006731302690275","url":"https://dblp.org/rec/conf/biostec/LondralVG18"},
+"url":"URL#4064563"
+},
+{
+"@score":"2",
+"@id":"4154360",
+"info":{"authors":{"author":[{"@pid":"151/3251","text":"Jennifer Sloboda"},{"@pid":"80/9229","text":"Adam C. Lammert"},{"@pid":"68/1665","text":"James R. Williamson"},{"@pid":"138/7887","text":"Christopher J. Smalt"},{"@pid":"56/9879","text":"Daryush D. Mehta"},{"@pid":"226/1997","text":"C. O. L. Ian Curry"},{"@pid":"158/4268","text":"Kristin Heaton"},{"@pid":"60/100","text":"Jeff Palmer"},{"@pid":"67/4478","text":"Thomas F. Quatieri"}]},"title":"Vocal Biomarkers for Cognitive Performance Estimation in a Working Memory Task.","venue":"INTERSPEECH","pages":"1756-1760","year":"2018","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/SlobodaLWSMCHPQ18","doi":"10.21437/INTERSPEECH.2018-2418","ee":"https://doi.org/10.21437/Interspeech.2018-2418","url":"https://dblp.org/rec/conf/interspeech/SlobodaLWSMCHPQ18"},
+"url":"URL#4154360"
+},
+{
+"@score":"2",
+"@id":"4229473",
+"info":{"authors":{"author":[{"@pid":"212/6506","text":"Jan Hlavnicka"},{"@pid":"23/461","text":"Roman Cmejla"},{"@pid":"212/6350","text":"Tereza Tykalová"},{"@pid":"399/4920","text":"Karel Sonka"},{"@pid":"142/8691","text":"Evzen Ruzicka"},{"@pid":"50/10325","text":"Jan Rusz"}]},"title":"Early biomarkers of Parkinson&apos;s disease based on natural connected speech Data Set.","venue":"UCI-MLR","publisher":"UCI-MLR","year":"2018","type":"Data and Artifacts","access":"open","key":"data/10/HlavnikaMTORRJ18","doi":"10.24432/C5QK6J","ee":"https://doi.org/10.24432/C5QK6J","url":"https://dblp.org/rec/data/10/HlavnikaMTORRJ18"},
+"url":"URL#4229473"
+},
+{
+"@score":"2",
+"@id":"4280058",
+"info":{"authors":{"author":{"@pid":"161/8803","text":"Gregory A. Ciccarelli"}},"title":"Characterization of phoneme rate as a vocal biomarker of depression.","year":"2017","type":"Books and Theses","access":"closed","key":"phd/ndltd/Ciccarelli17","ee":"https://hdl.handle.net/1721.1/111877","url":"https://dblp.org/rec/phd/ndltd/Ciccarelli17"},
+"url":"URL#4280058"
+},
+{
+"@score":"2",
+"@id":"4424850",
+"info":{"authors":{"author":[{"@pid":"74/4038-6","text":"Zhenyu Liu 0006"},{"@pid":"172/7914","text":"Huanyu Kang"},{"@pid":"76/847-5","text":"Lei Feng 0005"},{"@pid":"54/2752","text":"Lan Zhang"}]},"title":"Speech pause time: A potential biomarker for depression detection.","venue":"BIBM","pages":"2020-2025","year":"2017","type":"Conference and Workshop Papers","access":"closed","key":"conf/bibm/LiuKFZ17","doi":"10.1109/BIBM.2017.8217971","ee":"https://doi.org/10.1109/BIBM.2017.8217971","url":"https://dblp.org/rec/conf/bibm/LiuKFZ17"},
+"url":"URL#4424850"
+},
+{
+"@score":"2",
+"@id":"4583209",
+"info":{"authors":{"author":[{"@pid":"212/6506","text":"Jan Hlavnicka"},{"@pid":"23/461","text":"Roman Cmejla"},{"@pid":"212/6350","text":"Tereza Tykalová"},{"@pid":"399/4920","text":"Karel Sonka"},{"@pid":"142/8691","text":"Evzen Ruzicka"},{"@pid":"50/10325","text":"Jan Rusz"}]},"title":"Early biomarkers of Parkinson&apos;s disease based on natural connected speech.","venue":"UCI-MLR","publisher":"UCI-MLR","year":"2017","type":"Data and Artifacts","access":"open","key":"data/10/HlavnikaTORRJ17","doi":"10.24432/C5W02Q","ee":"https://doi.org/10.24432/C5W02Q","url":"https://dblp.org/rec/data/10/HlavnikaTORRJ17"},
+"url":"URL#4583209"
+},
+{
+"@score":"2",
+"@id":"4837110",
+"info":{"authors":{"author":[{"@pid":"30/10108","text":"Sharifa Alghowinem"},{"@pid":"g/RolandGocke","text":"Roland Goecke"},{"@pid":"92/6424","text":"Julien Epps"},{"@pid":"21/4084-4","text":"Michael Wagner 0004"},{"@pid":"54/1171","text":"Jeffrey F. Cohn"}]},"title":"Cross-Cultural Depression Recognition from Vocal Biomarkers.","venue":"INTERSPEECH","pages":"1943-1947","year":"2016","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/AlghowinemGE0C16","doi":"10.21437/INTERSPEECH.2016-1339","ee":"https://doi.org/10.21437/Interspeech.2016-1339","url":"https://dblp.org/rec/conf/interspeech/AlghowinemGE0C16"},
+"url":"URL#4837110"
+},
+{
+"@score":"2",
+"@id":"4837193",
+"info":{"authors":{"author":[{"@pid":"161/8803","text":"Gregory A. Ciccarelli"},{"@pid":"67/4478","text":"Thomas F. Quatieri"},{"@pid":"26/11390","text":"Satrajit S. Ghosh"}]},"title":"Neurophysiological Vocal Source Modeling for Biomarkers of Disease.","venue":"INTERSPEECH","pages":"1200-1204","year":"2016","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/CiccarelliQG16","doi":"10.21437/INTERSPEECH.2016-292","ee":"https://doi.org/10.21437/Interspeech.2016-292","url":"https://dblp.org/rec/conf/interspeech/CiccarelliQG16"},
+"url":"URL#4837193"
+},
+{
+"@score":"2",
+"@id":"5069844",
+"info":{"authors":{"author":[{"@pid":"169/6784","text":"Caitlin Teague"},{"@pid":"169/6765","text":"Sinan Hersek"},{"@pid":"165/8335","text":"Hakan Toreyin"},{"@pid":"169/6737","text":"Mindy L. Millard-Stafford"},{"@pid":"169/6762","text":"Michael L. Jones 0001"},{"@pid":"169/6815","text":"Geza F. Kogler"},{"@pid":"169/6750","text":"Michael N. Sawka"},{"@pid":"00/1242","text":"Omer T. Inan"}]},"title":"Novel approaches to measure acoustic emissions as biomarkers for joint health assessment.","venue":"BSN","pages":"1-6","year":"2015","type":"Conference and Workshop Papers","access":"closed","key":"conf/bsn/TeagueHTMJKSI15","doi":"10.1109/BSN.2015.7299389","ee":"https://doi.org/10.1109/BSN.2015.7299389","url":"https://dblp.org/rec/conf/bsn/TeagueHTMJKSI15"},
+"url":"URL#5069844"
+},
+{
+"@score":"2",
+"@id":"5150508",
+"info":{"authors":{"author":[{"@pid":"67/4478","text":"Thomas F. Quatieri"},{"@pid":"68/1665","text":"James R. Williamson"},{"@pid":"138/7887","text":"Christopher J. Smalt"},{"@pid":"169/6838","text":"Tejash Patel"},{"@pid":"173/6587","text":"Joseph Perricone"},{"@pid":"56/9879","text":"Daryush D. Mehta"},{"@pid":"133/4447","text":"Brian S. Helfer"},{"@pid":"161/8803","text":"Gregory A. Ciccarelli"},{"@pid":"157/8265","text":"Darrell O. Ricke"},{"@pid":"57/379","text":"Nicolas Malyska"},{"@pid":"60/100","text":"Jeff Palmer"},{"@pid":"158/4268","text":"Kristin Heaton"},{"@pid":"173/6616","text":"Marianna Eddy"},{"@pid":"173/6482","text":"Joseph Moran"}]},"title":"Vocal biomarkers to discriminate cognitive load in a working memory task.","venue":"INTERSPEECH","pages":"2684-2688","year":"2015","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/QuatieriWSPPMHC15","doi":"10.21437/INTERSPEECH.2015-566","ee":"https://doi.org/10.21437/Interspeech.2015-566","url":"https://dblp.org/rec/conf/interspeech/QuatieriWSPPMHC15"},
+"url":"URL#5150508"
+},
+{
+"@score":"2",
+"@id":"5150717",
+"info":{"authors":{"author":[{"@pid":"133/4403","text":"Bea Yu"},{"@pid":"67/4478","text":"Thomas F. Quatieri"},{"@pid":"68/1665","text":"James R. Williamson"},{"@pid":"133/4335","text":"James C. Mundt"}]},"title":"Cognitive impairment prediction in the elderly based on vocal biomarkers.","venue":"INTERSPEECH","pages":"3734-3738","year":"2015","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/YuQWM15","doi":"10.21437/INTERSPEECH.2015-741","ee":"https://doi.org/10.21437/Interspeech.2015-741","url":"https://dblp.org/rec/conf/interspeech/YuQWM15"},
+"url":"URL#5150717"
+},
+{
+"@score":"2",
+"@id":"5468872",
+"info":{"authors":{"author":[{"@pid":"68/1665","text":"James R. Williamson"},{"@pid":"67/4478","text":"Thomas F. Quatieri"},{"@pid":"133/4447","text":"Brian S. Helfer"},{"@pid":"161/8803","text":"Gregory A. Ciccarelli"},{"@pid":"56/9879","text":"Daryush D. Mehta"}]},"title":"Vocal and Facial Biomarkers of Depression based on Motor Incoordination and Timing.","venue":"AVEC@MM","pages":"65-72","year":"2014","type":"Conference and Workshop Papers","access":"closed","key":"conf/mm/WilliamsonQHCM14","doi":"10.1145/2661806.2661809","ee":"https://doi.org/10.1145/2661806.2661809","url":"https://dblp.org/rec/conf/mm/WilliamsonQHCM14"},
+"url":"URL#5468872"
+},
+{
+"@score":"2",
+"@id":"5755720",
+"info":{"authors":{"author":[{"@pid":"68/1665","text":"James R. Williamson"},{"@pid":"67/4478","text":"Thomas F. Quatieri"},{"@pid":"133/4447","text":"Brian S. Helfer"},{"@pid":"133/4184","text":"Rachelle Horwitz"},{"@pid":"133/4403","text":"Bea Yu"},{"@pid":"56/9879","text":"Daryush D. Mehta"}]},"title":"Vocal biomarkers of depression based on motor incoordination.","venue":"AVEC@ACM Multimedia","pages":"41-48","year":"2013","type":"Conference and Workshop Papers","access":"closed","key":"conf/mm/WilliamsonQHHYM13","doi":"10.1145/2512530.2512531","ee":"https://doi.org/10.1145/2512530.2512531","url":"https://dblp.org/rec/conf/mm/WilliamsonQHHYM13"},
+"url":"URL#5755720"
+},
+{
+"@score":"2",
+"@id":"6003925",
+"info":{"authors":{"author":[{"@pid":"67/4478","text":"Thomas F. Quatieri"},{"@pid":"57/379","text":"Nicolas Malyska"}]},"title":"Vocal-Source Biomarkers for Depression: A Link to Psychomotor Activity.","venue":"INTERSPEECH","pages":"1059-1062","year":"2012","type":"Conference and Workshop Papers","access":"open","key":"conf/interspeech/QuatieriM12","doi":"10.21437/INTERSPEECH.2012-311","ee":"https://doi.org/10.21437/Interspeech.2012-311","url":"https://dblp.org/rec/conf/interspeech/QuatieriM12"},
+"url":"URL#6003925"
+},
+{
+"@score":"2",
+"@id":"6411992",
+"info":{"authors":{"author":[{"@pid":"27/11302","text":"Onur Tigli"},{"@pid":"91/11302","text":"Louis Bivona"},{"@pid":"23/11303","text":"Patricia Berg"},{"@pid":"35/293","text":"Mona E. Zaghloul"}]},"title":"Fabrication and Characterization of a Surface-Acoustic-Wave Biosensor in CMOS Technology for Cancer Biomarker Detection.","venue":"IEEE Trans. Biomed. Circuits Syst.","volume":"4","number":"1","pages":"62-73","year":"2010","type":"Journal Articles","access":"closed","key":"journals/tbcas/TigliBBZ10","doi":"10.1109/TBCAS.2009.2033662","ee":"https://doi.org/10.1109/TBCAS.2009.2033662","url":"https://dblp.org/rec/journals/tbcas/TigliBBZ10"},
+"url":"URL#6411992"
+}
+]
+}
+}
+}

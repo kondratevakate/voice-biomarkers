@@ -1,0 +1,1382 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
+  <id>https://arxiv.org/api/YZkdub5rG5YQpzMnY1PpahkNdxg</id>
+  <title>arXiv Query: search_query=(abs:"voice biomarker" OR abs:"vocal biomarker" OR abs:"speech biomarker" OR abs:"acoustic biomarker" OR abs:"voice-based digital biomarker" OR abs:"speech-based digital biomarker" OR abs:"speech analysis" OR abs:"acoustic features" OR abs:"pathological speech") AND (abs:asthma OR abs:COPD OR abs:respiratory OR abs:cough OR abs:COVID OR abs:dysphonia OR abs:"voice disorder")&amp;id_list=&amp;start=0&amp;max_results=100</title>
+  <updated>2026-09-01T15:08:42Z</updated>
+  <link href="https://arxiv.org/api/query?search_query=(abs:%22voice+biomarker%22+OR+(abs:%22vocal+biomarker%22+OR+(abs:%22speech+biomarker%22+OR+(abs:%22acoustic+biomarker%22+OR+(abs:%22voice-based+digital+biomarker%22+OR+(abs:%22speech-based+digital+biomarker%22+OR+(abs:%22speech+analysis%22+OR+(abs:%22acoustic+features%22+OR+abs:%22pathological+speech%22))))))))+AND+(abs:asthma+OR+(abs:COPD+OR+(abs:respiratory+OR+(abs:cough+OR+(abs:COVID+OR+(abs:dysphonia+OR+abs:%22voice+disorder%22))))))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
+  <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
+  <opensearch:totalResults>40</opensearch:totalResults>
+  <opensearch:startIndex>0</opensearch:startIndex>
+  <entry>
+    <id>http://arxiv.org/abs/2607.08714v1</id>
+    <title>Multimodal Digital Biomarker for Asthma: Complementary Roles of Vocal, Clinical and Demographic Factors</title>
+    <updated>2026-07-09T17:24:30Z</updated>
+    <link href="https://arxiv.org/abs/2607.08714v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.08714v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Asthma affects over 260 million people worldwide, yet diagnosis remains dependent on spirometry and specialist assessment, limiting accessibility in primary care and low-resource settings. Vocal biomarkers offer a promising non-invasive alternative, but prior studies have largely focused on acoustic features without integrating clinical context. We present a multimodal Mixture-of-Experts framework for asthma detection that adaptively combines acoustic embeddings from sustained vowel phonation and reading passage tasks with structured clinical and demographic data. The model was evaluated on a matched cohort of 1,218 asthma cases and healthy controls from the Colive Voice study. The multimodal model achieved an AUROC of 0.85 and Brier score of 0.17, outperforming unimodal and bimodal approaches. Adaptive gating analysis revealed increased reliance on audio features in participants with greater respiratory symptom burden, whereas clinical features contributed more strongly in less symptomatic individuals. These findings support scalable and explainable asthma screening using smartphone-collected voice recordings.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-09T17:24:30Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Vladimir Despotovic</name>
+    </author>
+    <author>
+      <name>Milena Despotovic</name>
+    </author>
+    <author>
+      <name>Abir Elbeji</name>
+    </author>
+    <author>
+      <name>Petr V. Nazarov</name>
+    </author>
+    <author>
+      <name>Guy Fagherazzi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2607.03356v1</id>
+    <title>CaReCoS: A Spectrogram based Visual Benchmark for Cardiac, Respiratory and Cough Sounds</title>
+    <updated>2026-07-03T14:14:04Z</updated>
+    <link href="https://arxiv.org/abs/2607.03356v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2607.03356v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Medical acoustic signals such as respiratory sounds, cardiac auscultations, and cough audio carry rich diagnostic information, yet no existing benchmark evaluates multimodal reasoning over their spectrogram representations. We address both gaps with CaReCoS, a benchmark pairing clinically grounded questions with mel-spectrogram images derived from seven medical audio datasets. Evaluating 9 state-of-the-art vision and omni models, we find that all struggle with fine-grained acoustic features encoded in spectrograms: no model reliably combines visual pattern recognition with medical knowledge, achieving a maximum accuracy of 51.2%, underscoring the need for training on medical sound visualizations.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-07-03T14:14:04Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Harshit Rajgarhia</name>
+    </author>
+    <author>
+      <name>Shuubham Ojha</name>
+    </author>
+    <author>
+      <name>Akhil Pothanapalli</name>
+    </author>
+    <author>
+      <name>Rachuri Lokesh</name>
+    </author>
+    <author>
+      <name>Asif Shaik</name>
+    </author>
+    <author>
+      <name>Abhishek Mukherji</name>
+    </author>
+    <author>
+      <name>Prasanna Desikan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.21411v1</id>
+    <title>CoughPhase-CLR: Designing an acoustics-informed foundation model for coughing sound classification</title>
+    <updated>2026-06-19T13:26:06Z</updated>
+    <link href="https://arxiv.org/abs/2606.21411v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.21411v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this work, we introduce CoughPhase-CLR, a self-supervised learning framework designed to leverage the physiological phases of a cough for robust representation learning. Unlike generic contrastive frameworks, CoughPhase-CLR constructs positive pairs based on these specific acoustic phases. We pre-trained our model on approximately 40 hours of public cough audio and evaluated it across five downstream tasks, including COVID-19 detection, chronic obstructive pulmonary disease (COPD) state classification, and smoker status prediction. Our results demonstrate that cough-specific pre-training consistently outperforms standard random-cropping techniques when training on cough recordings. Additionally, we benchmarked a diverse set of state-of-the-art models on COPD state classification, highlighting the difficulty of this task. The best-performing models, pretrained on either general audio or respiratory sounds, achieved a UAR of 57\%, failing to outperform the state-of-the-art performance of 84\% UAR achieved using speech analysis.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-19T13:26:06Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Marius Moldovan</name>
+    </author>
+    <author>
+      <name>Anton Batliner</name>
+    </author>
+    <author>
+      <name>Thomas M. Berghaus</name>
+    </author>
+    <author>
+      <name>Björn W. Schuller</name>
+    </author>
+    <author>
+      <name>Andreas Triantafyllopoulos</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2606.08247v1</id>
+    <title>AeroSpectra Sentinel: An Auditable LLM Prompt-Chaining Decision-Support Workflow for Acute Asthma Risk Assessment from Respiratory Sounds and Clinical Signals</title>
+    <updated>2026-06-06T16:11:45Z</updated>
+    <link href="https://arxiv.org/abs/2606.08247v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2606.08247v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Acute asthma risk assessment requires rapid interpretation of respiratory sounds, oxygenation, airflow limitation, speech ability, work of breathing, mental status, and response to reliever therapy. Conventional audio-only classifiers can detect wheeze-like patterns but often lack transparent clinical reasoning and safe escalation logic. This paper presents AeroSpectra Sentinel, a client-side research prototype and decision-support workflow that combines short-time Fourier transform (STFT) respiratory sound analysis, lightweight machine-learning screening, clinical feature fusion, and a five-stage large language model (LLM) prompt-chaining process. The workflow separates signal acquisition, preprocessing, acoustic feature extraction, ML screening, clinical guardrails, and FHIR-ready reporting. We evaluated the audio screening component on a public respiratory sound dataset containing 1,211 WAV recordings from five labels. Using a stratified subset of 584 recordings, a random forest achieved 91.10% binary accuracy and 78.69% F1-score for asthma-vs-non-asthma screening, while a feature-based multilayer perceptron achieved 89.73% accuracy and 78.26% F1-score. A compact log-spectrogram CNN achieved 73.29% accuracy and 55.17% F1-score. Multiclass classification achieved 77.40% accuracy and 77.23% macro-F1. To evaluate the LLM workflow, we conducted a scenario-based audit on 40 simulated clinical vignettes comparing one-shot prompting, prompt chaining, prompt chaining with guardrails, and prompt chaining with guardrails plus FHIR schema validation. The guardrail-plus-schema variant achieved the strongest simulated safety and documentation consistency. AeroSpectra Sentinel is intended as a research prototype, not as a diagnostic medical device or clinically validated risk-assessment product.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-06-06T16:11:45Z</published>
+    <arxiv:comment>10 pages, 8 figures, 5 tables, 14 equations</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Aueaphum Aueawatthanaphisut</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2605.16878v1</id>
+    <title>Speaker-Disentangled Remote Speech Detection of Asthma and COPD Exacerbations</title>
+    <updated>2026-05-16T08:39:30Z</updated>
+    <link href="https://arxiv.org/abs/2605.16878v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2605.16878v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Early detection of exacerbations in asthma and chronic obstructive pulmonary disease (COPD) is important for timely intervention. Speech has emerged as a promising tool for continuous, non-invasive respiratory disease monitoring. However, speech signals inherently carry speaker-identifiable attributes that may dominate model predictions, which may compromise both diagnosis performance and patient privacy. Furthermore, the acoustic features associated with respiratory disease and speaker identity remain unclear in respiratory disease monitoring. We propose an adversarial learning architecture that disentangles pathology-related acoustic patterns from speaker-identifiable attributes. The framework optimizes two clinically hierarchical tasks: (i) respiratory status classification (stable vs. exacerbated) and (ii) exacerbation type classification (asthma exacerbation vs. COPD exacerbation). Speaker identity is suppressed through gradient reversal-based adversarial training. To enhance clinical interpretability, we employ SHapley Additive exPlanations (SHAP) to quantify the contributions of acoustic features to pathology-related predictions versus speaker identity. On the TACTICAS dataset, our method outperforms the single-task baseline across both tasks. For the respiratory status task (stable vs. exacerbated), the AUC improves from 0.897 to 0.910. For the exacerbation type task (asthma exacerbation vs. COPD exacerbation), the AUC increases from 0.674 to 0.793. Concurrently, the J-ratio decreases, confirming effective suppression of speaker information. SHAP analysis reveals the contributions of the acoustic features to both tasks. External validation on the Bridge2AI-Voice dataset further demonstrates consistent performance improvement and reduced speaker dependency, confirming cross-dataset generalizability.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-05-16T08:39:30Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Yuyang Yan</name>
+    </author>
+    <author>
+      <name>Sami O. Simons</name>
+    </author>
+    <author>
+      <name>Visara Urovi</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2604.16445v2</id>
+    <title>SAND: The Challenge on Speech Analysis for Neurodegenerative Disease Assessment</title>
+    <updated>2026-05-12T09:43:45Z</updated>
+    <link href="https://arxiv.org/abs/2604.16445v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2604.16445v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recent advances in Artificial Intelligence (AI) and the exploration of noninvasive, objective biomarkers, such as speech signals, have encouraged the development of algorithms to support the early diagnosis of neurodegenerative diseases, including Amyotrophic Lateral Sclerosis (ALS). Voice changes in subjects suffering from ALS typically manifest as progressive dysarthria, which is a prominent neurodegenerative symptom because it affects patients as the disease progresses. Since voice signals are complex data, the development and use of advanced AI techniques are fundamental to extracting distinctive patterns from them. Validating AI algorithms for ALS diagnosis and monitoring using voice signals is challenging, particularly due to the lack of annotated reference datasets. In this work, we present the outcome of a collaboration between a multidisciplinary team of clinicians and Machine Learning experts to create both a clinically annotated validation dataset and the "Speech Analysis for Neurodegenerative Diseases" (SAND) challenge based on it. Specifically, by analyzing voice disorders, the SAND challenge provides an opportunity to develop, test, and evaluate AI models for the automatic early identification and prediction of ALS disease progression.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2026-04-07T13:24:13Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <arxiv:journal_ref>IEEE Open Journal of Signal Processing (2026)</arxiv:journal_ref>
+    <author>
+      <name>Giovanna Sannino</name>
+    </author>
+    <author>
+      <name>Ivanoe De Falco</name>
+    </author>
+    <author>
+      <name>Nadia Brancati</name>
+    </author>
+    <author>
+      <name>Laura Verde</name>
+    </author>
+    <author>
+      <name>Maria Frucci</name>
+    </author>
+    <author>
+      <name>Daniel Riccio</name>
+    </author>
+    <author>
+      <name>Vincenzo Bevilacqua</name>
+    </author>
+    <author>
+      <name>Antonio Di Marino</name>
+    </author>
+    <author>
+      <name>Lucia Aruta</name>
+    </author>
+    <author>
+      <name>Valentina Virginia Iuzzolino</name>
+    </author>
+    <author>
+      <name>Gianmaria Senerchia</name>
+    </author>
+    <author>
+      <name>Myriam Spisto</name>
+    </author>
+    <author>
+      <name>Raffaele Dubbioso</name>
+    </author>
+    <arxiv:doi>10.1109/OJSP.2026.3713044</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/OJSP.2026.3713044" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.24628v1</id>
+    <title>AI-Driven Acoustic Voice Biomarker-Based Hierarchical Classification of Benign Laryngeal Voice Disorders from Sustained Vowels</title>
+    <updated>2025-12-31T05:04:54Z</updated>
+    <link href="https://arxiv.org/abs/2512.24628v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.24628v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Benign laryngeal voice disorders affect nearly one in five individuals and often manifest as dysphonia, while also serving as non-invasive indicators of broader physiological dysfunction. We introduce a clinically inspired hierarchical machine learning framework for automated classification of eight benign voice disorders alongside healthy controls, using acoustic features extracted from short, sustained vowel phonations. Experiments utilized 15,132 recordings from 1,261 speakers in the Saarbruecken Voice Database, covering vowels /a/, /i/, and /u/ at neutral, high, low, and gliding pitches. Mirroring clinical triage workflows, the framework operates in three sequential stages: Stage 1 performs binary screening of pathological versus non-pathological voices by integrating convolutional neural network-derived mel-spectrogram features with 21 interpretable acoustic biomarkers; Stage 2 stratifies voices into Healthy, Functional or Psychogenic, and Structural or Inflammatory groups using a cubic support vector machine; Stage 3 achieves fine-grained classification by incorporating probabilistic outputs from prior stages, improving discrimination of structural and inflammatory disorders relative to functional conditions. The proposed system consistently outperformed flat multi-class classifiers and pre-trained self-supervised models, including META HuBERT and Google HeAR, whose generic objectives are not optimized for sustained clinical phonation. By combining deep spectral representations with interpretable acoustic features, the framework enhances transparency and clinical alignment. These results highlight the potential of quantitative voice biomarkers as scalable, non-invasive tools for early screening, diagnostic triage, and longitudinal monitoring of vocal health.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-12-31T05:04:54Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Mohsen Annabestani</name>
+    </author>
+    <author>
+      <name>Samira Aghadoost</name>
+    </author>
+    <author>
+      <name>Anais Rameau</name>
+    </author>
+    <author>
+      <name>Olivier Elemento</name>
+    </author>
+    <author>
+      <name>Gloria Chia-Yi Chiang</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2512.00563v1</id>
+    <title>Explainable Multi-Modal Deep Learning for Automatic Detection of Lung Diseases from Respiratory Audio Signals</title>
+    <updated>2025-11-29T17:15:58Z</updated>
+    <link href="https://arxiv.org/abs/2512.00563v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2512.00563v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Respiratory diseases remain major global health challenges, and traditional auscultation is often limited by subjectivity, environmental noise, and inter-clinician variability. This study presents an explainable multimodal deep learning framework for automatic lung-disease detection using respiratory audio signals. The proposed system integrates two complementary representations: a spectral-temporal encoder based on a CNN-BiLSTM Attention architecture, and a handcrafted acoustic-feature encoder capturing physiologically meaningful descriptors such as MFCCs, spectral centroid, spectral bandwidth, and zero-crossing rate. These branches are combined through late-stage fusion to leverage both data-driven learning and domain-informed acoustic cues. The model is trained and evaluated on the Asthma Detection Dataset Version 2 using rigorous preprocessing, including resampling, normalization, noise filtering, data augmentation, and patient-level stratified partitioning. The study achieved strong generalization with 91.21% accuracy, 0.899 macro F1-score, and 0.9866 macro ROC-AUC, outperforming all ablated variants. An ablation study confirms the importance of temporal modeling, attention mechanisms, and multimodal fusion. The framework incorporates Grad-CAM, Integrated Gradients, and SHAP, generating interpretable spectral, temporal, and feature-level explanations aligned with known acoustic biomarkers to build clinical transparency. The findings demonstrate the framework's potential for telemedicine, point-of-care diagnostics, and real-world respiratory screening.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-11-29T17:15:58Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>S M Asiful Islam Saky</name>
+    </author>
+    <author>
+      <name>Md Rashidul Islam</name>
+    </author>
+    <author>
+      <name>Md Saiful Arefin</name>
+    </author>
+    <author>
+      <name>Shahaba Alam</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2509.14944v2</id>
+    <title>Estimating Respiratory Effort from Nocturnal Breathing Sounds for Obstructive Sleep Apnoea Screening</title>
+    <updated>2026-02-02T16:55:32Z</updated>
+    <link href="https://arxiv.org/abs/2509.14944v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2509.14944v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Obstructive sleep apnoea (OSA) is a prevalent condition with significant health consequences, yet many patients remain undiagnosed due to the complexity and cost of over-night polysomnography. Acoustic-based screening provides a scalable alternative, yet performance is limited by environmental noise and the lack of physiological context. Respiratory effort is a key signal used in clinical scoring of OSA events, but current approaches require additional contact sensors that reduce scalability and patient comfort. This paper presents the first study to estimate respiratory effort directly from nocturnal audio, enabling physiological context to be recovered from sound alone. We propose a latent-space fusion framework that integrates the estimated effort embeddings with acoustic features for OSA detection. Using a dataset of 157 nights from 103 participants recorded in home environments, our respiratory effort estimator achieves a concordance correlation coefficient of 0.48, capturing meaningful respiratory dynamics. Fusing effort and audio improves sensitivity and AUC over audio-only baselines, especially at low apnoea-hypopnoea index thresholds. The proposed approach requires only smartphone audio at test time, which enables sensor-free, scalable, and longitudinal OSA monitoring.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-09-18T13:31:19Z</published>
+    <arxiv:comment>Accepted at ICASSP 2026</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Xiaolei Xu</name>
+    </author>
+    <author>
+      <name>Chaoyue Niu</name>
+    </author>
+    <author>
+      <name>Guy J. Brown</name>
+    </author>
+    <author>
+      <name>Hector Romero</name>
+    </author>
+    <author>
+      <name>Ning Ma</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.20717v2</id>
+    <title>Unified Acoustic Representations for Screening Neurological and Respiratory Pathologies from Voice</title>
+    <updated>2025-12-19T10:45:33Z</updated>
+    <link href="https://arxiv.org/abs/2508.20717v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.20717v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Voice-based health assessment offers unprecedented opportunities for scalable, non-invasive disease screening, yet existing approaches typically focus on single conditions and fail to leverage the rich, multi-faceted information embedded in speech. We present MARVEL (Multi-task Acoustic Representations for Voice-based Health Analysis), a privacy-conscious multitask learning framework that simultaneously detects nine distinct neurological, respiratory, and voice disorders using only derived acoustic features, eliminating the need for raw audio transmission. Our dual-branch architecture employs specialized encoders with task-specific heads sharing a common acoustic backbone, enabling effective cross-condition knowledge transfer. Evaluated on the large-scale Bridge2AI-Voice v2.0 dataset, MARVEL achieves an overall AUROC of 0.78, with exceptional performance on neurological disorders (AUROC = 0.89), particularly for Alzheimer's disease/mild cognitive impairment (AUROC = 0.97). Our framework consistently outperforms single-modal baselines by 5-19% and surpasses state-of-the-art self-supervised models on 7 of 9 tasks, while correlation analysis reveals that the learned representations exhibit meaningful similarities with established acoustic features, indicating that the model's internal representations are consistent with clinically recognized acoustic patterns. By demonstrating that a single unified model can effectively screen for diverse conditions, this work establishes a foundation for deployable voice-based diagnostics in resource-constrained and remote healthcare settings.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-28T12:37:25Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Ran Piao</name>
+    </author>
+    <author>
+      <name>Yuan Lu</name>
+    </author>
+    <author>
+      <name>Hareld Kemps</name>
+    </author>
+    <author>
+      <name>Tong Xia</name>
+    </author>
+    <author>
+      <name>Aaqib Saeed</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.14089v1</id>
+    <title>Systematic FAIRness Assessment of Open Voice Biomarker Datasets for Mental Health and Neurodegenerative Diseases</title>
+    <updated>2025-08-14T06:55:27Z</updated>
+    <link href="https://arxiv.org/abs/2508.14089v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.14089v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Voice biomarkers--human-generated acoustic signals such as speech, coughing, and breathing--are promising tools for scalable, non-invasive detection and monitoring of mental health and neurodegenerative diseases. Yet, their clinical adoption remains constrained by inconsistent quality and limited usability of publicly available datasets. To address this gap, we present the first systematic FAIR (Findable, Accessible, Interoperable, Reusable) evaluation of 27 publicly available voice biomarker datasets focused on these disease areas. Using the FAIR Data Maturity Model and a structured, priority-weighted scoring method, we assessed FAIRness at subprinciple, principle, and composite levels. Our analysis revealed consistently high Findability but substantial variability and weaknesses in Accessibility, Interoperability, and Reusability. Mental health datasets exhibited greater variability in FAIR scores, while neurodegenerative datasets were slightly more consistent. Repository choice also significantly influenced FAIRness scores. To enhance dataset quality and clinical utility, we recommend adopting structured, domain-specific metadata standards, prioritizing FAIR-compliant repositories, and routinely applying structured FAIR evaluation frameworks. These findings provide actionable guidance to improve dataset interoperability and reuse, thereby accelerating the clinical translation of voice biomarker technologies.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-14T06:55:27Z</published>
+    <arxiv:comment>To appear in the Proceedings of the 28th International Conference on Text, Speech and Dialogue (TSD 2025), Erlangen, Germany, August 25-28, 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Ishaan Mahapatra</name>
+    </author>
+    <author>
+      <name>Nihar R. Mahapatra</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2508.07587v1</id>
+    <title>Voice Pathology Detection Using Phonation</title>
+    <updated>2025-08-11T03:33:18Z</updated>
+    <link href="https://arxiv.org/abs/2508.07587v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2508.07587v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Voice disorders significantly affect communication and quality of life, requiring an early and accurate diagnosis. Traditional methods like laryngoscopy are invasive, subjective, and often inaccessible. This research proposes a noninvasive, machine learning-based framework for detecting voice pathologies using phonation data.
+  Phonation data from the Saarbrücken Voice Database are analyzed using acoustic features such as Mel Frequency Cepstral Coefficients (MFCCs), chroma features, and Mel spectrograms. Recurrent Neural Networks (RNNs), including LSTM and attention mechanisms, classify samples into normal and pathological categories. Data augmentation techniques, including pitch shifting and Gaussian noise addition, enhance model generalizability, while preprocessing ensures signal quality. Scale-based features, such as Hölder and Hurst exponents, further capture signal irregularities and long-term dependencies.
+  The proposed framework offers a noninvasive, automated diagnostic tool for early detection of voice pathologies, supporting AI-driven healthcare, and improving patient outcomes.</summary>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-08-11T03:33:18Z</published>
+    <arxiv:comment>17 Pages, 11 Figures</arxiv:comment>
+    <arxiv:primary_category term="cs.CV"/>
+    <author>
+      <name>Sri Raksha Siva</name>
+    </author>
+    <author>
+      <name>Nived Suthahar</name>
+    </author>
+    <author>
+      <name>Prakash Boominathan</name>
+    </author>
+    <author>
+      <name>Uma Ranjan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2507.20052v1</id>
+    <title>Improving Deep Learning-based Respiratory Sound Analysis with Frequency Selection and Attention Mechanism</title>
+    <updated>2025-07-26T20:29:25Z</updated>
+    <link href="https://arxiv.org/abs/2507.20052v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2507.20052v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Accurate classification of respiratory sounds requires deep learning models that effectively capture fine-grained acoustic features and long-range temporal dependencies. Convolutional Neural Networks (CNNs) are well-suited for extracting local time-frequency patterns but are limited in modeling global context. In contrast, transformer-based models can capture long-range dependencies, albeit with higher computational demands. To address these limitations, we propose a compact CNN-Temporal Self-Attention (CNN-TSA) network that integrates lightweight self-attention into an efficient CNN backbone. Central to our approach is a Frequency Band Selection (FBS) module that suppresses noisy and non-informative frequency regions, substantially improving accuracy and reducing FLOPs by up to 50%. We also introduce age-specific models to enhance robustness across diverse patient groups. Evaluated on the SPRSound-2022/2023 and ICBHI-2017 lung sound datasets, CNN-TSA with FBS sets new benchmarks on SPRSound and achieves state-of-the-art performance on ICBHI, all with a significantly smaller computational footprint. Furthermore, integrating FBS into an existing transformer baseline yields a new record on ICBHI, confirming FBS as an effective drop-in enhancement. These results demonstrate that our framework enables reliable, real-time respiratory sound analysis suitable for deployment in resource-constrained settings.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-07-26T20:29:25Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Nouhaila Fraihi</name>
+    </author>
+    <author>
+      <name>Ouassim Karrakchou</name>
+    </author>
+    <author>
+      <name>Mounir Ghogho</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2506.06946v3</id>
+    <title>Making a Pipeline Production-Ready: Challenges and Lessons Learned in the Healthcare Domain</title>
+    <updated>2025-07-06T15:45:08Z</updated>
+    <link href="https://arxiv.org/abs/2506.06946v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2506.06946v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Deploying a Machine Learning (ML) training pipeline into production requires good software engineering practices. Unfortunately, the typical data science workflow often leads to code that lacks critical software quality attributes. This experience report investigates this problem in SPIRA, a project whose goal is to create an ML-Enabled System (MLES) to pre-diagnose insufficiency respiratory via speech analysis. This paper presents an overview of the architecture of the MLES, then compares three versions of its Continuous Training subsystem: from a proof of concept Big Ball of Mud (v1), to a design pattern-based Modular Monolith (v2), to a test-driven set of Microservices (v3) Each version improved its overall extensibility, maintainability, robustness, and resiliency. The paper shares challenges and lessons learned in this process, offering insights for researchers and practitioners seeking to productionize their pipelines.</summary>
+    <category term="cs.SE" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-06-07T23:00:13Z</published>
+    <arxiv:comment>8 pages, 3 figures (2 diagrams, 2 code listings), accepted to the workshop SADIS 2025</arxiv:comment>
+    <arxiv:primary_category term="cs.SE"/>
+    <arxiv:journal_ref>Software Architecture. ECSA 2025 Tracks and Workshops. ECSA 2025. Lecture Notes in Computer Science, vol 15982</arxiv:journal_ref>
+    <author>
+      <name>Daniel Angelo Esteves Lawand</name>
+      <arxiv:affiliation>University of São Paulo</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Lucas Quaresma Medina Lam</name>
+      <arxiv:affiliation>University of São Paulo</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Roberto Oliveira Bolgheroni</name>
+      <arxiv:affiliation>University of São Paulo</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Renato Cordeiro Ferreira</name>
+      <arxiv:affiliation>University of São Paulo</arxiv:affiliation>
+      <arxiv:affiliation>Jheronimus Academy of Data Science</arxiv:affiliation>
+      <arxiv:affiliation>Technical University of Eindhoven</arxiv:affiliation>
+      <arxiv:affiliation>Tilburg University</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Alfredo Goldman</name>
+      <arxiv:affiliation>University of São Paulo</arxiv:affiliation>
+    </author>
+    <author>
+      <name>Marcelo Finger</name>
+      <arxiv:affiliation>University of São Paulo</arxiv:affiliation>
+    </author>
+    <arxiv:doi>10.1007/978-3-032-04403-7_30</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1007/978-3-032-04403-7_30" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.16490v2</id>
+    <title>HPP-Voice: A Large-Scale Evaluation of Speech Embeddings for Multi-Phenotypic Classification</title>
+    <updated>2025-05-25T10:12:09Z</updated>
+    <link href="https://arxiv.org/abs/2505.16490v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.16490v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Human speech contains paralinguistic cues that reflect a speaker's physiological and neurological state, potentially enabling non-invasive detection of various medical phenotypes. We introduce the Human Phenotype Project Voice corpus (HPP-Voice): a dataset of 7,188 recordings in which Hebrew-speaking adults count for 30 seconds, with each speaker linked to up to 15 potentially voice-related phenotypes spanning respiratory, sleep, mental health, metabolic, immune, and neurological conditions. We present a systematic comparison of 14 modern speech embedding models, where modern speech embeddings from these 30-second counting tasks outperform MFCCs and demographics for downstream health condition classifications. We found that embedding learned from a speaker identification model can predict objectively measured moderate to severe sleep apnea in males with an AUC of 0.64 $\pm$ 0.03, while MFCC and demographic features led to AUCs of 0.56 $\pm$ 0.02 and 0.57 $\pm$ 0.02, respectively. Additionally, our results reveal gender-specific patterns in model effectiveness across different medical domains. For males, speaker identification and diarization models consistently outperformed speech foundation models for respiratory conditions (e.g., asthma: 0.61 $\pm$ 0.03 vs. 0.56 $\pm$ 0.02) and sleep-related conditions (insomnia: 0.65 $\pm$ 0.04 vs. 0.59 $\pm$ 0.05). For females, speaker diarization models performed best for smoking status (0.61 $\pm$ 0.02 vs 0.55 $\pm$ 0.02), while Hebrew-specific models performed best (0.59 $\pm$ 0.02 vs. 0.58 $\pm$ 0.02) in classifying anxiety compared to speech foundation models. Our findings provide evidence that a simple counting task can support large-scale, multi-phenotypic voice screening and highlight which embedding families generalize best to specific conditions, insights that can guide future vocal biomarker research and clinical deployment.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-22T10:22:15Z</published>
+    <arxiv:comment>supplementary figures added; typos corrected</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>David Krongauz</name>
+    </author>
+    <author>
+      <name>Hido Pinto</name>
+    </author>
+    <author>
+      <name>Sarah Kohn</name>
+    </author>
+    <author>
+      <name>Yanir Marmor</name>
+    </author>
+    <author>
+      <name>Eran Segal</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2505.00409v3</id>
+    <title>Perceptual implications of automatic anonymization in pathological speech</title>
+    <updated>2026-05-17T17:39:35Z</updated>
+    <link href="https://arxiv.org/abs/2505.00409v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2505.00409v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Automatic anonymization is increasingly used to enable ethical sharing of clinical speech, yet its perceptual and clinical consequences remain undercharacterized. We present a human-centered evaluation of automatically anonymized pathological speech, using a structured protocol with ten native and non-native German listeners spanning clinical and signal-processing expertise. The cohort comprised 180 German speakers from CLP, Dysarthria, Dysglossia, Dysphonia, and adult and child controls. Each original recording and its automatically-anonymized counterpart was evaluated on four tasks: zero-shot Turing-style discrimination, few-shot discrimination after brief familiarization, 5-point quality rating, and 4-point blinded clinical severity rating by a senior phoniatrician. Listeners detected anonymization at 91% zero-shot and 93% few-shot accuracy, with significant variation across disorders (p=0.008) that attenuated with familiarization. Perceived quality dropped by 30 ppts on a 0-100 scale (p&lt;0.001), reorganizing the perceived-quality hierarchy across groups. Native language modulated detectability but not quality degradation, while domain expertise modulated quality degradation but not detectability, a double dissociation between the two listener attributes; speaker sex and age produced no detectable bias. Clinical severity ratings were preserved at near-perfect agreement in Dysarthria, Dysglossia, and Dysphonia (quadratic-weighted Cohen's kappa 0.87-0.94), with no recording shifting by more than one grade. Crucially, perceptual outcomes were decoupled from the standard computational privacy metric: the pathology with the strongest computational anonymization was the least perceptually conspicuous, and vice versa. These findings argue for disorder-stratified, listener-stratified, clinician-validated evaluation as the minimum standard for licensing anonymized speech for clinical use.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-05-01T09:03:03Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Soroosh Tayebi Arasteh</name>
+    </author>
+    <author>
+      <name>Saba Afza</name>
+    </author>
+    <author>
+      <name>Tri-Thien Nguyen</name>
+    </author>
+    <author>
+      <name>Lukas Buess</name>
+    </author>
+    <author>
+      <name>Maryam Parvin</name>
+    </author>
+    <author>
+      <name>Tomas Arias-Vergara</name>
+    </author>
+    <author>
+      <name>Paula Andrea Perez-Toro</name>
+    </author>
+    <author>
+      <name>Hiu Ching Hung</name>
+    </author>
+    <author>
+      <name>Mahshad Lotfinia</name>
+    </author>
+    <author>
+      <name>Thomas Gorges</name>
+    </author>
+    <author>
+      <name>Elmar Noeth</name>
+    </author>
+    <author>
+      <name>Maria Schuster</name>
+    </author>
+    <author>
+      <name>Seung Hee Yang</name>
+    </author>
+    <author>
+      <name>Andreas Maier</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2501.09506v2</id>
+    <title>Multimodal Marvels of Deep Learning in Medical Diagnosis: A Comprehensive Review of COVID-19 Detection</title>
+    <updated>2025-01-21T07:09:59Z</updated>
+    <link href="https://arxiv.org/abs/2501.09506v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2501.09506v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>This study presents a comprehensive review of the potential of multimodal deep learning (DL) in medical diagnosis, using COVID-19 as a case example. Motivated by the success of artificial intelligence applications during the COVID-19 pandemic, this research aims to uncover the capabilities of DL in disease screening, prediction, and classification, and to derive insights that enhance the resilience, sustainability, and inclusiveness of science, technology, and innovation systems. Adopting a systematic approach, we investigate the fundamental methodologies, data sources, preprocessing steps, and challenges encountered in various studies and implementations. We explore the architecture of deep learning models, emphasising their data-specific structures and underlying algorithms. Subsequently, we compare different deep learning strategies utilised in COVID-19 analysis, evaluating them based on methodology, data, performance, and prerequisites for future research. By examining diverse data types and diagnostic modalities, this research contributes to scientific understanding and knowledge of the multimodal application of DL and its effectiveness in diagnosis. We have implemented and analysed 11 deep learning models using COVID-19 image, text, and speech (ie, cough) data. Our analysis revealed that the MobileNet model achieved the highest accuracy of 99.97% for COVID-19 image data and 93.73% for speech data (i.e., cough). However, the BiGRU model demonstrated superior performance in COVID-19 text classification with an accuracy of 99.89%. The broader implications of this research suggest potential benefits for other domains and disciplines that could leverage deep learning techniques for image, text, and speech analysis.</summary>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2025-01-16T12:38:49Z</published>
+    <arxiv:comment>43 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.LG"/>
+    <author>
+      <name>Md Shofiqul Islam</name>
+    </author>
+    <author>
+      <name>Khondokar Fida Hasan</name>
+    </author>
+    <author>
+      <name>Hasibul Hossain Shajeeb</name>
+    </author>
+    <author>
+      <name>Humayan Kabir Rana</name>
+    </author>
+    <author>
+      <name>Md Saifur Rahmand</name>
+    </author>
+    <author>
+      <name>Md Munirul Hasan</name>
+    </author>
+    <author>
+      <name>AKM Azad</name>
+    </author>
+    <author>
+      <name>Ibrahim Abdullah</name>
+    </author>
+    <author>
+      <name>Mohammad Ali Moni</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2411.02449v3</id>
+    <title>Chronic Obstructive Pulmonary Disease Prediction Using Deep Convolutional Network</title>
+    <updated>2025-09-28T22:02:24Z</updated>
+    <link href="https://arxiv.org/abs/2411.02449v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2411.02449v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Artificial intelligence and deep learning are increasingly applied in the clinical domain, particularly for early and accurate disease detection using medical imaging and sound. Due to limited trained personnel, there is a growing demand for automated tools to support clinicians in managing rising patient loads. Respiratory diseases such as cancer and diabetes remain major global health concerns requiring timely diagnosis and intervention. Auscultation of lung sounds, combined with chest X-rays, is an established diagnostic method for respiratory illness. This study presents a Deep Convolutional Neural Network (CNN)-based approach for the analysis of respiratory sound data to detect Chronic Obstructive Pulmonary Disease (COPD). Acoustic features extracted with the Librosa library, including Mel-Frequency Cepstral Coefficients (MFCCs), Mel-Spectrogram, Chroma, Chroma (Constant Q), and Chroma CENS, were used in training. The system also classifies disease severity as mild, moderate, or severe. Evaluation on the ICBHI database achieved 96% accuracy using 10-fold cross-validation and 90% accuracy without cross-validation. The proposed network outperforms existing methods, demonstrating potential as a practical tool for clinical deployment.</summary>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-11-03T05:01:49Z</published>
+    <arxiv:comment>16 Pages, 11 Figures</arxiv:comment>
+    <arxiv:primary_category term="eess.IV"/>
+    <author>
+      <name>Shahran Rahman Alve</name>
+    </author>
+    <author>
+      <name>Muhammad Zawad Mahmud</name>
+    </author>
+    <author>
+      <name>Samiha Islam</name>
+    </author>
+    <author>
+      <name>Mohammad Monirujjaman Khan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2410.09289v2</id>
+    <title>Multimodal Audio-based Disease Prediction with Transformer-based Hierarchical Fusion Network</title>
+    <updated>2024-12-14T19:08:02Z</updated>
+    <link href="https://arxiv.org/abs/2410.09289v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2410.09289v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Audio-based disease prediction is emerging as a promising supplement to traditional medical diagnosis methods, facilitating early, convenient, and non-invasive disease detection and prevention. Multimodal fusion, which integrates features from various domains within or across bio-acoustic modalities, has proven effective in enhancing diagnostic performance. However, most existing methods in the field employ unilateral fusion strategies that focus solely on either intra-modal or inter-modal fusion. This approach limits the full exploitation of the complementary nature of diverse acoustic feature domains and bio-acoustic modalities. Additionally, the inadequate and isolated exploration of latent dependencies within modality-specific and modality-shared spaces curtails their capacity to manage the inherent heterogeneity in multimodal data. To fill these gaps, we propose a transformer-based hierarchical fusion network designed for general multimodal audio-based disease prediction. Specifically, we seamlessly integrate intra-modal and inter-modal fusion in a hierarchical manner and proficiently encode the necessary intra-modal and inter-modal complementary correlations, respectively. Comprehensive experiments demonstrate that our model achieves state-of-the-art performance in predicting three diseases: COVID-19, Parkinson's disease, and pathological dysarthria, showcasing its promising potential in a broad context of audio-based disease prediction tasks. Additionally, extensive ablation studies and qualitative analyses highlight the significant benefits of each main component within our model.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-10-11T22:37:52Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Jinjin Cai</name>
+    </author>
+    <author>
+      <name>Ruiqi Wang</name>
+    </author>
+    <author>
+      <name>Dezhong Zhao</name>
+    </author>
+    <author>
+      <name>Ziqin Yuan</name>
+    </author>
+    <author>
+      <name>Victoria McKenna</name>
+    </author>
+    <author>
+      <name>Aaron Friedman</name>
+    </author>
+    <author>
+      <name>Rachel Foot</name>
+    </author>
+    <author>
+      <name>Susan Storey</name>
+    </author>
+    <author>
+      <name>Ryan Boente</name>
+    </author>
+    <author>
+      <name>Sudip Vhaduri</name>
+    </author>
+    <author>
+      <name>Byung-Cheol Min</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2408.07522v2</id>
+    <title>Optimising MFCC parameters for the automatic detection of respiratory diseases</title>
+    <updated>2026-05-08T12:43:37Z</updated>
+    <link href="https://arxiv.org/abs/2408.07522v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2408.07522v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Voice signals originating from the respiratory tract are utilized as valuable acoustic biomarkers for the diagnosis and assessment of respiratory diseases. Among the employed acoustic features, Mel Frequency Cepstral Coefficients (MFCC) is widely used for automatic analysis, with MFCC extraction commonly relying on default parameters. However, no comprehensive study has systematically investigated the impact of MFCC extraction parameters on respiratory disease diagnosis. In this study, we address this gap by examining the effects of key parameters, namely the number of coefficients, frame length, and hop length between frames, on respiratory condition examination. Our investigation uses four datasets: the Cambridge COVID-19 Sound database, the Coswara dataset, the Saarbrucken Voice Disorders (SVD) database, and a TACTICAS dataset. The Support Vector Machine (SVM) is employed as the classifier, given its widespread adoption and efficacy. Our findings indicate that the accuracy of MFCC decreases as hop length increases, and the optimal number of coefficients is observed to be approximately 30. The performance of MFCC varies with frame length across the datasets: for the COVID-19 datasets (Cambridge COVID-19 Sound database and Coswara dataset), performance declines with longer frame lengths, while for the SVD dataset, performance improves with increasing frame length (from 50 ms to 500 ms). Furthermore, we investigate the optimized combination of these parameters and observe substantial enhancements in accuracy. Compared to the worst combination, the SVM model achieves an accuracy of 81.1%, 80.6%, and 71.7%, with improvements of 19.6%, 16.10%, and 14.90% for the Cambridge COVID-19 Sound database, the Coswara dataset, and the SVD dataset respectively.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-08-14T12:56:17Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Yuyang Yan</name>
+    </author>
+    <author>
+      <name>Sami O. Simons</name>
+    </author>
+    <author>
+      <name>Loes van Bemmel</name>
+    </author>
+    <author>
+      <name>Lauren Reinders</name>
+    </author>
+    <author>
+      <name>Frits M. E. Franssen</name>
+    </author>
+    <author>
+      <name>Visara Urovi</name>
+    </author>
+    <arxiv:doi>10.1016/j.apacoust.2024.110299</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.apacoust.2024.110299" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2407.20989v1</id>
+    <title>Contrasting Deep Learning Models for Direct Respiratory Insufficiency Detection Versus Blood Oxygen Saturation Estimation</title>
+    <updated>2024-07-30T17:26:16Z</updated>
+    <link href="https://arxiv.org/abs/2407.20989v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2407.20989v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>We contrast high effectiveness of state of the art deep learning architectures designed for general audio classification tasks, refined for respiratory insufficiency (RI) detection and blood oxygen saturation (SpO$_2$) estimation and classification through automated audio analysis. Recently, multiple deep learning architectures have been proposed to detect RI in COVID patients through audio analysis, achieving accuracy above 95% and F1-score above 0.93. RI is a condition associated with low SpO$_2$ levels, commonly defined as the threshold SpO$_2$ &lt;92%. While SpO$_2$ serves as a crucial determinant of RI, a medical doctor's diagnosis typically relies on multiple factors. These include respiratory frequency, heart rate, SpO$_2$ levels, among others. Here we study pretrained audio neural networks (CNN6, CNN10 and CNN14) and the Masked Autoencoder (Audio-MAE) for RI detection, where these models achieve near perfect accuracy, surpassing previous results. Yet, for the regression task of estimating SpO$_2$ levels, the models achieve root mean square error values exceeding the accepted clinical range of 3.5% for finger oximeters. Additionally, Pearson correlation coefficients fail to surpass 0.3. As deep learning models perform better in classification than regression, we transform SpO$_2$-regression into a SpO$_2$-threshold binary classification problem, with a threshold of 92%. However, this task still yields an F1-score below 0.65. Thus, audio analysis offers valuable insights into a patient's RI status, but does not provide accurate information about actual SpO$_2$ levels, indicating a separation of domains in which voice and speech biomarkers may and may not be useful in medical diagnostics under current technologies.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-07-30T17:26:16Z</published>
+    <arxiv:comment>23 pages, 4 figures, in review at Journal of Biomedical Signal Processing and Control</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Marcelo Matheus Gauy</name>
+    </author>
+    <author>
+      <name>Natalia Hitomi Koza</name>
+    </author>
+    <author>
+      <name>Ricardo Mikio Morita</name>
+    </author>
+    <author>
+      <name>Gabriel Rocha Stanzione</name>
+    </author>
+    <author>
+      <name>Arnaldo Candido Junior</name>
+    </author>
+    <author>
+      <name>Larissa Cristina Berti</name>
+    </author>
+    <author>
+      <name>Anna Sara Shafferman Levin</name>
+    </author>
+    <author>
+      <name>Ester Cerdeira Sabino</name>
+    </author>
+    <author>
+      <name>Flaviane Romani Fernandes Svartman</name>
+    </author>
+    <author>
+      <name>Marcelo Finger</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2406.06355v1</id>
+    <title>Sustained Vowels for Pre- vs Post-Treatment COPD Classification</title>
+    <updated>2024-06-10T15:17:17Z</updated>
+    <link href="https://arxiv.org/abs/2406.06355v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2406.06355v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Chronic obstructive pulmonary disease (COPD) is a serious inflammatory lung disease affecting millions of people around the world. Due to an obstructed airflow from the lungs, it also becomes manifest in patients' vocal behaviour. Of particular importance is the detection of an exacerbation episode, which marks an acute phase and often requires hospitalisation and treatment. Previous work has shown that it is possible to distinguish between a pre- and a post-treatment state using automatic analysis of read speech. In this contribution, we examine whether sustained vowels can provide a complementary lens for telling apart these two states. Using a cohort of 50 patients, we show that the inclusion of sustained vowels can improve performance to up to 79\% unweighted average recall, from a 71\% baseline using read speech. We further identify and interpret the most important acoustic features that characterise the manifestation of COPD in sustained vowels.</summary>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-06-10T15:17:17Z</published>
+    <arxiv:comment>Accepted to INTERSPEECH 2024</arxiv:comment>
+    <arxiv:primary_category term="cs.CL"/>
+    <author>
+      <name>Andreas Triantafyllopoulos</name>
+    </author>
+    <author>
+      <name>Anton Batliner</name>
+    </author>
+    <author>
+      <name>Wolfgang Mayr</name>
+    </author>
+    <author>
+      <name>Markus Fendler</name>
+    </author>
+    <author>
+      <name>Florian Pokorny</name>
+    </author>
+    <author>
+      <name>Maurice Gerczuk</name>
+    </author>
+    <author>
+      <name>Shahin Amiriparian</name>
+    </author>
+    <author>
+      <name>Thomas Berghaus</name>
+    </author>
+    <author>
+      <name>Björn Schuller</name>
+    </author>
+    <arxiv:doi>10.21437/Interspeech.2024-96</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.21437/Interspeech.2024-96" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2404.08064v4</id>
+    <title>The Impact of Speech Anonymization on Pathology and Its Limits</title>
+    <updated>2024-09-20T13:23:49Z</updated>
+    <link href="https://arxiv.org/abs/2404.08064v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2404.08064v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Integration of speech into healthcare has intensified privacy concerns due to its potential as a non-invasive biomarker containing individual biometric information. In response, speaker anonymization aims to conceal personally identifiable information while retaining crucial linguistic content. However, the application of anonymization techniques to pathological speech, a critical area where privacy is especially vital, has not been extensively examined. This study investigates anonymization's impact on pathological speech across over 2,700 speakers from multiple German institutions, focusing on privacy, pathological utility, and demographic fairness. We explore both deep-learning-based and signal processing-based anonymization methods. We document substantial privacy improvements across disorders-evidenced by equal error rate increases up to 1933%, with minimal overall impact on utility. Specific disorders such as Dysarthria, Dysphonia, and Cleft Lip and Palate experience minimal utility changes, while Dysglossia shows slight improvements. Our findings underscore that the impact of anonymization varies substantially across different disorders. This necessitates disorder-specific anonymization strategies to optimally balance privacy with diagnostic utility. Additionally, our fairness analysis reveals consistent anonymization effects across most of the demographics. This study demonstrates the effectiveness of anonymization in pathological speech for enhancing privacy, while also highlighting the importance of customized and disorder-specific approaches to account for inversion attacks.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.AI" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CR" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2024-04-11T18:06:35Z</published>
+    <arxiv:comment>Published in Communications Medicine</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <arxiv:journal_ref>Commun Med 4, (2024)</arxiv:journal_ref>
+    <author>
+      <name>Soroosh Tayebi Arasteh</name>
+    </author>
+    <author>
+      <name>Tomas Arias-Vergara</name>
+    </author>
+    <author>
+      <name>Paula Andrea Perez-Toro</name>
+    </author>
+    <author>
+      <name>Tobias Weise</name>
+    </author>
+    <author>
+      <name>Kai Packhaeuser</name>
+    </author>
+    <author>
+      <name>Maria Schuster</name>
+    </author>
+    <author>
+      <name>Elmar Noeth</name>
+    </author>
+    <author>
+      <name>Andreas Maier</name>
+    </author>
+    <author>
+      <name>Seung Hee Yang</name>
+    </author>
+    <arxiv:doi>10.1038/s43856-024-00609-5</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s43856-024-00609-5" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2309.04505v2</id>
+    <title>COVID-19 Detection System: A Comparative Analysis of System Performance Based on Acoustic Features of Cough Audio Signals</title>
+    <updated>2024-06-19T03:51:04Z</updated>
+    <link href="https://arxiv.org/abs/2309.04505v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2309.04505v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>A wide range of respiratory diseases, such as cold and flu, asthma, and COVID-19, affect people's daily lives worldwide. In medical practice, respiratory sounds are widely used in medical services to diagnose various respiratory illnesses and lung disorders. The traditional diagnosis of such sounds requires specialized knowledge, which can be costly and reliant on human expertise. Despite this, recent advancements, such as cough audio recordings, have emerged as a means to automate the detection of respiratory conditions. Therefore, this research aims to explore various acoustic features that enhance the performance of machine learning (ML) models in detecting COVID-19 from cough signals. It investigates the efficacy of three feature extraction techniques, including Mel Frequency Cepstral Coefficients (MFCC), Chroma, and Spectral Contrast features, when applied to two machine learning algorithms, Support Vector Machine (SVM) and Multilayer Perceptron (MLP), and therefore proposes an efficient CovCepNet detection system. The proposed system provides a practical solution and demonstrates state-of-the-art classification performance, with an AUC of 0.843 on the COUGHVID dataset and 0.953 on the Virufy dataset for COVID-19 detection from cough audio signals.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2023-09-08T08:33:24Z</published>
+    <arxiv:comment>8 pages, 3 figures</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <arxiv:journal_ref>2023 IEEE 22nd International Conference on Trust, Security and Privacy in Computing and Communications (TrustCom), Exeter, United Kingdom, 2023, pp. 2706-2713</arxiv:journal_ref>
+    <author>
+      <name>Asmaa Shati</name>
+    </author>
+    <author>
+      <name>Ghulam Mubashar Hassan</name>
+    </author>
+    <author>
+      <name>Amitava Datta</name>
+    </author>
+    <arxiv:doi>10.1109/TrustCom60117.2023.00377</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1109/TrustCom60117.2023.00377" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2212.08571v2</id>
+    <title>Statistical Design and Analysis for Robust Machine Learning: A Case Study from COVID-19</title>
+    <updated>2023-02-27T13:39:00Z</updated>
+    <link href="https://arxiv.org/abs/2212.08571v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2212.08571v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Since early in the coronavirus disease 2019 (COVID-19) pandemic, there has been interest in using artificial intelligence methods to predict COVID-19 infection status based on vocal audio signals, for example cough recordings. However, existing studies have limitations in terms of data collection and of the assessment of the performances of the proposed predictive models. This paper rigorously assesses state-of-the-art machine learning techniques used to predict COVID-19 infection status based on vocal audio signals, using a dataset collected by the UK Health Security Agency. This dataset includes acoustic recordings and extensive study participant meta-data. We provide guidelines on testing the performance of methods to classify COVID-19 infection status based on acoustic features and we discuss how these can be extended more generally to the development and assessment of predictive methods based on public health datasets.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.AP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-12-15T13:50:13Z</published>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Davide Pigoli</name>
+    </author>
+    <author>
+      <name>Kieran Baker</name>
+    </author>
+    <author>
+      <name>Jobie Budd</name>
+    </author>
+    <author>
+      <name>Lorraine Butler</name>
+    </author>
+    <author>
+      <name>Harry Coppock</name>
+    </author>
+    <author>
+      <name>Sabrina Egglestone</name>
+    </author>
+    <author>
+      <name>Steven G. Gilmour</name>
+    </author>
+    <author>
+      <name>Chris Holmes</name>
+    </author>
+    <author>
+      <name>David Hurley</name>
+    </author>
+    <author>
+      <name>Radka Jersakova</name>
+    </author>
+    <author>
+      <name>Ivan Kiskin</name>
+    </author>
+    <author>
+      <name>Vasiliki Koutra</name>
+    </author>
+    <author>
+      <name>Jonathon Mellor</name>
+    </author>
+    <author>
+      <name>George Nicholson</name>
+    </author>
+    <author>
+      <name>Joe Packham</name>
+    </author>
+    <author>
+      <name>Selina Patel</name>
+    </author>
+    <author>
+      <name>Richard Payne</name>
+    </author>
+    <author>
+      <name>Stephen J. Roberts</name>
+    </author>
+    <author>
+      <name>Björn W. Schuller</name>
+    </author>
+    <author>
+      <name>Ana Tendero-Cañadas</name>
+    </author>
+    <author>
+      <name>Tracey Thornley</name>
+    </author>
+    <author>
+      <name>Alexander Titcomb</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2206.12309v1</id>
+    <title>Analyzing the impact of SARS-CoV-2 variants on respiratory sound signals</title>
+    <updated>2022-06-24T14:10:31Z</updated>
+    <link href="https://arxiv.org/abs/2206.12309v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2206.12309v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The COVID-19 outbreak resulted in multiple waves of infections that have been associated with different SARS-CoV-2 variants. Studies have reported differential impact of the variants on respiratory health of patients. We explore whether acoustic signals, collected from COVID-19 subjects, show computationally distinguishable acoustic patterns suggesting a possibility to predict the underlying virus variant. We analyze the Coswara dataset which is collected from three subject pools, namely, i) healthy, ii) COVID-19 subjects recorded during the delta variant dominant period, and iii) data from COVID-19 subjects recorded during the omicron surge. Our findings suggest that multiple sound categories, such as cough, breathing, and speech, indicate significant acoustic feature differences when comparing COVID-19 subjects with omicron and delta variants. The classification areas-under-the-curve are significantly above chance for differentiating subjects infected by omicron from those infected by delta. Using a score fusion from multiple sound categories, we obtained an area-under-the-curve of 89% and 52.4% sensitivity at 95% specificity. Additionally, a hierarchical three class approach was used to classify the acoustic data into healthy and COVID-19 positive, and further COVID-19 subjects into delta and omicron variants providing high level of 3-class classification accuracy. These results suggest new ways for designing sound based COVID-19 diagnosis approaches.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.SP" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-06-24T14:10:31Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <arxiv:journal_ref>Interspeech, 2022</arxiv:journal_ref>
+    <author>
+      <name>Debarpan Bhattacharya</name>
+    </author>
+    <author>
+      <name>Debottam Dutta</name>
+    </author>
+    <author>
+      <name>Neeraj Kumar Sharma</name>
+    </author>
+    <author>
+      <name>Srikanth Raj Chetupalli</name>
+    </author>
+    <author>
+      <name>Pravin Mote</name>
+    </author>
+    <author>
+      <name>Sriram Ganapathy</name>
+    </author>
+    <author>
+      <name>Chandrakiran C</name>
+    </author>
+    <author>
+      <name>Sahiti Nori</name>
+    </author>
+    <author>
+      <name>Suhail K K</name>
+    </author>
+    <author>
+      <name>Sadhana Gonuguntla</name>
+    </author>
+    <author>
+      <name>Murali Alagesan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2205.07682v1</id>
+    <title>L3-Net Deep Audio Embeddings to Improve COVID-19 Detection from Smartphone Data</title>
+    <updated>2022-05-16T13:50:22Z</updated>
+    <link href="https://arxiv.org/abs/2205.07682v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2205.07682v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Smartphones and wearable devices, along with Artificial Intelligence, can represent a game-changer in the pandemic control, by implementing low-cost and pervasive solutions to recognize the development of new diseases at their early stages and by potentially avoiding the rise of new outbreaks. Some recent works show promise in detecting diagnostic signals of COVID-19 from voice and coughs by using machine learning and hand-crafted acoustic features. In this paper, we decided to investigate the capabilities of the recently proposed deep embedding model L3-Net to automatically extract meaningful features from raw respiratory audio recordings in order to improve the performances of standard machine learning classifiers in discriminating between COVID-19 positive and negative subjects from smartphone data. We evaluated the proposed model on 3 datasets, comparing the obtained results with those of two reference works. Results show that the combination of L3-Net with hand-crafted features overcomes the performance of the other works of 28.57% in terms of AUC in a set of subject-independent experiments. This result paves the way to further investigation on different deep audio embeddings, also for the automatic detection of different diseases.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-05-16T13:50:22Z</published>
+    <arxiv:comment>accepted for IEEE SMARTCOMP 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Mattia Giovanni Campana</name>
+    </author>
+    <author>
+      <name>Andrea Rovati</name>
+    </author>
+    <author>
+      <name>Franca Delmastro</name>
+    </author>
+    <author>
+      <name>Elena Pagani</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2204.06450v3</id>
+    <title>The effect of speech pathology on automatic speaker verification -- a large-scale study</title>
+    <updated>2023-11-22T14:10:56Z</updated>
+    <link href="https://arxiv.org/abs/2204.06450v3" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2204.06450v3" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Navigating the challenges of data-driven speech processing, one of the primary hurdles is accessing reliable pathological speech data. While public datasets appear to offer solutions, they come with inherent risks of potential unintended exposure of patient health information via re-identification attacks. Using a comprehensive real-world pathological speech corpus, with over n=3,800 test subjects spanning various age groups and speech disorders, we employed a deep-learning-driven automatic speaker verification (ASV) approach. This resulted in a notable mean equal error rate (EER) of 0.89% with a standard deviation of 0.06%, outstripping traditional benchmarks. Our comprehensive assessments demonstrate that pathological speech overall faces heightened privacy breach risks compared to healthy speech. Specifically, adults with dysphonia are at heightened re-identification risks, whereas conditions like dysarthria yield results comparable to those of healthy speakers. Crucially, speech intelligibility does not influence the ASV system's performance metrics. In pediatric cases, particularly those with cleft lip and palate, the recording environment plays a decisive role in re-identification. Merging data across pathological types led to a marked EER decrease, suggesting the potential benefits of pathological diversity in ASV, accompanied by a logarithmic boost in ASV effectiveness. In essence, this research sheds light on the dynamics between pathological speech and speaker verification, emphasizing its crucial role in safeguarding patient confidentiality in our increasingly digitized healthcare era.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-04-13T15:17:00Z</published>
+    <arxiv:comment>Published in Scientific Reports</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <arxiv:journal_ref>Sci Rep 13, 20476 (2023)</arxiv:journal_ref>
+    <author>
+      <name>Soroosh Tayebi Arasteh</name>
+    </author>
+    <author>
+      <name>Tobias Weise</name>
+    </author>
+    <author>
+      <name>Maria Schuster</name>
+    </author>
+    <author>
+      <name>Elmar Noeth</name>
+    </author>
+    <author>
+      <name>Andreas Maier</name>
+    </author>
+    <author>
+      <name>Seung Hee Yang</name>
+    </author>
+    <arxiv:doi>10.1038/s41598-023-47711-7</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1038/s41598-023-47711-7" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2201.09110v1</id>
+    <title>Exploring auditory acoustic features for the diagnosis of the Covid-19</title>
+    <updated>2022-01-22T18:22:38Z</updated>
+    <link href="https://arxiv.org/abs/2201.09110v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2201.09110v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The current outbreak of a coronavirus, has quickly escalated to become a serious global problem that has now been declared a Public Health Emergency of International Concern by the World Health Organization. Infectious diseases know no borders, so when it comes to controlling outbreaks, timing is absolutely essential. It is so important to detect threats as early as possible, before they spread. After a first successful DiCOVA challenge, the organisers released second DiCOVA challenge with the aim of diagnosing COVID-19 through the use of breath, cough and speech audio samples. This work presents the details of the automatic system for COVID-19 detection using breath, cough and speech recordings. We developed different front-end auditory acoustic features along with a bidirectional Long Short-Term Memory (bi-LSTM) as classifier. The results are promising and have demonstrated the high complementary behaviour among the auditory acoustic features in the Breathing, Cough and Speech tracks giving an AUC of 86.60% on the test set.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2022-01-22T18:22:38Z</published>
+    <arxiv:comment>Accepted in ICASSP 2022</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Madhu R. Kamble</name>
+    </author>
+    <author>
+      <name>Jose Patino</name>
+    </author>
+    <author>
+      <name>Maria A. Zuluaga</name>
+    </author>
+    <author>
+      <name>Massimiliano Todisco</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2107.13260v2</id>
+    <title>Deep learning based cough detection camera using enhanced features</title>
+    <updated>2022-05-24T17:01:16Z</updated>
+    <link href="https://arxiv.org/abs/2107.13260v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2107.13260v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Coughing is a typical symptom of COVID-19. To detect and localize coughing sounds remotely, a convolutional neural network (CNN) based deep learning model was developed in this work and integrated with a sound camera for the visualization of the cough sounds. The cough detection model is a binary classifier of which the input is a two second acoustic feature and the output is one of two inferences (Cough or Others). Data augmentation was performed on the collected audio files to alleviate class imbalance and reflect various background noises in practical environments. For effective featuring of the cough sound, conventional features such as spectrograms, mel-scaled spectrograms, and mel-frequency cepstral coefficients (MFCC) were reinforced by utilizing their velocity (V) and acceleration (A) maps in this work. VGGNet, GoogLeNet, and ResNet were simplified to binary classifiers, and were named V-net, G-net, and R-net, respectively. To find the best combination of features and networks, training was performed for a total of 39 cases and the performance was confirmed using the test F1 score. Finally, a test F1 score of 91.9% (test accuracy of 97.2%) was achieved from G-net with the MFCC-V-A feature (named Spectroflow), an acoustic feature effective for use in cough detection. The trained cough detection model was integrated with a sound camera (i.e., one that visualizes sound sources using a beamforming microphone array). In a pilot test, the cough detection camera detected coughing sounds with an F1 score of 90.0% (accuracy of 96.0%), and the cough location in the camera image was tracked in real time.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-07-28T10:44:20Z</published>
+    <arxiv:comment>28 pages, 20 figures, and 14 tables</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <arxiv:journal_ref>Expert Systems With Applications, Vol. 206, No. 15, pp. 1-20, 2022</arxiv:journal_ref>
+    <author>
+      <name>Gyeong-Tae Lee</name>
+    </author>
+    <author>
+      <name>Hyeonuk Nam</name>
+    </author>
+    <author>
+      <name>Seong-Hu Kim</name>
+    </author>
+    <author>
+      <name>Sang-Min Choi</name>
+    </author>
+    <author>
+      <name>Youngkey Kim</name>
+    </author>
+    <author>
+      <name>Yong-Hwa Park</name>
+    </author>
+    <arxiv:doi>10.1016/j.eswa.2022.117811</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1016/j.eswa.2022.117811" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2106.10997v1</id>
+    <title>Towards sound based testing of COVID-19 -- Summary of the first Diagnostics of COVID-19 using Acoustics (DiCOVA) Challenge</title>
+    <updated>2021-06-21T11:30:05Z</updated>
+    <link href="https://arxiv.org/abs/2106.10997v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2106.10997v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The technology development for point-of-care tests (POCTs) targeting respiratory diseases has witnessed a growing demand in the recent past. Investigating the presence of acoustic biomarkers in modalities such as cough, breathing and speech sounds, and using them for building POCTs can offer fast, contactless and inexpensive testing. In view of this, over the past year, we launched the ``Coswara'' project to collect cough, breathing and speech sound recordings via worldwide crowdsourcing. With this data, a call for development of diagnostic tools was announced in the Interspeech 2021 as a special session titled ``Diagnostics of COVID-19 using Acoustics (DiCOVA) Challenge''. The goal was to bring together researchers and practitioners interested in developing acoustics-based COVID-19 POCTs by enabling them to work on the same set of development and test datasets. As part of the challenge, datasets with breathing, cough, and speech sound samples from COVID-19 and non-COVID-19 individuals were released to the participants. The challenge consisted of two tracks. The Track-1 focused only on cough sounds, and participants competed in a leaderboard setting. In Track-2, breathing and speech samples were provided for the participants, without a competitive leaderboard. The challenge attracted 85 plus registrations with 29 final submissions for Track-1. This paper describes the challenge (datasets, tasks, baseline system), and presents a focused summary of the various systems submitted by the participating teams. An analysis of the results from the top four teams showed that a fusion of the scores from these teams yields an area-under-the-curve of 95.1% on the blind test data. By summarizing the lessons learned, we foresee the challenge overview in this paper to help accelerate technology for acoustic-based POCTs.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-06-21T11:30:05Z</published>
+    <arxiv:comment>Manuscript in review in the Elsevier Computer Speech and Language journal</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Neeraj Kumar Sharma</name>
+    </author>
+    <author>
+      <name>Ananya Muguli</name>
+    </author>
+    <author>
+      <name>Prashant Krishnan</name>
+    </author>
+    <author>
+      <name>Rohit Kumar</name>
+    </author>
+    <author>
+      <name>Srikanth Raj Chetupalli</name>
+    </author>
+    <author>
+      <name>Sriram Ganapathy</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2106.06980v1</id>
+    <title>An Approach Towards Physics Informed Lung Ultrasound Image Scoring Neural Network for Diagnostic Assistance in COVID-19</title>
+    <updated>2021-06-13T13:01:53Z</updated>
+    <link href="https://arxiv.org/abs/2106.06980v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2106.06980v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Ultrasound is fast becoming an inevitable diagnostic tool for regular and continuous monitoring of the lung with the recent outbreak of COVID-19. In this work, a novel approach is presented to extract acoustic propagation-based features to automatically highlight the region below pleura, which is an important landmark in lung ultrasound (LUS). Subsequently, a multichannel input formed by using the acoustic physics-based feature maps is fused to train a neural network, referred to as LUSNet, to classify the LUS images into five classes of varying severity of lung infection to track the progression of COVID-19. In order to ensure that the proposed approach is agnostic to the type of acquisition, the LUSNet, which consists of a U-net architecture is trained in an unsupervised manner with the acoustic feature maps to ensure that the encoder-decoder architecture is learning features in the pleural region of interest. A novel combination of the U-net output and the U-net encoder output is employed for the classification of severity of infection in the lung. A detailed analysis of the proposed approach on LUS images over the infection to full recovery period of ten confirmed COVID-19 subjects shows an average five-fold cross-validation accuracy, sensitivity, and specificity of 97%, 93%, and 98% respectively over 5000 frames of COVID-19 videos. The analysis also shows that, when the input dataset is limited and diverse as in the case of COVID-19 pandemic, an aided effort of combining acoustic propagation-based features along with the gray scale images, as proposed in this work, improves the performance of the neural network significantly and also aids the labelling and triaging process.</summary>
+    <category term="eess.IV" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CV" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2021-06-13T13:01:53Z</published>
+    <arxiv:comment>8 pages, 8 figures, 3 tables, submitted to Springer SIVP Special Issue for COVID19</arxiv:comment>
+    <arxiv:primary_category term="eess.IV"/>
+    <author>
+      <name>Mahesh Raveendranatha Panicker</name>
+    </author>
+    <author>
+      <name>Yale Tung Chen</name>
+    </author>
+    <author>
+      <name>Gayathri M</name>
+    </author>
+    <author>
+      <name>Madhavanunni A N</name>
+    </author>
+    <author>
+      <name>Kiran Vishnu Narayan</name>
+    </author>
+    <author>
+      <name>C Kesavadas</name>
+    </author>
+    <author>
+      <name>A P Vinod</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2012.09478v1</id>
+    <title>The voice of COVID-19: Acoustic correlates of infection</title>
+    <updated>2020-12-17T10:12:41Z</updated>
+    <link href="https://arxiv.org/abs/2012.09478v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2012.09478v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>COVID-19 is a global health crisis that has been affecting many aspects of our daily lives throughout the past year. The symptomatology of COVID-19 is heterogeneous with a severity continuum. A considerable proportion of symptoms are related to pathological changes in the vocal system, leading to the assumption that COVID-19 may also affect voice production. For the very first time, the present study aims to investigate voice acoustic correlates of an infection with COVID-19 on the basis of a comprehensive acoustic parameter set. We compare 88 acoustic features extracted from recordings of the vowels /i:/, /e:/, /o:/, /u:/, and /a:/ produced by 11 symptomatic COVID-19 positive and 11 COVID-19 negative German-speaking participants. We employ the Mann-Whitney U test and calculate effect sizes to identify features with the most prominent group differences. The mean voiced segment length and the number of voiced segments per second yield the most important differences across all vowels indicating discontinuities in the pulmonic airstream during phonation in COVID-19 positive participants. Group differences in the front vowels /i:/ and /e:/ are additionally reflected in the variation of the fundamental frequency and the harmonics-to-noise ratio, group differences in back vowels /o:/ and /u:/ in statistics of the Mel-frequency cepstral coefficients and the spectral slope. Findings of this study can be considered an important proof-of-concept contribution for a potential future voice-based identification of individuals infected with COVID-19.</summary>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-12-17T10:12:41Z</published>
+    <arxiv:comment>8 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.SD"/>
+    <author>
+      <name>Katrin D. Bartl-Pokorny</name>
+    </author>
+    <author>
+      <name>Florian B. Pokorny</name>
+    </author>
+    <author>
+      <name>Anton Batliner</name>
+    </author>
+    <author>
+      <name>Shahin Amiriparian</name>
+    </author>
+    <author>
+      <name>Anastasia Semertzidou</name>
+    </author>
+    <author>
+      <name>Florian Eyben</name>
+    </author>
+    <author>
+      <name>Elena Kramer</name>
+    </author>
+    <author>
+      <name>Florian Schmidt</name>
+    </author>
+    <author>
+      <name>Rainer Schönweiler</name>
+    </author>
+    <author>
+      <name>Markus Wehler</name>
+    </author>
+    <author>
+      <name>Björn W. Schuller</name>
+    </author>
+    <arxiv:doi>10.1121/10.0005194</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1121/10.0005194" title="doi"/>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2011.09270v1</id>
+    <title>Respiratory Distress Detection from Telephone Speech using Acoustic and Prosodic Features</title>
+    <updated>2020-11-15T13:32:45Z</updated>
+    <link href="https://arxiv.org/abs/2011.09270v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2011.09270v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>With the widespread use of telemedicine services, automatic assessment of health conditions via telephone speech can significantly impact public health. This work summarizes our preliminary findings on automatic detection of respiratory distress using well-known acoustic and prosodic features. Speech samples are collected from de-identified telemedicine phonecalls from a healthcare provider in Bangladesh. The recordings include conversational speech samples of patients talking to doctors showing mild or severe respiratory distress or asthma symptoms. We hypothesize that respiratory distress may alter speech features such as voice quality, speaking pattern, loudness, and speech-pause duration. To capture these variations, we utilize a set of well-known acoustic and prosodic features with a Support Vector Machine (SVM) classifier for detecting the presence of respiratory distress. Experimental evaluations are performed using a 3-fold cross-validation scheme, ensuring patient-independent data splits. We obtained an overall accuracy of 86.4\% in detecting respiratory distress from the speech recordings using the acoustic feature set. Correlation analysis reveals that the top-performing features include loudness, voice rate, voice duration, and pause duration.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-11-15T13:32:45Z</published>
+    <arxiv:comment>5 pages, 4 figures</arxiv:comment>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Meemnur Rashid</name>
+    </author>
+    <author>
+      <name>Kaisar Ahmed Alman</name>
+    </author>
+    <author>
+      <name>Khaled Hasan</name>
+    </author>
+    <author>
+      <name>John H. L. Hansen</name>
+    </author>
+    <author>
+      <name>Taufiq Hasan</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2009.07504v1</id>
+    <title>Exploring Speech Cues in Web-mined COVID-19 Conversational Vlogs</title>
+    <updated>2020-09-16T06:57:04Z</updated>
+    <link href="https://arxiv.org/abs/2009.07504v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2009.07504v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The COVID-19 pandemic caused by the novel SARS-Coronavirus-2 (n-SARS-CoV-2) has impacted people's lives in unprecedented ways. During the time of the pandemic, social vloggers have used social media to actively share their opinions or experiences in quarantine. This paper collected videos from YouTube to track emotional responses in conversational vlogs and their potential associations with events related to the pandemic. In particular, vlogs uploaded from locations in New York City were analyzed given that this was one of the first epicenters of the pandemic in the United States. We observed some common patterns in vloggers' acoustic and linguistic features across the time span of the quarantine, which is indicative of changes in emotional reactivity. Additionally, we investigated fluctuations of acoustic and linguistic patterns in relation to COVID-19 events in the New York area (e.g. the number of daily new cases, number of deaths, and extension of stay-at-home order and state of emergency). Our results indicate that acoustic features, such as zero-crossing-rate, jitter, and shimmer, can be valuable for analyzing emotional reactivity in social media videos. Our findings further indicate that some of the peaks of the acoustic and linguistic indices align with COVID-19 events, such as the peak in the number of deaths and emergency declaration.</summary>
+    <category term="cs.MM" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SI" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-09-16T06:57:04Z</published>
+    <arxiv:comment>accepted in ACM Multimedia workshop on Media Analytics for Societal Trends (MAST)</arxiv:comment>
+    <arxiv:primary_category term="cs.MM"/>
+    <author>
+      <name>Kexin Feng</name>
+    </author>
+    <author>
+      <name>Preeti Zanwar</name>
+    </author>
+    <author>
+      <name>Amir H. Behzadan</name>
+    </author>
+    <author>
+      <name>Theodora Chaspari</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2009.01231v4</id>
+    <title>Detecting Parkinson's Disease From an Online Speech-task</title>
+    <updated>2020-12-15T21:08:05Z</updated>
+    <link href="https://arxiv.org/abs/2009.01231v4" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2009.01231v4" rel="related" type="application/pdf" title="pdf"/>
+    <summary>In this paper, we envision a web-based framework that can help anyone, anywhere around the world record a short speech task, and analyze the recorded data to screen for Parkinson's disease (PD). We collected data from 726 unique participants (262 PD, 38% female; 464 non-PD, 65% female; average age: 61) -- from all over the US and beyond. A small portion of the data was collected in a lab setting to compare quality. The participants were instructed to utter a popular pangram containing all the letters in the English alphabet "the quick brown fox jumps over the lazy dog..". We extracted both standard acoustic features (Mel Frequency Cepstral Coefficients (MFCC), jitter and shimmer variants) and deep learning based features from the speech data. Using these features, we trained several machine learning algorithms. We achieved 0.75 AUC (Area Under The Curve) performance on determining presence of self-reported Parkinson's disease by modeling the standard acoustic features through the XGBoost -- a gradient-boosted decision tree model. Further analysis reveal that the widely used MFCC features and a subset of previously validated dysphonia features designed for detecting Parkinson's from verbal phonation task (pronouncing 'ahh') contains the most distinct information. Our model performed equally well on data collected in controlled lab environment as well as 'in the wild' across different gender and age groups. Using this tool, we can collect data from almost anyone anywhere with a video/audio enabled device, contributing to equity and access in neurological care.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.LG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="stat.ML" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-09-02T21:16:24Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Wasifur Rahman</name>
+    </author>
+    <author>
+      <name>Sangwu Lee</name>
+    </author>
+    <author>
+      <name>Md. Saiful Islam</name>
+    </author>
+    <author>
+      <name>Victor Nikhil Antony</name>
+    </author>
+    <author>
+      <name>Harshil Ratnu</name>
+    </author>
+    <author>
+      <name>Mohammad Rafayet Ali</name>
+    </author>
+    <author>
+      <name>Abdullah Al Mamun</name>
+    </author>
+    <author>
+      <name>Ellen Wagner</name>
+    </author>
+    <author>
+      <name>Stella Jensen-Roberts</name>
+    </author>
+    <author>
+      <name>Max A. Little</name>
+    </author>
+    <author>
+      <name>Ray Dorsey</name>
+    </author>
+    <author>
+      <name>Ehsan Hoque</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2005.08579v1</id>
+    <title>An Overview on Audio, Signal, Speech, &amp; Language Processing for COVID-19</title>
+    <updated>2020-05-18T10:46:30Z</updated>
+    <link href="https://arxiv.org/abs/2005.08579v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2005.08579v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>Recently, there has been an increased attention towards innovating, enhancing, building, and deploying applications of speech signal processing for providing assistance and relief to human mankind from the Coronavirus (COVID-19) pandemic. Many AI with speech initiatives are taken to combat with the present situation and also to create a safe and secure environment for the future. This paper summarises all these efforts taken by the re-search community towards helping the individuals and the society in the fight against COVID-19 over the past 3-4 months using speech signal processing. We also summarise the deep techniques used in this direction to come up with capable solutions in a short span of time. This paper further gives an overview of the contributions from non-speech modalities that may complement or serve as inspiration for audio and speech analysis. In addition, we discuss our observations with respect to solution usability, challenges, and the significant technology achievements.</summary>
+    <category term="cs.CY" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-05-18T10:46:30Z</published>
+    <arxiv:comment>5 pages</arxiv:comment>
+    <arxiv:primary_category term="cs.CY"/>
+    <author>
+      <name>Gauri Deshpande</name>
+    </author>
+    <author>
+      <name>Björn Schuller</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/2005.00096v2</id>
+    <title>An Early Study on Intelligent Analysis of Speech under COVID-19: Severity, Sleep Quality, Fatigue, and Anxiety</title>
+    <updated>2020-05-14T10:00:08Z</updated>
+    <link href="https://arxiv.org/abs/2005.00096v2" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/2005.00096v2" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The COVID-19 outbreak was announced as a global pandemic by the World Health Organisation in March 2020 and has affected a growing number of people in the past few weeks. In this context, advanced artificial intelligence techniques are brought to the fore in responding to fight against and reduce the impact of this global health crisis. In this study, we focus on developing some potential use-cases of intelligent speech analysis for COVID-19 diagnosed patients. In particular, by analysing speech recordings from these patients, we construct audio-only-based models to automatically categorise the health state of patients from four aspects, including the severity of illness, sleep quality, fatigue, and anxiety. For this purpose, two established acoustic feature sets and support vector machines are utilised. Our experiments show that an average accuracy of .69 obtained estimating the severity of illness, which is derived from the number of days in hospitalisation. We hope that this study can foster an extremely fast, low-cost, and convenient way to automatically detect the COVID-19 disease.</summary>
+    <category term="eess.AS" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.CL" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="cs.SD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2020-04-30T20:47:05Z</published>
+    <arxiv:primary_category term="eess.AS"/>
+    <author>
+      <name>Jing Han</name>
+    </author>
+    <author>
+      <name>Kun Qian</name>
+    </author>
+    <author>
+      <name>Meishu Song</name>
+    </author>
+    <author>
+      <name>Zijiang Yang</name>
+    </author>
+    <author>
+      <name>Zhao Ren</name>
+    </author>
+    <author>
+      <name>Shuo Liu</name>
+    </author>
+    <author>
+      <name>Juan Liu</name>
+    </author>
+    <author>
+      <name>Huaiyuan Zheng</name>
+    </author>
+    <author>
+      <name>Wei Ji</name>
+    </author>
+    <author>
+      <name>Tomoya Koike</name>
+    </author>
+    <author>
+      <name>Xiao Li</name>
+    </author>
+    <author>
+      <name>Zixing Zhang</name>
+    </author>
+    <author>
+      <name>Yoshiharu Yamamoto</name>
+    </author>
+    <author>
+      <name>Björn W. Schuller</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/1801.06226v1</id>
+    <title>Computational model of avian nervous system nuclei governing learned song</title>
+    <updated>2018-01-18T20:27:21Z</updated>
+    <link href="https://arxiv.org/abs/1801.06226v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/1801.06226v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>The means by which neuronal activity yields robust behavior is a ubiquitous question in neuroscience. In the songbird, the timing of a highly stereotyped song motif is attributed to the cortical nucleus HVC, and to feedback to HVC from downstream nuclei in the song motor pathway. Control of the acoustic structure appears to be shared by various structures, whose functional connectivity is largely unknown. Currently there exists no model for functional synaptic architecture that links HVC to song output in a manner consistent with experiments. Here we build on a previous model of HVC in which a distinct functional architecture may act as a pattern generator to drive downstream regions. Using a specific functional connectivity of the song motor pathway, we show how this HVC mechanism can generate simple representations of the driving forces for song. The model reproduces observed correlations between neuronal and respiratory activity and acoustic features of song. It makes testable predictions regarding the electrophysiology of distinct populations in the robust nucleus of the arcopallium (RA), the connectivity within HVC and RA and between them, and the activity patterns of vocal-respiratory neurons in the brainstem.</summary>
+    <category term="q-bio.NC" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2018-01-18T20:27:21Z</published>
+    <arxiv:comment>21 pages and 11 figures, without appendices</arxiv:comment>
+    <arxiv:primary_category term="q-bio.NC"/>
+    <author>
+      <name>Eve Armstrong</name>
+    </author>
+  </entry>
+  <entry>
+    <id>http://arxiv.org/abs/0707.0086v1</id>
+    <title>Exploiting Nonlinear Recurrence and Fractal Scaling Properties for Voice Disorder Detection</title>
+    <updated>2007-07-01T01:26:50Z</updated>
+    <link href="https://arxiv.org/abs/0707.0086v1" rel="alternate" type="text/html"/>
+    <link href="https://arxiv.org/pdf/0707.0086v1" rel="related" type="application/pdf" title="pdf"/>
+    <summary>  Voice disorders affect patients profoundly, and acoustic tools can potentially measure voice function objectively. Nonetheless, existing tools are limited to analysing voices displaying near periodicity, and do not account for inherent biophysical nonlinearity and non-Gaussian randomness. They do not directly measure complex nonlinear aperiodicity, and turbulent, aeroacoustic, non-Gaussian randomness. Often these tools have limited clinical usefulness. This paper introduces two new tools to speech analysis: recurrence and fractal scaling, which overcome the range limitations of existing tools by addressing directly these two symptoms of disorder, and a simple bootstrapped classifier distinguishes normal from disordered voices to 91.8% overall accuracy on a large database of subjects with a wide variety of voice disorders. They are widely applicable to the whole range of disordered voice phenomena by design. These new measures could therefore be used for a variety of practical clinical purposes.</summary>
+    <category term="nlin.CG" scheme="http://arxiv.org/schemas/atom"/>
+    <category term="nlin.CD" scheme="http://arxiv.org/schemas/atom"/>
+    <published>2007-07-01T01:26:50Z</published>
+    <arxiv:comment>1 ZIP file containing 1 LaTeX file, 6 EPS figures, 1 BBL file, 1 BST and 1 CLS file. Eprint for Biomed Eng Online, 2007 Jun 26, 6(1):23</arxiv:comment>
+    <arxiv:primary_category term="nlin.CG"/>
+    <arxiv:journal_ref>Biomed Eng Online, 2007 Jun 26, 6(1):23</arxiv:journal_ref>
+    <author>
+      <name>Max A Little</name>
+    </author>
+    <author>
+      <name>Patrick E McSharry</name>
+    </author>
+    <author>
+      <name>Stephen J Roberts</name>
+    </author>
+    <author>
+      <name>Declan AE Costello</name>
+    </author>
+    <author>
+      <name>Irene M Moroz</name>
+    </author>
+    <arxiv:doi>10.1186/1475-925X-6-23</arxiv:doi>
+    <link rel="related" href="https://doi.org/10.1186/1475-925X-6-23" title="doi"/>
+  </entry>
+</feed>

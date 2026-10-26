@@ -1,26 +1,49 @@
 source,query_family,count,status
 PubMed,core_terminology,67,ok
-EuropePMC,core_terminology,214,ok
-EuropePMC-PPR,core_terminology,11,ok
-OpenAlex,core_terminology,2261,ok_truncated_at_max_records
+EuropePMC,core_terminology,67,ok
+EuropePMC-PPR,core_terminology,10,ok
+OpenAlex,core_terminology,,error: HTTPError: HTTP Error 429: Too Many Requests
 arXiv,core_terminology,24,ok
+DBLP,core_terminology,120,ok
 PubMed,clinical_validation,49,ok
-EuropePMC,clinical_validation,5255,ok_truncated_at_max_records
-EuropePMC-PPR,clinical_validation,34,ok
-OpenAlex,clinical_validation,16625,ok_truncated_at_max_records
+EuropePMC,clinical_validation,53,ok
+EuropePMC-PPR,clinical_validation,11,ok
+OpenAlex,clinical_validation,,error: HTTPError: HTTP Error 429: Too Many Requests
 arXiv,clinical_validation,7,ok
+DBLP,clinical_validation,2,ok
 PubMed,aging_biological_age,29,ok
-EuropePMC,aging_biological_age,93,ok
-EuropePMC-PPR,aging_biological_age,3,ok
-OpenAlex,aging_biological_age,1494,ok_truncated_at_max_records
+EuropePMC,aging_biological_age,28,ok
+EuropePMC-PPR,aging_biological_age,2,ok
+OpenAlex,aging_biological_age,,error: HTTPError: HTTP Error 429: Too Many Requests
 arXiv,aging_biological_age,8,ok
-PubMed,disease_monitoring,6817,ok_truncated_at_max_records
-EuropePMC,disease_monitoring,254067,ok_truncated_at_max_records
-EuropePMC-PPR,disease_monitoring,3119,ok_truncated_at_max_records
-OpenAlex,disease_monitoring,886668,ok_truncated_at_max_records
-arXiv,disease_monitoring,30,ok
+DBLP,aging_biological_age,170,ok
+PubMed,disease_neuro,933,ok
+EuropePMC,disease_neuro,655,ok
+EuropePMC-PPR,disease_neuro,60,ok
+OpenAlex,disease_neuro,,error: HTTPError: HTTP Error 429: Too Many Requests
+arXiv,disease_neuro,115,ok
+DBLP,disease_neuro,1115,ok
+PubMed,disease_psych,400,ok
+EuropePMC,disease_psych,450,ok
+EuropePMC-PPR,disease_psych,66,ok
+OpenAlex,disease_psych,,error: HTTPError: HTTP Error 429: Too Many Requests
+arXiv,disease_psych,47,ok
+DBLP,disease_psych,398,ok
+PubMed,disease_respiratory,1536,ok
+EuropePMC,disease_respiratory,1575,ok
+EuropePMC-PPR,disease_respiratory,53,ok
+OpenAlex,disease_respiratory,,error: HTTPError: HTTP Error 429: Too Many Requests
+arXiv,disease_respiratory,40,ok
+DBLP,disease_respiratory,206,ok
+PubMed,disease_cardiometabolic,172,ok
+EuropePMC,disease_cardiometabolic,170,ok
+EuropePMC-PPR,disease_cardiometabolic,9,ok
+OpenAlex,disease_cardiometabolic,,error: HTTPError: HTTP Error 429: Too Many Requests
+arXiv,disease_cardiometabolic,9,ok
+DBLP,disease_cardiometabolic,73,ok
 PubMed,datasets_foundation_models,303,ok
-EuropePMC,datasets_foundation_models,1114,ok_truncated_at_max_records
-EuropePMC-PPR,datasets_foundation_models,26,ok
-OpenAlex,datasets_foundation_models,6957,ok_truncated_at_max_records
+EuropePMC,datasets_foundation_models,328,ok
+EuropePMC-PPR,datasets_foundation_models,19,ok
+OpenAlex,datasets_foundation_models,,error: HTTPError: HTTP Error 429: Too Many Requests
 arXiv,datasets_foundation_models,255,ok
+DBLP,datasets_foundation_models,33,ok

@@ -2,7 +2,7 @@
 <feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
   <id>https://arxiv.org/api/2HwJgoAqu+a7lTgNXgVXLrsdq1Y</id>
   <title>arXiv Query: search_query=abs:"speech foundation model" OR abs:"voice foundation model" OR abs:"clinical speech" OR abs:"medical speech" OR abs:"pathological speech" OR abs:"health speech dataset"&amp;id_list=&amp;start=100&amp;max_results=100</title>
-  <updated>2026-09-01T09:03:25Z</updated>
+  <updated>2026-09-01T15:29:53Z</updated>
   <link href="https://arxiv.org/api/query?search_query=abs:%22speech+foundation+model%22+OR+(abs:%22voice+foundation+model%22+OR+(abs:%22clinical+speech%22+OR+(abs:%22medical+speech%22+OR+(abs:%22pathological+speech%22+OR+abs:%22health+speech+dataset%22))))&amp;start=100&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
   <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
   <opensearch:totalResults>255</opensearch:totalResults>

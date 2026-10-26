@@ -1,0 +1,44 @@
+{
+"result":{
+"query":"speech*|voice*|vocal*|acoustic* biomarker* validation*|generalization*",
+"status":{
+"@code":"200",
+"text":"OK"
+},
+"time":{
+"@unit":"msecs",
+"text":"29.91"
+},
+"completions":{
+"@total":"1",
+"@computed":"1",
+"@sent":"1",
+"c":{
+"@sc":"2",
+"@dc":"2",
+"@oc":"2",
+"@id":"72237462",
+"text":"validation"
+}
+},
+"hits":{
+"@total":"2",
+"@computed":"2",
+"@sent":"2",
+"@first":"0",
+"hit":[{
+"@score":"4",
+"@id":"21977",
+"info":{"authors":{"author":[{"@pid":"442/2992","text":"Dana K. Briscoe"},{"@pid":"442/3078","text":"Rolando Velasco Castedo"},{"@pid":"316/9987","text":"Paul Clarke"},{"@pid":"442/1998","text":"Domenic Di Stella"},{"@pid":"42/5006","text":"Jeremiah D. Deng"}]},"title":"Interpretable voice-based parkinson&apos;s detection: sex-specific acoustic biomarkers with subject-level nested cross-validation.","venue":"Biomed. Signal Process. Control.","volume":"126","pages":"111014","year":"2026","type":"Journal Articles","access":"closed","key":"journals/bspc/BriscoeCCSD26","doi":"10.1016/J.BSPC.2026.111014","ee":"https://doi.org/10.1016/j.bspc.2026.111014","url":"https://dblp.org/rec/journals/bspc/BriscoeCCSD26"},
+"url":"URL#21977"
+},
+{
+"@score":"3",
+"@id":"429680",
+"info":{"authors":{"author":[{"@pid":"423/2332","text":"Agnieszka Ewa Krautz"},{"@pid":"184/0587","text":"Jörg Langner"},{"@pid":"208/1789","text":"Florian Helmhold"},{"@pid":"423/1259","text":"Julia Volkening"},{"@pid":"423/2422","text":"Alina Hoffmann"},{"@pid":"423/3118","text":"Claudio Hasler"}]},"title":"Bridging AI innovation and healthcare: scalable clinical validation methods for voice biomarkers.","venue":"Frontiers Digit. Health","volume":"7","year":"2025","type":"Journal Articles","access":"open","key":"journals/fdgth/KrautzLHVHH25","doi":"10.3389/FDGTH.2025.1575753","ee":"https://doi.org/10.3389/fdgth.2025.1575753","url":"https://dblp.org/rec/journals/fdgth/KrautzLHVHH25"},
+"url":"URL#429680"
+}
+]
+}
+}
+}

@@ -2,7 +2,7 @@
 <feed xmlns:opensearch="http://a9.com/-/spec/opensearch/1.1/" xmlns:arxiv="http://arxiv.org/schemas/atom" xmlns="http://www.w3.org/2005/Atom">
   <id>https://arxiv.org/api/ymRkZGKiC2VM0C2VGgQ710fBri4</id>
   <title>arXiv Query: search_query=(abs:"digital biomarker" OR abs:"digital phenotype" OR abs:"voice biomarker" OR abs:"speech biomarker" OR abs:"acoustic biomarker") AND (abs:"clinical validation" OR abs:"analytical validation" OR abs:"external validation" OR abs:"clinical utility")&amp;id_list=&amp;start=0&amp;max_results=100</title>
-  <updated>2026-09-01T08:51:24Z</updated>
+  <updated>2026-09-01T14:21:23Z</updated>
   <link href="https://arxiv.org/api/query?search_query=(abs:%22digital+biomarker%22+OR+(abs:%22digital+phenotype%22+OR+(abs:%22voice+biomarker%22+OR+(abs:%22speech+biomarker%22+OR+abs:%22acoustic+biomarker%22))))+AND+(abs:%22clinical+validation%22+OR+(abs:%22analytical+validation%22+OR+(abs:%22external+validation%22+OR+abs:%22clinical+utility%22)))&amp;start=0&amp;max_results=100&amp;id_list=" type="application/atom+xml"/>
   <opensearch:itemsPerPage>100</opensearch:itemsPerPage>
   <opensearch:totalResults>7</opensearch:totalResults>

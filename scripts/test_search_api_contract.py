@@ -29,9 +29,12 @@ sys.path.insert(0, str(__import__("pathlib").Path(__file__).resolve().parent))
 
 from run_formal_search import (  # noqa: E402
     FAMILIES,
+    MAX_RECORDS,
+    OPENALEX_PAGE_SIZE,
     POLITE_MAILTO,
     USER_AGENT,
     PAGE_SIZE,
+    europe_pmc_title_abs,
     SORT_ARXIV,
     SORT_EUROPE_PMC,
     SORT_OPENALEX,
@@ -96,7 +99,12 @@ def check_europe_pmc() -> None:
 
 
 def check_openalex() -> None:
-    params = {"search": PROBE, "per-page": "5", "sort": SORT_OPENALEX, "cursor": "*"}
+    params = {
+        "filter": f'title_and_abstract.search:"{PROBE}"',
+        "per-page": "5",
+        "sort": SORT_OPENALEX,
+        "cursor": "*",
+    }
     if POLITE_MAILTO:
         params["mailto"] = POLITE_MAILTO
     data = json.loads(get("https://api.openalex.org/works?" + urllib.parse.urlencode(params)))
@@ -166,8 +174,83 @@ def check_arxiv_queries_are_topical() -> None:
         time.sleep(3.2)
 
 
+def check_openalex_scoping_is_honoured() -> None:
+    """Regression test for unscoped OpenAlex queries.
+
+    The script used to pass its boolean query to the bare "search" parameter,
+    which runs a relevance search across full text and treats the query largely
+    as a bag of words: it returned 38,473 records for "voice biomarker" against
+    232 for the scoped filter. Assert the scoped filter is still far more
+    selective, which is what makes complete retrieval possible.
+    """
+    phrase = "voice biomarker"
+    bare = json.loads(get("https://api.openalex.org/works?" + urllib.parse.urlencode(
+        {"search": phrase, "per-page": "1"})))["meta"]["count"]
+    scoped = json.loads(get("https://api.openalex.org/works?" + urllib.parse.urlencode(
+        {"filter": f'title_and_abstract.search:"{phrase}"', "per-page": "1"})))["meta"]["count"]
+    assert scoped < bare / 5, (
+        f"OpenAlex scoping looks ineffective: bare search {bare}, scoped {scoped}. "
+        "The title_and_abstract filter may have been renamed or dropped."
+    )
+
+
+def check_europe_pmc_title_abs_scoping() -> None:
+    """Europe PMC searches full text by default; assert the TITLE_ABS transform bites."""
+    plain = '"voice biomarker" OR "vocal biomarker"'
+    scoped = europe_pmc_title_abs(plain)
+    assert "TITLE_ABS:" in scoped and " OR " in scoped, f"transform mangled the query: {scoped}"
+    assert scoped.count("TITLE_ABS:") == 2, f"expected two scoped phrases, got: {scoped}"
+
+    def hits(query: str) -> int:
+        return json.loads(get("https://www.ebi.ac.uk/europepmc/webservices/rest/search?"
+            + urllib.parse.urlencode({"query": query, "format": "json", "pageSize": "1"})))["hitCount"]
+
+    unscoped_hits, scoped_hits = hits(f"({plain})"), hits(f"({scoped})")
+    assert scoped_hits < unscoped_hits, (
+        f"TITLE_ABS scoping did not narrow the search: {unscoped_hits} -> {scoped_hits}"
+    )
+
+
+def check_dblp() -> None:
+    """DBLP is the engineering-index layer that the biomedical databases miss."""
+    params = {"q": "speech|voice|vocal biomarker", "format": "json", "h": "5", "f": "0"}
+    data = json.loads(get("https://dblp.org/search/publ/api?" + urllib.parse.urlencode(params)))
+    hits = data["result"]["hits"]
+    assert int(hits.get("@total", 0)) > 0, "DBLP returned no hits for the core probe"
+    records = hits.get("hit", [])
+    assert records, "DBLP returned a total but no records"
+    # Offset paging must actually shift the window, since DBLP offers no sort key.
+    params["f"] = "5"
+    shifted = json.loads(get("https://dblp.org/search/publ/api?" + urllib.parse.urlencode(params)))
+    first_keys = {r["info"].get("key") for r in records}
+    next_keys = {r["info"].get("key") for r in shifted["result"]["hits"].get("hit", [])}
+    assert first_keys != next_keys, "DBLP offset paging returned the same window"
+
+
+def check_every_family_retrieves_completely() -> None:
+    """The retrieval ceiling must exceed every family's result set.
+
+    Truncated retrieval combined with date sorting over-samples recent work, so
+    a family that does not fit under MAX_RECORDS produces a biased sample no
+    matter how deterministic the sort is. This asserts the narrowed families
+    still fit, and fails loudly when a database grows past the ceiling.
+    """
+    over: list[str] = []
+    for family in FAMILIES:
+        count = json.loads(get("https://api.openalex.org/works?" + urllib.parse.urlencode(
+            {"filter": f"title_and_abstract.search:{family.plain}", "per-page": "1"})))["meta"]["count"]
+        if count > MAX_RECORDS:
+            over.append(f"{family.key}={count}")
+        time.sleep(0.3)
+    assert not over, (
+        "families exceed the retrieval ceiling and would be truncated: "
+        + ", ".join(over)
+        + f" (MAX_RECORDS={MAX_RECORDS}). Narrow the family or raise the ceiling."
+    )
+
+
 def main() -> int:
-    assert PAGE_SIZE > 0, "PAGE_SIZE must be positive"
+    assert PAGE_SIZE > 0 and OPENALEX_PAGE_SIZE > 0, "page sizes must be positive"
     failures = []
     for name, check in [
         ("PubMed", check_pubmed),
@@ -175,6 +258,10 @@ def main() -> int:
         ("OpenAlex", check_openalex),
         ("arXiv", check_arxiv),
         ("arXiv query scope", check_arxiv_queries_are_topical),
+        ("DBLP", check_dblp),
+        ("OpenAlex scoping", check_openalex_scoping_is_honoured),
+        ("Europe PMC scoping", check_europe_pmc_title_abs_scoping),
+        ("full retrieval", check_every_family_retrieves_completely),
     ]:
         try:
             check()
@@ -183,9 +270,9 @@ def main() -> int:
             failures.append((name, exc))
             print(f"FAIL {name}: {type(exc).__name__}: {exc}")
     if failures:
-        print(f"\n{len(failures)} of 5 source contracts broken - do not trust the search until fixed.")
+        print(f"\n{len(failures)} of 9 source contracts broken - do not trust the search until fixed.")
         return 1
-    print("\nAll 5 source contracts hold; the formal search is deterministic and paginates.")
+    print("\nAll 9 source contracts hold; the formal search is deterministic and paginates.")
     return 0
 
 
