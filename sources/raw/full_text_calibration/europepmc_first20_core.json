@@ -759,7 +759,7 @@
                                               "authorAffiliationDetailsList":  {
                                                                                    "authorAffiliation":  [
                                                                                                              {
-                                                                                                                 "affiliation":  "Department of Cardiovascular Medicine. Electronic address: lerman.amir@mayo.edu."
+                                                                                                                 "affiliation":  "Department of Cardiovascular Medicine. Electronic address: redacted@example.invalid."
                                                                                                              }
                                                                                                          ]
                                                                                }
@@ -2543,7 +2543,7 @@
                                               "authorAffiliationDetailsList":  {
                                                                                    "authorAffiliation":  [
                                                                                                              {
-                                                                                                                 "affiliation":  "Division of Cardiology, Children\u0027s National Heart Institute, Children\u0027s National Hospital 111 Michigan Avenue, NW, Suite WW3-200 Washington DC, 20010, USA. Electronic address: jnahar@cnmc.org."
+                                                                                                                 "affiliation":  "Division of Cardiology, Children\u0027s National Heart Institute, Children\u0027s National Hospital 111 Michigan Avenue, NW, Suite WW3-200 Washington DC, 20010, USA. Electronic address: redacted@example.invalid."
                                                                                                              }
                                                                                                          ]
                                                                                }
@@ -2582,7 +2582,7 @@
         "pubYear":  "2022",
         "pageInfo":  "311-323",
         "abstractText":  "Conversational artificial intelligence involves the ability of computers, voice-enabled devices to interact intelligently with the user through voice. This can be leveraged in heart failure care delivery, benefiting the patients, providers, and payers, by providing timely access to care, filling the gaps in care, optimizing management, improving quality of care, and reducing cost. Introduction of machine learning to phonocardiography has potential to achieve outstanding diagnostic and prognostic performances in heart failure patients. There is ongoing research to use voice as a biomarker in heart failure patients. If successful, this may facilitate the screening, diagnosis, and clinical assessment of heart failure.",
-        "affiliation":  "Division of Cardiology, Children\u0027s National Heart Institute, Children\u0027s National Hospital 111 Michigan Avenue, NW, Suite WW3-200 Washington DC, 20010, USA. Electronic address: jnahar@cnmc.org.",
+        "affiliation":  "Division of Cardiology, Children\u0027s National Heart Institute, Children\u0027s National Hospital 111 Michigan Avenue, NW, Suite WW3-200 Washington DC, 20010, USA. Electronic address: redacted@example.invalid.",
         "publicationStatus":  "ppublish",
         "language":  "eng",
         "pubModel":  "Print-Electronic",
@@ -2907,7 +2907,7 @@
                                               "authorAffiliationDetailsList":  {
                                                                                    "authorAffiliation":  [
                                                                                                              {
-                                                                                                                 "affiliation":  "Department of Psychology, Louisiana State University, Baton Rouge, Louisiana; Center for Computation and Technology, Louisiana State University, Baton Rouge, Louisiana; Quantic Innovations, Inc., Benton, Arkansas. Electronic address: acohen@lsu.edu."
+                                                                                                                 "affiliation":  "Department of Psychology, Louisiana State University, Baton Rouge, Louisiana; Center for Computation and Technology, Louisiana State University, Baton Rouge, Louisiana; Quantic Innovations, Inc., Benton, Arkansas. Electronic address: redacted@example.invalid."
                                                                                                              }
                                                                                                          ]
                                                                                }
@@ -3010,7 +3010,7 @@
         "pubYear":  "2025",
         "pageInfo":  "S0006-3223(25)01676-2",
         "abstractText":  "\u003ch4\u003eBackground\u003c/h4\u003eSpeech latency, an objective measure of verbal response time, is sensitive to cognitive, social, and motivational factors and can be measured using recordings of psychiatric interviews. Emerging evidence suggests that it can be used to enrich participants in antidepressant clinical trials, resulting in nearly double the drug-placebo effect at half the sample size. Here, we evaluated whether enrichment of participants using speech latency ratios, a variant of speech latency accounting for duration of response, improved outcomes in a clinical trial of schizophrenia.\u003ch4\u003eMethods\u003c/h4\u003eAudio recordings from psychiatric interviews in a phase 3, 28-day, randomized, double-blind, placebo-controlled, fixed-dose, multicenter, parallel-group monotherapy study of brilaroxazine (RP5063) were examined. There were 2320 recordings for 406 participants with acute psychosis from 3 countries representing 8 languages.\u003ch4\u003eResults\u003c/h4\u003eSpeech latency ratios showed excellent internal consistency, good temporal stability, and minimal convergence with potential confounders. Patients with (vs. without) moderate-to-severe negative symptoms showed longer speech latencies, with large effect sizes observed in nearly every country and language. A single speech latency ratio value (area under the curve = 0.71) identified 180 and 228 participants as being vocal biomarker negative (VBM neg; unremarkable speech) and VBM positive (VBM pos; relatively high ratios), respectively. Brilaroxazine showed statistically significant outcomes versus placebo from baseline to end of treatment in the VBM-pos group for nearly every outcome measure despite having fewer participants. Treatment effects for VBM-pos patients were large for nearly every outcome measure.\u003ch4\u003eConclusions\u003c/h4\u003eSpeech latency ratios are a face-valid, objective biomarker derived from standard clinical assessments. As an enrichment tool, it reduced sample size needs and enhanced outcomes. This has important implications for reducing clinical trial costs and burden.",
-        "affiliation":  "Department of Psychology, Louisiana State University, Baton Rouge, Louisiana; Center for Computation and Technology, Louisiana State University, Baton Rouge, Louisiana; Quantic Innovations, Inc., Benton, Arkansas. Electronic address: acohen@lsu.edu.",
+        "affiliation":  "Department of Psychology, Louisiana State University, Baton Rouge, Louisiana; Center for Computation and Technology, Louisiana State University, Baton Rouge, Louisiana; Quantic Innovations, Inc., Benton, Arkansas. Electronic address: redacted@example.invalid.",
         "publicationStatus":  "aheadofprint",
         "language":  "eng",
         "pubModel":  "Print-Electronic",
@@ -3926,7 +3926,7 @@
                                               "authorAffiliationDetailsList":  {
                                                                                    "authorAffiliation":  [
                                                                                                              {
-                                                                                                                 "affiliation":  "Alexandra König, ki:elements GmbH, Am Holzbrunnen 1a, D-66121 Saarbrücken, Email: alexandra.koenig@ki-elements.de."
+                                                                                                                 "affiliation":  "Alexandra König, ki:elements GmbH, Am Holzbrunnen 1a, D-66121 Saarbrücken, Email: redacted@example.invalid."
                                                                                                              }
                                                                                                          ]
                                                                                }
@@ -4072,7 +4072,7 @@
         "pubYear":  "2023",
         "pageInfo":  "314-321",
         "abstractText":  "\u003ch4\u003eBackground\u003c/h4\u003eSpeech impairments are an early feature of Alzheimer\u0027s disease (AD) and consequently, analysing speech performance is a promising new digital biomarker for AD screening. Future clinical AD trials on disease modifying drugs will require a shift to very early identification of individuals at risk of dementia. Hence, digital markers of language and speech may offer a method for screening of at-risk populations that are at the earliest stages of AD, eventually in combination with advanced machine learning. To this end, we developed a screening battery consisting of speech-based neurocognitive tests. The automated test performs a remote primary screening using a simple telephone.\u003ch4\u003eObjectives\u003c/h4\u003ePROSPECT-AD aims to validate speech biomarkers for identification of individuals with early signs of AD and monitor their longitudinal course through access to well-phenotyped cohorts.\u003ch4\u003eDesign\u003c/h4\u003ePROSPECT-AD leverages ongoing cohorts such as EPAD (UK), DESCRIBE and DELCODE (Germany), and BioFINDER Primary Care (Sweden) and Beta-AARC (Spain) by adding a collection of speech data over the telephone to existing longitudinal follow-ups. Participants at risk of dementia are recruited from existing parent cohorts across Europe to form an AD \u0027probability-spectrum\u0027, i.e., individuals with a low risk to high risk of developing AD dementia. The characterization of cognition, biomarker and risk factor (genetic and environmental) status of each research participants over time combined with audio recordings of speech samples will provide a well-phenotyped population for comparing novel speech markers with current gold standard biomarkers and cognitive scores.\u003ch4\u003eParticipants\u003c/h4\u003eN= 1000 participants aged 50 or older will be included in total, with a clinical dementia rating scale (CDR) score of 0 or 0.5. The study protocol is planned to run according to sites between 12 and 18 months.\u003ch4\u003eMeasurements\u003c/h4\u003eThe speech protocol includes the following neurocognitive tests which will be administered remotely: Word List [Memory Function], Verbal Fluency [Executive Functions] and spontaneous free speech [Psychological and/ or behavioral symptoms]. Speech features on the linguistic and paralinguistic level will be extracted from the recordings and compared to data from CSF and blood biomarkers, neuroimaging, neuropsychological evaluations, genetic profiles, and family history. Primary candidate marker from speech will be a combination of most significant features in comparison to biomarkers as reference measure. Machine learning and computational techniques will be employed to identify the most significant speech biomarkers that could represent an early indicator of AD pathology. Furthermore, based on the analysis of speech performances, models will be trained to predict cognitive decline and disease progression across the AD continuum.\u003ch4\u003eConclusion\u003c/h4\u003eThe outcome of PROSPECT-AD may support AD drug development research as well as primary or tertiary prevention of dementia by providing a validated tool using a remote approach for identifying individuals at risk of dementia and monitoring individuals over time, either in a screening context or in clinical trials.",
-        "affiliation":  "Alexandra König, ki:elements GmbH, Am Holzbrunnen 1a, D-66121 Saarbrücken, Email: alexandra.koenig@ki-elements.de.",
+        "affiliation":  "Alexandra König, ki:elements GmbH, Am Holzbrunnen 1a, D-66121 Saarbrücken, Email: redacted@example.invalid.",
         "publicationStatus":  "ppublish",
         "language":  "eng",
         "pubModel":  "Print",
@@ -4532,7 +4532,7 @@
                                               "authorAffiliationDetailsList":  {
                                                                                    "authorAffiliation":  [
                                                                                                              {
-                                                                                                                 "affiliation":  "Department of Precision Health, Luxembourg Institute of Health, 1A-B, rue Thomas Edison, L-1445 Strassen, Luxembourg guy.fagherazzi@lih.lu."
+                                                                                                                 "affiliation":  "Department of Precision Health, Luxembourg Institute of Health, 1A-B, rue Thomas Edison, L-1445 Strassen, Luxembourg redacted@example.invalid."
                                                                                                              }
                                                                                                          ]
                                                                                }
