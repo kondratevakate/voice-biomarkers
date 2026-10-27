@@ -100,3 +100,15 @@ This folder is prepared as a root-level LaTeX project. In Overleaf, import the p
 The manuscript is a **reproducible snapshot** of the literature as of its stated search date, not a living review: it carries no update commitment, and currency is traded for the ability to re-execute the identical search from the preserved queries and raw exports. It is not yet a reporting-complete article; full-text screening, risk-of-bias coding, and the outstanding OpenAlex combinations remain open.
 
 Local LaTeX is not required for GitHub sync; Overleaf can compile the project after import.
+
+## Licence and citation
+
+Two licences, split by what the file is.
+
+- **Documents, data and logs: CC BY 4.0**, full text in `LICENSE`. Covers the protocol, the search strategy, the manuscript, the raw API exports, the per-source counts, the screening packets, the extraction forms and the governance logs. Attribution is to the authors listed in `CITATION.cff`.
+- **Code: MIT**, full text in `scripts/LICENSE`. Covers everything under `scripts/`.
+- Where the two could overlap, `scripts/LICENSE` governs files under `scripts/` and `LICENSE` governs everything else.
+
+Third-party content is not relicensed. The bibliographic metadata in `sources/raw/` comes from PubMed, Europe PMC, OpenAlex, arXiv and DBLP and remains subject to those providers' terms; the licence above applies to this project's own selection, arrangement and annotation of it. Corresponding-author email addresses were removed from those exports before the repository was made public, with the SHA-256 of every original recorded in `sources/raw/MANIFEST.emails-redacted.csv`; `scripts/test_no_raw_emails.py` must pass before any commit that touches `sources/raw`, because a fresh search run writes those addresses back.
+
+Cite the tagged snapshot rather than the branch: the branch moves, and the snapshot is what the registration records point at. The snapshot DOI is added to `CITATION.cff` once the release is minted.

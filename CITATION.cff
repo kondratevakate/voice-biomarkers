@@ -1,0 +1,55 @@
+cff-version: 1.2.0
+message: >-
+  If you use this repository, its search strategy or its retrieved corpus,
+  please cite it as below. Cite the tagged snapshot rather than the branch:
+  the branch moves, the snapshot is what the registration records point at.
+title: >-
+  Voice-derived biomarkers across populations, elicitation tasks, modelled
+  outcomes and validation maturity: protocol, search strategy and corpus
+abstract: >-
+  Research compendium for a scoping review and systematic evidence map of
+  voice-derived biomarkers, and for the narrower systematic reviews that draw
+  on the same corpus. Contains the protocol, the database-specific search
+  strategy, the versioned search scripts with their live API contract tests,
+  the raw API responses, per source and query-family counts, the screening
+  packets, the extraction forms, and the governance logs that record every
+  run, deviation and false negative.
+type: software
+authors:
+  - family-names: Kondrateva
+    given-names: Ekaterina
+    orcid: https://orcid.org/0000-0003-3623-6106
+  - family-names: Mohamed
+    given-names: Abdalla Z.
+    orcid: https://orcid.org/0000-0003-4499-672X
+    affiliation: >-
+      Department of Cognitive Sciences, College of Humanities and Social
+      Sciences, United Arab Emirates University, Al Ain, United Arab Emirates
+  - family-names: Khanzada
+    given-names: Amil
+    orcid: https://orcid.org/0000-0002-7065-5390
+    affiliation: >-
+      Graduate School of Engineering, University of Fukui, Fukui, Japan, and
+      Virufy, Los Altos, California, United States
+  - family-names: Alkhnbashi
+    given-names: Omer S.
+    orcid: https://orcid.org/0000-0001-8088-590X
+    affiliation: >-
+      Mohammed Bin Rashid University of Medicine and Health Sciences, Dubai,
+      United Arab Emirates, and King Fahd University of Petroleum and
+      Minerals, Dhahran, Saudi Arabia
+repository-code: https://github.com/kondratevakate/voice-biomarkers
+license:
+  - CC-BY-4.0
+  - MIT
+keywords:
+  - voice biomarkers
+  - digital biomarkers
+  - speech biomarkers
+  - scoping review
+  - systematic review
+  - evidence map
+  - PRISMA-ScR
+  - PRISMA-S
+  - reproducibility
+  - search strategy
