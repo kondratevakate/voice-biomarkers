@@ -7,7 +7,7 @@ title: >-
   Voice-derived biomarkers across populations, elicitation tasks, modelled
   outcomes and validation maturity: protocol, search strategy and corpus
 abstract: >-
-  Research compendium for a scoping review and systematic evidence map of
+  Research compendium for a systematic mapping review and evidence map of
   voice-derived biomarkers, and for the narrower systematic reviews that draw
   on the same corpus. Contains the protocol, the database-specific search
   strategy, the versioned search scripts with their live API contract tests,
@@ -46,7 +46,7 @@ keywords:
   - voice biomarkers
   - digital biomarkers
   - speech biomarkers
-  - scoping review
+  - systematic mapping review
   - systematic review
   - evidence map
   - PRISMA-ScR

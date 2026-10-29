@@ -1,4 +1,4 @@
-# Voice Biomarkers Systematic Review
+# Voice Biomarkers Systematic Mapping Review
 
 Created: 2026-06-05
 Last substantive update: 2026-09-01
@@ -6,7 +6,9 @@ Search date of record: 2026-09-01
 
 ## 1. Current State
 
-This project is a systematic review workspace for voice-derived biomarkers across populations and tasks. The seed topic comes from two 2026 preprints:
+This project is a systematic mapping review workspace for voice-derived biomarkers across populations and tasks. The review type is fixed by `protocol.md`: a systematic mapping review reported against PRISMA-ScR. Converting a clinically coherent subset of the corpus into a narrower systematic review is the escalation path, not the current design, and would be registered as its own record.
+
+The seed topic comes from two 2026 preprints:
 
 - VoxKnesset: longitudinal Hebrew parliamentary speech for aging speaker modeling.
 - Sound of Aging: large-scale evidence for a voice-based biological clock.
@@ -33,7 +35,6 @@ The working research question is:
 
 ## 3. Uncertainty
 
-- The final review type is not locked: systematic review, scoping review, or systematic mapping review are all plausible.
 - Inclusion boundaries are open: purely clinical voice biomarkers, aging clocks, disease detection, monitoring, and speech foundation models may be too broad for one manuscript.
 - Preprints are not confirmed peer-reviewed evidence; they can seed the search but cannot be treated as settled findings.
 - The formal search still needs query-family decomposition because one broad search is either too narrow in PubMed or too noisy in broad metadata indexes.
