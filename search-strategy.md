@@ -3,7 +3,7 @@
 Date: 2026-06-05
 Status: protocol component, pre-formal-search
 Method basis: K-Dense `literature-review`, `paper-lookup`, `citation-management`; Mohamed-style reproducibility pattern; AI-scientist governance critique.
-Tooling basis: see `tooling-assessment.md`; prefer ToolUniverse literature tools for execution when available.
+Tooling basis: ToolUniverse literature tools where available, with direct API calls in `scripts/run_formal_search.py` as the record of execution.
 
 ## Review Aim
 

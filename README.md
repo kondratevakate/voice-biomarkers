@@ -1,115 +1,106 @@
-# Voice Biomarkers Systematic Mapping Review
+# Voice biomarkers: a systematic mapping review
 
-Created: 2026-06-05
-Last substantive update: 2026-09-01
-Search date of record: 2026-09-01
+What evidence is there that voice, speech or other vocal features can work as
+biomarkers for aging, disease, risk or longitudinal monitoring, across human
+populations and recording tasks? This repository holds the protocol, the search,
+the raw exports and the manuscript for a systematic mapping review that tries
+to answer that, reported against PRISMA-ScR.
 
-## 1. Current State
+The review is a dated snapshot, not a living review. The search date of record
+is 2026-09-01, and everything needed to re-run the identical search is here:
+queries, scripts and the raw API responses.
 
-This project is a systematic mapping review workspace for voice-derived biomarkers across populations and tasks. The review type is fixed by `protocol.md`: a systematic mapping review reported against PRISMA-ScR. Converting a clinically coherent subset of the corpus into a narrower systematic review is the escalation path, not the current design, and would be registered as its own record.
+## Status
 
-The seed topic comes from two 2026 preprints:
+Done:
 
-- VoxKnesset: longitudinal Hebrew parliamentary speech for aging speaker modeling.
-- Sound of Aging: large-scale evidence for a voice-based biological clock.
+- Protocol and search strategy, with the eligibility framed as PCC (population,
+  concept, context).
+- Formal search of PubMed, Europe PMC, Europe PMC preprints, arXiv, DBLP and
+  OpenAlex: 8,499 deduplicated candidates, and no result set was truncated.
+- A stratified screening packet of 400 records drawn from all 35 source and
+  query-family buckets.
 
-The working research question is:
+Open:
 
-> Across human populations and recording tasks, what evidence supports voice, speech, or vocal features as scalable biomarkers for aging, disease state, risk stratification, or longitudinal monitoring?
+- Human title screening of `screening/screening-packet-stratified.csv`, with
+  calibration on 50 records and at least 20% double screening.
+- 8 OpenAlex source and query-family combinations failed with HTTP 429. They
+  are kept as error rows in `sources/formal-search-counts.csv`, not dropped.
+- Full-text extraction and risk-of-bias coding (R0 to R4 scale, PROBAST
+  domains) on the 20-record calibration set.
+- Databases without an open API (Embase, Scopus, Web of Science, IEEE Xplore,
+  ACM, ISCA, CNKI and others): each needs a searched or not-accessible status in
+  `sources/search-log.md`.
+- eGeMAPS and COUGHVID return zero hits; still to explain.
 
-## 2. Source Basis
+The abstract-level figures currently in `main.tex` come from an earlier,
+narrower packet (PubMed and Europe PMC only, keyword-based inclusion). The
+manuscript says so, and they will be recomputed after screening.
 
-| Source | Type | Location | Authority | Freshness | Notes |
-|---|---|---|---|---|---|
-| VoxKnesset | preprint | https://arxiv.org/abs/2603.01270 | working | tentative | Seed source for longitudinal speech, age prediction, speaker verification drift. |
-| Sound of Aging | preprint | https://www.medrxiv.org/content/10.64898/2026.04.05.26350190v1.full-text | working | tentative | Seed source for voice-predicted biological age and cardiometabolic associations. |
-| International VOCAL Initiative definitions | preprint | https://www.medrxiv.org/content/10.1101/2025.10.23.25338518.abstract | working | tentative | Candidate terminology anchor for "vocal biomarker". |
-| Evaluation of Speech-Based Digital Biomarkers | review/recommendations | https://pmc.ncbi.nlm.nih.gov/articles/PMC7670321/ | authoritative | confirmed | Candidate validation framework: verification, analytical validation, clinical validation. |
-| Literature-review skill | local method | K-Dense literature-review skill | authoritative | confirmed | Review workflow: search, screening, extraction, quality assessment, synthesis, citation verification. |
-| Task-design skill | local execution method | D:/projects/knowledge-vault/07_skills/task-design.md | authoritative | confirmed | Applied to task card in TASKS.md. |
-| V3 / V3+ | reporting framework | doi:10.1038/s41746-020-0260-4 | authoritative | confirmed | Validation lens of record: verification, analytical validation, clinical validation, usability. |
-| PROBAST | risk-of-bias tool | doi:10.7326/M18-1376 | authoritative | confirmed | Risk-of-bias structure for prediction-model studies, which is what most voice-biomarker papers are. |
-| TRIPOD+AI | reporting guideline | doi:10.1136/bmj-2023-078378 | authoritative | confirmed | Reporting expectations for machine-learning prediction models. |
-| PRISMA-ScR / PRISMA-S / JBI | reporting guidelines | doi:10.7326/M18-0850; doi:10.1186/s13643-020-01542-z; doi:10.11124/JBIES-20-00167 | authoritative | confirmed | Reporting and conduct standards for a mapping review and its search. |
-| Abdalla Z. Mohamed method pattern | author-style note | `sources/author-style-abdalla-mohamed.md` | worked example only | confirmed | Illustration of reporting style while drafting the extraction schema. Superseded as a methodological standard by V3, PROBAST and TRIPOD+AI (DEV-014). |
+## What is where
 
-## 3. Uncertainty
+| Path | What it is |
+|---|---|
+| `main.tex`, `references.bib` | The manuscript. Import the repository into Overleaf and set `main.tex` as the main file. |
+| `protocol.md` | Review question, eligibility, databases, synthesis plan. |
+| `search-strategy.md` | Query families and the exact search strings. |
+| `sources/` | Search outputs: deduplicated candidates, per-source counts, search log, seed papers. Files marked `-superseded` are earlier runs, kept so the deviation log can point at them. |
+| `sources/raw/` | Raw API responses, as returned, with author email addresses redacted. |
+| `screening/` | Screening packets, extraction templates, decisions. |
+| `governance/` | Protocol deviation log, tool-run log, false-negative audit against a seed set, screening reliability, risk-of-bias rubric. |
+| `figures/` | Planned figures (PRISMA flow, evidence map). Not generated yet. |
+| `scripts/` | Search, packet building, redaction and the tests. |
 
-- Inclusion boundaries are open: purely clinical voice biomarkers, aging clocks, disease detection, monitoring, and speech foundation models may be too broad for one manuscript.
-- Preprints are not confirmed peer-reviewed evidence; they can seed the search but cannot be treated as settled findings.
-- The formal search still needs query-family decomposition because one broad search is either too narrow in PubMed or too noisy in broad metadata indexes.
+The validation and bias lens is fixed by three published instruments: V3 for
+validation, PROBAST for risk of bias, TRIPOD+AI for reporting. The rubric in
+`governance/` maps every item to one of them.
 
-## 4. Search State
+## Re-running the search
 
-The formal search is complete for five of six sources as of 2026-09-01. Eight
-query families run across PubMed, Europe PMC, Europe PMC preprints, arXiv and
-DBLP, yielding **8,499 deduplicated candidates** with **zero truncated result
-sets**: every completed family retrieved in full, so the date-sorted retrieval
-does not over-sample recent work.
+The scripts use the Python standard library only.
 
-Eight OpenAlex source-family combinations remain outstanding, blocked by a
-rate limit applied to the client IP. They are tracked in `TASKS.md` and reported
-as errors in `sources/formal-search-counts.csv` rather than dropped.
+Check that the APIs still honour the sort and pagination parameters the search
+depends on. If a provider changes them, results silently stop being
+reproducible, so run this first:
 
-Superseded outputs are preserved rather than overwritten:
-`sources/formal-candidates-stage1-superseded.csv` and the matching
-`-stage2-superseded` pair.
+```bash
+python scripts/test_search_api_contract.py
+```
 
-## 5. Recommended Next Action
+Run the search. Setting `OPENALEX_MAILTO` to your address puts OpenAlex requests
+in its polite pool:
 
-Human title screening of `screening/screening-packet-stratified.csv`. The packet
-holds 400 records sampled proportionally across all 35 (source, query family)
-buckets, with screening decisions deliberately left empty; the SOP requires
-calibration on 50 records and at least 20% double screening before the
-concentration and validation figures can be recomputed.
+```bash
+python scripts/run_formal_search.py
+```
 
-## 6. Why This Is Next
+Rebuild the screening packet:
 
-Every remaining conclusion depends on screening decisions that no human has yet
-made. The abstract-level figures currently reported in the manuscript come from
-an earlier packet built by a procedure that drew only from PubMed and Europe PMC
-and used a disease-naming keyword list to decide inclusion, so they carry a
-known and documented bias.
+```bash
+python scripts/build_first_screening_packet.py
+```
 
-## Workspace
+A fresh run writes author email addresses back into `sources/raw/`. Redact them
+and check before committing:
 
-- `main.tex` - Overleaf-ready manuscript draft for GitHub import.
-- `references.bib` - BibTeX file with verified seed and framework citations.
-- `protocol.md` - review question, eligibility criteria, databases, search strings, and synthesis plan.
-- `sources/seed-papers.md` - verified metadata and extraction notes for the two seed papers.
-- `sources/search-log.md` - reproducible search log to fill during database searches.
-- `screening/extraction-template.csv` - structured extraction schema.
-- `screening/full-text-extraction-template.csv` - full-text extraction schema for reproducibility maturity and risk-of-bias scoring.
-- `screening/full-text-calibration-packet-20.csv` - first 20 records selected for full-text extraction calibration.
-- `screening/full-text-calibration-availability.csv` - PubMed/Europe PMC DOI/PMCID availability for the calibration packet.
-- `screening/full-text-calibration-term-precheck.csv` - automated PMC term-presence precheck for validation, split/leakage, recording protocol, demographics, metrics, data/code availability, and limitations.
-- `screening/decisions.md` - inclusion/exclusion decisions and reasons.
-- `draft/review.md` - manuscript skeleton.
-- `figures/figure-plan.md` - planned PRISMA and concept figures.
-- `governance/reproducibility-risk-of-bias-rubric.md` - rubric for R0-R4 reproducibility levels and risk-of-bias domains, each mapped to V3, PROBAST or TRIPOD+AI.
-- `governance/protocol-deviation-log.csv` - every change made after the formal search began, with reason and impact (DEV-001 to DEV-018).
-- `governance/tool-run-log.csv` - one row per automated run: tool, endpoint, exact input, filters, outputs, status.
-- `scripts/run_formal_search.py` - formal search across six sources, deterministic date sorting, complete pagination.
-- `scripts/test_search_api_contract.py` - nine live contract checks; run before trusting any new search output.
-- `scripts/build_first_screening_packet.py` - stratified screening packet across all source and query-family buckets.
-- `screening/screening-packet-stratified.csv` - the current screening packet, awaiting human decisions.
+```bash
+python scripts/redact_emails.py
+```
 
-## Overleaf / GitHub Sync
-
-This folder is prepared as a root-level LaTeX project. In Overleaf, import the private GitHub repository and set `main.tex` as the main document.
-
-The manuscript is a **reproducible snapshot** of the literature as of its stated search date, not a living review: it carries no update commitment, and currency is traded for the ability to re-execute the identical search from the preserved queries and raw exports. It is not yet a reporting-complete article; full-text screening, risk-of-bias coding, and the outstanding OpenAlex combinations remain open.
-
-Local LaTeX is not required for GitHub sync; Overleaf can compile the project after import.
+```bash
+python scripts/test_no_raw_emails.py
+```
 
 ## Licence and citation
 
-Two licences, split by what the file is.
+- Documents, data and logs: CC BY 4.0, see `LICENSE`.
+- Code under `scripts/`: MIT, see `scripts/LICENSE`.
 
-- **Documents, data and logs: CC BY 4.0**, full text in `LICENSE`. Covers the protocol, the search strategy, the manuscript, the raw API exports, the per-source counts, the screening packets, the extraction forms and the governance logs. Attribution is to the authors listed in `CITATION.cff`.
-- **Code: MIT**, full text in `scripts/LICENSE`. Covers everything under `scripts/`.
-- Where the two could overlap, `scripts/LICENSE` governs files under `scripts/` and `LICENSE` governs everything else.
+The bibliographic metadata in `sources/raw/` comes from PubMed, Europe PMC,
+OpenAlex, arXiv and DBLP and stays under those providers' terms. The licence
+covers this project's selection, arrangement and annotation of it. The SHA-256
+of every original file is recorded in `sources/raw/MANIFEST.emails-redacted.csv`.
 
-Third-party content is not relicensed. The bibliographic metadata in `sources/raw/` comes from PubMed, Europe PMC, OpenAlex, arXiv and DBLP and remains subject to those providers' terms; the licence above applies to this project's own selection, arrangement and annotation of it. Corresponding-author email addresses were removed from those exports before the repository was made public, with the SHA-256 of every original recorded in `sources/raw/MANIFEST.emails-redacted.csv`; `scripts/test_no_raw_emails.py` must pass before any commit that touches `sources/raw`, because a fresh search run writes those addresses back.
-
-Cite the tagged snapshot rather than the branch: the branch moves, and the snapshot is what the registration records point at. The snapshot DOI is added to `CITATION.cff` once the release is minted.
+Please cite a tagged release rather than the branch, using `CITATION.cff`. The
+DOI is added there once the release is minted.
