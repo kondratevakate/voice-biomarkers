@@ -3,13 +3,16 @@
 Date: 2026-06-05
 Method basis: K-Dense `literature-review`, `paper-lookup`, `citation-management`
 
-## Current State
+This is a record of the first exploratory search. It is kept for the audit trail.
+The search of record is the 2026-09-01 run in `sources/formal-search-counts.csv`.
+
+## Summary
 
 The pilot search supports treating the project as a systematic mapping review of the field rather than a narrow disease-specific systematic review. The evidence base is distributed across cardiovascular/heart failure, respiratory disease, neurodegeneration, psychiatry, aging/frailty, smoking/behavioral health, pediatric health, and dataset/model infrastructure.
 
 Raw exports are in `sources/raw/`. A first candidate table is in `sources/pilot-candidates.csv`.
 
-## Source Basis
+## Results by source
 
 ### PubMed
 
@@ -70,24 +73,23 @@ Recent relevant preprints found by targeted web search:
 - Longitudinal normative dataset / Voiceome protocol.
 - Digital voice-based biomarker for respiratory quality of life.
 
-## Uncertainty
+## Problems found
 
 - PubMed alone misses important arXiv/medRxiv model and dataset papers.
 - OpenAlex broad search requires stricter query decomposition before formal screening.
 - Crossref broad counts are not meaningful for PRISMA identification unless query is narrowed heavily.
 - Current candidate list is pilot-only and should not be treated as final included studies.
 
-## Candidate Next Actions
+## What happened next
 
-1. Split formal search into four query families: `terminology/validation`, `aging/frailty`, `clinical disease domains`, and `datasets/foundation models`.
-2. Re-run arXiv and Semantic Scholar with narrower queries and save raw exports.
-3. Begin title/abstract screening from `pilot-candidates.csv`, marking each as `include`, `exclude`, `maybe`, or `background`.
+The pilot led to the formal multi-query search described in
+`sources/formal-search-summary.md`. Of the follow-ups listed here at the time:
 
-## Recommended Next Action
-
-Run a formal multi-query search rather than one broad query. The pilot shows that a single broad query is either too narrow in PubMed or too noisy in Crossref/OpenAlex.
-
-## Why This Is Next
-
-The field is heterogeneous. Query families will preserve sensitivity while allowing transparent screening by population, task, outcome, and validation maturity.
-
+- Query families: the search was split into families, and the disease family
+  was later split again into four disease subfamilies (DEV-010).
+- arXiv: retried with a hand-written query per family (DEV-008) and completed
+  in the 2026-09-01 run.
+- Semantic Scholar: not retried. It is recorded as `api_failed` in
+  `sources/search-log.md`.
+- Screening from `pilot-candidates.csv`: replaced by the stratified packet in
+  `screening/screening-packet-stratified.csv` (DEV-013).

@@ -3,7 +3,10 @@
 Date: 2026-06-05
 Method basis: K-Dense `literature-review` + ToolUniverse-informed database strategy
 
-## Current State
+This is a record of the first formal pass (Stage 1). It is superseded by the
+2026-09-01 run and kept for the audit trail.
+
+## Summary
 
 A formal multi-query search pass has been executed across PubMed, Europe PMC, Europe PMC preprints, OpenAlex, and arXiv API attempts. Raw API outputs are saved under `sources/raw/formal/`.
 
@@ -14,7 +17,7 @@ Outputs:
 - `sources/formal-search-counts-disease-refined.csv`
 - `sources/formal-candidates-disease-refined.csv`
 
-## Source Basis
+## Results
 
 ### Main Formal Search Counts
 
@@ -43,39 +46,28 @@ Candidate output from refined disease search:
 
 - Deduplicated candidates from top API returns: 390
 
-## Uncertainty
+## Problems found
 
 - arXiv API did not complete successfully in this run due to 429, timeout, and 503 errors. arXiv should be retried later with narrower exact-title/abstract queries and 3+ second spacing.
 - OpenAlex and Europe PMC counts can be very broad; their top returned records are useful for discovery, but total counts are not equivalent to screened records.
 - The disease-domain search remains too large as one family. It should be split into separate subqueries by clinical domain.
 - Semantic Scholar was not included in this formal run because the prior pilot returned 429 without an API key.
 
-## Candidate Next Actions
+## What happened next
 
-1. Split disease search into domain subqueries:
-   - neurological: Parkinson, ALS, motor neuron disease, Alzheimer, dementia
-   - psychiatric: depression, anxiety, schizophrenia, psychosis
-   - cardiovascular: heart failure, coronary disease, pulmonary hypertension
-   - respiratory: asthma, COPD, respiratory, cough, tuberculosis
-   - aging/frailty/cardiometabolic: frailty, cardiometabolic, diabetes, biological age
-2. Retry arXiv with exact phrase queries:
-   - `"voice biomarker"`
-   - `"vocal biomarker"`
-   - `"speech biomarker"`
-   - `"clinical voice"`
-   - `"voice foundation model"`
-3. Start title/abstract screening from high-signal sources first:
-   - PubMed core terminology
-   - Europe PMC preprints core terminology
-   - PubMed aging
-   - PubMed clinical validation
-   - refined disease PubMed top 100
+- Ranking and truncation: this run kept the top relevance-ranked records per
+  source, so its candidate counts depend on ranking. All sources were switched to
+  deterministic date sorting with full pagination (DEV-007).
+- Disease family: split into four subfamilies (neurological, psychiatric,
+  respiratory, cardiometabolic), each pairing a named voice construct with disease
+  terms (DEV-010).
+- arXiv: rebuilt with a hand-written query per family (DEV-008).
+- DBLP was added as an engineering index for ICASSP, Interspeech, ACL and ACM
+  (DEV-011).
+- The first screening packet of 200 PubMed and Europe PMC preprint records was
+  built from this run (`screening/first-screening-packet.csv`). It was later
+  replaced by a stratified packet across every source and query family (DEV-013).
 
-## Recommended Next Action
-
-Begin screening with the high-signal subset rather than screening all 1,246 candidates immediately. The first screening packet should be approximately 200 records drawn from PubMed and Europe PMC preprints.
-
-## Why This Is Next
-
-The formal search confirms the topic is broad and heterogeneous. A strong systematic article needs a transparent staged strategy: sensitive search, honest noise accounting, then prioritized screening by database/source quality and query specificity.
-
+The 2026-09-01 run gave 8,499 deduplicated candidates
+(`sources/formal-candidates.csv`). The outputs of this run are kept as
+`*-stage1-superseded.csv`.

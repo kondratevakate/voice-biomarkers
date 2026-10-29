@@ -3,23 +3,19 @@
 Date: 2026-06-06
 Status: required before claiming exhaustive systematic coverage
 
-## Current State
+## Why this plan exists
 
-The completed formal search is a strong first pass over open English-oriented scholarly infrastructure, but it is not exhaustive. It should be labeled as Stage 1: English/open-index search.
+The formal search covers open, mostly English-language indexes. It is not exhaustive and is reported as such.
 
 To support a strong academic systematic review of the field, the search must add multilingual, technical, and subscription-index layers.
 
-## Source Basis
+## Coverage so far
 
-Stage 1 covered:
+The 2026-09-01 run covered PubMed, Europe PMC, Europe PMC preprints, arXiv and
+DBLP in full, and OpenAlex except for eight combinations that failed with HTTP
+429. DBLP was added for ICASSP, Interspeech, ACL and ACM metadata (DEV-011).
 
-- PubMed
-- Europe PMC
-- Europe PMC preprints
-- OpenAlex
-- attempted arXiv API
-
-Known gaps:
+Gaps as recorded on 2026-06-06, when this plan was written:
 
 - CNKI / Wanfang / VIP / SinoMed were not searched.
 - IEEE Xplore and ACM Digital Library were not searched.
@@ -188,6 +184,9 @@ The final Methods section must explicitly report:
 - whether Chinese databases were searched directly or via secondary web indexes
 - limitations for inaccessible databases
 
-## Recommended Next Action
+## Status
 
-Run Chinese database searches manually or through institutional access, then export RIS/BibTeX/CSV where possible. If direct access is unavailable, record this as a limitation and perform supplementary web-index searches with Chinese search strings.
+The per-database status (searched, access unavailable, API failed, supplementary
+only or pending) is tracked in `sources/search-log.md`.
+
+Next: run Chinese database searches manually or through institutional access, then export RIS/BibTeX/CSV where possible. If direct access is unavailable, record this as a limitation and perform supplementary web-index searches with Chinese search strings.

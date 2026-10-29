@@ -7,9 +7,9 @@ Status: required before final synthesis
 
 This layer applies lessons from AI-scientist benchmark and tooling systems to the systematic review workflow. It is not a substitute for PRISMA/JBI/Cochrane methods. It adds engineering-grade auditability: every automated search, screen, extraction, and post-processing step must be reproducible and reviewable.
 
-## Source Basis
+## Where these rules come from
 
-This governance layer is adapted from local AI-scientist source critiques:
+The rules borrow from how AI-for-science benchmarks and tools handle auditability:
 
 - ScienceAgentBench: false-negative mitigation, SME/manual validation, contamination control, dockerized evaluation.
 - AstaBench: solver metadata, cost logging, validation/test split, sandbox execution, reproducibility metadata.
@@ -18,13 +18,15 @@ This governance layer is adapted from local AI-scientist source critiques:
 - Paper2Agent: benchmark extraction, assessment reports, assumptions/limitations, human review outputs.
 - ToolUniverse: tool registry, tool protocol, async/tool composition, literature search coverage.
 - K-Dense scientific-agent-skills: permissions, contribution review, manual review; scans do not replace human review.
-- Abdalla Z. Mohamed review/method/data-paper pattern: systematic search with PRISMA/PROSPERO and adapted QUADAS-2; technical benchmarking with numerical pipeline metrics; dataset publication with BIDS/XNAT/MRIQC/open-source toolchain and OSF access.
+- Abdalla Z. Mohamed review, method and data papers, used as a worked example of reporting style only (DEV-014): systematic search with PRISMA/PROSPERO and adapted QUADAS-2; technical benchmarking with numerical pipeline metrics; dataset publication with BIDS/XNAT/MRIQC/open-source toolchain and OSF access.
 
 ## Governance Rules
 
-### 0. Mohamed-Style Reproducibility Controls
+### 0. Reproducibility controls
 
-The review adopts three controls as a benchmark for methodological rigor:
+The review adopts three controls. Each is mapped to V3, PROBAST or TRIPOD+AI in
+`governance/reproducibility-risk-of-bias-rubric.md`, and where they disagree the
+published instrument governs:
 
 1. Systematic-review controls: PCC (Population, Concept, Context) framing per PRISMA-ScR, PRISMA-family reporting, prospective registration when possible, database-specific search strings, exclusion-reason tables, and risk-of-bias assessment.
 2. Technical-benchmark controls: validation claims must be grounded in explicit metrics, not prose. For voice-biomarker papers this includes subject-level separation, external validation, calibration, repeated-measure reliability, robustness to recording task/device/environment, subgroup performance, and language/population transportability.
@@ -197,6 +199,8 @@ Code each domain as `low_concern`, `some_concern`, `high_concern`, or `not_repor
 - `governance/screening-reliability-log.csv`
 - `governance/extraction-provenance-log.csv`
 
-## Recommended Next Action
+## Status
 
-Populate the known-relevant seed set, then audit whether the formal search retrieved each seed record.
+The known-relevant seed set has 13 records and every one has a retrieved or
+missed status with a reason (`governance/known-relevant-seed-set.csv`). Screening
+reliability and extraction provenance logs fill in once human screening starts.
