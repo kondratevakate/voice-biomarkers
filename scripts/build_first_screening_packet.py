@@ -139,9 +139,12 @@ def spread(rows: list[dict[str, str]], n: int) -> list[dict[str, str]]:
 
 
 def main() -> None:
+    # Only the search of record feeds the packet. The disease-refined pool came
+    # from the Stage 1 disease_monitoring_refined query that DEV-010 replaced
+    # with four disease families; its records are not re-runnable from the
+    # current search and were dropped from the packet in DEV-019.
     pools = [
         SOURCES / "formal-candidates.csv",
-        SOURCES / "formal-candidates-disease-refined.csv",
     ]
     rows: list[dict[str, str]] = []
     for path in pools:

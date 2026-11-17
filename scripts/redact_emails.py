@@ -118,6 +118,20 @@ def verify(path: Path, original: str, redacted: str) -> tuple[bool, str]:
     return True, ""
 
 
+def merge_manifest(existing, new, exists):
+    """Add this run's rows to the manifest without erasing earlier ones.
+
+    The manifest is the only record of the SHA-256 of each original export.
+    Rewriting it from the current run alone dropped the hashes of every file
+    redacted earlier (125 rows lost on 2026-11-16). A file redacted again
+    because it was re-fetched takes the new row; rows for files that no longer
+    exist are dropped, as their history stays in git.
+    """
+    new_files = {str(r["file"]) for r in new}
+    kept = [r for r in existing if str(r["file"]) not in new_files and exists(str(r["file"]))]
+    return sorted(kept + list(new), key=lambda r: str(r["file"]))
+
+
 def main() -> int:
     parser = argparse.ArgumentParser(description=__doc__)
     parser.add_argument("--dry-run", action="store_true",
@@ -188,12 +202,16 @@ def main() -> int:
         return 1 if failed else 0
 
     if rows:
-        rows.sort(key=lambda r: str(r["file"]))
+        existing: list[dict[str, object]] = []
+        if MANIFEST.exists():
+            with MANIFEST.open(encoding="utf-8", newline="") as fh:
+                existing = list(csv.DictReader(fh))
+        merged = merge_manifest(existing, rows, lambda rel: (REPO / rel).exists())
         with MANIFEST.open("w", encoding="utf-8", newline="") as fh:
             writer = csv.DictWriter(fh, fieldnames=MANIFEST_FIELDS)
             writer.writeheader()
-            writer.writerows(rows)
-        print(f"manifest written: {MANIFEST.relative_to(REPO).as_posix()}")
+            writer.writerows(merged)
+        print(f"manifest written: {MANIFEST.relative_to(REPO).as_posix()} ({len(merged)} rows)")
 
     return 1 if failed else 0
 
