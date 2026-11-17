@@ -1,6 +1,6 @@
 # Stratified Screening Packet
 
-Records in packet: 400 of 8724 deduplicated candidates across 35 (source, query family) buckets.
+Records in packet: 400 of 14768 deduplicated candidates across 39 (source, query family) buckets.
 
 ## Sampling
 
@@ -12,21 +12,19 @@ Every bucket receives at least one record; the remainder is allocated in proport
 
 ## By source
 
-- DBLP: 90
-- EuropePMC: 135
-- EuropePMC-PPR: 4
-- OpenAlex: 3
-- PubMed: 144
-- arXiv: 24
+- DBLP: 44
+- EuropePMC: 77
+- OpenAlex: 177
+- PubMed: 86
+- arXiv: 16
 
 ## By query family
 
-- aging_biological_age: 13
-- clinical_validation: 7
-- core_terminology: 16
-- datasets_foundation_models: 38
-- disease_cardiometabolic: 17
-- disease_monitoring_refined: 13
-- disease_neuro: 116
-- disease_psych: 51
-- disease_respiratory: 129
+- aging_biological_age: 17
+- clinical_validation: 10
+- core_terminology: 27
+- datasets_foundation_models: 50
+- disease_cardiometabolic: 16
+- disease_neuro: 117
+- disease_psych: 52
+- disease_respiratory: 111

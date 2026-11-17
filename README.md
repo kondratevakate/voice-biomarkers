@@ -17,16 +17,16 @@ Done:
 - Protocol and search strategy, with the eligibility framed as PCC (population,
   concept, context).
 - Formal search of PubMed, Europe PMC, Europe PMC preprints, arXiv, DBLP and
-  OpenAlex: 8,499 deduplicated candidates, and no result set was truncated.
-- A stratified screening packet of 400 records drawn from all 35 source and
+  OpenAlex: 14,768 deduplicated candidates, and no result set was truncated.
+  OpenAlex failed with HTTP 429 on the date of record and was completed on
+  2026-11-16 with a publication-date ceiling of 2026-09-01 (DEV-019).
+- A stratified screening packet of 400 records drawn from all 39 source and
   query-family buckets.
 
 Open:
 
 - Human title screening of `screening/screening-packet-stratified.csv`, with
   calibration on 50 records and at least 20% double screening.
-- 8 OpenAlex source and query-family combinations failed with HTTP 429. They
-  are kept as error rows in `sources/formal-search-counts.csv`, not dropped.
 - Full-text extraction and risk-of-bias coding (R0 to R4 scale, PROBAST
   domains) on the 20-record calibration set.
 - Databases without an open API (Embase, Scopus, Web of Science, IEEE Xplore,
@@ -74,6 +74,11 @@ in its polite pool:
 ```bash
 python scripts/run_formal_search.py
 ```
+
+OpenAlex now serves only the first page without a key, so set a free key in
+the same shell first (`OPENALEX_API_KEY`); the script refuses to run OpenAlex
+without one. To re-query one source and replay the others from the saved raw
+responses, pass `--live`, for example `--live OpenAlex`.
 
 Rebuild the screening packet:
 

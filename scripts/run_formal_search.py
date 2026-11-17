@@ -10,6 +10,7 @@ import csv
 import json
 import os
 import re
+import sys
 import time
 import urllib.error
 import urllib.parse
@@ -42,6 +43,29 @@ FETCH_RETRIES = 4
 # and never hard-coded.
 USER_AGENT = "voice-biomarkers-review/1.0 (systematic mapping review; +https://github.com/kondratevakate/voice-biomarkers)"
 POLITE_MAILTO = os.environ.get("OPENALEX_MAILTO", "").strip()
+# OpenAlex rate-limits anonymous search per client IP, which blocked all eight
+# OpenAlex families on the date of record. A free personal key lifts the limit.
+# The key is a credential: read from the environment only, never written to a
+# file, and every saved response is checked not to contain it.
+OPENALEX_API_KEY = os.environ.get("OPENALEX_API_KEY", "").strip()
+# Search date of record (PRISMA-S). The other sources were queried on this
+# date, so records published after it must not enter a later completion run.
+# OpenAlex can bound by publication date only, not by indexing date, so a
+# record published before the ceiling but indexed later can still appear;
+# this residual difference is logged as a protocol deviation.
+SEARCH_DATE_OF_RECORD = "2026-09-01"
+# Sources re-queried live. Every other source is replayed from the raw
+# responses saved on the date of record, so a completion run cannot move the
+# snapshot of a source that already succeeded. Empty means all sources live.
+RAW_PREFIX_BY_SOURCE = {
+    "PubMed": "pubmed_",
+    "EuropePMC": "europepmc_all_",
+    "EuropePMC-PPR": "europepmc_preprints_",
+    "OpenAlex": "openalex_",
+    "arXiv": "arxiv_",
+    "DBLP": "dblp_",
+}
+LIVE_SOURCES: set[str] = set()
 FETCH_BACKOFF_SECONDS = 5
 RATE_LIMIT_BACKOFF_SECONDS = 90
 DBLP_PAGE_DELAY_SECONDS = 3.0
@@ -244,16 +268,43 @@ def _fetch(url: str, errors: str) -> str:
     raise last  # type: ignore[misc]
 
 
-def fetch_json(url: str, out: Path) -> dict[str, Any]:
-    text = _fetch(url, "strict")
+def _is_replayed(out: Path) -> bool:
+    if not LIVE_SOURCES:
+        return False
+    live_prefixes = tuple(RAW_PREFIX_BY_SOURCE[s] for s in LIVE_SOURCES)
+    return not out.name.startswith(live_prefixes)
+
+
+def _fetch_or_replay(url: str, out: Path, errors: str, as_json: bool = False) -> str:
+    if _is_replayed(out):
+        # A missing raw page raises FileNotFoundError, which the caller records
+        # as an error row: a replay never silently drops a page.
+        return out.read_text(encoding="utf-8")
+    for attempt in range(FETCH_RETRIES):
+        text = _fetch(url, errors)
+        if not as_json:
+            break
+        try:
+            json.loads(text)
+            break
+        except json.JSONDecodeError:
+            # A large response cut off mid-transfer (seen on a 4.3 MB OpenAlex
+            # page) must be re-fetched, never saved as the raw record.
+            if attempt >= FETCH_RETRIES - 1:
+                raise
+            time.sleep(FETCH_BACKOFF_SECONDS * (attempt + 1))
+    if OPENALEX_API_KEY and OPENALEX_API_KEY in text:
+        raise RuntimeError(f"response echoes the API key; not saved: {out.name}")
     out.write_text(text, encoding="utf-8")
-    return json.loads(text)
+    return text
+
+
+def fetch_json(url: str, out: Path) -> dict[str, Any]:
+    return json.loads(_fetch_or_replay(url, out, "strict", as_json=True))
 
 
 def fetch_text(url: str, out: Path) -> str:
-    text = _fetch(url, "replace")
-    out.write_text(text, encoding="utf-8")
-    return text
+    return _fetch_or_replay(url, out, "replace")
 
 
 def normalize_title(title: str) -> str:
@@ -396,13 +447,18 @@ def run_openalex(family: QueryFamily, candidates: list[dict[str, Any]]) -> tuple
         # title_and_abstract.search honours quoted phrases and booleans and
         # matches the field scope used for PubMed and Europe PMC.
         params = {
-            "filter": f"title_and_abstract.search:{family.plain}",
+            "filter": (
+                f"title_and_abstract.search:{family.plain},"
+                f"to_publication_date:{SEARCH_DATE_OF_RECORD}"
+            ),
             "per-page": str(OPENALEX_PAGE_SIZE),
             "sort": SORT_OPENALEX,
             "cursor": cursor,
         }
         if POLITE_MAILTO:
             params["mailto"] = POLITE_MAILTO
+        if OPENALEX_API_KEY:
+            params["api_key"] = OPENALEX_API_KEY
         url = "https://api.openalex.org/works?" + urllib.parse.urlencode(params)
         data = fetch_json(url, RAW / f"openalex_{family.key}_p{page:02d}.json")
         meta = data.get("meta", {})
@@ -561,21 +617,58 @@ def write_csv(rows: list[dict[str, Any]], path: Path) -> None:
         writer.writerows(rows)
 
 
+def parse_args(argv: list[str]) -> None:
+    """--live SOURCE[,SOURCE]: query these live, replay the rest from raw."""
+    if not argv:
+        return
+    if len(argv) != 2 or argv[0] != "--live":
+        raise SystemExit("usage: run_formal_search.py [--live OpenAlex[,DBLP,...]]")
+    names = {n.strip() for n in argv[1].split(",") if n.strip()}
+    unknown = names - set(RAW_PREFIX_BY_SOURCE)
+    if unknown:
+        raise SystemExit(f"unknown source(s): {sorted(unknown)}")
+    LIVE_SOURCES.update(names)
+
+
+def require_openalex_key() -> None:
+    """Refuse a live OpenAlex run without a key instead of degrading silently.
+
+    Since late 2026 OpenAlex serves anonymous clients only the first page
+    (cursor paging returns HTTP 401) under a shared per-IP budget, so an
+    anonymous run fails every family after the first page.
+    """
+    openalex_live = not LIVE_SOURCES or "OpenAlex" in LIVE_SOURCES
+    if openalex_live and not OPENALEX_API_KEY:
+        raise SystemExit(
+            "OPENALEX_API_KEY is not set in this process. Set it in the same "
+            "shell before running, or pass --live with other sources only."
+        )
+
+
 def main() -> None:
+    parse_args(sys.argv[1:])
+    require_openalex_key()
+    if LIVE_SOURCES:
+        print(f"Live: {sorted(LIVE_SOURCES)}; replaying the rest from {RAW}")
     candidates: list[dict[str, Any]] = []
     counts: list[dict[str, Any]] = []
     for family in FAMILIES:
         print(f"Running {family.key}")
         for source, fn in [
-            ("PubMed", lambda: run_pubmed(family, candidates)),
-            ("EuropePMC", lambda: run_europe_pmc(family, candidates, False)),
-            ("EuropePMC-PPR", lambda: run_europe_pmc(family, candidates, True)),
-            ("OpenAlex", lambda: run_openalex(family, candidates)),
-            ("arXiv", lambda: run_arxiv(family, candidates)),
-            ("DBLP", lambda: run_dblp(family, candidates)),
+            ("PubMed", lambda acc: run_pubmed(family, acc)),
+            ("EuropePMC", lambda acc: run_europe_pmc(family, acc, False)),
+            ("EuropePMC-PPR", lambda acc: run_europe_pmc(family, acc, True)),
+            ("OpenAlex", lambda acc: run_openalex(family, acc)),
+            ("arXiv", lambda acc: run_arxiv(family, acc)),
+            ("DBLP", lambda acc: run_dblp(family, acc)),
         ]:
             try:
-                count, truncated = fn()
+                # Collect into a per-source list and admit it only on success:
+                # a failure mid-pagination must not leave partial records in
+                # the corpus while the counts CSV reports an error.
+                batch: list[dict[str, Any]] = []
+                count, truncated = fn(batch)
+                candidates.extend(batch)
                 status = "ok_truncated_at_max_records" if truncated else "ok"
                 counts.append(
                     {"source": source, "query_family": family.key, "count": count, "status": status}
@@ -591,7 +684,7 @@ def main() -> None:
                     }
                 )
                 print(f"  {source}: error {exc}")
-            if source == "arXiv":
+            if source == "arXiv" and source in (LIVE_SOURCES or {source}):
                 time.sleep(3.2)
     deduped = dedupe(candidates)
     write_csv(deduped, ROOT / "sources" / "formal-candidates.csv")
